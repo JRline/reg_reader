@@ -111,10 +111,25 @@ Three layers, run in this order after content is ingested:
 - ~246 cross-references in Chapter 2; 190 resolved. Remainder: item-level refs (see rule
   6 above), a couple of not-yet-digitized sibling FSA notifications, and one bare
   law-name mention with no specific target.
-- Known open item: some `enumeration_item` clauses bundle multiple イロハ sub-items
-  inline (e.g. "イ...ロ...ハ...") instead of each getting its own clause — an
-  under-segmentation from the original translation batch, fixable the same way
-  `refine_clauses.py` split out parentheticals, just not done yet.
+- `refine_clauses.py` now also reclassifies bare `(1)`/`（１）`-style parenthetical
+  clauses as level-3 `enumeration_item`s (they're list markers, not asides — a
+  paren-balance split alone can't tell them apart) and splits inline イロハ bundling
+  (`split_inline_iroha`) when a sub-item marker directly follows a 。, mirroring
+  `app.js`'s `detectItemMarker` sequence check. Remaining known open item: a level-2
+  marker that starts immediately after the parent item's own text with **no** 。
+  in between (e.g. "一次に掲げる額の合計額イ次に掲げる...", seen in 第五条第二項) isn't
+  split — there's no reliable boundary signal to split on without more context, so it's
+  intentionally left bundled rather than guessed at.
+- `refine_clauses.py`'s `analyze_parenthetical()` further classifies what's INSIDE a
+  parenthetical aside — a nested proviso, exclusion, or condition gets its own
+  `clause_type` plus `in_parenthetical: true` (schema field), which `app.js`/`style.css`
+  render as a colored underline instead of that type's usual background highlight (a
+  highlight box there would clash with the aside's own dimmed styling). A whole-clause
+  `(...をいう。以下同じ。)`-style definition is retagged outright via
+  `reclassify_whole_definitions()`. All of this is regex-based, bounded to reject a match
+  that would cut through a nested paren (`_outer_prefix_end`/`_depth_at`) rather than risk
+  a corrupted split — exception detection in particular hasn't fired on any Chapter 2
+  content yet under that conservative bound, which is expected, not broken.
 - Other chapters of the source notification are not extracted. To add one: see
   `EXTRACTION_GUIDE.md` Step 1 — every pipeline script takes `feed_id`/`chapter_id` as
   arguments, nothing is hardcoded to Chapter 2 except the `ARTICLE_META` dict in

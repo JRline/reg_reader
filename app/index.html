@@ -13,24 +13,30 @@
 </script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="topbar-left">
-      <select id="feed-picker" aria-label="Select regulation"></select>
-    </div>
-    <div class="topbar-right">
-      <div class="lang-switch" role="group" aria-label="Language">
-        <button id="lang-ja" class="lang-btn active" data-lang="ja">日本語</button>
-        <button id="lang-en" class="lang-btn" data-lang="en">English</button>
+  <div class="sticky-top">
+    <header class="topbar">
+      <div class="topbar-left">
+        <select id="feed-picker" aria-label="Select regulation"></select>
       </div>
-      <label class="toggle">
-        <input type="checkbox" id="toggle-clauses" checked>
-        <span id="cues-label">Cues</span>
-      </label>
-      <button id="text-smaller" title="Smaller text" aria-label="Smaller text">A-</button>
-      <button id="text-larger" title="Larger text" aria-label="Larger text">A+</button>
-      <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">◐</button>
+      <div class="topbar-right">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button id="lang-ja" class="lang-btn active" data-lang="ja">日本語</button>
+          <button id="lang-en" class="lang-btn" data-lang="en">English</button>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-clauses" checked>
+          <span id="cues-label">Cues</span>
+        </label>
+        <button id="text-smaller" title="Smaller text" aria-label="Smaller text">A-</button>
+        <button id="text-larger" title="Larger text" aria-label="Larger text">A+</button>
+        <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">◐</button>
+      </div>
+    </header>
+    <div id="context-bar" class="context-bar">
+      <button id="back-btn" class="back-link" hidden></button>
+      <div id="legend" class="legend"></div>
     </div>
-  </header>
+  </div>
 
   <div class="layout">
     <nav id="toc" class="toc" aria-label="Table of contents"></nav>

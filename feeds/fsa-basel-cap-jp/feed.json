@@ -171,8 +171,9 @@
                     "text": "連結自己資本規制比率であって、最終指定親会社及びその子法人等の適当な自己資本の充実の状況の前条各号に定める基準以外の基準は、連結資本バッファー比率"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(次の算式により得られる比率をいう。)"
+                    "clause_type": "definition",
+                    "text": "(次の算式により得られる比率をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "main",
@@ -325,8 +326,13 @@
                     "text": "第二項の「カウンター・シクリカル・バッファー比率」とは、金融市場における信用の供与が過剰な場合に、将来の景気の変動によって生ずるおそれのある損失の吸収のため資本を増強する基準となるものをいい、次に掲げる比率を合計して得た比率"
                   },
                   {
+                    "clause_type": "conditional",
+                    "text": "(小数点以下二位未満の端数があるときは、",
+                    "in_parenthetical": true
+                  },
+                  {
                     "clause_type": "parenthetical",
-                    "text": "(小数点以下二位未満の端数があるときは、これを切り捨てるものとする。)"
+                    "text": "これを切り捨てるものとする。)"
                   },
                   {
                     "clause_type": "enumeration_stem",
@@ -365,8 +371,13 @@
                     "text": "二本邦以外の国又は地域の金融当局が定める比率"
                   },
                   {
+                    "clause_type": "conditional",
+                    "text": "(二・五パーセントを超える場合には、",
+                    "in_parenthetical": true
+                  },
+                  {
                     "clause_type": "parenthetical",
-                    "text": "(二・五パーセントを超える場合には、二・五パーセント)"
+                    "text": "二・五パーセント)"
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -616,8 +627,9 @@
                     "text": "ただし、最終指定親会社が銀行又は銀行法第五十二条の二十三第一項第一号から第十号まで若しくは第十五号に掲げる会社を子会社"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(法第二十九条の四第四項に規定する子会社をいう。以下この項において同じ。)"
+                    "clause_type": "definition",
+                    "text": "(法第二十九条の四第四項に規定する子会社をいう。以下この項において同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "proviso",
@@ -678,7 +690,7 @@
                     "text": " of Article 52-23, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -686,7 +698,7 @@
                     "text": " of the Banking Act, the provisions of Article 5, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(2)"
                   },
                   {
@@ -803,8 +815,9 @@
                     "text": "前項の規定にかかわらず、最終指定親会社が指定国際会計基準"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(連結財務諸表規則第三百十二条に規定する指定国際会計基準をいう。)"
+                    "clause_type": "definition",
+                    "text": "(連結財務諸表規則第三百十二条に規定する指定国際会計基準をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "conditional",
@@ -882,8 +895,9 @@
                     "text": "前二項の規定にかかわらず、最終指定親会社が保険会社等"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(保険会社、少額短期保険業者及びこれらに準ずる外国の法人並びにこれらの子会社等をいう。以下同じ。)"
+                    "clause_type": "definition",
+                    "text": "(保険会社、少額短期保険業者及びこれらに準ずる外国の法人並びにこれらの子会社等をいう。以下同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "conditional",
@@ -1298,7 +1312,7 @@
                     "text": "一次に掲げる額の合計額イ次に掲げる無形固定資産の額の合計額"
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(１)"
                   },
                   {
@@ -1314,7 +1328,7 @@
                     "text": "の額"
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(２)"
                   },
                   {
@@ -1346,8 +1360,9 @@
                     "text": "の額ニ内部格付手法採用最終指定親会社において、事業法人等向けエクスポージャー及びリテール向けエクスポージャーの期待損失額"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(第百二十六条に規定する期待損失額をいう。以下この章において同じ。)"
+                    "clause_type": "definition",
+                    "text": "(第百二十六条に規定する期待損失額をいう。以下この章において同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -1416,7 +1431,7 @@
                     "text": " The total amount of the following intangible fixed assets: "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -1432,7 +1447,7 @@
                     "text": ". "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(2)"
                   },
                   {
@@ -1784,16 +1799,18 @@
                     "text": "九発行者の倒産手続"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(破産手続、再生手続、更生手続又は特別清算手続をいう。以下同じ。)"
+                    "clause_type": "definition",
+                    "text": "(破産手続、再生手続、更生手続又は特別清算手続をいう。以下同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
                     "text": "に関し当該発行者が債務超過"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(債務者が、その債務につき、その財産をもって完済することができない状態をいう。以下同じ。)"
+                    "clause_type": "definition",
+                    "text": "(債務者が、その債務につき、その財産をもって完済することができない状態をいう。以下同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -1826,7 +1843,7 @@
                     "text": "The \"common shares\" referred to in paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -2024,7 +2041,7 @@
                     "text": "In calculating the amounts set forth in paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(2)"
                   },
                   {
@@ -2363,8 +2380,9 @@
                     "text": "第一項第四号に掲げる特別目的会社等の発行するその他Tier1資本調達手段の額は、特別目的会社等"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(専ら最終指定親会社の資本調達を行うことを目的として設立された連結子法人等をいう。以下同じ。)"
+                    "clause_type": "definition",
+                    "text": "(専ら最終指定親会社の資本調達を行うことを目的として設立された連結子法人等をいう。以下同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_stem",
@@ -2379,8 +2397,9 @@
                     "text": "二当該特別目的会社等の発行する資本調達手段の発行代り金の全額を当該特別目的会社等の親会社等"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(令第十五条の十六の二第二項に規定する親会社等をいう。以下同じ。)"
+                    "clause_type": "definition",
+                    "text": "(令第十五条の十六の二第二項に規定する親会社等をいう。以下同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -2401,7 +2420,7 @@
                     "text": "The amount of Additional Tier 1 Capital instruments issued by special purpose companies, etc. set forth in paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -2587,10 +2606,22 @@
                   },
                   {
                     "clause_type": "enumeration_item",
-                    "text": "に発行者の任意によるときに限り償還を行うことが可能であり、かつ、償還又は買戻しに関する次に掲げる要件の全てを満たすものであること。イ償還又は買戻しに際し、自己資本の充実について、あらかじめ金融庁長官の確認を受けるものとなっていること。ロ償還又は買戻しについて期待を生じさせる行為を発行者が行っていないこと。ハその他次に掲げる要件のいずれかを満たすこと。"
+                    "text": "に発行者の任意によるときに限り償還を行うことが可能であり、かつ、償還又は買戻しに関する次に掲げる要件の全てを満たすものであること。"
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
+                    "text": "イ償還又は買戻しに際し、自己資本の充実について、あらかじめ金融庁長官の確認を受けるものとなっていること。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
+                    "text": "ロ償還又は買戻しについて期待を生じさせる行為を発行者が行っていないこと。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
+                    "text": "ハその他次に掲げる要件のいずれかを満たすこと。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
                     "text": "(１)"
                   },
                   {
@@ -2606,7 +2637,7 @@
                     "text": "が当該償還又は買戻しの時以前に行われること。"
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(２)"
                   },
                   {
@@ -2619,7 +2650,23 @@
                   },
                   {
                     "clause_type": "enumeration_item",
-                    "text": "七剰余金の配当又は利息の支払の停止について、次に掲げる要件の全てを満たすものであること。イ剰余金の配当又は利息の支払の停止を発行者の完全な裁量により常に決定することができること。ロ剰余金の配当又は利息の支払の停止を決定することが発行者の債務不履行とならないこと。ハ剰余金の配当又は利息の支払の停止により流出しなかった資金を発行者が完全に利用可能であること。ニ剰余金の配当又は利息の支払の停止を行った場合における発行者に対する一切の制約"
+                    "text": "七剰余金の配当又は利息の支払の停止について、次に掲げる要件の全てを満たすものであること。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
+                    "text": "イ剰余金の配当又は利息の支払の停止を発行者の完全な裁量により常に決定することができること。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
+                    "text": "ロ剰余金の配当又は利息の支払の停止を決定することが発行者の債務不履行とならないこと。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
+                    "text": "ハ剰余金の配当又は利息の支払の停止により流出しなかった資金を発行者が完全に利用可能であること。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
+                    "text": "ニ剰余金の配当又は利息の支払の停止を行った場合における発行者に対する一切の制約"
                   },
                   {
                     "clause_type": "parenthetical",
@@ -2680,7 +2727,7 @@
                     "text": "The \"Additional Tier 1 Capital instruments\" referred to in paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -2784,7 +2831,7 @@
                     "text": " That either of the following conditions is satisfied: "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -2800,7 +2847,7 @@
                     "text": " is carried out prior to or at the time of such redemption or repurchase under conditions recognized as appropriate in light of the issuer's profitability. "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(2)"
                   },
                   {
@@ -3588,8 +3635,9 @@
                     "text": "三マーケット・メイク目的保有TLACの額の合計額から、前号に掲げる額及び少数出資に係る五パーセント基準額"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(第八条第七項第一号に規定する少数出資に係る五パーセント基準額をいう。)"
+                    "clause_type": "definition",
+                    "text": "(第八条第七項第一号に規定する少数出資に係る五パーセント基準額をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -3792,8 +3840,9 @@
                     "text": "一当該特別目的会社等の発行する資本調達手段がその他Tier1資本調達手段"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(前条第四項に規定するその他Tier1資本調達手段をいう。以下この章において同じ。)"
+                    "clause_type": "definition",
+                    "text": "(前条第四項に規定するその他Tier1資本調達手段をいう。以下この章において同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -3964,10 +4013,22 @@
                   },
                   {
                     "clause_type": "enumeration_item",
-                    "text": "に発行者の任意によるときに限り償還等を行うことが可能であり、かつ、償還等又は買戻しに関する次に掲げる要件の全てを満たすものであること。イ償還等又は買戻しに際し、自己資本の充実について、あらかじめ金融庁長官の確認を受けるものとなっていること。ロ償還等又は買戻しについて期待を生じさせる行為を発行者が行っていないこと。ハその他次に掲げる要件のいずれかを満たすこと。"
+                    "text": "に発行者の任意によるときに限り償還等を行うことが可能であり、かつ、償還等又は買戻しに関する次に掲げる要件の全てを満たすものであること。"
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
+                    "text": "イ償還等又は買戻しに際し、自己資本の充実について、あらかじめ金融庁長官の確認を受けるものとなっていること。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
+                    "text": "ロ償還等又は買戻しについて期待を生じさせる行為を発行者が行っていないこと。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
+                    "text": "ハその他次に掲げる要件のいずれかを満たすこと。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
                     "text": "(１)"
                   },
                   {
@@ -3983,7 +4044,7 @@
                     "text": "が当該償還等又は買戻しの時以前に行われること。"
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(２)"
                   },
                   {
@@ -4021,7 +4082,7 @@
                     "text": "\"Tier 2 Capital instruments\" as referred to in paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -4125,7 +4186,7 @@
                     "text": " That either of the following requirements is satisfied: "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -4141,7 +4202,7 @@
                     "text": " has been conducted prior to or at the time of such redemption, etc. or buyback, under conditions that are appropriate in light of the issuer's profitability. "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(2)"
                   },
                   {
@@ -4181,7 +4242,7 @@
                     "text": " In the case of capital instruments issued by special purpose companies, etc., that the capital instruments issued to utilize the proceeds satisfy all of the requirements of the preceding items and the following item or all of the requirements of each item of paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(4)"
                   },
                   {
@@ -4376,8 +4437,9 @@
                     "text": "一普通株式等Tier1資本の額"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(第二条第一号の算式における普通株式等Tier1資本の額をいう。)"
+                    "clause_type": "definition",
+                    "text": "(第二条第一号の算式における普通株式等Tier1資本の額をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -4432,8 +4494,9 @@
                     "text": "イTier2資本の額"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(第二条第三号の算式におけるTier2資本の額をいう。)"
+                    "clause_type": "definition",
+                    "text": "(第二条第三号の算式におけるTier2資本の額をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -4450,7 +4513,7 @@
                     "text": "In the formula of Article 2-2, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -4546,7 +4609,7 @@
                     "text": " The amount added pursuant to Article 13, paragraphs "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -4554,7 +4617,7 @@
                     "text": " and "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(2)"
                   },
                   {
@@ -4766,8 +4829,9 @@
                     "text": "二リスク・アセットの額に最低所要リスク・アセットベースTLAC比率"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(最終指定親会社TLAC告示第一条第十号に規定する最低所要リスク・アセットベースTLAC比率をいう。)"
+                    "clause_type": "definition",
+                    "text": "(最終指定親会社TLAC告示第一条第十号に規定する最低所要リスク・アセットベースTLAC比率をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -4790,8 +4854,9 @@
                     "text": "イその他外部TLAC調達手段の額"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(最終指定親会社TLAC告示第四条第一項第九号に掲げる額から同条第二項第四号及び第五号に掲げる額の合計額を控除した額をいう。)"
+                    "clause_type": "definition",
+                    "text": "(最終指定親会社TLAC告示第四条第一項第九号に掲げる額から同条第二項第四号及び第五号に掲げる額の合計額を控除した額をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -4810,7 +4875,7 @@
                     "text": "(当該額が零を下回る場合にあっては、零とする。)"
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(１)"
                   },
                   {
@@ -4818,7 +4883,7 @@
                     "text": "リスク・アセットの額に一・五パーセントを乗じて得た額"
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(２)"
                   },
                   {
@@ -4852,7 +4917,7 @@
                     "text": "Notwithstanding the preceding paragraph, with respect to TLAC-regulated Ultimate Designated Parent Companies, the amount of Common Equity Tier 1 Capital relating to the capital buffer in the formula of Article 2-2, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -5008,7 +5073,7 @@
                     "text": ". "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -5016,7 +5081,7 @@
                     "text": " The amount obtained by multiplying the risk-weighted assets amount by 1.5%. "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(2)"
                   },
                   {
@@ -5228,16 +5293,22 @@
                     "text": "のうち次に掲げる額のいずれか少ない額に普通株式等Tier1資本に係る第三者持分割合"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(特定連結子法人等の非支配株主持分相当普通株式等Tier1資本に係る基礎項目の額を単体普通株式等Tier1資本に係る基礎項目の額で除して得た割合をいう。)"
+                    "clause_type": "definition",
+                    "text": "(特定連結子法人等の非支配株主持分相当普通株式等Tier1資本に係る基礎項目の額を単体普通株式等Tier1資本に係る基礎項目の額で除して得た割合をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
-                    "text": "を乗じて得た額以下の額とする。イ当該特定連結子法人等の第二条各号の算式の分母の額に相当する額に七パーセントを乗じて得た額ロ第二条各号の算式の分母の額のうち当該特定連結子法人等に関連するものの額"
+                    "text": "を乗じて得た額以下の額とする。"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(当該特定連結子法人等の同条各号の算式の分母の額に相当する額に関連するものの額をいう。)"
+                    "clause_type": "enumeration_item",
+                    "text": "イ当該特定連結子法人等の第二条各号の算式の分母の額に相当する額に七パーセントを乗じて得た額ロ第二条各号の算式の分母の額のうち当該特定連結子法人等に関連するものの額"
+                  },
+                  {
+                    "clause_type": "definition",
+                    "text": "(当該特定連結子法人等の同条各号の算式の分母の額に相当する額に関連するものの額をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -5256,16 +5327,22 @@
                     "text": "のうち次に掲げる額のいずれか少ない額にTier1資本に係る第三者持分割合"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(連結子法人等の非支配株主持分等相当Tier1資本に係る基礎項目の額を単体Tier1資本に係る基礎項目の額で除して得た割合をいう。)"
+                    "clause_type": "definition",
+                    "text": "(連結子法人等の非支配株主持分等相当Tier1資本に係る基礎項目の額を単体Tier1資本に係る基礎項目の額で除して得た割合をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
-                    "text": "を乗じて得た額以下の額から、第五条第一項第四号に掲げる額を控除した額とする。イ当該連結子法人等の第二条各号の算式の分母の額に相当する額に八・五パーセントを乗じて得た額ロ第二条各号の算式の分母の額のうち当該連結子法人等に関連するものの額"
+                    "text": "を乗じて得た額以下の額から、第五条第一項第四号に掲げる額を控除した額とする。"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(当該連結子法人等の同条各号の算式の分母の額に相当する額に関連するものの額をいう。)"
+                    "clause_type": "enumeration_item",
+                    "text": "イ当該連結子法人等の第二条各号の算式の分母の額に相当する額に八・五パーセントを乗じて得た額ロ第二条各号の算式の分母の額のうち当該連結子法人等に関連するものの額"
+                  },
+                  {
+                    "clause_type": "definition",
+                    "text": "(当該連結子法人等の同条各号の算式の分母の額に相当する額に関連するものの額をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -5284,16 +5361,22 @@
                     "text": "のうち次に掲げる額のいずれか少ない額に総自己資本に係る第三者持分割合"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(連結子法人等の非支配株主持分等相当総自己資本に係る基礎項目の額を単体総自己資本に係る基礎項目の額で除して得た割合をいう。)"
+                    "clause_type": "definition",
+                    "text": "(連結子法人等の非支配株主持分等相当総自己資本に係る基礎項目の額を単体総自己資本に係る基礎項目の額で除して得た割合をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
-                    "text": "を乗じて得た額以下の額から、第五条第一項第四号及び第六条第一項第五号に掲げる額の合計額を控除した額とする。イ当該連結子法人等の第二条各号の算式の分母の額に相当する額に十・五パーセントを乗じて得た額ロ第二条各号の算式の分母の額のうち当該連結子法人等に関連するものの額"
+                    "text": "を乗じて得た額以下の額から、第五条第一項第四号及び第六条第一項第五号に掲げる額の合計額を控除した額とする。"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(当該連結子法人等の同条各号の算式の分母の額に相当する額に関連するものの額をいう。)"
+                    "clause_type": "enumeration_item",
+                    "text": "イ当該連結子法人等の第二条各号の算式の分母の額に相当する額に十・五パーセントを乗じて得た額ロ第二条各号の算式の分母の額のうち当該連結子法人等に関連するものの額"
+                  },
+                  {
+                    "clause_type": "definition",
+                    "text": "(当該連結子法人等の同条各号の算式の分母の額に相当する額に関連するものの額をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -5674,7 +5757,7 @@
                     "text": " of paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -5702,7 +5785,7 @@
                     "text": " of paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -6057,8 +6140,9 @@
                     "text": "との間で相互に自己資本規制比率"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(法第四十六条の六に規定する自己資本規制比率をいう。以下この号において同じ。)"
+                    "clause_type": "definition",
+                    "text": "(法第四十六条の六に規定する自己資本規制比率をいう。以下この号において同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "parenthetical",
@@ -6289,8 +6373,9 @@
                     "text": "に少数出資に係る普通株式保有割合"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(少数出資金融機関等の対象資本等調達手段のうち普通株式に相当するものの額を少数出資に係る対象資本等調達手段合計額で除して得た割合をいう。)"
+                    "clause_type": "definition",
+                    "text": "(少数出資金融機関等の対象資本等調達手段のうち普通株式に相当するものの額を少数出資に係る対象資本等調達手段合計額で除して得た割合をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -6301,8 +6386,9 @@
                     "text": "二第六条第二項第三号に掲げる少数出資金融機関等のその他Tier1資本調達手段の額は、少数出資調整対象額に少数出資に係るその他Tier1資本保有割合"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(少数出資金融機関等の対象資本等調達手段のうちその他Tier1資本調達手段に相当するものの額を少数出資に係る対象資本等調達手段合計額で除して得た割合をいう。)"
+                    "clause_type": "definition",
+                    "text": "(少数出資金融機関等の対象資本等調達手段のうちその他Tier1資本調達手段に相当するものの額を少数出資に係る対象資本等調達手段合計額で除して得た割合をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -6313,8 +6399,9 @@
                     "text": "三第七条第二項第三号に掲げる少数出資金融機関等のTier2資本調達手段の額は、少数出資調整対象額に少数出資に係るTier2資本保有割合"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(少数出資金融機関等の対象資本等調達手段のうちTier2資本調達手段に相当するものの額を少数出資に係る対象資本等調達手段合計額で除して得た割合をいう。)"
+                    "clause_type": "definition",
+                    "text": "(少数出資金融機関等の対象資本等調達手段のうちTier2資本調達手段に相当するものの額を少数出資に係る対象資本等調達手段合計額で除して得た割合をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -6325,8 +6412,9 @@
                     "text": "四第七条第二項第五号に掲げる少数出資金融機関等のその他外部TLAC関連調達手段の額は、少数出資調整対象額に少数出資に係るその他外部TLAC保有割合"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(少数出資金融機関等の対象資本等調達手段のうち基準超過その他外部TLAC関連調達手段の額を少数出資に係る対象資本等調達手段合計額で除して得た割合をいう。)"
+                    "clause_type": "definition",
+                    "text": "(少数出資金融機関等の対象資本等調達手段のうち基準超過その他外部TLAC関連調達手段の額を少数出資に係る対象資本等調達手段合計額で除して得た割合をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -6549,8 +6637,9 @@
                     "text": "一第六条第二項第四号に掲げるその他金融機関等のその他Tier1資本調達手段の額は、その他金融機関等"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(次に掲げる者をいう。)"
+                    "clause_type": "definition",
+                    "text": "(次に掲げる者をいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -6570,7 +6659,11 @@
                   },
                   {
                     "clause_type": "enumeration_item",
-                    "text": "のうちその他Tier1資本調達手段に相当するものの額とする。イ当該最終指定親会社等がその総株主等の議決権の百分の十を超える議決権を保有している他の金融機関等ロ連結財務諸表規則第五条第一項各号に該当するため、連結自己資本規制比率の算出に当たり連結の範囲に含まれない金融子会社"
+                    "text": "のうちその他Tier1資本調達手段に相当するものの額とする。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
+                    "text": "イ当該最終指定親会社等がその総株主等の議決権の百分の十を超える議決権を保有している他の金融機関等ロ連結財務諸表規則第五条第一項各号に該当するため、連結自己資本規制比率の算出に当たり連結の範囲に含まれない金融子会社"
                   },
                   {
                     "clause_type": "parenthetical",
@@ -6787,16 +6880,26 @@
                     "text": "を控除した額"
                   },
                   {
+                    "clause_type": "conditional",
+                    "text": "(当該額が零を下回る場合には、",
+                    "in_parenthetical": true
+                  },
+                  {
                     "clause_type": "parenthetical",
-                    "text": "(当該額が零を下回る場合には、零とする。)"
+                    "text": "零とする。)"
                   },
                   {
                     "clause_type": "enumeration_item",
                     "text": "二モーゲージ・サービシング・ライツに係る無形固定資産の額から特定項目に係る十パーセント基準額を控除した額"
                   },
                   {
+                    "clause_type": "conditional",
+                    "text": "(当該額が零を下回る場合には、",
+                    "in_parenthetical": true
+                  },
+                  {
                     "clause_type": "parenthetical",
-                    "text": "(当該額が零を下回る場合には、零とする。)"
+                    "text": "零とする。)"
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -6811,8 +6914,13 @@
                     "text": "の額から特定項目に係る十パーセント基準額を控除した額"
                   },
                   {
+                    "clause_type": "conditional",
+                    "text": "(当該額が零を下回る場合には、",
+                    "in_parenthetical": true
+                  },
+                  {
                     "clause_type": "parenthetical",
-                    "text": "(当該額が零を下回る場合には、零とする。)"
+                    "text": "零とする。)"
                   },
                   {
                     "clause_type": "enumeration_stem",
@@ -6859,8 +6967,9 @@
                     "text": "二引受け"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(法第二条第八項第六号に規定する有価証券の引受けをいう。)"
+                    "clause_type": "definition",
+                    "text": "(法第二条第八項第六号に規定する有価証券の引受けをいう。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -7416,7 +7525,7 @@
                     "text": ", notwithstanding the provisions of Article 5, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(2)"
                   },
                   {
@@ -7424,7 +7533,7 @@
                     "text": ", each item of paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(6)"
                   },
                   {
@@ -7432,7 +7541,7 @@
                     "text": " through paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(12)"
                   },
                   {
@@ -7440,7 +7549,7 @@
                     "text": " of the preceding Article, and Article 10, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(2)"
                   },
                   {
@@ -7452,7 +7561,7 @@
                     "text": "the consolidated capital adequacy ratio may be calculated by including such affiliated companies, etc. engaged in financial business in the scope of consolidation in the formula of each item of Article 2 and Article 2-2, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -7472,7 +7581,7 @@
                     "text": "In such case, the equity method shall not be applied to investments in such affiliated companies, etc. engaged in financial business, notwithstanding the provisions of the main text of Article 10, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -7736,7 +7845,7 @@
                     "text": "In the formula of each item of Article 2 and Article 2-2, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -8119,7 +8228,7 @@
                     "text": "Notwithstanding the provisions of paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -8250,7 +8359,7 @@
                     "text": "In the formula of each item of Article 2 and Article 2-2, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -9186,7 +9295,7 @@
                     "text": "The internal audit department of the Ultimate Designated Parent Company, etc. shall conduct internal audits relating to the product classification set forth in paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -9414,8 +9523,13 @@
                     "text": "一勘定間の振替を行う商品の種類"
                   },
                   {
+                    "clause_type": "conditional",
+                    "text": "(当該商品が第十一条の三第三項第一号から第三号までに掲げる商品のいずれかに該当するときは、",
+                    "in_parenthetical": true
+                  },
+                  {
                     "clause_type": "parenthetical",
-                    "text": "(当該商品が第十一条の三第三項第一号から第三号までに掲げる商品のいずれかに該当するときは、その旨を含む。)"
+                    "text": "その旨を含む。)"
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -9785,8 +9899,9 @@
                     "text": "内部取引"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(最終指定親会社等内部の組織間又は勘定間におけるデリバティブ取引をいう。以下同じ。)"
+                    "clause_type": "definition",
+                    "text": "(最終指定親会社等内部の組織間又は勘定間におけるデリバティブ取引をいう。以下同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "main",
@@ -9893,8 +10008,9 @@
                     "text": "一信用リスクトレーディング勘定において、最終指定親会社等が第三者である適格プロテクション提供者との間で外部ヘッジ取引"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(第九十四条各号及び第九十六条各号に掲げる条件の全てを満たすヘッジ取引をいう。以下同じ。)"
+                    "clause_type": "definition",
+                    "text": "(第九十四条各号及び第九十六条各号に掲げる条件の全てを満たすヘッジ取引をいう。以下同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -9902,7 +10018,15 @@
                   },
                   {
                     "clause_type": "enumeration_item",
-                    "text": "二株式リスク次に掲げる要件の全てを満たすものであること。イトレーディング勘定において、最終指定親会社等が第三者である適格プロテクション提供者との間で外部ヘッジ取引を行い、内部取引のポジションを完全に相殺していること。ロその外部ヘッジ取引が、バンキング勘定の株式リスクのヘッジとして認識されていること。"
+                    "text": "二株式リスク次に掲げる要件の全てを満たすものであること。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
+                    "text": "イトレーディング勘定において、最終指定親会社等が第三者である適格プロテクション提供者との間で外部ヘッジ取引を行い、内部取引のポジションを完全に相殺していること。"
+                  },
+                  {
+                    "clause_type": "enumeration_item",
+                    "text": "ロその外部ヘッジ取引が、バンキング勘定の株式リスクのヘッジとして認識されていること。"
                   }
                 ],
                 "clauses_en": [
@@ -10074,7 +10198,7 @@
                     "text": "The scope of measurement of market risk equivalent amounts for risk transfers set forth in paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -10090,7 +10214,7 @@
                     "text": " Where the requirements defined in each item of paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -10106,7 +10230,7 @@
                     "text": " Where the requirements defined in each item of paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -10195,8 +10319,9 @@
                     "text": "二内部取引は、内部取引担当デスク"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(トレーディング・デスクのうち、他のトレーディング・デスクから独立してマーケット・リスク相当額を計測するデスクをいう。以下同じ。)"
+                    "clause_type": "definition",
+                    "text": "(トレーディング・デスクのうち、他のトレーディング・デスクから独立してマーケット・リスク相当額を計測するデスクをいう。以下同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "enumeration_item",
@@ -10292,7 +10417,7 @@
                     "text": "In the risk transfer set forth in paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -10385,7 +10510,7 @@
                     "text": "Internal transactions between the internal transactions desk and trading desks other than the internal transactions desk shall be included in the scope of measurement of market risk equivalent amounts only where the requirements set forth in each item of Article 11-11, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -10393,7 +10518,7 @@
                     "text": " are satisfied and the provisions of paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(3)"
                   },
                   {
@@ -10528,7 +10653,7 @@
                     "text": " shall be as provided in the following paragraph and paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(3)"
                   },
                   {
@@ -10596,8 +10721,9 @@
                     "text": "外部CVAヘッジ取引のうち、適格CVAヘッジ取引"
                   },
                   {
-                    "clause_type": "parenthetical",
-                    "text": "(第二百四十八条の三の二に規定する適格BA―CVAヘッジ取引又は第二百四十八条の四の十三第一項に規定する適格SA―CVAヘッジ取引をいう。以下この項及び次項において同じ。)"
+                    "clause_type": "definition",
+                    "text": "(第二百四十八条の三の二に規定する適格BA―CVAヘッジ取引又は第二百四十八条の四の十三第一項に規定する適格SA―CVAヘッジ取引をいう。以下この項及び次項において同じ。)",
+                    "in_parenthetical": true
                   },
                   {
                     "clause_type": "main",
@@ -10904,7 +11030,7 @@
                     "text": " Products classified into the banking account pursuant to the provisions of Article 11-4, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(2)"
                   },
                   {
@@ -10920,7 +11046,7 @@
                     "text": " Policies provided in Article 11-8, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -10999,7 +11125,7 @@
                     "text": "When there is a change in the matters to be stated in the notification set forth in paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -11082,7 +11208,7 @@
                     "text": "In the formulas of the items of Article 2 and Article 2-2, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -11184,7 +11310,7 @@
                     "text": "such company shall add to the denominator of the formula of each item of Article 2 and Article 2-2, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -11216,7 +11342,7 @@
                     "text": " Ultimate Designated Parent Companies adopting the standardized approach that have received approval under Article 49, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -11681,7 +11807,7 @@
                     "text": "The \"required capital amount calculated using the approved calculation method\" in paragraphs "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -11689,7 +11815,7 @@
                     "text": " and "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(2)"
                   },
                   {
@@ -11697,7 +11823,7 @@
                     "text": " means the amount obtained by deducting from the sum of the amount obtained by multiplying the denominator of the formula of each item of Article 2 and Article 2-2, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {
@@ -11705,7 +11831,7 @@
                     "text": " by 8% and the amount set forth in Article 5, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(2)"
                   },
                   {
@@ -11725,7 +11851,7 @@
                     "text": " the sum of the amounts set forth in Article 7, paragraph "
                   },
                   {
-                    "clause_type": "parenthetical",
+                    "clause_type": "enumeration_item",
                     "text": "(1)"
                   },
                   {

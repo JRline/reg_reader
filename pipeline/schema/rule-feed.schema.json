@@ -33,7 +33,11 @@
               "definition"
             ]
           },
-          "text": { "type": "string" }
+          "text": { "type": "string" },
+          "in_parenthetical": {
+            "type": "boolean",
+            "description": "True when this clause was extracted from inside a 'parenthetical' span (e.g. a proviso or condition found nested inside an aside). Tells the renderer to draw the clause_type's cue as a colored underline instead of its usual background highlight, so it reads as 'this type, but inside an aside' rather than clashing with the aside's own underline treatment."
+          }
         }
       }
     },

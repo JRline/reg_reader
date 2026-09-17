@@ -18,6 +18,9 @@ const els = {
   toggleClauses: document.getElementById("toggle-clauses"),
   popover: document.getElementById("ref-popover"),
   langButtons: document.querySelectorAll(".lang-btn"),
+  legend: document.getElementById("legend"),
+  backBtn: document.getElementById("back-btn"),
+  stickyTop: document.querySelector(".sticky-top"),
 };
 
 const CLAUSE_LEGEND = [
@@ -187,6 +190,45 @@ function renderTOCNode(node) {
   return li;
 }
 
+function renderLegend() {
+  els.legend.innerHTML = CLAUSE_LEGEND.map(([type, labelEn, labelJa]) =>
+    `<span><span class="swatch clause-${type}" style="background:var(--clause-${type.replace('enumeration_item','enum')}, var(--text-muted))"></span>${state.lang === "ja" ? labelJa : labelEn}</span>`
+  ).join("");
+}
+
+function updateBackButton() {
+  const btn = els.backBtn;
+  if (state.backStack.length === 0) {
+    btn.hidden = true;
+    btn.onclick = null;
+  } else {
+    const prev = state.backStack[state.backStack.length - 1];
+    const sameFeed = prev.feedId === state.feedId;
+    btn.textContent = sameFeed
+      ? (state.lang === "ja" ? "← 前の場所に戻る" : "← Back to where you were")
+      : (state.lang === "ja" ? `← ${prev.feedId} に戻る` : `← Back to ${prev.feedId}`);
+    btn.hidden = false;
+    btn.onclick = goBack;
+  }
+  syncTopbarHeight();
+}
+
+// The sticky topbar's height varies (back button/legend show or hide, narrow viewports
+// wrap the context bar to two lines), so the TOC/layout sizing below it tracks the real
+// rendered height via a CSS var instead of a guessed constant.
+function syncTopbarHeight() {
+  if (!els.stickyTop) return;
+  document.documentElement.style.setProperty("--topbar-height", `${els.stickyTop.offsetHeight}px`);
+}
+window.addEventListener("resize", syncTopbarHeight);
+
+// Captured right before a ref-click navigates elsewhere, so `goBack` can restore the exact
+// scroll position the user was at — a node-block is a whole paragraph (sometimes dozens of
+// clauses long), so snapping to its top on the way back would still lose the exact line.
+function getCurrentScrollY() {
+  return window.scrollY;
+}
+
 function setActiveTOC(nodeId) {
   els.toc.querySelectorAll(".node-label.active").forEach((el) => el.classList.remove("active"));
   const el = els.toc.querySelector(`.node-label[data-id="${cssEscape(nodeId)}"]`);
@@ -214,30 +256,12 @@ function renderArticleView(articleId, scrollToId) {
 
   setActiveTOC(articleId);
   els.reader.innerHTML = "";
-
-  if (state.backStack.length > 0) {
-    const back = document.createElement("button");
-    back.className = "back-link";
-    const prev = state.backStack[state.backStack.length - 1];
-    const sameFeed = prev.feedId === state.feedId;
-    back.textContent = sameFeed
-      ? (state.lang === "ja" ? "← 前の場所に戻る" : "← Back to where you were")
-      : (state.lang === "ja" ? `← ${prev.feedId} に戻る` : `← Back to ${prev.feedId}`);
-    back.addEventListener("click", goBack);
-    els.reader.appendChild(back);
-  }
+  updateBackButton();
 
   const crumb = document.createElement("div");
   crumb.className = "breadcrumb";
   crumb.textContent = [state.manifest?.title_ja && state.lang === "ja" ? state.manifest.title_ja : state.manifest?.title_en, chapter ? [displayNumber(chapter), displayHeading(chapter)].filter(Boolean).join(" ") : null].filter(Boolean).join(" / ");
   els.reader.appendChild(crumb);
-
-  const legend = document.createElement("div");
-  legend.className = "legend";
-  legend.innerHTML = CLAUSE_LEGEND.map(([type, labelEn, labelJa]) =>
-    `<span><span class="swatch clause-${type}" style="background:var(--clause-${type.replace('enumeration_item','enum')}, var(--text-muted))"></span>${state.lang === "ja" ? labelJa : labelEn}</span>`
-  ).join("");
-  els.reader.appendChild(legend);
 
   const h = document.createElement("h2");
   h.className = "node-heading";
@@ -340,14 +364,17 @@ function renderClauses(node) {
     ? node[clauseKey]
     : [{ clause_type: "main", text: fullText }];
   let irohaIndex = -1; // resets per paragraph; also reset whenever a new level-1 item starts a fresh nested list
+  let currentDepth = 1; // carried onto a marker-less continuation clause, so it indents with the item it continues rather than snapping back to depth 1
   for (const clause of clauses) {
     const span = document.createElement("span");
     span.className = `clause clause-${clause.clause_type}`;
+    if (clause.in_parenthetical) span.classList.add("in-parenthetical");
     let bodyText = clause.text;
     if (clause.clause_type === "enumeration_item") {
       const detected = detectItemMarker(clause.text, irohaIndex);
       if (detected) {
-        span.style.setProperty("--enum-depth", detected.level);
+        currentDepth = detected.level;
+        span.style.setProperty("--enum-depth", currentDepth);
         const markerEl = document.createElement("span");
         markerEl.className = "item-marker";
         markerEl.textContent = detected.marker;
@@ -355,6 +382,8 @@ function renderClauses(node) {
         bodyText = detected.rest;
         if (detected.level === 1) irohaIndex = -1;
         else if (detected.level === 2) irohaIndex = detected.irohaPos;
+      } else {
+        span.style.setProperty("--enum-depth", currentDepth);
       }
     }
     span.appendChild(renderTextWithRefs(bodyText, node.refs || []));
@@ -407,13 +436,13 @@ async function onRefClick(e, ref) {
       const article = findAncestorOfType(targetId, "article");
       if (article) {
         if (article.id !== state.activeArticleId) {
-          state.backStack.push({ feedId: state.feedId, articleId: state.activeArticleId });
+          state.backStack.push({ feedId: state.feedId, articleId: state.activeArticleId, scrollY: getCurrentScrollY() });
         }
         renderArticleView(article.id, targetId);
         return;
       }
     } else {
-      state.backStack.push({ feedId: state.feedId, articleId: state.activeArticleId });
+      state.backStack.push({ feedId: state.feedId, articleId: state.activeArticleId, scrollY: getCurrentScrollY() });
       await loadFeed(ref.target_feed);
       const article = findAncestorOfType(targetId, "article");
       if (article) {
@@ -432,6 +461,7 @@ async function goBack() {
     await loadFeed(prev.feedId);
   }
   if (prev.articleId) renderArticleView(prev.articleId);
+  if (typeof prev.scrollY === "number") window.scrollTo(0, prev.scrollY);
 }
 
 function showPopover(e, ref) {
@@ -499,6 +529,8 @@ function refreshStaticUI() {
   document.getElementById("toggle-dark").title = UI_STRINGS.toggleDark[state.lang];
   els.feedPicker.setAttribute("aria-label", UI_STRINGS.selectFeed[state.lang]);
   updateDocumentTitle();
+  renderLegend();
+  updateBackButton();
 }
 
 els.langButtons.forEach((btn) => {

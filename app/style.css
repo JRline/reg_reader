@@ -1,11 +1,14 @@
 :root {
   --bg: #ffffff;
   --bg-panel: #f7f7f8;
+  --bg-card: #ffffff;
   --text: #1a1a1a;
   --text-muted: #6b6b6b;
-  --border: #e0e0e0;
-  --accent: #2952cc;
+  --border: #e2e4e8;
+  --accent: #3457d5;
   --accent-bg: #eef2ff;
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06);
+  --radius: 10px;
 
   --clause-conditional: #b8860b;
   --clause-conditional-bg: #fff8e6;
@@ -24,13 +27,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #16181c;
-    --bg-panel: #1d2025;
+    --bg: #14161a;
+    --bg-panel: #1a1d22;
+    --bg-card: #1e2126;
     --text: #e8e8e8;
     --text-muted: #9a9a9a;
-    --border: #33363c;
-    --accent: #7f9dff;
+    --border: #2e3138;
+    --accent: #8ba4ff;
     --accent-bg: #232b45;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.3);
     --clause-conditional-bg: #332b12;
     --clause-proviso-bg: #3a2417;
     --clause-exception-bg: #3a1f1f;
@@ -40,13 +45,15 @@
   }
 }
 :root[data-theme="dark"] {
-  --bg: #16181c;
-  --bg-panel: #1d2025;
+  --bg: #14161a;
+  --bg-panel: #1a1d22;
+  --bg-card: #1e2126;
   --text: #e8e8e8;
   --text-muted: #9a9a9a;
-  --border: #33363c;
-  --accent: #7f9dff;
+  --border: #2e3138;
+  --accent: #8ba4ff;
   --accent-bg: #232b45;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.3);
   --clause-conditional-bg: #332b12;
   --clause-proviso-bg: #3a2417;
   --clause-exception-bg: #3a1f1f;
@@ -65,42 +72,62 @@ body {
   font-size: calc(15px * var(--font-scale));
 }
 
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--bg-panel);
+  box-shadow: var(--shadow);
+}
+
 .topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 12px;
+  padding: 10px 16px;
   border-bottom: 1px solid var(--border);
-  background: var(--bg-panel);
-  position: sticky;
-  top: 0;
-  z-index: 5;
   gap: 8px;
   flex-wrap: wrap;
 }
 .topbar-right { display: flex; align-items: center; gap: 10px; }
 .topbar select, .topbar button {
   font-size: 13px;
-  padding: 5px 8px;
-  border-radius: 6px;
+  padding: 6px 10px;
+  border-radius: 7px;
   border: 1px solid var(--border);
   background: var(--bg);
   color: var(--text);
   cursor: pointer;
+  transition: background-color .15s ease, border-color .15s ease, transform .1s ease;
 }
+.topbar button:hover { background: var(--accent-bg); border-color: var(--accent); }
+.topbar button:active { transform: scale(0.96); }
 .toggle { display: flex; align-items: center; gap: 4px; font-size: 13px; color: var(--text-muted); }
 
-.lang-switch { display: flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.lang-switch { display: flex; border: 1px solid var(--border); border-radius: 7px; overflow: hidden; }
 .lang-btn {
   border: none;
   border-radius: 0;
   background: var(--bg);
   color: var(--text-muted);
-  padding: 5px 10px;
+  padding: 6px 12px;
   font-size: 13px;
   cursor: pointer;
+  transition: background-color .15s ease, color .15s ease;
 }
 .lang-btn.active { background: var(--accent); color: #fff; }
+
+/* Persistent context bar: legend + back-navigation, always visible under the topbar
+   regardless of scroll position or which article is showing (previously these lived
+   inside the reader and scrolled out of view). */
+.context-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
 
 .summary-line {
   color: var(--text-muted);
@@ -126,7 +153,7 @@ body {
 
 .layout {
   display: flex;
-  min-height: calc(100vh - 46px);
+  min-height: calc(100vh - var(--topbar-height, 88px));
 }
 .toc {
   width: 260px;
@@ -135,23 +162,24 @@ body {
   background: var(--bg-panel);
   padding: 10px;
   overflow-y: auto;
-  max-height: calc(100vh - 46px);
+  max-height: calc(100vh - var(--topbar-height, 88px));
   position: sticky;
-  top: 46px;
+  top: var(--topbar-height, 88px);
 }
 .toc ul { list-style: none; margin: 0; padding-left: 14px; }
 .toc > ul { padding-left: 0; }
 .toc li { margin: 2px 0; }
 .toc .node-label {
   display: block;
-  padding: 4px 6px;
-  border-radius: 5px;
+  padding: 5px 8px;
+  border-radius: 7px;
   cursor: pointer;
   font-size: 13px;
   line-height: 1.35;
+  transition: background-color .15s ease;
 }
 .toc .node-label:hover { background: var(--accent-bg); }
-.toc .node-label.active { background: var(--accent-bg); color: var(--accent); font-weight: 600; }
+.toc .node-label.active { background: var(--accent-bg); color: var(--accent); font-weight: 600; box-shadow: inset 2px 0 0 var(--accent); }
 .toc .type-chapter > .node-label { font-weight: 700; }
 
 .reader {
@@ -163,23 +191,33 @@ body {
 .breadcrumb { color: var(--text-muted); font-size: 13px; margin-bottom: 12px; }
 
 .back-link {
-  display: inline-block;
-  background: none;
-  border: none;
+  display: inline-flex;
+  align-items: center;
+  background: var(--accent-bg);
+  border: 1px solid transparent;
+  border-radius: 7px;
   color: var(--accent);
   cursor: pointer;
   font-size: 13px;
-  padding: 4px 0;
-  margin-bottom: 8px;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: border-color .15s ease;
 }
-.back-link:hover { text-decoration: underline; }
+.back-link:hover { border-color: var(--accent); }
+.back-link[hidden] { display: none; }
 
 .node-block {
-  margin-bottom: 28px;
-  scroll-margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  scroll-margin-top: calc(var(--topbar-height, 88px) + 16px);
+  transition: background-color .2s ease, border-color .2s ease;
 }
 .node-block.flash { animation: flash 1.4s ease; }
-@keyframes flash { 0% { background: var(--accent-bg); } 100% { background: transparent; } }
+@keyframes flash { 0% { background: var(--accent-bg); border-color: var(--accent); } 100% { background: var(--bg-card); border-color: var(--border); } }
 
 .node-heading { font-weight: 700; margin: 0 0 4px; font-size: 1.05em; }
 .para-number { color: var(--text-muted); font-size: 0.85em; margin-right: 6px; }
@@ -198,16 +236,50 @@ body {
 .clause { padding: 0 1px; }
 .clause-enumeration_stem, .clause-enumeration_item { display: block; }
 .clause-enumeration_stem { margin: 6px 0 2px; }
-.clause-enumeration_item { margin: 3px 0; padding: 2px 8px 2px calc(1.6em * var(--enum-depth, 1)); }
-.item-marker { font-weight: 700; margin-right: 0.4em; }
+/* Each nesting level (一/二/三 -> イ/ロ/ハ -> (1)/(2)) gets progressively deeper indent
+   and a matching left border, so the nesting is visible at a glance, not just inferable
+   from the marker glyph. */
+.clause-enumeration_item {
+  margin: 4px 0 4px calc(1.4em * (var(--enum-depth, 1) - 1));
+  padding: 3px 10px 3px 10px;
+  border-left: 3px solid var(--clause-enum);
+  opacity: calc(1 - 0.12 * (var(--enum-depth, 1) - 1));
+}
+.item-marker { font-weight: 700; color: var(--clause-enum); margin-right: 0.5em; }
 .clause-conditional { color: var(--clause-conditional); background: var(--clause-conditional-bg); border-radius: 3px; }
 .clause-proviso { color: var(--clause-proviso); background: var(--clause-proviso-bg); border-radius: 3px; }
 .clause-exception { color: var(--clause-exception); background: var(--clause-exception-bg); border-radius: 3px; }
 .clause-enumeration_stem { font-weight: 600; }
-.clause-enumeration_item { background: var(--clause-enum-bg); border-radius: 3px; }
-.clause-parenthetical { color: var(--clause-parenthetical); background: var(--clause-parenthetical-bg); font-size: 0.92em; border-radius: 3px; padding: 0 3px; }
+.clause-enumeration_item { background: var(--clause-enum-bg); border-radius: 0 4px 4px 0; }
+/* A parenthetical aside with no further sub-cue is just dimmed, not underlined — the
+   underline is reserved for a specific sub-cue found INSIDE the aside (below), so it
+   doesn't compete with the enumeration highlight or read as "everything in here matters". */
+.clause-parenthetical {
+  color: var(--clause-parenthetical);
+  opacity: 0.75;
+  font-size: 0.92em;
+}
 .clause-definition { text-decoration: underline dotted var(--clause-definition); text-underline-offset: 3px; }
-body.cues-off .clause { color: inherit !important; background: none !important; font-weight: inherit !important; text-decoration: none !important; }
+
+/* A clause found NESTED inside a parenthetical aside (e.g. a proviso or condition
+   buried in "(...but if X, then Y)") keeps its type's color for identification, but as
+   a colored underline rather than that type's usual background highlight — a highlight
+   box here would visually fight with the parenthetical's own underline treatment instead
+   of reading as "this type, inside an aside". */
+.clause.in-parenthetical {
+  background: none;
+  border-radius: 0;
+  font-size: 0.92em;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+.clause.in-parenthetical.clause-conditional { text-decoration-color: var(--clause-conditional); }
+.clause.in-parenthetical.clause-proviso { text-decoration-color: var(--clause-proviso); }
+.clause.in-parenthetical.clause-exception { text-decoration-color: var(--clause-exception); }
+.clause.in-parenthetical.clause-definition { text-decoration-color: var(--clause-definition); }
+
+body.cues-off .clause { color: inherit !important; background: none !important; font-weight: inherit !important; text-decoration: none !important; border-left: none !important; margin-left: 0 !important; }
 
 /* refs */
 .ref {
@@ -232,14 +304,11 @@ body.cues-off .clause { color: inherit !important; background: none !important; 
 .legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 6px 14px;
   font-size: 12px;
   color: var(--text-muted);
-  margin-bottom: 18px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
 }
-.legend span.swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: middle; }
+.legend span.swatch { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 4px; vertical-align: middle; }
 
 @media (max-width: 768px) {
   .layout { flex-direction: column; }
