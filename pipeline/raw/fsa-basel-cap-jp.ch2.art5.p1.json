@@ -1,0 +1,29 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art5.p1",
+  "number": null,
+  "heading": "普通株式等Tier1資本の額",
+  "text_ja": "第二条第一号の算式において、普通株式等Tier1資本に係る基礎項目の額は、次に掲げる額の合計額とする。一普通株式に係る株主資本の額(社外流出予定額(剰余金の配当の予定額をいう。以下同じ。)を除く。)二その他の包括利益累計額及びその他公表準備金の額二の二普通株式に係る株式引受権の額三普通株式に係る新株予約権の額四普通株式等Tier1資本に係る調整後非支配株主持分の額",
+  "text_en": "In the formula of Article 2, item (i), the amount of basic items relating to Common Equity Tier 1 Capital shall be the sum of the following amounts. (i) The amount of shareholders' equity relating to common shares (excluding planned external outflows (meaning planned dividend payments on retained earnings; the same applies hereinafter)). (ii) The amount of accumulated other comprehensive income and other disclosed reserves. (ii-2) The amount of share subscription rights relating to common shares. (iii) The amount of share options relating to common shares. (iv) The amount of adjusted minority interests, etc. relating to Common Equity Tier 1 Capital.",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "第二条第一号の算式において、普通株式等Tier1資本に係る基礎項目の額は、次に掲げる額の合計額とする。"},
+    {"clause_type": "enumeration_item", "text": "一普通株式に係る株主資本の額(社外流出予定額(剰余金の配当の予定額をいう。以下同じ。)を除く。)"},
+    {"clause_type": "enumeration_item", "text": "二その他の包括利益累計額及びその他公表準備金の額"},
+    {"clause_type": "enumeration_item", "text": "二の二普通株式に係る株式引受権の額"},
+    {"clause_type": "enumeration_item", "text": "三普通株式に係る新株予約権の額"},
+    {"clause_type": "enumeration_item", "text": "四普通株式等Tier1資本に係る調整後非支配株主持分の額"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "In the formula of Article 2, item (i), the amount of basic items relating to Common Equity Tier 1 Capital shall be the sum of the following amounts. "},
+    {"clause_type": "enumeration_item", "text": "(i) The amount of shareholders' equity relating to common shares (excluding planned external outflows (meaning planned dividend payments on retained earnings; the same applies hereinafter)). "},
+    {"clause_type": "enumeration_item", "text": "(ii) The amount of accumulated other comprehensive income and other disclosed reserves. "},
+    {"clause_type": "enumeration_item", "text": "(ii-2) The amount of share subscription rights relating to common shares. "},
+    {"clause_type": "enumeration_item", "text": "(iii) The amount of share options relating to common shares. "},
+    {"clause_type": "enumeration_item", "text": "(iv) The amount of adjusted minority interests, etc. relating to Common Equity Tier 1 Capital."}
+  ],
+  "refs": [
+    {"raw_text": "第二条第一号", "text_en": "Article 2, item (i)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "社外流出予定額", "term_en": "planned external outflows", "expands_to_ja": null}
+  ]
+}

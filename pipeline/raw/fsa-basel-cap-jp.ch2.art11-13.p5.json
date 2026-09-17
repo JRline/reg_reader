@@ -1,0 +1,20 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-13.p5",
+  "number": "５",
+  "heading": null,
+  "text_ja": "CVAデスクとトレーディング・デスクとの間の内部取引は、第十一条の十第一項各号に定める要件を満たす場合には、第四十六条第一項に規定する派生商品取引の与信相当額のヘッジ手段として利用することができる。",
+  "text_en": "Internal transactions between the CVA desk and trading desks may be used as hedging instruments for the credit equivalent amounts of derivative transactions provided in Article 46, paragraph (1), where the requirements defined in each item of Article 11-10, paragraph (1) are satisfied.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "CVAデスクとトレーディング・デスクとの間の内部取引は、第十一条の十第一項各号に定める要件を満たす場合には、"},
+    {"clause_type": "main", "text": "第四十六条第一項に規定する派生商品取引の与信相当額のヘッジ手段として利用することができる。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "Internal transactions between the CVA desk and trading desks, where the requirements defined in each item of Article 11-10, paragraph (1) are satisfied, "},
+    {"clause_type": "main", "text": "may be used as hedging instruments for the credit equivalent amounts of derivative transactions provided in Article 46, paragraph (1)."}
+  ],
+  "refs": [
+    {"raw_text": "第十一条の十第一項各号", "text_en": "each item of Article 11-10, paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第四十六条第一項", "text_en": "Article 46, paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

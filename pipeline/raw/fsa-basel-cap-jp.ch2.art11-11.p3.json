@@ -1,0 +1,19 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-11.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "第一項のリスク移転において、内部取引担当デスク以外のトレーディング・デスクを通じた第三者との間の外部ヘッジ取引は、内部取引担当デスクが内部取引担当デスク以外のトレーディング・デスクと行う一般金利リスクに係る内部取引のポジションにより第三者との外部ヘッジのポジションと完全に相殺されるときに限り、行うことができる。この場合において、内部取引担当デスク及び内部取引担当デスク以外のトレーディング・デスクが保有する内部取引のポジションは、マーケット・リスク相当額の計測対象に含むものとする。",
+  "text_en": "In the risk transfer set forth in paragraph (1), external hedge transactions with third parties through trading desks other than the internal transactions desk may only be conducted when the positions of internal transactions relating to general interest rate risk conducted between the internal transactions desk and trading desks other than the internal transactions desk completely offset the positions of external hedges with third parties. In such case, positions of internal transactions held by the internal transactions desk and trading desks other than the internal transactions desk shall be included in the scope of measurement of market risk equivalent amounts.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "第一項のリスク移転において、内部取引担当デスク以外のトレーディング・デスクを通じた第三者との間の外部ヘッジ取引は、内部取引担当デスクが内部取引担当デスク以外のトレーディング・デスクと行う一般金利リスクに係る内部取引のポジションにより第三者との外部ヘッジのポジションと完全に相殺されるときに限り、行うことができる。"},
+    {"clause_type": "main", "text": "この場合において、内部取引担当デスク及び内部取引担当デスク以外のトレーディング・デスクが保有する内部取引のポジションは、マーケット・リスク相当額の計測対象に含むものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "In the risk transfer set forth in paragraph (1), external hedge transactions with third parties through trading desks other than the internal transactions desk may only be conducted when the positions of internal transactions relating to general interest rate risk conducted between the internal transactions desk and trading desks other than the internal transactions desk completely offset the positions of external hedges with third parties. "},
+    {"clause_type": "main", "text": "In such case, positions of internal transactions held by the internal transactions desk and trading desks other than the internal transactions desk shall be included in the scope of measurement of market risk equivalent amounts."}
+  ],
+  "refs": [
+    {"raw_text": "第一項", "text_en": "paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

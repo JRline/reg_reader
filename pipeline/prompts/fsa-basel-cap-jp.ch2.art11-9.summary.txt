@@ -1,0 +1,10 @@
+You will be given the full text of one Article of Japanese regulatory text, with its
+official English translation. Write a one-sentence, plain-language summary of what this
+Article actually requires or establishes — the kind of line a compliance officer would
+want as a preview before deciding whether to read the full text. Do not just restate the
+heading. Output ONLY this JSON object, no prose:
+
+{"summary_ja": "<one sentence, plain Japanese>", "summary_en": "<one sentence, plain English>"}
+
+Japanese text: """内部取引(最終指定親会社等内部の組織間又は勘定間におけるデリバティブ取引をいう。以下同じ。)によるトレーディング勘定からバンキング勘定へのリスク移転については、マーケット・リスク相当額の計測対象に含まないものとする。内部取引によるバンキング勘定からトレーディング勘定へのリスク移転については、次条から第十一条の十二までに定めるところによる。"""
+English text: """Risk transfers from the trading account to the banking account through internal transactions (meaning derivative transactions between internal organizations or between accounts within the Ultimate Designated Parent Company, etc.; the same applies hereinafter) shall not be included in the scope of measurement of market risk equivalent amounts.Risk transfers from the banking account to the trading account through internal transactions shall be governed by the provisions of the following Article through Article 11-12."""

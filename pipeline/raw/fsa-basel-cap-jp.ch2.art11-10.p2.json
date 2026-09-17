@@ -1,0 +1,19 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-10.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "前項第一号の外部ヘッジ取引において、内部取引のポジションを完全に相殺する場合には、当該外部ヘッジ取引を複数の取引相手方との複数の取引により構成することができる。",
+  "text_en": "In external hedge transactions set forth in item (i) of the preceding paragraph, where the positions of internal transactions are completely offset, such external hedge transactions may be composed of multiple transactions with multiple counterparties.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "前項第一号の外部ヘッジ取引において、内部取引のポジションを完全に相殺する場合には、"},
+    {"clause_type": "main", "text": "当該外部ヘッジ取引を複数の取引相手方との複数の取引により構成することができる。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "In external hedge transactions set forth in item (i) of the preceding paragraph, where the positions of internal transactions are completely offset, "},
+    {"clause_type": "main", "text": "such external hedge transactions may be composed of multiple transactions with multiple counterparties."}
+  ],
+  "refs": [
+    {"raw_text": "前項第一号", "text_en": "item (i) of the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

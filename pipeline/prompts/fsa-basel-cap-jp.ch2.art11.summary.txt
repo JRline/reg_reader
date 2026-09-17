@@ -1,0 +1,10 @@
+You will be given the full text of one Article of Japanese regulatory text, with its
+official English translation. Write a one-sentence, plain-language summary of what this
+Article actually requires or establishes — the kind of line a compliance officer would
+want as a preview before deciding whether to read the full text. Do not just restate the
+heading. Output ONLY this JSON object, no prose:
+
+{"summary_ja": "<one sentence, plain Japanese>", "summary_en": "<one sentence, plain English>"}
+
+Japanese text: """第二条各号及び第二条の二第一項の算式においてマーケット・リスク相当額の合計額は、第六章に定めるところにより算出するものの合計額とする。ただし、現金預け金、預金及びコール資金(連結子法人等における本支店間の取引を含む。)のうち、トレーディングを行う部署においてリスク管理上トレーディングとして管理及び評価をしているものについては対象に含めることができる。"""
+English text: """In the formula of each item of Article 2 and Article 2-2, paragraph (1), the total amount of market risk equivalent amounts shall be the sum of amounts calculated pursuant to the provisions of Chapter 6; provided, however, that among cash deposits, deposits, and call money (including transactions between head office and branches in consolidated subsidiaries, etc.), those that are managed and evaluated as trading for risk management purposes by trading departments may be included."""

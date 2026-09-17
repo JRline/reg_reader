@@ -1,0 +1,20 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art5.p4",
+  "number": "４",
+  "heading": null,
+  "text_ja": "第二項第一号イ又はトに掲げる額を算出する場合において、これらの規定に掲げる額に関連する繰延税金負債の額があるときは、これらの規定に掲げる額と当該関連する繰延税金負債の額を相殺することができる。",
+  "text_en": "In calculating the amounts set forth in paragraph (2), item (i), sub-items (a) or (g), where there are amounts of deferred tax liabilities related to such amounts, such amounts and the related deferred tax liability amounts may be offset against each other.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "第二項第一号イ又はトに掲げる額を算出する場合において、これらの規定に掲げる額に関連する繰延税金負債の額があるときは、"},
+    {"clause_type": "main", "text": "これらの規定に掲げる額と当該関連する繰延税金負債の額を相殺することができる。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "In calculating the amounts set forth in paragraph (2), item (i), sub-items (a) or (g), where there are amounts of deferred tax liabilities related to such amounts, "},
+    {"clause_type": "main", "text": "such amounts and the related deferred tax liability amounts may be offset against each other."}
+  ],
+  "refs": [
+    {"raw_text": "第二項第一号イ", "text_en": "paragraph (2), item (i), sub-item (a)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第二項第一号イ又はト", "text_en": "paragraph (2), item (i), sub-items (a) or (g)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

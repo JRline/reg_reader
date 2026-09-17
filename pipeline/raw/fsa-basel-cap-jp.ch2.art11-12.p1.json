@@ -1,0 +1,15 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-12.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "マーケット・リスク相当額の計測対象であるトレーディング・デスク間の内部取引は、マーケット・リスク相当額の計測範囲に含むものとする。",
+  "text_en": "Internal transactions between trading desks that are subject to measurement of market risk equivalent amounts shall be included in the scope of measurement of market risk equivalent amounts.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "マーケット・リスク相当額の計測対象であるトレーディング・デスク間の内部取引は、マーケット・リスク相当額の計測範囲に含むものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Internal transactions between trading desks that are subject to measurement of market risk equivalent amounts shall be included in the scope of measurement of market risk equivalent amounts."}
+  ],
+  "refs": [],
+  "defined_terms": []
+}

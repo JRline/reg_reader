@@ -1,0 +1,23 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-13.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "内部CVAヘッジ取引は、互いに完全に相殺するCVAデスクのポジション及びトレーディング・デスクのポジションから構成されなければならず、次の各号に掲げる場合の区分に応じ、当該各号に定めるところによりマーケット・リスク相当額を計測するものとする。一内部CVAヘッジ取引が適格CVAヘッジ取引に該当しない場合CVAデスクのポジション及びトレーディング・デスクのポジションは、いずれもマーケット・リスク相当額の計測対象となるポジションとし、双方のポジションを相殺することにより、マーケット・リスク相当額の計測対象に含まないものとする。二内部CVAヘッジ取引が適格CVAヘッジ取引に該当する場合トレーディング・デスクのポジションは、第六章に定めるところによりマーケット・リスク相当額の計測対象に含むものとする。",
+  "text_en": "Internal CVA hedge transactions must be composed of positions of the CVA desk and positions of trading desks that completely offset each other, and market risk equivalent amounts shall be measured as set forth in each of the following items corresponding to the case set forth in such item. (i) Where internal CVA hedge transactions do not qualify as eligible CVA hedge transactions: Positions of the CVA desk and positions of trading desks shall each be positions subject to measurement of market risk equivalent amounts, and by offsetting both positions, they shall not be included in the scope of measurement of market risk equivalent amounts. (ii) Where internal CVA hedge transactions qualify as eligible CVA hedge transactions: Positions of trading desks shall be included in the scope of measurement of market risk equivalent amounts pursuant to the provisions of Chapter 6.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "内部CVAヘッジ取引は、互いに完全に相殺するCVAデスクのポジション及びトレーディング・デスクのポジションから構成されなければならず、"},
+    {"clause_type": "enumeration_stem", "text": "次の各号に掲げる場合の区分に応じ、当該各号に定めるところによりマーケット・リスク相当額を計測するものとする。"},
+    {"clause_type": "enumeration_item", "text": "一内部CVAヘッジ取引が適格CVAヘッジ取引に該当しない場合CVAデスクのポジション及びトレーディング・デスクのポジションは、いずれもマーケット・リスク相当額の計測対象となるポジションとし、双方のポジションを相殺することにより、マーケット・リスク相当額の計測対象に含まないものとする。"},
+    {"clause_type": "enumeration_item", "text": "二内部CVAヘッジ取引が適格CVAヘッジ取引に該当する場合トレーディング・デスクのポジションは、第六章に定めるところによりマーケット・リスク相当額の計測対象に含むものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Internal CVA hedge transactions must be composed of positions of the CVA desk and positions of trading desks that completely offset each other, and "},
+    {"clause_type": "enumeration_stem", "text": "market risk equivalent amounts shall be measured as set forth in each of the following items corresponding to the case set forth in such item. "},
+    {"clause_type": "enumeration_item", "text": "(i) Where internal CVA hedge transactions do not qualify as eligible CVA hedge transactions: Positions of the CVA desk and positions of trading desks shall each be positions subject to measurement of market risk equivalent amounts, and by offsetting both positions, they shall not be included in the scope of measurement of market risk equivalent amounts. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Where internal CVA hedge transactions qualify as eligible CVA hedge transactions: Positions of trading desks shall be included in the scope of measurement of market risk equivalent amounts pursuant to the provisions of Chapter 6."}
+  ],
+  "refs": [
+    {"raw_text": "第六章", "text_en": "Chapter 6", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

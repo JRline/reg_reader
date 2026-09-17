@@ -1,0 +1,17 @@
+{
+  "feed_id": "jp-payment-services-act",
+  "title_ja": "資金決済に関する法律",
+  "title_en": "Payment Services Act",
+  "issuing_authority": "National Diet of Japan",
+  "jurisdiction": "JP",
+  "source_url": "https://laws.e-gov.go.jp/law/421AC0000000059",
+  "source_pdf": null,
+  "effective_date": null,
+  "version_label": "excerpt — Article 2, paragraph (24) only",
+  "language_pair": [
+    "ja",
+    "en"
+  ],
+  "scope_note": "Act No. 59 of 2009. This is NOT the full Act — only the specific provision cited from fsa-basel-cap-jp Chapter 2 has been digitized. Article 2 has ~28 defined-term paragraphs; only paragraph (24) is included.",
+  "related_feeds": []
+}

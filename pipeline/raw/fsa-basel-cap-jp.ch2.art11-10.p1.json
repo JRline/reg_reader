@@ -1,0 +1,24 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-10.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "内部取引によるバンキング勘定からトレーディング勘定への信用リスク及び株式リスクのリスク移転については、次の各号に掲げるリスクの区分に応じ、当該各号に定める要件を満たす場合に限り、ヘッジ効果を反映することができる。一信用リスクトレーディング勘定において、最終指定親会社等が第三者である適格プロテクション提供者との間で外部ヘッジ取引(第九十四条各号及び第九十六条各号に掲げる条件の全てを満たすヘッジ取引をいう。以下同じ。)を行い、内部取引のポジションを完全に相殺していること。二株式リスク次に掲げる要件の全てを満たすものであること。イトレーディング勘定において、最終指定親会社等が第三者である適格プロテクション提供者との間で外部ヘッジ取引を行い、内部取引のポジションを完全に相殺していること。ロその外部ヘッジ取引が、バンキング勘定の株式リスクのヘッジとして認識されていること。",
+  "text_en": "For risk transfers of credit risk and equity risk from the banking account to the trading account through internal transactions, the hedge effect may be reflected only when the requirements defined in each of the following items corresponding to the category of risk set forth in such item are satisfied. (i) Credit risk: In the trading account, the Ultimate Designated Parent Company, etc. has conducted external hedge transactions (meaning hedge transactions satisfying all of the conditions set forth in each item of Article 94 and each item of Article 96; the same applies hereinafter) with eligible protection providers that are third parties, and has completely offset the positions of internal transactions. (ii) Equity risk: All of the following requirements are satisfied: (a) In the trading account, the Ultimate Designated Parent Company, etc. has conducted external hedge transactions with eligible protection providers that are third parties and has completely offset the positions of internal transactions. (b) Such external hedge transactions are recognized as hedges of the equity risk of the banking account.",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "内部取引によるバンキング勘定からトレーディング勘定への信用リスク及び株式リスクのリスク移転については、次の各号に掲げるリスクの区分に応じ、当該各号に定める要件を満たす場合に限り、ヘッジ効果を反映することができる。"},
+    {"clause_type": "enumeration_item", "text": "一信用リスクトレーディング勘定において、最終指定親会社等が第三者である適格プロテクション提供者との間で外部ヘッジ取引(第九十四条各号及び第九十六条各号に掲げる条件の全てを満たすヘッジ取引をいう。以下同じ。)を行い、内部取引のポジションを完全に相殺していること。"},
+    {"clause_type": "enumeration_item", "text": "二株式リスク次に掲げる要件の全てを満たすものであること。イトレーディング勘定において、最終指定親会社等が第三者である適格プロテクション提供者との間で外部ヘッジ取引を行い、内部取引のポジションを完全に相殺していること。ロその外部ヘッジ取引が、バンキング勘定の株式リスクのヘッジとして認識されていること。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "For risk transfers of credit risk and equity risk from the banking account to the trading account through internal transactions, the hedge effect may be reflected only when the requirements defined in each of the following items corresponding to the category of risk set forth in such item are satisfied. "},
+    {"clause_type": "enumeration_item", "text": "(i) Credit risk: In the trading account, the Ultimate Designated Parent Company, etc. has conducted external hedge transactions (meaning hedge transactions satisfying all of the conditions set forth in each item of Article 94 and each item of Article 96; the same applies hereinafter) with eligible protection providers that are third parties, and has completely offset the positions of internal transactions. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Equity risk: All of the following requirements are satisfied: (a) In the trading account, the Ultimate Designated Parent Company, etc. has conducted external hedge transactions with eligible protection providers that are third parties and has completely offset the positions of internal transactions. (b) Such external hedge transactions are recognized as hedges of the equity risk of the banking account."}
+  ],
+  "refs": [
+    {"raw_text": "第九十四条各号", "text_en": "each item of Article 94", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第九十六条各号", "text_en": "each item of Article 96", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "外部ヘッジ取引", "term_en": "external hedge transactions", "expands_to_ja": null}
+  ]
+}

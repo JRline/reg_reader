@@ -1,0 +1,185 @@
+{
+  "feed_id": "jp-fiea-enforcement-order",
+  "root": {
+    "id": "jp-fiea-enforcement-order",
+    "type": "document",
+    "number": null,
+    "heading": null,
+    "heading_en": null,
+    "text_ja": null,
+    "text_en": null,
+    "children": [
+      {
+        "id": "jp-fiea-enforcement-order.art15-16-2",
+        "type": "article",
+        "number": "第十五条の十六の二",
+        "heading": "子会社等及び関連会社等の範囲",
+        "heading_en": "Scope of \"Subsidiary, etc.\" and \"Associate, etc.\"",
+        "text_ja": null,
+        "text_en": null,
+        "summary_ja": "「子会社等」を、単純な議決権の過半数保有ではなく意思決定機関の実質的支配で判定する定義規定。「関連会社等」は重要な影響力の有無で判定する。",
+        "summary_en": "Defines \"Subsidiary, etc.\" by de facto control over a company's decision-making body — a broader, substance-based test than the simple majority-voting-rights test used elsewhere — and \"Associate, etc.\" by whether significant influence can be exercised.",
+        "translation_status": "reviewed",
+        "clauses_ja": [],
+        "clauses_en": [],
+        "refs": [],
+        "defined_terms": [],
+        "children": [
+          {
+            "id": "jp-fiea-enforcement-order.art15-16-2.p1",
+            "type": "paragraph",
+            "number": null,
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "法第三十二条の二第二項に規定する政令で定める要件に該当する者は、次に掲げる者とする。",
+            "text_en": "A person falling under the requirements specified by Cabinet Order as provided in Article 32-2, paragraph (2) of the Act shall be as follows.",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "法第三十二条の二第二項に規定する政令で定める要件に該当する者は、次に掲げる者とする。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "A person falling under the requirements specified by Cabinet Order as provided in Article 32-2, paragraph (2) of the Act shall be as follows."
+              }
+            ],
+            "refs": [],
+            "defined_terms": [],
+            "children": [
+              {
+                "id": "jp-fiea-enforcement-order.art15-16-2.p1.item1",
+                "type": "item",
+                "number": "一",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "その子会社等",
+                "text_en": "Its Subsidiary, etc.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              },
+              {
+                "id": "jp-fiea-enforcement-order.art15-16-2.p1.item2",
+                "type": "item",
+                "number": "二",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "その関連会社等",
+                "text_en": "Its Associate, etc.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "jp-fiea-enforcement-order.art15-16-2.p2",
+            "type": "paragraph",
+            "number": "２",
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "前項第一号の「子会社等」とは、親会社等(他の会社等の財務及び営業又は事業の方針を決定する機関(株主総会その他これに準ずる機関をいう。)を支配している会社等として内閣府令で定めるものをいう。)によりその意思決定機関を支配されている他の会社等をいう。この場合において、親会社等及び子会社等又は子会社等が他の会社等の意思決定機関を支配している場合における当該他の会社等は、その親会社等の子会社等とみなす。",
+            "text_en": "The term \"Subsidiary, etc.\" in paragraph (1), item (i) means another company, etc. whose decision-making body is controlled by a Parent Company, etc. (meaning a company, etc. specified by Cabinet Office Ordinance as controlling the body that determines another company, etc.'s financial and business or operational policy (meaning the shareholders' meeting or an equivalent body)). In this case, where a Parent Company, etc. and its Subsidiary, etc., or a Subsidiary, etc. alone, controls the decision-making body of another company, etc., that other company, etc. is deemed to be a Subsidiary, etc. of the Parent Company, etc.",
+            "clauses_ja": [
+              {
+                "clause_type": "definition",
+                "text": "前項第一号の「子会社等」とは、親会社等(他の会社等の財務及び営業又は事業の方針を決定する機関(株主総会その他これに準ずる機関をいう。)を支配している会社等として内閣府令で定めるものをいう。)によりその意思決定機関を支配されている他の会社等をいう。"
+              },
+              {
+                "clause_type": "main",
+                "text": "この場合において、親会社等及び子会社等又は子会社等が他の会社等の意思決定機関を支配している場合における当該他の会社等は、その親会社等の子会社等とみなす。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "definition",
+                "text": "The term \"Subsidiary, etc.\" in paragraph (1), item (i) means another company, etc. whose decision-making body is controlled by a Parent Company, etc. (meaning a company, etc. specified by Cabinet Office Ordinance as controlling the body that determines another company, etc.'s financial and business or operational policy (meaning the shareholders' meeting or an equivalent body)). "
+              },
+              {
+                "clause_type": "main",
+                "text": "In this case, where a Parent Company, etc. and its Subsidiary, etc., or a Subsidiary, etc. alone, controls the decision-making body of another company, etc., that other company, etc. is deemed to be a Subsidiary, etc. of the Parent Company, etc."
+              }
+            ],
+            "refs": [
+              {
+                "raw_text": "前項第一号",
+                "text_en": "paragraph (1), item (i)",
+                "scope": "internal",
+                "external_name": null,
+                "target_ids": [
+                  "jp-fiea-enforcement-order.art15-16-2.p1"
+                ],
+                "target_feed": "jp-fiea-enforcement-order",
+                "resolution_status": "resolved",
+                "external_item_summary_ja": null,
+                "external_item_summary_en": null,
+                "external_item_summary_confidence": null
+              }
+            ],
+            "defined_terms": [
+              {
+                "term_ja": "子会社等",
+                "term_en": "Subsidiary, etc.",
+                "definition_node_id": "jp-fiea-enforcement-order.art15-16-2.p2",
+                "expands_to_ja": null
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "jp-fiea-enforcement-order.art15-16-2.p3",
+            "type": "paragraph",
+            "number": "３",
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "第一項第二号の「関連会社等」とは、会社等(当該会社等の子会社等を含む。)が出資、取締役その他これに準ずる役職への当該会社等の役員若しくは使用人である者若しくはこれらであつた者の就任、融資、債務の保証若しくは担保の提供、技術の提供又は営業上若しくは事業上の取引等を通じて、財務及び営業又は事業の方針の決定に対して重要な影響を与えることができる他の会社等(子会社等を除く。)として内閣府令で定めるものをいう。",
+            "text_en": "The term \"Associate, etc.\" in paragraph (1), item (ii) means another company, etc. (excluding a Subsidiary, etc.), specified by Cabinet Office Ordinance, over whose determination of financial and business or operational policy a company, etc. (including its Subsidiary, etc.) is able to exercise significant influence, through means such as an equity investment, the appointment of that company's officers or employees (or former officers or employees) to directorships or equivalent positions, the extension of loans, the guarantee of debts or provision of collateral, the provision of technology, or business or commercial transactions.",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "第一項第二号の「関連会社等」とは、会社等(当該会社等の子会社等を含む。)が出資、取締役その他これに準ずる役職への当該会社等の役員若しくは使用人である者若しくはこれらであつた者の就任、融資、債務の保証若しくは担保の提供、技術の提供又は営業上若しくは事業上の取引等を通じて、財務及び営業又は事業の方針の決定に対して重要な影響を与えることができる他の会社等(子会社等を除く。)として内閣府令で定めるものをいう。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "The term \"Associate, etc.\" in paragraph (1), item (ii) means another company, etc. (excluding a Subsidiary, etc.), specified by Cabinet Office Ordinance, over whose determination of financial and business or operational policy a company, etc. (including its Subsidiary, etc.) is able to exercise significant influence, through means such as an equity investment, the appointment of that company's officers or employees (or former officers or employees) to directorships or equivalent positions, the extension of loans, the guarantee of debts or provision of collateral, the provision of technology, or business or commercial transactions."
+              }
+            ],
+            "refs": [
+              {
+                "raw_text": "第一項第二号",
+                "text_en": "paragraph (1), item (ii)",
+                "scope": "internal",
+                "external_name": null,
+                "target_ids": [
+                  "jp-fiea-enforcement-order.art15-16-2.p1"
+                ],
+                "target_feed": "jp-fiea-enforcement-order",
+                "resolution_status": "resolved",
+                "external_item_summary_ja": null,
+                "external_item_summary_en": null,
+                "external_item_summary_confidence": null
+              }
+            ],
+            "defined_terms": [
+              {
+                "term_ja": "関連会社等",
+                "term_en": "Associate, etc.",
+                "definition_node_id": "jp-fiea-enforcement-order.art15-16-2.p3",
+                "expands_to_ja": null
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "regulation-reader",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["pipeline/serve_no_cache.py", "8881"],
+      "port": 8881
+    }
+  ]
+}

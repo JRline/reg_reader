@@ -1,0 +1,17 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-9.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "内部取引によるバンキング勘定からトレーディング勘定へのリスク移転については、次条から第十一条の十二までに定めるところによる。",
+  "text_en": "Risk transfers from the banking account to the trading account through internal transactions shall be governed by the provisions of the following Article through Article 11-12.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "内部取引によるバンキング勘定からトレーディング勘定へのリスク移転については、次条から第十一条の十二までに定めるところによる。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Risk transfers from the banking account to the trading account through internal transactions shall be governed by the provisions of the following Article through Article 11-12."}
+  ],
+  "refs": [
+    {"raw_text": "次条から第十一条の十二まで", "text_en": "the following Article through Article 11-12", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art9.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "前項の規定により金融業務を営む関連会社等を比例連結の方法により連結の範囲に含めて連結自己資本規制比率を算出したときは、その算出方法の使用を中断する旨をあらかじめ金融庁長官に届け出た場合を除き、これを継続して用いるものとする。",
+  "text_en": "When the consolidated capital adequacy ratio has been calculated by including affiliated companies, etc. engaged in financial business in the scope of consolidation using the proportional consolidation method pursuant to the provisions of the preceding paragraph, such calculation method shall continue to be used, except where prior notice of the intention to discontinue the use of such calculation method has been given to the Commissioner of the Financial Services Agency.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "前項の規定により金融業務を営む関連会社等を比例連結の方法により連結の範囲に含めて連結自己資本規制比率を算出したときは、"},
+    {"clause_type": "exception", "text": "その算出方法の使用を中断する旨をあらかじめ金融庁長官に届け出た場合を除き、"},
+    {"clause_type": "main", "text": "これを継続して用いるものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "When the consolidated capital adequacy ratio has been calculated by including affiliated companies, etc. engaged in financial business in the scope of consolidation using the proportional consolidation method pursuant to the provisions of the preceding paragraph, "},
+    {"clause_type": "exception", "text": "except where prior notice of the intention to discontinue the use of such calculation method has been given to the Commissioner of the Financial Services Agency, "},
+    {"clause_type": "main", "text": "such calculation method shall continue to be used."}
+  ],
+  "refs": [
+    {"raw_text": "前項", "text_en": "the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

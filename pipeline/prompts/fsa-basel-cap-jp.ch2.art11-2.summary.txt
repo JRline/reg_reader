@@ -1,0 +1,10 @@
+You will be given the full text of one Article of Japanese regulatory text, with its
+official English translation. Write a one-sentence, plain-language summary of what this
+Article actually requires or establishes — the kind of line a compliance officer would
+want as a preview before deciding whether to read the full text. Do not just restate the
+heading. Output ONLY this JSON object, no prose:
+
+{"summary_ja": "<one sentence, plain Japanese>", "summary_en": "<one sentence, plain English>"}
+
+Japanese text: """最終指定親会社等は、その保有する商品を分類するためにトレーディング勘定及びバンキング勘定を設け、次条及び第十一条の四に定めるところにより、その保有する商品をいずれかの勘定に分類するものとする。"""
+English text: """Ultimate Designated Parent Companies, etc. shall establish trading accounts and banking accounts for the purpose of classifying products they hold, and shall classify products they hold into one of such accounts pursuant to the provisions of the following Article and Article 11-4."""

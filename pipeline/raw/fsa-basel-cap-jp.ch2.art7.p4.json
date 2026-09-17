@@ -1,0 +1,32 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art7.p4",
+  "number": "４",
+  "heading": null,
+  "text_ja": "第一項第四号に掲げる特別目的会社等の発行するTier2資本調達手段の額は、特別目的会社等の資本調達手段のうち、次に掲げる要件の全てを満たすもの(前条第三項各号に掲げる要件の全てを満たすものを除く。)の額とする。一当該特別目的会社等の発行する資本調達手段がその他Tier1資本調達手段(前条第四項に規定するその他Tier1資本調達手段をいう。以下この章において同じ。)又はTier2資本調達手段に該当するものであること。二当該特別目的会社等の発行する資本調達手段の発行代り金の全額を当該特別目的会社等の親会社等である最終指定親会社が即時かつ無制限に利用可能であること。三前号の発行代り金を利用するために発行される資本調達手段がその他Tier1資本調達手段又はTier2資本調達手段に該当するものであること。四当該特別目的会社等の親会社等である最終指定親会社がその総株主等の議決権の全てを保有すること。",
+  "text_en": "The amount of Tier 2 Capital instruments issued by special purpose companies, etc. set forth in paragraph (1), item (iv) shall be the amount of capital instruments of special purpose companies, etc. that satisfy all of the following requirements (excluding those that satisfy all of the requirements of each item of paragraph (3) of the preceding Article). (i) That the capital instruments issued by such special purpose company, etc. qualify as Additional Tier 1 Capital instruments (meaning Additional Tier 1 Capital instruments as provided in paragraph (4) of the preceding Article; the same applies hereinafter in this Chapter) or Tier 2 Capital instruments. (ii) That the entire proceeds from the issuance of capital instruments issued by such special purpose company, etc. are immediately and unconditionally available to the Ultimate Designated Parent Company that is the parent company, etc. of such special purpose company, etc. (iii) That the capital instruments issued to utilize the proceeds set forth in the preceding item qualify as Additional Tier 1 Capital instruments or Tier 2 Capital instruments. (iv) That the Ultimate Designated Parent Company that is the parent company, etc. of such special purpose company, etc. holds all of the voting rights of all shareholders, etc. of such special purpose company, etc.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "第一項第四号に掲げる特別目的会社等の発行するTier2資本調達手段の額は、特別目的会社等の資本調達手段のうち、次に掲げる要件の全てを満たすもの"},
+    {"clause_type": "parenthetical", "text": "(前条第三項各号に掲げる要件の全てを満たすものを除く。)"},
+    {"clause_type": "enumeration_stem", "text": "の額とする。"},
+    {"clause_type": "enumeration_item", "text": "一当該特別目的会社等の発行する資本調達手段がその他Tier1資本調達手段(前条第四項に規定するその他Tier1資本調達手段をいう。以下この章において同じ。)又はTier2資本調達手段に該当するものであること。"},
+    {"clause_type": "enumeration_item", "text": "二当該特別目的会社等の発行する資本調達手段の発行代り金の全額を当該特別目的会社等の親会社等である最終指定親会社が即時かつ無制限に利用可能であること。"},
+    {"clause_type": "enumeration_item", "text": "三前号の発行代り金を利用するために発行される資本調達手段がその他Tier1資本調達手段又はTier2資本調達手段に該当するものであること。"},
+    {"clause_type": "enumeration_item", "text": "四当該特別目的会社等の親会社等である最終指定親会社がその総株主等の議決権の全てを保有すること。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "The amount of Tier 2 Capital instruments issued by special purpose companies, etc. set forth in paragraph (1), item (iv) shall be the amount of capital instruments of special purpose companies, etc. that satisfy all of the following requirements "},
+    {"clause_type": "parenthetical", "text": "(excluding those that satisfy all of the requirements of each item of paragraph (3) of the preceding Article) "},
+    {"clause_type": "enumeration_stem", "text": "— "},
+    {"clause_type": "enumeration_item", "text": "(i) That the capital instruments issued by such special purpose company, etc. qualify as Additional Tier 1 Capital instruments (meaning Additional Tier 1 Capital instruments as provided in paragraph (4) of the preceding Article; the same applies hereinafter in this Chapter) or Tier 2 Capital instruments. "},
+    {"clause_type": "enumeration_item", "text": "(ii) That the entire proceeds from the issuance of capital instruments issued by such special purpose company, etc. are immediately and unconditionally available to the Ultimate Designated Parent Company that is the parent company, etc. of such special purpose company, etc. "},
+    {"clause_type": "enumeration_item", "text": "(iii) That the capital instruments issued to utilize the proceeds set forth in the preceding item qualify as Additional Tier 1 Capital instruments or Tier 2 Capital instruments. "},
+    {"clause_type": "enumeration_item", "text": "(iv) That the Ultimate Designated Parent Company that is the parent company, etc. of such special purpose company, etc. holds all of the voting rights of all shareholders, etc. of such special purpose company, etc."}
+  ],
+  "refs": [
+    {"raw_text": "第一項第四号", "text_en": "paragraph (1), item (iv)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "前条第三項各号", "text_en": "each item of paragraph (3) of the preceding Article", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "前条第四項", "text_en": "paragraph (4) of the preceding Article", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "前号", "text_en": "the preceding item", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

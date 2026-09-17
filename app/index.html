@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regulation Reader</title>
+<script>
+  // Cache-bust on every load: this app is under active pipeline-driven development, and
+  // browsers were observed serving a stale style.css/app.js via heuristic caching even
+  // across a hard reload (no server Cache-Control header to override it). A fresh query
+  // string each load sidesteps that entirely rather than fighting browser cache heuristics.
+  document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');
+</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <select id="feed-picker" aria-label="Select regulation"></select>
+    </div>
+    <div class="topbar-right">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button id="lang-ja" class="lang-btn active" data-lang="ja">日本語</button>
+        <button id="lang-en" class="lang-btn" data-lang="en">English</button>
+      </div>
+      <label class="toggle">
+        <input type="checkbox" id="toggle-clauses" checked>
+        <span id="cues-label">Cues</span>
+      </label>
+      <button id="text-smaller" title="Smaller text" aria-label="Smaller text">A-</button>
+      <button id="text-larger" title="Larger text" aria-label="Larger text">A+</button>
+      <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav id="toc" class="toc" aria-label="Table of contents"></nav>
+    <main id="reader" class="reader" aria-live="polite"></main>
+  </div>
+
+  <div id="ref-popover" class="ref-popover" hidden></div>
+
+  <script>
+    document.write('<scr' + 'ipt src="app.js?v=' + Date.now() + '"></scr' + 'ipt>');
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-8.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "最終指定親会社等は、勘定間の振替について、次に掲げる事項その他必要な事項を定めた方針を策定するものとする。一勘定間の振替に係る制限の内容及び当該制限に係る変更の要件二当該方針に係る取締役会の承認手続三例外的事象を特定する方法四勘定間の振替に係る開示方法",
+  "text_en": "Ultimate Designated Parent Companies, etc. shall formulate policies setting forth the following matters and other necessary matters relating to transfers between accounts. (i) The content of restrictions relating to transfers between accounts and requirements for changes to such restrictions. (ii) Approval procedures by the board of directors relating to such policies. (iii) Methods for identifying exceptional events. (iv) Methods of disclosure relating to transfers between accounts.",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "最終指定親会社等は、勘定間の振替について、次に掲げる事項その他必要な事項を定めた方針を策定するものとする。"},
+    {"clause_type": "enumeration_item", "text": "一勘定間の振替に係る制限の内容及び当該制限に係る変更の要件"},
+    {"clause_type": "enumeration_item", "text": "二当該方針に係る取締役会の承認手続"},
+    {"clause_type": "enumeration_item", "text": "三例外的事象を特定する方法"},
+    {"clause_type": "enumeration_item", "text": "四勘定間の振替に係る開示方法"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "Ultimate Designated Parent Companies, etc. shall formulate policies setting forth the following matters and other necessary matters relating to transfers between accounts. "},
+    {"clause_type": "enumeration_item", "text": "(i) The content of restrictions relating to transfers between accounts and requirements for changes to such restrictions. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Approval procedures by the board of directors relating to such policies. "},
+    {"clause_type": "enumeration_item", "text": "(iii) Methods for identifying exceptional events. "},
+    {"clause_type": "enumeration_item", "text": "(iv) Methods of disclosure relating to transfers between accounts."}
+  ],
+  "refs": [],
+  "defined_terms": []
+}

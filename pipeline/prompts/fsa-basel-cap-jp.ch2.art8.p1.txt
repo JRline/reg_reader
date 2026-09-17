@@ -1,0 +1,76 @@
+You are populating structured data for a Japanese regulatory text reader. You will be given
+one Article of Japanese legal/regulatory text. Output ONLY a single JSON object — no prose,
+no markdown fences, no explanation before or after.
+
+Known issue in the source text: mathematical formulas in the original PDF were embedded
+as images, not text, so they were lost during extraction. You may see a sentence like
+"次の算式により得られる比率について" (regarding the ratio obtained by the following
+formula) with nothing after it. This is expected — do NOT invent, reconstruct, or guess
+at a formula that isn't present in the source text given to you. Translate faithfully
+around the gap and move on; its absence is not an error for you to fix.
+
+Context (do not translate, for your reference only): Article 第八条 (調整後非支配株主持分等の額及び調整項目の額の算出方法) — this is paragraph 1 of 9
+
+Source text (Japanese, verbatim, id=fsa-basel-cap-jp.ch2.art8.p1):
+"""
+第五条第一項第四号、第六条第一項第五号及び第七条第一項第五号に掲げる額は、次に定めるところにより算出した額とする。一第五条第一項第四号に掲げる普通株式等Tier1資本に係る調整後非支配株主持分の額は、特定連結子法人等(連結子法人等(特別目的会社等を除く。以下この条において同じ。)のうち金融機関又はバーゼル銀行監督委員会の定める自己資本比率の基準若しくはこれと類似の基準(法第四十六条の六に定める自己資本規制比率を含む。第三十一条において同じ。)の適用を受ける者をいう。以下この号において同じ。)の非支配株主持分相当普通株式等Tier1資本に係る基礎項目の額(特定連結子法人等の単体普通株式等Tier1資本に係る基礎項目の額(第二条第一号の算式の分子の額の算出方法における普通株式等Tier1資本に係る基礎項目の額又はこれに相当する額をいう。以下この号において同じ。)のうち当該特定連結子法人等の最終指定親会社の連結貸借対照表の純資産の部に株式引受権、新株予約権又は非支配株主持分として計上される部分の額(当該額が零を下回る場合にあっては、零とする。)をいう。以下この号において同じ。)のうち次に掲げる額のいずれか少ない額に普通株式等Tier1資本に係る第三者持分割合(特定連結子法人等の非支配株主持分相当普通株式等Tier1資本に係る基礎項目の額を単体普通株式等Tier1資本に係る基礎項目の額で除して得た割合をいう。)を乗じて得た額以下の額とする。イ当該特定連結子法人等の第二条各号の算式の分母の額に相当する額に七パーセントを乗じて得た額ロ第二条各号の算式の分母の額のうち当該特定連結子法人等に関連するものの額(当該特定連結子法人等の同条各号の算式の分母の額に相当する額に関連するものの額をいう。)に七パーセントを乗じて得た額二第六条第一項第五号に掲げるその他Tier1資本に係る調整後非支配株主持分等の額は、連結子法人等の非支配株主持分等相当Tier1資本に係る基礎項目の額(連結子法人等の単体Tier1資本に係る基礎項目の額(第二条第一号の算式の分子の額の算出方法における普通株式等Tier1資本に係る基礎項目の額及び同条第二号の算式の分子の額の算出方法におけるその他Tier1資本に係る基礎項目の額の合計額又はこれに相当する額をいう。以下この項において同じ。)のうち当該連結子法人等の最終指定親会社の連結貸借対照表の純資産の部又は負債の部に株式引受権、新株予約権若しくは非支配株主持分又は負債として計上される部分の額(当該額が零を下回る場合にあっては、零とする。)をいう。以下この号において同じ。)のうち次に掲げる額のいずれか少ない額にTier1資本に係る第三者持分割合(連結子法人等の非支配株主持分等相当Tier1資本に係る基礎項目の額を単体Tier1資本に係る基礎項目の額で除して得た割合をいう。)を乗じて得た額以下の額から、第五条第一項第四号に掲げる額を控除した額とする。イ当該連結子法人等の第二条各号の算式の分母の額に相当する額に八・五パーセントを乗じて得た額ロ第二条各号の算式の分母の額のうち当該連結子法人等に関連するものの額(当該連結子法人等の同条各号の算式の分母の額に相当する額に関連するものの額をいう。)に八・五パーセントを乗じて得た額三第七条第一項第五号に掲げるTier2資本に係る調整後非支配株主持分等の額は、連結子法人等の非支配株主持分等相当総自己資本に係る基礎項目の額(連結子法人等の単体総自己資本に係る基礎項目の額(連結子法人等の単体Tier1資本に係る基礎項目の額及び第二条第三号の算式の分子の額の算出方法におけるTier2資本に係る基礎項目の額の合計額又はこれに相当する額をいう。以下この号において同じ。)のうち当該連結子法人等の最終指定親会社の連結貸借対照表の純資産の部又は負債の部に株式引受権、新株予約権若しくは非支配株主持分又は負債として計上される部分の額(当該額が零を下回る場合にあっては、零とする。)をいう。以下この号において同じ。)のうち次に掲げる額のいずれか少ない額に総自己資本に係る第三者持分割合(連結子法人等の非支配株主持分等相当総自己資本に係る基礎項目の額を単体総自己資本に係る基礎項目の額で除して得た割合をいう。)を乗じて得た額以下の額から、第五条第一項第四号及び第六条第一項第五号に掲げる額の合計額を控除した額とする。イ当該連結子法人等の第二条各号の算式の分母の額に相当する額に十・五パーセントを乗じて得た額ロ第二条各号の算式の分母の額のうち当該連結子法人等に関連するものの額(当該連結子法人等の同条各号の算式の分母の額に相当する額に関連するものの額をいう。)に十・五パーセントを乗じて得た額
+"""
+
+Produce JSON with exactly this shape:
+
+{
+  "id": "fsa-basel-cap-jp.ch2.art8.p1",
+  "number": null,
+  "heading": "調整後非支配株主持分等の額及び調整項目の額の算出方法",
+  "text_ja": "<verbatim copy of the source text>",
+  "text_en": "<accurate English translation, preserving legal register>",
+  "clauses_ja": [
+    {"clause_type": "<one of: main, conditional, proviso, exception,
+                      enumeration_stem, enumeration_item, parenthetical, definition>",
+     "text": "<verbatim substring of text_ja>"}
+    // Break text_ja into ordered clauses covering the whole sentence.
+    // Concatenating all "text" fields in order must reconstruct the original text_ja exactly.
+    // Use "conditional" for 場合/とき clauses, "proviso" for ただし-clauses,
+    // "parenthetical" for kakko (　) asides, "enumeration_stem" for the sentence introducing
+    // a 一/二/三 list and "enumeration_item" for each numbered item.
+  ],
+  "clauses_en": [
+    {"clause_type": "<same enum as above>", "text": "<verbatim substring of text_en>"}
+    // Independently break text_en into ordered clauses covering the whole English sentence.
+    // Concatenating all "text" fields in order must reconstruct text_en exactly. Does NOT need
+    // the same clause count as clauses_ja, but the clause_type sequence should tell the same
+    // structural story.
+  ],
+  "refs": [
+    {"raw_text": "<verbatim citation phrase, e.g. 前条第二項>",
+     "text_en": "<the corresponding phrase as it appears in text_en>",
+     "scope": "internal | external",
+     "external_name": "<law/notification name if scope=external, else null>",
+     "external_item_summary_ja": "<see below, else null>",
+     "external_item_summary_en": "<see below, else null>",
+     "external_item_summary_confidence": "<stated_in_text | general_knowledge | null>"}
+    // List every cross-reference found in text_ja, INCLUDING ones that appear only inside a
+    // parenthetical/kakko aside — do not skip a citation just because it's inside brackets.
+    // Do not attempt to resolve a target id — just extract the citation phrase exactly as
+    // written, in both languages.
+    //
+    // For scope=external refs ONLY, also fill in external_item_summary_*: a one-line
+    // description of what THAT SPECIFIC cited article/paragraph/item says — NOT a summary of
+    // the external law as a whole. If the citing sentence already explains the cited provision
+    // inline (e.g. "...をいう"), restate that and set confidence "stated_in_text". Otherwise
+    // give your best general-knowledge understanding and set confidence "general_knowledge" —
+    // this must be visibly flagged as unverified in the reader, never presented as fact.
+  ],
+  "defined_terms": [
+    {"term_ja": "<term>", "term_en": "<your translation of the term>",
+     "expands_to_ja": "<see below, else null>"}
+    // Only terms explicitly defined in THIS text (e.g. "...という。" pattern), not terms
+    // merely used.
+    // Set expands_to_ja ONLY when this term is a shorthand for a longer Japanese phrase
+    // named earlier in the same sentence (e.g. a term standing in for an ordinance's
+    // full name). Leave null for a term that's being coined/glossed rather than
+    // abbreviating something. Never put an English translation in this field.
+  ]
+}
+
+If a field has nothing to report, use an empty array — never omit a key.

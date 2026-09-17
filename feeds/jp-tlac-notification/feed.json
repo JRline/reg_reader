@@ -1,0 +1,223 @@
+{
+  "feed_id": "jp-tlac-notification",
+  "root": {
+    "id": "jp-tlac-notification",
+    "type": "document",
+    "number": null,
+    "heading": null,
+    "heading_en": null,
+    "text_ja": null,
+    "text_en": null,
+    "children": [
+      {
+        "id": "jp-tlac-notification.art1",
+        "type": "article",
+        "number": "第一条",
+        "heading": "定義",
+        "heading_en": "Definitions",
+        "text_ja": null,
+        "text_en": null,
+        "summary_ja": "この告示で使う用語の定義規定（全14号のうち、他規則から引用されている第九号・第十号のみ抜粋）。",
+        "summary_en": "Defines terms used throughout this notification (14 items in the full article; only items (ix) and (x), the ones cited elsewhere, are excerpted here).",
+        "translation_status": "reviewed",
+        "clauses_ja": [],
+        "clauses_en": [],
+        "refs": [],
+        "defined_terms": [],
+        "children": [
+          {
+            "id": "jp-tlac-notification.art1.p1",
+            "type": "paragraph",
+            "number": null,
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "この告示において、次の各号に掲げる用語の意義は、当該各号に定めるところによる。",
+            "text_en": "In this notification, the meaning of each term listed in the following items shall be as prescribed in that item.",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "この告示において、次の各号に掲げる用語の意義は、当該各号に定めるところによる。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "In this notification, the meaning of each term listed in the following items shall be as prescribed in that item."
+              }
+            ],
+            "refs": [],
+            "defined_terms": [],
+            "children": [
+              {
+                "id": "jp-tlac-notification.art1.p1.item9",
+                "type": "item",
+                "number": "九",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "国内処理対象最終指定親会社グループ　別表の第一欄に掲げる区分に応じ、グループとしての望ましい破綻処理戦略に鑑み一体として処理するものとしてそれぞれ同表の第二欄に掲げる最終指定親会社及びその子法人等をいう。",
+                "text_en": "Domestically Resolved Ultimate Designated Parent Company Group. Means, for each category listed in column 1 of the attached table, the Ultimate Designated Parent Company and its subsidiary juridical persons, etc. listed in column 2 of that table, treated as a single group for resolution in light of the group's preferred resolution strategy.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [
+                  {
+                    "term_ja": "国内処理対象最終指定親会社グループ",
+                    "term_en": "Domestically Resolved Ultimate Designated Parent Company Group",
+                    "definition_node_id": "jp-tlac-notification.art1.p1.item9",
+                    "expands_to_ja": null
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "jp-tlac-notification.art1.p1.item10",
+                "type": "item",
+                "number": "十",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "最低所要リスク・アセットベースTLAC比率　別表の第一欄に掲げる区分に応じ、それぞれ同表の第三欄に掲げる比率をいう。",
+                "text_en": "Minimum Required Risk-Asset-Based TLAC Ratio. Means, for each category listed in column 1 of the attached table, the ratio listed in column 3 of that table.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [
+                  {
+                    "term_ja": "最低所要リスク・アセットベースTLAC比率",
+                    "term_en": "Minimum Required Risk-Asset-Based TLAC Ratio",
+                    "definition_node_id": "jp-tlac-notification.art1.p1.item10",
+                    "expands_to_ja": null
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "jp-tlac-notification.art1.p1.items-other",
+                "type": "item",
+                "number": "他の号",
+                "heading": "（この抜粋では省略）",
+                "heading_en": "(elided in this excerpt)",
+                "text_ja": null,
+                "text_en": "Items other than (ix) and (x) define further terms (risk-weighted asset amount, total exposure amount, common equity, various TLAC ratios and adjustment coefficients, etc., mostly cross-referencing an attached table) — not needed for the citations this excerpt exists to resolve, so not translated here.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "jp-tlac-notification.art2",
+        "type": "article",
+        "number": "第二条",
+        "heading": "外部TLAC比率の計算方法",
+        "heading_en": "Method of Calculating the External TLAC Ratio",
+        "text_ja": null,
+        "text_en": null,
+        "summary_ja": "国内処理対象最終指定親会社グループの外部TLAC比率（リスク・アセットベース／総エクスポージャーベース）の最低基準を定める条文。",
+        "summary_en": "Sets the minimum external TLAC ratios (risk-asset-based and total-exposure-based) required of a Domestically Resolved Ultimate Designated Parent Company Group.",
+        "translation_status": "reviewed",
+        "clauses_ja": [],
+        "clauses_en": [],
+        "refs": [],
+        "defined_terms": [],
+        "children": [
+          {
+            "id": "jp-tlac-notification.art2.p1",
+            "type": "paragraph",
+            "number": null,
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "最終指定親会社が最終指定親会社及びその子法人等の経営の健全性を判断するための基準として定める総損失吸収力及び資本再構築力に係る健全性の状況を表示する基準であって、当該最終指定親会社が国内処理対象最終指定親会社である場合における国内処理対象最終指定親会社グループの外部総損失吸収力及び資本再構築力に係る最低基準は、当該国内処理対象最終指定親会社グループに係る次の各号に掲げる比率(以下「外部TLAC比率」と総称する。)の区分に応じ、当該各号に定めるところによる。",
+            "text_en": "The standard indicating the state of soundness relating to total loss-absorbing capacity and recapitalization capacity that an Ultimate Designated Parent Company sets as a criterion for judging the soundness of management of itself and its subsidiary juridical persons, etc. — where that Ultimate Designated Parent Company is a Domestically Resolved Ultimate Designated Parent Company — the minimum standard relating to the external total loss-absorbing capacity and recapitalization capacity of the Domestically Resolved Ultimate Designated Parent Company Group shall, for each of the ratios listed in the following items relating to that Group (collectively, the \"External TLAC Ratio\"), be as prescribed in that item.",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "最終指定親会社が最終指定親会社及びその子法人等の経営の健全性を判断するための基準として定める総損失吸収力及び資本再構築力に係る健全性の状況を表示する基準であって、当該最終指定親会社が国内処理対象最終指定親会社である場合における国内処理対象最終指定親会社グループの外部総損失吸収力及び資本再構築力に係る最低基準は、当該国内処理対象最終指定親会社グループに係る次の各号に掲げる比率(以下「外部TLAC比率」と総称する。)の区分に応じ、当該各号に定めるところによる。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "The standard indicating the state of soundness relating to total loss-absorbing capacity and recapitalization capacity that an Ultimate Designated Parent Company sets as a criterion for judging the soundness of management of itself and its subsidiary juridical persons, etc. — where that Ultimate Designated Parent Company is a Domestically Resolved Ultimate Designated Parent Company — the minimum standard relating to the external total loss-absorbing capacity and recapitalization capacity of the Domestically Resolved Ultimate Designated Parent Company Group shall, for each of the ratios listed in the following items relating to that Group (collectively, the \"External TLAC Ratio\"), be as prescribed in that item."
+              }
+            ],
+            "refs": [],
+            "defined_terms": [],
+            "children": [
+              {
+                "id": "jp-tlac-notification.art2.p1.item1",
+                "type": "item",
+                "number": "一",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "リスク・アセットベース外部TLAC比率　次の算式により得られる比率について最低所要リスク・アセットベースTLAC比率以上",
+                "text_en": "Risk-Asset-Based External TLAC Ratio: the ratio obtained by the following formula shall be at or above the Minimum Required Risk-Asset-Based TLAC Ratio.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              },
+              {
+                "id": "jp-tlac-notification.art2.p1.item2",
+                "type": "item",
+                "number": "二",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "総エクスポージャーベース外部TLAC比率　次の算式により得られる比率について最低所要総エクスポージャーベースTLAC比率以上",
+                "text_en": "Total-Exposure-Based External TLAC Ratio: the ratio obtained by the following formula shall be at or above the Minimum Required Total-Exposure-Based TLAC Ratio.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "jp-tlac-notification.art2.p2",
+            "type": "paragraph",
+            "number": "２",
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "国内処理対象最終指定親会社は、本邦における秩序ある処理の実施に当たり預金保険機構に事前に積み立てられた資金を資本再構築に用いることができる場合には、外部TLAC比率の算出に当たり、リスク・アセットの額に三・五パーセントを乗じて得た額を前項各号の分子に加えることができる。",
+            "text_en": "Where a Domestically Resolved Ultimate Designated Parent Company may use funds pre-funded with the Deposit Insurance Corporation for recapitalization in carrying out orderly resolution in Japan, it may, in calculating its External TLAC Ratio, add to the numerator of each item of the preceding paragraph an amount obtained by multiplying the risk-weighted asset amount by 3.5 percent.",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "国内処理対象最終指定親会社は、本邦における秩序ある処理の実施に当たり預金保険機構に事前に積み立てられた資金を資本再構築に用いることができる場合には、外部TLAC比率の算出に当たり、リスク・アセットの額に三・五パーセントを乗じて得た額を前項各号の分子に加えることができる。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "Where a Domestically Resolved Ultimate Designated Parent Company may use funds pre-funded with the Deposit Insurance Corporation for recapitalization in carrying out orderly resolution in Japan, it may, in calculating its External TLAC Ratio, add to the numerator of each item of the preceding paragraph an amount obtained by multiplying the risk-weighted asset amount by 3.5 percent."
+              }
+            ],
+            "refs": [
+              {
+                "raw_text": "前項各号",
+                "text_en": "each item of the preceding paragraph",
+                "scope": "internal",
+                "external_name": null,
+                "target_ids": [
+                  "jp-tlac-notification.art2.p1"
+                ],
+                "target_feed": "jp-tlac-notification",
+                "resolution_status": "resolved",
+                "external_item_summary_ja": null,
+                "external_item_summary_en": null,
+                "external_item_summary_confidence": null
+              }
+            ],
+            "defined_terms": [],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

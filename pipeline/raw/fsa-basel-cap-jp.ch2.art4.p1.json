@@ -1,0 +1,25 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art4.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "前三条の規定にかかわらず、最終指定親会社は、特別金融商品取引業者及びその子法人等の保有する資産等に照らし当該特別金融商品取引業者及びその子法人等の自己資本の充実の状況が適当であるかどうかを判断するための基準を定める件(平成二十二年金融庁告示第百二十八号。以下「特別金融商品取引業者に対する連結自己資本規制比率告示」という。)の例により、連結自己資本規制比率を算出することができる。この場合において、最終指定親会社及びその子法人等の自己資本の充実の状況が適当であるかどうかを判断するための基準は、連結自己資本規制比率が百二十パーセント以上であることとする。",
+  "text_en": "Notwithstanding the provisions of the preceding three articles, an Ultimate Designated Parent Company may calculate the Consolidated Capital Adequacy Ratio in accordance with the provisions of the Public Notice Establishing Standards for Determining Whether the Capital Adequacy Status of a Specially-Licensed Securities Business Operator and Its Subsidiary Legal Entities, etc. Is Appropriate in Light of the Assets, etc. Held by Such Specially-Licensed Securities Business Operator and Its Subsidiary Legal Entities, etc. (Financial Services Agency Public Notice No. 128 of 2010; hereinafter referred to as the \"Public Notice on the Consolidated Capital Adequacy Ratio for Specially-Licensed Securities Business Operators\"). In such case, the standard for determining whether the capital adequacy status of the Ultimate Designated Parent Company and its subsidiary legal entities, etc. is appropriate shall be that the Consolidated Capital Adequacy Ratio is 120% or more.",
+  "clauses_ja": [
+    {"clause_type": "exception", "text": "前三条の規定にかかわらず、最終指定親会社は、特別金融商品取引業者及びその子法人等の保有する資産等に照らし当該特別金融商品取引業者及びその子法人等の自己資本の充実の状況が適当であるかどうかを判断するための基準を定める件"},
+    {"clause_type": "parenthetical", "text": "(平成二十二年金融庁告示第百二十八号。以下「特別金融商品取引業者に対する連結自己資本規制比率告示」という。)"},
+    {"clause_type": "main", "text": "の例により、連結自己資本規制比率を算出することができる。"},
+    {"clause_type": "conditional", "text": "この場合において、最終指定親会社及びその子法人等の自己資本の充実の状況が適当であるかどうかを判断するための基準は、連結自己資本規制比率が百二十パーセント以上であることとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "exception", "text": "Notwithstanding the provisions of the preceding three articles, an Ultimate Designated Parent Company may calculate the Consolidated Capital Adequacy Ratio in accordance with the provisions of the Public Notice Establishing Standards for Determining Whether the Capital Adequacy Status of a Specially-Licensed Securities Business Operator and Its Subsidiary Legal Entities, etc. Is Appropriate in Light of the Assets, etc. Held by Such Specially-Licensed Securities Business Operator and Its Subsidiary Legal Entities, etc. "},
+    {"clause_type": "parenthetical", "text": "(Financial Services Agency Public Notice No. 128 of 2010; hereinafter referred to as the \"Public Notice on the Consolidated Capital Adequacy Ratio for Specially-Licensed Securities Business Operators\"). "},
+    {"clause_type": "conditional", "text": "In such case, the standard for determining whether the capital adequacy status of the Ultimate Designated Parent Company and its subsidiary legal entities, etc. is appropriate shall be that the Consolidated Capital Adequacy Ratio is 120% or more."}
+  ],
+  "refs": [
+    {"raw_text": "前三条", "text_en": "the preceding three articles", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "平成二十二年金融庁告示第百二十八号", "text_en": "Financial Services Agency Public Notice No. 128 of 2010", "scope": "external", "external_name": "特別金融商品取引業者及びその子法人等の保有する資産等に照らし当該特別金融商品取引業者及びその子法人等の自己資本の充実の状況が適当であるかどうかを判断するための基準を定める件", "external_item_summary_ja": "特別金融商品取引業者グループに適用される連結自己資本規制比率の算出基準を定める告示。", "external_item_summary_en": "Public notice establishing the consolidated capital adequacy ratio calculation standards applicable to specially-licensed securities business operator groups.", "external_item_summary_confidence": "stated_in_text"}
+  ],
+  "defined_terms": [
+    {"term_ja": "特別金融商品取引業者に対する連結自己資本規制比率告示", "term_en": "Public Notice on the Consolidated Capital Adequacy Ratio for Specially-Licensed Securities Business Operators", "expands_to_ja": "特別金融商品取引業者及びその子法人等の保有する資産等に照らし当該特別金融商品取引業者及びその子法人等の自己資本の充実の状況が適当であるかどうかを判断するための基準を定める件"}
+  ]
+}

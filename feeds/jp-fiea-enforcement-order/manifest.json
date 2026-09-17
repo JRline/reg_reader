@@ -1,0 +1,17 @@
+{
+  "feed_id": "jp-fiea-enforcement-order",
+  "title_ja": "金融商品取引法施行令",
+  "title_en": "Order for Enforcement of the Financial Instruments and Exchange Act",
+  "issuing_authority": "Cabinet of Japan",
+  "jurisdiction": "JP",
+  "source_url": "https://laws.e-gov.go.jp/law/340CO0000000321",
+  "source_pdf": null,
+  "effective_date": null,
+  "version_label": "excerpt — Article 15-16-2 only",
+  "language_pair": [
+    "ja",
+    "en"
+  ],
+  "scope_note": "Cabinet Order No. 321 of 1965. This is NOT the full order — only the specific provision cited from fsa-basel-cap-jp Article 6 has been digitized.",
+  "related_feeds": []
+}

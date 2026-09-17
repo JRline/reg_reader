@@ -1,0 +1,19 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art2-2.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "前項の「資本保全バッファー比率」とは、金融市場の動向又は経済情勢の変化によって生じるおそれのある損失の吸収のため資本を増強する基準となるものをいい、二・五パーセントとする。",
+  "text_en": "The \"Capital Conservation Buffer Ratio\" referred to in the preceding paragraph means the standard for strengthening capital in order to absorb losses that may arise from trends in financial markets or changes in economic conditions, and shall be 2.5%.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "前項の「資本保全バッファー比率」とは、金融市場の動向又は経済情勢の変化によって生じるおそれのある損失の吸収のため資本を増強する基準となるものをいい、二・五パーセントとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "The \"Capital Conservation Buffer Ratio\" referred to in the preceding paragraph means the standard for strengthening capital in order to absorb losses that may arise from trends in financial markets or changes in economic conditions, and shall be 2.5%."}
+  ],
+  "refs": [
+    {"raw_text": "前項", "text_en": "the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "資本保全バッファー比率", "term_en": "Capital Conservation Buffer Ratio", "expands_to_ja": null}
+  ]
+}

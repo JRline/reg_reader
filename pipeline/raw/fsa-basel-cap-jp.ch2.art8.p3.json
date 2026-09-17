@@ -1,0 +1,29 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art8.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "第一項第三号に定める額を算出する場合において、連結子法人等に当該連結子法人等の子法人等である特別目的会社等があるときは、次に掲げる要件の全てを満たす場合に限り、当該特別目的会社等の発行する資本調達手段(前項各号に掲げる要件の全てを満たすものを除く。)の額を、第一項第三号のTier2資本に係る基礎項目の額に算入することができる。一当該特別目的会社等の発行する資本調達手段がその他Tier1資本調達手段又はTier2資本調達手段に該当するものであること。二当該特別目的会社等の発行する資本調達手段の発行代り金の全額を当該連結子法人等が即時かつ無制限に利用可能であること。三前号の発行代り金を利用するために発行される資本調達手段がその他Tier1資本調達手段又はTier2資本調達手段に該当するものであること。四当該連結子法人等が当該特別目的会社等の総株主等の議決権の全てを保有すること。",
+  "text_en": "In calculating the amount provided in item (iii) of paragraph (1), where a consolidated subsidiary has a special purpose company, etc. that is a subsidiary of such consolidated subsidiary, the amount of capital instruments issued by such special purpose company, etc. (excluding those that satisfy all of the requirements of each item of the preceding paragraph) may be included in the amount of basic items relating to Tier 2 Capital under item (iii) of paragraph (1) only if all of the following requirements are satisfied. (i) That the capital instruments issued by such special purpose company, etc. qualify as Additional Tier 1 Capital instruments or Tier 2 Capital instruments. (ii) That the entire proceeds from the issuance of capital instruments issued by such special purpose company, etc. are immediately and unconditionally available to such consolidated subsidiary. (iii) That the capital instruments issued to utilize the proceeds set forth in the preceding item qualify as Additional Tier 1 Capital instruments or Tier 2 Capital instruments. (iv) That such consolidated subsidiary holds all of the voting rights of all shareholders, etc. of such special purpose company, etc.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "第一項第三号に定める額を算出する場合において、連結子法人等に当該連結子法人等の子法人等である特別目的会社等があるときは、次に掲げる要件の全てを満たす場合に限り、"},
+    {"clause_type": "main", "text": "当該特別目的会社等の発行する資本調達手段(前項各号に掲げる要件の全てを満たすものを除く。)の額を、第一項第三号のTier2資本に係る基礎項目の額に算入することができる。"},
+    {"clause_type": "enumeration_item", "text": "一当該特別目的会社等の発行する資本調達手段がその他Tier1資本調達手段又はTier2資本調達手段に該当するものであること。"},
+    {"clause_type": "enumeration_item", "text": "二当該特別目的会社等の発行する資本調達手段の発行代り金の全額を当該連結子法人等が即時かつ無制限に利用可能であること。"},
+    {"clause_type": "enumeration_item", "text": "三前号の発行代り金を利用するために発行される資本調達手段がその他Tier1資本調達手段又はTier2資本調達手段に該当するものであること。"},
+    {"clause_type": "enumeration_item", "text": "四当該連結子法人等が当該特別目的会社等の総株主等の議決権の全てを保有すること。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "In calculating the amount provided in item (iii) of paragraph (1), where a consolidated subsidiary has a special purpose company, etc. that is a subsidiary of such consolidated subsidiary, "},
+    {"clause_type": "main", "text": "the amount of capital instruments issued by such special purpose company, etc. (excluding those that satisfy all of the requirements of each item of the preceding paragraph) may be included in the amount of basic items relating to Tier 2 Capital under item (iii) of paragraph (1) only if all of the following requirements are satisfied. "},
+    {"clause_type": "enumeration_item", "text": "(i) That the capital instruments issued by such special purpose company, etc. qualify as Additional Tier 1 Capital instruments or Tier 2 Capital instruments. "},
+    {"clause_type": "enumeration_item", "text": "(ii) That the entire proceeds from the issuance of capital instruments issued by such special purpose company, etc. are immediately and unconditionally available to such consolidated subsidiary. "},
+    {"clause_type": "enumeration_item", "text": "(iii) That the capital instruments issued to utilize the proceeds set forth in the preceding item qualify as Additional Tier 1 Capital instruments or Tier 2 Capital instruments. "},
+    {"clause_type": "enumeration_item", "text": "(iv) That such consolidated subsidiary holds all of the voting rights of all shareholders, etc. of such special purpose company, etc."}
+  ],
+  "refs": [
+    {"raw_text": "第一項第三号", "text_en": "item (iii) of paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "前項各号", "text_en": "each item of the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "前号", "text_en": "the preceding item", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

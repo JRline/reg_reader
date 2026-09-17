@@ -1,0 +1,19 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art8.p5",
+  "number": "５",
+  "heading": null,
+  "text_ja": "前項各号に定める額を算出する場合において、最終指定親会社等が自己保有資本調達手段に係る一定のショート・ポジションを保有するときは、当該自己保有資本調達手段と対応するショート・ポジションを相殺することができる。",
+  "text_en": "In calculating the amounts provided in each item of the preceding paragraph, where the Ultimate Designated Parent Company, etc. holds certain short positions relating to self-held capital instruments, such short positions corresponding to such self-held capital instruments may be offset.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "前項各号に定める額を算出する場合において、最終指定親会社等が自己保有資本調達手段に係る一定のショート・ポジションを保有するときは、"},
+    {"clause_type": "main", "text": "当該自己保有資本調達手段と対応するショート・ポジションを相殺することができる。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "In calculating the amounts provided in each item of the preceding paragraph, where the Ultimate Designated Parent Company, etc. holds certain short positions relating to self-held capital instruments, "},
+    {"clause_type": "main", "text": "such short positions corresponding to such self-held capital instruments may be offset."}
+  ],
+  "refs": [
+    {"raw_text": "前項各号", "text_en": "each item of the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

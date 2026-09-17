@@ -1,0 +1,15 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-11.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "内部取引担当デスクは、バンキング勘定との内部取引のポジションに対する外部ヘッジ取引を第三者との間で直接に行うことができる。",
+  "text_en": "The internal transactions desk may directly conduct external hedge transactions with third parties against positions of internal transactions with the banking account.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "内部取引担当デスクは、バンキング勘定との内部取引のポジションに対する外部ヘッジ取引を第三者との間で直接に行うことができる。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "The internal transactions desk may directly conduct external hedge transactions with third parties against positions of internal transactions with the banking account."}
+  ],
+  "refs": [],
+  "defined_terms": []
+}

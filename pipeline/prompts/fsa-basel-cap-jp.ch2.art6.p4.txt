@@ -1,0 +1,76 @@
+You are populating structured data for a Japanese regulatory text reader. You will be given
+one Article of Japanese legal/regulatory text. Output ONLY a single JSON object — no prose,
+no markdown fences, no explanation before or after.
+
+Known issue in the source text: mathematical formulas in the original PDF were embedded
+as images, not text, so they were lost during extraction. You may see a sentence like
+"次の算式により得られる比率について" (regarding the ratio obtained by the following
+formula) with nothing after it. This is expected — do NOT invent, reconstruct, or guess
+at a formula that isn't present in the source text given to you. Translate faithfully
+around the gap and move on; its absence is not an error for you to fix.
+
+Context (do not translate, for your reference only): Article 第六条 (その他Tier1資本の額) — this is paragraph 4 of 5
+
+Source text (Japanese, verbatim, id=fsa-basel-cap-jp.ch2.art6.p4):
+"""
+第一項及び前項の「その他Tier1資本調達手段」とは、次に掲げる要件の全てを満たす資本調達手段(普通株式(前条第三項に規定する普通株式をいう。以下この章において同じ。)に該当するものを除く。)をいう。一発行者により現に発行され、かつ、払込済みのものであること。二残余財産の分配又は倒産処理手続における債務の弁済若しくは内容の変更について、発行者の他の債務(Tier2資本調達手段に該当する債務を含み、その他Tier1資本調達手段に該当する債務を除く。)に対して劣後的内容を有するものであること。三担保権により担保されておらず、かつ、発行者又は当該発行者と密接な関係を有する者による保証に係る特約その他の法的又は経済的に他の同順位の資本調達手段に対して優先的内容を有するものとするための特約が定められていないこと。四償還期限が定められておらず、あらかじめ定めた期間が経過した後に上乗せされる一定の金利又は配当率(以下「ステップ・アップ金利等」という。)に係る特約その他の償還を行う蓋然性を高める特約が定められていないこと。五償還を行う場合には、発行後五年を経過した日以後(発行の目的に照らして償還を行うことについてやむを得ない事由があると認められる場合にあっては、発行後)に発行者の任意によるときに限り償還を行うことが可能であり、かつ、償還又は買戻しに関する次に掲げる要件の全てを満たすものであること。イ償還又は買戻しに際し、自己資本の充実について、あらかじめ金融庁長官の確認を受けるものとなっていること。ロ償還又は買戻しについて期待を生じさせる行為を発行者が行っていないこと。ハその他次に掲げる要件のいずれかを満たすこと。(１)償還又は買戻しが行われる場合には、発行者の収益性に照らして適切と認められる条件により、当該償還又は買戻しのための資本調達(当該償還又は買戻しが行われるものと同等以上の質が確保されるものに限る。)が当該償還又は買戻しの時以前に行われること。(２)償還又は買戻しの後においても発行者が十分な水準の最低所要連結自己資本規制比率を維持することが見込まれること。六発行者が前号イの確認が得られることを前提としておらず、当該発行者により当該確認について期待を生じさせる行為が行われていないこと。七剰余金の配当又は利息の支払の停止について、次に掲げる要件の全てを満たすものであること。イ剰余金の配当又は利息の支払の停止を発行者の完全な裁量により常に決定することができること。ロ剰余金の配当又は利息の支払の停止を決定することが発行者の債務不履行とならないこと。ハ剰余金の配当又は利息の支払の停止により流出しなかった資金を発行者が完全に利用可能であること。ニ剰余金の配当又は利息の支払の停止を行った場合における発行者に対する一切の制約(同等以上の質の資本調達手段に係る剰余金の配当及び利息の支払に関するものを除く。)がないこと。八剰余金の配当又は利息の支払が、法令の規定に基づき算定された分配可能額を超えない範囲内で行われるものであること。九剰余金の配当額又は利息の支払額が、発行後の発行者の信用状態を基礎として算定されるものでないこと。十発行者の倒産手続に関し当該発行者が債務超過にあるかどうかを判断するに当たり、当該発行者の債務として認識されるものでないこと。十一負債性資本調達手段である場合には、第二条第一号の算式における連結普通株式等Tier1比率が一定の水準を下回ったときに連結普通株式等Tier1比率が当該水準を上回るために必要な額又はその全額の元本の削減又は普通株式への転換(以下「元本の削減等」という。)が行われる特約その他これに類する特約が定められていること。十二発行者又は当該発行者の子法人等により取得されておらず、かつ、取得に必要な資金が発行者により直接又は間接に融通されたものでないこと。十三ある特定の期間において他の資本調達手段が発行価格に関して有利な条件で発行された場合には補償が行われる特約その他の発行者の資本の増強を妨げる特約が定められていないこと。十四特別目的会社等が発行する資本調達手段である場合には、発行代り金を利用するために発行される資本調達手段が前各号及び次号に掲げる要件の全てを満たし、かつ、当該資本調達手段の発行者が発行代り金の全額を即時かつ無制限に利用可能であること。十五元本の削減等又は公的機関による資金の援助その他これに類する措置が講ぜられなければ発行者が存続できないと認められる場合において、これらの措置が講ぜられる必要があると認められるときは、元本の削減等が行われる旨の特約が定められていること。ただし、法令の規定に基づいて、元本の削減等を行う措置が講ぜられる場合又は公的機関による資金の援助その他これに類する措置が講ぜられる前に当該発行者に生じる損失を完全に負担することとなる場合は、この限りでない。
+"""
+
+Produce JSON with exactly this shape:
+
+{
+  "id": "fsa-basel-cap-jp.ch2.art6.p4",
+  "number": "４",
+  "heading": null,
+  "text_ja": "<verbatim copy of the source text>",
+  "text_en": "<accurate English translation, preserving legal register>",
+  "clauses_ja": [
+    {"clause_type": "<one of: main, conditional, proviso, exception,
+                      enumeration_stem, enumeration_item, parenthetical, definition>",
+     "text": "<verbatim substring of text_ja>"}
+    // Break text_ja into ordered clauses covering the whole sentence.
+    // Concatenating all "text" fields in order must reconstruct the original text_ja exactly.
+    // Use "conditional" for 場合/とき clauses, "proviso" for ただし-clauses,
+    // "parenthetical" for kakko (　) asides, "enumeration_stem" for the sentence introducing
+    // a 一/二/三 list and "enumeration_item" for each numbered item.
+  ],
+  "clauses_en": [
+    {"clause_type": "<same enum as above>", "text": "<verbatim substring of text_en>"}
+    // Independently break text_en into ordered clauses covering the whole English sentence.
+    // Concatenating all "text" fields in order must reconstruct text_en exactly. Does NOT need
+    // the same clause count as clauses_ja, but the clause_type sequence should tell the same
+    // structural story.
+  ],
+  "refs": [
+    {"raw_text": "<verbatim citation phrase, e.g. 前条第二項>",
+     "text_en": "<the corresponding phrase as it appears in text_en>",
+     "scope": "internal | external",
+     "external_name": "<law/notification name if scope=external, else null>",
+     "external_item_summary_ja": "<see below, else null>",
+     "external_item_summary_en": "<see below, else null>",
+     "external_item_summary_confidence": "<stated_in_text | general_knowledge | null>"}
+    // List every cross-reference found in text_ja, INCLUDING ones that appear only inside a
+    // parenthetical/kakko aside — do not skip a citation just because it's inside brackets.
+    // Do not attempt to resolve a target id — just extract the citation phrase exactly as
+    // written, in both languages.
+    //
+    // For scope=external refs ONLY, also fill in external_item_summary_*: a one-line
+    // description of what THAT SPECIFIC cited article/paragraph/item says — NOT a summary of
+    // the external law as a whole. If the citing sentence already explains the cited provision
+    // inline (e.g. "...をいう"), restate that and set confidence "stated_in_text". Otherwise
+    // give your best general-knowledge understanding and set confidence "general_knowledge" —
+    // this must be visibly flagged as unverified in the reader, never presented as fact.
+  ],
+  "defined_terms": [
+    {"term_ja": "<term>", "term_en": "<your translation of the term>",
+     "expands_to_ja": "<see below, else null>"}
+    // Only terms explicitly defined in THIS text (e.g. "...という。" pattern), not terms
+    // merely used.
+    // Set expands_to_ja ONLY when this term is a shorthand for a longer Japanese phrase
+    // named earlier in the same sentence (e.g. a term standing in for an ordinance's
+    // full name). Leave null for a term that's being coined/glossed rather than
+    // abbreviating something. Never put an English translation in this field.
+  ]
+}
+
+If a field has nothing to report, use an empty array — never omit a key.

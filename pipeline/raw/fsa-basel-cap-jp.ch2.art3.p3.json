@@ -1,0 +1,28 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art3.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "前二項の規定にかかわらず、最終指定親会社が保険会社等(保険会社、少額短期保険業者及びこれらに準ずる外国の法人並びにこれらの子会社等をいう。以下同じ。)を子会社等としている場合における当該子会社等(以下「保険子会社等」という。)については、連結の範囲に含めないものとする。",
+  "text_en": "Notwithstanding the provisions of the preceding two paragraphs, where the Ultimate Designated Parent Company has an Insurance Company, etc. (meaning an insurance company, a small-amount and short-term insurance provider, a foreign juridical person equivalent thereto, or any subsidiary, etc. of the foregoing; the same applies hereinafter) as a Subsidiary, etc., such Subsidiary, etc. (hereinafter referred to as an \"Insurance Subsidiary, etc.\") shall not be included within the scope of consolidation.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "前二項の規定にかかわらず、最終指定親会社が保険会社等"},
+    {"clause_type": "parenthetical", "text": "(保険会社、少額短期保険業者及びこれらに準ずる外国の法人並びにこれらの子会社等をいう。以下同じ。)"},
+    {"clause_type": "conditional", "text": "を子会社等としている場合における当該子会社等"},
+    {"clause_type": "parenthetical", "text": "(以下「保険子会社等」という。)"},
+    {"clause_type": "main", "text": "については、連結の範囲に含めないものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "Notwithstanding the provisions of the preceding two paragraphs, where the Ultimate Designated Parent Company has an Insurance Company, etc. "},
+    {"clause_type": "parenthetical", "text": "(meaning an insurance company, a small-amount and short-term insurance provider, a foreign juridical person equivalent thereto, or any subsidiary, etc. of the foregoing; the same applies hereinafter) "},
+    {"clause_type": "main", "text": "as a Subsidiary, etc., such Subsidiary, etc. "},
+    {"clause_type": "parenthetical", "text": "(hereinafter referred to as an \"Insurance Subsidiary, etc.\") "},
+    {"clause_type": "main", "text": "shall not be included within the scope of consolidation."}
+  ],
+  "refs": [
+    {"raw_text": "前二項", "text_en": "the preceding two paragraphs", "scope": "internal", "external_name": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "保険会社等", "term_en": "Insurance Company, etc."},
+    {"term_ja": "保険子会社等", "term_en": "Insurance Subsidiary, etc."}
+  ]
+}

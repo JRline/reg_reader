@@ -1,0 +1,6 @@
+{
+  "_comment": "English names of external laws/ordinances cited FROM any feed, keyed by the exact external_name string a ref resolves to. Shared across all feeds since the same law is cited from many regulations. This is name resolution ONLY — per-citation content summaries live on the ref itself (external_item_summary_*), not here, since 'what does this law say' isn't useful at law-level granularity: it needs to be pinned to the exact article/paragraph/item cited.",
+  "銀行法": { "name_en": "Banking Act" },
+  "連結財務諸表の用語、様式及び作成方法に関する規則": { "name_en": "Consolidated Financial Statement Regulation" },
+  "金融商品取引法": { "name_en": "Financial Instruments and Exchange Act" }
+}

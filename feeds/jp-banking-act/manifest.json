@@ -1,0 +1,14 @@
+{
+  "feed_id": "jp-banking-act",
+  "title_ja": "銀行法",
+  "title_en": "Banking Act",
+  "issuing_authority": "National Diet of Japan",
+  "jurisdiction": "JP",
+  "source_url": "https://laws.e-gov.go.jp/law/356AC0000000059",
+  "source_pdf": null,
+  "effective_date": null,
+  "version_label": "excerpt — Article 52-23, paragraph (1) only",
+  "language_pair": ["ja", "en"],
+  "scope_note": "This is NOT the full Banking Act — only the specific provision cited from fsa-basel-cap-jp Article 3 has been digitized, pulled directly from e-Gov (laws.e-gov.go.jp) on the current in-force text. Items (xi)-(xiv) and (xvi) of the list are outside the cited range and are elided rather than translated in full.",
+  "related_feeds": []
+}

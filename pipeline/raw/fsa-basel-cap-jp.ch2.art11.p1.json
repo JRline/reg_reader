@@ -1,0 +1,21 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "第二条各号及び第二条の二第一項の算式においてマーケット・リスク相当額の合計額は、第六章に定めるところにより算出するものの合計額とする。ただし、現金預け金、預金及びコール資金(連結子法人等における本支店間の取引を含む。)のうち、トレーディングを行う部署においてリスク管理上トレーディングとして管理及び評価をしているものについては対象に含めることができる。",
+  "text_en": "In the formula of each item of Article 2 and Article 2-2, paragraph (1), the total amount of market risk equivalent amounts shall be the sum of amounts calculated pursuant to the provisions of Chapter 6; provided, however, that among cash deposits, deposits, and call money (including transactions between head office and branches in consolidated subsidiaries, etc.), those that are managed and evaluated as trading for risk management purposes by trading departments may be included.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "第二条各号及び第二条の二第一項の算式においてマーケット・リスク相当額の合計額は、第六章に定めるところにより算出するものの合計額とする。"},
+    {"clause_type": "proviso", "text": "ただし、現金預け金、預金及びコール資金(連結子法人等における本支店間の取引を含む。)のうち、トレーディングを行う部署においてリスク管理上トレーディングとして管理及び評価をしているものについては対象に含めることができる。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "In the formula of each item of Article 2 and Article 2-2, paragraph (1), the total amount of market risk equivalent amounts shall be the sum of amounts calculated pursuant to the provisions of Chapter 6; "},
+    {"clause_type": "proviso", "text": "provided, however, that among cash deposits, deposits, and call money (including transactions between head office and branches in consolidated subsidiaries, etc.), those that are managed and evaluated as trading for risk management purposes by trading departments may be included."}
+  ],
+  "refs": [
+    {"raw_text": "第二条各号", "text_en": "each item of Article 2", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第二条の二第一項", "text_en": "Article 2-2, paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第六章", "text_en": "Chapter 6", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

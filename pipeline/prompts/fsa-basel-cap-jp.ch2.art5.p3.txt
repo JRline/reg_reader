@@ -1,0 +1,76 @@
+You are populating structured data for a Japanese regulatory text reader. You will be given
+one Article of Japanese legal/regulatory text. Output ONLY a single JSON object — no prose,
+no markdown fences, no explanation before or after.
+
+Known issue in the source text: mathematical formulas in the original PDF were embedded
+as images, not text, so they were lost during extraction. You may see a sentence like
+"次の算式により得られる比率について" (regarding the ratio obtained by the following
+formula) with nothing after it. This is expected — do NOT invent, reconstruct, or guess
+at a formula that isn't present in the source text given to you. Translate faithfully
+around the gap and move on; its absence is not an error for you to fix.
+
+Context (do not translate, for your reference only): Article 第五条 (普通株式等Tier1資本の額) — this is paragraph 3 of 4
+
+Source text (Japanese, verbatim, id=fsa-basel-cap-jp.ch2.art5.p3):
+"""
+第一項の「普通株式」とは、次に掲げる要件の全てを満たす株式をいう。一残余財産の分配について、最も劣後するものであること。二残余財産の分配について、一定額又は上限額が定められておらず、他の優先的内容を有する資本調達手段に対する分配が行われた後に、株主の保有する株式の数に応じて公平に割当てを受けるものであること。三償還期限が定められておらず、かつ、法令に基づく場合を除き、償還されるものでないこと。四発行者が発行時に将来にわたり買戻しを行う期待を生じさせておらず、かつ、当該期待を生じさせる内容が定められていないこと。五剰余金の配当が法令の規定に基づき算定された分配可能額を超えない範囲内で行われ、その額が株式の払込金額を基礎として算定されるものでなく、かつ、分配可能額に関する法令の規定により制限される場合を除き、剰余金の配当について上限額が定められていないこと。六剰余金の配当について、発行者の完全な裁量により決定することができ、これを行わないことが発行者の債務不履行となるものでないこと。七剰余金の配当について、他の資本調達手段に対して優先的内容を有するものでないこと。八他の資本調達手段に先立ち、発行者が業務を継続しながら、当該発行者に生じる損失を公平に負担するものであること。九発行者の倒産手続(破産手続、再生手続、更生手続又は特別清算手続をいう。以下同じ。)に関し当該発行者が債務超過(債務者が、その債務につき、その財産をもって完済することができない状態をいう。以下同じ。)にあるかどうかを判断するに当たり、当該発行者の債務として認識されるものでないこと。十払込金額が適用される企業会計の基準において株主資本として計上されるものであること。十一発行者により現に発行され、払込済みであり、かつ、取得に必要な資金が発行者により直接又は間接に融通されたものでないこと。十二担保権により担保されておらず、かつ、発行者又は当該発行者と密接な関係を有する者による保証に係る特約その他の法的又は経済的に他の資本調達手段に対して優先的内容を有するものとするための特約が定められていないこと。十三株主総会、取締役会その他の法令に基づく権限を有する機関の決議又は決定に基づき発行されたものであること。十四発行者の事業年度に係る説明書類において他の資本調達手段と明確に区別して記載されるものであること。
+"""
+
+Produce JSON with exactly this shape:
+
+{
+  "id": "fsa-basel-cap-jp.ch2.art5.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "<verbatim copy of the source text>",
+  "text_en": "<accurate English translation, preserving legal register>",
+  "clauses_ja": [
+    {"clause_type": "<one of: main, conditional, proviso, exception,
+                      enumeration_stem, enumeration_item, parenthetical, definition>",
+     "text": "<verbatim substring of text_ja>"}
+    // Break text_ja into ordered clauses covering the whole sentence.
+    // Concatenating all "text" fields in order must reconstruct the original text_ja exactly.
+    // Use "conditional" for 場合/とき clauses, "proviso" for ただし-clauses,
+    // "parenthetical" for kakko (　) asides, "enumeration_stem" for the sentence introducing
+    // a 一/二/三 list and "enumeration_item" for each numbered item.
+  ],
+  "clauses_en": [
+    {"clause_type": "<same enum as above>", "text": "<verbatim substring of text_en>"}
+    // Independently break text_en into ordered clauses covering the whole English sentence.
+    // Concatenating all "text" fields in order must reconstruct text_en exactly. Does NOT need
+    // the same clause count as clauses_ja, but the clause_type sequence should tell the same
+    // structural story.
+  ],
+  "refs": [
+    {"raw_text": "<verbatim citation phrase, e.g. 前条第二項>",
+     "text_en": "<the corresponding phrase as it appears in text_en>",
+     "scope": "internal | external",
+     "external_name": "<law/notification name if scope=external, else null>",
+     "external_item_summary_ja": "<see below, else null>",
+     "external_item_summary_en": "<see below, else null>",
+     "external_item_summary_confidence": "<stated_in_text | general_knowledge | null>"}
+    // List every cross-reference found in text_ja, INCLUDING ones that appear only inside a
+    // parenthetical/kakko aside — do not skip a citation just because it's inside brackets.
+    // Do not attempt to resolve a target id — just extract the citation phrase exactly as
+    // written, in both languages.
+    //
+    // For scope=external refs ONLY, also fill in external_item_summary_*: a one-line
+    // description of what THAT SPECIFIC cited article/paragraph/item says — NOT a summary of
+    // the external law as a whole. If the citing sentence already explains the cited provision
+    // inline (e.g. "...をいう"), restate that and set confidence "stated_in_text". Otherwise
+    // give your best general-knowledge understanding and set confidence "general_knowledge" —
+    // this must be visibly flagged as unverified in the reader, never presented as fact.
+  ],
+  "defined_terms": [
+    {"term_ja": "<term>", "term_en": "<your translation of the term>",
+     "expands_to_ja": "<see below, else null>"}
+    // Only terms explicitly defined in THIS text (e.g. "...という。" pattern), not terms
+    // merely used.
+    // Set expands_to_ja ONLY when this term is a shorthand for a longer Japanese phrase
+    // named earlier in the same sentence (e.g. a term standing in for an ordinance's
+    // full name). Leave null for a term that's being coined/glossed rather than
+    // abbreviating something. Never put an English translation in this field.
+  ]
+}
+
+If a field has nothing to report, use an empty array — never omit a key.

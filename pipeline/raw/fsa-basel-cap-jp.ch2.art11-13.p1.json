@@ -1,0 +1,21 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-13.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "第十一条の九から前条までの規定にかかわらず、最終指定親会社等のCVAリスクに係る第三者とのヘッジ取引(以下「外部CVAヘッジ取引」という。)及びCVAリスクに係る内部取引によるトレーディング・デスクとCVAデスクとのヘッジ取引(以下「内部CVAヘッジ取引」という。)におけるマーケット・リスク相当額の計測対象は、次項及び第三項に定めるところによる。",
+  "text_en": "Notwithstanding the provisions of Articles 11-9 through the preceding Article, the scope of measurement of market risk equivalent amounts in hedge transactions with third parties relating to CVA risk of the Ultimate Designated Parent Company, etc. (hereinafter referred to as \"external CVA hedge transactions\") and hedge transactions between trading desks and the CVA desk through internal transactions relating to CVA risk (hereinafter referred to as \"internal CVA hedge transactions\") shall be as provided in the following paragraph and paragraph (3).",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "第十一条の九から前条までの規定にかかわらず、最終指定親会社等のCVAリスクに係る第三者とのヘッジ取引(以下「外部CVAヘッジ取引」という。)及びCVAリスクに係る内部取引によるトレーディング・デスクとCVAデスクとのヘッジ取引(以下「内部CVAヘッジ取引」という。)におけるマーケット・リスク相当額の計測対象は、次項及び第三項に定めるところによる。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Notwithstanding the provisions of Articles 11-9 through the preceding Article, the scope of measurement of market risk equivalent amounts in hedge transactions with third parties relating to CVA risk of the Ultimate Designated Parent Company, etc. (hereinafter referred to as \"external CVA hedge transactions\") and hedge transactions between trading desks and the CVA desk through internal transactions relating to CVA risk (hereinafter referred to as \"internal CVA hedge transactions\") shall be as provided in the following paragraph and paragraph (3)."}
+  ],
+  "refs": [
+    {"raw_text": "第十一条の九から前条まで", "text_en": "Articles 11-9 through the preceding Article", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "次項及び第三項", "text_en": "the following paragraph and paragraph (3)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "外部CVAヘッジ取引", "term_en": "external CVA hedge transactions", "expands_to_ja": null},
+    {"term_ja": "内部CVAヘッジ取引", "term_en": "internal CVA hedge transactions", "expands_to_ja": null}
+  ]
+}

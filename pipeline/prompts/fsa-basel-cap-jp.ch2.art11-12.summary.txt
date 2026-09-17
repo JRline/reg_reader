@@ -1,0 +1,10 @@
+You will be given the full text of one Article of Japanese regulatory text, with its
+official English translation. Write a one-sentence, plain-language summary of what this
+Article actually requires or establishes — the kind of line a compliance officer would
+want as a preview before deciding whether to read the full text. Do not just restate the
+heading. Output ONLY this JSON object, no prose:
+
+{"summary_ja": "<one sentence, plain Japanese>", "summary_en": "<one sentence, plain English>"}
+
+Japanese text: """マーケット・リスク相当額の計測対象であるトレーディング・デスク間の内部取引は、マーケット・リスク相当額の計測範囲に含むものとする。内部取引担当デスクと内部取引担当デスク以外のトレーディング・デスクとの間の内部取引は、前条第一項各号に掲げる要件を満たし、かつ、同条第三項の規定に該当する場合に限り、マーケット・リスク相当額の計測対象に含むものとする。トレーディング・デスクが保有する内部取引のポジションは、第三者と取引するトレーディング勘定の商品と同様にマーケット・リスク相当額の計測対象に含むものとする。"""
+English text: """Internal transactions between trading desks that are subject to measurement of market risk equivalent amounts shall be included in the scope of measurement of market risk equivalent amounts.Internal transactions between the internal transactions desk and trading desks other than the internal transactions desk shall be included in the scope of measurement of market risk equivalent amounts only where the requirements set forth in each item of Article 11-11, paragraph (1) are satisfied and the provisions of paragraph (3) of the same Article apply.Positions of internal transactions held by trading desks shall be included in the scope of measurement of market risk equivalent amounts in the same manner as products in the trading account that are transacted with third parties."""

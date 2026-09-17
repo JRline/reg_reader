@@ -1,0 +1,17 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-8.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "最終指定親会社等は、前項の方針を一年に一回以上見直すものとする。",
+  "text_en": "Ultimate Designated Parent Companies, etc. shall review the policies set forth in the preceding paragraph at least once per year.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "最終指定親会社等は、前項の方針を一年に一回以上見直すものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Ultimate Designated Parent Companies, etc. shall review the policies set forth in the preceding paragraph at least once per year."}
+  ],
+  "refs": [
+    {"raw_text": "前項", "text_en": "the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

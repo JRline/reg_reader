@@ -1,0 +1,27 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-3.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "商品の保有の目的が次に掲げる目的(以下「トレーディング目的」という。)のいずれかに該当する商品は、トレーディング勘定に分類するものとする。一短期間の再売却目的二相場その他の指標に係る短期の価格変動からの利益の獲得目的三市場間の裁定取引による利益の獲得目的四前三号に掲げる目的のいずれかで保有している商品から生ずるリスクのヘッジ目的",
+  "text_en": "Products whose purpose of holding falls under any of the following purposes (hereinafter referred to as \"trading purposes\") shall be classified into the trading account. (i) Short-term resale purpose. (ii) Purpose of obtaining profit from short-term price fluctuations relating to market prices or other indicators. (iii) Purpose of obtaining profit from arbitrage transactions between markets. (iv) Purpose of hedging risks arising from products held for any of the purposes set forth in items (i) through (iii).",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "商品の保有の目的が次に掲げる目的(以下「トレーディング目的」という。)のいずれかに該当する商品は、トレーディング勘定に分類するものとする。"},
+    {"clause_type": "enumeration_item", "text": "一短期間の再売却目的"},
+    {"clause_type": "enumeration_item", "text": "二相場その他の指標に係る短期の価格変動からの利益の獲得目的"},
+    {"clause_type": "enumeration_item", "text": "三市場間の裁定取引による利益の獲得目的"},
+    {"clause_type": "enumeration_item", "text": "四前三号に掲げる目的のいずれかで保有している商品から生ずるリスクのヘッジ目的"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "Products whose purpose of holding falls under any of the following purposes (hereinafter referred to as \"trading purposes\") shall be classified into the trading account. "},
+    {"clause_type": "enumeration_item", "text": "(i) Short-term resale purpose. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Purpose of obtaining profit from short-term price fluctuations relating to market prices or other indicators. "},
+    {"clause_type": "enumeration_item", "text": "(iii) Purpose of obtaining profit from arbitrage transactions between markets. "},
+    {"clause_type": "enumeration_item", "text": "(iv) Purpose of hedging risks arising from products held for any of the purposes set forth in items (i) through (iii)."}
+  ],
+  "refs": [
+    {"raw_text": "前三号", "text_en": "items (i) through (iii)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "トレーディング目的", "term_en": "trading purposes", "expands_to_ja": null}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art4.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "前項の規定に基づき、最終指定親会社が特別金融商品取引業者に対する連結自己資本規制比率告示の例により連結自己資本規制比率を算出する場合には、当該最終指定親会社は当該計算の方法を継続して用いるものとする。",
+  "text_en": "Where an Ultimate Designated Parent Company calculates the Consolidated Capital Adequacy Ratio in accordance with the provisions of the Public Notice on the Consolidated Capital Adequacy Ratio for Specially-Licensed Securities Business Operators pursuant to the provisions of the preceding paragraph, such Ultimate Designated Parent Company shall continue to use that calculation method.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "前項の規定に基づき、最終指定親会社が特別金融商品取引業者に対する連結自己資本規制比率告示の例により連結自己資本規制比率を算出する場合には、"},
+    {"clause_type": "main", "text": "当該最終指定親会社は当該計算の方法を継続して用いるものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "Where an Ultimate Designated Parent Company calculates the Consolidated Capital Adequacy Ratio in accordance with the provisions of the Public Notice on the Consolidated Capital Adequacy Ratio for Specially-Licensed Securities Business Operators pursuant to the provisions of the preceding paragraph, "},
+    {"clause_type": "main", "text": "such Ultimate Designated Parent Company shall continue to use that calculation method."}
+  ],
+  "refs": [
+    {"raw_text": "前項", "text_en": "the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art2-2.p5",
+  "number": "５",
+  "heading": null,
+  "text_ja": "第一項の「最低連結資本バッファー比率」とは、次の各号に掲げる場合には、第二項の規定にかかわらず、同項に規定するものに、当該各号に定める比率(当該各号に掲げる場合のいずれにも該当する場合にあっては、当該各号に定める比率のうちいずれか高い比率)を加えたものとする。一最終指定親会社及びその子法人等が金融安定理事会による合意を勘案した国際的な金融システムにおけるその重要性に鑑み、金融庁長官が別に指定する最終指定親会社及びその子法人等である場合金融庁長官が別に定める比率二最終指定親会社及びその子法人等が我が国の金融システムにおけるその業務の状況等を勘案した重要性に鑑み、金融庁長官が別に指定する最終指定親会社及びその子法人等である場合金融庁長官が別に定める比率",
+  "text_en": "Notwithstanding paragraph 2, the \"Minimum Consolidated Capital Buffer Ratio\" referred to in paragraph 1 shall, in the cases listed in the following items, be the amount obtained by adding to the amount provided in that paragraph the ratio specified in such items (where both cases listed in the items apply, the higher of the ratios specified in such items). (i) Where the Ultimate Designated Parent Company and its subsidiary legal entities, etc. are those separately designated by the Commissioner of the Financial Services Agency in view of their systemic importance in the international financial system, taking into account the agreement of the Financial Stability Board: the ratio separately determined by the Commissioner of the Financial Services Agency. (ii) Where the Ultimate Designated Parent Company and its subsidiary legal entities, etc. are those separately designated by the Commissioner of the Financial Services Agency in view of their systemic importance taking into account the state of their business in Japan's financial system, etc.: the ratio separately determined by the Commissioner of the Financial Services Agency.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "第一項の「最低連結資本バッファー比率」とは、次の各号に掲げる場合には、第二項の規定にかかわらず、同項に規定するものに、当該各号に定める比率"},
+    {"clause_type": "parenthetical", "text": "(当該各号に掲げる場合のいずれにも該当する場合にあっては、当該各号に定める比率のうちいずれか高い比率)"},
+    {"clause_type": "enumeration_stem", "text": "を加えたものとする。"},
+    {"clause_type": "enumeration_item", "text": "一最終指定親会社及びその子法人等が金融安定理事会による合意を勘案した国際的な金融システムにおけるその重要性に鑑み、金融庁長官が別に指定する最終指定親会社及びその子法人等である場合金融庁長官が別に定める比率"},
+    {"clause_type": "enumeration_item", "text": "二最終指定親会社及びその子法人等が我が国の金融システムにおけるその業務の状況等を勘案した重要性に鑑み、金融庁長官が別に指定する最終指定親会社及びその子法人等である場合金融庁長官が別に定める比率"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Notwithstanding paragraph 2, the \"Minimum Consolidated Capital Buffer Ratio\" referred to in paragraph 1 shall, in the cases listed in the following items, be the amount obtained by adding to the amount provided in that paragraph the ratio specified in such items "},
+    {"clause_type": "parenthetical", "text": "(where both cases listed in the items apply, the higher of the ratios specified in such items). "},
+    {"clause_type": "enumeration_item", "text": "(i) Where the Ultimate Designated Parent Company and its subsidiary legal entities, etc. are those separately designated by the Commissioner of the Financial Services Agency in view of their systemic importance in the international financial system, taking into account the agreement of the Financial Stability Board: the ratio separately determined by the Commissioner of the Financial Services Agency. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Where the Ultimate Designated Parent Company and its subsidiary legal entities, etc. are those separately designated by the Commissioner of the Financial Services Agency in view of their systemic importance taking into account the state of their business in Japan's financial system, etc.: the ratio separately determined by the Commissioner of the Financial Services Agency."}
+  ],
+  "refs": [
+    {"raw_text": "第一項", "text_en": "paragraph 1", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第二項", "text_en": "paragraph 2", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "同項", "text_en": "that paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

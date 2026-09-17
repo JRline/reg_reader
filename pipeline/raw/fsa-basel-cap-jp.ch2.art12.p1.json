@@ -1,0 +1,19 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art12.p1",
+  "number": null,
+  "heading": "オペレーショナル・リスク相当額の合計額",
+  "text_ja": "第二条各号及び第二条の二第一項の算式においてオペレーショナル・リスク相当額の合計額は、第七章に定めるところにより算出するものの合計額とする。",
+  "text_en": "In the formulas of the items of Article 2 and Article 2-2, paragraph (1), the total amount equivalent to operational risk shall be the total amount of that calculated as provided in Chapter 7.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "第二条各号及び第二条の二第一項の算式においてオペレーショナル・リスク相当額の合計額は、第七章に定めるところにより算出するものの合計額とする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "In the formulas of the items of Article 2 and Article 2-2, paragraph (1), the total amount equivalent to operational risk shall be the total amount of that calculated as provided in Chapter 7."}
+  ],
+  "refs": [
+    {"raw_text": "第二条各号", "text_en": "the items of Article 2", "scope": "internal", "external_name": null},
+    {"raw_text": "第二条の二第一項", "text_en": "Article 2-2, paragraph (1)", "scope": "internal", "external_name": null},
+    {"raw_text": "第七章", "text_en": "Chapter 7", "scope": "internal", "external_name": null}
+  ],
+  "defined_terms": []
+}

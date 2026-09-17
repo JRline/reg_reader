@@ -1,0 +1,648 @@
+{
+  "feed_id": "jp-mof-consolidated-fs-regulation",
+  "root": {
+    "id": "jp-mof-consolidated-fs-regulation",
+    "type": "document",
+    "number": null,
+    "heading": null,
+    "heading_en": null,
+    "text_ja": null,
+    "text_en": null,
+    "children": [
+      {
+        "id": "jp-mof-consolidated-fs-regulation.art2",
+        "type": "article",
+        "number": "第二条",
+        "heading": "定義",
+        "heading_en": "Definitions",
+        "text_ja": null,
+        "text_en": null,
+        "summary_ja": "本規則で使う用語の定義規定（全14号のうち、他規則から引用されている第一号のみ抜粋）。",
+        "summary_en": "Defines terms used throughout this ordinance (14 items in the full article; only item (i), the one cited elsewhere, is excerpted here).",
+        "translation_status": "reviewed",
+        "clauses_ja": [],
+        "clauses_en": [],
+        "refs": [],
+        "defined_terms": [],
+        "children": [
+          {
+            "id": "jp-mof-consolidated-fs-regulation.art2.p1",
+            "type": "paragraph",
+            "number": null,
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "この規則(第十四号に掲げる用語にあつては、第一条第三項第二号を除く。)において、次の各号に掲げる用語の意義は、当該各号に定めるところによる。",
+            "text_en": "In this Regulation (excluding, for the term listed in item (xiv), Article 1, paragraph (3), item (ii)), the meaning of each term listed in the following items shall be as prescribed in that item.",
+            "translation_status": "reviewed",
+            "clauses_ja": [
+              {
+                "clause_type": "enumeration_stem",
+                "text": "この規則(第十四号に掲げる用語にあつては、第一条第三項第二号を除く。)において、次の各号に掲げる用語の意義は、当該各号に定めるところによる。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "enumeration_stem",
+                "text": "In this Regulation (excluding, for the term listed in item (xiv), Article 1, paragraph (3), item (ii)), the meaning of each term listed in the following items shall be as prescribed in that item."
+              }
+            ],
+            "refs": [],
+            "defined_terms": [],
+            "children": [
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art2.p1.item1",
+                "type": "item",
+                "number": "一",
+                "heading": "連結財務諸表提出会社",
+                "heading_en": "Company Required to Submit Consolidated Financial Statements",
+                "text_ja": "法の規定により連結財務諸表を提出すべき会社及び指定法人をいう。",
+                "text_en": "Means a company or Designated Juridical Person required, under the provisions of the Act, to submit consolidated financial statements.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [
+                  {
+                    "term_ja": "連結財務諸表提出会社",
+                    "term_en": "Company Required to Submit Consolidated Financial Statements",
+                    "definition_node_id": "jp-mof-consolidated-fs-regulation.art2.p1.item1"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art2.p1.item4",
+                "type": "item",
+                "number": "四",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "連結子会社",
+                "text_en": "Means a subsidiary included within the scope of consolidation.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [
+                  {
+                    "term_ja": "連結子会社",
+                    "term_en": "Consolidated Subsidiary",
+                    "definition_node_id": "jp-mof-consolidated-fs-regulation.art2.p1.item4",
+                    "expands_to_ja": null
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art2.p1.item8",
+                "type": "item",
+                "number": "八",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "持分法",
+                "text_en": "Means the method by which an investor company adjusts the amount of its investment in each business year in accordance with changes in the portion of the investee company's net assets and profit or loss attributable to that investor company.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [
+                  {
+                    "term_ja": "持分法",
+                    "term_en": "Equity Method",
+                    "definition_node_id": "jp-mof-consolidated-fs-regulation.art2.p1.item8",
+                    "expands_to_ja": null
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art2.p1.item19",
+                "type": "item",
+                "number": "十九",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "自己株式　連結財務諸表提出会社(中間連結財務諸表を作成する場合にあつては、第一種中間連結財務諸表提出会社又は第二種中間連結財務諸表提出会社。以下この号において同じ。)が保有する連結財務諸表提出会社の株式に、連結子会社並びに持分法を適用する非連結子会社及び関連会社が保有する連結財務諸表提出会社の株式のうち当該連結財務諸表提出会社の持分相当を合計したものをいう。",
+                "text_en": "Treasury Stock. Means the shares of the Company Required to Submit Consolidated Financial Statements held by that company itself, plus the portion, corresponding to that company's equity interest, of its own shares held by Consolidated Subsidiaries and by non-consolidated subsidiaries and associates to which the Equity Method is applied.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [
+                  {
+                    "term_ja": "自己株式",
+                    "term_en": "Treasury Stock",
+                    "definition_node_id": "jp-mof-consolidated-fs-regulation.art2.p1.item19",
+                    "expands_to_ja": null
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art2.p1.items2-14",
+                "type": "item",
+                "number": "二～十四",
+                "heading": "（この抜粋では省略）",
+                "heading_en": "(elided in this excerpt)",
+                "text_ja": null,
+                "text_en": "Items (ii)-(xiv) define further terms (parent company, subsidiary, consolidated subsidiary, associate, equity method, cash flow, etc.) — not needed for the citation this excerpt exists to resolve, so not translated here.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "jp-mof-consolidated-fs-regulation.art5",
+        "type": "article",
+        "number": "第五条",
+        "heading": "連結の範囲",
+        "heading_en": "Scope of Consolidation",
+        "text_ja": null,
+        "text_en": null,
+        "summary_ja": "連結財務諸表提出会社は原則として全ての子会社を連結範囲に含めるが、支配が一時的な子会社等は除外でき、また重要性の乏しい子会社は連結範囲から除くことができる。",
+        "summary_en": "A Company Required to Submit Consolidated Financial Statements must in principle consolidate all subsidiaries, but may exclude those under only temporary control, and — the paragraph (2) rule cited from the FSA notification — may also drop immaterial subsidiaries from consolidation.",
+        "translation_status": "reviewed",
+        "clauses_ja": [],
+        "clauses_en": [],
+        "refs": [],
+        "defined_terms": [],
+        "children": [
+          {
+            "id": "jp-mof-consolidated-fs-regulation.art5.p1",
+            "type": "paragraph",
+            "number": null,
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "連結財務諸表提出会社は、その全ての子会社を連結の範囲に含めなければならない。ただし、次の各号の一に該当する子会社は、連結の範囲に含めないものとする。",
+            "text_en": "A Company Required to Submit Consolidated Financial Statements shall include all of its subsidiaries within the scope of consolidation; provided, however, that a subsidiary falling under either of the following items shall not be included within the scope of consolidation.",
+            "translation_status": "reviewed",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "連結財務諸表提出会社は、その全ての子会社を連結の範囲に含めなければならない。"
+              },
+              {
+                "clause_type": "proviso",
+                "text": "ただし、次の各号の一に該当する子会社は、連結の範囲に含めないものとする。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "A Company Required to Submit Consolidated Financial Statements shall include all of its subsidiaries within the scope of consolidation; "
+              },
+              {
+                "clause_type": "proviso",
+                "text": "provided, however, that a subsidiary falling under either of the following items shall not be included within the scope of consolidation."
+              }
+            ],
+            "refs": [],
+            "defined_terms": [],
+            "children": [
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art5.p1.item1",
+                "type": "item",
+                "number": "一",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "財務及び営業又は事業の方針を決定する機関(株主総会その他これに準ずる機関をいう。以下同じ。)に対する支配が一時的であると認められる子会社",
+                "text_en": "A subsidiary for which control over the body that determines financial and business or operational policy (meaning the shareholders' meeting or an equivalent body; the same applies hereinafter) is found to be temporary.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              },
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art5.p1.item2",
+                "type": "item",
+                "number": "二",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "連結の範囲に含めることにより連結財務諸表提出会社の利害関係人の判断を著しく誤らせるおそれがあると認められる子会社",
+                "text_en": "A subsidiary for which including it within the scope of consolidation is found likely to seriously mislead the judgment of interested parties of the Company Required to Submit Consolidated Financial Statements.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "jp-mof-consolidated-fs-regulation.art5.p2",
+            "type": "paragraph",
+            "number": "２",
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "前項の規定により連結の範囲に含めるべき子会社のうち、その資産、売上高(役務収益を含む。以下同じ。)、損益、利益剰余金及びキャッシュ・フローその他の項目からみて、連結の範囲から除いても企業集団の財政状態、経営成績及びキャッシュ・フローの状況に関する合理的な判断を妨げない程度に重要性の乏しいものは、連結の範囲から除くことができる。",
+            "text_en": "Among the subsidiaries that should be included within the scope of consolidation under the preceding paragraph, one whose assets, net sales (including service revenue; the same applies hereinafter), profit or loss, retained earnings, cash flows, and other items are of such little materiality that excluding it from the scope of consolidation would not impede a reasonable assessment of the group's financial position, operating results, and cash flow status may be excluded from the scope of consolidation.",
+            "translation_status": "reviewed",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "前項の規定により連結の範囲に含めるべき子会社のうち、その資産、売上高(役務収益を含む。以下同じ。)、損益、利益剰余金及びキャッシュ・フローその他の項目からみて、連結の範囲から除いても企業集団の財政状態、経営成績及びキャッシュ・フローの状況に関する合理的な判断を妨げない程度に重要性の乏しいものは、連結の範囲から除くことができる。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "Among the subsidiaries that should be included within the scope of consolidation under the preceding paragraph, one whose assets, net sales (including service revenue; the same applies hereinafter), profit or loss, retained earnings, cash flows, and other items are of such little materiality that excluding it from the scope of consolidation would not impede a reasonable assessment of the group's financial position, operating results, and cash flow status may be excluded from the scope of consolidation."
+              }
+            ],
+            "refs": [
+              {
+                "raw_text": "前項",
+                "text_en": "the preceding paragraph",
+                "scope": "internal",
+                "external_name": null,
+                "target_ids": [
+                  "jp-mof-consolidated-fs-regulation.art5.p1"
+                ],
+                "target_feed": "jp-mof-consolidated-fs-regulation",
+                "resolution_status": "resolved",
+                "external_item_summary_ja": null,
+                "external_item_summary_en": null,
+                "external_item_summary_confidence": null
+              }
+            ],
+            "defined_terms": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "jp-mof-consolidated-fs-regulation.art312",
+        "type": "article",
+        "number": "第三百十二条",
+        "heading": "指定国際会計基準の適用",
+        "heading_en": "Application of Designated International Accounting Standards",
+        "text_ja": null,
+        "text_en": null,
+        "summary_ja": "「指定国際会計基準特定会社」は、連結財務諸表の作成にIFRS相当の「指定国際会計基準」に従うことができる旨を定める。",
+        "summary_en": "Allows a company specified for Designated International Accounting Standards to prepare its consolidated financial statements under those IFRS-equivalent standards instead of standard Japanese GAAP form.",
+        "translation_status": "reviewed",
+        "clauses_ja": [],
+        "clauses_en": [],
+        "refs": [],
+        "defined_terms": [],
+        "children": [
+          {
+            "id": "jp-mof-consolidated-fs-regulation.art312.p1",
+            "type": "paragraph",
+            "number": null,
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "指定国際会計基準特定会社が提出する連結財務諸表又は中間連結財務諸表の用語、様式及び作成方法は、指定国際会計基準(国際会計基準のうち、公正かつ適正な手続の下に作成及び公表が行われたものと認められ、公正妥当な企業会計の基準として認められることが見込まれるものとして金融庁長官が定めるものに限る。)に従うことができる。",
+            "text_en": "The terminology, forms, and preparation methods of consolidated financial statements or interim consolidated financial statements submitted by a company specified for Designated International Accounting Standards may conform to Designated International Accounting Standards (limited to those International Accounting Standards that the Commissioner of the Financial Services Agency specifies as having been prepared and published under fair and appropriate procedures and as expected to be recognized as fair and appropriate accounting standards).",
+            "translation_status": "reviewed",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "指定国際会計基準特定会社が提出する連結財務諸表又は中間連結財務諸表の用語、様式及び作成方法は、指定国際会計基準"
+              },
+              {
+                "clause_type": "definition",
+                "text": "(国際会計基準のうち、公正かつ適正な手続の下に作成及び公表が行われたものと認められ、公正妥当な企業会計の基準として認められることが見込まれるものとして金融庁長官が定めるものに限る。)"
+              },
+              {
+                "clause_type": "main",
+                "text": "に従うことができる。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "The terminology, forms, and preparation methods of consolidated financial statements or interim consolidated financial statements submitted by a company specified for Designated International Accounting Standards may conform to Designated International Accounting Standards "
+              },
+              {
+                "clause_type": "definition",
+                "text": "(limited to those International Accounting Standards that the Commissioner of the Financial Services Agency specifies as having been prepared and published under fair and appropriate procedures and as expected to be recognized as fair and appropriate accounting standards)."
+              }
+            ],
+            "refs": [],
+            "defined_terms": [
+              {
+                "term_ja": "指定国際会計基準",
+                "term_en": "Designated International Accounting Standards",
+                "definition_node_id": "jp-mof-consolidated-fs-regulation.art312.p1"
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "jp-mof-consolidated-fs-regulation.art10",
+        "type": "article",
+        "number": "第十条",
+        "heading": "持分法の適用",
+        "heading_en": "Application of the Equity Method",
+        "text_ja": null,
+        "text_en": null,
+        "summary_ja": "非連結子会社及び関連会社への投資は原則として持分法により計上するが、支配が一時的なもの等は対象から除外し、重要性の乏しいものも除外できる。",
+        "summary_en": "Investments in non-consolidated subsidiaries and associates are in principle accounted for using the equity method, but those under only temporary influence are excluded, and immaterial ones may also be excluded.",
+        "translation_status": "reviewed",
+        "clauses_ja": [],
+        "clauses_en": [],
+        "refs": [],
+        "defined_terms": [],
+        "children": [
+          {
+            "id": "jp-mof-consolidated-fs-regulation.art10.p1",
+            "type": "paragraph",
+            "number": null,
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "非連結子会社及び関連会社に対する投資については、持分法により計算した価額をもつて連結貸借対照表に計上しなければならない。ただし、次の各号の一に該当する会社に対する投資については、持分法を適用しないものとする。",
+            "text_en": "Investments in non-consolidated subsidiaries and associates shall be recorded on the consolidated balance sheet at the value calculated using the equity method; provided, however, that the equity method shall not be applied to investments in a company falling under either of the following items.",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "非連結子会社及び関連会社に対する投資については、持分法により計算した価額をもつて連結貸借対照表に計上しなければならない。"
+              },
+              {
+                "clause_type": "proviso",
+                "text": "ただし、次の各号の一に該当する会社に対する投資については、持分法を適用しないものとする。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "Investments in non-consolidated subsidiaries and associates shall be recorded on the consolidated balance sheet at the value calculated using the equity method; "
+              },
+              {
+                "clause_type": "proviso",
+                "text": "provided, however, that the equity method shall not be applied to investments in a company falling under either of the following items."
+              }
+            ],
+            "refs": [],
+            "defined_terms": [],
+            "children": [
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art10.p1.item1",
+                "type": "item",
+                "number": "一",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "財務及び営業又は事業の方針の決定に対する影響が一時的であると認められる関連会社",
+                "text_en": "An associate for which influence over the determination of financial and business or operational policy is found to be temporary.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              },
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art10.p1.item2",
+                "type": "item",
+                "number": "二",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "持分法を適用することにより連結財務諸表提出会社の利害関係人の判断を著しく誤らせるおそれがあると認められる非連結子会社及び関連会社",
+                "text_en": "A non-consolidated subsidiary or associate for which applying the equity method is found likely to seriously mislead the judgment of interested parties of the Company Required to Submit Consolidated Financial Statements.",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "jp-mof-consolidated-fs-regulation.art10.p2",
+            "type": "paragraph",
+            "number": "２",
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "前項の規定により持分法を適用すべき非連結子会社及び関連会社のうち、その損益及び利益剰余金その他の項目からみて、持分法の適用の対象から除いても連結財務諸表に重要な影響を与えないものは、持分法の適用の対象から除くことができる。",
+            "text_en": "Among the non-consolidated subsidiaries and associates that should be subject to the equity method under the preceding paragraph, one whose profit or loss, retained earnings, and other items are such that excluding it from the equity method would not materially affect the consolidated financial statements may be excluded from the equity method.",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "前項の規定により持分法を適用すべき非連結子会社及び関連会社のうち、その損益及び利益剰余金その他の項目からみて、持分法の適用の対象から除いても連結財務諸表に重要な影響を与えないものは、持分法の適用の対象から除くことができる。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "Among the non-consolidated subsidiaries and associates that should be subject to the equity method under the preceding paragraph, one whose profit or loss, retained earnings, and other items are such that excluding it from the equity method would not materially affect the consolidated financial statements may be excluded from the equity method."
+              }
+            ],
+            "refs": [
+              {
+                "raw_text": "前項",
+                "text_en": "the preceding paragraph",
+                "scope": "internal",
+                "external_name": null,
+                "target_ids": [
+                  "jp-mof-consolidated-fs-regulation.art10.p1"
+                ],
+                "target_feed": "jp-mof-consolidated-fs-regulation",
+                "resolution_status": "resolved",
+                "external_item_summary_ja": null,
+                "external_item_summary_en": null,
+                "external_item_summary_confidence": null
+              }
+            ],
+            "defined_terms": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "jp-mof-consolidated-fs-regulation.art28",
+        "type": "article",
+        "number": "第二十八条",
+        "heading": "無形固定資産の区分表示等",
+        "heading_en": "Classification and Presentation of Intangible Fixed Assets",
+        "text_ja": null,
+        "text_en": null,
+        "summary_ja": "無形固定資産の表示科目区分を定める条文。第五項は、連結子会社への投資額がその資本額を超える差額（のれん相当差額）をのれんに含めて表示する旨の規定。",
+        "summary_en": "Sets the line-item classification for intangible fixed assets. Paragraph (5) — the part cited elsewhere — requires that the excess of a Consolidated Company's investment over the corresponding Consolidated Subsidiary's capital amount (a goodwill-equivalent difference) be presented as included in goodwill.",
+        "translation_status": "reviewed",
+        "clauses_ja": [],
+        "clauses_en": [],
+        "refs": [],
+        "defined_terms": [],
+        "children": [
+          {
+            "id": "jp-mof-consolidated-fs-regulation.art28.p5",
+            "type": "paragraph",
+            "number": "５",
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "連結会社の投資がこれに対応する連結子会社の資本の金額を超えることにより生じる差額は、のれんに含めて表示する。",
+            "text_en": "The difference arising from a Consolidated Company's investment exceeding the amount of the corresponding Consolidated Subsidiary's capital shall be presented as included in goodwill.",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "連結会社の投資がこれに対応する連結子会社の資本の金額を超えることにより生じる差額は、のれんに含めて表示する。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "The difference arising from a Consolidated Company's investment exceeding the amount of the corresponding Consolidated Subsidiary's capital shall be presented as included in goodwill."
+              }
+            ],
+            "refs": [],
+            "defined_terms": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "jp-mof-consolidated-fs-regulation.art43-2",
+        "type": "article",
+        "number": "第四十三条の二",
+        "heading": "その他の包括利益累計額の区分表示",
+        "heading_en": "Classification of Accumulated Other Comprehensive Income",
+        "text_ja": null,
+        "text_en": null,
+        "summary_ja": "その他の包括利益累計額を項目区分ごとに表示することを定める条文。",
+        "summary_en": "Requires accumulated other comprehensive income to be presented broken down by the item categories listed here.",
+        "translation_status": "reviewed",
+        "clauses_ja": [],
+        "clauses_en": [],
+        "refs": [],
+        "defined_terms": [],
+        "children": [
+          {
+            "id": "jp-mof-consolidated-fs-regulation.art43-2.p1",
+            "type": "paragraph",
+            "number": null,
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "その他の包括利益累計額は、次に掲げる項目の区分に従い、当該項目を示す名称を付した科目をもつて掲記しなければならない。",
+            "text_en": "Accumulated other comprehensive income shall be presented under line items named for, and classified according to, the following categories.",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "その他の包括利益累計額は、次に掲げる項目の区分に従い、当該項目を示す名称を付した科目をもつて掲記しなければならない。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "Accumulated other comprehensive income shall be presented under line items named for, and classified according to, the following categories."
+              }
+            ],
+            "refs": [],
+            "defined_terms": [],
+            "children": [
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art43-2.p1.item1",
+                "type": "item",
+                "number": "一",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "その他有価証券評価差額金",
+                "text_en": "Valuation Difference on Available-for-Sale Securities",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              },
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art43-2.p1.item2",
+                "type": "item",
+                "number": "二",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "繰延ヘッジ損益(ヘッジ対象に係る損益が認識されるまで繰り延べられるヘッジ手段に係る損益又は時価評価差額をいう。)",
+                "text_en": "Deferred Gains or Losses on Hedges (meaning gains, losses, or fair-value valuation differences on a hedging instrument that are deferred until the gain or loss on the hedged item is recognized).",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              },
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art43-2.p1.item3",
+                "type": "item",
+                "number": "三",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "土地再評価差額金",
+                "text_en": "Revaluation Reserve for Land",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              },
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art43-2.p1.item4",
+                "type": "item",
+                "number": "四",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "為替換算調整勘定(外国にある子会社又は関連会社の資産及び負債の換算に用いる為替相場と純資産の換算に用いる為替相場とが異なることによつて生じる換算差額をいう。)",
+                "text_en": "Foreign Currency Translation Adjustment (meaning the translation difference arising because the exchange rate used to translate the assets and liabilities of a foreign subsidiary or associate differs from the rate used to translate net assets).",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              },
+              {
+                "id": "jp-mof-consolidated-fs-regulation.art43-2.p1.item5",
+                "type": "item",
+                "number": "五",
+                "heading": null,
+                "heading_en": null,
+                "text_ja": "退職給付に係る調整累計額",
+                "text_en": "Remeasurements of Defined Benefit Plans",
+                "clauses_ja": [],
+                "clauses_en": [],
+                "refs": [],
+                "defined_terms": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "jp-mof-consolidated-fs-regulation.art43-2.p2",
+            "type": "paragraph",
+            "number": "２",
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "前項に掲げる項目のほか、その他の包括利益累計額の項目として計上することが適当であると認められるものは、当該項目を示す名称を付した科目をもつて掲記することができる。",
+            "text_en": "In addition to the items listed in the preceding paragraph, anything else found appropriate to record as an item of accumulated other comprehensive income may be presented under a line item named accordingly.",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "前項に掲げる項目のほか、その他の包括利益累計額の項目として計上することが適当であると認められるものは、当該項目を示す名称を付した科目をもつて掲記することができる。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "In addition to the items listed in the preceding paragraph, anything else found appropriate to record as an item of accumulated other comprehensive income may be presented under a line item named accordingly."
+              }
+            ],
+            "refs": [
+              {
+                "raw_text": "前項",
+                "text_en": "the preceding paragraph",
+                "scope": "internal",
+                "external_name": null,
+                "target_ids": [
+                  "jp-mof-consolidated-fs-regulation.art43-2.p1"
+                ],
+                "target_feed": "jp-mof-consolidated-fs-regulation",
+                "resolution_status": "resolved",
+                "external_item_summary_ja": null,
+                "external_item_summary_en": null,
+                "external_item_summary_confidence": null
+              }
+            ],
+            "defined_terms": [],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

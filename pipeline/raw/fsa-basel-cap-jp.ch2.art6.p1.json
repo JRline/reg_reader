@@ -1,0 +1,29 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art6.p1",
+  "number": null,
+  "heading": "その他Tier1資本の額",
+  "text_ja": "第二条第二号の算式において、その他Tier1資本に係る基礎項目の額は、次に掲げる額の合計額とする。一その他Tier1資本調達手段に係る株主資本の額(社外流出予定額を除く。)二その他Tier1資本調達手段に係る負債の額二の二その他Tier1資本調達手段に係る株式引受権の額三その他Tier1資本調達手段に係る新株予約権の額四特別目的会社等の発行するその他Tier1資本調達手段の額五その他Tier1資本に係る調整後非支配株主持分等の額",
+  "text_en": "In the formula of Article 2, item (ii), the amount of basic items relating to Additional Tier 1 Capital shall be the sum of the following amounts. (i) The amount of shareholders' equity relating to Additional Tier 1 Capital instruments (excluding planned external outflows). (ii) The amount of liabilities relating to Additional Tier 1 Capital instruments. (ii-2) The amount of share subscription rights relating to Additional Tier 1 Capital instruments. (iii) The amount of share options relating to Additional Tier 1 Capital instruments. (iv) The amount of Additional Tier 1 Capital instruments issued by special purpose companies, etc. (v) The amount of adjusted minority interests, etc. relating to Additional Tier 1 Capital.",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "第二条第二号の算式において、その他Tier1資本に係る基礎項目の額は、次に掲げる額の合計額とする。"},
+    {"clause_type": "enumeration_item", "text": "一その他Tier1資本調達手段に係る株主資本の額(社外流出予定額を除く。)"},
+    {"clause_type": "enumeration_item", "text": "二その他Tier1資本調達手段に係る負債の額"},
+    {"clause_type": "enumeration_item", "text": "二の二その他Tier1資本調達手段に係る株式引受権の額"},
+    {"clause_type": "enumeration_item", "text": "三その他Tier1資本調達手段に係る新株予約権の額"},
+    {"clause_type": "enumeration_item", "text": "四特別目的会社等の発行するその他Tier1資本調達手段の額"},
+    {"clause_type": "enumeration_item", "text": "五その他Tier1資本に係る調整後非支配株主持分等の額"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "In the formula of Article 2, item (ii), the amount of basic items relating to Additional Tier 1 Capital shall be the sum of the following amounts. "},
+    {"clause_type": "enumeration_item", "text": "(i) The amount of shareholders' equity relating to Additional Tier 1 Capital instruments (excluding planned external outflows). "},
+    {"clause_type": "enumeration_item", "text": "(ii) The amount of liabilities relating to Additional Tier 1 Capital instruments. "},
+    {"clause_type": "enumeration_item", "text": "(ii-2) The amount of share subscription rights relating to Additional Tier 1 Capital instruments. "},
+    {"clause_type": "enumeration_item", "text": "(iii) The amount of share options relating to Additional Tier 1 Capital instruments. "},
+    {"clause_type": "enumeration_item", "text": "(iv) The amount of Additional Tier 1 Capital instruments issued by special purpose companies, etc. "},
+    {"clause_type": "enumeration_item", "text": "(v) The amount of adjusted minority interests, etc. relating to Additional Tier 1 Capital."}
+  ],
+  "refs": [
+    {"raw_text": "第二条第二号", "text_en": "Article 2, item (ii)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

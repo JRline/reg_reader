@@ -1,0 +1,76 @@
+You are populating structured data for a Japanese regulatory text reader. You will be given
+one Article of Japanese legal/regulatory text. Output ONLY a single JSON object — no prose,
+no markdown fences, no explanation before or after.
+
+Known issue in the source text: mathematical formulas in the original PDF were embedded
+as images, not text, so they were lost during extraction. You may see a sentence like
+"次の算式により得られる比率について" (regarding the ratio obtained by the following
+formula) with nothing after it. This is expected — do NOT invent, reconstruct, or guess
+at a formula that isn't present in the source text given to you. Translate faithfully
+around the gap and move on; its absence is not an error for you to fix.
+
+Context (do not translate, for your reference only): Article 第七条 (Tier2資本の額) — this is paragraph 3 of 6
+
+Source text (Japanese, verbatim, id=fsa-basel-cap-jp.ch2.art7.p3):
+"""
+前項の規定にかかわらず、TLAC規制対象最終指定親会社については、第二条第三号の算式におけるTier2資本に係る調整項目の額は、前項各号に掲げる額の合計額に、次に掲げる額(前項各号に該当する額を除く。)の合計額を加えた額とする。一意図的に保有している他の金融機関等のその他外部TLAC関連調達手段の額二最終指定親会社等が保有し、かつ、次に掲げる要件の全てを満たす少数出資金融機関等のその他外部TLAC関連調達手段で、最終指定親会社が第八条第七項の規定により少数出資に係る対象資本等調達手段合計額を算出するに当たり、その他外部TLAC関連調達手段の額の合計額から控除するものとして指定しているもの(次号及び同項第一号において「マーケット・メイク目的保有TLAC」という。)のうち、保有中に次に掲げる要件のいずれかを欠くに至ったものの額イ当該最終指定親会社等のトレーディング商品(連結貸借対照表の科目のトレーディング商品をいう。第十一条の三及び第七章において同じ。)に含まれること。ロ保有期間が三十営業日以内であること。三マーケット・メイク目的保有TLACの額の合計額から、前号に掲げる額及び少数出資に係る五パーセント基準額(第八条第七項第一号に規定する少数出資に係る五パーセント基準額をいう。)の合計額を控除した額(当該額が零を下回る場合にあっては、零とする。)
+"""
+
+Produce JSON with exactly this shape:
+
+{
+  "id": "fsa-basel-cap-jp.ch2.art7.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "<verbatim copy of the source text>",
+  "text_en": "<accurate English translation, preserving legal register>",
+  "clauses_ja": [
+    {"clause_type": "<one of: main, conditional, proviso, exception,
+                      enumeration_stem, enumeration_item, parenthetical, definition>",
+     "text": "<verbatim substring of text_ja>"}
+    // Break text_ja into ordered clauses covering the whole sentence.
+    // Concatenating all "text" fields in order must reconstruct the original text_ja exactly.
+    // Use "conditional" for 場合/とき clauses, "proviso" for ただし-clauses,
+    // "parenthetical" for kakko (　) asides, "enumeration_stem" for the sentence introducing
+    // a 一/二/三 list and "enumeration_item" for each numbered item.
+  ],
+  "clauses_en": [
+    {"clause_type": "<same enum as above>", "text": "<verbatim substring of text_en>"}
+    // Independently break text_en into ordered clauses covering the whole English sentence.
+    // Concatenating all "text" fields in order must reconstruct text_en exactly. Does NOT need
+    // the same clause count as clauses_ja, but the clause_type sequence should tell the same
+    // structural story.
+  ],
+  "refs": [
+    {"raw_text": "<verbatim citation phrase, e.g. 前条第二項>",
+     "text_en": "<the corresponding phrase as it appears in text_en>",
+     "scope": "internal | external",
+     "external_name": "<law/notification name if scope=external, else null>",
+     "external_item_summary_ja": "<see below, else null>",
+     "external_item_summary_en": "<see below, else null>",
+     "external_item_summary_confidence": "<stated_in_text | general_knowledge | null>"}
+    // List every cross-reference found in text_ja, INCLUDING ones that appear only inside a
+    // parenthetical/kakko aside — do not skip a citation just because it's inside brackets.
+    // Do not attempt to resolve a target id — just extract the citation phrase exactly as
+    // written, in both languages.
+    //
+    // For scope=external refs ONLY, also fill in external_item_summary_*: a one-line
+    // description of what THAT SPECIFIC cited article/paragraph/item says — NOT a summary of
+    // the external law as a whole. If the citing sentence already explains the cited provision
+    // inline (e.g. "...をいう"), restate that and set confidence "stated_in_text". Otherwise
+    // give your best general-knowledge understanding and set confidence "general_knowledge" —
+    // this must be visibly flagged as unverified in the reader, never presented as fact.
+  ],
+  "defined_terms": [
+    {"term_ja": "<term>", "term_en": "<your translation of the term>",
+     "expands_to_ja": "<see below, else null>"}
+    // Only terms explicitly defined in THIS text (e.g. "...という。" pattern), not terms
+    // merely used.
+    // Set expands_to_ja ONLY when this term is a shorthand for a longer Japanese phrase
+    // named earlier in the same sentence (e.g. a term standing in for an ordinance's
+    // full name). Leave null for a term that's being coined/glossed rather than
+    // abbreviating something. Never put an English translation in this field.
+  ]
+}
+
+If a field has nothing to report, use an empty array — never omit a key.

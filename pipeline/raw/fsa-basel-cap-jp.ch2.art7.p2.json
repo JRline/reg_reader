@@ -1,0 +1,32 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art7.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "第二条第三号の算式において、Tier2資本に係る調整項目の額は、次に掲げる額の合計額とする。一自己保有Tier2資本調達手段の額二意図的に保有している他の金融機関等のTier2資本調達手段の額三少数出資金融機関等のTier2資本調達手段の額四その他金融機関等のTier2資本調達手段の額五少数出資金融機関等のその他外部TLAC関連調達手段の額(特例外部TLAC調達手段にあっては、当該特例外部TLAC調達手段を発行する者(以下この号において「発行者」という。)が当該特例外部TLAC調達手段の額のうち自己のその他外部TLAC調達手段に相当するものに算入している額が当該発行者の特例外部TLAC調達手段の額の合計額に占める割合を、最終指定親会社等が保有している当該発行者の特例外部TLAC調達手段の額に乗じて得られた額とする。以下この条及び第八条において同じ。)六その他金融機関等のその他外部TLAC関連調達手段の額",
+  "text_en": "In the formula of Article 2, item (iii), the amount of adjustment items relating to Tier 2 Capital shall be the sum of the following amounts. (i) The amount of self-held Tier 2 Capital instruments. (ii) The amount of Tier 2 Capital instruments of other financial institutions, etc. held intentionally. (iii) The amount of Tier 2 Capital instruments of minority-invested financial institutions, etc. (iv) The amount of Tier 2 Capital instruments of other financial institutions, etc. (v) The amount of other external TLAC-related instruments of minority-invested financial institutions, etc. (in the case of special external TLAC instruments, the amount obtained by multiplying the amount held by the Ultimate Designated Parent Company, etc. of the special external TLAC instruments of the issuer (hereinafter referred to as the \"issuer\" in this item) of such special external TLAC instruments by the ratio of the amount included in the issuer's own other external TLAC instruments equivalent amounts out of the total amount of such special external TLAC instruments to the total amount of the issuer's special external TLAC instruments; the same applies hereinafter in this Article and Article 8). (vi) The amount of other external TLAC-related instruments of other financial institutions, etc.",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "第二条第三号の算式において、Tier2資本に係る調整項目の額は、次に掲げる額の合計額とする。"},
+    {"clause_type": "enumeration_item", "text": "一自己保有Tier2資本調達手段の額"},
+    {"clause_type": "enumeration_item", "text": "二意図的に保有している他の金融機関等のTier2資本調達手段の額"},
+    {"clause_type": "enumeration_item", "text": "三少数出資金融機関等のTier2資本調達手段の額"},
+    {"clause_type": "enumeration_item", "text": "四その他金融機関等のTier2資本調達手段の額"},
+    {"clause_type": "enumeration_item", "text": "五少数出資金融機関等のその他外部TLAC関連調達手段の額(特例外部TLAC調達手段にあっては、当該特例外部TLAC調達手段を発行する者(以下この号において「発行者」という。)が当該特例外部TLAC調達手段の額のうち自己のその他外部TLAC調達手段に相当するものに算入している額が当該発行者の特例外部TLAC調達手段の額の合計額に占める割合を、最終指定親会社等が保有している当該発行者の特例外部TLAC調達手段の額に乗じて得られた額とする。以下この条及び第八条において同じ。)"},
+    {"clause_type": "enumeration_item", "text": "六その他金融機関等のその他外部TLAC関連調達手段の額"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "In the formula of Article 2, item (iii), the amount of adjustment items relating to Tier 2 Capital shall be the sum of the following amounts. "},
+    {"clause_type": "enumeration_item", "text": "(i) The amount of self-held Tier 2 Capital instruments. "},
+    {"clause_type": "enumeration_item", "text": "(ii) The amount of Tier 2 Capital instruments of other financial institutions, etc. held intentionally. "},
+    {"clause_type": "enumeration_item", "text": "(iii) The amount of Tier 2 Capital instruments of minority-invested financial institutions, etc. "},
+    {"clause_type": "enumeration_item", "text": "(iv) The amount of Tier 2 Capital instruments of other financial institutions, etc. "},
+    {"clause_type": "enumeration_item", "text": "(v) The amount of other external TLAC-related instruments of minority-invested financial institutions, etc. (in the case of special external TLAC instruments, the amount obtained by multiplying the amount held by the Ultimate Designated Parent Company, etc. of the special external TLAC instruments of the issuer (hereinafter referred to as the \"issuer\" in this item) of such special external TLAC instruments by the ratio of the amount included in the issuer's own other external TLAC instruments equivalent amounts out of the total amount of such special external TLAC instruments to the total amount of the issuer's special external TLAC instruments; the same applies hereinafter in this Article and Article 8). "},
+    {"clause_type": "enumeration_item", "text": "(vi) The amount of other external TLAC-related instruments of other financial institutions, etc."}
+  ],
+  "refs": [
+    {"raw_text": "第二条第三号", "text_en": "Article 2, item (iii)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第八条", "text_en": "Article 8", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "発行者", "term_en": "issuer", "expands_to_ja": null}
+  ]
+}

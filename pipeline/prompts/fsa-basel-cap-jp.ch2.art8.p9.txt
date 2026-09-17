@@ -1,0 +1,76 @@
+You are populating structured data for a Japanese regulatory text reader. You will be given
+one Article of Japanese legal/regulatory text. Output ONLY a single JSON object — no prose,
+no markdown fences, no explanation before or after.
+
+Known issue in the source text: mathematical formulas in the original PDF were embedded
+as images, not text, so they were lost during extraction. You may see a sentence like
+"次の算式により得られる比率について" (regarding the ratio obtained by the following
+formula) with nothing after it. This is expected — do NOT invent, reconstruct, or guess
+at a formula that isn't present in the source text given to you. Translate faithfully
+around the gap and move on; its absence is not an error for you to fix.
+
+Context (do not translate, for your reference only): Article 第八条 (調整後非支配株主持分等の額及び調整項目の額の算出方法) — this is paragraph 9 of 9
+
+Source text (Japanese, verbatim, id=fsa-basel-cap-jp.ch2.art8.p9):
+"""
+第五条第二項第五号に掲げる特定項目に係る十パーセント基準超過額は、次に掲げる額の合計額とする。一その他金融機関等に係る対象資本等調達手段のうち普通株式に相当するものの額から特定項目に係る十パーセント基準額(第五条第一項各号に掲げる額の合計額から同条第二項第一号から第四号までに掲げる額の合計額を控除した額に十パーセントを乗じて得た額をいう。次号及び第三号において同じ。)を控除した額(当該額が零を下回る場合には、零とする。)二モーゲージ・サービシング・ライツに係る無形固定資産の額から特定項目に係る十パーセント基準額を控除した額(当該額が零を下回る場合には、零とする。)三繰延税金資産(一時差異に係るものに限る。)の額から特定項目に係る十パーセント基準額を控除した額(当該額が零を下回る場合には、零とする。)１０第五条第二項第六号に掲げる特定項目に係る十五パーセント基準超過額は、次に掲げる額の合計額とする。一特定項目に係る調整対象額(特定項目に係る十パーセント基準対象額(特定項目(その他金融機関等に係る対象資本等調達手段のうち普通株式に相当するもの、モーゲージ・サービシング・ライツに係る無形固定資産及び繰延税金資産(一時差異に係るものに限る。第三号において同じ。)をいう。以下この号において同じ。)の額から第五条第二項第五号に掲げる額を控除した額をいう。以下この項において同じ。)から特定項目に係る十五パーセント基準額(同条第一項各号に掲げる額の合計額から同条第二項第一号から第四号までに掲げる額及び特定項目の額の合計額を控除した額に十五パーセントを乗じ、これを八十五パーセントで除して得た額をいう。)を控除した額(当該額が零を下回る場合には、零とする。)をいう。次号及び第三号において同じ。)に、その他金融機関等に係る対象資本等調達手段のうち普通株式に相当するものの額から前項第一号に掲げる額を控除した額を特定項目に係る十パーセント基準対象額で除して得た割合を乗じて得た額二特定項目に係る調整対象額に、モーゲージ・サービシング・ライツに係る無形固定資産の額から前項第二号に掲げる額を控除した額を特定項目に係る十パーセント基準対象額で除して得た割合を乗じて得た額三特定項目に係る調整対象額に、繰延税金資産の額から前項第三号に掲げる額を控除した額を特定項目に係る十パーセント基準対象額で除して得た割合を乗じて得た額１１第七項各号及び第八項各号に規定する額並びに第九項第一号及び前項第一号に掲げる額を算出する場合において、最終指定親会社等が少数出資金融機関等の対象資本等調達手段又はその他金融機関等に係る対象資本等調達手段に係る一定のショート・ポジションを保有するときは、これらの対象資本等調達手段と対応するショート・ポジションを相殺することができる。１２第七項各号及び第八項各号に規定する額並びに第九項第一号及び第十項第一号に掲げる額を算出する場合において、次に掲げるものに該当する対象資本等調達手段があるときは、当該対象資本等調達手段を算出の対象から除外することができる。ただし、第一号に掲げる資本調達手段については、当該資本調達手段の保有に係る特殊事情その他の事情を勘案して金融庁長官が承認した場合に限り、当該承認において認められた期間に限るものとする。一その存続が極めて困難であると認められる者の救済又は処理のための資金の援助を行うことを目的として保有することとなった資本調達手段二引受け(法第二条第八項第六号に規定する有価証券の引受けをいう。)により取得し、かつ、保有期間が五営業日以内の対象資本等調達手段１３第九項第三号及び第十項各号並びに第五条第二項第一号ロに掲げる額を算出する場合において、繰延税金資産の額及びこれに関連する繰延税金負債の額(同条第四項の規定により相殺された額を除く。以下この項において同じ。)があるときは、次の各号に掲げる繰延税金資産の額の区分に応じ、当該額と当該各号に定める額を相殺することができる。一繰延税金資産(一時差異に係るものに限る。)の額繰延税金負債の額のうち当該額に繰延税金資産(一時差異に係るものに限る。)の額を繰延税金資産の額で除して得た割合を乗じて得た額二繰延税金資産(一時差異に係るものを除く。)の額繰延税金負債の額のうち前号に定める額を控除した額１４第五条第二項第七号及び第六条第二項第五号に掲げる額は、次に定めるところにより算出した額とする。一第五条第二項第七号に掲げるその他Tier1資本不足額は、第二条第二号の算式におけるその他Tier1資本に係る調整項目の額からその他Tier1資本に係る基礎項目の額を控除した額(当該額が零を下回る場合にあっては、零とする。)とする。二第六条第二項第五号に掲げるTier2資本不足額は、第二条第三号の算式におけるTier2資本に係る調整項目の額からTier2資本に係る基礎項目の額を控除した額(当該額が零を下回る場合にあっては、零とする。)とする。
+"""
+
+Produce JSON with exactly this shape:
+
+{
+  "id": "fsa-basel-cap-jp.ch2.art8.p9",
+  "number": "９",
+  "heading": null,
+  "text_ja": "<verbatim copy of the source text>",
+  "text_en": "<accurate English translation, preserving legal register>",
+  "clauses_ja": [
+    {"clause_type": "<one of: main, conditional, proviso, exception,
+                      enumeration_stem, enumeration_item, parenthetical, definition>",
+     "text": "<verbatim substring of text_ja>"}
+    // Break text_ja into ordered clauses covering the whole sentence.
+    // Concatenating all "text" fields in order must reconstruct the original text_ja exactly.
+    // Use "conditional" for 場合/とき clauses, "proviso" for ただし-clauses,
+    // "parenthetical" for kakko (　) asides, "enumeration_stem" for the sentence introducing
+    // a 一/二/三 list and "enumeration_item" for each numbered item.
+  ],
+  "clauses_en": [
+    {"clause_type": "<same enum as above>", "text": "<verbatim substring of text_en>"}
+    // Independently break text_en into ordered clauses covering the whole English sentence.
+    // Concatenating all "text" fields in order must reconstruct text_en exactly. Does NOT need
+    // the same clause count as clauses_ja, but the clause_type sequence should tell the same
+    // structural story.
+  ],
+  "refs": [
+    {"raw_text": "<verbatim citation phrase, e.g. 前条第二項>",
+     "text_en": "<the corresponding phrase as it appears in text_en>",
+     "scope": "internal | external",
+     "external_name": "<law/notification name if scope=external, else null>",
+     "external_item_summary_ja": "<see below, else null>",
+     "external_item_summary_en": "<see below, else null>",
+     "external_item_summary_confidence": "<stated_in_text | general_knowledge | null>"}
+    // List every cross-reference found in text_ja, INCLUDING ones that appear only inside a
+    // parenthetical/kakko aside — do not skip a citation just because it's inside brackets.
+    // Do not attempt to resolve a target id — just extract the citation phrase exactly as
+    // written, in both languages.
+    //
+    // For scope=external refs ONLY, also fill in external_item_summary_*: a one-line
+    // description of what THAT SPECIFIC cited article/paragraph/item says — NOT a summary of
+    // the external law as a whole. If the citing sentence already explains the cited provision
+    // inline (e.g. "...をいう"), restate that and set confidence "stated_in_text". Otherwise
+    // give your best general-knowledge understanding and set confidence "general_knowledge" —
+    // this must be visibly flagged as unverified in the reader, never presented as fact.
+  ],
+  "defined_terms": [
+    {"term_ja": "<term>", "term_en": "<your translation of the term>",
+     "expands_to_ja": "<see below, else null>"}
+    // Only terms explicitly defined in THIS text (e.g. "...という。" pattern), not terms
+    // merely used.
+    // Set expands_to_ja ONLY when this term is a shorthand for a longer Japanese phrase
+    // named earlier in the same sentence (e.g. a term standing in for an ordinance's
+    // full name). Leave null for a term that's being coined/glossed rather than
+    // abbreviating something. Never put an English translation in this field.
+  ]
+}
+
+If a field has nothing to report, use an empty array — never omit a key.

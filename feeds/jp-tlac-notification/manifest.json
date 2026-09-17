@@ -1,0 +1,22 @@
+{
+  "feed_id": "jp-tlac-notification",
+  "title_ja": "最終指定親会社が最終指定親会社及びその子法人等の経営の健全性を判断するための基準として定める総損失吸収力及び資本再構築力に係る健全性の状況を表示する基準",
+  "title_en": "Standards for Ultimate Designated Parent Companies Concerning Total Loss-Absorbing Capacity and Recapitalization Capacity (\"TLAC Notification\")",
+  "issuing_authority": "Financial Services Agency of Japan",
+  "jurisdiction": "JP",
+  "source_url": "https://www.fsa.go.jp/policy/basel_ii/tlac_saishu01.pdf",
+  "source_pdf": "tlac_saishu01.pdf",
+  "effective_date": null,
+  "version_label": "excerpt — Article 1 items (ix)-(x), Article 2 paragraphs (1)-(2) only",
+  "language_pair": [
+    "ja",
+    "en"
+  ],
+  "scope_note": "FSA Notification No. 10 of 2019, a sibling notification to fsa-basel-cap-jp covering TLAC (Total Loss-Absorbing Capacity) requirements for domestically resolved G-SIB groups. This is NOT the full notification — only the provisions cited from fsa-basel-cap-jp Chapter 2 have been digitized.",
+  "related_feeds": [
+    {
+      "feed_id": "fsa-basel-cap-jp",
+      "relation": "sibling_notification"
+    }
+  ]
+}

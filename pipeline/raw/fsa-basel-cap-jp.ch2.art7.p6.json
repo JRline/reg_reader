@@ -1,0 +1,19 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art7.p6",
+  "number": "６",
+  "heading": null,
+  "text_ja": "第二条第三号の算式において、Tier2資本に係る調整項目の額がTier2資本に係る基礎項目の額を上回る場合には、Tier2資本の額は、零とする。",
+  "text_en": "In the formula of Article 2, item (iii), where the amount of adjustment items relating to Tier 2 Capital exceeds the amount of basic items relating to Tier 2 Capital, the amount of Tier 2 Capital shall be zero.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "第二条第三号の算式において、Tier2資本に係る調整項目の額がTier2資本に係る基礎項目の額を上回る場合には、"},
+    {"clause_type": "main", "text": "Tier2資本の額は、零とする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "In the formula of Article 2, item (iii), where the amount of adjustment items relating to Tier 2 Capital exceeds the amount of basic items relating to Tier 2 Capital, "},
+    {"clause_type": "main", "text": "the amount of Tier 2 Capital shall be zero."}
+  ],
+  "refs": [
+    {"raw_text": "第二条第三号", "text_en": "Article 2, item (iii)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

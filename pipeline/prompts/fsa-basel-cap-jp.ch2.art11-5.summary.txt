@@ -1,0 +1,10 @@
+You will be given the full text of one Article of Japanese regulatory text, with its
+official English translation. Write a one-sentence, plain-language summary of what this
+Article actually requires or establishes — the kind of line a compliance officer would
+want as a preview before deciding whether to read the full text. Do not just restate the
+heading. Output ONLY this JSON object, no prose:
+
+{"summary_ja": "<one sentence, plain Japanese>", "summary_en": "<one sentence, plain English>"}
+
+Japanese text: """最終指定親会社等は、トレーディング勘定に分類する商品の範囲を定めるための方針及び手続に係る文書を作成するとともにその遵守態勢を確立するものとする。最終指定親会社等のフロント・オフィス部門から独立したマーケット・リスクの管理に責任を負う部署(以下「マーケット・リスク管理部署」という。)は、前項の商品の分類が適切に実施されたかどうかの検証をする体制を整備するものとする。最終指定親会社等の内部監査部署は、第一項の商品の分類に係る内部監査を一年に一回以上実施し、その結果を金融庁長官の求めに応じて提出することができるように整備するものとする。"""
+English text: """Ultimate Designated Parent Companies, etc. shall prepare documentation relating to policies and procedures for determining the scope of products classified into the trading account and shall establish a system for compliance therewith.The department responsible for market risk management that is independent from the front office of the Ultimate Designated Parent Company, etc. (hereinafter referred to as the "Market Risk Management Department") shall establish a system for verifying whether the product classification set forth in the preceding paragraph has been appropriately implemented.The internal audit department of the Ultimate Designated Parent Company, etc. shall conduct internal audits relating to the product classification set forth in paragraph (1) at least once per year and shall establish a system so that the results thereof can be submitted in response to a request from the Commissioner of the Financial Services Agency."""

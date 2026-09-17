@@ -1,0 +1,177 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "rule-feed.schema.json",
+  "title": "Rule Feed",
+  "description": "Generic contract for a single regulation's structured content. The app is written against this schema only — it never has regulation-specific logic.",
+  "type": "object",
+  "required": ["feed_id", "root"],
+  "properties": {
+    "feed_id": {
+      "type": "string",
+      "description": "Must match the feed's folder name / manifest.feed_id."
+    },
+    "root": { "$ref": "#/definitions/node" }
+  },
+  "definitions": {
+    "clauseList": {
+      "type": "array",
+      "description": "Ordered decomposition of this node's text (in one language) into typed segments, for the long-sentence visual-cue rendering. Concatenating all 'text' fields in order must reconstruct the full text exactly. clauses_ja and clauses_en are independent segmentations of the same meaning — they don't need the same number of entries (English often reorders/merges clauses relative to Japanese), but their clause_type sequence should tell the same structural story.",
+      "items": {
+        "type": "object",
+        "required": ["clause_type", "text"],
+        "properties": {
+          "clause_type": {
+            "type": "string",
+            "enum": [
+              "main",
+              "conditional",
+              "proviso",
+              "exception",
+              "enumeration_stem",
+              "enumeration_item",
+              "parenthetical",
+              "definition"
+            ]
+          },
+          "text": { "type": "string" }
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "required": ["id", "type", "children"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable, hierarchical, human-legible ID, e.g. 'fsa-basel-cap-jp.ch2.art10.p1'. Never reused or renumbered once published — cross-refs point at this."
+        },
+        "type": {
+          "type": "string",
+          "enum": ["document", "part", "chapter", "section", "subsection", "article", "paragraph", "item", "subitem"]
+        },
+        "number": {
+          "type": ["string", "null"],
+          "description": "Display label exactly as printed in source, e.g. '第十条', '２', '一'."
+        },
+        "heading": {
+          "type": ["string", "null"],
+          "description": "見出し — title text attached to this node, if any (common on articles)."
+        },
+        "heading_en": {
+          "type": ["string", "null"],
+          "description": "English translation of heading. Numbers are NOT translated here — the app derives 'Article 3' from the Japanese '第三条' deterministically, since that's just numeral conversion, not translation. This field is only for the title text itself."
+        },
+        "text_ja": {
+          "type": ["string", "null"],
+          "description": "Verbatim source text for this node only (not children). Null for purely structural nodes (e.g. a chapter that has no text of its own, only child articles)."
+        },
+        "text_en": {
+          "type": ["string", "null"]
+        },
+        "summary_ja": {
+          "type": ["string", "null"],
+          "description": "One-line plain-language summary, generated after all of this node's children are known (e.g. after an article's paragraphs are ingested). Not the same as text_ja — this is a gloss, not a quote."
+        },
+        "summary_en": {
+          "type": ["string", "null"]
+        },
+        "translation_status": {
+          "type": "string",
+          "enum": ["pending", "llm_draft", "reviewed"],
+          "default": "pending"
+        },
+        "clauses_ja": { "$ref": "#/definitions/clauseList" },
+        "clauses_en": { "$ref": "#/definitions/clauseList" },
+        "refs": {
+          "type": "array",
+          "description": "Citations found in text_ja. target_id/target_feed are filled in by ingest.py, not the chatbot.",
+          "items": {
+            "type": "object",
+            "required": ["raw_text", "scope"],
+            "properties": {
+              "raw_text": {
+                "type": "string",
+                "description": "Verbatim citation phrase as it appears in text_ja, e.g. '前条第二項', '第十条第一号'. Must be found somewhere in text_ja, including inside parenthetical asides — do not skip a citation just because it's inside kakko."
+              },
+              "text_en": {
+                "type": ["string", "null"],
+                "description": "The corresponding citation phrase as it appears in text_en, e.g. 'Article 52-23, paragraph (1) of the Banking Act'. Used to link the same reference in the English rendering."
+              },
+              "scope": {
+                "type": "string",
+                "enum": ["internal", "external"],
+                "description": "internal = same feed/document. external = another law/notification/standard."
+              },
+              "external_name": {
+                "type": ["string", "null"],
+                "description": "Required when scope=external — the name of the other law/notification as written, e.g. '銀行法'."
+              },
+              "external_name_en": {
+                "type": ["string", "null"],
+                "description": "English name of the external law, looked up from feeds/_shared/external_refs.json by ingest.py — a name lookup, not a summary, since the same law name is reused across every feed that cites it."
+              },
+              "external_item_summary_ja": {
+                "type": ["string", "null"],
+                "description": "One-line description of what THIS SPECIFIC cited provision (the exact article/paragraph/item in raw_text) says or covers — not a description of the external law as a whole. Produced by the chatbot per-citation, since it depends on the exact numbers cited. Often derivable with high confidence directly from the citing sentence itself (Japanese legal drafting frequently glosses a citation inline, e.g. '...という' or '...をいう' right next to it) — in that case this is just a restatement of the source text, not external knowledge. See external_item_summary_confidence."
+              },
+              "external_item_summary_en": {
+                "type": ["string", "null"]
+              },
+              "external_item_summary_confidence": {
+                "type": ["string", "null"],
+                "enum": ["stated_in_text", "general_knowledge", "verified_from_source", null],
+                "description": "'stated_in_text' = the citing sentence itself explains what the cited provision means. 'general_knowledge' = an unverified best guess made without reading the external law's actual text — flag it as such in the UI. 'verified_from_source' = the external law's actual text has been fetched and digitized (see target_feed/target_ids), so this summary is grounded in a real, checkable source, not a guess."
+              },
+              "target_ids": {
+                "type": "array",
+                "items": { "type": "string" },
+                "default": [],
+                "description": "Resolved node id(s). Usually one; e.g. '前二項' (the preceding two paragraphs) resolves to two. Empty until ingest.py resolves it."
+              },
+              "target_feed": {
+                "type": ["string", "null"],
+                "description": "Resolved feed_id if the target lives outside this feed. Null if not yet linked or unavailable."
+              },
+              "resolution_status": {
+                "type": "string",
+                "enum": ["unresolved", "resolved", "ambiguous", "external_unavailable", "internal_unavailable"],
+                "default": "unresolved",
+                "description": "internal_unavailable = the citation was understood (points at a real article/paragraph of THIS document, e.g. by number) but that target isn't in the currently-loaded content (e.g. a later chapter not yet digitized) — distinct from a citation that couldn't be parsed at all."
+              }
+            }
+          }
+        },
+        "defined_terms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["term_ja"],
+            "properties": {
+              "term_ja": { "type": "string" },
+              "term_en": { "type": ["string", "null"] },
+              "expands_to_ja": {
+                "type": ["string", "null"],
+                "description": "Set ONLY when this term is a shorthand for a longer Japanese phrase named earlier in the same sentence (e.g. 「連結財務諸表規則」 standing in for the ordinance's full name) — the full phrase, in Japanese. Null for a term that's simply being coined/glossed, not abbreviating something. Deliberately separate from term_en: that's an English translation and must never be used as a stand-in for this field — mixing them up means English text leaks into places (like external_name resolution) that expect Japanese."
+              },
+              "definition_node_id": {
+                "type": ["string", "null"],
+                "description": "Node id where this term is defined (usually this node itself)."
+              }
+            }
+          }
+        },
+        "source_ref": {
+          "type": "object",
+          "properties": {
+            "pdf": { "type": "string" },
+            "page": { "type": "integer" }
+          }
+        },
+        "children": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/node" }
+        }
+      }
+    }
+  }
+}

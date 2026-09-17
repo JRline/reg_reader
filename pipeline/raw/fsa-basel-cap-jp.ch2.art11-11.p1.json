@@ -1,0 +1,21 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-11.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "内部取引によるバンキング勘定からトレーディング勘定への一般金利リスクのリスク移転については、次に掲げる要件の全てを満たす場合に限り、ヘッジ効果を反映することができる。一内部取引によりバンキング勘定の一般金利リスクがヘッジされている旨及び当該一般金利リスクの発生源に係る文書が作成されていること。二内部取引は、内部取引担当デスク(トレーディング・デスクのうち、他のトレーディング・デスクから独立してマーケット・リスク相当額を計測するデスクをいう。以下同じ。)との間で行われること。",
+  "text_en": "For risk transfers of general interest rate risk from the banking account to the trading account through internal transactions, the hedge effect may be reflected only when all of the following requirements are satisfied. (i) Documentation has been prepared to the effect that the general interest rate risk of the banking account is hedged through internal transactions and relating to the source of such general interest rate risk. (ii) Internal transactions are conducted with the internal transactions desk (meaning, among trading desks, a desk that measures market risk equivalent amounts independently from other trading desks; the same applies hereinafter).",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "内部取引によるバンキング勘定からトレーディング勘定への一般金利リスクのリスク移転については、次に掲げる要件の全てを満たす場合に限り、ヘッジ効果を反映することができる。"},
+    {"clause_type": "enumeration_item", "text": "一内部取引によりバンキング勘定の一般金利リスクがヘッジされている旨及び当該一般金利リスクの発生源に係る文書が作成されていること。"},
+    {"clause_type": "enumeration_item", "text": "二内部取引は、内部取引担当デスク(トレーディング・デスクのうち、他のトレーディング・デスクから独立してマーケット・リスク相当額を計測するデスクをいう。以下同じ。)との間で行われること。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "For risk transfers of general interest rate risk from the banking account to the trading account through internal transactions, the hedge effect may be reflected only when all of the following requirements are satisfied. "},
+    {"clause_type": "enumeration_item", "text": "(i) Documentation has been prepared to the effect that the general interest rate risk of the banking account is hedged through internal transactions and relating to the source of such general interest rate risk. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Internal transactions are conducted with the internal transactions desk (meaning, among trading desks, a desk that measures market risk equivalent amounts independently from other trading desks; the same applies hereinafter)."}
+  ],
+  "refs": [],
+  "defined_terms": [
+    {"term_ja": "内部取引担当デスク", "term_en": "internal transactions desk", "expands_to_ja": null}
+  ]
+}

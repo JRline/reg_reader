@@ -1,0 +1,19 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art6.p5",
+  "number": "５",
+  "heading": null,
+  "text_ja": "第二条第二号の算式において、その他Tier1資本に係る調整項目の額がその他Tier1資本に係る基礎項目の額を上回る場合には、その他Tier1資本の額は、零とする。",
+  "text_en": "In the formula of Article 2, item (ii), where the amount of adjustment items relating to Additional Tier 1 Capital exceeds the amount of basic items relating to Additional Tier 1 Capital, the amount of Additional Tier 1 Capital shall be zero.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "第二条第二号の算式において、その他Tier1資本に係る調整項目の額がその他Tier1資本に係る基礎項目の額を上回る場合には、"},
+    {"clause_type": "main", "text": "その他Tier1資本の額は、零とする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "In the formula of Article 2, item (ii), where the amount of adjustment items relating to Additional Tier 1 Capital exceeds the amount of basic items relating to Additional Tier 1 Capital, "},
+    {"clause_type": "main", "text": "the amount of Additional Tier 1 Capital shall be zero."}
+  ],
+  "refs": [
+    {"raw_text": "第二条第二号", "text_en": "Article 2, item (ii)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

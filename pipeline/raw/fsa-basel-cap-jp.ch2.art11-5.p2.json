@@ -1,0 +1,19 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-5.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "最終指定親会社等のフロント・オフィス部門から独立したマーケット・リスクの管理に責任を負う部署(以下「マーケット・リスク管理部署」という。)は、前項の商品の分類が適切に実施されたかどうかの検証をする体制を整備するものとする。",
+  "text_en": "The department responsible for market risk management that is independent from the front office of the Ultimate Designated Parent Company, etc. (hereinafter referred to as the \"Market Risk Management Department\") shall establish a system for verifying whether the product classification set forth in the preceding paragraph has been appropriately implemented.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "最終指定親会社等のフロント・オフィス部門から独立したマーケット・リスクの管理に責任を負う部署(以下「マーケット・リスク管理部署」という。)は、前項の商品の分類が適切に実施されたかどうかの検証をする体制を整備するものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "The department responsible for market risk management that is independent from the front office of the Ultimate Designated Parent Company, etc. (hereinafter referred to as the \"Market Risk Management Department\") shall establish a system for verifying whether the product classification set forth in the preceding paragraph has been appropriately implemented."}
+  ],
+  "refs": [
+    {"raw_text": "前項", "text_en": "the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "マーケット・リスク管理部署", "term_en": "Market Risk Management Department", "expands_to_ja": null}
+  ]
+}

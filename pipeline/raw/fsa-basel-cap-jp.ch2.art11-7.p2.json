@@ -1,0 +1,19 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-7.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "最終指定親会社等は、勘定間の振替を行った商品が満期を迎えた場合には、金融庁長官が承認した場合に限り、前項の規定を適用しないことができる。",
+  "text_en": "Where a product for which a transfer between accounts has been made by Ultimate Designated Parent Companies, etc. reaches maturity, the provisions of the preceding paragraph may not be applied only where the Commissioner of the Financial Services Agency has approved such non-application.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "最終指定親会社等は、勘定間の振替を行った商品が満期を迎えた場合には、"},
+    {"clause_type": "main", "text": "金融庁長官が承認した場合に限り、前項の規定を適用しないことができる。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "Where a product for which a transfer between accounts has been made by Ultimate Designated Parent Companies, etc. reaches maturity, "},
+    {"clause_type": "main", "text": "the provisions of the preceding paragraph may not be applied only where the Commissioner of the Financial Services Agency has approved such non-application."}
+  ],
+  "refs": [
+    {"raw_text": "前項", "text_en": "the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

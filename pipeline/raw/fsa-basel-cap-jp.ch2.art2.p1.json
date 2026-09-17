@@ -1,0 +1,32 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art2.p1",
+  "number": null,
+  "heading": "連結自己資本規制比率の計算方法",
+  "text_ja": "最終指定親会社及びその子法人等の自己資本の充実の状況が適当であることの基準(以下「連結自己資本規制比率」という。)であって、最終指定親会社及びその子法人等の適当な自己資本の充実の状況の最低基準は、次の各号に掲げる比率(以下「最低所要連結自己資本規制比率」と総称する。)の区分に応じ、当該各号に定めるところによる。一連結普通株式等Tier1比率次の算式により得られる比率について、四・五パーセント以上とする。二連結Tier1比率次の算式により得られる比率について、六パーセント以上とする。三連結総自己資本規制比率次の算式により得られる比率について、八パーセント以上とする。",
+  "text_en": "The standard for determining that the capital adequacy status of the Ultimate Designated Parent Company and its subsidiary legal entities, etc. is appropriate (hereinafter referred to as the \"Consolidated Capital Adequacy Ratio\") — the minimum standard for appropriate capital adequacy status of the Ultimate Designated Parent Company and its subsidiary legal entities, etc. shall be, in accordance with the classification of ratios listed in the following items (hereinafter collectively referred to as the \"Minimum Required Consolidated Capital Adequacy Ratios\"), as provided in each such item. (i) Consolidated Common Equity Tier 1 Ratio: regarding the ratio obtained by the following formula, it shall be 4.5% or more. (ii) Consolidated Tier 1 Ratio: regarding the ratio obtained by the following formula, it shall be 6% or more. (iii) Consolidated Total Capital Adequacy Ratio: regarding the ratio obtained by the following formula, it shall be 8% or more.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "最終指定親会社及びその子法人等の自己資本の充実の状況が適当であることの基準"},
+    {"clause_type": "parenthetical", "text": "(以下「連結自己資本規制比率」という。)"},
+    {"clause_type": "main", "text": "であって、最終指定親会社及びその子法人等の適当な自己資本の充実の状況の最低基準は、次の各号に掲げる比率"},
+    {"clause_type": "parenthetical", "text": "(以下「最低所要連結自己資本規制比率」と総称する。)"},
+    {"clause_type": "enumeration_stem", "text": "の区分に応じ、当該各号に定めるところによる。"},
+    {"clause_type": "enumeration_item", "text": "一連結普通株式等Tier1比率次の算式により得られる比率について、四・五パーセント以上とする。"},
+    {"clause_type": "enumeration_item", "text": "二連結Tier1比率次の算式により得られる比率について、六パーセント以上とする。"},
+    {"clause_type": "enumeration_item", "text": "三連結総自己資本規制比率次の算式により得られる比率について、八パーセント以上とする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "The standard for determining that the capital adequacy status of the Ultimate Designated Parent Company and its subsidiary legal entities, etc. is appropriate "},
+    {"clause_type": "parenthetical", "text": "(hereinafter referred to as the \"Consolidated Capital Adequacy Ratio\") "},
+    {"clause_type": "main", "text": "— the minimum standard for appropriate capital adequacy status of the Ultimate Designated Parent Company and its subsidiary legal entities, etc. shall be, in accordance with the classification of ratios listed in the following items "},
+    {"clause_type": "parenthetical", "text": "(hereinafter collectively referred to as the \"Minimum Required Consolidated Capital Adequacy Ratios\"), "},
+    {"clause_type": "enumeration_stem", "text": "as provided in each such item. "},
+    {"clause_type": "enumeration_item", "text": "(i) Consolidated Common Equity Tier 1 Ratio: regarding the ratio obtained by the following formula, it shall be 4.5% or more. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Consolidated Tier 1 Ratio: regarding the ratio obtained by the following formula, it shall be 6% or more. "},
+    {"clause_type": "enumeration_item", "text": "(iii) Consolidated Total Capital Adequacy Ratio: regarding the ratio obtained by the following formula, it shall be 8% or more."}
+  ],
+  "refs": [],
+  "defined_terms": [
+    {"term_ja": "連結自己資本規制比率", "term_en": "Consolidated Capital Adequacy Ratio", "expands_to_ja": null},
+    {"term_ja": "最低所要連結自己資本規制比率", "term_en": "Minimum Required Consolidated Capital Adequacy Ratios", "expands_to_ja": null}
+  ]
+}

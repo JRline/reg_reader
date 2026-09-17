@@ -1,0 +1,17 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-4.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "前条の規定によりトレーディング勘定に分類する商品以外の商品は、バンキング勘定に分類するものとする。",
+  "text_en": "Products other than those classified into the trading account pursuant to the provisions of the preceding Article shall be classified into the banking account.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "前条の規定によりトレーディング勘定に分類する商品以外の商品は、バンキング勘定に分類するものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Products other than those classified into the trading account pursuant to the provisions of the preceding Article shall be classified into the banking account."}
+  ],
+  "refs": [
+    {"raw_text": "前条", "text_en": "the preceding Article", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

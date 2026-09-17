@@ -1,0 +1,17 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-5.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "最終指定親会社等の内部監査部署は、第一項の商品の分類に係る内部監査を一年に一回以上実施し、その結果を金融庁長官の求めに応じて提出することができるように整備するものとする。",
+  "text_en": "The internal audit department of the Ultimate Designated Parent Company, etc. shall conduct internal audits relating to the product classification set forth in paragraph (1) at least once per year and shall establish a system so that the results thereof can be submitted in response to a request from the Commissioner of the Financial Services Agency.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "最終指定親会社等の内部監査部署は、第一項の商品の分類に係る内部監査を一年に一回以上実施し、その結果を金融庁長官の求めに応じて提出することができるように整備するものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "The internal audit department of the Ultimate Designated Parent Company, etc. shall conduct internal audits relating to the product classification set forth in paragraph (1) at least once per year and shall establish a system so that the results thereof can be submitted in response to a request from the Commissioner of the Financial Services Agency."}
+  ],
+  "refs": [
+    {"raw_text": "第一項", "text_en": "paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

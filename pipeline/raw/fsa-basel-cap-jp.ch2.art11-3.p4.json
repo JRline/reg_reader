@@ -1,0 +1,23 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-3.p4",
+  "number": "４",
+  "heading": null,
+  "text_ja": "トレーディング商品でない商品(前項各号に掲げるものを除く。)のうち、次に掲げるものは、トレーディング勘定に分類するものとする。一コリレーション・トレーディングのポートフォリオに含まれる商品二信用リスク又は株式リスクを有する商品のうち、次に掲げるポジションのいずれかを構成するものイヘッジ対象となるロング・ポジションが存在せず、個別の商品又は複数の商品の組合せにより、ネット・ショート・ポジションとなっているポジションロヘッジ対象となるロング・ポジションに対して、ヘッジ手段として利用される商品のショート・ポジションがオーバーヘッジとなっているポジション三引受け業務から生ずる商品",
+  "text_en": "Among non-trading products (excluding those set forth in each item of the preceding paragraph), the following shall be classified into the trading account. (i) Products included in correlation trading portfolios. (ii) Among products with credit risk or equity risk, those constituting any of the following positions: (a) Positions where there is no long position subject to hedging and which are net short positions by individual products or a combination of multiple products. (b) Positions where short positions of products used as hedging instruments against long positions subject to hedging are over-hedged. (iii) Products arising from underwriting business.",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "トレーディング商品でない商品(前項各号に掲げるものを除く。)のうち、次に掲げるものは、トレーディング勘定に分類するものとする。"},
+    {"clause_type": "enumeration_item", "text": "一コリレーション・トレーディングのポートフォリオに含まれる商品"},
+    {"clause_type": "enumeration_item", "text": "二信用リスク又は株式リスクを有する商品のうち、次に掲げるポジションのいずれかを構成するものイヘッジ対象となるロング・ポジションが存在せず、個別の商品又は複数の商品の組合せにより、ネット・ショート・ポジションとなっているポジションロヘッジ対象となるロング・ポジションに対して、ヘッジ手段として利用される商品のショート・ポジションがオーバーヘッジとなっているポジション"},
+    {"clause_type": "enumeration_item", "text": "三引受け業務から生ずる商品"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "Among non-trading products (excluding those set forth in each item of the preceding paragraph), the following shall be classified into the trading account. "},
+    {"clause_type": "enumeration_item", "text": "(i) Products included in correlation trading portfolios. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Among products with credit risk or equity risk, those constituting any of the following positions: (a) Positions where there is no long position subject to hedging and which are net short positions by individual products or a combination of multiple products. (b) Positions where short positions of products used as hedging instruments against long positions subject to hedging are over-hedged. "},
+    {"clause_type": "enumeration_item", "text": "(iii) Products arising from underwriting business."}
+  ],
+  "refs": [
+    {"raw_text": "前項各号", "text_en": "each item of the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

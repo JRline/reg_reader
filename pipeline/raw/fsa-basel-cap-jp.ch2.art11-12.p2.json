@@ -1,0 +1,18 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-12.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "内部取引担当デスクと内部取引担当デスク以外のトレーディング・デスクとの間の内部取引は、前条第一項各号に掲げる要件を満たし、かつ、同条第三項の規定に該当する場合に限り、マーケット・リスク相当額の計測対象に含むものとする。",
+  "text_en": "Internal transactions between the internal transactions desk and trading desks other than the internal transactions desk shall be included in the scope of measurement of market risk equivalent amounts only where the requirements set forth in each item of Article 11-11, paragraph (1) are satisfied and the provisions of paragraph (3) of the same Article apply.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "内部取引担当デスクと内部取引担当デスク以外のトレーディング・デスクとの間の内部取引は、前条第一項各号に掲げる要件を満たし、かつ、同条第三項の規定に該当する場合に限り、マーケット・リスク相当額の計測対象に含むものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Internal transactions between the internal transactions desk and trading desks other than the internal transactions desk shall be included in the scope of measurement of market risk equivalent amounts only where the requirements set forth in each item of Article 11-11, paragraph (1) are satisfied and the provisions of paragraph (3) of the same Article apply."}
+  ],
+  "refs": [
+    {"raw_text": "前条第一項各号", "text_en": "each item of Article 11-11, paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "同条第三項", "text_en": "paragraph (3) of the same Article", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

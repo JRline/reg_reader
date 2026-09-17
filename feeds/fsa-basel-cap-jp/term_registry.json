@@ -1,0 +1,398 @@
+{
+  "_comment": "Document-wide shorthand terms. See ingest.py.",
+  "連結財務諸表規則": {
+    "term_en": "Consolidated Financial Statement Regulation",
+    "expands_to": "連結財務諸表の用語、様式及び作成方法に関する規則",
+    "defined_at": "fsa-basel-cap-jp.ch2.art3.p1"
+  },
+  "金融子会社": {
+    "term_en": "Financial Subsidiary",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art3.p1"
+  },
+  "保険会社等": {
+    "term_en": "Insurance Company, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art3.p3"
+  },
+  "保険子会社等": {
+    "term_en": "Insurance Subsidiary, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art3.p3"
+  },
+  "連結自己資本規制比率": {
+    "term_en": "Consolidated Capital Adequacy Ratio",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art2.p1"
+  },
+  "最低所要連結自己資本規制比率": {
+    "term_en": "Minimum Required Consolidated Capital Adequacy Ratios",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art2.p1"
+  },
+  "連結資本バッファー比率": {
+    "term_en": "Consolidated Capital Buffer Ratio",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art2-2.p1"
+  },
+  "最低連結資本バッファー比率": {
+    "term_en": "Minimum Consolidated Capital Buffer Ratio",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art2-2.p2"
+  },
+  "資本保全バッファー比率": {
+    "term_en": "Capital Conservation Buffer Ratio",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art2-2.p3"
+  },
+  "カウンター・シクリカル・バッファー比率": {
+    "term_en": "Countercyclical Buffer Ratio",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art2-2.p4"
+  },
+  "特別金融商品取引業者に対する連結自己資本規制比率告示": {
+    "term_en": "Public Notice on the Consolidated Capital Adequacy Ratio for Specially-Licensed Securities Business Operators",
+    "expands_to": "特別金融商品取引業者及びその子法人等の保有する資産等に照らし当該特別金融商品取引業者及びその子法人等の自己資本の充実の状況が適当であるかどうかを判断するための基準を定める件",
+    "defined_at": "fsa-basel-cap-jp.ch2.art4.p1"
+  },
+  "社外流出予定額": {
+    "term_en": "planned external outflows",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art5.p1"
+  },
+  "のれん相当差額": {
+    "term_en": "goodwill equivalent differences",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art5.p2"
+  },
+  "期待損失額": {
+    "term_en": "expected loss amount",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art5.p2"
+  },
+  "普通株式": {
+    "term_en": "common shares",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art5.p3"
+  },
+  "倒産手続": {
+    "term_en": "insolvency proceedings",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art5.p3"
+  },
+  "債務超過": {
+    "term_en": "insolvency (excess of liabilities over assets)",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art5.p3"
+  },
+  "特別目的会社等": {
+    "term_en": "special purpose companies, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art6.p3"
+  },
+  "親会社等": {
+    "term_en": "parent company, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art6.p3"
+  },
+  "その他Tier1資本調達手段": {
+    "term_en": "Additional Tier 1 Capital instruments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art6.p4"
+  },
+  "ステップ・アップ金利等": {
+    "term_en": "step-up rates, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art6.p4"
+  },
+  "元本の削減等": {
+    "term_en": "write-down or conversion of principal, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art6.p4"
+  },
+  "発行者": {
+    "term_en": "issuer",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art7.p2"
+  },
+  "マーケット・メイク目的保有TLAC": {
+    "term_en": "market-making TLAC",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art7.p3"
+  },
+  "トレーディング商品": {
+    "term_en": "trading instruments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art7.p3"
+  },
+  "Tier2資本調達手段": {
+    "term_en": "Tier 2 Capital instruments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art7.p5"
+  },
+  "償還等": {
+    "term_en": "redemption, etc.",
+    "expands_to": "償還期限が定められていないものの償還又は償還期限が定められているものの期限前償還",
+    "defined_at": "fsa-basel-cap-jp.ch2.art7.p5"
+  },
+  "リスク・アセットの額": {
+    "term_en": "risk-weighted assets amount",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art7-2.p1"
+  },
+  "特定連結子法人等": {
+    "term_en": "specified consolidated subsidiary",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p1"
+  },
+  "非支配株主持分相当普通株式等Tier1資本に係る基礎項目の額": {
+    "term_en": "amount of basic items relating to CET1 equivalent to minority interests",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p1"
+  },
+  "普通株式等Tier1資本に係る第三者持分割合": {
+    "term_en": "third-party interest ratio relating to Common Equity Tier 1 Capital",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p1"
+  },
+  "非支配株主持分等相当Tier1資本に係る基礎項目の額": {
+    "term_en": "amount of basic items relating to Tier 1 Capital equivalent to non-controlling interests, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p1"
+  },
+  "Tier1資本に係る第三者持分割合": {
+    "term_en": "third-party interest ratio relating to Tier 1 Capital",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p1"
+  },
+  "非支配株主持分等相当総自己資本に係る基礎項目の額": {
+    "term_en": "amount of basic items relating to total capital equivalent to non-controlling interests, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p1"
+  },
+  "総自己資本に係る第三者持分割合": {
+    "term_en": "third-party interest ratio relating to total capital",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p1"
+  },
+  "法人等": {
+    "term_en": "juridical persons, etc.",
+    "expands_to": "会社、組合その他これらに準ずる事業体(外国におけるこれらに相当するものを含む。)",
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p4"
+  },
+  "連結範囲外の法人等": {
+    "term_en": "non-consolidated juridical persons, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p4"
+  },
+  "自己保有資本調達手段": {
+    "term_en": "self-held capital instruments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p4"
+  },
+  "他の金融機関等": {
+    "term_en": "other financial institutions, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p6"
+  },
+  "みなし普通株式": {
+    "term_en": "deemed common shares",
+    "expands_to": "普通株式、その他Tier1資本調達手段又はTier2資本調達手段のいずれにも相当しない資本調達手段",
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p6"
+  },
+  "対象資本調達手段": {
+    "term_en": "target capital instruments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p6"
+  },
+  "対象資本等調達手段": {
+    "term_en": "target capital, etc. instruments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p6"
+  },
+  "意図的に保有している他の金融機関等の対象資本等調達手段": {
+    "term_en": "target capital, etc. instruments of other financial institutions, etc. held intentionally",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p6"
+  },
+  "少数出資金融機関等": {
+    "term_en": "minority-invested financial institutions, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p7"
+  },
+  "少数出資調整対象額": {
+    "term_en": "minority investment adjustment amount",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p7"
+  },
+  "少数出資に係る対象資本等調達手段合計額": {
+    "term_en": "total amount of target capital, etc. instruments relating to minority investments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p7"
+  },
+  "基準超過その他外部TLAC関連調達手段の額": {
+    "term_en": "above-threshold other external TLAC-related instruments amount",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p7"
+  },
+  "少数出資に係る五パーセント基準額": {
+    "term_en": "5% threshold amount relating to minority investments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p7"
+  },
+  "少数出資に係る十パーセント基準額": {
+    "term_en": "10% threshold amount relating to minority investments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p7"
+  },
+  "少数出資に係る普通株式保有割合": {
+    "term_en": "common share holding ratio relating to minority investments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p7"
+  },
+  "少数出資に係るその他Tier1資本保有割合": {
+    "term_en": "Additional Tier 1 Capital holding ratio relating to minority investments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p7"
+  },
+  "少数出資に係るTier2資本保有割合": {
+    "term_en": "Tier 2 Capital holding ratio relating to minority investments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p7"
+  },
+  "少数出資に係るその他外部TLAC保有割合": {
+    "term_en": "other external TLAC holding ratio relating to minority investments",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p7"
+  },
+  "その他金融機関等": {
+    "term_en": "other financial institutions, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p8"
+  },
+  "金融業務を営む会社": {
+    "term_en": "companies engaged in financial business",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p8"
+  },
+  "金融業務を営む関連会社等": {
+    "term_en": "affiliated companies, etc. engaged in financial business",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p8"
+  },
+  "その他金融機関等に係る対象資本等調達手段": {
+    "term_en": "target capital, etc. instruments of other financial institutions, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p8"
+  },
+  "特定項目に係る十パーセント基準額": {
+    "term_en": "10% threshold amount relating to specified items",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p9"
+  },
+  "特定項目": {
+    "term_en": "specified items",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p9"
+  },
+  "特定項目に係る十パーセント基準対象額": {
+    "term_en": "10% threshold subject amount relating to specified items",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p9"
+  },
+  "特定項目に係る十五パーセント基準額": {
+    "term_en": "15% threshold amount relating to specified items",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p9"
+  },
+  "特定項目に係る調整対象額": {
+    "term_en": "adjustment subject amount relating to specified items",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art8.p9"
+  },
+  "共同支配会社": {
+    "term_en": "jointly controlled companies",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art9.p1"
+  },
+  "比例連結の方法": {
+    "term_en": "proportional consolidation method",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art9.p1"
+  },
+  "有価証券等": {
+    "term_en": "securities, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art10.p2"
+  },
+  "資金清算機関等": {
+    "term_en": "funds clearing organizations, etc.",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art10.p3"
+  },
+  "トレーディング目的": {
+    "term_en": "trading purposes",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art11-3.p1"
+  },
+  "ルックスルー": {
+    "term_en": "look-through",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art11-3.p3"
+  },
+  "マーケット・リスク管理部署": {
+    "term_en": "Market Risk Management Department",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art11-5.p2"
+  },
+  "勘定間の振替": {
+    "term_en": "transfers between accounts",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art11-6.p1"
+  },
+  "内部取引": {
+    "term_en": "internal transactions",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art11-9.p1"
+  },
+  "外部ヘッジ取引": {
+    "term_en": "external hedge transactions",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art11-10.p1"
+  },
+  "内部取引担当デスク": {
+    "term_en": "internal transactions desk",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art11-11.p1"
+  },
+  "外部CVAヘッジ取引": {
+    "term_en": "external CVA hedge transactions",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art11-13.p1"
+  },
+  "内部CVAヘッジ取引": {
+    "term_en": "internal CVA hedge transactions",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art11-13.p1"
+  },
+  "適格CVAヘッジ取引": {
+    "term_en": "eligible CVA hedge transactions",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art11-13.p2"
+  },
+  "中央清算機関関連エクスポージャー": {
+    "term_en": "central counterparty-related exposures",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art13.p3"
+  },
+  "SA―CCR": {
+    "term_en": "SA-CCR",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art13.p3"
+  },
+  "内部評価方式": {
+    "term_en": "internal assessment approach",
+    "expands_to": null,
+    "defined_at": "fsa-basel-cap-jp.ch2.art13.p3"
+  }
+}

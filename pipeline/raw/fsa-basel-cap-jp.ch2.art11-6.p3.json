@@ -1,0 +1,29 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-6.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "最終指定親会社等は、前項の規定により勘定間の振替を行う場合には、あらかじめ、その旨及び次に掲げる事項を記載した届出書を金融庁長官に提出するものとする。一勘定間の振替を行う商品の種類(当該商品が第十一条の三第三項第一号から第三号までに掲げる商品のいずれかに該当するときは、その旨を含む。)二前項各号に掲げる要件の全てを満たしている旨の説明三勘定間の振替を行う商品の保有の目的の変更に係る説明四その他参考となるべき事項",
+  "text_en": "When Ultimate Designated Parent Companies, etc. make transfers between accounts pursuant to the provisions of the preceding paragraph, they shall in advance submit to the Commissioner of the Financial Services Agency a notification containing such fact and the following matters. (i) The type of product for which the transfer between accounts is made (including, where such product falls under any of the products set forth in Article 11-3, paragraph (3), items (i) through (iii), such fact). (ii) An explanation that all of the requirements set forth in each item of the preceding paragraph are satisfied. (iii) An explanation relating to the change in the purpose of holding the product for which the transfer between accounts is made. (iv) Other matters that may serve as reference.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "最終指定親会社等は、前項の規定により勘定間の振替を行う場合には、あらかじめ、"},
+    {"clause_type": "enumeration_stem", "text": "その旨及び次に掲げる事項を記載した届出書を金融庁長官に提出するものとする。"},
+    {"clause_type": "enumeration_item", "text": "一勘定間の振替を行う商品の種類(当該商品が第十一条の三第三項第一号から第三号までに掲げる商品のいずれかに該当するときは、その旨を含む。)"},
+    {"clause_type": "enumeration_item", "text": "二前項各号に掲げる要件の全てを満たしている旨の説明"},
+    {"clause_type": "enumeration_item", "text": "三勘定間の振替を行う商品の保有の目的の変更に係る説明"},
+    {"clause_type": "enumeration_item", "text": "四その他参考となるべき事項"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "When Ultimate Designated Parent Companies, etc. make transfers between accounts pursuant to the provisions of the preceding paragraph, "},
+    {"clause_type": "enumeration_stem", "text": "they shall in advance submit to the Commissioner of the Financial Services Agency a notification containing such fact and the following matters. "},
+    {"clause_type": "enumeration_item", "text": "(i) The type of product for which the transfer between accounts is made (including, where such product falls under any of the products set forth in Article 11-3, paragraph (3), items (i) through (iii), such fact). "},
+    {"clause_type": "enumeration_item", "text": "(ii) An explanation that all of the requirements set forth in each item of the preceding paragraph are satisfied. "},
+    {"clause_type": "enumeration_item", "text": "(iii) An explanation relating to the change in the purpose of holding the product for which the transfer between accounts is made. "},
+    {"clause_type": "enumeration_item", "text": "(iv) Other matters that may serve as reference."}
+  ],
+  "refs": [
+    {"raw_text": "前項", "text_en": "the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第十一条の三第三項第一号から第三号まで", "text_en": "Article 11-3, paragraph (3), items (i) through (iii)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "前項各号", "text_en": "each item of the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

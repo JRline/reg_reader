@@ -1,0 +1,29 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-3.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "トレーディング商品でない商品のうち、次に掲げるものは、トレーディング勘定に分類するものとする。一マーケット・メイクに係る業務のために保有する商品二ファンドへの出資(次に掲げる要件のいずれかに該当するものに限る。)イ当該ファンドの構成銘柄について、最終指定親会社等が、ルックスルー(個々のエクスポージャーに関する情報について直接保有するものと同様に把握することをいう。第六章において同じ。)ができ、かつ、独立した第三者により検証された十分な情報を取得していること。ロ最終指定親会社等が、当該ファンドの市場価額を日次で入手しており、かつ、当該ファンドの運用基準及びマーケット・リスク相当額に関する情報を取得していること。三上場株式四トレーディング業務に係るレポ形式の取引五オプション",
+  "text_en": "Among non-trading products, the following shall be classified into the trading account. (i) Products held for the purpose of market-making business. (ii) Equity investments in funds (limited to those falling under either of the following requirements): (a) The Ultimate Designated Parent Company, etc. can perform look-through (meaning understanding information relating to each individual exposure in the same manner as directly held assets; the same applies in Chapter 6) with respect to the constituent securities of such fund and has obtained sufficient information verified by an independent third party. (b) The Ultimate Designated Parent Company, etc. obtains the market value of such fund on a daily basis and has obtained information relating to the fund's management standards and market risk equivalent amounts. (iii) Listed stocks. (iv) Repo-type transactions relating to trading business. (v) Options.",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "トレーディング商品でない商品のうち、次に掲げるものは、トレーディング勘定に分類するものとする。"},
+    {"clause_type": "enumeration_item", "text": "一マーケット・メイクに係る業務のために保有する商品"},
+    {"clause_type": "enumeration_item", "text": "二ファンドへの出資(次に掲げる要件のいずれかに該当するものに限る。)イ当該ファンドの構成銘柄について、最終指定親会社等が、ルックスルー(個々のエクスポージャーに関する情報について直接保有するものと同様に把握することをいう。第六章において同じ。)ができ、かつ、独立した第三者により検証された十分な情報を取得していること。ロ最終指定親会社等が、当該ファンドの市場価額を日次で入手しており、かつ、当該ファンドの運用基準及びマーケット・リスク相当額に関する情報を取得していること。"},
+    {"clause_type": "enumeration_item", "text": "三上場株式"},
+    {"clause_type": "enumeration_item", "text": "四トレーディング業務に係るレポ形式の取引"},
+    {"clause_type": "enumeration_item", "text": "五オプション"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "Among non-trading products, the following shall be classified into the trading account. "},
+    {"clause_type": "enumeration_item", "text": "(i) Products held for the purpose of market-making business. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Equity investments in funds (limited to those falling under either of the following requirements): (a) The Ultimate Designated Parent Company, etc. can perform look-through (meaning understanding information relating to each individual exposure in the same manner as directly held assets; the same applies in Chapter 6) with respect to the constituent securities of such fund and has obtained sufficient information verified by an independent third party. (b) The Ultimate Designated Parent Company, etc. obtains the market value of such fund on a daily basis and has obtained information relating to the fund's management standards and market risk equivalent amounts. "},
+    {"clause_type": "enumeration_item", "text": "(iii) Listed stocks. "},
+    {"clause_type": "enumeration_item", "text": "(iv) Repo-type transactions relating to trading business. "},
+    {"clause_type": "enumeration_item", "text": "(v) Options."}
+  ],
+  "refs": [
+    {"raw_text": "第六章", "text_en": "Chapter 6", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "ルックスルー", "term_en": "look-through", "expands_to_ja": null}
+  ]
+}

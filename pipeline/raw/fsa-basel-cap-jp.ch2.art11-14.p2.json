@@ -1,0 +1,23 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-14.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "前項の届出書には、次に掲げる事項を記載した書類を添付するものとする。一第十一条の四第二項の規定によりバンキング勘定に分類する商品二第十一条の八第一項に規定する方針",
+  "text_en": "The notification set forth in the preceding paragraph shall be accompanied by documents containing the following matters. (i) Products classified into the banking account pursuant to the provisions of Article 11-4, paragraph (2). (ii) Policies provided in Article 11-8, paragraph (1).",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "前項の届出書には、次に掲げる事項を記載した書類を添付するものとする。"},
+    {"clause_type": "enumeration_item", "text": "一第十一条の四第二項の規定によりバンキング勘定に分類する商品"},
+    {"clause_type": "enumeration_item", "text": "二第十一条の八第一項に規定する方針"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "The notification set forth in the preceding paragraph shall be accompanied by documents containing the following matters. "},
+    {"clause_type": "enumeration_item", "text": "(i) Products classified into the banking account pursuant to the provisions of Article 11-4, paragraph (2). "},
+    {"clause_type": "enumeration_item", "text": "(ii) Policies provided in Article 11-8, paragraph (1)."}
+  ],
+  "refs": [
+    {"raw_text": "前項", "text_en": "the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第十一条の四第二項", "text_en": "Article 11-4, paragraph (2)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第十一条の八第一項", "text_en": "Article 11-8, paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-7.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "最終指定親会社等は、勘定間の振替を行った場合において、所要自己資本の額が減少したときは、その減少分と同額を当該勘定間の振替を行った日以後の算出基準日における所要自己資本の額に加算するものとする。",
+  "text_en": "Where Ultimate Designated Parent Companies, etc. have made a transfer between accounts and the required capital amount has decreased, they shall add an amount equal to such decrease to the required capital amount as of the calculation reference dates on and after the date on which such transfer between accounts was made.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "最終指定親会社等は、勘定間の振替を行った場合において、所要自己資本の額が減少したときは、"},
+    {"clause_type": "main", "text": "その減少分と同額を当該勘定間の振替を行った日以後の算出基準日における所要自己資本の額に加算するものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "Where Ultimate Designated Parent Companies, etc. have made a transfer between accounts and the required capital amount has decreased, "},
+    {"clause_type": "main", "text": "they shall add an amount equal to such decrease to the required capital amount as of the calculation reference dates on and after the date on which such transfer between accounts was made."}
+  ],
+  "refs": [],
+  "defined_terms": []
+}

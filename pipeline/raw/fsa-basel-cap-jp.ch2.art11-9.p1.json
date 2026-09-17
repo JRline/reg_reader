@@ -1,0 +1,17 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-9.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "内部取引(最終指定親会社等内部の組織間又は勘定間におけるデリバティブ取引をいう。以下同じ。)によるトレーディング勘定からバンキング勘定へのリスク移転については、マーケット・リスク相当額の計測対象に含まないものとする。",
+  "text_en": "Risk transfers from the trading account to the banking account through internal transactions (meaning derivative transactions between internal organizations or between accounts within the Ultimate Designated Parent Company, etc.; the same applies hereinafter) shall not be included in the scope of measurement of market risk equivalent amounts.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "内部取引(最終指定親会社等内部の組織間又は勘定間におけるデリバティブ取引をいう。以下同じ。)によるトレーディング勘定からバンキング勘定へのリスク移転については、マーケット・リスク相当額の計測対象に含まないものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Risk transfers from the trading account to the banking account through internal transactions (meaning derivative transactions between internal organizations or between accounts within the Ultimate Designated Parent Company, etc.; the same applies hereinafter) shall not be included in the scope of measurement of market risk equivalent amounts."}
+  ],
+  "refs": [],
+  "defined_terms": [
+    {"term_ja": "内部取引", "term_en": "internal transactions", "expands_to_ja": null}
+  ]
+}

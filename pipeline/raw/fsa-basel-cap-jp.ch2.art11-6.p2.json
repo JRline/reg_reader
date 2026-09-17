@@ -1,0 +1,23 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-6.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "前項の規定にかかわらず、最終指定親会社等は、次に掲げる要件の全てを満たす場合には、勘定間の振替を行うことができる。一当該勘定間の振替について取締役等の承認を受けていること。二当該勘定間の振替について内部監査が行われていること。三当該勘定間の振替について開示すること。",
+  "text_en": "Notwithstanding the provisions of the preceding paragraph, Ultimate Designated Parent Companies, etc. may make transfers between accounts when all of the following requirements are satisfied. (i) Approval of directors, etc. has been obtained for such transfer between accounts. (ii) Internal audit has been conducted for such transfer between accounts. (iii) Disclosure of such transfer between accounts is made.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "前項の規定にかかわらず、最終指定親会社等は、次に掲げる要件の全てを満たす場合には、勘定間の振替を行うことができる。"},
+    {"clause_type": "enumeration_item", "text": "一当該勘定間の振替について取締役等の承認を受けていること。"},
+    {"clause_type": "enumeration_item", "text": "二当該勘定間の振替について内部監査が行われていること。"},
+    {"clause_type": "enumeration_item", "text": "三当該勘定間の振替について開示すること。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Notwithstanding the provisions of the preceding paragraph, Ultimate Designated Parent Companies, etc. may make transfers between accounts when all of the following requirements are satisfied. "},
+    {"clause_type": "enumeration_item", "text": "(i) Approval of directors, etc. has been obtained for such transfer between accounts. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Internal audit has been conducted for such transfer between accounts. "},
+    {"clause_type": "enumeration_item", "text": "(iii) Disclosure of such transfer between accounts is made."}
+  ],
+  "refs": [
+    {"raw_text": "前項", "text_en": "the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

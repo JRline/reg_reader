@@ -1,0 +1,76 @@
+You are populating structured data for a Japanese regulatory text reader. You will be given
+one Article of Japanese legal/regulatory text. Output ONLY a single JSON object — no prose,
+no markdown fences, no explanation before or after.
+
+Known issue in the source text: mathematical formulas in the original PDF were embedded
+as images, not text, so they were lost during extraction. You may see a sentence like
+"次の算式により得られる比率について" (regarding the ratio obtained by the following
+formula) with nothing after it. This is expected — do NOT invent, reconstruct, or guess
+at a formula that isn't present in the source text given to you. Translate faithfully
+around the gap and move on; its absence is not an error for you to fix.
+
+Context (do not translate, for your reference only): Article 第七条 (Tier2資本の額) — this is paragraph 1 of 6
+
+Source text (Japanese, verbatim, id=fsa-basel-cap-jp.ch2.art7.p1):
+"""
+第二条第三号の算式において、Tier2資本に係る基礎項目の額は、次に掲げる額の合計額とする。ただし、Tier2資本調達手段のうち償還期限の定めがあり、かつ、当該償還期限までの期間が五年以内になったものについては、連結貸借対照表計上額に、算出基準日から当該償還期限までの期間の日数を当該償還期限までの期間が五年になった日から当該償還期限までの期間の日数で除して得た割合を乗じて得た額とする。一Tier2資本調達手段に係る株主資本の額(社外流出予定額を除く。)二Tier2資本調達手段に係る負債の額二の二Tier2資本調達手段に係る株式引受権の額三Tier2資本調達手段に係る新株予約権の額四特別目的会社等の発行するTier2資本調達手段の額五Tier2資本に係る調整後非支配株主持分等の額六次に掲げる額の合計額イ一般貸倒引当金(内部格付手法採用最終指定親会社においては第百二十七条の規定により標準的手法により算出される信用リスク・アセットの額に対応するものとして区分された一般貸倒引当金及び証券化エクスポージャーに係る一般貸倒引当金に限る。)の額(当該額が第二条各号の算式における信用リスク・アセットの額の合計額(内部格付手法採用最終指定親会社にあっては、第百二十八条第二号に掲げる額及び証券化エクスポージャーに係る信用リスク・アセットの額の合計額とする。)に一・二五パーセントを乗じて得た額を上回る場合にあっては、当該乗じて得た額とする。)ロ内部格付手法採用最終指定親会社において、適格引当金の合計額が事業法人等向けエクスポージャー及びリテール向けエクスポージャーの期待損失額の合計額を上回る場合における当該適格引当金の合計額から当該期待損失額の合計額を控除した額(当該額が第百二十八条第一号に掲げる額に〇・六パーセントを乗じて得た額を上回る場合にあっては、当該乗じて得た額とする。)
+"""
+
+Produce JSON with exactly this shape:
+
+{
+  "id": "fsa-basel-cap-jp.ch2.art7.p1",
+  "number": null,
+  "heading": "Tier2資本の額",
+  "text_ja": "<verbatim copy of the source text>",
+  "text_en": "<accurate English translation, preserving legal register>",
+  "clauses_ja": [
+    {"clause_type": "<one of: main, conditional, proviso, exception,
+                      enumeration_stem, enumeration_item, parenthetical, definition>",
+     "text": "<verbatim substring of text_ja>"}
+    // Break text_ja into ordered clauses covering the whole sentence.
+    // Concatenating all "text" fields in order must reconstruct the original text_ja exactly.
+    // Use "conditional" for 場合/とき clauses, "proviso" for ただし-clauses,
+    // "parenthetical" for kakko (　) asides, "enumeration_stem" for the sentence introducing
+    // a 一/二/三 list and "enumeration_item" for each numbered item.
+  ],
+  "clauses_en": [
+    {"clause_type": "<same enum as above>", "text": "<verbatim substring of text_en>"}
+    // Independently break text_en into ordered clauses covering the whole English sentence.
+    // Concatenating all "text" fields in order must reconstruct text_en exactly. Does NOT need
+    // the same clause count as clauses_ja, but the clause_type sequence should tell the same
+    // structural story.
+  ],
+  "refs": [
+    {"raw_text": "<verbatim citation phrase, e.g. 前条第二項>",
+     "text_en": "<the corresponding phrase as it appears in text_en>",
+     "scope": "internal | external",
+     "external_name": "<law/notification name if scope=external, else null>",
+     "external_item_summary_ja": "<see below, else null>",
+     "external_item_summary_en": "<see below, else null>",
+     "external_item_summary_confidence": "<stated_in_text | general_knowledge | null>"}
+    // List every cross-reference found in text_ja, INCLUDING ones that appear only inside a
+    // parenthetical/kakko aside — do not skip a citation just because it's inside brackets.
+    // Do not attempt to resolve a target id — just extract the citation phrase exactly as
+    // written, in both languages.
+    //
+    // For scope=external refs ONLY, also fill in external_item_summary_*: a one-line
+    // description of what THAT SPECIFIC cited article/paragraph/item says — NOT a summary of
+    // the external law as a whole. If the citing sentence already explains the cited provision
+    // inline (e.g. "...をいう"), restate that and set confidence "stated_in_text". Otherwise
+    // give your best general-knowledge understanding and set confidence "general_knowledge" —
+    // this must be visibly flagged as unverified in the reader, never presented as fact.
+  ],
+  "defined_terms": [
+    {"term_ja": "<term>", "term_en": "<your translation of the term>",
+     "expands_to_ja": "<see below, else null>"}
+    // Only terms explicitly defined in THIS text (e.g. "...という。" pattern), not terms
+    // merely used.
+    // Set expands_to_ja ONLY when this term is a shorthand for a longer Japanese phrase
+    // named earlier in the same sentence (e.g. a term standing in for an ordinance's
+    // full name). Leave null for a term that's being coined/glossed rather than
+    // abbreviating something. Never put an English translation in this field.
+  ]
+}
+
+If a field has nothing to report, use an empty array — never omit a key.

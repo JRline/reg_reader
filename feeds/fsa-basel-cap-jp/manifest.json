@@ -1,0 +1,20 @@
+{
+  "feed_id": "fsa-basel-cap-jp",
+  "title_ja": "自己資本比率告示（銀行）",
+  "title_en": "Capital Adequacy Ratio Notification (Banks)",
+  "issuing_authority": "Financial Services Agency of Japan (金融庁)",
+  "jurisdiction": "JP",
+  "source_url": "https://www.fsa.go.jp/policy/basel_ii/saishu1_clean_20260522.pdf",
+  "source_pdf": "saishu1_clean_20260522.pdf",
+  "effective_date": null,
+  "version_label": "prototype - Chapter 2 only",
+  "language_pair": ["ja", "en"],
+  "scope_note": "Test scope limited to Chapter 2 for prototyping the pipeline and app.",
+  "related_feeds": [
+    {
+      "feed_id": "bis-basel-framework-en",
+      "relation": "reference_translation",
+      "note": "Use for terminology grounding — this notification transposes the Basel Framework into Japanese domestic rules. Not yet built as a feed; treat as a manual reference (bis.org/basel_framework) until/unless digitized."
+    }
+  ]
+}

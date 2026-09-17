@@ -1,0 +1,21 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-13.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "外部CVAヘッジ取引のうち、適格CVAヘッジ取引(第二百四十八条の三の二に規定する適格BA―CVAヘッジ取引又は第二百四十八条の四の十三第一項に規定する適格SA―CVAヘッジ取引をいう。以下この項及び次項において同じ。)に該当するものについてはマーケット・リスク相当額の計測対象に含まないものとし、適格CVAヘッジ取引に該当しないものについては第六章に定めるところによりマーケット・リスク相当額の計測対象に含むものとする。",
+  "text_en": "Among external CVA hedge transactions, those qualifying as eligible CVA hedge transactions (meaning eligible BA-CVA hedge transactions provided in Article 248-3-2 or eligible SA-CVA hedge transactions provided in Article 248-4-13, paragraph (1); the same applies hereinafter in this paragraph and the following paragraph) shall not be included in the scope of measurement of market risk equivalent amounts, and those not qualifying as eligible CVA hedge transactions shall be included in the scope of measurement of market risk equivalent amounts pursuant to the provisions of Chapter 6.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "外部CVAヘッジ取引のうち、適格CVAヘッジ取引(第二百四十八条の三の二に規定する適格BA―CVAヘッジ取引又は第二百四十八条の四の十三第一項に規定する適格SA―CVAヘッジ取引をいう。以下この項及び次項において同じ。)に該当するものについてはマーケット・リスク相当額の計測対象に含まないものとし、適格CVAヘッジ取引に該当しないものについては第六章に定めるところによりマーケット・リスク相当額の計測対象に含むものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Among external CVA hedge transactions, those qualifying as eligible CVA hedge transactions (meaning eligible BA-CVA hedge transactions provided in Article 248-3-2 or eligible SA-CVA hedge transactions provided in Article 248-4-13, paragraph (1); the same applies hereinafter in this paragraph and the following paragraph) shall not be included in the scope of measurement of market risk equivalent amounts, and those not qualifying as eligible CVA hedge transactions shall be included in the scope of measurement of market risk equivalent amounts pursuant to the provisions of Chapter 6."}
+  ],
+  "refs": [
+    {"raw_text": "第二百四十八条の三の二", "text_en": "Article 248-3-2", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第二百四十八条の四の十三第一項", "text_en": "Article 248-4-13, paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第六章", "text_en": "Chapter 6", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "適格CVAヘッジ取引", "term_en": "eligible CVA hedge transactions", "expands_to_ja": null}
+  ]
+}

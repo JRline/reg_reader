@@ -1,0 +1,17 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art4.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "前二項の規定を利用する場合又はやむを得ない理由によりその利用を中止する場合は、あらかじめその旨を金融庁長官に届け出るものとする。",
+  "text_en": "Where the provisions of the preceding two paragraphs are to be utilized, or where utilization thereof is to be discontinued due to unavoidable reasons, prior notification to that effect shall be submitted to the Commissioner of the Financial Services Agency.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "前二項の規定を利用する場合又はやむを得ない理由によりその利用を中止する場合は、あらかじめその旨を金融庁長官に届け出るものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Where the provisions of the preceding two paragraphs are to be utilized, or where utilization thereof is to be discontinued due to unavoidable reasons, prior notification to that effect shall be submitted to the Commissioner of the Financial Services Agency."}
+  ],
+  "refs": [
+    {"raw_text": "前二項", "text_en": "the preceding two paragraphs", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

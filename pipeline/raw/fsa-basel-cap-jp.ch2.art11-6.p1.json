@@ -1,0 +1,23 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-6.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "最終指定親会社等は、次に掲げる行為(以下この条から第十一条の八までにおいて「勘定間の振替」という。)を行ってはならない。一トレーディング勘定に分類した商品をバンキング勘定に移し替えること。二バンキング勘定に分類した商品をトレーディング勘定に移し替えること。",
+  "text_en": "Ultimate Designated Parent Companies, etc. shall not engage in the following acts (hereinafter referred to as \"transfers between accounts\" in this Article through Article 11-8). (i) Reclassifying products classified into the trading account into the banking account. (ii) Reclassifying products classified into the banking account into the trading account.",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "最終指定親会社等は、次に掲げる行為(以下この条から第十一条の八までにおいて「勘定間の振替」という。)を行ってはならない。"},
+    {"clause_type": "enumeration_item", "text": "一トレーディング勘定に分類した商品をバンキング勘定に移し替えること。"},
+    {"clause_type": "enumeration_item", "text": "二バンキング勘定に分類した商品をトレーディング勘定に移し替えること。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "Ultimate Designated Parent Companies, etc. shall not engage in the following acts (hereinafter referred to as \"transfers between accounts\" in this Article through Article 11-8). "},
+    {"clause_type": "enumeration_item", "text": "(i) Reclassifying products classified into the trading account into the banking account. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Reclassifying products classified into the banking account into the trading account."}
+  ],
+  "refs": [
+    {"raw_text": "第十一条の八", "text_en": "Article 11-8", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "勘定間の振替", "term_en": "transfers between accounts", "expands_to_ja": null}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art13.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "最終指定親会社は、次の各号のいずれかに該当する場合であって、標準的な手法により算出した所要自己資本の額に七十二・五パーセントを乗じて得た額が承認を受けた計算方法により算出した所要自己資本の額を上回るときは、当該乗じて得た額から当該承認を受けた計算方法により算出した所要自己資本の額を控除した額に十二・五を乗じて得た額を第二条各号及び第二条の二第一項の算式の分母に加えるものとする。一内部格付手法採用最終指定親会社二内部モデル方式採用最終指定親会社三第四十九条第一項の承認を受けた標準的手法採用最終指定親会社",
+  "text_en": "Where an Ultimate Designated Parent Company falls under any of the following items and the amount obtained by multiplying the required capital amount calculated using the standardized methods by 72.5% exceeds the required capital amount calculated using the approved calculation method, such company shall add to the denominator of the formula of each item of Article 2 and Article 2-2, paragraph (1) the amount obtained by multiplying by 12.5 the amount obtained by deducting the required capital amount calculated using the approved calculation method from the amount obtained by such multiplication. (i) Ultimate Designated Parent Companies adopting the internal ratings-based approach. (ii) Ultimate Designated Parent Companies adopting the internal models approach. (iii) Ultimate Designated Parent Companies adopting the standardized approach that have received approval under Article 49, paragraph (1).",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "最終指定親会社は、次の各号のいずれかに該当する場合であって、標準的な手法により算出した所要自己資本の額に七十二・五パーセントを乗じて得た額が承認を受けた計算方法により算出した所要自己資本の額を上回るときは、"},
+    {"clause_type": "main", "text": "当該乗じて得た額から当該承認を受けた計算方法により算出した所要自己資本の額を控除した額に十二・五を乗じて得た額を第二条各号及び第二条の二第一項の算式の分母に加えるものとする。"},
+    {"clause_type": "enumeration_item", "text": "一内部格付手法採用最終指定親会社"},
+    {"clause_type": "enumeration_item", "text": "二内部モデル方式採用最終指定親会社"},
+    {"clause_type": "enumeration_item", "text": "三第四十九条第一項の承認を受けた標準的手法採用最終指定親会社"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "Where an Ultimate Designated Parent Company falls under any of the following items and the amount obtained by multiplying the required capital amount calculated using the standardized methods by 72.5% exceeds the required capital amount calculated using the approved calculation method, "},
+    {"clause_type": "main", "text": "such company shall add to the denominator of the formula of each item of Article 2 and Article 2-2, paragraph (1) the amount obtained by multiplying by 12.5 the amount obtained by deducting the required capital amount calculated using the approved calculation method from the amount obtained by such multiplication. "},
+    {"clause_type": "enumeration_item", "text": "(i) Ultimate Designated Parent Companies adopting the internal ratings-based approach. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Ultimate Designated Parent Companies adopting the internal models approach. "},
+    {"clause_type": "enumeration_item", "text": "(iii) Ultimate Designated Parent Companies adopting the standardized approach that have received approval under Article 49, paragraph (1)."}
+  ],
+  "refs": [
+    {"raw_text": "第二条各号", "text_en": "each item of Article 2", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第二条の二第一項", "text_en": "Article 2-2, paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第四十九条第一項", "text_en": "Article 49, paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

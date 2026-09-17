@@ -1,0 +1,76 @@
+You are populating structured data for a Japanese regulatory text reader. You will be given
+one Article of Japanese legal/regulatory text. Output ONLY a single JSON object — no prose,
+no markdown fences, no explanation before or after.
+
+Known issue in the source text: mathematical formulas in the original PDF were embedded
+as images, not text, so they were lost during extraction. You may see a sentence like
+"次の算式により得られる比率について" (regarding the ratio obtained by the following
+formula) with nothing after it. This is expected — do NOT invent, reconstruct, or guess
+at a formula that isn't present in the source text given to you. Translate faithfully
+around the gap and move on; its absence is not an error for you to fix.
+
+Context (do not translate, for your reference only): Article 第二条の二 — this is paragraph 4 of 5
+
+Source text (Japanese, verbatim, id=fsa-basel-cap-jp.ch2.art2-2.p4):
+"""
+第二項の「カウンター・シクリカル・バッファー比率」とは、金融市場における信用の供与が過剰な場合に、将来の景気の変動によって生ずるおそれのある損失の吸収のため資本を増強する基準となるものをいい、次に掲げる比率を合計して得た比率(小数点以下二位未満の端数があるときは、これを切り捨てるものとする。)とする。一零パーセント(金融庁長官が別に指定した場合は、別に指定した比率)に、信用リスク・アセットの額(ソブリン向けエクスポージャー及び金融機関等向けエクスポージャーに係る信用リスク・アセットの額並びにCVAリスク相当額を除く。次号において同じ。)の合計額とデフォルト・リスクに対するマーケット・リスク相当額(ソブリン向けエクスポージャー及び金融機関等向けエクスポージャーに係るデフォルト・リスクに対するマーケット・リスク相当額を除き、簡易的方式採用最終指定親会社にあっては、第二百七十一条第一項各号に掲げるリスク・カテゴリーに対するマーケット・リスク相当額のうち個別リスクの額に係るもの。次号において同じ。)の合計額を八パーセントで除して得た額とを合算した額のうち本邦に係るものを当該額で除して得た値を乗じて得た比率二本邦以外の国又は地域の金融当局が定める比率(二・五パーセントを超える場合には、二・五パーセント)に、信用リスク・アセットの額の合計額とデフォルト・リスクに対するマーケット・リスク相当額の合計額を八パーセントで除して得た額とを合算した額のうち当該国又は地域に係るものを当該額で除して得た値を乗じて得た比率を合計して得た比率
+"""
+
+Produce JSON with exactly this shape:
+
+{
+  "id": "fsa-basel-cap-jp.ch2.art2-2.p4",
+  "number": "４",
+  "heading": null,
+  "text_ja": "<verbatim copy of the source text>",
+  "text_en": "<accurate English translation, preserving legal register>",
+  "clauses_ja": [
+    {"clause_type": "<one of: main, conditional, proviso, exception,
+                      enumeration_stem, enumeration_item, parenthetical, definition>",
+     "text": "<verbatim substring of text_ja>"}
+    // Break text_ja into ordered clauses covering the whole sentence.
+    // Concatenating all "text" fields in order must reconstruct the original text_ja exactly.
+    // Use "conditional" for 場合/とき clauses, "proviso" for ただし-clauses,
+    // "parenthetical" for kakko (　) asides, "enumeration_stem" for the sentence introducing
+    // a 一/二/三 list and "enumeration_item" for each numbered item.
+  ],
+  "clauses_en": [
+    {"clause_type": "<same enum as above>", "text": "<verbatim substring of text_en>"}
+    // Independently break text_en into ordered clauses covering the whole English sentence.
+    // Concatenating all "text" fields in order must reconstruct text_en exactly. Does NOT need
+    // the same clause count as clauses_ja, but the clause_type sequence should tell the same
+    // structural story.
+  ],
+  "refs": [
+    {"raw_text": "<verbatim citation phrase, e.g. 前条第二項>",
+     "text_en": "<the corresponding phrase as it appears in text_en>",
+     "scope": "internal | external",
+     "external_name": "<law/notification name if scope=external, else null>",
+     "external_item_summary_ja": "<see below, else null>",
+     "external_item_summary_en": "<see below, else null>",
+     "external_item_summary_confidence": "<stated_in_text | general_knowledge | null>"}
+    // List every cross-reference found in text_ja, INCLUDING ones that appear only inside a
+    // parenthetical/kakko aside — do not skip a citation just because it's inside brackets.
+    // Do not attempt to resolve a target id — just extract the citation phrase exactly as
+    // written, in both languages.
+    //
+    // For scope=external refs ONLY, also fill in external_item_summary_*: a one-line
+    // description of what THAT SPECIFIC cited article/paragraph/item says — NOT a summary of
+    // the external law as a whole. If the citing sentence already explains the cited provision
+    // inline (e.g. "...をいう"), restate that and set confidence "stated_in_text". Otherwise
+    // give your best general-knowledge understanding and set confidence "general_knowledge" —
+    // this must be visibly flagged as unverified in the reader, never presented as fact.
+  ],
+  "defined_terms": [
+    {"term_ja": "<term>", "term_en": "<your translation of the term>",
+     "expands_to_ja": "<see below, else null>"}
+    // Only terms explicitly defined in THIS text (e.g. "...という。" pattern), not terms
+    // merely used.
+    // Set expands_to_ja ONLY when this term is a shorthand for a longer Japanese phrase
+    // named earlier in the same sentence (e.g. a term standing in for an ordinance's
+    // full name). Leave null for a term that's being coined/glossed rather than
+    // abbreviating something. Never put an English translation in this field.
+  ]
+}
+
+If a field has nothing to report, use an empty array — never omit a key.

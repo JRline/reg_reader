@@ -1,0 +1,15 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-12.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "トレーディング・デスクが保有する内部取引のポジションは、第三者と取引するトレーディング勘定の商品と同様にマーケット・リスク相当額の計測対象に含むものとする。",
+  "text_en": "Positions of internal transactions held by trading desks shall be included in the scope of measurement of market risk equivalent amounts in the same manner as products in the trading account that are transacted with third parties.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "トレーディング・デスクが保有する内部取引のポジションは、第三者と取引するトレーディング勘定の商品と同様にマーケット・リスク相当額の計測対象に含むものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Positions of internal transactions held by trading desks shall be included in the scope of measurement of market risk equivalent amounts in the same manner as products in the trading account that are transacted with third parties."}
+  ],
+  "refs": [],
+  "defined_terms": []
+}

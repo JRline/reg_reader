@@ -1,0 +1,14 @@
+{
+  "feed_id": "jp-fiea",
+  "title_ja": "金融商品取引法",
+  "title_en": "Financial Instruments and Exchange Act",
+  "issuing_authority": "National Diet of Japan",
+  "jurisdiction": "JP",
+  "source_url": "https://laws.e-gov.go.jp/law/323AC0000000025",
+  "source_pdf": null,
+  "effective_date": null,
+  "version_label": "excerpt — Article 29-4, paragraphs (3)-(4) only",
+  "language_pair": ["ja", "en"],
+  "scope_note": "This is NOT the full FIEA — only the specific provision cited from fsa-basel-cap-jp Article 3 has been digitized, pulled directly from e-Gov (laws.e-gov.go.jp) on the current in-force text.",
+  "related_feeds": []
+}

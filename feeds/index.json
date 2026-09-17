@@ -1,0 +1,11 @@
+{
+  "feeds": [
+    { "feed_id": "fsa-basel-cap-jp", "path": "fsa-basel-cap-jp" },
+    { "feed_id": "jp-banking-act", "path": "jp-banking-act" },
+    { "feed_id": "jp-fiea", "path": "jp-fiea" },
+    { "feed_id": "jp-mof-consolidated-fs-regulation", "path": "jp-mof-consolidated-fs-regulation" },
+    { "feed_id": "jp-fiea-enforcement-order", "path": "jp-fiea-enforcement-order" },
+    { "feed_id": "jp-payment-services-act", "path": "jp-payment-services-act" },
+    { "feed_id": "jp-tlac-notification", "path": "jp-tlac-notification" }
+  ]
+}

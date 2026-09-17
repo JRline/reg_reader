@@ -1,0 +1,23 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art2-2.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "連結自己資本規制比率であって、最終指定親会社及びその子法人等の適当な自己資本の充実の状況の前条各号に定める基準以外の基準は、連結資本バッファー比率(次の算式により得られる比率をいう。)について、最低連結資本バッファー比率以上とする。",
+  "text_en": "Among the Consolidated Capital Adequacy Ratios, the standards for appropriate capital adequacy status of the Ultimate Designated Parent Company and its subsidiary legal entities, etc. other than the standards set forth in the items of the preceding Article shall be that the Consolidated Capital Buffer Ratio (meaning the ratio obtained by the following formula) shall be equal to or greater than the Minimum Consolidated Capital Buffer Ratio.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "連結自己資本規制比率であって、最終指定親会社及びその子法人等の適当な自己資本の充実の状況の前条各号に定める基準以外の基準は、連結資本バッファー比率"},
+    {"clause_type": "parenthetical", "text": "(次の算式により得られる比率をいう。)"},
+    {"clause_type": "main", "text": "について、最低連結資本バッファー比率以上とする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Among the Consolidated Capital Adequacy Ratios, the standards for appropriate capital adequacy status of the Ultimate Designated Parent Company and its subsidiary legal entities, etc. other than the standards set forth in the items of the preceding Article shall be that the Consolidated Capital Buffer Ratio "},
+    {"clause_type": "parenthetical", "text": "(meaning the ratio obtained by the following formula) "},
+    {"clause_type": "main", "text": "shall be equal to or greater than the Minimum Consolidated Capital Buffer Ratio."}
+  ],
+  "refs": [
+    {"raw_text": "前条各号", "text_en": "the items of the preceding Article", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "連結資本バッファー比率", "term_en": "Consolidated Capital Buffer Ratio", "expands_to_ja": null}
+  ]
+}

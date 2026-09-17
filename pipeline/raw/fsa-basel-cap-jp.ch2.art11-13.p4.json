@@ -1,0 +1,17 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-13.p4",
+  "number": "４",
+  "heading": null,
+  "text_ja": "標準的方式に係る要件に定めるカーベチャー・リスク、デフォルト・リスク又は残余リスクに対する資本賦課の対象となるポジションに係るCVAリスクの内部取引は、トレーディング勘定において、最終指定親会社等が第三者であるプロテクション提供者との間で行う外部ヘッジ取引が当該内部取引のポジションを完全に相殺する場合に限り、マーケット・リスク相当額の計測において勘案することができる。",
+  "text_en": "Internal transactions in CVA risk relating to positions subject to capital charges for curvature risk, default risk, or residual risk as defined in the requirements relating to the standardized approach may be taken into account in the measurement of market risk equivalent amounts only where external hedge transactions conducted by the Ultimate Designated Parent Company, etc. with third-party protection providers in the trading account completely offset the positions of such internal transactions.",
+  "clauses_ja": [
+    {"clause_type": "conditional", "text": "標準的方式に係る要件に定めるカーベチャー・リスク、デフォルト・リスク又は残余リスクに対する資本賦課の対象となるポジションに係るCVAリスクの内部取引は、トレーディング勘定において、最終指定親会社等が第三者であるプロテクション提供者との間で行う外部ヘッジ取引が当該内部取引のポジションを完全に相殺する場合に限り、"},
+    {"clause_type": "main", "text": "マーケット・リスク相当額の計測において勘案することができる。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "Internal transactions in CVA risk relating to positions subject to capital charges for curvature risk, default risk, or residual risk as defined in the requirements relating to the standardized approach, only where external hedge transactions conducted by the Ultimate Designated Parent Company, etc. with third-party protection providers in the trading account completely offset the positions of such internal transactions, "},
+    {"clause_type": "main", "text": "may be taken into account in the measurement of market risk equivalent amounts."}
+  ],
+  "refs": [],
+  "defined_terms": []
+}

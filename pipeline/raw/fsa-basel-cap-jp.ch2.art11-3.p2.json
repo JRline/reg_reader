@@ -1,0 +1,32 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-3.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "トレーディング商品のうち、次に掲げるもの以外は、トレーディング勘定に分類するものとする。一非上場株式二証券化のための裏付資産にする予定の商品三直接に保有する不動産四個人又は中堅中小企業(事業法人のうち、当該事業法人の売上高(当該事業法人が連結財務諸表を作成している場合にあっては、連結の売上高。以下この号において同じ。)が五十億円未満のものをいう。ただし、当該事業法人が卸売業を営む場合その他の当該事業法人の事業規模を判断するに当たって当該事業法人の売上高を用いることが適切でない場合には、当該事業法人の総資産が五十億円未満のものをこれに含めることができる。)に対する信用供与五ファンドへの出資(次項第二号に掲げるものを除く。)六前各号に掲げる商品のいずれかを原資産とする派生商品取引又はファンド七前各号に掲げる商品のリスクをヘッジする目的で保有する商品",
+  "text_en": "Among trading products, those other than the following shall be classified into the trading account. (i) Non-listed stocks. (ii) Products planned to be underlying assets for securitization. (iii) Real estate held directly. (iv) Credit extended to individuals or medium and small-sized enterprises (meaning business corporations whose net sales (in cases where such business corporation prepares consolidated financial statements, consolidated net sales; the same applies hereinafter in this item) are less than 5 billion yen; provided, however, that in cases where such business corporation is engaged in wholesale trade or other cases where it is not appropriate to use net sales of such business corporation in judging the scale of its business, those whose total assets are less than 5 billion yen may be included). (v) Equity investments in funds (excluding those set forth in item (ii) of the following paragraph). (vi) Derivative transactions or funds for which any of the products set forth in the preceding items is an underlying asset. (vii) Products held for the purpose of hedging risks of products set forth in the preceding items.",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "トレーディング商品のうち、次に掲げるもの以外は、トレーディング勘定に分類するものとする。"},
+    {"clause_type": "enumeration_item", "text": "一非上場株式"},
+    {"clause_type": "enumeration_item", "text": "二証券化のための裏付資産にする予定の商品"},
+    {"clause_type": "enumeration_item", "text": "三直接に保有する不動産"},
+    {"clause_type": "enumeration_item", "text": "四個人又は中堅中小企業(事業法人のうち、当該事業法人の売上高(当該事業法人が連結財務諸表を作成している場合にあっては、連結の売上高。以下この号において同じ。)が五十億円未満のものをいう。ただし、当該事業法人が卸売業を営む場合その他の当該事業法人の事業規模を判断するに当たって当該事業法人の売上高を用いることが適切でない場合には、当該事業法人の総資産が五十億円未満のものをこれに含めることができる。)に対する信用供与"},
+    {"clause_type": "enumeration_item", "text": "五ファンドへの出資(次項第二号に掲げるものを除く。)"},
+    {"clause_type": "enumeration_item", "text": "六前各号に掲げる商品のいずれかを原資産とする派生商品取引又はファンド"},
+    {"clause_type": "enumeration_item", "text": "七前各号に掲げる商品のリスクをヘッジする目的で保有する商品"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "Among trading products, those other than the following shall be classified into the trading account. "},
+    {"clause_type": "enumeration_item", "text": "(i) Non-listed stocks. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Products planned to be underlying assets for securitization. "},
+    {"clause_type": "enumeration_item", "text": "(iii) Real estate held directly. "},
+    {"clause_type": "enumeration_item", "text": "(iv) Credit extended to individuals or medium and small-sized enterprises (meaning business corporations whose net sales (in cases where such business corporation prepares consolidated financial statements, consolidated net sales; the same applies hereinafter in this item) are less than 5 billion yen; provided, however, that in cases where such business corporation is engaged in wholesale trade or other cases where it is not appropriate to use net sales in judging the scale of its business, those whose total assets are less than 5 billion yen may be included). "},
+    {"clause_type": "enumeration_item", "text": "(v) Equity investments in funds (excluding those set forth in item (ii) of the following paragraph). "},
+    {"clause_type": "enumeration_item", "text": "(vi) Derivative transactions or funds for which any of the products set forth in the preceding items is an underlying asset. "},
+    {"clause_type": "enumeration_item", "text": "(vii) Products held for the purpose of hedging risks of products set forth in the preceding items."}
+  ],
+  "refs": [
+    {"raw_text": "次項第二号", "text_en": "item (ii) of the following paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "前各号", "text_en": "the preceding items", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

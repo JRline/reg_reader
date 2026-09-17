@@ -1,0 +1,29 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art3.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "前項の規定にかかわらず、最終指定親会社が指定国際会計基準(連結財務諸表規則第三百十二条に規定する指定国際会計基準をいう。)に基づき連結財務諸表の作成を行っている場合には、当該連結財務諸表に基づき連結自己資本規制比率を算出することができる。ただし、金融子会社については、全て連結の範囲に含めるものとする。",
+  "text_en": "Notwithstanding the provisions of the preceding paragraph, where the Ultimate Designated Parent Company prepares its consolidated financial statements based on Designated International Accounting Standards (meaning the Designated International Accounting Standards provided in Article 312 of the Consolidated Financial Statement Regulation), the Consolidated Capital Adequacy Ratio may be calculated based on such consolidated financial statements; provided, however, that all Financial Subsidiaries shall be included within the scope of consolidation.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "前項の規定にかかわらず、最終指定親会社が指定国際会計基準"},
+    {"clause_type": "parenthetical", "text": "(連結財務諸表規則第三百十二条に規定する指定国際会計基準をいう。)"},
+    {"clause_type": "conditional", "text": "に基づき連結財務諸表の作成を行っている場合には、"},
+    {"clause_type": "main", "text": "当該連結財務諸表に基づき連結自己資本規制比率を算出することができる。"},
+    {"clause_type": "proviso", "text": "ただし、金融子会社については、全て連結の範囲に含めるものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "conditional", "text": "Notwithstanding the provisions of the preceding paragraph, where the Ultimate Designated Parent Company prepares its consolidated financial statements based on Designated International Accounting Standards "},
+    {"clause_type": "parenthetical", "text": "(meaning the Designated International Accounting Standards provided in Article 312 of the Consolidated Financial Statement Regulation), "},
+    {"clause_type": "main", "text": "the Consolidated Capital Adequacy Ratio may be calculated based on such consolidated financial statements; "},
+    {"clause_type": "proviso", "text": "provided, however, that all Financial Subsidiaries shall be included within the scope of consolidation."}
+  ],
+  "refs": [
+    {"raw_text": "前項", "text_en": "the preceding paragraph", "scope": "internal", "external_name": null},
+    {"raw_text": "連結財務諸表規則第三百十二条", "text_en": "Article 312 of the Consolidated Financial Statement Regulation", "scope": "external", "external_name": null,
+     "target_feed": "jp-mof-consolidated-fs-regulation", "target_ids": ["jp-mof-consolidated-fs-regulation.art312.p1"],
+     "external_item_summary_ja": "「指定国際会計基準特定会社」は、IFRS相当の「指定国際会計基準」に従って連結財務諸表を作成できる、と定める規定。",
+     "external_item_summary_en": "Lets a company specified for Designated International Accounting Standards prepare its consolidated financial statements under those IFRS-equivalent standards instead of standard Japanese GAAP form.",
+     "external_item_summary_confidence": "verified_from_source"}
+  ],
+  "defined_terms": []
+}

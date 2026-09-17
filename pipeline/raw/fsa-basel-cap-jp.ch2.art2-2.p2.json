@@ -1,0 +1,19 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art2-2.p2",
+  "number": "２",
+  "heading": null,
+  "text_ja": "前項の「最低連結資本バッファー比率」とは、資本保全バッファー比率及びカウンター・シクリカル・バッファー比率を合計したものをいう。",
+  "text_en": "The \"Minimum Consolidated Capital Buffer Ratio\" referred to in the preceding paragraph means the sum of the Capital Conservation Buffer Ratio and the Countercyclical Buffer Ratio.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "前項の「最低連結資本バッファー比率」とは、資本保全バッファー比率及びカウンター・シクリカル・バッファー比率を合計したものをいう。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "The \"Minimum Consolidated Capital Buffer Ratio\" referred to in the preceding paragraph means the sum of the Capital Conservation Buffer Ratio and the Countercyclical Buffer Ratio."}
+  ],
+  "refs": [
+    {"raw_text": "前項", "text_en": "the preceding paragraph", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": [
+    {"term_ja": "最低連結資本バッファー比率", "term_en": "Minimum Consolidated Capital Buffer Ratio", "expands_to_ja": null}
+  ]
+}

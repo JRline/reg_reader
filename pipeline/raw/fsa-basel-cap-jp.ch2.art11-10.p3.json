@@ -1,0 +1,24 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-10.p3",
+  "number": "３",
+  "heading": null,
+  "text_ja": "第一項のリスク移転におけるマーケット・リスク相当額の計測対象は、次の各号に掲げる場合の区分に応じ、当該各号に定めるところによる。一第一項各号に定める要件を満たす場合トレーディング勘定における内部取引及び外部ヘッジ取引を含むものとする。二第一項各号に定める要件を満たさない場合トレーディング勘定における外部ヘッジ取引を含み、トレーディング勘定における内部取引を含まないものとする。三バンキング勘定においてオーバーヘッジとなったポジションが生じた場合当該ポジションを含むものとする。",
+  "text_en": "The scope of measurement of market risk equivalent amounts for risk transfers set forth in paragraph (1) shall be determined as set forth in each of the following items corresponding to the case set forth in such item. (i) Where the requirements defined in each item of paragraph (1) are satisfied: The scope shall include internal transactions and external hedge transactions in the trading account. (ii) Where the requirements defined in each item of paragraph (1) are not satisfied: The scope shall include external hedge transactions in the trading account but shall not include internal transactions in the trading account. (iii) Where over-hedged positions arise in the banking account: The scope shall include such positions.",
+  "clauses_ja": [
+    {"clause_type": "enumeration_stem", "text": "第一項のリスク移転におけるマーケット・リスク相当額の計測対象は、次の各号に掲げる場合の区分に応じ、当該各号に定めるところによる。"},
+    {"clause_type": "enumeration_item", "text": "一第一項各号に定める要件を満たす場合トレーディング勘定における内部取引及び外部ヘッジ取引を含むものとする。"},
+    {"clause_type": "enumeration_item", "text": "二第一項各号に定める要件を満たさない場合トレーディング勘定における外部ヘッジ取引を含み、トレーディング勘定における内部取引を含まないものとする。"},
+    {"clause_type": "enumeration_item", "text": "三バンキング勘定においてオーバーヘッジとなったポジションが生じた場合当該ポジションを含むものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "enumeration_stem", "text": "The scope of measurement of market risk equivalent amounts for risk transfers set forth in paragraph (1) shall be determined as set forth in each of the following items corresponding to the case set forth in such item. "},
+    {"clause_type": "enumeration_item", "text": "(i) Where the requirements defined in each item of paragraph (1) are satisfied: The scope shall include internal transactions and external hedge transactions in the trading account. "},
+    {"clause_type": "enumeration_item", "text": "(ii) Where the requirements defined in each item of paragraph (1) are not satisfied: The scope shall include external hedge transactions in the trading account but shall not include internal transactions in the trading account. "},
+    {"clause_type": "enumeration_item", "text": "(iii) Where over-hedged positions arise in the banking account: The scope shall include such positions."}
+  ],
+  "refs": [
+    {"raw_text": "第一項各号", "text_en": "each item of paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第一項", "text_en": "paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

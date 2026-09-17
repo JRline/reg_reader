@@ -1,0 +1,18 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art11-2.p1",
+  "number": null,
+  "heading": null,
+  "text_ja": "最終指定親会社等は、その保有する商品を分類するためにトレーディング勘定及びバンキング勘定を設け、次条及び第十一条の四に定めるところにより、その保有する商品をいずれかの勘定に分類するものとする。",
+  "text_en": "Ultimate Designated Parent Companies, etc. shall establish trading accounts and banking accounts for the purpose of classifying products they hold, and shall classify products they hold into one of such accounts pursuant to the provisions of the following Article and Article 11-4.",
+  "clauses_ja": [
+    {"clause_type": "main", "text": "最終指定親会社等は、その保有する商品を分類するためにトレーディング勘定及びバンキング勘定を設け、次条及び第十一条の四に定めるところにより、その保有する商品をいずれかの勘定に分類するものとする。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "main", "text": "Ultimate Designated Parent Companies, etc. shall establish trading accounts and banking accounts for the purpose of classifying products they hold, and shall classify products they hold into one of such accounts pursuant to the provisions of the following Article and Article 11-4."}
+  ],
+  "refs": [
+    {"raw_text": "次条", "text_en": "the following Article", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第十一条の四", "text_en": "Article 11-4", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

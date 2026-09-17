@@ -1,0 +1,21 @@
+{
+  "id": "fsa-basel-cap-jp.ch2.art13.p4",
+  "number": "４",
+  "heading": null,
+  "text_ja": "第一項及び第二項の「承認を受けた計算方法により算出した所要自己資本の額」とは、第二条各号及び第二条の二第一項の算式の分母の額に八パーセントを乗じて得た額並びに第五条第二項第一号ニに掲げる額の合計額から第七条第一項第六号イ及びロに掲げる額の合計額を控除した額をいう。",
+  "text_en": "The \"required capital amount calculated using the approved calculation method\" in paragraphs (1) and (2) means the amount obtained by deducting from the sum of the amount obtained by multiplying the denominator of the formula of each item of Article 2 and Article 2-2, paragraph (1) by 8% and the amount set forth in Article 5, paragraph (2), item (i)(d) the sum of the amounts set forth in Article 7, paragraph (1), item (vi)(a) and (b).",
+  "clauses_ja": [
+    {"clause_type": "definition", "text": "第一項及び第二項の「承認を受けた計算方法により算出した所要自己資本の額」とは、第二条各号及び第二条の二第一項の算式の分母の額に八パーセントを乗じて得た額並びに第五条第二項第一号ニに掲げる額の合計額から第七条第一項第六号イ及びロに掲げる額の合計額を控除した額をいう。"}
+  ],
+  "clauses_en": [
+    {"clause_type": "definition", "text": "The \"required capital amount calculated using the approved calculation method\" in paragraphs (1) and (2) means the amount obtained by deducting from the sum of the amount obtained by multiplying the denominator of the formula of each item of Article 2 and Article 2-2, paragraph (1) by 8% and the amount set forth in Article 5, paragraph (2), item (i)(d) the sum of the amounts set forth in Article 7, paragraph (1), item (vi)(a) and (b)."}
+  ],
+  "refs": [
+    {"raw_text": "第一項及び第二項", "text_en": "paragraphs (1) and (2)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第二条各号", "text_en": "each item of Article 2", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第二条の二第一項", "text_en": "Article 2-2, paragraph (1)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第五条第二項第一号ニ", "text_en": "Article 5, paragraph (2), item (i)(d)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null},
+    {"raw_text": "第七条第一項第六号イ及びロ", "text_en": "Article 7, paragraph (1), item (vi)(a) and (b)", "scope": "internal", "external_name": null, "external_item_summary_ja": null, "external_item_summary_en": null, "external_item_summary_confidence": null}
+  ],
+  "defined_terms": []
+}

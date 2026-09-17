@@ -1,0 +1,10 @@
+You will be given the full text of one Article of Japanese regulatory text, with its
+official English translation. Write a one-sentence, plain-language summary of what this
+Article actually requires or establishes — the kind of line a compliance officer would
+want as a preview before deciding whether to read the full text. Do not just restate the
+heading. Output ONLY this JSON object, no prose:
+
+{"summary_ja": "<one sentence, plain Japanese>", "summary_en": "<one sentence, plain English>"}
+
+Japanese text: """最終指定親会社及びその子法人等の自己資本の充実の状況が適当であることの基準(以下「連結自己資本規制比率」という。)であって、最終指定親会社及びその子法人等の適当な自己資本の充実の状況の最低基準は、次の各号に掲げる比率(以下「最低所要連結自己資本規制比率」と総称する。)の区分に応じ、当該各号に定めるところによる。一連結普通株式等Tier1比率次の算式により得られる比率について、四・五パーセント以上とする。二連結Tier1比率次の算式により得られる比率について、六パーセント以上とする。三連結総自己資本規制比率次の算式により得られる比率について、八パーセント以上とする。"""
+English text: """The standard for determining that the capital adequacy status of the Ultimate Designated Parent Company and its subsidiary legal entities, etc. is appropriate (hereinafter referred to as the "Consolidated Capital Adequacy Ratio") — the minimum standard for appropriate capital adequacy status of the Ultimate Designated Parent Company and its subsidiary legal entities, etc. shall be, in accordance with the classification of ratios listed in the following items (hereinafter collectively referred to as the "Minimum Required Consolidated Capital Adequacy Ratios"), as provided in each such item. (i) Consolidated Common Equity Tier 1 Ratio: regarding the ratio obtained by the following formula, it shall be 4.5% or more. (ii) Consolidated Tier 1 Ratio: regarding the ratio obtained by the following formula, it shall be 6% or more. (iii) Consolidated Total Capital Adequacy Ratio: regarding the ratio obtained by the following formula, it shall be 8% or more."""

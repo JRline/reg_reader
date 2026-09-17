@@ -1,0 +1,63 @@
+{
+  "feed_id": "jp-payment-services-act",
+  "root": {
+    "id": "jp-payment-services-act",
+    "type": "document",
+    "number": null,
+    "heading": null,
+    "heading_en": null,
+    "text_ja": null,
+    "text_en": null,
+    "children": [
+      {
+        "id": "jp-payment-services-act.art2",
+        "type": "article",
+        "number": "第二条",
+        "heading": "定義",
+        "heading_en": "Definitions",
+        "text_ja": null,
+        "text_en": null,
+        "summary_ja": "この法律で使う用語の定義規定（全28項のうち、他規則から引用されている第24項のみ抜粋）。",
+        "summary_en": "Defines terms used throughout this Act (~28 paragraphs in the full article; only paragraph (24), the one cited elsewhere, is excerpted here).",
+        "translation_status": "reviewed",
+        "clauses_ja": [],
+        "clauses_en": [],
+        "refs": [],
+        "defined_terms": [],
+        "children": [
+          {
+            "id": "jp-payment-services-act.art2.p24",
+            "type": "paragraph",
+            "number": "２４",
+            "heading": null,
+            "heading_en": null,
+            "text_ja": "この法律において「資金清算機関」とは、第六十四条第一項の免許を受けた者をいう。",
+            "text_en": "In this Act, \"Funds Settlement Institution\" means a person who has obtained the license under Article 64, paragraph (1).",
+            "clauses_ja": [
+              {
+                "clause_type": "main",
+                "text": "この法律において「資金清算機関」とは、第六十四条第一項の免許を受けた者をいう。"
+              }
+            ],
+            "clauses_en": [
+              {
+                "clause_type": "main",
+                "text": "In this Act, \"Funds Settlement Institution\" means a person who has obtained the license under Article 64, paragraph (1)."
+              }
+            ],
+            "refs": [],
+            "defined_terms": [
+              {
+                "term_ja": "資金清算機関",
+                "term_en": "Funds Settlement Institution",
+                "definition_node_id": "jp-payment-services-act.art2.p24",
+                "expands_to_ja": null
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}
