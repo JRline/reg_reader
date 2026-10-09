@@ -94,6 +94,115 @@ def split_inline_iroha(clauses: list):
     return out
 
 
+# English list markers mirror the Japanese three levels — 一 -> (i), イ -> (a), （１） -> (1)
+# (optionally with a branch suffix like "(ii-2)") — and split_out_parens tags every one of
+# them "parenthetical", same as it does for a CITATION numeral like "paragraph (1)" or
+# "item (iv)". Those two need opposite treatment: a citation numeral belongs back inside
+# the running text (it's part of the reference, and splitting it out also breaks ref
+# matching on text_en), while a real marker belongs on the front of the item it opens so
+# the reader can render it as one list entry. Context tells them apart: a citation numeral
+# directly follows a citation word (or a chain like "paragraphs (1) and "), a real marker
+# directly follows a sentence/list boundary (". ", ": ", "; ") or opens the paragraph.
+EN_MARKER_RE = re.compile(r"^\((?:[ivxl]+|[a-z]|\d+)(?:-\d+)?\)$")
+EN_CITATION_TAIL_RE = re.compile(
+    r"\b(?:paragraphs?|items?|sub-items?)"
+    r"(?:\s*\([^()\s]{1,8}\)(?:,|\s+and|\s+or|\s+through|\s+to)?)*\s*$",
+    re.IGNORECASE,
+)
+EN_ITEM_BOUNDARY_RE = re.compile(r"(?:^|[.:;])\s*$")
+
+
+def _is_bare_en_marker(c: dict) -> bool:
+    return (
+        c["clause_type"] in ("parenthetical", "enumeration_item")
+        and not c.get("in_parenthetical")
+        and bool(EN_MARKER_RE.match(c["text"]))
+    )
+
+
+def normalize_en_markers(clauses: list):
+    # Pass 1: fold citation numerals back into the clause they were cut out of, re-joining
+    # the continuation that split_out_parens separated from it ("paragraph " + "(1)" +
+    # " of the Banking Act" -> one clause).
+    merged = []
+    rejoin_next = False
+    for c in clauses:
+        prev = merged[-1] if merged else None
+        if prev and _is_bare_en_marker(c) and EN_CITATION_TAIL_RE.search(prev["text"]):
+            merged[-1] = {**prev, "text": prev["text"] + c["text"]}
+            rejoin_next = True
+            continue
+        if (
+            rejoin_next and prev
+            and c["clause_type"] == prev["clause_type"]
+            and bool(c.get("in_parenthetical")) == bool(prev.get("in_parenthetical"))
+        ):
+            merged[-1] = {**prev, "text": prev["text"] + c["text"]}
+            rejoin_next = False
+            continue
+        rejoin_next = False
+        merged.append(c)
+
+    # Pass 2: attach a real list marker to the item text right after it.
+    out = []
+    i = 0
+    while i < len(merged):
+        c = merged[i]
+        at_boundary = not out or EN_ITEM_BOUNDARY_RE.search(out[-1]["text"])
+        if _is_bare_en_marker(c) and at_boundary:
+            nxt = merged[i + 1] if i + 1 < len(merged) else None
+            if nxt and nxt["clause_type"] == "enumeration_item" and not nxt.get("in_parenthetical"):
+                out.append({**nxt, "text": c["text"] + nxt["text"]})
+                i += 2
+                continue
+            out.append({"clause_type": "enumeration_item", "text": c["text"]})
+            i += 1
+            continue
+        out.append(c)
+        i += 1
+    return out
+
+
+# Some clauses_en in Chapter 2 were produced from a DIFFERENT English rendering than the
+# paragraph's own text_en (reordered for the cue structure, abbreviated, occasionally
+# reworded — e.g. "an amount not exceeding" where text_en says "the amount"), so they fail
+# the reconstruction invariant (CLAUDE.md rule 1) and the reader — which renders clauses,
+# not text_en — showed the drifted wording. text_en is the reviewed translation, so the
+# clauses are rebuilt from it: split at list-item boundaries, then keep any original
+# cue-typed span (condition/exception/proviso/definition) that still occurs verbatim and
+# uniquely in text_en, so those cues survive where the wording didn't drift.
+EN_ITEM_SPLIT_RE = re.compile(r"(?<=[.:;] )(?=\((?:[ivxl]+|[a-z]|\d+)(?:-\d+)?\) )")
+SALVAGE_TYPES = ("conditional", "exception", "proviso", "definition")
+
+
+def resegment_en(text_en: str, old_clauses: list):
+    bounds = {0, len(text_en)}
+    item_starts = [m.start() for m in EN_ITEM_SPLIT_RE.finditer(text_en)]
+    bounds.update(item_starts)
+    typed = []  # (start, end, type)
+    for c in old_clauses:
+        if c["clause_type"] not in SALVAGE_TYPES or c.get("in_parenthetical"):
+            continue
+        needle = c["text"].strip().rstrip(",;.").strip()
+        if len(needle) < 15 or text_en.count(needle) != 1:
+            continue
+        start = text_en.index(needle)
+        end = start + len(needle)
+        while end < len(text_en) and text_en[end] in ",;. ":
+            end += 1
+        if any(start < e and end > s for s, e, _ in typed) or any(start < b < end for b in item_starts):
+            continue
+        typed.append((start, end, c["clause_type"]))
+        bounds.update((start, end))
+    cuts = sorted(bounds)
+    first_item = item_starts[0] if item_starts else len(text_en)
+    out = []
+    for a, b in zip(cuts, cuts[1:]):
+        t = next((ty for s, e, ty in typed if s <= a and b <= e), None)
+        out.append({"clause_type": t or ("enumeration_item" if a >= first_item else "main"), "text": text_en[a:b]})
+    return out
+
+
 def find_balanced_parens(text: str, open_ch: str, close_ch: str):
     """Top-level (not nested) balanced spans — a paren containing another paren is
     returned as ONE span covering both, matching how this reader treats nested asides."""
@@ -238,6 +347,13 @@ def refine(clauses: list, lang: str):
     conditional_re = CONDITIONAL_JA_RE if lang == "ja" else None
     refined = []
     for c in clauses:
+        # Already the output of analyze_parenthetical on an earlier run (e.g. a condition
+        # piece "(...場合には、" whose closing paren lives in the next clause) — re-splitting
+        # it can't find a balanced span, and rebuilding the dict would drop the flag, so a
+        # re-run silently un-did the previous run's nested-cue tagging. Pass it through.
+        if c.get("in_parenthetical"):
+            refined.append(c)
+            continue
         for ctype, text in split_out_parens(c["clause_type"], c["text"], open_ch, close_ch):
             if ctype == "parenthetical":
                 refined.extend(analyze_parenthetical(text, proviso_re, exception_re, conditional_re))
@@ -268,6 +384,7 @@ def main():
     paragraphs_touched = 0
     clauses_before = clauses_after = 0
     reconstruction_failures = []
+    resegmented = []
 
     for art in chapter["children"]:
         for node in walk(art):
@@ -279,7 +396,14 @@ def main():
                 old = node.get(key, [])
                 if not old:
                     continue
-                new = reclassify_bare_markers(refine(old, lang))
+                if lang == "en" and "".join(c["text"] for c in old) != node.get(text_key, ""):
+                    old_for_refine = resegment_en(node[text_key], old)
+                    resegmented.append(node["id"])
+                else:
+                    old_for_refine = old
+                new = reclassify_bare_markers(refine(old_for_refine, lang))
+                if lang == "en":
+                    new = normalize_en_markers(new)
                 if lang == "ja":
                     new = split_inline_iroha(new)
                     new = reclassify_whole_definitions(new)
@@ -298,6 +422,9 @@ def main():
 
     print(f"Refined {paragraphs_touched} clause lists across the chapter.")
     print(f"Clause count: {clauses_before} -> {clauses_after}")
+    if resegmented:
+        print(f"Rebuilt clauses_en from text_en on {len(resegmented)} node(s) whose clauses had drifted from it:")
+        print(f"  {resegmented}")
     if reconstruction_failures:
         print(f"SAFETY ABORT on {len(reconstruction_failures)} node(s) — reconstruction would've broken, left untouched:")
         print(f"  {reconstruction_failures}")

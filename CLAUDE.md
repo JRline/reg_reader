@@ -19,10 +19,20 @@ problem. See `README.md` for the user-facing overview.
 - **`feeds/<feed_id>/feed.json`** — a recursive node tree (document → chapter → article →
   paragraph → item), each node carrying `text_ja`/`text_en`, independently-segmented
   `clauses_ja`/`clauses_en` (for visual cues), and `refs` (cross-references).
-- **`app/`** — plain HTML/CSS/JS, no build step, no framework. `app.js` fetches
-  `feeds/index.json` then whichever feed is selected.
+- **`site/`** — **the final deliverable.** A self-contained copy of the reader that opens
+  from `file://` with no server. Built by `pipeline/build_site.py` (re-run after any change
+  to `app/` or `feeds/`; never hand-edit `site/`). Browsers block `fetch()` on `file://`,
+  so the build wraps each feed as `site/data/<feed_id>.js`, which registers it on
+  `window.REG_DATA`, and `app.js` loads those via `<script>` tags when `index.html` sets
+  `window.REG_STATIC_SITE`.
+- **`app/`** — the reader's source: plain HTML/CSS/JS, no framework. Served over HTTP (dev
+  mode), `app.js` fetches `feeds/index.json` then whichever feed is selected; the same file
+  runs in `site/` in static mode (`loadFeedIndex`/`loadFeedData`).
 - **`pipeline/`** — turns a source PDF into feed content. Two kinds of scripts here,
   don't confuse them:
+  The original plan was to have an external chat model produce feed content; the project
+  has since shifted so the **site itself is the product** — content work can be done
+  directly in this repo, and the chatbot scripts are optional tooling.
   - **Chatbot-dependent** (`make_prompts.py`, `chatbot_template.md`,
     `run_haiku_batch.py`, `batch_ingest.py`): produce and merge translated/segmented
     content. Need a model.
@@ -130,6 +140,21 @@ Three layers, run in this order after content is ingested:
   that would cut through a nested paren (`_outer_prefix_end`/`_depth_at`) rather than risk
   a corrupted split — exception detection in particular hasn't fired on any Chapter 2
   content yet under that conservative bound, which is expected, not broken.
+- English clause segmentation (`refine_clauses.py`, `normalize_en_markers`): English list
+  markers mirror the Japanese levels (一→(i), イ→(a), （１）→(1)). A bare `(n)` right after
+  "paragraph(s)/item(s)" is a citation numeral and is folded back into running text; one
+  right after a `. `/`: `/`; ` boundary is a real marker and is attached to its item.
+  `app.js`'s `detectItemMarker` reads the English markers too (letters sequence-checked
+  like イロハ, which also settles `(i)` letter-vs-roman). The renderer groups each list item
+  (marker up to next marker) into one `.enum-block`, so an aside inside an item no longer
+  splits it into several boxes.
+- 16 Chapter 2 paragraphs once had `clauses_en` drifted from `text_en` (a reworded copy,
+  breaking rule 1 — and the reader displays clauses, so users saw the drifted wording).
+  `refine_clauses.py` now rebuilds such clauses from `text_en` (`resegment_en`), keeping
+  cue-typed spans that still match verbatim. `refine_clauses.py` is idempotent — a second
+  run must report 0 changes; it used to strip `in_parenthetical` on re-run.
+- All 27 Chapter 2 articles have `heading_en` (except 第二条の二/第四条, which have no
+  heading in the source either).
 - Other chapters of the source notification are not extracted. To add one: see
   `EXTRACTION_GUIDE.md` Step 1 — every pipeline script takes `feed_id`/`chapter_id` as
   arguments, nothing is hardcoded to Chapter 2 except the `ARTICLE_META` dict in

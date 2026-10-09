@@ -139,12 +139,14 @@ checking the feed on its own, e.g. after hand-editing something.
 
 ---
 
-## Step 7 — Look at it
+## Step 7 — Build the site and look at it
 
 ```bash
-python3 -m http.server 8877        # from the project root
+python3 pipeline/build_site.py     # writes site/
 ```
-Open `http://localhost:8877/app/index.html`.
+Open `site/index.html` directly in a browser — no server needed. (For live work on
+`app/`, `python3 pipeline/serve_no_cache.py 8877` and `http://localhost:8877/app/index.html`
+still work and skip the rebuild.)
 
 ---
 
