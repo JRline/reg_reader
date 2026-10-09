@@ -1,0 +1,13 @@
+{
+ "number": "第百九条",
+ "heading_en": "Multiple Credit Risk Mitigation Techniques",
+ "summary_ja": "一つのエクスポージャーに複数の削減手法を用いる場合は、エクスポージャーを分割し、部分ごとに一つの手法を用いる。",
+ "summary_en": "With several forms of mitigation on one exposure, split the exposure and apply one technique to each part.",
+ "sections_en": {
+  "第六節 第八款": "Other Matters Relating to Credit Risk Mitigation Techniques",
+  "第六節 第八款 第一目": "Treatment of Multiple Credit Risk Mitigation Techniques"
+ },
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach takes into account the effects of multiple credit risk mitigation techniques for a single exposure, it shall divide the exposure as it chooses into portions to which each credit risk mitigation technique is applied, and use a single credit risk mitigation technique for each divided exposure."
+ ]
+}

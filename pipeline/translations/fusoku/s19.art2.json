@@ -1,0 +1,25 @@
+{
+ "number": "s19.art2",
+ "heading_en": "Transitional Measures Concerning the Calculation of the Consolidated Capital Adequacy Ratio",
+ "summary_ja": "適用日から一年間は連結自己資本規制比率の算出になお従前の例によること、及び届出により基準日を前倒しできることを定める。",
+ "summary_en": "The old rules continue to apply to the consolidated capital adequacy ratio for one year from the application date; an Ultimate Designated Parent Company may notify an earlier reference date.",
+ "paragraphs": [
+  "The calculation of the consolidated capital adequacy ratio (meaning the consolidated capital adequacy ratio prescribed in Article 2 of the Public Notice Establishing Standards for Determining Whether the Capital Adequacy of an Ultimate Designated Parent Company and Its Subsidiaries, etc. Is Appropriate in Light of Assets, etc. Held by the Ultimate Designated Parent Company and Its Subsidiaries, etc, as amended by this Public Notice (hereinafter referred to as the \"New Public Notice\"); the same applies hereinafter) for the period until the day on which one year has elapsed from the date of application of this Public Notice (hereinafter referred to as the \"Application Date\") shall remain governed by the provisions then in force.",
+  "An Ultimate Designated Parent Company may notify the Commissioner of the Financial Services Agency in advance that it will not be subject to the provisions of the preceding paragraph, and of the first date on which it will calculate the consolidated capital adequacy ratio pursuant to the provisions of the New Public Notice (hereinafter referred to as the \"Reference Date\").",
+  "The provisions of paragraph (1) do not apply, on and after the Reference Date so notified, to an Ultimate Designated Parent Company that has made the notification under the preceding paragraph."
+ ],
+ "terms": [
+  {
+   "ja": "適用日",
+   "en": "Application Date"
+  },
+  {
+   "ja": "新告示",
+   "en": "New Public Notice"
+  },
+  {
+   "ja": "基準日",
+   "en": "Reference Date"
+  }
+ ]
+}

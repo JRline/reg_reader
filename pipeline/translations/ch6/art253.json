@@ -1,0 +1,14 @@
+{
+ "number": "第二百五十三条",
+ "heading_en": "General Provisions on Back-Testing and Profit-and-Loss Attribution Tests",
+ "summary_ja": "内部モデル方式採用最終指定親会社が行うテスト(全社的・各デスクのバック・テスティング、損益要因分析テスト)と、デスクの合格要件を定める。",
+ "summary_en": "Lists the tests an Ultimate Designated Parent Company adopting the internal model approach must perform and requires each internal-model trading desk to pass the desk-level tests.",
+ "sections_en": {
+  "第二節 第三款": "Requirements for Back-Testing and Profit-and-Loss Attribution Tests"
+ },
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal model approach shall conduct the following tests. (i) Enterprise-wide back-testing. (ii) Back-testing for each trading desk. (iii) The profit-and-loss attribution test for each trading desk.",
+  "A trading desk that uses the internal model approach shall have passed the tests listed in items (ii) and (iii) of the preceding paragraph."
+ ],
+ "terms": []
+}

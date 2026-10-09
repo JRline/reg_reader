@@ -1,0 +1,15 @@
+{
+ "number": "第二百五十二条の三",
+ "heading_en": "",
+ "summary_ja": "実在価格の観測値の特定における、パラメトリック関数のパラメーター、信用スプレッド及び株式のリスク・ファクターの場合の要件を定める。",
+ "summary_en": "Sets the requirements for identifying real price observations where parameters of parametric functions are used as risk factors, and for credit spread and equity risk factors.",
+ "paragraphs": [
+  "In identifying the real price observations prescribed in paragraph (2) of the preceding Article, the requirements prescribed in the following items shall be satisfied according to the category of case listed in those items. (i) Where parameters of a parametric function are set as risk factors in the risk measurement system: the market data used to adjust the level of the parameters of the parametric function satisfies the requirements prescribed in paragraphs (2) through (4) of the preceding Article. (ii) Where risk factors for credit spreads and equities are set: all of the following requirements are satisfied. (a) Risk factors representing movements of the economy, region and sector as a whole (referred to as \"general risk factors\" in (b) and (c)) are used. (b) Real prices relating to market indices and to instruments of individual issuers are included in the real price observations of a general risk factor only where they have the same attributes as that general risk factor. (c) Where a general risk factor has a term structure, that general risk factor is classified by maturity and real prices are observed."
+ ],
+ "terms": [
+  {
+   "ja": "全般的なリスク・ファクター",
+   "en": "general risk factors"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "number": "第八十二条",
+ "heading_en": "Exemptions from the Haircut Floors",
+ "summary_ja": "現金担保の再投資期間が適切な現金担保付証券貸借や、差し入れた証券の再利用が禁止・不存在の証券貸借には、ボラティリティ調整率の下限を適用しない。",
+ "summary_en": "No haircut floor for cash-collateralized securities borrowing where the cash is reinvested at matching or shorter maturity (or under FSB-consistent controls), or for securities lending where the collateral securities cannot be or are not rehypothecated.",
+ "paragraphs": [
+  "Notwithstanding the provisions of the preceding Article, the haircut floors need not be applied to the following transactions. (i) Cash-collateralized securities borrowing transactions (meaning transactions in which securities are borrowed and cash is posted as collateral) falling under (a) or (b) below: (a) Where securities are lent at a long maturity and the counterparty reinvests the cash posted as collateral at the same or a shorter maturity. (b) Where securities are lent at a short maturity and it can be shown that the counterparty manages the reinvestment of cash collateral taking into account the recommendations of the Financial Stability Board. (ii) Transactions listed in paragraph (1), item (ii) of the preceding Article in which the securities posted to the counterparty as collateral satisfy either of the following requirements: (a) Their reuse is prohibited by laws and regulations, etc. (b) It can be shown that they are not reused."
+ ]
+}

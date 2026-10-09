@@ -1,0 +1,19 @@
+{
+ "number": "第二百三条の二",
+ "heading_en": "Reference Data for Estimating EAD",
+ "summary_ja": "EADデータベースに観測起点日から十二月間の過去の特性を反映することを定める。",
+ "summary_en": "Requires the EAD database to reflect obligor and exposure characteristics over the twelve months preceding the observation start date.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall have the EAD database (meaning the data referred to when calculating EAD estimates; the same applies in the following Article and Article 203-4) reflect the characteristics of obligors and exposures over the twelve months preceding the observation start date (meaning the date managed as the date on which the default event of the relevant exposure occurred)."
+ ],
+ "terms": [
+  {
+   "ja": "EADデータベース",
+   "en": "EAD database"
+  },
+  {
+   "ja": "観測起点日",
+   "en": "observation start date"
+  }
+ ]
+}

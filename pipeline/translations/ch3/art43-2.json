@@ -1,0 +1,16 @@
+{
+ "number": "第四十三条の二",
+ "heading_en": "Exposures to Significant Investments",
+ "summary_ja": "議決権の十パーセント超を保有する事業法人への出資のうち、総自己資本の十五パーセント（個別）・六十パーセント（合計）を超える部分のリスク・ウェイトを千二百五十パーセントとする。",
+ "summary_en": "Equity holdings in commercial entities where more than 10% of votes are held: amounts above 15% of total capital (per entity) and above 60% (in aggregate) take 1,250%.",
+ "terms": [
+  {
+   "ja": "対象出資",
+   "en": "covered investments"
+  }
+ ],
+ "paragraphs": [
+  "Notwithstanding the provisions of Article 21 through the preceding Article, the risk weight of the exposure relating to the portion of investments (meaning exposures to equity and instruments having the same nature as equity provided in paragraph (1) of the preceding Article) in corporates, etc. (limited to persons acting for profit, and excluding other financial institutions, etc. (meaning other financial institutions, etc. provided in Article 8, paragraph (8), item (i))) of which an Ultimate Designated Parent Company adopting the standardized approach holds more than ten percent of the voting rights of all shareholders, etc. (referred to as \"covered investments\" in the following paragraph and in Article 156-2) that exceeds the 15% threshold amount for significant investments (meaning the amount obtained by multiplying by 15% the amount of total capital in the formula of Article 2, item (iii) (calculated as if the provisions of this Article and Article 156-2 did not apply; the same applies in the following paragraph); the same applies in paragraph (1) of that Article) shall be 1,250%.",
+  "In the case of the preceding paragraph, where the sum of the amounts of the portions of covered investments other than the portions corresponding to the amounts to which a risk weight of 1,250% applies under that paragraph exceeds the 60% threshold amount for significant investments (meaning the amount obtained by multiplying by 60% the amount of total capital in the formula of Article 2, item (iii); the same applies in Article 156-2, paragraph (2)), the risk weight of the exposure relating to the excess portion shall be 1,250%."
+ ]
+}

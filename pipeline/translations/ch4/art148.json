@@ -1,0 +1,17 @@
+{
+ "number": "第百四十八条",
+ "heading_en": "Amount of Credit Risk-Weighted Assets for the Default Risk Portion of Purchased Retail Exposures",
+ "summary_ja": "購入リテール向けエクスポージャーのデフォルト・リスク相当部分の信用リスク・アセットの額の算出方法を定める。",
+ "summary_en": "Prescribes how to calculate credit risk-weighted assets for the default risk portion of purchased retail exposures, including the EAD and the treatment of pools spanning several asset classes.",
+ "paragraphs": [
+  "Articles 136 through 138 and Articles 140 through 142 apply mutatis mutandis to the calculation of the amount of credit risk-weighted assets for the default risk portion of purchased retail exposures. In this case, the phrase \"amount of credit risk-weighted assets\" in these provisions shall be deemed to be replaced with \"amount of credit risk-weighted assets for the default risk portion\".",
+  "The EAD for the default risk of purchased retail exposures shall be the amount obtained by deducting, from the amount of EAD provided in Article 142 (hereinafter referred to in this Section as \"EAD_{dilution} for purchased retail exposures\"), the sum of the amount obtained by multiplying the amount of credit risk-weighted assets for the dilution risk portion by 8% and the amount obtained by multiplying EAD_{dilution} for purchased retail exposures by EL_{dilution}.",
+  "In the case of paragraph (1), where a pool of purchased retail exposures includes assets falling under more than one asset class, that pool shall be deemed to consist only of the asset class (limited to those included in that pool) that yields the maximum amount of credit risk-weighted assets for the default risk portion."
+ ],
+ "terms": [
+  {
+   "ja": "購入リテール向けエクスポージャーに係るEAD_{dilution}",
+   "en": "EAD_{dilution} for purchased retail exposures"
+  }
+ ]
+}

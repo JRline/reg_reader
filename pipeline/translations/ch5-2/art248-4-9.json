@@ -1,0 +1,11 @@
+{
+ "number": "第二百四十八条の四の九",
+ "heading_en": "Measurement of Net Sensitivities",
+ "summary_ja": "ネット感応度は、リスク・ファクターの微小変化に対するCVA合計値等の変化率とし、より小さな変化幅も使用でき、ベガはボラティリティを変化させて算出する。",
+ "summary_en": "Net sensitivity is the rate of change of total CVA or hedge market value for a small change in a risk factor; smaller shocks may be used, and vega sensitivities are computed by shocking volatilities.",
+ "paragraphs": [
+  "Net sensitivity (meaning net sensitivity provided in paragraph (2) of the preceding Article; the same applies hereinafter in this Section) shall be the rate of change of the total value of CVA, or of the total market value of all eligible hedging instruments, with respect to a small change in the present value of a risk factor.",
+  "Notwithstanding Article 248-4-15, paragraphs (3) and (4), Article 248-4-16, paragraphs (2) and (3), Article 248-4-17, paragraphs (2) and (3), Article 248-4-19, paragraph (2), Article 248-4-20, paragraph (2), Article 248-4-22, paragraph (2), Article 248-4-24, paragraph (2), Article 248-4-25, paragraph (2), Article 248-4-27, paragraphs (2) and (5), and Article 248-4-29, paragraphs (2) and (5), the amount of change of each risk factor may be a smaller amount of change, to the extent that it is consistent with the calculation method in the Ultimate Designated Parent Company's internal risk management.",
+  "Net sensitivity relating to vega risk shall be calculated by changing the following volatilities in the exposure measurement model. In this case, net sensitivity relating to vega risk shall be calculated even where the CVA portfolio includes no transactions with optionality. (i) The volatility used for generating risk factor paths. (ii) The volatility used for valuing the fair value of options."
+ ]
+}

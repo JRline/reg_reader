@@ -1,0 +1,11 @@
+{
+ "number": "第二百十三条",
+ "heading_en": "Validation of the Internal Rating System Using External Data",
+ "summary_ja": "前条以外の定量的検証手法と外部データとの比較、及びその手法の性質を定める。",
+ "summary_en": "Requires quantitative validation methods beyond back-testing and comparison with external data sources, and sets four characteristics of such methods.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall use quantitative validation methods other than the validation methods prescribed in each paragraph of the preceding Article, and shall make comparisons with relevant external data sources.",
+  "The validation methods referred to in the preceding paragraph shall satisfy all of the following characteristics: (i) the data used in the analysis is appropriate for the portfolio being analyzed, is updated regularly, and covers the relevant observation period; (ii) they are based on long-run historical data; (iii) they are not structurally affected by the business cycle; (iv) documents on changes to validation methods, data sources or the covered period have been prepared."
+ ],
+ "terms": []
+}

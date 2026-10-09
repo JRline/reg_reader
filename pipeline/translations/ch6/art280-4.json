@@ -1,0 +1,11 @@
+{
+ "number": "第二百八十条の四",
+ "heading_en": "Treatment of Securitization Exposures to Which a 100% Risk Weight Is Applied",
+ "summary_ja": "この節により百パーセントのリスク・ウェイトが適用される証券化エクスポージャーは、一般市場リスクの算出を要さず、個別リスクの額はそのリスク・ウェイトを乗じた値とする。",
+ "summary_en": "Where a 100% risk weight applies to a securitization exposure under this Section, general market risk need not be calculated and specific risk is the exposure multiplied by 100%, excluding capital increases from the securitization.",
+ "paragraphs": [
+  "Where a risk weight of 100% is applied to a securitization exposure under the provisions of this Section, the calculation of the general market risk of that securitization exposure is not required.",
+  "Where a risk weight of 100% is applied to a securitization exposure under the provisions of this Section, the value obtained by multiplying that securitization exposure by that risk weight shall be the amount of specific risk; provided, however, that the amount equivalent to the increase in capital accompanying the securitization transaction shall be excluded."
+ ],
+ "terms": []
+}

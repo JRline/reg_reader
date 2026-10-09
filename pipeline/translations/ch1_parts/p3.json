@@ -1,0 +1,306 @@
+{
+ "segments": {
+  "164": "(lxi) \"EL_{dilution}\" means the expected loss rate over one year corresponding to the dilution risk portion of the total amount of exposures included in a pool of purchased receivables.",
+  "165": "(lxii) \"Top-Down Approach\" means the method of estimating the PD or LGD of purchased receivables pursuant to the provisions of Article 147, paragraphs (2) through (9).",
+  "166": "(lxiii) \"Purchased Retail Exposures\" means retail exposures that an Ultimate Designated Parent Company adopting the internal ratings-based approach has acquired from a third party.",
+  "167": "(lxiv) \"Discount Portion of Purchased Receivables\" means, where purchased receivables are purchased from a third party, the difference between the nominal value of the receivables and their acquisition cost.",
+  "168": "(lxv) \"Underlying Assets\" is a collective term for the assets that are the source of funds for the payment of principal and interest on a securitization exposure.",
+  "169": "(lxvi) \"Credit-Enhancing I/O Strip\" means a right to receive all or part of the interest income, etc. expected to arise in the future from the underlying assets transferred to a securitization special purpose entity in an asset-transfer securitization transaction, structured so as to be used as credit enhancement for other securitization exposures relating to that securitization transaction.",
+  "170": "(lxvii) \"Asset-Transfer Securitization Transaction\" means a securitization transaction in which all or part of the underlying assets are transferred to a securitization special purpose entity and the source of funds for payments to investors in the transaction is the cash flow from those underlying assets.",
+  "171": "(lxviii) \"Originator\" means a person that falls under any of the following:",
+  "172": "(a) Where it is directly or indirectly involved in the origination of the underlying assets of a securitization transaction.",
+  "173": "(b) Where it is the sponsor of an ABCP conduit or a similar program that acquires exposures from third parties.",
+  "174": "(lxix) \"Clean-Up Call\" means the right of a securitization special purpose entity to buy back or redeem the remaining securitization exposures before the investors in the securitization exposures have been paid in full.",
+  "175": "(lxx) \"Securitization Special Purpose Entity\" means a juridical person, trust, or other conduit organized for the purpose of conducting securitization transactions that satisfies the following characteristics:",
+  "176": "(a) The activities of the conduit are limited, by its articles of incorporation or by contract, to those necessary to carry out that purpose.",
+  "177": "(b) It is isolated from the credit risk of the originator and of the transferor of the underlying assets.",
+  "178": "(lxxi) \"Non-Contractual Credit Enhancement, etc.\" means, in a securitization transaction, the provision of credit enhancement by an Ultimate Designated Parent Company, etc. to other contractual parties participating in the securitization transaction by assuming the credit risk relating to that transaction, even though doing so is not a contractual obligation of the Ultimate Designated Parent Company, etc. under the contract relating to that transaction.",
+  "179": "(lxxii) \"Synthetic Securitization Transaction\" means a securitization transaction in which all or part of the credit risk of the underlying assets has been transferred by means of a credit derivative referencing the underlying assets as the reference obligation, a guarantee of the underlying assets, the creation of a pledge with the underlying assets as the secured claims, or other similar methods, and investors bear the credit risk of the underlying assets.",
+  "180": "(lxxiii) \"IRB Pool\" means a pool of underlying assets in which all of the exposures constituting the pool satisfy all of the following requirements:",
+  "181": "(a) Approval of the Commissioner of the Financial Services Agency has been obtained for applying the internal ratings-based approach to exposures of the same type as the exposure.",
+  "182": "(b) Sufficient information has been obtained to apply the internal ratings-based approach to the exposure.",
+  "183": "(lxxiv) \"Mixed Pool\" means a pool of underlying assets in which only some of the exposures constituting the pool satisfy all of the requirements set out in (a) and (b) of the preceding item.",
+  "184": "(lxxv) \"SA Pool\" means a pool of underlying assets in which all of the exposures constituting the pool fail to satisfy either of the requirements set out in (a) and (b) of item (lxxiii).",
+  "185": "(lxxvi) \"Most Senior Securitization Exposure\" means a securitization exposure that is backed by a first-priority claim on the entire amount of the underlying assets of the securitization exposure, excluding the claims of counterparties to interest rate swaps or currency swaps and other claims that are not material. However, where a transaction is carried out in which a single most senior securitization exposure is tranched so as to give rise to multiple new securitization exposures of differing priority, only the most senior of those securitization exposures is to be treated as a Most Senior Securitization Exposure.",
+  "186": "(lxxvi-2) \"CVA Risk\" means the risk that CVA (meaning the difference between the fair value of derivative transactions, repo-style transactions, margin transactions, and similar foreign transactions measured without taking into account the counterparty's credit risk and their fair value measured taking it into account; the same applies hereinafter) fluctuates due to market movements in credit spreads and other indicators. However, this excludes risk relating to changes in the credit risk of the Ultimate Designated Parent Company that measures the risk.",
+  "187": "(lxxvi-3) \"BA-CVA\" means the method of calculating the CVA risk equivalent amount as provided in Chapter 5-2, Section 2.",
+  "188": "(lxxvi-4) \"SA-CVA\" means the method of calculating the CVA risk equivalent amount as provided in Chapter 5-2, Section 3.",
+  "189": "(lxxvi-5) \"Ultimate Designated Parent Company Adopting SA-CVA\" means an Ultimate Designated Parent Company that, in calculating the CVA risk equivalent amount, uses SA-CVA with the approval under Article 248-4, paragraph (1).",
+  "190": "(lxxvi-6) \"CVA Desk\" means the department that is the party to the internal CVA hedge transactions or external CVA hedge transactions prescribed in Article 11-13, paragraph (1), or a clearly defined function that has a similar role.",
+  "191": "(lxxvii) \"Eligible Servicer Cash Advance\" means credit extended by a servicer (meaning a person entrusted, by delegation or sub-delegation, with the administration of the underlying assets, the claiming of the underlying assets from their obligors, and the receipt of collected amounts; the same applies in (b) and in Article 239-3, paragraph (2), items (vii) and (viii)) within the contractually agreed amount for the purpose of making payments to investors without delay, which has the following characteristics:",
+  "192": "(a) The servicer has the right to be repaid the entire amount of the credit extended, with first priority, out of the cash flow arising from the underlying assets.",
+  "193": "(b) The servicer may cancel it at its discretion without prior notice.",
+  "194": "(lxxviii) \"Specific Risk\" means the risk relating to a particular issue that cannot be captured by the risk from price movements of factors common to the market.",
+  "195": "(lxxix) \"General Market Risk\" means the risk that the price of a product fluctuates in response to price movements of factors common to the market. (lxxx) and (lxxxi) Deleted.",
+  "196": "(lxxxii) \"Affiliated Company, etc.\" means an affiliated company, etc. prescribed in Article 15-16-2, paragraph (3) of the Order.",
+  "197": "(lxxxiii) \"Market Risk\" means the risk of incurring losses due to fluctuations in market prices.",
+  "198": "(lxxxiv) \"Correlation Trading\" means securitization transactions (excluding resecuritization transactions) for which there is a two-way liquid market for the underlying assets or reference assets, etc. (meaning the multiple juridical persons or assets specified in item (xxxii); the same applies hereinafter), or nth-to-default credit derivatives (excluding derivatives referencing securitization exposures), in which all of the underlying assets or reference assets, etc. are claims against a single obligor (including credit derivatives relating to a single obligor), and positions that have a hedging effect on such positions.",
+  "199": "(lxxxv) \"Directors, etc.\" means directors, executive officers, or executive managers (meaning persons who bear responsibility within the company on a basis comparable to directors or executive officers).",
+  "200": "(lxxxvi) \"TLAC-Regulated Ultimate Designated Parent Company\" means a domestic resolution-target Ultimate Designated Parent Company prescribed in Article 1, item (viii) of the Public Notice Establishing Standards for Indicating the Soundness Status of Total Loss-Absorbing Capacity and Recapitalization Capacity, Established by an Ultimate Designated Parent Company as Standards for Judging the Soundness of the Management of the Ultimate Designated Parent Company and Its Subsidiaries, etc. Pursuant to the Provisions of Article 57-17, paragraph (1) of the Financial Instruments and Exchange Act (FSA Public Notice No. 10 of 2019; hereinafter referred to as the \"TLAC Public Notice for Ultimate Designated Parent Companies\").",
+  "201": "(lxxxvii) \"TLAC-Regulated Company\" means a domestic resolution-target bank prescribed in Article 1, item (viii) of the Public Notice Establishing Standards for Judging the Soundness of Total Loss-Absorbing Capacity and Recapitalization Capacity, Established by a Bank as Standards for Judging the Soundness of the Management of the Bank Pursuant to the Provisions of Article 14-2 of the Banking Act (FSA Public Notice No. 8 of 2019; hereinafter referred to as the \"Bank TLAC Public Notice\"), a domestic resolution-target bank holding company prescribed in Article 1, item (viii) of the Public Notice Establishing Standards for Judging the Soundness of Total Loss-Absorbing Capacity and Recapitalization Capacity, Established by a Bank Holding Company as Standards for Judging the Soundness of the Management of the Bank Holding Company and Its Subsidiaries, etc. Pursuant to the Provisions of Article 52-25 of the Banking Act, Which Should Serve as a Reference for Judging the Soundness of the Management of Banks (FSA Public Notice No. 9 of 2019; hereinafter referred to as the \"Bank Holding Company TLAC Public Notice\"), and a TLAC-Regulated Ultimate Designated Parent Company.",
+  "202": "(lxxxviii) \"Other External TLAC Instruments\" means other external TLAC instruments prescribed in Article 4, paragraph (3) of the Bank TLAC Public Notice, Article 4, paragraph (3) of the Bank Holding Company TLAC Public Notice, and Article 4, paragraph (3) of the TLAC Public Notice for Ultimate Designated Parent Companies.",
+  "203": "(lxxxix) \"Other External TLAC-Related Instruments\" means Other External TLAC Instruments; instruments that, under standards similar to those on total loss-absorbing capacity and recapitalization capacity applicable to regulated financial institutions, are recognized as equivalent to Other External TLAC Instruments; instruments that have the same issuer as, and rank pari passu legally or economically with, these; and Special External TLAC Instruments. However, this excludes TLAC Excluded Liabilities and liabilities equivalent thereto.",
+  "204": "(xc) \"TLAC Excluded Liabilities\" means excluded liabilities prescribed in Article 4, paragraph (4) of the Bank TLAC Public Notice, Article 4, paragraph (4) of the Bank Holding Company TLAC Public Notice, and Article 4, paragraph (4) of the TLAC Public Notice for Ultimate Designated Parent Companies.",
+  "205": "(xci) \"Special External TLAC Instruments\" means liabilities that rank pari passu, legally or economically, with liabilities equivalent to TLAC Excluded Liabilities and that are recognized, in whole or in part, as equivalent to Other External TLAC Instruments by the financial authorities of a country or region other than Japan.",
+  "206": "(xcii) \"Trading Desk\" means a group of traders or a group of trading accounts (meaning units of observation in trading operations) (meaning a collection of multiple booking accounts) that implements a trading strategy for the purpose of earning profits or establishing a market position through the acquisition and management of risk, and that executes a clearly defined business strategy.",
+  "207": "(xciii) \"Structural FX Position\" means a position denominated in a foreign currency that an Ultimate Designated Parent Company holding its capital in its home currency holds for the purpose of preventing a decline in its Consolidated Capital Adequacy Ratio.",
+  "208": "(xciv) \"P&L Attribution Test\" means a method of evaluating the robustness of a model used for the internal model approach by comparing risk-theoretical P&L with hypothetical P&L.",
+  "209": "(xcv) \"Hypothetical P&L\" means the daily profit or loss arising from revaluing, using market data as of the close of business on the current day, the positions held as of the close of business on the previous day (excluding commissions, fees, intraday trading, new and modified transactions, valuation adjustments whose treatment in the calculation of the Consolidated Capital Adequacy Ratio is separately provided, and valuation adjustments deducted from the amount of Common Equity Tier 1 Capital or capital), calculated so as to satisfy all of the following requirements:",
+  "210": "(a) It includes, to the extent possible, valuation adjustments that are updated daily.",
+  "211": "(b) The effect of time value is treated consistently with that in the risk-theoretical P&L.",
+  "212": "(xcvi) \"Trading Desk Risk Management Model\" means the model used in calculating the risk-theoretical P&L used in the P&L attribution test.",
+  "213": "(xcvii) \"Risk-Theoretical P&L\" means, in the P&L attribution test, the profit or loss calculated using the Trading Desk Risk Management Model.",
+  "214": "(xcviii) \"Actual P&L\" means the actual profit or loss calculated in the daily profit and loss calculation process (including intraday trading, new and modified transactions, and foreign currency-denominated positions and commodity positions in the banking book; however, excluding commissions, fees, valuation adjustments whose treatment in the calculation of the Consolidated Capital Adequacy Ratio is separately provided, and valuation adjustments deducted from the amount of Common Equity Tier 1 Capital or capital).",
+  "215": "(xcix) \"Expected Shortfall\" means the average of all potential loss amounts exceeding the value at risk expected within a certain probability range. (c) \"Expected Shortfall Assuming Market Stress\" means the expected shortfall assuming risk factors for which data are available for a period of market stress (meaning the twelve months, within an observation period going back to at least 2007, in which market conditions were most severe) (hereinafter referred to as \"Reduced Risk Factors\"). (ci) \"Stressed Expected Shortfall\" means the expected shortfall that has been level-adjusted in order to calculate the potential loss amount relating to non-modellable risk factors. (cii) \"Risk Bucket\" means a group of risk factors having similar characteristics. (ciii) \"Liquidity Horizon\" means the assumed period required to liquidate or hedge a risk position under stressed market conditions without materially affecting market prices. (civ) \"Risk Factor Modellability Test\" means a test for determining the eligibility of the modelling of risk factors under the internal model approach (hereinafter referred to as \"modelling\") for a trading desk that has obtained the approval under Article 249-4, paragraph (1). (cv) \"Risk Position\" means a position that may incur a potential loss in present value due to a change in a risk factor. (cvi) \"Real Price\" means a price used for the determination in the risk factor modellability test. (cvii) \"Modellable Risk Factor\" means a risk factor determined, as a result of the risk factor modellability test, to be eligible for modelling. (cviii) \"Non-Modellable Risk Factor\" means a risk factor determined, as a result of the risk factor modellability test, to be incapable of modelling. (cix) \"Delta Risk\" means the linear estimate of the change in the value of a product due to a change in a risk factor. (cx) \"Vega Risk\" means the potential loss amount arising from the change in the value of a derivative due to a change in the implied volatility of the underlying asset (meaning volatility calculated on the basis of option prices observed in the market; the same applies hereinafter). (cxi) \"Curvature Risk\" means the additional potential loss amount, over and above delta risk, due to a change in the risk factors of a financial product with optionality. (cxii) \"Sensitivity\" means the estimate of the change in the value of a product due to a small change in a risk factor relating to the product. (cxiii) \"JTD\" means the risk arising where default occurs suddenly. (cxiv) \"Operational Risk\" means the risk of loss resulting from inadequate or failed internal processes of an Ultimate Designated Parent Company, from the activities of its officers and employees or its systems, or from external events (including legal risk, but excluding strategic risk and reputational risk). (cxv) \"Operational Risk Loss\" means a loss arising from operational risk. (cxvi) \"Internal Loss Data\" means information on operational risk losses. (cxvii) \"Internal Loss Database\" means a collection of internal loss data systematically organized so that information on specific operational risk losses can be searched."
+ },
+ "terms": [
+  {
+   "ja": "EL_{dilution}",
+   "en": "EL_{dilution}"
+  },
+  {
+   "ja": "トップ・ダウン・アプローチ",
+   "en": "Top-Down Approach"
+  },
+  {
+   "ja": "購入リテール向けエクスポージャー",
+   "en": "Purchased Retail Exposures"
+  },
+  {
+   "ja": "購入債権のディスカウント部分",
+   "en": "Discount Portion of Purchased Receivables"
+  },
+  {
+   "ja": "裏付資産",
+   "en": "Underlying Assets"
+  },
+  {
+   "ja": "信用補完機能を持つI／Oストリップス",
+   "en": "Credit-Enhancing I/O Strip"
+  },
+  {
+   "ja": "資産譲渡型証券化取引",
+   "en": "Asset-Transfer Securitization Transaction"
+  },
+  {
+   "ja": "オリジネーター",
+   "en": "Originator"
+  },
+  {
+   "ja": "クリーンアップ・コール",
+   "en": "Clean-Up Call"
+  },
+  {
+   "ja": "証券化目的導管体",
+   "en": "Securitization Special Purpose Entity"
+  },
+  {
+   "ja": "契約外の信用補完等",
+   "en": "Non-Contractual Credit Enhancement, etc."
+  },
+  {
+   "ja": "合成型証券化取引",
+   "en": "Synthetic Securitization Transaction"
+  },
+  {
+   "ja": "IRBプール",
+   "en": "IRB Pool"
+  },
+  {
+   "ja": "混合プール",
+   "en": "Mixed Pool"
+  },
+  {
+   "ja": "SAプール",
+   "en": "SA Pool"
+  },
+  {
+   "ja": "最優先証券化エクスポージャー",
+   "en": "Most Senior Securitization Exposure"
+  },
+  {
+   "ja": "CVAリスク",
+   "en": "CVA Risk"
+  },
+  {
+   "ja": "BA―CVA",
+   "en": "BA-CVA"
+  },
+  {
+   "ja": "SA―CVA",
+   "en": "SA-CVA"
+  },
+  {
+   "ja": "SA―CVA採用最終指定親会社",
+   "en": "Ultimate Designated Parent Company Adopting SA-CVA"
+  },
+  {
+   "ja": "CVAデスク",
+   "en": "CVA Desk"
+  },
+  {
+   "ja": "適格なサービサー・キャッシュ・アドバンス",
+   "en": "Eligible Servicer Cash Advance"
+  },
+  {
+   "ja": "個別リスク",
+   "en": "Specific Risk"
+  },
+  {
+   "ja": "一般市場リスク",
+   "en": "General Market Risk"
+  },
+  {
+   "ja": "関連会社等",
+   "en": "Affiliated Company, etc."
+  },
+  {
+   "ja": "マーケット・リスク",
+   "en": "Market Risk"
+  },
+  {
+   "ja": "コリレーション・トレーディング",
+   "en": "Correlation Trading"
+  },
+  {
+   "ja": "取締役等",
+   "en": "Directors, etc."
+  },
+  {
+   "ja": "TLAC規制対象最終指定親会社",
+   "en": "TLAC-Regulated Ultimate Designated Parent Company"
+  },
+  {
+   "ja": "TLAC規制対象会社",
+   "en": "TLAC-Regulated Company"
+  },
+  {
+   "ja": "その他外部TLAC調達手段",
+   "en": "Other External TLAC Instruments"
+  },
+  {
+   "ja": "その他外部TLAC関連調達手段",
+   "en": "Other External TLAC-Related Instruments"
+  },
+  {
+   "ja": "TLAC除外債務",
+   "en": "TLAC Excluded Liabilities"
+  },
+  {
+   "ja": "特例外部TLAC調達手段",
+   "en": "Special External TLAC Instruments"
+  },
+  {
+   "ja": "トレーディング・デスク",
+   "en": "Trading Desk"
+  },
+  {
+   "ja": "構造為替ポジション",
+   "en": "Structural FX Position"
+  },
+  {
+   "ja": "損益要因分析テスト",
+   "en": "P&L Attribution Test"
+  },
+  {
+   "ja": "仮想損益",
+   "en": "Hypothetical P&L"
+  },
+  {
+   "ja": "トレーディング・デスクのリスク管理モデル",
+   "en": "Trading Desk Risk Management Model"
+  },
+  {
+   "ja": "リスク理論損益",
+   "en": "Risk-Theoretical P&L"
+  },
+  {
+   "ja": "実損益",
+   "en": "Actual P&L"
+  },
+  {
+   "ja": "期待ショート・フォール",
+   "en": "Expected Shortfall"
+  },
+  {
+   "ja": "市場混乱時を想定した期待ショート・フォール",
+   "en": "Expected Shortfall Assuming Market Stress"
+  },
+  {
+   "ja": "ストレス期待ショート・フォール",
+   "en": "Stressed Expected Shortfall"
+  },
+  {
+   "ja": "リスク・バケット",
+   "en": "Risk Bucket"
+  },
+  {
+   "ja": "流動性ホライズン",
+   "en": "Liquidity Horizon"
+  },
+  {
+   "ja": "リスク・ファクターのモデル化可能性テスト",
+   "en": "Risk Factor Modellability Test"
+  },
+  {
+   "ja": "リスク・ポジション",
+   "en": "Risk Position"
+  },
+  {
+   "ja": "実在価格",
+   "en": "Real Price"
+  },
+  {
+   "ja": "モデル化可能なリスク・ファクター",
+   "en": "Modellable Risk Factor"
+  },
+  {
+   "ja": "モデル化不可能なリスク・ファクター",
+   "en": "Non-Modellable Risk Factor"
+  },
+  {
+   "ja": "デルタ・リスク",
+   "en": "Delta Risk"
+  },
+  {
+   "ja": "ベガ・リスク",
+   "en": "Vega Risk"
+  },
+  {
+   "ja": "カーベチャー・リスク",
+   "en": "Curvature Risk"
+  },
+  {
+   "ja": "感応度",
+   "en": "Sensitivity"
+  },
+  {
+   "ja": "JTD",
+   "en": "JTD"
+  },
+  {
+   "ja": "オペレーショナル・リスク",
+   "en": "Operational Risk"
+  },
+  {
+   "ja": "オペレーショナル・リスク損失",
+   "en": "Operational Risk Loss"
+  },
+  {
+   "ja": "内部損失データ",
+   "en": "Internal Loss Data"
+  },
+  {
+   "ja": "内部損失データベース",
+   "en": "Internal Loss Database"
+  },
+  {
+   "ja": "低減したリスク・ファクター",
+   "en": "Reduced Risk Factors"
+  },
+  {
+   "ja": "モデル化",
+   "en": "modelling"
+  }
+ ]
+}

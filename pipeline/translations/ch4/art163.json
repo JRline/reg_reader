@@ -1,0 +1,21 @@
+{
+ "number": "第百六十三条",
+ "heading_en": "Use of Information",
+ "summary_ja": "格付の付与等に当たり、入手可能な重要な最新情報を全て考慮し、情報が少ない場合は保守的に行い、外部格付を主要な要素とする場合も他の情報を考慮する。",
+ "summary_en": "Requires all available material current information to be considered in rating assignment, more conservative treatment where information is limited, and other information to be considered even where external ratings are the main factor.",
+ "paragraphs": [
+  "In assigning obligor ratings and facility ratings to exposures or allocating exposures to pools, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall take into account all available, material and relevant current information.",
+  "Where the amount of information held is limited, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall assign obligor ratings and facility ratings or allocate exposures to pools more conservatively.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach uses as the principal factor in assigning ratings to exposures or allocating exposures to pools the ratings (referred to as \"external ratings\" in Article 178, paragraph (2), item (iii) and Article 191) assigned by external credit assessment institutions or similar institutions (referred to as \"external credit assessment institutions, etc.\" in Article 191, paragraph (3), item (iii)), it shall also take into account other relevant information."
+ ],
+ "terms": [
+  {
+   "ja": "外部信用評価機関等",
+   "en": "external credit assessment institutions, etc."
+  },
+  {
+   "ja": "外部格付",
+   "en": "external ratings"
+  }
+ ]
+}

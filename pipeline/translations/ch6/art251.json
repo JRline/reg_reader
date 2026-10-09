@@ -1,0 +1,15 @@
+{
+ "number": "第二百五十一条",
+ "heading_en": "Stress Tests for the Internal Model Approach",
+ "summary_ja": "内部モデル方式採用最終指定親会社に求められるストレス・テストが満たすべき要件(対象リスク、シナリオの種類、報告等)を定める。",
+ "summary_en": "Sets the requirements for stress tests, including risks covered, scenario types, assessment of capital absorption capacity and reporting.",
+ "paragraphs": [
+  "The stress tests required of an Ultimate Designated Parent Company adopting the internal model approach shall satisfy all of the following requirements. (i) The risks measured in the stress tests include market risk, credit risk, operational risk and other principal risks of the Ultimate Designated Parent Company, etc. as a whole (including events with a low probability of occurrence). (ii) The stress tests include stress for each trading desk and for the Ultimate Designated Parent Company, etc. as a whole, and reflect the risk profile of the Ultimate Designated Parent Company adopting the internal model approach. (iii) The stress scenarios used in the stress tests (hereinafter in this Article simply referred to as \"stress scenarios\") include the following elements. (a) The possibility of a large loss arising in the trading portfolio. (b) Circumstances that make risk management of the portfolio difficult. (iv) The stress scenarios are capable of capturing linear and non-linear characteristics of prices. (v) The stress scenarios appropriately take into account the market risk and market liquidity risk that may potentially be incurred during market turmoil. (vi) The stress scenarios used shall be those prescribed in (a) through (d) below according to the category of scenario listed in (a) through (d). (a) Supervisory scenarios: scenarios presented by the Commissioner of the Financial Services Agency as necessary. (b) Historical scenarios: scenarios that take into account price movements of instruments and sharp declines in liquidity in past periods of stress. (c) Volatility and correlation scenarios: scenarios that apply extreme values to volatility and correlation. (d) Hypothetical scenarios: scenarios developed by assuming the maximum loss that could arise on the basis of the characteristics of the company's own portfolio. (vii) The capacity of capital to absorb potentially significant losses and measures to reduce risk and preserve capital are identified. (viii) The results of the stress tests are routinely reported to directors, etc. and regularly reported to the board of directors. (ix) Arrangements are made to be able to submit the results of the stress tests upon request of the Commissioner of the Financial Services Agency."
+ ],
+ "terms": [
+  {
+   "ja": "ストレス・シナリオ",
+   "en": "stress scenarios"
+  }
+ ]
+}

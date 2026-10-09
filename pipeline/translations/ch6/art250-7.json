@@ -1,0 +1,16 @@
+{
+ "number": "第二百五十条の七",
+ "heading_en": "Validation Standards for the Internal Model Approach",
+ "summary_ja": "内部モデル方式の検証義務と、検証が満たすべき基準(仮定の適切性、バック・テスティング、仮想的ポートフォリオ、代理変数)を定める。",
+ "summary_en": "Requires validation of the internal model approach and sets the standards the validation must meet, including assumptions, back-testing, hypothetical portfolios and proxies.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal model approach shall validate the internal model approach it uses.",
+  "The validation under the preceding paragraph shall satisfy the following standards. (i) Validation (including validation of the distribution assumed by the model and of the appropriateness of the valuation models) is conducted to demonstrate that all assumptions of the internal model approach are appropriate and do not underestimate risk. (ii) The validation of the model includes back-testing and the profit-and-loss attribution test, and in that back-testing the method of calculating hypothetical profits and losses is validated. (iii) The validation of the model includes validation using hypothetical portfolios (meaning validation that identifies the possibility that the accuracy of the model may be lost due to structural changes in the market or significant changes in portfolio composition (hereinafter in this item referred to as \"structural characteristics\")), and using those hypothetical portfolios it is confirmed whether the structural characteristics that may arise can be explained by the internal model approach. (iv) Where proxies are used, the following matters are ensured. (a) It is confirmed that risk factors for which proxies are used produce conservative results. (b) Material basis risk (meaning the risk of positions relating to the same party that are similar but not identical because of differences in term, seniority, credit events or otherwise; the same applies hereinafter in this Chapter) is sufficiently reflected. (c) Concentration risk that may arise in a non-diversified portfolio is reflected."
+ ],
+ "terms": [
+  {
+   "ja": "構造的特性",
+   "en": "structural characteristics"
+  }
+ ]
+}

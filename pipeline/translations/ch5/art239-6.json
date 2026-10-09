@@ -1,0 +1,9 @@
+{
+ "number": "第二百三十九条の六",
+ "heading_en": "Risk Weights",
+ "summary_ja": "内部評価方式の承認を受けた場合、内部評価を適格格付機関の格付にひも付けし、第二百三十六条を準用してリスク・ウェイトを算出する。",
+ "summary_en": "Under the internal assessment approach, internal assessments are mapped to corresponding ratings of eligible credit rating agencies and risk weights are calculated by applying Article 236 mutatis mutandis.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach that has obtained approval under Article 239 shall calculate risk weights by linking the internal assessment assigned to a securitization exposure under the internal assessment system to the corresponding rating assigned by an eligible credit rating agency, treating the securitization exposure as having that rating, and applying Article 236 mutatis mutandis."
+ ]
+}

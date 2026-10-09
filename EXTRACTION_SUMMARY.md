@@ -212,8 +212,8 @@ Each paragraph in the feed contains:
 ```
 Root
 ├── feed_id: "fsa-basel-cap-jp"
-├── title_ja: "自己資本比率告示（銀行）"
-├── title_en: "FSA — Basel Capital Adequacy Notification (Banks)"
+├── title_ja: "最終指定親会社自己資本比率告示"
+├── title_en: "Capital Adequacy Notification for Ultimate Designated Parent Companies"
 └── root
     └── children: [Chapters]
         └── fsa-basel-cap-jp.ch2: "第二章 算式等"

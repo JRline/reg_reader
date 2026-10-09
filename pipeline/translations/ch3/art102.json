@@ -1,0 +1,9 @@
+{
+ "number": "第百二条",
+ "heading_en": "Proportional Guarantees or Credit Derivatives",
+ "summary_ja": "保証等が部分的で損失を比例的に負担する場合、保全部分についてのみ信用リスク削減効果を勘案できる。",
+ "summary_en": "Partial protection with losses shared pro rata is recognized only for the protected portion.",
+ "paragraphs": [
+  "Where the guaranteed portion under a guarantee, or the portion protected by a credit derivative, used as a credit risk mitigation technique by an Ultimate Designated Parent Company adopting the standardized approach is smaller than the exposure, and the Ultimate Designated Parent Company adopting the standardized approach and the guarantor or protection provider bear the losses relating to the guaranteed claim or underlying claim in proportion to the ratio of the amount of the guarantee or protection to the exposure amount, the Ultimate Designated Parent Company adopting the standardized approach may take into account the credit risk mitigation effect only for the guaranteed or protected portion of the exposure."
+ ]
+}

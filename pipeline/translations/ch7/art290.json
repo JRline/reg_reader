@@ -1,0 +1,10 @@
+{
+ "number": "第二百九十条",
+ "heading_en": "Revocation of Approval to Use the ILM",
+ "summary_ja": "承認基準に適合しなくなった場合の承認の取消事由と、取消し後のILMの指定を定める。",
+ "summary_en": "Sets out the grounds on which approval to use the ILM may be revoked and provides that the Commissioner then designates the ILM value.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company that has obtained the approval under Article 286, paragraph (1) or (2) has come not to conform to the approval standards provided for in Article 288, the Commissioner of the Financial Services Agency may revoke that approval if any of the following items applies. (i) Where the Commissioner determines that it is inappropriate to calculate the operational risk equivalent amount using the ILM calculated by the method provided in Article 284, paragraph (1), item (i). (ii) Where the Commissioner determines that it is inappropriate to calculate the operational risk equivalent amount using a conservative estimate for the value of the ILM.",
+  "Where the Commissioner of the Financial Services Agency has revoked an approval as provided in the preceding paragraph, the Commissioner shall designate the value of the ILM of the Ultimate Designated Parent Company."
+ ]
+}

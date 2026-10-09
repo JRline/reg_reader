@@ -1,0 +1,13 @@
+{
+ "number": "第二百四十八条の四の二十三",
+ "heading_en": "CVA Sensitivities, etc. for Reference Credit Spreads",
+ "summary_ja": "参照先のクレジット・スプレッドに係るバケットを信用力及びセクターで定め、バケット間相関を表で定める（信用力が異なる場合は表の値を二で除す）。",
+ "summary_en": "Reference credit spread buckets are set by creditworthiness and sector; inter-bucket correlations come from a table, halved where creditworthiness differs.",
+ "paragraphs": [
+  "The buckets for delta risk and vega risk relating to reference credit spreads shall be as set out in the following table, according to the creditworthiness and sector category of the reference name. {{T:p292t0}}",
+  "The correlation coefficient γ_{bc} between buckets of delta risk and between buckets of vega risk relating to reference credit spreads provided in the preceding paragraph shall be as provided in the following items according to the category of case listed in those items. (i) Where the creditworthiness of both buckets is the same: the value set out in the following table according to the bucket number (meaning the bucket number classified under the preceding paragraph; the same applies in the following item and paragraph (3) of the following Article). {{T:p293t0}}. (ii) Where the creditworthiness of both buckets is not the same: the value obtained by dividing the value set out in the table in the preceding item by two, according to the bucket number."
+ ],
+ "sections_en": {
+  "第三節 第二款 第五目": "Buckets, Risk Factors, Sensitivities, Risk Weights and Correlations for Reference Credit Spreads"
+ }
+}

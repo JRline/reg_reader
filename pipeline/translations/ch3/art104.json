@@ -1,0 +1,11 @@
+{
+ "number": "第百四条",
+ "heading_en": "Currency Mismatch between the Exposure and the Guarantee or Credit Derivative",
+ "summary_ja": "保証等の通貨がエクスポージャーと異なる場合、保証額等にGa＝G×(1－Hfx)の為替ボラティリティ調整を行い、最低保有期間十営業日で調整する。",
+ "summary_en": "Currency mismatch: protection is reduced to Ga = G × (1 − Hfx), with the FX haircut scaled to a 10-day minimum holding period.",
+ "paragraphs": [
+  "The guarantee amount or the notional principal amount of the credit derivative where the currency of the guarantee or credit derivative does not match the currency of the exposure shall be the amount calculated by the following formula. Ga = G × (1 − Hfx) Ga is the adjusted guarantee amount or notional principal amount of the credit derivative. G is the guarantee amount or notional principal amount of the credit derivative. Hfx is the haircut applied where the currency of the guarantee or credit derivative does not match the currency of the exposure.",
+  "An Ultimate Designated Parent Company adopting the standardized approach shall adjust the haircut in the preceding paragraph under the provisions of Article 76, paragraphs (2) and (3). In this case, the minimum holding period shall be ten business days, and the adjustment under that paragraph shall be made where the interval of marking to market for foreign exchange risk is longer than one business day.",
+  "Except for the matters specified in the preceding paragraph, the provisions of Subsection 3 shall apply mutatis mutandis to the conditions relating to the calculation of the haircut."
+ ]
+}

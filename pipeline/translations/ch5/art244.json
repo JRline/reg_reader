@@ -1,0 +1,9 @@
+{
+ "number": "第二百四十四条",
+ "heading_en": "Delinquency Rate of the Original Asset Pool (W)",
+ "summary_ja": "原資産プールの延滞率Wを、延滞エクスポージャー及び倒産・強制執行・デフォルト事由が生じたエクスポージャーの総額を原資産プールの総額で除した値と定める。",
+ "summary_en": "Defines the delinquency rate W as defaulted exposures plus exposures hit by insolvency, enforcement or contractual default events, divided by the total exposures of the original asset pool.",
+ "paragraphs": [
+  "The delinquency rate (W) of the original asset pool referred to in paragraph (1) of Article 242 shall be the value obtained by dividing the total amount of exposures that constitute the original asset pool and are either defaulted exposures prescribed in Article 38, paragraph (1) or exposures for which any of the following events has occurred, by the total amount of exposures of the original asset pool: (i) insolvency (excess of liabilities over assets), the decision to commence bankruptcy proceedings, the decision to commence rehabilitation proceedings, the decision to commence reorganization proceedings, an order to commence special liquidation, or other similar events; (ii) attachment, provisional attachment, or other compulsory execution proceedings; (iii) a default event prescribed in the related contracts of the securitization transaction."
+ ]
+}

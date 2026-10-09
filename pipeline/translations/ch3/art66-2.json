@@ -1,0 +1,10 @@
+{
+ "number": "第六十六条の二",
+ "heading_en": "Exception to the Calculation Method for Eligible Financial Collateral",
+ "summary_ja": "第三者の金融機関に管理（分別管理を除く）された現金・預金の担保は、包括的・簡便手法を用いず、当該金融機関向けのリスク・ウェイトを適用でき、通貨が異なる場合は為替ボラティリティ調整を行う。",
+ "summary_en": "Cash collateral held at a third-party bank (not segregated) may take that bank's risk weight instead of the simple or comprehensive approach, with an FX haircut for currency mismatch: C* = C × (1 − Hfx).",
+ "paragraphs": [
+  "Where eligible financial collateral meets all of the following requirements, an Ultimate Designated Parent Company adopting the standardized approach shall not use the comprehensive approach or the simple approach. In this case, for the portion of the exposure amount corresponding to that eligible financial collateral, the risk weight applied to a direct exposure to the third-party financial institution provided in item (ii) may be applied in place of the risk weight of the counterparty of that exposure. (i) That it falls under Article 65, item (i). (ii) That it is held at a third-party financial institution (including foreign banks, and excluding persons listed in Article 1, item (vii)(b)) (excluding where it is held in segregation).",
+  "In the case of the preceding paragraph, where the currencies of the exposure and the collateral differ, the amount of the portion corresponding to eligible financial collateral shall be calculated by the following formula. C* = C × (1 − Hfx) C* is the amount of the portion corresponding to eligible financial collateral where the currencies of the exposure and the collateral differ. C is the amount of eligible financial collateral. Hfx is the haircut applied where the currencies of the exposure and eligible financial collateral differ (calculated by the method provided in the following Subsection)."
+ ]
+}

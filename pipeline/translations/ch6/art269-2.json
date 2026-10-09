@@ -1,0 +1,12 @@
+{
+ "number": "第二百六十九条の二",
+ "heading_en": "Calculation of the Market Risk Equivalent Amount for Default Risk of Securitization Products (CTP)",
+ "summary_ja": "証券化商品(CTP)のデフォルト・リスクについて、インデックスごとのバケット、リスク・ウェイトおよび合計額の算式を定める。",
+ "summary_en": "Provides for index-based buckets, risk weights and the formula for the total market risk equivalent amount for default risk of securitization products (CTP).",
+ "paragraphs": [
+  "For the default risk of securitization products (CTP), a bucket shall be set for each index. In this case, tranched securitization exposures, etc. shall be classified into the bucket of the index consistent with the portfolio before tranching.",
+  "The risk weight relating to the default risk of securitization products (CTP) shall be as prescribed in each of the following items according to the category of product set forth in that item: (i) Tranched products: the value obtained by dividing the risk weight calculated on the basis of the method of calculating risk weights of securitization exposures prescribed in Chapter 5, Section 2, Subsection 2 by 12.5; (ii) Products other than those set forth in the preceding item: the same value as the risk weight of non-securitization products prescribed in Article 267-3, paragraph (2).",
+  "The total market risk equivalent amount for default risk relating to securitization products (CTP) shall be calculated using the following formulas. {{F:p398i0}}{{F:p398i1}}{{F:p398i2}} DRC_{CTP} is the market risk equivalent amount for default risk of securitization products (CTP); DRC_{b} is the market risk equivalent amount for default risk in bucket b; i is a product belonging to bucket b; RW_{i} is the risk weight applied to product i; HBR_{CTP} is the hedge benefit ratio of securitization products (CTP) calculated using all positions included in the correlation trading portfolio."
+ ],
+ "terms": []
+}

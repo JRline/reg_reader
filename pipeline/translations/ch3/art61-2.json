@@ -1,0 +1,9 @@
+{
+ "number": "第六十一条の二",
+ "heading_en": "Scope of Risk-Weighted Asset Calculation for Securities Collateral, etc.",
+ "summary_ja": "有価証券の貸付や有価証券担保の提供を行う場合、当該有価証券のリスク・アセット（又はマーケット・リスク相当額）と取引相手方向けのリスク・アセットの双方を算出する。",
+ "summary_en": "When lending securities or posting them as collateral, capital is required both for the securities themselves and for the counterparty exposure.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach lends securities or provides securities as collateral, it shall calculate the credit risk-weighted assets or market risk equivalent amount (limited to where it calculates market risk equivalent amounts) of the exposure relating to those securities and the credit risk-weighted assets for the counterparty."
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "number": "第三十七条",
+ "heading_en": "Commercial Real Estate Exposures",
+ "summary_ja": "返済が不動産の賃料等に依存する事業用不動産関連エクスポージャーで適格性の要件を満たすものをLTV比率に応じ七十〜百十パーセント、満たさないものを百五十パーセントとし、第二順位以下は一・二五倍（LTV六十以下を除く）とする。",
+ "summary_en": "Income-producing commercial real estate takes 70–110% by LTV if eligible, 150% if not; junior liens ×1.25 unless LTV ≤ 60. Eligibility follows Article 36(3) with adjusted wording.",
+ "terms": [
+  {
+   "ja": "事業用不動産関連エクスポージャー",
+   "en": "commercial real estate exposures"
+  },
+  {
+   "ja": "LTV比率",
+   "en": "LTV ratio"
+  }
+ ],
+ "paragraphs": [
+  "Notwithstanding the provisions of Article 30 and Article 31 through Article 34, the risk weight of exposures to businesses for the construction, acquisition, extension or renovation of real estate and other real-estate-related expenses, or for the management of real estate, that satisfy all of the following requirements (hereinafter referred to as \"commercial real estate exposures\") and that satisfy all of the eligibility requirements shall be as set out in the left column of the following table, according to the category of LTV ratio of the commercial real estate exposure listed in that table. {{T:p82t0}} (i) That a mortgage or other security interest has been created on the real estate that is the object of the credit. (ii) That repayment depends solely on rent or other income from that real estate (including where the Ultimate Designated Parent Company adopting the standardized approach cannot explain that repayment does not depend solely on rent or other income from that real estate).",
+  "The risk weight where a commercial real estate exposure does not satisfy the eligibility requirements shall be 150%.",
+  "The provisions of paragraph (3) of the preceding Article shall apply mutatis mutandis where an Ultimate Designated Parent Company adopting the standardized approach determines the risk weight of commercial real estate exposures under the provisions of the preceding two paragraphs. In this case, the term \"the preceding two paragraphs\" in paragraph (3) of that Article shall be read as \"paragraphs (1) and (2) of the following Article\", the term \"mortgage\" in item (i) of that paragraph shall be read as \"mortgage or other security interest\", the term \"mortgage\" in item (ii) of that paragraph shall be read as \"mortgage or other security interest\", and the term \"100\" shall be read as \"80\".",
+  "The \"LTV ratio\" in paragraph (1) and paragraph (3) of the preceding Article as applied mutatis mutandis under the preceding paragraph means the value, expressed as a percentage, of the ratio obtained by dividing the amount specified in item (i) by the amount specified in item (ii). (i) The amount of the exposure as of the calculation reference date on which the risk weight specified in paragraph (1) is applied; provided, however, that where the mortgage or other security interest is second-ranking or lower, it shall be that exposure amount plus the amount of exposures as of the calculation reference date secured by the property pledged to holders of prior-ranking and equal-ranking mortgage or other security interests (excluding the Ultimate Designated Parent Company adopting the standardized approach itself). (ii) The amount calculated, by a method satisfying the requirements listed in paragraph (3), item (iv) of the preceding Article as applied mutatis mutandis under the preceding paragraph, as the value of the property pledged as collateral at the time the credit was extended. In this case, where the case listed in (a) applies, that amount shall be revised downward, and where the case listed in (b) applies, that amount may be revised upward. (a) Where a permanent decrease in the value of the property due to an idiosyncratic event is evident. (b) Where the value of the property increases due to extension or renovation.",
+  "Of the commercial real estate exposures that satisfy all of the eligibility requirements provided in paragraph (3) of the preceding Article as applied mutatis mutandis under paragraph (3), the risk weight of those for which the mortgage or other security interest of the Ultimate Designated Parent Company adopting the standardized approach is second-ranking or lower shall be the value obtained by multiplying the risk weight specified in paragraph (1) by 1.25; provided, however, that where the LTV ratio provided in the preceding paragraph is 60 or less, it is not necessary to multiply by 1.25."
+ ]
+}

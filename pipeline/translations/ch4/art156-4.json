@@ -1,0 +1,15 @@
+{
+ "number": "第百五十六条の四",
+ "heading_en": "Exposures Relating to Other External TLAC-Related Instruments",
+ "summary_ja": "その他外部TLAC関連調達手段のうち調整項目等に算入されなかった部分のエクスポージャーの信用リスク・アセットの額は、第百二十九条から前条までによる。",
+ "summary_en": "For the portion of other external TLAC-related instruments not deducted as adjustment items or own holdings, credit risk-weighted assets are calculated under Articles 129 through 156-3.",
+ "paragraphs": [
+  "For an Ultimate Designated Parent Company adopting the internal ratings-based approach, the amount of credit risk-weighted assets for exposures relating to the portion of other external TLAC-related instruments (for special external TLAC instruments, limited to the portion relating to the amount obtained by multiplying the amount of the issuer's special external TLAC instruments held by that Ultimate Designated Parent Company adopting the internal ratings-based approach by the proportion that the amount which the person issuing those special external TLAC instruments (hereinafter referred to in this Article as the \"issuer\") includes in its own other external TLAC instruments out of those special external TLAC instruments bears to the total amount of the issuer's special external TLAC instruments) that was not included in the amount of adjustment items relating to Tier 2 Capital in the formula in Article 2, item (iii) or in the amount of own holdings of other external TLAC-related instruments provided in Article 4, paragraph (2), item (iv) of the TLAC Public Notice for Ultimate Designated Parent Companies shall be as provided in Articles 129 through the preceding Article."
+ ],
+ "terms": [
+  {
+   "ja": "発行者",
+   "en": "issuer"
+  }
+ ]
+}

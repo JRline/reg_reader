@@ -1,0 +1,10 @@
+{
+ "number": "第二百八十五条",
+ "heading_en": "Treatment of ILM Calculation for Certain Consolidated Subsidiary Corporations, etc. or Business Units",
+ "summary_ja": "法人単位は基準を満たすが一部の連結子法人等又は事業部門が満たさない場合に、承認を受けて、それらに保守的な見積値を用いてILMを算出できる特例と、その場合のオペレーショナル・リスク相当額の算出を定める。",
+ "summary_en": "Allows, with approval, a split ILM treatment where the entity unit meets the internal loss data standards but certain consolidated subsidiaries or business units do not, and sets out how the operational risk equivalent amount is then computed.",
+ "paragraphs": [
+  "Notwithstanding paragraph (1) of the preceding Article, where an Ultimate Designated Parent Company does not meet the standards provided in Article 288, item (i) as an entity unit but meets those standards as an entity unit excluding certain consolidated subsidiary corporations, etc. or business units that do not meet them, it may, only where it has obtained the approval under the following Article, calculate the value of the ILM by the method set out in each of the following items according to the category of subject set out in that item. (i) The relevant consolidated subsidiary corporations, etc. or business units: a method of using a conservative estimate for the value of the ILM. (ii) The entity unit (excluding what is set out in the preceding item; the same applies hereinafter in this item and in item (ii) of the following paragraph): the method provided in Article 284, paragraph (1), item (i) applied to the entity unit.",
+  "The operational risk equivalent amount under the preceding paragraph shall be the total of the following amounts. (i) The amount obtained by multiplying the amount of the BIC for the relevant consolidated subsidiary corporations, etc. or business units by the ILM calculated by the method provided in item (i) of the preceding paragraph. (ii) The amount obtained by multiplying the amount of the BIC for the entity unit by the ILM calculated by the method provided in item (ii) of the preceding paragraph."
+ ]
+}

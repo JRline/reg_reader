@@ -1,0 +1,21 @@
+{
+ "number": "第二百五十三条の二",
+ "heading_en": "Requirements for Enterprise-Wide Back-Testing",
+ "summary_ja": "全社的なバック・テスティングの方法(99%信頼水準、超過回数の調整、バック・テスティングゾーンと乗数)と記録保存を定める。",
+ "summary_en": "Sets the method of enterprise-wide back-testing at the 99% confidence level, adjustments to the number of exceedances, back-testing zones and multipliers, and record keeping.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal model approach shall, in enterprise-wide back-testing, compare daily value at risk with daily hypothetical profits and losses and actual profits and losses over the most recent 250 business days including the valuation date.",
+  "In enterprise-wide back-testing, value at risk at the 99% confidence level shall be calculated on the basis of the following requirements. (i) For the trading portfolio as a whole, the number of back-testing exceedances (meaning hypothetical profits and losses or actual profits and losses exceeding value at risk; the same applies hereinafter in this Section) (hereinafter in this Article and the following Article referred to as the \"number of exceedances\") is calculated, and the greater number of exceedances, for either hypothetical profits and losses or actual profits and losses, is used as the result of back-testing. (ii) The number of exceedances is adjusted as prescribed in (a) through (c) below according to the category of case listed in (a) through (c). (a) Where only actual profits and losses cannot be observed: one is added to the number of exceedances for actual profits and losses. (b) Where only hypothetical profits and losses cannot be observed: one is added to the number of exceedances for hypothetical profits and losses. (c) Cases other than those in (a) and (b) (excluding the case where hypothetical profits and losses, actual profits and losses and daily value at risk can all be observed): one is added to each of the numbers of exceedances for hypothetical profits and losses and for actual profits and losses.",
+  "Where the cause of a back-testing exceedance is related to a non-modellable risk factor, that back-testing exceedance may be excluded from the number of exceedances, but only where the company has notified the Commissioner of the Financial Services Agency. In this case, the changes in the related market risk equivalent amount and the cause of the exceedance shall be recorded in a document and retained.",
+  "The results of enterprise-wide back-testing shall be classified into the back-testing zone prescribed in the lower column of the following table according to the category of number of exceedances listed in the upper column of that table (meaning the green zone (meaning a result indicating no problem with the quality and accuracy of the model; the same applies hereinafter in this paragraph and the following paragraph), the amber zone (meaning a result suggesting that there may be a problem with the model but that is not conclusive; the same applies hereinafter in this paragraph and the following paragraph) or the red zone (meaning a result indicating that it is very likely that there is a problem with the model; the same applies hereinafter in this paragraph and the following paragraph)). {{T:p333t0}}",
+  "For the results classified pursuant to the preceding paragraph, the market risk equivalent amount shall be multiplied by the multiplier as set out in the table of the preceding paragraph.",
+  "An Ultimate Designated Parent Company adopting the internal model approach shall record in a document and retain the content and causes of enterprise-wide back-testing exceedances.",
+  "An Ultimate Designated Parent Company adopting the internal model approach may validate the internal model approach by back-testing based on a confidence level other than 99% or by other statistical methods."
+ ],
+ "terms": [
+  {
+   "ja": "超過回数",
+   "en": "number of exceedances"
+  }
+ ]
+}

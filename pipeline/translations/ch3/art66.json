@@ -1,0 +1,9 @@
+{
+ "number": "第六十六条",
+ "heading_en": "Eligible Financial Collateral under the Comprehensive Approach",
+ "summary_ja": "包括的手法での適格金融資産担保に、簡便手法の担保に加え上場株式と、それらに投資する投資信託等を含め、トレーディング勘定のレポ取引では範囲を限定しないことを定める。",
+ "summary_en": "The comprehensive approach adds other listed equities and funds investing in them; for repos of trading-book assets the collateral range is unrestricted.",
+ "paragraphs": [
+  "Eligible financial collateral where the comprehensive approach is used shall be the items listed in the items of the preceding Article and the following; provided, however, that for repo-style transactions whose underlying assets are subject to the calculation of market risk equivalent amounts (excluding those falling under re-securitization exposures), the range of eligible financial collateral is not limited. (i) Listed shares, etc. of companies issuing shares that do not make up a main stock index of a designated country. (ii) Investment trusts, etc. that satisfy all of the following conditions: (a) Their investments are limited to the assets listed in the preceding Article and the shares, etc. in the preceding item; provided, however, that this does not prevent the investment trust, etc. from using derivative transactions to hedge the risks of the assets in which it invests. (b) The market price of the investment trust, etc. is published every trading day."
+ ]
+}

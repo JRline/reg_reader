@@ -1,0 +1,9 @@
+{
+ "number": "第九十二条",
+ "heading_en": "Exemptions from the 20% Floor",
+ "summary_ja": "コア市場参加者とのレポ取引（零・十パーセント）や、同一通貨の現金・預金担保又は八十パーセント以下で評価した零パーセント国債担保（零パーセント）について、二十パーセント・フロアの適用を除外する。",
+ "summary_en": "Exceptions to the 20% floor: 0% for repos meeting all Article 77 conditions (10% if the counterparty isn't a core market participant), and 0% for same-currency cash or 0%-RW sovereign collateral valued at no more than 80%.",
+ "paragraphs": [
+  "Where a transaction collateralized by eligible financial collateral is one listed in the following items, notwithstanding the provisions of the preceding Article, the risk weight specified in each such item may be applied. (i) A repo-style transaction that satisfies all of the requirements listed in the items of Article 77, paragraph (1): 0%. (ii) A repo-style transaction that satisfies all of the requirements listed in the items of Article 77, paragraph (1) (excluding item (i)): 10%. (iii) Where the exposure and the collateral are denominated in the same currency and either of the following requirements is met (excluding cases falling under the preceding two items): 0%. (a) The collateral is cash or deposits. (b) The collateral is bonds issued by central governments, etc. or local governments in Japan whose risk weight under the standardized approach is 0%, and the collateral value is set at 80% or less of market value."
+ ]
+}

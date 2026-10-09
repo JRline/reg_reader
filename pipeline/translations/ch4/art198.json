@@ -1,0 +1,11 @@
+{
+ "number": "第百九十八条",
+ "heading_en": "Assignment of Obligor Ratings, etc. to Guarantors",
+ "summary_ja": "保証人に対する債務者格付の付与等、保証を用いる場合の要件を定める。",
+ "summary_en": "Sets requirements where guarantees are used: continuous rating of guarantors, monitoring, and retention of information.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach uses a guarantee as a credit risk mitigation technique for corporate, etc. exposures to which the advanced internal ratings-based approach may be applied in accordance with paragraph (1) of the preceding Article, it shall satisfy the following requirements: (i) continuously assign an obligor rating to the guarantor from the date on which the guarantee is used as a credit risk mitigation technique; (ii) satisfy the minimum requirements relating to the assignment of obligor ratings, such as periodic monitoring of the guarantor's condition, ability to perform its obligations, and willingness to do so; (iii) hold information on the obligor on the assumption that there is no guarantee and all relevant information on the guarantor.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach uses a guarantee as a credit risk mitigation technique for retail exposures in accordance with paragraph (2) of the preceding Article, it shall satisfy all of the following requirements: (i) continuously use the guarantee as a credit risk mitigation technique in the allocation to pools from the date on which the credit risk mitigation effect of the guarantee is taken into account; (ii) satisfy the minimum requirements relating to PD estimation and the assignment of obligor ratings or the allocation to pools, such as periodic monitoring of the guarantor's condition, ability to perform its obligations, and willingness to do so; (iii) hold information on the obligor on the assumption that there is no guarantee and all relevant information on the guarantor."
+ ],
+ "terms": []
+}

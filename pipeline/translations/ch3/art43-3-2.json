@@ -1,0 +1,15 @@
+{
+ "number": "第四十三条の三の二",
+ "heading_en": "Exposures Relating to Other External TLAC-Related Instruments",
+ "summary_ja": "その他外部TLAC関連調達手段のうちTier2資本の調整項目及び自己保有その他外部TLAC関連調達手段に算入されなかった部分のリスク・ウェイトを百五十パーセントとする。",
+ "summary_en": "Holdings of other external TLAC-related instruments not deducted from Tier 2 or as own holdings take 150%.",
+ "terms": [
+  {
+   "ja": "発行者",
+   "en": "issuer"
+  }
+ ],
+ "paragraphs": [
+  "Notwithstanding the provisions of Article 22 through the preceding Article, the risk weight of exposures relating to the portion of other external TLAC-related instruments (for special external TLAC instruments, limited to the portion relating to the amount obtained by multiplying the amount of the issuer's special external TLAC instruments held by the Ultimate Designated Parent Company adopting the standardized approach by the proportion that the amount which the person issuing those special external TLAC instruments (referred to as the \"issuer\" in this Article) includes in its own other external TLAC instruments out of those special external TLAC instruments bears to the total amount of the issuer's special external TLAC instruments) not included in the amount of adjustment items relating to Tier 2 Capital in the formula of Article 2, item (iii) or in the amount of own holdings of other external TLAC-related instruments provided in Article 4, paragraph (2), item (iv) of the TLAC Public Notice for Ultimate Designated Parent Companies shall be 150%."
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "number": "第二十一条",
+ "heading_en": "Cash",
+ "summary_ja": "現金（外国通貨及び金を含む）のリスク・ウェイトを零パーセントとする。",
+ "summary_en": "Cash, including foreign currency and gold, takes a 0% risk weight.",
+ "sections_en": {
+  "第二節": "Risk Weights"
+ },
+ "paragraphs": [
+  "The risk weight of cash (including foreign currency and gold) shall be 0%."
+ ]
+}

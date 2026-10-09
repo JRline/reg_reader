@@ -1,0 +1,16 @@
+{
+ "number": "第二十八条",
+ "heading_en": "Exposures to Japanese Government-Affiliated Agencies",
+ "summary_ja": "我が国の政府関係機関（政府出資等の要件を満たす特別法人）を定義し、その円建て・円調達エクスポージャーを十パーセント、それ以外を日本国政府の格付等に応じた第二十五条各号の表によるとする。",
+ "summary_en": "Defines Japanese government-affiliated agencies (statutory corporations meeting government-ownership and oversight tests); their yen exposures funded in yen take 10%, others follow the Article 25 tables.",
+ "terms": [
+  {
+   "ja": "我が国の政府関係機関",
+   "en": "Japanese government-affiliated agencies"
+  }
+ ],
+ "paragraphs": [
+  "The risk weight of yen-denominated exposures to Japanese government-affiliated agencies (meaning corporations established under a special Act (excluding corporations that accept deposits or savings as a business) that fall under any of the following items; the same applies hereinafter) that are funded in yen shall be 10%. (i) A corporation (excluding a stock company) in which the Government holds a majority of the capital. (ii) A corporation (excluding a stock company) in which the Government holds capital and which, as provided by law, must obtain a resolution of the Diet (including approval; the same applies in the following item) or the authorization (including approval; the same applies hereinafter in this paragraph) of the competent minister (including the Prime Minister; the same applies hereinafter in this paragraph) for its budget and settlement of accounts. (iii) A corporation (limited to a stock company; the same applies in this item and the following item) in which the Government holds a majority of the capital and which, as provided by law, must obtain a resolution of the Diet or the authorization of the competent minister for its budget and must submit its financial statements to the Diet. (iv) A corporation in which the Government holds a majority of the capital and which, as provided by law, must obtain the authorization of the competent minister for its redemption plan for bonds and borrowings.",
+  "Except in the case of the preceding paragraph, the risk weight of exposures to Japanese government-affiliated agencies shall be as set out in the left column of the table of each item of Article 25, according to the credit risk category corresponding to the rating or country risk score assigned to the Government of Japan."
+ ]
+}

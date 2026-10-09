@@ -1,0 +1,14 @@
+{
+ "number": "第二百九十一条",
+ "heading_en": "Internal Loss Data",
+ "summary_ja": "内部損失データの収集・保有の手続規程、回収額・グロスの損失・ネットの損失の記録、グロスの損失に含める項目、会計処理日基準及び共通原因の損失の取扱いを定める。",
+ "summary_en": "Sets requirements for internal loss data: procedural rules, recording of recoveries, gross and net losses, items included in gross loss, the accounting-date basis, and treatment of losses with a common cause.",
+ "paragraphs": [
+  "In collecting and holding internal loss data, an Ultimate Designated Parent Company shall formulate procedural rules that provide detailed definitions of the following matters. (i) Recoveries. (ii) Gross loss. (iii) Net loss.",
+  "An Ultimate Designated Parent Company shall record all operational risk loss events so that recoveries, gross loss and net loss can be identified. In this case, recoveries shall be recorded distinguishing between recoveries by insurance proceeds and recoveries other than by insurance proceeds, and shall be managed so that they can be submitted at the request of the Commissioner of the Financial Services Agency.",
+  "An Ultimate Designated Parent Company shall include the following items in gross loss. (i) Write-offs or losses affecting the financial statements that are directly caused by an event giving rise to an operational risk loss. (ii) Costs directly related to an event giving rise to an operational risk loss, and repair or replacement costs incurred to restore the position to that before the occurrence of the event giving rise to the operational risk loss. (iii) Provisions, reserves and amounts transferred to suspense accounts recorded in preparation for events that may give rise to operational risk losses. (iv) Losses recorded for the purpose of correcting past financial information that are attributable to an event giving rise to an operational risk loss.",
+  "An Ultimate Designated Parent Company shall record, for each operational risk loss event, the date of occurrence, the date of discovery and the accounting date of the amount of loss.",
+  "An Ultimate Designated Parent Company shall use the accounting date as the basis in its internal loss data.",
+  "An Ultimate Designated Parent Company shall treat operational risk losses arising from a common cause, including losses recorded in the financial statements over multiple years, as a single loss event and shall record the total of the loss amounts."
+ ]
+}

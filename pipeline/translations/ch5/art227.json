@@ -1,0 +1,15 @@
+{
+ "number": "第二百二十七条",
+ "heading_en": "Calculation of Risk Weights",
+ "summary_ja": "前条第一項第二号の証券化エクスポージャーのリスク・ウェイトは、次条で判定した算出方式により算出し、算出できない場合は千二百五十パーセントを適用する。",
+ "summary_en": "Risk weights for securitization exposures under Article 226-4(1)(ii) are calculated by the method determined under the next Article; where none can be calculated, 1,250% applies.",
+ "sections_en": {
+  "第二節 第二款": "Treatment of Risk Weights of Securitization Exposures",
+  "第二節 第二款 第一目": "General Provisions"
+ },
+ "paragraphs": [
+  "In calculating the risk weight to be applied to the securitization exposures provided in paragraph (1), item (ii) of the preceding Article, the method of calculating that risk weight shall be determined under the provisions of the next Article, and the risk weight shall be calculated, on the basis of the method so determined, as provided in the next Subsection through Subsection 8.",
+  "Where the risk weight cannot be calculated under the provisions of the preceding paragraph, a risk weight of 1,250% shall be applied to the securitization exposure referred to in that paragraph."
+ ],
+ "terms": []
+}

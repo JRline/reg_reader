@@ -1,0 +1,13 @@
+{
+ "number": "第二百十一条",
+ "heading_en": "Validation",
+ "summary_ja": "内部格付制度及び推計値を検証する頑健な制度の整備を定める。",
+ "summary_en": "Requires a robust system for validating the internal rating system, its operation, and the accuracy and consistency of PD, LGD and EAD estimates.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish a robust system for validating the internal rating system and its operation, and the accuracy and consistency of the estimates of PD, LGD and EAD."
+ ],
+ "terms": [],
+ "sections_en": {
+  "第四節 第六款": "Validation of the Internal Rating System and Estimates"
+ }
+}

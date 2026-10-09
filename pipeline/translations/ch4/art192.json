@@ -1,0 +1,13 @@
+{
+ "number": "第百九十二条",
+ "heading_en": "PD, etc. for Retail Exposures",
+ "summary_ja": "リテール向けエクスポージャーのPD・LGD・EAD推計における内部データの利用と長期平均PDの要件、保守的修正を定める。",
+ "summary_en": "Requires internal data as the primary source for retail pools, sets requirements for long-run average PD, and requires conservative adjustment for seasoning and time since default.",
+ "paragraphs": [
+  "In estimating the PD, LGD and EAD of pools, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall use internal data as the primary source of information; provided, however, that where, in light of all relevant material data sources, there is a strong link between the criteria by which the Ultimate Designated Parent Company adopting the internal ratings-based approach allocates exposures to pools and the criteria used by external data providers, and between the composition of the internal data and that of the external data, the Ultimate Designated Parent Company adopting the internal ratings-based approach may use external data or models in its estimates.",
+  "In estimating the long-run average PD of retail exposures, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall satisfy all of the following requirements: (i) use one or more of external data, internal data, or data pooled among multiple financial institutions, covering an observation period of five years or more; (ii) the data prescribed in the preceding item shall include years that represent typical good economic times and years that represent bad economic times of the business cycle relevant to the portfolio of the Ultimate Designated Parent Company adopting the internal ratings-based approach; (iii) be based on the average of one-year default probabilities.",
+  "In using each item of data prescribed in items (i) and (ii) of the preceding paragraph, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall include in its coverage data covering the longest observation period that is relevant. In this case, data for observation periods of low relevance in estimating PD need not be treated equally with data for observation periods of high relevance.",
+  "In estimating the PD and LGD of retail exposures, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall make conservative adjustments, taking into account the effects prescribed in each of the following items for the category of estimate set out in that item: (i) PD: the effect of the number of years elapsed since the loan relating to the claim was made or the transaction was commenced; (ii) LGD: the effect of the number of years elapsed since the default occurred."
+ ],
+ "terms": []
+}

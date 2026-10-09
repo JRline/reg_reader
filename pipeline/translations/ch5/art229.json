@@ -1,0 +1,10 @@
+{
+ "number": "第二百二十九条",
+ "heading_en": "Treatment of Securitization Exposures Relating to Derivative Transactions such as Interest Rate Swaps or Currency Swaps",
+ "summary_ja": "市場リスクのヘッジ手段を提供する派生商品取引に係る証券化エクスポージャーには、同順位または最も優先する劣後のエクスポージャーのリスク・ウェイトを適用する。",
+ "summary_en": "Securitization exposures arising from market-risk hedging derivatives take the risk weight of the pari passu exposure or, failing that, of the most senior subordinated exposure.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company has entered into a derivative transaction for the purpose of providing a means of hedging market risk in relation to a securitization exposure it holds, in calculating the amount of credit risk-weighted assets of the securitization exposure relating to that derivative transaction, it shall apply the risk weight prescribed in the relevant item below according to the case listed in that item. (i) Where, in that securitization transaction, there exists another securitization exposure ranking pari passu with the securitization exposure relating to that derivative transaction: the risk weight applied to that other securitization exposure. (ii) Cases other than that listed in the preceding item: the risk weight applied to another securitization exposure that is subordinate to the securitization exposure relating to that derivative transaction in that securitization transaction."
+ ],
+ "terms": []
+}

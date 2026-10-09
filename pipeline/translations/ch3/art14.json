@@ -1,0 +1,12 @@
+{
+ "number": "第十四条",
+ "heading_en": "Total Amount of Credit Risk-Weighted Assets for Ultimate Designated Parent Companies Adopting the Standardized Approach",
+ "summary_ja": "標準的手法採用最終指定親会社の信用リスク・アセットの額の合計額を、オン・バランス資産等、証券化、CVAリスク、中央清算機関関連の四つの額の合計として定義する。",
+ "summary_en": "Defines total credit RWA under the standardized approach as the sum of four parts: risk-weighted on-balance assets and credit equivalents, securitization, CVA risk, and central-counterparty exposures.",
+ "sections_en": {
+  "第一節": "General Provisions"
+ },
+ "paragraphs": [
+  "The total amount of credit risk-weighted assets of an Ultimate Designated Parent Company adopting the standardized approach means the sum of the following amounts; provided, however, that where Section 6 prescribes the method of calculating risk weights or credit equivalent amounts, it shall be the amount calculated pursuant to the provisions of that Section. (i) The sum of the amounts obtained by multiplying the risk weights provided in Section 2 by the amounts of assets and by the credit equivalent amounts of off-balance sheet transactions under Section 3 and of derivative transactions and long settlement period transactions under Section 4, and the credit risk-weighted assets calculated pursuant to the provisions of Article 55. (ii) The credit risk-weighted assets relating to securitization exposures calculated as provided in Chapter 5. (iii) The amount obtained by dividing by 8% the CVA risk equivalent amount calculated as provided in Chapter 5-2. (iv) The credit risk-weighted assets relating to central counterparty-related exposures calculated as provided in Chapter 5-3."
+ ]
+}

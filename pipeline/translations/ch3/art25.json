@@ -1,0 +1,9 @@
+{
+ "number": "第二十五条",
+ "heading_en": "Exposures to Public Sector Entities Other Than Foreign Central Governments, etc.",
+ "summary_ja": "外国の中央政府・中央銀行以外の公共部門向けエクスポージャーのリスク・ウェイトを、所在国の中央政府の格付又はカントリー・リスク・スコアに応じて定める（無格付は百パーセント）。",
+ "summary_en": "Risk weights for foreign public sector entities, set by the rating or country risk score of the central government of the country where they are located (unrated: 100%).",
+ "paragraphs": [
+  "The risk weight of exposures to public sector entities other than foreign central governments and central banks (as defined by the country concerned) (excluding those to be repaid solely from the revenue of a specific project) shall be as set out in the left column of the table of each of the following items, according to the credit risk category corresponding to the rating or country risk score assigned to the central government of the country in which the public sector entity is located; provided, however, that where unrated, it shall be 100%. (i) For ratings assigned by an eligible credit rating agency: {{T:p58t1}} (ii) For country risk scores: {{T:p58t2}}"
+ ]
+}

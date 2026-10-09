@@ -1,0 +1,16 @@
+{
+ "number": "第二百八十一条",
+ "heading_en": "Calculation of the Operational Risk Equivalent Amount",
+ "summary_ja": "オペレーショナル・リスク相当額は標準的計測手法で算出し、その対象は法人単位とする。",
+ "summary_en": "The operational risk equivalent amount is calculated using the standardized measurement approach, applied on an entity-unit basis.",
+ "terms": [
+  {
+   "ja": "法人単位",
+   "en": "entity unit"
+  }
+ ],
+ "paragraphs": [
+  "In calculating the operational risk equivalent amount, an Ultimate Designated Parent Company shall use the standardized measurement approach.",
+  "The standardized measurement approach shall apply on an entity-unit basis (meaning the Ultimate Designated Parent Company and its consolidated subsidiary corporations, etc.; the same applies in Article 285)."
+ ]
+}

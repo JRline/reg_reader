@@ -37,6 +37,19 @@
           "in_parenthetical": {
             "type": "boolean",
             "description": "True when this clause was extracted from inside a 'parenthetical' span (e.g. a proviso or condition found nested inside an aside). Tells the renderer to draw the clause_type's cue as a colored underline instead of its usual background highlight, so it reads as 'this type, but inside an aside' rather than clashing with the aside's own underline treatment."
+          },
+          "cues": {
+            "type": "array",
+            "description": "Finer cues INSIDE this clause, as character ranges over its own `text` (pipeline/annotate_cues.py). Used where splitting the clause would break a list item's box or a paren's balance. Ranges never cross a paren boundary, so they always nest. Recomputed on every run.",
+            "items": {
+              "type": "object",
+              "required": ["type", "start", "end"],
+              "properties": {
+                "type": { "type": "string", "enum": ["conditional", "proviso", "exception", "limitation", "definition"] },
+                "start": { "type": "integer", "minimum": 0 },
+                "end": { "type": "integer", "minimum": 1 }
+              }
+            }
           }
         }
       }
@@ -51,7 +64,7 @@
         },
         "type": {
           "type": "string",
-          "enum": ["document", "part", "chapter", "section", "subsection", "article", "paragraph", "item", "subitem"]
+          "enum": ["document", "part", "chapter", "section", "subsection", "division", "article", "paragraph", "item", "subitem"]
         },
         "number": {
           "type": ["string", "null"],

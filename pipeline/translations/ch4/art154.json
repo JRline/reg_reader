@@ -1,0 +1,11 @@
+{
+ "number": "第百五十四条",
+ "heading_en": "Amount of Credit Risk-Weighted Assets for the Estimated Residual Value Portion",
+ "summary_ja": "見積残存価額に係る信用リスク・アセットの額は、その額に百パーセントを乗じた額とする。",
+ "summary_en": "Credit risk-weighted assets for the estimated residual value are the estimated residual value multiplied by 100%.",
+ "paragraphs": [
+  "In lease transactions, the amount of credit risk-weighted assets for the estimated residual value shall be the amount obtained by multiplying that estimated residual value by 100%.",
+  "Article 130, paragraph (1) applies mutatis mutandis to credit risk-weighted assets for the estimated residual value. In this case, the phrases \"corporate, etc. exposure\", \"guaranteed claim\" and \"underlying claim\" in that paragraph shall be deemed to be replaced with \"estimated residual value\"."
+ ],
+ "terms": []
+}

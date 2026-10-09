@@ -1,0 +1,11 @@
+{
+ "number": "s03.art5",
+ "heading_en": "Transitional Measures for Accumulated Other Comprehensive Income",
+ "summary_ja": "その他の包括利益累計額のうち、適用日から5年間、表の率を乗じた額を普通株式等Tier1資本の基礎項目に算入し、残余の取扱いを定める。",
+ "summary_en": "For five years from the Application Date, includes a rising percentage (0% to 80%) of accumulated other comprehensive income in Common Equity Tier 1 basic items, and assigns the remainder to Additional Tier 1, Tier 2 or the former rules.",
+ "paragraphs": [
+  "With respect to the amount that falls under accumulated other comprehensive income under Article 5, paragraph (1), item (ii) of the Public Notice, until the date five years have elapsed from the Application Date, the amount obtained by multiplying that amount by the rate set out in the right-hand column of the following table, according to the period category set out in the left-hand column of that table, shall be included in the amount of basic items relating to Common Equity Tier 1 Capital in the formula of Article 2, item (i) of the Public Notice. {{T:p434t0}}",
+  "Of the amount that falls under accumulated other comprehensive income under Article 5, paragraph (1), item (ii) of the Public Notice, with respect to the amount of the portion other than the portion corresponding to the amount included in the amount of basic items relating to Common Equity Tier 1 Capital in the formula of Article 2, item (i) of the Public Notice pursuant to the preceding paragraph: the amount of the portion of that amount that falls under the basic items in the formula of Article 3 of the Former Public Notice shall be included in the amount of basic items relating to Additional Tier 1 Capital in the formula of Article 2, item (ii) of the Public Notice; the amount of the portion that falls under the supplementary items in the formula of Article 3 of the Former Public Notice shall be included in the amount of basic items relating to Tier 2 Capital in the formula of Article 2, item (iii) of the Public Notice; and the amount of the portion that falls under neither the basic items nor the supplementary items in the formula of Article 3 of the Former Public Notice shall remain subject to the previous practice."
+ ],
+ "terms": []
+}

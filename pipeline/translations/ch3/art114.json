@@ -1,0 +1,9 @@
+{
+ "number": "第百十四条",
+ "heading_en": "Where Protection Is Provided",
+ "summary_ja": "セカンド・トゥ・デフォルト型でプロテクションを提供する場合に第百十二条を準用し、削減効果が最も小さい一エクスポージャー分を控除できるとする。",
+ "summary_en": "Selling second-to-default protection: as Article 112, but the RWA reduction for the single lowest-impact name may be deducted.",
+ "paragraphs": [
+  "The provisions of Article 112 shall apply mutatis mutandis where an Ultimate Designated Parent Company adopting the standardized approach provides protection through a second-to-default credit derivative. In this case, the term \"first-to-default credit derivative\" in that Article shall be read as \"second-to-default credit derivative\", and the term \"calculate credit risk-weighted assets\" shall be read as \"calculate credit risk-weighted assets; provided, however, that the amount of credit risk-weighted assets reduced for the single exposure, among the multiple exposures that may be covered by the protection, whose credit risk-weighted assets are reduced least when the risk weight of the protection provider is applied up to the notional principal amount of that credit derivative, may be deducted\"."
+ ]
+}

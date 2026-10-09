@@ -1,0 +1,19 @@
+{
+ "number": "第二百三十六条",
+ "heading_en": "Risk Weights",
+ "summary_ja": "外部格付準拠方式によるリスク・ウェイトを、長期格付(最優先か否かで表・算式)と短期格付の別に定め、同一取引の最優先エクスポージャーのリスク・ウェイトを下限とする。",
+ "summary_en": "Under the external-ratings-based method, risk weights are read from tables by rating category and maturity (with a formula for non-senior exposures) for long-term ratings and from a table for short-term ratings, subject to a floor equal to the senior exposure's risk weight.",
+ "sections_en": {
+  "第二節 第二款 第三目": "External Ratings-Based Method"
+ },
+ "paragraphs": [
+  "The risk weight of a securitization exposure calculated using the external-ratings-based method shall be the ratio prescribed in the relevant item below according to the case listed in that item. (i) Where the rating assigned by an eligible credit rating agency or the inferred rating provided in the next Article is a long-term rating: the ratio calculated as prescribed in (a) or (b) below. (a) Where the securitization exposure is a senior securitization exposure, the risk weight prescribed in the following table according to the credit risk category corresponding to that rating and the category of residual maturity of that securitization exposure (meaning the residual maturity of the securitization exposure (M_{T}) calculated under paragraph (8) of the preceding Article; the same applies hereinafter in this Subsection and in Subsection 7); provided, however, that where the residual maturity of the securitization exposure exceeds one year and is less than five years, the risk weight of that securitization exposure shall be the ratio obtained by linear interpolation using the risk weights corresponding to the residual maturities of one year and five years obtained from that table. {{T:p246t0}} (b) Where the securitization exposure is not a senior securitization exposure, the ratio calculated by the following formula (or 15% where that ratio is less than 15%). R × [1 − min(T; 50%)] R and T are each as follows. R is the risk weight prescribed in the following table according to the credit risk category corresponding to the rating of that securitization exposure and the category of residual maturity of that securitization exposure; provided, however, that where the residual maturity of the securitization exposure exceeds one year and is less than five years, the risk weight of that securitization exposure shall be the ratio obtained by linear interpolation using the risk weights corresponding to the residual maturities of one year and five years obtained from that table. T is the figure obtained by deducting the attachment point (A) from the detachment point (D) of that securitization exposure. {{T:p247t0}} (ii) Where the rating assigned by an eligible credit rating agency or the inferred rating provided in the next Article is a short-term rating: the ratio prescribed in the following table according to the category of credit risk category corresponding to that rating. {{T:p247t1}}",
+  "Where the risk weight calculated using the external-ratings-based method for a securitization exposure held by an Ultimate Designated Parent Company is lower than the risk weight calculated using the external-ratings-based method for the senior securitization exposure in the same securitization transaction (limited to one having the same rating (including an inferred rating provided in the next Article) and residual maturity as the held securitization exposure; hereinafter in this paragraph referred to as the \"floor reference securitization exposure\"), the risk weight of the held securitization exposure shall be the risk weight of the floor reference securitization exposure."
+ ],
+ "terms": [
+  {
+   "ja": "フロア参照証券化エクスポージャー",
+   "en": "floor reference securitization exposure"
+  }
+ ]
+}

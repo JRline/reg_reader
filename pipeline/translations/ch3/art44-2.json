@@ -1,0 +1,9 @@
+{
+ "number": "第四十四条の二",
+ "heading_en": "Exposures with a Currency Mismatch",
+ "summary_ja": "貸出通貨と債務者の収入通貨が異なり為替リスクの九割以上がヘッジされていない個人向け・住宅ローン等のリスク・ウェイトを一・五倍（上限百五十パーセント）とする。",
+ "summary_en": "Retail and residential exposures to individuals with a currency mismatch, less than 90% hedged, take 1.5 times the normal risk weight, capped at 150%.",
+ "paragraphs": [
+  "Notwithstanding the provisions of Article 34 through Article 36, the risk weight of retail exposures (limited to those satisfying all of the requirements listed in the items of Article 34, paragraph (1) and those to which a risk weight of 100% applies under paragraph (4) of that Article), exposures to owner-occupied residential real estate, etc. or exposures to rental residential real estate (limited to those to individuals) whose loan currency differs from the currency of the obligor's income and of which 90% or more of the foreign exchange risk is not hedged shall be the value obtained by multiplying the risk weight provided in Article 34 through Article 36 by 1.5; provided, however, that where that value exceeds 150%, it shall be 150%."
+ ]
+}

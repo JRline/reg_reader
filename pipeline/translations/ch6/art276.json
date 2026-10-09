@@ -1,0 +1,18 @@
+{
+ "number": "第二百七十六条",
+ "heading_en": "Market Risk Equivalent Amount of Option Transactions",
+ "summary_ja": "オプション取引等のマーケット・リスク相当額を、場合に応じて簡便法、デルタ・プラス法またはシナリオ法のいずれかで算出する。",
+ "summary_en": "Provides that the market risk equivalent amount of option transactions, etc. is calculated by the shortcut method, the delta-plus method or the scenario method depending on the case.",
+ "paragraphs": [
+  "The market risk equivalent amount for option transactions classified into the risk categories set forth in the items of Article 271, paragraph (1) and positions in the related underlying assets (hereinafter referred to as \"option transactions, etc.\") shall be calculated, treating them as a whole, by the method prescribed in each of the following items according to the case set forth in that item: (i) Where an Ultimate Designated Parent Company, etc. engages only in acquiring options among option transactions: the shortcut method; (ii) Where documents describing matters concerning the method of measuring delta (meaning a value expressing the ratio of the change in the price of the option to a small change in the price of the underlying asset; the same applies in Article 278), gamma (meaning a value expressing the ratio of the change in the delta of the option to a small change in the price of the underlying asset; the same applies in that Article) and vega (meaning the amount of change in the market value of the position in the option to a small change in the volatility of the price of the underlying asset (meaning the expected rate of fluctuation of the price of the underlying asset in an option transaction; the same applies in that Article); the same applies in that Article) are prepared and retained: the delta-plus method; (iii) Where the approval under Article 279, paragraph (1) has been obtained: the scenario method."
+ ],
+ "terms": [
+  {
+   "ja": "オプション取引等",
+   "en": "option transactions, etc."
+  }
+ ],
+ "sections_en": {
+  "第四節 第六款": "Option Transactions"
+ }
+}

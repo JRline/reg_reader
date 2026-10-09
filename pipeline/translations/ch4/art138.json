@@ -1,0 +1,9 @@
+{
+ "number": "第百三十八条",
+ "heading_en": "Other Retail Exposures",
+ "summary_ja": "その他リテール向けエクスポージャーの信用リスク・アセットの額を、所要自己資本率(K)と相関係数(R)の算式で算出することを定める。",
+ "summary_en": "The credit risk-weighted assets of other retail exposures are K x 12.5 x EAD, using the formula for the required capital ratio K and the formula for the correlation coefficient R.",
+ "paragraphs": [
+  "The amount of credit risk-weighted assets for other retail exposures shall be calculated, using the PD, LGD and EAD provided in Articles 140 through 142, by the formula in item (i); the required capital ratio (K) necessary for the formula in item (i) shall be calculated by the formula in item (ii); and the correlation coefficient (R) necessary for the formula in item (ii) shall be calculated by the formula in item (iii). (i) Credit risk-weighted assets = K × 12.5 × EAD. (ii) {{F:p176i2}} (iii) {{F:p177i0}}"
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "number": "第百七十六条",
+ "heading_en": "Data Maintenance for Retail Exposures",
+ "summary_ja": "リテール向けエクスポージャーについて、プール割当てに用いたデータ、延滞データ、プールごとの推計値及びデフォルト前のプール等を保存する。",
+ "summary_en": "Requires retention of pool allocation data, delinquency data, pool-level estimates, and pre-default pool and realized LGD and EAD data for retail exposures.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall retain the following information for retail exposures: (i) Data on the characteristics of obligors and exposures and other data used in the process of allocating exposures to pools; (ii) Data on delinquency; (iii) Data on the PD, LGD and EAD estimates corresponding to pools; (iv) Data on the pool to which each defaulted exposure had been allocated over the year before default, and realized LGD and EAD values."
+ ],
+ "terms": []
+}

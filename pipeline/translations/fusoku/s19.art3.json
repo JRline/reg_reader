@@ -1,0 +1,24 @@
+{
+ "number": "s19.art3",
+ "heading_en": "Transitional Measures Concerning Pari Passu Instruments of TLAC Regulated Companies",
+ "summary_ja": "TLAC規制適用日までに発行された同順位商品の取扱いにつき五年間の経過措置を定める。",
+ "summary_en": "Provides five-year transitional treatment for pari passu instruments of TLAC regulated companies issued before the TLAC application date.",
+ "paragraphs": [
+  "Among instruments that rank pari passu, legally or economically, with other external TLAC instruments (meaning other external TLAC instruments prescribed in Article 1, item (lxxxviii) of the New Public Notice; the same applies hereinafter in this paragraph) of a TLAC regulated company (meaning a TLAC regulated company prescribed in Article 1, item (lxxxvii) of the New Public Notice; the same applies hereinafter in this Article) (excluding those falling under other external TLAC instruments; referred to as \"Pari Passu Instruments of Domestic TLAC Regulated Companies\" in the following paragraph), an Ultimate Designated Parent Company need not include in the amount of other external TLAC-related instruments of minority-invested financial institutions, etc. set out in Article 7, paragraph (2), item (v) of the New Public Notice, for the period until the day on which five years have elapsed from the date of application of the minimum standards for total loss-absorbing capacity and recapitalization capacity relating to that TLAC regulated company (hereinafter referred to as the \"TLAC Application Date\" in this Article), those instruments that were issued by the TLAC Application Date and that it holds as of the TLAC Application Date and continues to hold.",
+  "An Ultimate Designated Parent Company adopting the standardized approach may, with respect to Pari Passu Instruments of Domestic TLAC Regulated Companies that were issued by the TLAC Application Date relating to the TLAC regulated company (excluding one that became a TLAC regulated company on or after the Application Date) and that it holds as of the TLAC Application Date and continues to hold, for the period until the day on which five years have elapsed from the TLAC Application Date, disregard Article 43-3-2 of the New Public Notice and apply Article 30, paragraph (1) or Article 31 of the Public Notice Establishing Standards for Determining Whether the Capital Adequacy of an Ultimate Designated Parent Company and Its Subsidiaries, etc. Is Appropriate in Light of Assets, etc. Held by the Ultimate Designated Parent Company and Its Subsidiaries, etc, before its amendment by this Public Notice (hereinafter referred to as the \"Former Public Notice\"), or follow those provisions."
+ ],
+ "terms": [
+  {
+   "ja": "国内TLAC規制対象会社の同順位商品",
+   "en": "Pari Passu Instruments of Domestic TLAC Regulated Companies"
+  },
+  {
+   "ja": "TLAC規制適用日",
+   "en": "TLAC Application Date"
+  },
+  {
+   "ja": "旧告示",
+   "en": "Former Public Notice"
+  }
+ ]
+}

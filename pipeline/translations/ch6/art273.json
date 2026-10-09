@@ -1,0 +1,18 @@
+{
+ "number": "第二百七十三条",
+ "heading_en": "Equity Risk Category",
+ "summary_ja": "株式リスク・カテゴリーのマーケット・リスク相当額を、株式等の個別リスクと一般市場リスクの合計とする。",
+ "summary_en": "Defines the equity risk category market risk equivalent amount as the sum of specific risk and general market risk on equities, etc.",
+ "paragraphs": [
+  "The market risk equivalent amount of the equity risk category set forth in Article 271, paragraph (1), item (ii) shall be the total of the amount of specific risk and the amount of general market risk relating to equities (excluding non-convertible preferred shares), convertible securities that exhibit price volatility similar to equities, commitments relating to the purchase and sale of equities, derivative transactions relating thereto and off-balance-sheet positions thereof (hereinafter referred to as \"equities, etc.\"); provided, however, that for derivative transactions, the amount of specific risk and the amount of general market risk shall be calculated after converting them into the positions in the related underlying assets."
+ ],
+ "terms": [
+  {
+   "ja": "株式等",
+   "en": "equities, etc."
+  }
+ ],
+ "sections_en": {
+  "第四節 第三款": "Equity Risk Category"
+ }
+}

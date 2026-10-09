@@ -1,0 +1,16 @@
+{
+ "number": "第二百四十八条の四の十四",
+ "heading_en": "Combined Use of the SA-CVA and the BA-CVA",
+ "summary_ja": "SA―CVAが不適切なネッティング・セットにはBA―CVAを用いる。一定の要件を満たす場合は、一のネッティング・セットを二分して両者を併用する。",
+ "summary_en": "The BA-CVA is used for netting sets where the SA-CVA is inappropriate; a netting set may be split into two parts, one under each approach, if the stated requirements are met.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the SA-CVA shall calculate the CVA risk equivalent amount using the BA-CVA for netting sets for which it judges the use of the SA-CVA to be inappropriate.",
+  "Notwithstanding the preceding paragraph, where all of the following requirements are satisfied, an Ultimate Designated Parent Company adopting the SA-CVA shall divide one netting set into two, using the SA-CVA for one part and the BA-CVA for the other. (i) That the method of dividing the netting set is consistent with the method of division in accounting CVA (meaning CVA measured for the purpose of reflection in financial accounting; the same applies hereinafter in this Chapter). (ii) That, among the transactions included in the netting set, there are transactions for which it is inappropriate to calculate the CVA risk equivalent amount using the SA-CVA."
+ ],
+ "terms": [
+  {
+   "ja": "会計CVA",
+   "en": "accounting CVA"
+  }
+ ]
+}

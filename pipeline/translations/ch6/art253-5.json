@@ -1,0 +1,20 @@
+{
+ "number": "第二百五十三条の五",
+ "heading_en": "P&L Used for Backtesting and the P&L Attribution Test",
+ "summary_ja": "損益要因分析テストのリスク理論損益に用いるリスク・ファクターの範囲と、バック・テスティング及び損益要因分析テストに用いる仮想損益・実損益の取扱いを定める。",
+ "summary_en": "Sets the risk factors to be included in the risk-theoretical P&L for the P&L attribution test, and how hypothetical and actual P&L used in backtesting and the P&L attribution test are to be treated.",
+ "terms": [],
+ "paragraphs": [
+  "In the P&L attribution test, the risk factors of the trading desk's risk management model used to calculate the risk-theoretical P&L shall include all modellable risk factors and all non-modellable risk factors.",
+  "Where, in calculating the risk-theoretical P&L in the P&L attribution test, the trading desk's risk management model uses data that include additional residual risks (meaning risks that are captured by the risk factors of the trading desk's risk management model but not captured by the internal model under the internal model approach), the risk-theoretical P&L shall include the changes in all risk factors used in that trading desk's risk management model.",
+  "The hypothetical P&L used for backtesting and for the P&L attribution test shall be the same.",
+  "Actual P&L shall include valuation adjustments relating to market risk, regardless of whether they can be updated daily. In this case, where the Ultimate Designated Parent Company has obtained the approval of the Commissioner of the Financial Services Agency, it may deduct those valuation adjustments relating to market risk.",
+  "Hypothetical P&L shall include valuation adjustments relating to market risk that can be updated daily. In this case, where the Ultimate Designated Parent Company has obtained the approval of the Commissioner of the Financial Services Agency, it may deduct those valuation adjustments relating to market risk.",
+  "Valuation adjustments that cannot be calculated in the trading desk's risk management model need not be included in the hypothetical P&L and actual P&L used for backtesting of each trading desk.",
+  "The same valuation model shall be used in calculating hypothetical P&L and actual P&L."
+ ],
+ "sections_en": {
+  "第二節": "Internal Model Approach",
+  "第二節 第三款": "Requirements for Backtesting and the P&L Attribution Test"
+ }
+}

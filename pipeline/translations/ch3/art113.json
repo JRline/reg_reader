@@ -1,0 +1,18 @@
+{
+ "number": "第百十三条",
+ "heading_en": "Where Protection Is Obtained",
+ "summary_ja": "特定順位参照型クレジット・デリバティブ（ファースト・トゥ・デフォルト型を除く）を信用リスク削減手法として用いない。",
+ "summary_en": "Nth-to-default credit derivatives bought (other than first-to-default) are not recognized as credit risk mitigation.",
+ "sections_en": {
+  "第六節 第八款 第三目": "Second-to-Default Credit Derivatives, etc."
+ },
+ "terms": [
+  {
+   "ja": "特定順位参照型クレジット・デリバティブ",
+   "en": "nth-to-default credit derivatives"
+  }
+ ],
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the standardized approach shall not use nth-to-default credit derivatives (excluding first-to-default credit derivatives) as a credit risk mitigation technique."
+ ]
+}

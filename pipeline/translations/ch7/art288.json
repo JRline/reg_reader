@@ -1,0 +1,27 @@
+{
+ "number": "第二百八十八条",
+ "heading_en": "Standards for Approval to Use the ILM",
+ "summary_ja": "金融庁長官がILM利用を承認する際の審査基準として、内部損失データの保有・整備・分類・記録などの基準(第一号)と、保守的な見積値の適切性(第二号)を定める。",
+ "summary_en": "Sets the standards the Commissioner applies in approving use of the ILM: requirements for holding, documenting, classifying and recording internal loss data (item (i)), and appropriateness of a conservative estimate (item (ii)).",
+ "terms": [
+  {
+   "ja": "会計処理日",
+   "en": "accounting date"
+  },
+  {
+   "ja": "回収額",
+   "en": "recovery"
+  },
+  {
+   "ja": "グロスの損失",
+   "en": "gross loss"
+  },
+  {
+   "ja": "ネットの損失",
+   "en": "net loss"
+  }
+ ],
+ "paragraphs": [
+  "When the Commissioner of the Financial Services Agency intends to grant the approval under Article 286, paragraph (1) or (2), the Commissioner shall examine whether the standards set out in each of the following items are met, according to the category of case set out in that item. (i) Where the ILM is calculated by the method provided in Article 284, paragraph (1), item (i): the following standards. (a) That internal loss data for the most recent ten years is held. (b) That procedures and processes are documented and put in place so that internal loss data is identified, collected and handled using objective criteria. Also, that those procedures and processes are verified before internal loss data is used for the calculation of the operational risk equivalent amount, and are audited periodically. (c) That internal loss data is allocated according to the types of operational risk loss events set out in Appended Table 2 and is maintained in a manner that allows it to be submitted at the request of the Commissioner of the Financial Services Agency. Also, that the criteria for allocation are provided in writing. (d) That internal loss data is collected comprehensively and accurately. (e) That, for each operational risk loss event, the date of occurrence, the date of discovery and the date on which the amount of loss was accounted for (hereinafter referred to as the \"accounting date\") are identified; provided, however, that where the accounting date cannot be identified, at least the business year (including an interim business year) in which the amount of loss from each loss event was accounted for is identified. (f) That recoveries (meaning amounts received in connection with an operational risk loss for the purpose of offsetting that loss; the same applies hereinafter) and the accounting dates of recoveries are identified. (g) That the gross loss (meaning the loss on an operational risk loss before deduction of recoveries; the same applies in Article 291) and the net loss (meaning the loss on an operational risk loss after deduction of recoveries; the same applies in that Article) are recorded for each loss event. (h) That information on recoveries of operational risk losses and information on the causes of operational risk loss events is collected. In this case, that information shall be made more detailed according to the size of the amount of the operational risk loss. (i) That internal loss data relating to credit risk does not include any amounts recorded as credit risk-weighted assets. (j) That operational risk losses relating to market risk are included. (k) That a process for independently verifying the comprehensiveness and accuracy of internal loss data is in place. (ii) Where a conservative estimate is used for the ILM: that it is recognized as an appropriate value compared with the ILM calculated by the method provided in Article 284, paragraph (1), item (i)."
+ ]
+}

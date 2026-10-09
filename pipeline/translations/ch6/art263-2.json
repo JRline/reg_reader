@@ -1,0 +1,16 @@
+{
+ "number": "第二百六十三条の二",
+ "heading_en": "Buckets, Risk Weights and Correlations for Delta Risk of General Interest Rate Risk",
+ "summary_ja": "一般金利リスクのデルタ・リスクについて、バケット分類、テナー別のリスク・ウェイト及び各場合の相関係数を定める。",
+ "summary_en": "Sets the bucket classification, tenor-based risk weights and the correlation coefficients (within and between buckets) for delta risk of general interest rate risk.",
+ "paragraphs": [
+  "For delta risk of general interest rate risk, all risk factors included in the risk-free yield curve of the same currency shall be classified into the same bucket.",
+  "The risk weight for each tenor used in calculating the risk-weighted sensitivities on the risk-free yield curve shall be the value prescribed in the lower column of the following table according to the category of tenor listed in the upper column of the same table. {{T:p364t0}}",
+  "The risk weight used in calculating the risk-weighted sensitivities on the inflation flat curve and the cross-currency basis flat curve shall be 1.6%.",
+  "For the curves of specified currencies, the risk weight may be the value obtained by dividing the risk weights provided in the preceding two paragraphs by the square root of 2.",
+  "In aggregating risk-weighted sensitivities within the same bucket for delta risk of general interest rate risk, the correlation coefficient (ρ_{kl}) prescribed in each of the following items according to the following cases shall be used. (i) Aggregation of the same tenor and different curves: 99.9%. (ii) Aggregation of different tenors and the same curve: the value listed in the following table, based on the number of years of the tenors into which the curves are classified. {{T:p365t1}}. (iii) Aggregation of different tenors and different curves: the value obtained by multiplying the correlation coefficient prescribed in the table in the preceding item, based on the number of years of the tenors with which WS_{k} and WS_{l} are associated, by 99.9%. (iv) Where the risk-weighted sensitivity of each tenor of the risk-free yield curve is aggregated with the risk-weighted sensitivity of the inflation flat curve: 40%. (v) Where the following risk-weighted sensitivities are aggregated with the risk-weighted sensitivity of the cross-currency basis flat curve: 0%. (a) The sensitivity of each tenor of the risk-free yield curve. (b) The sensitivity of the inflation flat curve. (c) The sensitivity of any cross-currency basis flat curve other than that cross-currency basis flat curve.",
+  "Notwithstanding the preceding paragraph, where aggregating the risk-weighted sensitivities of cross-currency flat curves relating to onshore curves within the same currency and the risk-weighted sensitivities of cross-currency flat curves relating to offshore curves, the risk-weighted sensitivities may be simply summed.",
+  "The correlation coefficient (γ_{bc}) used in aggregating risk-weighted sensitivities between different buckets for delta risk of general interest rate risk shall be 50%."
+ ],
+ "terms": []
+}

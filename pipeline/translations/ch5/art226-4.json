@@ -1,0 +1,18 @@
+{
+ "number": "第二百二十六条の四",
+ "heading_en": "Amount of Credit Risk-Weighted Assets of Securitization Exposures",
+ "summary_ja": "証券化エクスポージャーの信用リスク・アセットの額は、エクスポージャーの額にリスク・ウェイト(I/Oストリップスは千二百五十パーセント)を乗じて算出し、額の算出方法を定める。",
+ "summary_en": "Credit RWA of a securitization exposure is its exposure amount times its risk weight (1,250% for credit-enhancing I/O strips); sets how on-balance, off-balance and derivative exposure amounts are determined.",
+ "sections_en": {
+  "第二節": "Amount of Credit Risk-Weighted Assets of Securitization Exposures",
+  "第二節 第一款": "General Provisions"
+ },
+ "paragraphs": [
+  "In calculating the amount of credit risk-weighted assets of securitization exposures, an Ultimate Designated Parent Company shall take, as the amount of credit risk-weighted assets, the amount obtained by multiplying the amount of the securitization exposure by the risk weight prescribed in the relevant item below according to the category of securitization exposure listed in that item. (i) Credit-enhancing interest-only strips: 1,250%. (ii) Securitization exposures other than those listed in the preceding item: the risk weight calculated under the provisions of the next Subsection.",
+  "In the preceding paragraph, in calculating the amount of a securitization exposure that is an on-balance-sheet asset item, the amounts listed in the following items may be deducted from the amounts prescribed in those items. (i) The specific allowance for loan losses recorded by the Ultimate Designated Parent Company against an on-balance-sheet securitization exposure it holds: the amount of that securitization exposure. (ii) The specific allowance for loan losses recorded by an Ultimate Designated Parent Company that is the originator against the original assets of the securitization transaction, or the amount of the discount (limited to a non-refundable one) given at the time of transfer of the original assets in the securitization transaction: the amount of the securitization exposures held by the Ultimate Designated Parent Company in relation to that securitization transaction (limited to those to which a risk weight of 1,250% applies under the provisions of this Chapter).",
+  "In paragraph (1), in calculating the amount of a securitization exposure that is an off-balance-sheet asset item, the amount obtained by multiplying the notional amount of the securitization exposure by the credit conversion factor prescribed in the relevant item below, according to the category of securitization exposure listed in that item, shall be the amount of that securitization exposure. (i) The undrawn portion of an eligible servicer cash advance facility: 10%. (ii) Securitization exposures other than those listed in the preceding item: 100%.",
+  "In paragraph (1), in calculating the amount of a securitization exposure relating to a derivative transaction, either SA-CCR or the expected exposure method shall be used.",
+  "In the preceding paragraph, in selecting the calculation method used to calculate the amount of a securitization exposure relating to a derivative transaction, the same method as that used to calculate the credit equivalent amount or EAD of exposures relating to derivative transactions directly held by an Ultimate Designated Parent Company adopting the standardized approach or an Ultimate Designated Parent Company adopting the internal ratings-based approach shall be used; provided, however, that where more than one method is used to calculate the credit equivalent amount or EAD of exposures relating to derivative transactions, any one of those methods shall be used."
+ ],
+ "terms": []
+}

@@ -1,0 +1,25 @@
+{
+ "number": "第七十六条",
+ "heading_en": "Adjustment of Haircuts",
+ "summary_ja": "包括的手法で、取引種類ごとの最低保有期間（五・十・二十営業日、係争多発時は二倍）による調整と、担保額調整・時価評価の頻度による調整をボラティリティ調整率に行うことを定める。",
+ "summary_en": "Haircuts are scaled to the minimum holding period (5, 10 or 20 business days by transaction type, doubled after repeated margin disputes) and to the frequency of remargining or revaluation.",
+ "sections_en": {
+  "第六節 第三款 第三目": "(Deleted)",
+  "第六節 第三款 第四目": "Adjustment of Haircuts"
+ },
+ "terms": [
+  {
+   "ja": "最低保有期間",
+   "en": "minimum holding period"
+  },
+  {
+   "ja": "その他資本市場取引",
+   "en": "other capital market transactions"
+  }
+ ],
+ "paragraphs": [
+  "Where the comprehensive approach is used for transactions collateralized by eligible financial collateral, an Ultimate Designated Parent Company adopting the standardized approach shall adjust haircuts for the minimum holding period, and adjust haircuts for the frequency of margin calls or marking to market.",
+  "The \"adjustment of haircuts for the minimum holding period\" specified in the preceding paragraph shall be made using the formula in item (ii), based on the holding period assumed by the haircut intended to be used for the transaction collateralized by eligible financial collateral and the period specified for each type of transaction collateralized by eligible financial collateral listed in item (i)(a) through (e) (hereinafter referred to as the \"minimum holding period\"); provided, however, that where the holding period assumed by the haircut exceeds the minimum holding period, the adjustment of haircuts for the minimum holding period may be omitted. (i) The minimum holding period shall be the period specified in (a) through (e) below according to the category of transaction and netting set listed in (a) through (e). (a) Repo-style transactions subject to margin calls, and netting sets containing only those transactions (excluding those falling under (e)): 5 business days. (b) Other capital market transactions (meaning derivative transactions collateralized by eligible financial collateral and margin lending and similar overseas transactions; the same applies hereinafter) subject to margin calls, and netting sets containing only those other capital market transactions (excluding those falling under (e)): 10 business days. (c) Transactions collateralized by eligible financial collateral not falling under (a) or (b): 20 business days. (d) Netting sets containing repo-style transactions subject to margin calls and transactions falling under other capital market transactions (excluding netting sets containing only one or the other of those transactions): 10 business days. (e) Netting sets containing illiquid collateral or derivative transactions that are difficult to replace, and netting sets in which the number of transactions exceeded 5,000 at any point during the Ultimate Designated Parent Company quarter immediately preceding the Ultimate Designated Parent Company quarter that includes the calculation reference date: 20 business days. (i-2) Notwithstanding the provisions of the preceding item, where, during the two most recent consecutive Ultimate Designated Parent Company quarters before the Ultimate Designated Parent Company quarter that includes the calculation reference date, there have been three or more instances in which, for a netting set, a close-out period exceeding the minimum holding period in that item was required because of disputes over margin calls, the minimum holding period for that netting set during the next two consecutive Ultimate Designated Parent Company quarters shall be deemed to be a period at least twice the minimum holding period specified in that item. (ii) The formula for the \"adjustment of haircuts for the minimum holding period\" shall be as follows. {{F:p133i0}} H_{M} is the haircut applied where marking to market or margin calls are carried out every business day under the minimum holding period applicable to the transaction (the same applies hereinafter). T_{M} is the minimum holding period specified in the preceding item (the same applies hereinafter). H_{10} is the haircut provided in Article 70 that is subject to adjustment.",
+  "The \"adjustment of haircuts for the frequency of margin calls or marking to market\" specified in paragraph (1) shall be made using the following formula. {{F:p133i1}} H is the haircut to be applied to the transaction. N_{R} is the interval (number of business days) of margin calls for the transactions in item (i)(a) or (b) of the preceding paragraph or of marking to market for the transactions in (c) of that item."
+ ]
+}

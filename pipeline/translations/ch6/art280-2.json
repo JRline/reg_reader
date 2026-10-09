@@ -1,0 +1,14 @@
+{
+ "number": "第二百八十条の二",
+ "heading_en": "Specific Risk of Securitization Exposures",
+ "summary_ja": "証券化エクスポージャーの個別リスクの額を、準用して算定したリスク・ウェイトを十二・五で除した値を用いて、銘柄ごとに相殺後のネット・ポジションに乗じて算出する。",
+ "summary_en": "Calculates specific risk of securitization exposures by multiplying net positions by issue, after offsetting, by the risk weight (derived under the credit risk provisions) divided by 12.5.",
+ "paragraphs": [
+  "Notwithstanding the provisions of the preceding Sections, where an Ultimate Designated Parent Company calculates the amount of specific risk of a securitization exposure, the risk weight shall be the value obtained by dividing by 12.5 the risk weight calculated for that securitization exposure by applying mutatis mutandis the provisions of Article 226-4, paragraph (1) pursuant to the following paragraph, and the amount of specific risk shall be the amount obtained by multiplying the amount of the net position, after offsetting for each issue of securitization exposure on the basis of the procedures prescribed in Article 272-2 or Article 272-3, by that risk weight.",
+  "Where an Ultimate Designated Parent Company calculates the amount of specific risk of a securitization exposure pursuant to the provisions of the preceding paragraph, the provisions of Chapter 5, Section 1 and Section 2, Subsection 1 shall apply mutatis mutandis. In this case, the phrase \"the provisions of the following Subsection\" in Article 226-4, paragraph (1), item (ii) shall be deemed to be replaced with \"the provisions of the following Subsection (excluding Division 7).\""
+ ],
+ "terms": [],
+ "sections_en": {
+  "第五節": "Special Provisions for Securitization Exposures"
+ }
+}

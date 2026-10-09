@@ -1,0 +1,11 @@
+{
+ "number": "第二百十八条",
+ "heading_en": "Notification Concerning Use of the Exposure Fluctuation Estimation Model by an Ultimate Designated Parent Company Adopting the Internal Model Method",
+ "summary_ja": "内部モデル方式採用最終指定親会社の使用前の届出と変更・中止の届出を定める。",
+ "summary_en": "Requires an IMM-adopting UDPC to notify the Commissioner in advance of use of the model, and of changes or discontinuation.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach that is an Ultimate Designated Parent Company adopting the internal model method calculates the exposure fluctuation amount using the exposure fluctuation estimation model, it shall in advance submit to the Commissioner of the Financial Services Agency a notification stating that fact and its details.",
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach that is an Ultimate Designated Parent Company adopting the internal model method shall, without delay, submit to the Commissioner of the Financial Services Agency a notification of change stating that fact and its details when there is a change to the notification prescribed in the preceding paragraph, or when it discontinues use of the exposure fluctuation estimation model for unavoidable reasons."
+ ],
+ "terms": []
+}

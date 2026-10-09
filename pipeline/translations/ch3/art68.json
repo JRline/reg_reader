@@ -1,0 +1,10 @@
+{
+ "number": "第六十八条",
+ "heading_en": "Haircut for Multiple Items of Eligible Financial Collateral",
+ "summary_ja": "複数の適格金融資産担保がある場合に、各担保の割合で加重したボラティリティ調整率を総額に適用でき、差し入れた複数の資産にも準用する。",
+ "summary_en": "With several collateral items, a weighted-average haircut H = Σ aᵢHᵢ may be applied to the total; the same applies to several assets posted.",
+ "paragraphs": [
+  "In the preceding Article, where multiple items of eligible financial collateral have been provided for an exposure, an Ultimate Designated Parent Company adopting the standardized approach may apply the haircut calculated by the following formula to the total amount of those items of eligible financial collateral. {{F:p129i0}} H is the haircut applied to the total amount of the multiple items of eligible financial collateral. a_{i} is the proportion of the amount of each item of eligible financial collateral in the total amount of the multiple items of eligible financial collateral. H_{i} is the haircut corresponding to each item of eligible financial collateral.",
+  "The provisions of the preceding paragraph shall apply mutatis mutandis where an Ultimate Designated Parent Company adopting the standardized approach has provided multiple assets as collateral to the counterparty. In this case, the term \"eligible financial collateral\" in the preceding paragraph shall be read as \"assets\"."
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "number": "第二百七条",
+ "heading_en": "",
+ "summary_ja": "EL_{dilution}の推計義務、購入債権の質に関する情報の勘案、譲渡人データの確認を定める。",
+ "summary_en": "Requires estimation of EL_{dilution}, use of all available information on the quality of purchased receivables, verification of seller data, and applies Article 192 mutatis mutandis.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall estimate EL_{dilution}; provided, however, that this does not apply where the seller of the purchased receivables guarantees the whole of the dilution risk relating to the purchased receivables.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach estimates PD or LGD (including, for PD and LGD, the case of estimating them using EL; the same applies hereinafter in this Division) for eligible purchased corporate, etc. exposures using the top-down approach, or estimates EL_{dilution}, and where it estimates PD, LGD or EL_{dilution} for purchased retail exposures, it shall take into account, for pools similar to the pool to which the eligible purchased corporate, etc. exposures or purchased retail exposures belong, the data held by the Ultimate Designated Parent Company adopting the internal ratings-based approach, data provided by the seller of the purchased receivables or from external sources, and all other available information on the quality of the purchased receivables.",
+  "The Ultimate Designated Parent Company adopting the internal ratings-based approach shall confirm whether the data provided by the seller of the purchased receivables conforms to the type and amount of the purchased receivables, the quality of the receivables during the contract period, and other matters specified in the contract for the transfer of those purchased receivables, and where it does not conform, shall obtain more information relating to the purchased receivables and take it into account.",
+  "The provisions of Article 192 apply mutatis mutandis to the estimation of EL_{dilution}. In this case, the terms \"PD\" and \"PD, LGD and EAD\" in that Article shall be deemed to be replaced with \"EL_{dilution}\"."
+ ],
+ "terms": []
+}

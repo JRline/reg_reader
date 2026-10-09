@@ -1,0 +1,13 @@
+{
+ "number": "第九十四条",
+ "heading_en": "Conditions Common to Guarantees and Credit Derivatives",
+ "summary_ja": "保証・クレジット・デリバティブに共通の適格条件（直接的な債権、範囲の明確性、一方的な取消し不可、残存期間の変更不可、追加支払不要、文書化、適時の支払を妨げる条項がないこと）を定める。",
+ "summary_en": "Common eligibility conditions for guarantees and credit derivatives: a direct claim on the protection provider, clearly defined coverage, irrevocability, no unilateral maturity change, no step-up cost on deterioration, documentation, and nothing preventing timely payment.",
+ "sections_en": {
+  "第六節 第六款": "Guarantees and Credit Derivatives",
+  "第六節 第六款 第一目": "Eligibility Requirements"
+ },
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach uses a guarantee or credit derivative as a credit risk mitigation technique, the guarantee or credit derivative shall satisfy all of the following conditions. (i) That the guarantee or credit derivative constitutes a direct claim on the guarantor or protection provider. (ii) That the scope of the guaranteed claim or underlying claim, or of the claims that can be covered by the guarantee or credit derivative, is clear. (iii) That the provision of the credit risk mitigation effect is not discontinued, except where the Ultimate Designated Parent Company adopting the standardized approach fails to make the payments necessary to receive the credit risk mitigation effect of the guarantee or credit derivative, or applies the treatment under Article 106, item (ii)(a). (iii-2) That the guarantor or protection provider cannot subsequently change the agreed residual maturity. (iv) That substantial additional payments to the guarantor or protection provider are not required in order to continue to enjoy the credit risk mitigation effect where the creditworthiness of the obligor of the guaranteed claim or underlying claim deteriorates. (v) That documentation of the guarantee or credit derivative contract has been prepared. (vi) That the guarantee or credit derivative does not contain clauses preventing the guarantor or protection provider from making payment in a timely manner where a payment default occurs on the guaranteed obligation, or where an event listed in Article 96, item (i)(a) through (c) (where the provisions of Article 97 are applied, an event listed in Article 96, item (i)(a) or (b)) occurs for the credit derivative."
+ ]
+}

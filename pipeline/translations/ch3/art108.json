@@ -1,0 +1,9 @@
+{
+ "number": "第百八条",
+ "heading_en": "Calculation Method",
+ "summary_ja": "削減手法の残存期間がエクスポージャーより短い場合、その効果をPa＝P×(t－0.25)／(T－0.25)で調整する（Tは最大五年）。",
+ "summary_en": "Maturity mismatch adjustment: Pa = P × (t − 0.25) / (T − 0.25), with T capped at 5 years.",
+ "paragraphs": [
+  "Where the residual maturity of a credit risk mitigation technique is shorter than the residual maturity of the exposure, an Ultimate Designated Parent Company adopting the standardized approach shall adjust the effect of the credit risk mitigation technique by the following formula. Pa = P × {(t − 0.25) / (T − 0.25)} Pa is the amount of the credit risk mitigation technique after the residual maturity adjustment. P is the amount of the credit risk mitigation technique (where a haircut is applied as provided in Article 104, the amount after that adjustment). t is the residual maturity of the credit risk mitigation technique expressed in years; provided, however, that where t is greater than T, T is used. T is the residual maturity of the exposure expressed in years; provided, however, that where the residual maturity of the exposure exceeds five years, five is used."
+ ]
+}

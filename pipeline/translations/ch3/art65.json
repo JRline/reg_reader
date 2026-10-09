@@ -1,0 +1,27 @@
+{
+ "number": "第六十五条",
+ "heading_en": "Eligible Financial Collateral under the Simple Approach",
+ "summary_ja": "簡便手法での適格金融資産担保（現金・預金、金、高格付の国債等・社債・短期債、要件を満たす無格付銀行債、主要株価指数構成株式、適格資産に投資する投資信託等）を列挙する。",
+ "summary_en": "Eligible collateral under the simple approach: cash and deposits, gold, qualifying sovereign, bank and corporate debt by rating, certain unrated senior bank debt, main-index equities, and funds investing only in such assets.",
+ "terms": [
+  {
+   "ja": "指定国",
+   "en": "designated countries"
+  },
+  {
+   "ja": "単体自己資本規制比率告示",
+   "en": "Stand-alone Capital Adequacy Notice"
+  },
+  {
+   "ja": "株式等",
+   "en": "shares, etc."
+  },
+  {
+   "ja": "投資信託等",
+   "en": "investment trusts, etc."
+  }
+ ],
+ "paragraphs": [
+  "Eligible financial collateral where the simple approach is used shall be the following. (i) Cash and deposits. (ii) Gold. (iii) Yen-denominated bonds issued by the Government of Japan or local governments in Japan, or bonds issued by the Bank for International Settlements, the International Monetary Fund, the European Central Bank, the European Union, the European Stability Mechanism, the European Financial Stability Facility, or multilateral development banks to which a 0% risk weight applies under the standardized approach. (iv) Bonds rated by an eligible credit rating agency that fall under any of (a) through (c) below, excluding those falling under the preceding item: (a) Bonds issued by central governments, central banks, local governments in Japan, the Japan Finance Organization for Municipalities and Japanese government-affiliated agencies whose credit risk category corresponding to the rating assigned by an eligible credit rating agency is 1-4 or better. (b) Bonds other than those listed in (a) whose credit risk category corresponding to the rating assigned by an eligible credit rating agency (for ratings assigned to bonds issued by the entities listed in Article 25, the table of Article 32, paragraph (1) shall apply mutatis mutandis; the same applies in (d)(1) and (e)(1) of the following item) is 2-3, 3-3, 3-2-3, 4-3 or 6-10 (excluding those falling under re-securitization exposures) or better. (c) Short-term bonds whose credit risk category corresponding to the rating assigned by an eligible credit rating agency (for ratings assigned to bonds issued by the entities listed in Article 25, the table of Article 33, paragraph (1) shall apply mutatis mutandis; the same applies in (d)(2) and (e)(2) of the following item) is 5-3 or 7-3 (excluding those falling under re-securitization exposures) or better. (v) Bonds not rated by an eligible credit rating agency that satisfy all of the following conditions: (a) The issuer is an entity listed in Article 30 through Article 31-2. (b) They are traded on a financial instruments exchange market, an over-the-counter securities market or a foreign financial instruments market. (c) They are not subordinated to other claims. (d) No eligible credit rating agency has assigned to obligations of the same seniority owed by the issuer a rating below the rating specified in (1) or (2) below according to the category of those obligations listed in (1) or (2): (1) Bonds other than short-term bonds: the rating corresponding to credit risk category 3-3. (2) Short-term bonds: the rating corresponding to credit risk category 5-3. (e) The Ultimate Designated Parent Company adopting the standardized approach has no information giving reason to believe that the creditworthiness of the bond is below the creditworthiness specified in (1) or (2) below according to the category of bond listed in (1) or (2): (1) Bonds other than short-term bonds: the rating corresponding to credit risk category 3-3. (2) Short-term bonds: the rating corresponding to credit risk category 5-3. (f) The bond has sufficient liquidity. (vi) Shares, etc. (meaning shares and bonds with rights to convert into shares; the same applies hereinafter in this Section) of companies issuing shares that make up a main stock index of a designated country (meaning a designated country as provided in Article 1, item (xl) of the Notice Specifying the Standards, etc. for Calculating the Market Risk Equivalent, Counterparty Risk Equivalent and Basic Risk Equivalent of Financial Instruments Business Operators (FSA Notice No. 59 of 2007; hereinafter referred to as the \"Stand-alone Capital Adequacy Notice\"); the same applies hereinafter). (vii) Investment trusts and other similar products (hereinafter referred to as \"investment trusts, etc.\") that satisfy all of the following conditions: (a) Their investments are limited to assets eligible as collateral under the simple approach; provided, however, that this does not prevent the investment trust, etc. from using derivative transactions to hedge the risks of the assets in which it invests. (b) The market price of the investment trust, etc. is published every trading day."
+ ]
+}

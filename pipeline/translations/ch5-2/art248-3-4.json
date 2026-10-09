@@ -1,0 +1,9 @@
+{
+ "number": "第二百四十八条の三の四",
+ "heading_en": "CVA Risk Equivalent Amount under the Reduced BA-CVA",
+ "summary_ja": "限定的なBA―CVAによるCVAリスク相当額は、βを一としたK_{full}に割引係数0.65を乗じた額とする。",
+ "summary_en": "The reduced BA-CVA amount is K_{full}, calculated with β equal to one, times the discount scalar of 0.65.",
+ "paragraphs": [
+  "The CVA risk equivalent amount under the reduced BA-CVA shall be the amount obtained by multiplying the value of K_{full}, calculated with β set to one in the formula in paragraph (1) of the preceding Article, by the discount scalar of 0.65."
+ ]
+}

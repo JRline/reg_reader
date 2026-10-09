@@ -1,0 +1,13 @@
+{
+ "number": "第二百六条",
+ "heading_en": "Special Provisions on Risk Quantification for Purchased Receivables",
+ "summary_ja": "購入リテール及びトップ・ダウン・アプローチの適格購入事業法人等向けについて、一部の要件を適用しないことを定める。",
+ "summary_en": "Exempts purchased retail exposures and top-down eligible purchased corporate, etc. exposures from certain listed requirements.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach need not satisfy the requirements prescribed in Article 159, Articles 161 through 163, Article 165, Article 171, Article 173, Article 174 and Article 176 with respect to purchased retail exposures and eligible purchased corporate, etc. exposures to which the top-down approach is applied, among purchased receivables."
+ ],
+ "terms": [],
+ "sections_en": {
+  "第四節 第五款 第七目": "Estimation of PD, LGD and EL_{dilution} for Purchased Receivables"
+ }
+}

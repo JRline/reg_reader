@@ -1,0 +1,10 @@
+{
+ "number": "第二十四条",
+ "heading_en": "Exposures to Japanese Local Governments",
+ "summary_ja": "我が国の地方公共団体向けの円建て・円調達エクスポージャーは零パーセント、それ以外は日本国政府の格付等に応じた第二十二条第一項の表によるリスク・ウェイトとする（特定事業収入のみで返済するものを除く）。",
+ "summary_en": "Yen exposures to Japanese local governments funded in yen take 0%; others use the sovereign table of Article 22(1) at Japan's rating (revenue-only obligations excluded).",
+ "paragraphs": [
+  "The risk weight of yen-denominated exposures to local governments in Japan (excluding those to be repaid solely from the revenue of a specific project) that are funded in yen shall be 0%.",
+  "Except in the case of the preceding paragraph, the risk weight of exposures to local governments in Japan (excluding those to be repaid solely from the revenue of a specific project) shall be as set out in the table of each item of Article 22, paragraph (1), according to the credit risk category corresponding to the rating or country risk score assigned to the Government of Japan."
+ ]
+}

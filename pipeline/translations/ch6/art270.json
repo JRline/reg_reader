@@ -1,0 +1,24 @@
+{
+ "number": "第二百七十条",
+ "heading_en": "Market Risk Equivalent Amount for the Residual Risk Add-On",
+ "summary_ja": "標準的方式における残余リスク・アドオンの算出対象、除外対象、算出を要しない場合、およびリスク・ウェイトを定める。",
+ "summary_en": "Specifies the products subject to and excluded from the residual risk add-on under the standardized approach, the cases where no calculation is needed, and the risk weights.",
+ "paragraphs": [
+  "Under the standardized approach, the market risk equivalent amount for risks that cannot be captured by the market risk equivalent amount under the sensitivities-based method and the market risk equivalent amount for default risk (hereinafter in this Article referred to as the \"residual risk add-on\") shall be calculated.",
+  "The calculation of the residual risk add-on shall cover the following products: (i) Products with complex underlying assets (meaning products that include risks that cannot be captured under the sensitivities-based method with respect to delta risk, vega risk and curvature risk, or products that include risks that cannot be captured in the calculation of the market risk equivalent amount for default risk); (ii) Products other than those set forth in the preceding item that have residual risk.",
+  "Notwithstanding the preceding paragraph, the following products shall be excluded from the calculation of the residual risk add-on: (i) Products that are the subject of a transaction on the same terms as a transaction with a third party; (ii) Exchange-listed products and centrally cleared products.",
+  "The products set forth in item (ii) of paragraph (2) shall include the following products: (i) Products that are subject to the measurement of the market risk equivalent amount for vega risk or curvature risk and that have a payoff that cannot be replicated by a combination of plain options having a single underlying of equity prices, commodity prices, exchange rates, bond prices, CDS prices or interest rate swaps; (ii) Products falling under correlation trading (excluding products that appropriately hedge correlation trading in the calculation of the market risk equivalent amount); (iii) Products that include any of the following risks: (a) Gap risk (meaning the risk that the vega parameter of an option changes significantly due to a small change in the underlying asset); (b) Correlation risk (meaning the risk of changes in the correlation parameters necessary to determine the value of a product with multiple underlying assets); (c) Behavioral option risk (meaning the risk arising from the exercise of rights based on factors such as demographic characteristics and social factors).",
+  "The calculation of the residual risk add-on is not required for the following risks: (i) Risk arising from cheapest-to-deliver options; (ii) Smile risk (meaning the risk that implied volatility changes because the exercise levels of optional products with the same underlying asset and maturity differ); (iii) Correlation risk arising from European-type or American-type plain options with multiple underlying assets and options expressed as linear combinations of such options; (iv) Dividend risk arising from derivative products whose underlying asset does not consist solely of dividend payments.",
+  "The calculation of the residual risk add-on is not required where any of the following products applies: (i) Index-referencing products (excluding products with optionality) for which the market risk equivalent amounts for delta risk and curvature risk are calculated by the method prescribed in Article 262; (ii) Options with multiple underlying assets for which the market risk equivalent amounts for delta risk and curvature risk are calculated by the method prescribed in Article 262 and the market risk equivalent amount for vega risk is calculated by the method prescribed in Article 262-3; (iii) Investments in funds for which the market risk equivalent amount is calculated by a method set forth in the items of Article 262-2, paragraph (2).",
+  "The market risk equivalent amount for the residual risk add-on shall be the amount obtained by simply summing the amounts obtained by multiplying the simple total of the gross notional amounts of the products by the risk weight prescribed in each of the following items according to the category of product set forth in that item: (i) Products set forth in item (i) of paragraph (2): 1.0%; (ii) Products set forth in item (ii) of paragraph (2): 0.1%."
+ ],
+ "terms": [
+  {
+   "ja": "残余リスク・アドオン",
+   "en": "residual risk add-on"
+  }
+ ],
+ "sections_en": {
+  "第三節 第四款": "Residual Risk Add-On under the Standardized Approach"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "number": "第四十三条",
+ "heading_en": "Exposures to Equity and Equity-Like Instruments",
+ "summary_ja": "株式等エクスポージャーのリスク・ウェイトを投機的な非上場株式四百パーセント、その他二百五十パーセントとし、「株式と同等の性質を有するもの」と「投機的な非上場株式に対する投資」を定義する。",
+ "summary_en": "Equity exposures take 400% for speculative unlisted equity and 250% otherwise; defines equity-like instruments and speculative unlisted equity investment.",
+ "terms": [
+  {
+   "ja": "株式と同等の性質を有するもの",
+   "en": "instruments having the same nature as equity"
+  },
+  {
+   "ja": "投機的な非上場株式に対する投資",
+   "en": "speculative unlisted equity investments"
+  }
+ ],
+ "paragraphs": [
+  "Notwithstanding the provisions of Article 22 through the preceding Article, the risk weight of exposures to equity and instruments having the same nature as equity (excluding exposures whose risk weight is determined under the provisions of Article 43-4) shall be as specified in each of the following items according to the category of investment listed in that item. (i) Speculative unlisted equity investments: 400%. (ii) Investments other than those listed in the preceding item: 250%.",
+  "\"Instruments having the same nature as equity\" in the preceding paragraph means the following. (i) Instruments having all of the following characteristics: (a) They are not redeemed. (b) They do not constitute an obligation of the issuer. (c) They confer a claim to the distribution of residual assets or to dividends of surplus against the issuer. (ii) Financial instruments structured in the same way as the capital instruments included in the Tier 1 Capital of financial institutions (meaning Tier 1 Capital in the formula of Article 2, item (ii)). (iii) Financial instruments constituting an obligation of the issuer that have any of the following characteristics: (a) The issuer may defer payment of the obligation indefinitely. (b) Payment of the obligation is conditional on the issuer issuing a fixed number of the financial instruments listed in the preceding two items, or the issuer may apply the issuance of a fixed number of those financial instruments to payment of the obligation. (c) Payment of the obligation is conditional on the issuer issuing an unspecified number of the financial instruments listed in the preceding two items, and, other things being equal, changes in the amount of the obligation are linked to the value of a fixed number of those financial instruments; or the issuer may choose the method of payment at its discretion. (d) The holder of the financial instrument has the option to require settlement in the financial instruments listed in the preceding two items; provided, however, that this excludes cases where the financial instrument is traded as having the same nature as debt or where treating it as debt is recognized as appropriate. (iv) Obligations whose repayment amount is linked to the return on equity, and obligations, securities, derivative transactions or other financial instruments structured with the intent of conveying the same economic effect as holding equity.",
+  "\"Speculative unlisted equity investments\" in paragraph (1), item (i) means any of the following unlisted equity investments; provided, however, that this shall not apply where the unlisted equity investment contributes to building a long-term relationship or is for the purpose of corporate restructuring. (i) Unlisted equity investments made in the expectation of gains on transfer from short-term trading. (ii) Unlisted equity investments that involve price fluctuations relating to market quotations or other indicators in financial markets and that envisage obtaining large gains on transfer or profits above trend over the long term."
+ ]
+}

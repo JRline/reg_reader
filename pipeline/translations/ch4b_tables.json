@@ -1,0 +1,50 @@
+{
+ "p189t0": {
+  "node_id": "fsa-basel-cap-jp.ch4.art155.p1",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "経過営業日数",
+    "所要自己資本率(K)(パーセント)"
+   ],
+   [
+    "五日以上十五日以内",
+    "八"
+   ],
+   [
+    "十六日以上三十日以内",
+    "五十"
+   ],
+   [
+    "三十一日以上四十五日以内",
+    "七十五"
+   ],
+   [
+    "四十六日以上",
+    "百"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Number of business days elapsed",
+    "Required capital ratio (K) (%)"
+   ],
+   [
+    "5 days or more and 15 days or less",
+    "8"
+   ],
+   [
+    "16 days or more and 30 days or less",
+    "50"
+   ],
+   [
+    "31 days or more and 45 days or less",
+    "75"
+   ],
+   [
+    "46 days or more",
+    "100"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "number": "第二百七十二条の七",
+ "heading_en": "Duration Method",
+ "summary_ja": "デュレーション・ラダーを用いた、価格感応度の計測と期間帯内の相殺(五パーセント)の算出手順を定める。",
+ "summary_en": "Prescribes the duration method: measuring price sensitivities, entering them in a duration ladder, offsetting within time bands (5% vertical disallowance) and applying the maturity-method rules for the rest.",
+ "paragraphs": [
+  "The method of calculation under the duration method shall be as prescribed in the following items: (i) A duration ladder (meaning a table used in calculating the amount of general market risk of the interest rate risk category using the duration method, for classifying the positions of the transactions concerned multiplied by their price sensitivity by residual maturity, etc. for calculation; the same applies hereinafter in this item) consisting of the fifteen time bands set forth in the table in Article 272-5, item (ii)(b) shall be prepared for each currency, the price sensitivity of each debt instrument, etc. to the assumed interest rate change prescribed in the lower column of that table for the time band corresponding to the residual maturity, etc. of each transaction concerned shall be measured, and the amount obtained by multiplying it by the position in each debt instrument, etc. shall be entered into each duration ladder; (ii) The opposite positions classified under the preceding item shall be offset against each other, and the net position within each time band shall be calculated. In this case, the amount obtained by multiplying the amount subject to offsetting by 5% shall be the amount of vertical disallowance; (iii) The amount of horizontal disallowance and the amount of the overall net position in debt instruments, etc. shall be calculated in accordance with the methods prescribed in items (iii) through (v) of the preceding Article."
+ ],
+ "terms": []
+}

@@ -1,0 +1,9 @@
+{
+ "number": "第九十七条",
+ "heading_en": "Where Part of the Conditions Is Not Satisfied",
+ "summary_ja": "リストラクチャリングを信用事由に含まないクレジット・デリバティブは、想定元本（原債権額を上限）の六十パーセントについて信用リスク削減効果を勘案できる。",
+ "summary_en": "A credit derivative that excludes restructuring as a credit event is recognized for 60% of its notional (capped at 60% of the hedged claim).",
+ "paragraphs": [
+  "Where a credit derivative satisfies all of the conditions listed in the items of the preceding Article except that payment cannot be received upon the occurrence of the event listed in item (i)(c) of that Article, notwithstanding the provisions of that Article, an Ultimate Designated Parent Company adopting the standardized approach may take into account the credit risk mitigation effect for the amount of the underlying claim equivalent to 60% of the notional principal amount of that credit derivative; provided, however, that where the notional principal amount exceeds the amount of the underlying claim, the amount for which the credit risk mitigation effect may be taken into account shall be limited to 60% of the amount of the underlying claim."
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "number": "第六十四条",
+ "heading_en": "Collateral for Off-Balance Sheet Transactions",
+ "summary_ja": "第四十五条第一項の表第七号の取引（有価証券貸付・担保提供・レポ等）で受け入れた担保的機能を持つ資産が適格資産である場合、適格金融資産担保として扱えることを定める。",
+ "summary_en": "For securities lending, collateral posting and repos (item (vii) of the Article 45(1) table), assets received that function as collateral may be treated as eligible financial collateral if they qualify.",
+ "terms": [
+  {
+   "ja": "担保としての機能を持つ資産",
+   "en": "assets functioning as collateral"
+  }
+ ],
+ "paragraphs": [
+  "Where, in a transaction provided in item (vii) of the table of Article 45, paragraph (1), the collateral assets received in lending securities, the borrowed assets giving rise to the provision of collateral in posting cash or securities as collateral (limited to assets that provide an effect equivalent to collateral when a credit event occurs for the counterparty (referred to as \"assets functioning as collateral\" in this Article)), the sale proceeds in a sale of assets with a repurchase agreement, or the purchased assets in a purchase of assets with a resale agreement (limited to assets functioning as collateral) are those listed in the items of the following Article or the items of Article 66, an Ultimate Designated Parent Company adopting the standardized approach may treat them as eligible financial collateral."
+ ]
+}

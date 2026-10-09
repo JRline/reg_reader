@@ -1,0 +1,10 @@
+{
+ "number": "第五十四条",
+ "heading_en": "Phased Application, etc.",
+ "summary_ja": "期待エクスポージャー方式は全ての派生商品取引又はレポ取引に適用するが、実施計画に定めた段階的適用と、重要でない取引の適用除外を認める。",
+ "summary_en": "The expected exposure method must cover all derivatives or all repo-style transactions, subject to phased roll-out set in the implementation plan and exclusion of immaterial transactions.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the standardized approach that has received approval for the use of the expected exposure method shall apply the expected exposure method to all derivative transactions or all repo-style transactions; provided, however, that this shall not apply where the implementation plan for the expected exposure method listed in Article 50, paragraph (2), item (iv) provides that, for a certain period after application of the expected exposure method begins, the expected exposure method will not be applied to the credit equivalent amounts of some transactions.",
+  "Notwithstanding the provisions of the preceding paragraph, an Ultimate Designated Parent Company adopting the standardized approach that has received approval for the use of the expected exposure method may refrain from applying the expected exposure method to derivative transactions or repo-style transactions that are not material in calculating credit risk-weighted assets."
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "number": "第二百三十九条の二",
+ "heading_en": "Submission of Application for Approval",
+ "summary_ja": "内部評価方式の承認を受けようとする最終指定親会社が金融庁長官に提出する承認申請書の記載事項、添付書類及び実施計画の記載事項を定める。",
+ "summary_en": "Specifies the contents of the application for approval of the internal assessment approach, its attachments, and the contents of the implementation plan.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach that intends to obtain the approval under the preceding Article for the use of the internal assessment approach shall submit to the Commissioner of the Financial Services Agency an application for approval stating the following matters. (i) Trade name. (ii) The name and position of the person responsible for understanding and managing the Consolidated Capital Adequacy Ratio.",
+  "The following documents shall be attached to the application for approval in the preceding paragraph. (i) A statement of reasons. (ii) A résumé of the person responsible provided in item (ii) of the preceding paragraph. (iii) Documents showing that the development and use of the internal assessment system (meaning the system that an Ultimate Designated Parent Company has internally established for assigning internal assessments to unrated securitization exposures to ABCP programs; the same applies hereinafter) and other operation of the internal assessment approach conform to the standards for approval. (iv) An internal assessment approach implementation plan. (v) Other documents stating matters for reference.",
+  "The internal assessment approach implementation plan provided in item (iv) of the preceding paragraph shall state the following matters. (i) The scope to which the internal assessment approach is to be applied and the date on which its application is to begin. (ii) The scope to which it is planned not to apply the internal assessment approach."
+ ],
+ "terms": [
+  {
+   "ja": "内部評価制度",
+   "en": "internal assessment system"
+  }
+ ]
+}

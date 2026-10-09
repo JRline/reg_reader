@@ -1,0 +1,10 @@
+{
+ "number": "第二百八十条の八",
+ "heading_en": "Amount of Specific Risk under the Modified Standardized Method",
+ "summary_ja": "修正標準方式によるコリレーション・トレーディングの個別リスクの額を、相殺後のロング・ポジションとショート・ポジションの個別リスクの合計額のうち大きい額とする。",
+ "summary_en": "Sets specific risk for correlation trading under the modified standardized approach as the larger of the total specific risk on long positions and on short positions after offsetting.",
+ "paragraphs": [
+  "The amount of specific risk for correlation trading calculated using the modified standardized approach shall be the larger of the following amounts: (i) the total of the amounts of specific risk calculated under the provisions of the preceding three Sections for the long positions after offsetting on the basis of the procedures prescribed in Article 272-2 or Article 272-3; (ii) the total of the amounts of specific risk calculated under the provisions of the preceding three Sections for the short positions after offsetting on the basis of the procedures prescribed in Article 272-2 or Article 272-3."
+ ],
+ "terms": []
+}

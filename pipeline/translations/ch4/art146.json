@@ -1,0 +1,10 @@
+{
+ "number": "第百四十六条",
+ "heading_en": "Amount of Credit Risk-Weighted Assets for Purchased Receivables",
+ "summary_ja": "購入債権の信用リスク・アセットの額は、デフォルト・リスク相当部分と希薄化リスク相当部分の合計額とする（希薄化リスクが重要でない場合は前者のみ）。",
+ "summary_en": "The credit risk-weighted assets of purchased receivables are the sum of the default risk portion and the dilution risk portion (the default risk portion alone if dilution risk is not material).",
+ "paragraphs": [
+  "Notwithstanding Articles 129 through 142, the amount of credit risk-weighted assets of purchased receivables shall be the sum of the amount of credit risk-weighted assets for the default risk portion and the amount of credit risk-weighted assets for the dilution risk portion; provided, however, that where the dilution risk portion is not material, it may be the amount of credit risk-weighted assets for the default risk portion."
+ ],
+ "terms": []
+}

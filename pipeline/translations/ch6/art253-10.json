@@ -1,0 +1,10 @@
+{
+ "number": "第二百五十三条の十",
+ "heading_en": "Response to Backtesting Exceedances and P&L Attribution Test Failures Attributable to Special Market Factors, etc.",
+ "summary_ja": "市場の特殊要因等に起因すると認められる場合に、バック・テスティングの超過及び損益要因分析テストの不合格を取り消せることを定める。",
+ "summary_en": "Allows an Ultimate Designated Parent Company adopting the internal model approach to cancel a backtesting exceedance or P&L attribution test failure where it is attributable to special market factors, etc.",
+ "terms": [],
+ "paragraphs": [
+  "Where, in making a classification provided for in each item of the preceding Article, it is recognized that the classification includes an event attributable to special market factors, etc., an Ultimate Designated Parent Company adopting the internal model approach may cancel the backtesting exceedance and P&L attribution test failure results used for that classification."
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "number": "第二百四十八条の四の十六",
+ "heading_en": "Sensitivities, etc. of Interest Rate Delta Risk Factors for Currencies Not Specified",
+ "summary_ja": "前条第二項の通貨以外の通貨については、インフレ率及びイールドカーブのパラレル・シフトの絶対変化をデルタ・リスク・ファクターとし、リスク・ウェイトは1.58パーセント、相関は40パーセントとする。",
+ "summary_en": "For currencies other than those in the preceding Article, the delta risk factors are the absolute change in inflation and in a parallel shift of the yield curve, with a 1.58% risk weight and 40% correlation.",
+ "paragraphs": [
+  "The delta risk factors of interest rate risk for currencies other than those provided in paragraph (2) of the preceding Article shall be the absolute change in the inflation rate and the absolute change in a parallel shift of the risk-free yield curve.",
+  "The \"absolute change in the inflation rate\" in the preceding paragraph means the value obtained by dividing the change in the value of CVA or of a CVA hedging instrument when the inflation rate is changed by one basis point by 0.0001.",
+  "The \"absolute change in a parallel shift of the risk-free yield curve\" in paragraph (1) means the value obtained by dividing the change in the value of CVA or of a CVA hedging instrument when the risk-free yield curve of the currency is shifted in parallel by a width of one basis point by 0.0001.",
+  "The risk weight RW_{k} of the risk factors provided in paragraph (1) shall be 1.58%.",
+  "The correlation coefficient ρ_{kl} between the risk-free yield curve and the inflation rate provided in paragraph (1) shall be 40%."
+ ]
+}

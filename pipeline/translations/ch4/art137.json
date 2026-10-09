@@ -1,0 +1,9 @@
+{
+ "number": "第百三十七条",
+ "heading_en": "Qualifying Revolving Retail Exposures",
+ "summary_ja": "適格リボルビング型リテール向けエクスポージャーの信用リスク・アセットの額を、PD・LGD・EADと所要自己資本率(K)の算式で算出することを定める。",
+ "summary_en": "The credit risk-weighted assets of qualifying revolving retail exposures are K x 12.5 x EAD, using PD, LGD and EAD from Articles 140 to 142 and the formula for K.",
+ "paragraphs": [
+  "The amount of credit risk-weighted assets for qualifying revolving retail exposures shall be calculated, using the PD, LGD and EAD provided in Articles 140 through 142, by the formula in item (i), and the required capital ratio (K) necessary for the formula in item (i) shall be calculated by the formula in item (ii). (i) Credit risk-weighted assets = K × 12.5 × EAD. (ii) {{F:p176i1}}"
+ ]
+}

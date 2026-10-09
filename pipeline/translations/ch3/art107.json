@@ -1,0 +1,9 @@
+{
+ "number": "第百七条",
+ "heading_en": "Floor on the Residual Maturity of Credit Risk Mitigation Techniques",
+ "summary_ja": "削減手法の残存期間がエクスポージャーより短く、当初から一年未満又は三月以下となった場合は、当該手法を適用できない。",
+ "summary_en": "Maturity-mismatched protection is not recognized if its original maturity is under one year or its residual maturity is three months or less.",
+ "paragraphs": [
+  "Where the residual maturity of a credit risk mitigation technique is shorter than the residual maturity of the exposure and either of the following items applies, an Ultimate Designated Parent Company adopting the standardized approach may not apply that credit risk mitigation technique. (i) Where, at the time the credit risk mitigation technique is first taken into account, its residual maturity is less than one year. (ii) Where the residual maturity of the credit risk mitigation technique has become three months or less."
+ ]
+}

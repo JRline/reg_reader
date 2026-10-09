@@ -1,0 +1,9 @@
+{
+ "number": "第六十一条",
+ "heading_en": "Choice of Approach",
+ "summary_ja": "マーケット・リスク算出対象資産に関するオフ・バランス取引・派生商品取引には包括的手法を、それ以外は選択した簡便手法又は包括的手法を全取引に用いることを定める。",
+ "summary_en": "Off-balance sheet and derivative exposures on trading-book assets must use the comprehensive approach; otherwise the firm picks either the simple or comprehensive approach for all collateralized transactions.",
+ "paragraphs": [
+  "In the cases listed in the following items, an Ultimate Designated Parent Company adopting the standardized approach must use the approach specified in each such item in order to apply credit risk mitigation techniques to transactions collateralized by eligible financial collateral. (i) Where an Ultimate Designated Parent Company adopting the standardized approach that calculates market risk equivalent amounts applies credit risk mitigation techniques to the credit equivalent amounts of off-balance sheet transactions or derivative transactions relating to assets subject to the calculation of market risk equivalent amounts: the comprehensive approach. (ii) In cases other than the preceding item: whichever of the simple approach or the comprehensive approach the Ultimate Designated Parent Company adopting the standardized approach has chosen to use for all transactions collateralized by eligible financial collateral other than those in the preceding item."
+ ]
+}

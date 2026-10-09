@@ -1,0 +1,9 @@
+{
+ "number": "第四十三条の三",
+ "heading_en": "Exposures Relating to the Portion of Specified Items Not Included in Adjustment Items",
+ "summary_ja": "特定項目（他の金融機関等の普通株式相当・MSR・一時差異DTA）のうち普通株式等Tier1資本の調整項目に算入されなかった部分のリスク・ウェイトを二百五十パーセントとする。",
+ "summary_en": "The portion of the specified items (significant financial investments, MSRs and temporary-difference DTAs) not deducted from CET1 takes 250%.",
+ "paragraphs": [
+  "Notwithstanding the provisions of Article 21 through the preceding Article, the risk weight of exposures relating to the portion of specified items (meaning the specified items provided in Article 8, paragraph (10), item (i); the same applies in Article 156-3) not included in the amount of adjustment items relating to Common Equity Tier 1 Capital in the formula of Article 2, item (i) shall be 250%."
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "number": "第百二十二条",
+ "heading_en": "Application of the Internal Ratings-Based Approach",
+ "summary_ja": "内部格付手法を全てのエクスポージャーに適用することを原則とし、標準的手法の暫定的使用、不適なアセット・クラスの除外、会社分割等の特段の事情による標準的手法への切替えを定める。",
+ "summary_en": "Requires the internal ratings-based approach to be applied to all exposures, with exceptions for phased roll-out under the implementation plan, asset classes unsuited to the approach, and a switch to the standardized approach with approval in special circumstances.",
+ "sections_en": {
+  "第一節 第二款": "Phased Application, etc."
+ },
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall apply the internal ratings-based approach to all exposures; provided, however, that this does not apply where the internal ratings-based approach implementation plan provides that the standardized approach will be applied, by business unit or by asset category, for a certain period after application of the internal ratings-based approach begins.",
+  "Notwithstanding the preceding paragraph, the internal ratings-based approach shall not be applied to an asset class (meaning a category of portfolio composed of the exposures listed in the following items, being the unit to which the internal ratings-based approach is applied in calculating the amount of credit risk-weighted assets; the same applies hereinafter in this paragraph and in Article 124) for which the internal ratings-based approach is judged unsuitable; provided, however, that this does not apply where a major change in the composition of the portfolio within that asset class or other circumstances arise. (i) Sovereign exposures (excluding purchased receivables). (ii) Exposures to financial institutions, etc. (excluding purchased receivables). (iii) Corporate exposures (excluding specialized lending and purchased receivables). (iv) Specialized lending (excluding purchased receivables). (v) Purchased corporate, etc. exposures. (vi) Residential real estate exposures (excluding purchased receivables). (vii) Qualifying revolving retail exposures (excluding purchased receivables). (viii) Other retail exposures (excluding purchased receivables). (ix) Purchased retail exposures.",
+  "Notwithstanding the preceding two paragraphs, an Ultimate Designated Parent Company adopting the internal ratings-based approach may use the standardized approach in place of the internal ratings-based approach only where, in the event of a company split or other special circumstances covering most of the business relating to the credit risk-weighted assets of that Ultimate Designated Parent Company, etc., it has obtained the approval of the Commissioner of the Financial Services Agency."
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "number": "第二百五十八条の二",
+ "heading_en": "Terms Used in the Sensitivities-Based Method",
+ "summary_ja": "この節で用いるリスク・クラス（七区分）及びコリレーション・トレーディング・ポートフォリオの用語の意義を定める。",
+ "summary_en": "Defines the terms \"risk class\" (seven categories) and \"correlation trading portfolio\" used in this Section.",
+ "terms": [
+  {
+   "ja": "証券化商品(非CTP)",
+   "en": "securitization products (non-CTP)"
+  },
+  {
+   "ja": "証券化商品(CTP)",
+   "en": "securitization products (CTP)"
+  },
+  {
+   "ja": "非証券化商品",
+   "en": "non-securitization products"
+  }
+ ],
+ "paragraphs": [
+  "In this Section, the meanings of the terms set out in the following items are as provided in those items. (i) Risk class: the following categories: (a) General interest rate risk; (b) Credit spread risk (limited to that relating to non-securitization products); (c) Credit spread risk (limited to that relating to securitization products that are in the non-correlation trading portfolio (hereinafter in this Section referred to as \"securitization products (non-CTP)\")); (d) Credit spread risk (limited to that relating to securitization products that are in the correlation trading portfolio (hereinafter in this Section referred to as \"securitization products (CTP)\")); (e) Equity risk; (f) Commodity risk; (g) Foreign exchange risk; (ii) Correlation trading portfolio: the following positions: (a) Securitization product positions that satisfy all of the following requirements: (1) They are correlation trading (excluding derivative transactions relating to securitization product exposures that do not provide a proportional share of the amounts received on a tranche of a securitization product); (2) They do not refer to underlying assets relating to the exposures provided for in Articles 34 through 37-2; (3) They do not refer to claims on securitization special-purpose conduits; (b) Positions that do not fall under securitization products (hereinafter in this Section referred to as \"non-securitization products\") and that are intended to hedge the positions set out in (a)."
+ ],
+ "sections_en": {
+  "第三節 第二款": "Sensitivities-Based Method under the Standardized Approach",
+  "第三節 第二款 第一目": "Calculation Method under the Sensitivities-Based Method"
+ }
+}

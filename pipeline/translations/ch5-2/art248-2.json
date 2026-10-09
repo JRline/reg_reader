@@ -1,0 +1,19 @@
+{
+ "number": "第二百四十八条の二",
+ "heading_en": "Calculation of the CVA Risk Equivalent Amount",
+ "summary_ja": "CVAカバー取引を有する最終指定親会社はCVAリスク相当額を算出する。CVAカバー取引の範囲（適格中央清算機関等を取引相手方とするものを除く）を定める。",
+ "summary_en": "An Ultimate Designated Parent Company with CVA cover transactions must calculate the CVA risk equivalent amount; the article defines CVA cover transactions, excluding those with qualifying central counterparties and certain other counterparties.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company that has CVA cover transactions shall calculate the CVA risk equivalent amount.",
+  "\"CVA cover transactions\" in the preceding paragraph means derivative transactions with counterparties other than the persons listed below, and repo-style transactions and margin transactions and similar overseas transactions (excluding those of low materiality) that are subject to mark-to-market valuation in the Ultimate Designated Parent Company's financial accounting. (i) A qualifying central counterparty. (ii) Where the Ultimate Designated Parent Company is an indirect clearing participant of a qualifying central counterparty, the direct clearing participant relating to transactions that satisfy all of the following requirements. (a) That, in respect of the trade exposures of the indirect clearing participant, the qualifying central counterparty or the direct clearing participant has taken measures to prevent losses to the indirect clearing participant in the following cases: (1) where the direct clearing participant defaults or becomes insolvent; (2) where another indirect clearing participant defaults or becomes insolvent. (b) That a framework exists under which, even where the direct clearing participant to which the indirect clearing participant has entrusted clearing brokerage, etc. relating to its trade exposures to that qualifying central counterparty loses its status as a clearing participant of the qualifying central counterparty by reason of default or insolvency, the indirect clearing participant can continue or succeed to the contracts relating to those trade exposures with another direct clearing participant or the qualifying central counterparty without bearing an additional burden. (iii) Funds clearing organizations, etc."
+ ],
+ "terms": [
+  {
+   "ja": "CVAカバー取引",
+   "en": "CVA cover transactions"
+  }
+ ],
+ "sections_en": {
+  "第一節": "General Provisions"
+ }
+}

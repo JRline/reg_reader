@@ -1,0 +1,15 @@
+{
+ "number": "第二百四十九条の二",
+ "heading_en": "Calculation Methods for the Market Risk Equivalent Amount",
+ "summary_ja": "マーケット・リスク相当額の合計額の定義、内部モデル方式・標準的方式・簡易的方式の適用関係、及び月次報告を定める。",
+ "summary_en": "Defines the total market risk equivalent amount, allocates the internal model approach, standardized method and simplified method among trading desks and products, and sets monthly reporting.",
+ "paragraphs": [
+  "The total amount of market risk equivalent amounts means the sum of the market risk equivalent amounts calculated using the internal model approach, the standardized method and the simplified method.",
+  "An Ultimate Designated Parent Company adopting the internal model approach shall, for trading desks that use the internal model approach, calculate the following market risk equivalent amounts and report them to the Commissioner of the Financial Services Agency once a month. (i) For the instruments held by a trading desk that uses the internal model approach, the market risk equivalent amount of each trading desk calculated using the standardized method. (ii) For the instruments held by a trading desk that uses the internal model approach, the market risk equivalent amount of each trading desk calculated using the internal model approach without taking into account offsetting between trading desks.",
+  "An Ultimate Designated Parent Company shall, for trading desks that do not use the internal model approach, calculate the market risk equivalent amount using the standardized method.",
+  "Notwithstanding the preceding paragraph, an Ultimate Designated Parent Company that does not use the internal model approach may use the simplified method to calculate the market risk equivalent amount of a consolidated subsidiary, etc. of the company where the market risk equivalent amount of that consolidated subsidiary, etc. is less than 1% of the market risk equivalent amount of the Ultimate Designated Parent Company, etc., but only where it has notified the Commissioner of the Financial Services Agency in advance.",
+  "An Ultimate Designated Parent Company adopting the internal model approach shall calculate the market risk equivalent amount for the following instruments using the standardized method. (i) Securitization exposures. (ii) Investments in a fund that meet the requirements set out in Article 11-3, paragraph (3), item (ii)(b) and are subject to calculation of the market risk equivalent amount, and for which look-through is not possible.",
+  "An Ultimate Designated Parent Company shall report the market risk equivalent amount calculated pursuant to paragraph (3) to the Commissioner of the Financial Services Agency once a month."
+ ],
+ "terms": []
+}

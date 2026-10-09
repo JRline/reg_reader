@@ -1,0 +1,2282 @@
+{
+ "p278t0": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p3",
+  "header_rows": 2,
+  "rows_ja": [
+   [
+    {
+     "text": "取引相手方のセクター",
+     "rowspan": 2
+    },
+    {
+     "text": "取引相手方の信用力",
+     "colspan": 2
+    },
+    null
+   ],
+   [
+    null,
+    "投資適格(IG)(パーセント)",
+    "投機的格付(HY)及び無格付(NR)(パーセント)"
+   ],
+   [
+    "ソブリン(中央銀行及び国際開発銀行を含む。)",
+    "〇・五",
+    "二・〇"
+   ],
+   [
+    "地方自治体、政府支援法人(非金融)、教育機関及び行政機関",
+    "一・〇",
+    "四・〇"
+   ],
+   [
+    "金融(政府系金融機関を含む。)",
+    "五・〇",
+    "十二・〇"
+   ],
+   [
+    "素材、エネルギー、工業、農業、製造業、鉱業及び採石業",
+    "三・〇",
+    "七・〇"
+   ],
+   [
+    "消費財・サービス、運輸及び倉庫並びに行政支援サービス業",
+    "三・〇",
+    "八・五"
+   ],
+   [
+    "テクノロジー及び通信",
+    "二・〇",
+    "五・五"
+   ],
+   [
+    "ヘルスケア、公益事業及び専門・技術関連業",
+    "一・五",
+    "五・〇"
+   ],
+   [
+    "その他のセクター",
+    "五・〇",
+    "十二・〇"
+   ]
+  ],
+  "rows_en": [
+   [
+    {
+     "text": "Counterparty sector",
+     "rowspan": 2
+    },
+    {
+     "text": "Counterparty creditworthiness",
+     "colspan": 2
+    },
+    null
+   ],
+   [
+    null,
+    "Investment grade (IG) (%)",
+    "Speculative grade (HY) and unrated (NR) (%)"
+   ],
+   [
+    "Sovereigns (including central banks and multilateral development banks)",
+    "0.5",
+    "2.0"
+   ],
+   [
+    "Local governments, government-backed entities (non-financial), educational institutions and administrative bodies",
+    "1.0",
+    "4.0"
+   ],
+   [
+    "Financials (including government-backed financial institutions)",
+    "5.0",
+    "12.0"
+   ],
+   [
+    "Basic materials, energy, industrials, agriculture, manufacturing, mining and quarrying",
+    "3.0",
+    "7.0"
+   ],
+   [
+    "Consumer goods and services, transportation and storage, and administrative support service activities",
+    "3.0",
+    "8.5"
+   ],
+   [
+    "Technology and telecommunications",
+    "2.0",
+    "5.5"
+   ],
+   [
+    "Health care, utilities, and professional and technical activities",
+    "1.5",
+    "5.0"
+   ],
+   [
+    "Other sectors",
+    "5.0",
+    "12.0"
+   ]
+  ]
+ },
+ "p278t1": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p4",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "取引相手方cの単一の債務者を参照するクレジット・デフォルト・スワップによるヘッジh",
+    "r_{hc}の値(パーセント)"
+   ],
+   [
+    "取引相手方cを直接参照するもの",
+    "100"
+   ],
+   [
+    "取引相手方cと法的に関連する組織を参照するもの",
+    "80"
+   ],
+   [
+    "取引相手方cと同じセクターで同じ地域に属する組織を参照するもの",
+    "50"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Hedge h by a credit default swap referencing a single obligor of counterparty c",
+    "Value of r_{hc} (%)"
+   ],
+   [
+    "Directly references counterparty c",
+    "100"
+   ],
+   [
+    "References an entity legally related to counterparty c",
+    "80"
+   ],
+   [
+    "References an entity in the same sector and region as counterparty c",
+    "50"
+   ]
+  ]
+ },
+ "p286t0": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-15.p5",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "リスク・ファクター",
+    "一年",
+    "二年",
+    "五年",
+    "十年",
+    "三十年",
+    "インフレ率"
+   ],
+   [
+    "リスク・ウェイト(パーセント)",
+    "一・一一",
+    "〇・九三",
+    "〇・七四",
+    "〇・七四",
+    "〇・七四",
+    "一・一一"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Risk factor",
+    "1 year",
+    "2 years",
+    "5 years",
+    "10 years",
+    "30 years",
+    "Inflation rate"
+   ],
+   [
+    "Risk weight (%)",
+    "1.11",
+    "0.93",
+    "0.74",
+    "0.74",
+    "0.74",
+    "1.11"
+   ]
+  ]
+ },
+ "p286t1": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-15.p6",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "(パーセント)",
+    "一年",
+    "二年",
+    "五年",
+    "十年",
+    "三十年",
+    "インフレ率"
+   ],
+   [
+    "一年",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "二年",
+    "九十一",
+    "百",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "五年",
+    "七十二",
+    "八十七",
+    "百",
+    "",
+    "",
+    ""
+   ],
+   [
+    "十年",
+    "五十五",
+    "七十二",
+    "九十一",
+    "百",
+    "",
+    ""
+   ],
+   [
+    "三十年",
+    "三十一",
+    "四十五",
+    "六十八",
+    "八十三",
+    "百",
+    ""
+   ],
+   [
+    "インフレ率",
+    "四十",
+    "四十",
+    "四十",
+    "四十",
+    "四十",
+    "百"
+   ]
+  ],
+  "rows_en": [
+   [
+    "(%)",
+    "1 year",
+    "2 years",
+    "5 years",
+    "10 years",
+    "30 years",
+    "Inflation rate"
+   ],
+   [
+    "1 year",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "2 years",
+    "91",
+    "100",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "5 years",
+    "72",
+    "87",
+    "100",
+    "",
+    "",
+    ""
+   ],
+   [
+    "10 years",
+    "55",
+    "72",
+    "91",
+    "100",
+    "",
+    ""
+   ],
+   [
+    "30 years",
+    "31",
+    "45",
+    "68",
+    "83",
+    "100",
+    ""
+   ],
+   [
+    "Inflation rate",
+    "40",
+    "40",
+    "40",
+    "40",
+    "40",
+    "100"
+   ]
+  ]
+ },
+ "p289t0": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-21.p1",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "バケット番号",
+    "取引相手方のセクター"
+   ],
+   [
+    "1a)",
+    "ソブリン(中央銀行及び国際開発銀行を含む。)"
+   ],
+   [
+    "1b)",
+    "地方自治体、政府支援法人(非金融)、教育機関及び行政機関"
+   ],
+   [
+    "2",
+    "金融(政府系金融機関を含む。)"
+   ],
+   [
+    "3",
+    "素材、エネルギー、工業、農業、製造業、鉱業及び採石業"
+   ],
+   [
+    "4",
+    "消費財・サービス、運輸及び倉庫並びに行政支援サービス業"
+   ],
+   [
+    "5",
+    "テクノロジー及び通信"
+   ],
+   [
+    "6",
+    "ヘルスケア、公益事業及び専門・技術関連業"
+   ],
+   [
+    "7",
+    "その他のセクター"
+   ],
+   [
+    "8",
+    "適格インデックス"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Bucket number",
+    "Counterparty sector"
+   ],
+   [
+    "1a)",
+    "Sovereigns (including central banks and multilateral development banks)"
+   ],
+   [
+    "1b)",
+    "Local governments, government-backed entities (non-financial), educational institutions and administrative bodies"
+   ],
+   [
+    "2",
+    "Financials (including government-backed financial institutions)"
+   ],
+   [
+    "3",
+    "Basic materials, energy, industrials, agriculture, manufacturing, mining and quarrying"
+   ],
+   [
+    "4",
+    "Consumer goods and services, transportation and storage, and administrative support service activities"
+   ],
+   [
+    "5",
+    "Technology and telecommunications"
+   ],
+   [
+    "6",
+    "Health care, utilities, and professional and technical activities"
+   ],
+   [
+    "7",
+    "Other sectors"
+   ],
+   [
+    "8",
+    "Eligible index"
+   ]
+  ]
+ },
+ "p289t1": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-21.p2",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "バケット番号(表に定める値はパーセント)",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   [
+    "1",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "2",
+    "十",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "3",
+    "二十",
+    "五",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "4",
+    "二十五",
+    "十五",
+    "二十",
+    "百",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "5",
+    "二十",
+    "二十",
+    "二十五",
+    "二十五",
+    "百",
+    "",
+    "",
+    ""
+   ],
+   [
+    "6",
+    "十五",
+    "五",
+    "五",
+    "五",
+    "五",
+    "百",
+    "",
+    ""
+   ],
+   [
+    "7",
+    "零",
+    "零",
+    "零",
+    "零",
+    "零",
+    "零",
+    "百",
+    ""
+   ],
+   [
+    "8",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "零",
+    "百"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Bucket number (values in the table are percentages)",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   [
+    "1",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "2",
+    "10",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "3",
+    "20",
+    "5",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "4",
+    "25",
+    "15",
+    "20",
+    "100",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "5",
+    "20",
+    "20",
+    "25",
+    "25",
+    "100",
+    "",
+    "",
+    ""
+   ],
+   [
+    "6",
+    "15",
+    "5",
+    "5",
+    "5",
+    "5",
+    "100",
+    "",
+    ""
+   ],
+   [
+    "7",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "100",
+    ""
+   ],
+   [
+    "8",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "0",
+    "100"
+   ]
+  ]
+ },
+ "p290t1": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-22.p3",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "バケット番号",
+    "1a)",
+    "1b)",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   [
+    "投資適格(IG)(パーセント)",
+    "〇・五",
+    "一・〇",
+    "五・〇",
+    "三・〇",
+    "三・〇",
+    "二・〇",
+    "一・五",
+    "五・〇",
+    "一・五"
+   ],
+   [
+    "投機的格付(HY)及び無格付(NR)(パーセント)",
+    "二・〇",
+    "四・〇",
+    "十二・〇",
+    "七・〇",
+    "八・五",
+    "五・五",
+    "五・〇",
+    "十二・〇",
+    "五・〇"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Bucket number",
+    "1a)",
+    "1b)",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   [
+    "Investment grade (IG) (%)",
+    "0.5",
+    "1.0",
+    "5.0",
+    "3.0",
+    "3.0",
+    "2.0",
+    "1.5",
+    "5.0",
+    "1.5"
+   ],
+   [
+    "Speculative grade (HY) and unrated (NR) (%)",
+    "2.0",
+    "4.0",
+    "12.0",
+    "7.0",
+    "8.5",
+    "5.5",
+    "5.0",
+    "12.0",
+    "5.0"
+   ]
+  ]
+ },
+ "p292t0": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-23.p1",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "バケット番号",
+    "信用力",
+    "参照先のセクター"
+   ],
+   [
+    "1",
+    {
+     "text": "投資適格(IG)",
+     "rowspan": 7
+    },
+    "ソブリン(中央銀行及び国際開発銀行を含む。)"
+   ],
+   [
+    "2",
+    null,
+    "地方自治体、政府支援法人(非金融)、教育機関及び行政機関"
+   ],
+   [
+    "3",
+    null,
+    "金融(政府系金融機関を含む。)"
+   ],
+   [
+    "4",
+    null,
+    "素材、エネルギー、工業、農業、製造業、鉱業及び採石業"
+   ],
+   [
+    "5",
+    null,
+    "消費財・サービス、運輸及び倉庫並びに行政支援サービス業"
+   ],
+   [
+    "6",
+    null,
+    "テクノロジー及び通信"
+   ],
+   [
+    "7",
+    null,
+    "ヘルスケア、公益事業及び専門・技術関連業"
+   ],
+   [
+    "8",
+    {
+     "text": "投機的格付(HY)及び無格付(NR)",
+     "rowspan": 7
+    },
+    "ソブリン(中央銀行及び国際開発銀行を含む。)"
+   ],
+   [
+    "9",
+    null,
+    "地方自治体、政府支援法人(非金融)、教育機関及び行政機関"
+   ],
+   [
+    "10",
+    null,
+    "金融(政府系金融機関を含む。)"
+   ],
+   [
+    "11",
+    null,
+    "素材、エネルギー、工業、農業、製造業、鉱業及び採石業"
+   ],
+   [
+    "12",
+    null,
+    "消費財・サービス、運輸及び倉庫並びに行政支援サービス業"
+   ],
+   [
+    "13",
+    null,
+    "テクノロジー及び通信"
+   ],
+   [
+    "14",
+    null,
+    "ヘルスケア、公益事業及び専門・技術関連業"
+   ],
+   [
+    "15",
+    "投資適格(IG)、投機的格付(HY)及び無格付(NR)",
+    "その他のセクター"
+   ],
+   [
+    "16",
+    "投資適格(IG)",
+    "適格インデックス"
+   ],
+   [
+    "17",
+    "投機的格付(HY)",
+    "適格インデックス"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Bucket number",
+    "Creditworthiness",
+    "Reference name sector"
+   ],
+   [
+    "1",
+    {
+     "text": "Investment grade (IG)",
+     "rowspan": 7
+    },
+    "Sovereigns (including central banks and multilateral development banks)"
+   ],
+   [
+    "2",
+    null,
+    "Local governments, government-backed entities (non-financial), educational institutions and administrative bodies"
+   ],
+   [
+    "3",
+    null,
+    "Financials (including government-backed financial institutions)"
+   ],
+   [
+    "4",
+    null,
+    "Basic materials, energy, industrials, agriculture, manufacturing, mining and quarrying"
+   ],
+   [
+    "5",
+    null,
+    "Consumer goods and services, transportation and storage, and administrative support service activities"
+   ],
+   [
+    "6",
+    null,
+    "Technology and telecommunications"
+   ],
+   [
+    "7",
+    null,
+    "Health care, utilities, and professional and technical activities"
+   ],
+   [
+    "8",
+    {
+     "text": "Speculative grade (HY) and unrated (NR)",
+     "rowspan": 7
+    },
+    "Sovereigns (including central banks and multilateral development banks)"
+   ],
+   [
+    "9",
+    null,
+    "Local governments, government-backed entities (non-financial), educational institutions and administrative bodies"
+   ],
+   [
+    "10",
+    null,
+    "Financials (including government-backed financial institutions)"
+   ],
+   [
+    "11",
+    null,
+    "Basic materials, energy, industrials, agriculture, manufacturing, mining and quarrying"
+   ],
+   [
+    "12",
+    null,
+    "Consumer goods and services, transportation and storage, and administrative support service activities"
+   ],
+   [
+    "13",
+    null,
+    "Technology and telecommunications"
+   ],
+   [
+    "14",
+    null,
+    "Health care, utilities, and professional and technical activities"
+   ],
+   [
+    "15",
+    "Investment grade (IG), speculative grade (HY) and unrated (NR)",
+    "Other sectors"
+   ],
+   [
+    "16",
+    "Investment grade (IG)",
+    "Eligible index"
+   ],
+   [
+    "17",
+    "Speculative grade (HY)",
+    "Eligible index"
+   ]
+  ]
+ },
+ "p293t0": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-23.p2",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "バケット番号(表に定める値はパーセント)",
+    "1又は8",
+    "2又は9",
+    "3又は10",
+    "4又は11",
+    "5又は12",
+    "6又は13",
+    "7又は14",
+    "15",
+    "16",
+    "17"
+   ],
+   [
+    "1又は8",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "2又は9",
+    "七十五",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "3又は10",
+    "十",
+    "五",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "4又は11",
+    "二十",
+    "十五",
+    "五",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "5又は12",
+    "二十五",
+    "二十",
+    "十五",
+    "二十",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "6又は13",
+    "二十",
+    "十五",
+    "二十",
+    "二十五",
+    "二十五",
+    "百",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "7又は14",
+    "十五",
+    "十",
+    "五",
+    "五",
+    "五",
+    "五",
+    "百",
+    "",
+    "",
+    ""
+   ],
+   [
+    "15",
+    "零",
+    "零",
+    "零",
+    "零",
+    "零",
+    "零",
+    "零",
+    "百",
+    "",
+    ""
+   ],
+   [
+    "16",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "零",
+    "百",
+    ""
+   ],
+   [
+    "17",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "零",
+    "七十五",
+    "百"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Bucket number (values in the table are percentages)",
+    "1 or 8",
+    "2 or 9",
+    "3 or 10",
+    "4 or 11",
+    "5 or 12",
+    "6 or 13",
+    "7 or 14",
+    "15",
+    "16",
+    "17"
+   ],
+   [
+    "1 or 8",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "2 or 9",
+    "75",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "3 or 10",
+    "10",
+    "5",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "4 or 11",
+    "20",
+    "15",
+    "5",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "5 or 12",
+    "25",
+    "20",
+    "15",
+    "20",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "6 or 13",
+    "20",
+    "15",
+    "20",
+    "25",
+    "25",
+    "100",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "7 or 14",
+    "15",
+    "10",
+    "5",
+    "5",
+    "5",
+    "5",
+    "100",
+    "",
+    "",
+    ""
+   ],
+   [
+    "15",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "100",
+    "",
+    ""
+   ],
+   [
+    "16",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "0",
+    "100",
+    ""
+   ],
+   [
+    "17",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "0",
+    "75",
+    "100"
+   ]
+  ]
+ },
+ "p293t1": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-24.p3",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "バケット番号",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17"
+   ],
+   [
+    "リスク・ウェイト(パーセント)",
+    "〇・五",
+    "一・〇",
+    "五・〇",
+    "三・〇",
+    "三・〇",
+    "二・〇",
+    "一・五",
+    "二・〇",
+    "四・〇",
+    "十二・〇",
+    "七・〇",
+    "八・五",
+    "五・五",
+    "五・〇",
+    "十二・〇",
+    "一・五",
+    "五・〇"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Bucket number",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17"
+   ],
+   [
+    "Risk weight (%)",
+    "0.5",
+    "1.0",
+    "5.0",
+    "3.0",
+    "3.0",
+    "2.0",
+    "1.5",
+    "2.0",
+    "4.0",
+    "12.0",
+    "7.0",
+    "8.5",
+    "5.5",
+    "5.0",
+    "12.0",
+    "1.5",
+    "5.0"
+   ]
+  ]
+ },
+ "p294t1": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-26.p1",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "バケット番号",
+    "時価総額",
+    "経済",
+    "株式の発行体のセクター"
+   ],
+   [
+    "1",
+    {
+     "text": "大",
+     "rowspan": 8
+    },
+    {
+     "text": "新興市場",
+     "rowspan": 4
+    },
+    "消費財・サービス、運輸及び倉庫、行政支援サービス業、ヘルスケア並びに公益事業"
+   ],
+   [
+    "2",
+    null,
+    null,
+    "通信及び工業"
+   ],
+   [
+    "3",
+    null,
+    null,
+    "素材、エネルギー、農業、製造業、鉱業及び採石業"
+   ],
+   [
+    "4",
+    null,
+    null,
+    "金融(政府系金融機関を含む。)、不動産業及びテクノロジー"
+   ],
+   [
+    "5",
+    null,
+    {
+     "text": "先進市場",
+     "rowspan": 4
+    },
+    "消費財・サービス、運輸及び倉庫、行政支援サービス業、ヘルスケア並びに公益事業"
+   ],
+   [
+    "6",
+    null,
+    null,
+    "通信及び工業"
+   ],
+   [
+    "7",
+    null,
+    null,
+    "素材、エネルギー、農業、製造業、鉱業及び採石業"
+   ],
+   [
+    "8",
+    null,
+    null,
+    "金融(政府系金融機関を含む。)、不動産業及びテクノロジー"
+   ],
+   [
+    "9",
+    {
+     "text": "小",
+     "rowspan": 2
+    },
+    "新興市場",
+    "バケット番号1から4までの全てのセクター"
+   ],
+   [
+    "10",
+    null,
+    "先進市場",
+    "バケット番号5から8までの全てのセクター"
+   ],
+   [
+    "11",
+    {
+     "text": "その他のセクター",
+     "colspan": 3
+    },
+    null,
+    null
+   ],
+   [
+    "12",
+    {
+     "text": "時価総額が大である先進市場における株式インデックス",
+     "colspan": 3
+    },
+    null,
+    null
+   ],
+   [
+    "13",
+    {
+     "text": "その他の株式インデックス",
+     "colspan": 3
+    },
+    null,
+    null
+   ]
+  ],
+  "rows_en": [
+   [
+    "Bucket number",
+    "Market capitalization",
+    "Economy",
+    "Equity issuer sector"
+   ],
+   [
+    "1",
+    {
+     "text": "Large",
+     "rowspan": 8
+    },
+    {
+     "text": "Emerging markets",
+     "rowspan": 4
+    },
+    "Consumer goods and services, transportation and storage, administrative support service activities, health care, and utilities"
+   ],
+   [
+    "2",
+    null,
+    null,
+    "Telecommunications and industrials"
+   ],
+   [
+    "3",
+    null,
+    null,
+    "Basic materials, energy, agriculture, manufacturing, mining and quarrying"
+   ],
+   [
+    "4",
+    null,
+    null,
+    "Financials (including government-backed financial institutions), real estate activities and technology"
+   ],
+   [
+    "5",
+    null,
+    {
+     "text": "Advanced markets",
+     "rowspan": 4
+    },
+    "Consumer goods and services, transportation and storage, administrative support service activities, health care, and utilities"
+   ],
+   [
+    "6",
+    null,
+    null,
+    "Telecommunications and industrials"
+   ],
+   [
+    "7",
+    null,
+    null,
+    "Basic materials, energy, agriculture, manufacturing, mining and quarrying"
+   ],
+   [
+    "8",
+    null,
+    null,
+    "Financials (including government-backed financial institutions), real estate activities and technology"
+   ],
+   [
+    "9",
+    {
+     "text": "Small",
+     "rowspan": 2
+    },
+    "Emerging markets",
+    "All sectors in bucket numbers 1 through 4"
+   ],
+   [
+    "10",
+    null,
+    "Advanced markets",
+    "All sectors in bucket numbers 5 through 8"
+   ],
+   [
+    "11",
+    {
+     "text": "Other sectors",
+     "colspan": 3
+    },
+    null,
+    null
+   ],
+   [
+    "12",
+    {
+     "text": "Equity indices in advanced markets with large market capitalization",
+     "colspan": 3
+    },
+    null,
+    null
+   ],
+   [
+    "13",
+    {
+     "text": "Other equity indices",
+     "colspan": 3
+    },
+    null,
+    null
+   ]
+  ]
+ },
+ "p296t0": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-26.p2",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "バケット番号(表に定める値はパーセント)",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13"
+   ],
+   [
+    "1",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "2",
+    "十五",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "3",
+    "十五",
+    "十五",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "4",
+    "十五",
+    "十五",
+    "十五",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "5",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "6",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "7",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "8",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "百",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "9",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "百",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "10",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "十五",
+    "百",
+    "",
+    "",
+    ""
+   ],
+   [
+    "11",
+    "零",
+    "零",
+    "零",
+    "零",
+    "零",
+    "零",
+    "零",
+    "零",
+    "零",
+    "零",
+    "百",
+    "",
+    ""
+   ],
+   [
+    "12",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "零",
+    "百",
+    ""
+   ],
+   [
+    "13",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "四十五",
+    "零",
+    "七十五",
+    "百"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Bucket number (values in the table are percentages)",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13"
+   ],
+   [
+    "1",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "2",
+    "15",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "3",
+    "15",
+    "15",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "4",
+    "15",
+    "15",
+    "15",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "5",
+    "15",
+    "15",
+    "15",
+    "15",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "6",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "7",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "8",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "100",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "9",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "100",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "10",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "100",
+    "",
+    "",
+    ""
+   ],
+   [
+    "11",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "100",
+    "",
+    ""
+   ],
+   [
+    "12",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "0",
+    "100",
+    ""
+   ],
+   [
+    "13",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "45",
+    "0",
+    "75",
+    "100"
+   ]
+  ]
+ },
+ "p296t1": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-27.p3",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "バケット番号",
+    "リスク・ウェイト(パーセント)"
+   ],
+   [
+    "1",
+    "五十五"
+   ],
+   [
+    "2",
+    "六十"
+   ],
+   [
+    "3",
+    "四十五"
+   ],
+   [
+    "4",
+    "五十五"
+   ],
+   [
+    "5",
+    "三十"
+   ],
+   [
+    "6",
+    "三十五"
+   ],
+   [
+    "7",
+    "四十"
+   ],
+   [
+    "8",
+    "五十"
+   ],
+   [
+    "9",
+    "七十"
+   ],
+   [
+    "10",
+    "五十"
+   ],
+   [
+    "11",
+    "七十"
+   ],
+   [
+    "12",
+    "十五"
+   ],
+   [
+    "13",
+    "二十五"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Bucket number",
+    "Risk weight (%)"
+   ],
+   [
+    "1",
+    "55"
+   ],
+   [
+    "2",
+    "60"
+   ],
+   [
+    "3",
+    "45"
+   ],
+   [
+    "4",
+    "55"
+   ],
+   [
+    "5",
+    "30"
+   ],
+   [
+    "6",
+    "35"
+   ],
+   [
+    "7",
+    "40"
+   ],
+   [
+    "8",
+    "50"
+   ],
+   [
+    "9",
+    "70"
+   ],
+   [
+    "10",
+    "50"
+   ],
+   [
+    "11",
+    "70"
+   ],
+   [
+    "12",
+    "15"
+   ],
+   [
+    "13",
+    "25"
+   ]
+  ]
+ },
+ "p297t1": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-28.p1",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "バケット番号",
+    "コモディティ・グループ",
+    "例"
+   ],
+   [
+    "1",
+    "エネルギーのうち、固体可燃物",
+    "石炭、木炭、木質ペレット及び核燃料(ウラン等)"
+   ],
+   [
+    "2",
+    "エネルギーのうち、液体可燃物",
+    "原油(軽質スイート原油、重質油、WTI、ブレント等)、バイオ燃料(バイオエタノール、バイオディーゼル等)、石油化学製品(プロパン、エタン、ガソリン、メタノール、ブタン等)及び精製燃料(ジェット燃料、ケロシン、軽油、重油、燃料油、ナフサ、灯油、ディーゼル等)"
+   ],
+   [
+    "3",
+    "エネルギーのうち、電力及び炭素排出権取引",
+    "電力(スポット、先日付、ピーク、オフピーク等)、炭素排出権取引(認証排出削減量、EU排出枠(限月)、温室効果ガス地域イニシアチブ(RGGI)における二酸化炭素排出枠、グリーン電力証書等)"
+   ],
+   [
+    "4",
+    "貨物輸送",
+    "ドライバルク船(ケープサイズ、パナマックス、ハンディサイズ、スーパーマックス等)、リキッドバルク船及び天然ガス輸送船(スエズマックス、アフラマックス、超大型タンカー等)"
+   ],
+   [
+    "5",
+    "金属・非貴金属",
+    "ベースメタル(アルミニウム、銅、鉛、ニッケル、すず、亜鉛等)、鋼素材(鋼片、鋼線、スチールコイル、鋼くず、鋼棒、鉄鉱石、タングステン、バナジウム、チタン、タンタル等)、希少金属(コバルト、マンガン、モリブデン等)"
+   ],
+   [
+    "6",
+    "ガス燃料",
+    "天然ガス及び液化天然ガス"
+   ],
+   [
+    "7",
+    "貴金属",
+    "金、銀、プラチナ及びパラジウム"
+   ],
+   [
+    "8",
+    "穀物及び油糧種子",
+    "トウモロコシ、小麦、大豆(大豆種子、大豆油、大豆ミール等)、オート麦、ヤシ油、キャノーラ油、大麦、菜種(菜種種子、菜種油及び菜種ミール等)、小豆、モロコシ、ココナッツ油、オリーブ油、ピーナッツ油、ヒマワリ油及び米"
+   ],
+   [
+    "9",
+    "畜産及び乳製品",
+    "畜牛(生牛及び肥育素牛)、豚、家きん、子羊、魚、エビ、乳製品(牛乳、ホエー、バター、チーズ等)及び卵"
+   ],
+   [
+    "10",
+    "ソフト・コモディティ及びその他の農産物",
+    "ココア、コーヒー(アラビカ、ロブスタ等)、茶、かんきつ類ジュース(オレンジジュースを含む。)、芋、砂糖、綿、羊毛、木材・パルプ及びゴム"
+   ],
+   [
+    "11",
+    "その他のコモディティ",
+    "工業鉱物(カリ、肥料、リン鉱石等)、レアアース、テレフタル酸及び板ガラス"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Bucket number",
+    "Commodity group",
+    "Examples"
+   ],
+   [
+    "1",
+    "Energy: solid combustibles",
+    "Coal, charcoal, wood pellets and nuclear fuels (uranium, etc.)"
+   ],
+   [
+    "2",
+    "Energy: liquid combustibles",
+    "Crude oil (light sweet crude oil, heavy oil, WTI, Brent, etc.), biofuels (bioethanol, biodiesel, etc.), petrochemical products (propane, ethane, gasoline, methanol, butane, etc.) and refined fuels (jet fuel, kerosene, gas oil, heavy oil, fuel oil, naphtha, lamp oil, diesel, etc.)"
+   ],
+   [
+    "3",
+    "Energy: electricity and carbon emissions trading",
+    "Electricity (spot, forward, peak, off-peak, etc.) and carbon emissions trading (certified emission reductions, EU allowances (by contract month), carbon dioxide allowances under the Regional Greenhouse Gas Initiative (RGGI), green power certificates, etc.)"
+   ],
+   [
+    "4",
+    "Freight",
+    "Dry bulk vessels (Capesize, Panamax, Handysize, Supramax, etc.), liquid bulk vessels and natural gas carriers (Suezmax, Aframax, very large crude carriers, etc.)"
+   ],
+   [
+    "5",
+    "Metals (non-precious)",
+    "Base metals (aluminum, copper, lead, nickel, tin, zinc, etc.), steel raw materials (billets, steel wire, steel coil, steel scrap, steel bars, iron ore, tungsten, vanadium, titanium, tantalum, etc.) and rare metals (cobalt, manganese, molybdenum, etc.)"
+   ],
+   [
+    "6",
+    "Gaseous combustibles",
+    "Natural gas and liquefied natural gas"
+   ],
+   [
+    "7",
+    "Precious metals",
+    "Gold, silver, platinum and palladium"
+   ],
+   [
+    "8",
+    "Grains and oilseeds",
+    "Corn, wheat, soybeans (soybean seeds, soybean oil, soybean meal, etc.), oats, palm oil, canola oil, barley, rapeseed (rapeseed seeds, rapeseed oil, rapeseed meal, etc.), adzuki beans, sorghum, coconut oil, olive oil, peanut oil, sunflower oil and rice"
+   ],
+   [
+    "9",
+    "Livestock and dairy",
+    "Cattle (live cattle and feeder cattle), pigs, poultry, lamb, fish, shrimp, dairy products (milk, whey, butter, cheese, etc.) and eggs"
+   ],
+   [
+    "10",
+    "Soft commodities and other agricultural products",
+    "Cocoa, coffee (arabica, robusta, etc.), tea, citrus juices (including orange juice), potatoes, sugar, cotton, wool, timber and pulp, and rubber"
+   ],
+   [
+    "11",
+    "Other commodities",
+    "Industrial minerals (potash, fertilizers, phosphate rock, etc.), rare earths, terephthalic acid and flat glass"
+   ]
+  ]
+ },
+ "p299t0": {
+  "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-29.p3",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "バケット番号",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+   ],
+   [
+    "リスク・ウェイト(パーセント)",
+    "三十",
+    "三十五",
+    "六十",
+    "八十",
+    "四十",
+    "四十五",
+    "二十",
+    "三十五",
+    "二十五",
+    "三十五",
+    "五十"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Bucket number",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+   ],
+   [
+    "Risk weight (%)",
+    "30",
+    "35",
+    "60",
+    "80",
+    "40",
+    "45",
+    "20",
+    "35",
+    "25",
+    "35",
+    "50"
+   ]
+  ]
+ }
+}

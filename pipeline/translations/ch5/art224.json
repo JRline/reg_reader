@@ -1,0 +1,13 @@
+{
+ "number": "第二百二十四条",
+ "heading_en": "Credit Risk-Weighted Assets of Securitization Exposures",
+ "summary_ja": "証券化エクスポージャーの信用リスク・アセットの計算は本章に従い、内部格付手法準拠方式のK_{IRB}算出には前章の一部を準用する。",
+ "summary_en": "Credit risk-weighted assets of securitization exposures are calculated under this Chapter; certain provisions of the preceding Chapter apply mutatis mutandis to the K_{IRB} calculation under the IRB-based method.",
+ "sections_en": {
+  "第一節": "General Provisions"
+ },
+ "paragraphs": [
+  "Notwithstanding the provisions of Chapter 3 and the preceding Chapter, the calculation of credit risk-weighted assets of securitization exposures shall be as provided in this Chapter; provided, however, that, of the provisions of the preceding Chapter, the provisions of Articles 117, 120 and 121 apply mutatis mutandis to the calculation, by the internal ratings-based approach, of the required capital amount of the underlying assets that an Ultimate Designated Parent Company adopting the internal ratings-based approach performs in calculating K_{IRB} in Article 232, paragraph (1) and K_{IRB} in the formula set out in paragraph (8) of that Article, for securitization exposures whose risk weights it calculates using the IRB-based method prescribed in Section 2, Subsection 2, Division 2 of the next Section."
+ ],
+ "terms": []
+}

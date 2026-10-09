@@ -6,7 +6,8 @@ exist because skipping them caused real, silent bugs earlier in this project's h
 ## What this is
 
 A generic, schema-driven reader for Japanese financial regulation, currently populated
-with Chapter 2 of an FSA Basel capital-adequacy notification plus seven feeds of the
+with the whole of the FSA's capital-adequacy notification for **Ultimate Designated Parent
+Companies (最終指定親会社)** — not the bank version; don't title it as such — plus seven feeds of the
 external laws it cites. The app (`app/`) has zero regulation-specific logic — it renders
 whatever's in a feed's `feed.json`, so a new regulation is a content problem, not a code
 problem. See `README.md` for the user-facing overview.
@@ -19,10 +20,20 @@ problem. See `README.md` for the user-facing overview.
 - **`feeds/<feed_id>/feed.json`** — a recursive node tree (document → chapter → article →
   paragraph → item), each node carrying `text_ja`/`text_en`, independently-segmented
   `clauses_ja`/`clauses_en` (for visual cues), and `refs` (cross-references).
-- **`app/`** — plain HTML/CSS/JS, no build step, no framework. `app.js` fetches
-  `feeds/index.json` then whichever feed is selected.
+- **`site/`** — **the final deliverable.** A self-contained copy of the reader that opens
+  from `file://` with no server. Built by `pipeline/build_site.py` (re-run after any change
+  to `app/` or `feeds/`; never hand-edit `site/`). Browsers block `fetch()` on `file://`,
+  so the build wraps each feed as `site/data/<feed_id>.js`, which registers it on
+  `window.REG_DATA`, and `app.js` loads those via `<script>` tags when `index.html` sets
+  `window.REG_STATIC_SITE`.
+- **`app/`** — the reader's source: plain HTML/CSS/JS, no framework. Served over HTTP (dev
+  mode), `app.js` fetches `feeds/index.json` then whichever feed is selected; the same file
+  runs in `site/` in static mode (`loadFeedIndex`/`loadFeedData`).
 - **`pipeline/`** — turns a source PDF into feed content. Two kinds of scripts here,
   don't confuse them:
+  The original plan was to have an external chat model produce feed content; the project
+  has since shifted so the **site itself is the product** — content work can be done
+  directly in this repo, and the chatbot scripts are optional tooling.
   - **Chatbot-dependent** (`make_prompts.py`, `chatbot_template.md`,
     `run_haiku_batch.py`, `batch_ingest.py`): produce and merge translated/segmented
     content. Need a model.
@@ -75,16 +86,35 @@ Full pipeline walkthrough: **`pipeline/EXTRACTION_GUIDE.md`**.
    where items *are* separate `type: "item"` nodes) — a real but substantial refactor,
    not a quick patch.
 
-7. **Formulas are missing from extracted text, not lost by a bug.** The source PDF
-   embeds mathematical formulas as images; `extract_chapter.py` (and any model
-   processing its output) never sees them. Don't try to reconstruct a formula from
-   context — flag the gap.
+7. **Formulas are images in the PDF, not text.** `extract_chapter.py` (v1) drops them
+   silently. `extract_chapter_v2.py` leaves a `{{F:<anchor>}}` token where each image sits.
+   Formulas are hand-authored in `feeds/<feed>/formulas.json` (see "Formulas" below).
+   - **The PDF is in the repo** (`pipeline/source/saishu1.pdf`). Crop the image
+     (`pdftoppm -r 300 -x/-y/-W/-H`) and transcribe it as `source: "transcribed"`.
+   - `image_reconstructed` (rendered with a ⚠) is only for a formula written without seeing
+     its image. Never present a reconstruction as transcribed.
+   - Where a reading needed judgement, say so in `note_ja`/`note_en`.
 
 8. **Browsers cache `feed.json`/`style.css`/`app.js` aggressively even across hard
    reloads**, since a bare `python -m http.server` sends no cache-control headers. Use
    `pipeline/serve_no_cache.py` when actively iterating, and note `app/index.html`
    already cache-busts its own `<link>`/`<script>` tags with a timestamp — don't remove
    that.
+
+## In-clause cues and formulas
+
+- **Cues** (`annotate_cues.py` → `clause.cues: [{type, start, end}]`): finer structure
+  INSIDE a clause — conditions/provisos inside list items, and exclusion (を除く) /
+  limitation (に限る) / definition (をいう) asides at any paren depth — recorded as ranges
+  rather than splits, because splitting there would break an item's box or a paren's
+  balance. Ranges are only drawn between points at the same paren depth, so they always
+  nest; the renderer (`buildCueTree` in app.js) draws them as stacked underlines. Run it
+  after `refine_clauses.py` (which drops cues when it changes a clause list).
+- **Formulas**: `formulas.json` (structure against variable ids + variable meanings) and
+  `notation.json` (id → display symbol only — swap it to change notation standards). The
+  app parses `lines` with a small grammar (numbers, ids, `+ - * /`, parens, max/min,
+  `= >= <=`) and draws `/` as a fraction; variables are hover/tap targets showing
+  meaning and a link to `defined_at`. `build_site.py` validates both files.
 
 ## Reference resolution model
 
@@ -104,11 +134,56 @@ Three layers, run in this order after content is ingested:
 
 ## Current state (update this section as it changes)
 
-- `fsa-basel-cap-jp` Chapter 2: all 27 articles have real content.
+- `fsa-basel-cap-jp`, the whole notification: Chapters 1–7 and the 附則, 548 articles/entries, all with
+  real content: ch1 1 (第一条, 216 item segments / ~120 defined terms), ch2 27, ch3 112, ch4 118, ch5 36, ch5-2 (第五章の二, CVA) 45, ch5-3 (第五章の三,
+  central counterparties) 4, ch6 108, ch7 20. Chapters 4–7 were built exactly like Chapter 3 (Route A), with
+  the translation split into 11 slices written in parallel from `pipeline/translations/AGENT_BRIEF.md`
+  and merged by `merge_extras.py` (tables → `tables.json`, `*_formulas.py` → `formulas.json`).
+  Extraction repairs for layout artifacts (headings glued to the previous article, a table token
+  the extractor lost, etc.) live in `pipeline/fix_extractions.py`; run it before `build_chapter.py`.
+  Chapter 7 = 第二百八十一条–第二百九十八条 plus 別表第一/第二, built as article-shaped entries keyed
+  `appx1`/`appx2` (the app shows "Appended Table N"; `finish_ch7.py` trims the extraction and merges
+  `ch7_appendices.json`). The 附則 (the original supplementary provisions and ~17 amending notices,
+  which reuse article numbers) are the last node, `fsa-basel-cap-jp.fusoku` (a chapter with no number, JA label 附則):
+  one *section* per notice block (32: the original 附則, 17 amending 附則, 14 改正文 application clauses; no number, the
+  block title is the heading), and article ids nested under their block (`fusoku.s03.art3`; entries with no article
+  number are `…s07.u1`, labelled 本文/"Text"). Built by `extract_fusoku.py` (entries carry a unique `key`; translation
+  files are named by key), `build_chapter.py` (nested ids, `""` chapter number) and a block-aware resolver
+  (`resolve_fusoku` in `reresolve_refs.py`: 附則第N条 → same block; 新告示第N条 → the body; bare 第N条 only in the
+  original block s00; 旧告示 and other bare citations in amending blocks stay unresolved because they point into
+  notices that are not in the feed). Chapter 1 is translated as one 216-segment paragraph assembled from three
+  `ch1_parts/p*.json` by `assemble_ch1.py`; its `terms` are all kept (`all_terms`), since the defined term is not
+  quoted in the Japanese item head.
+  Chapter 3
+  has 6 節, 8 款 and 13 目, with 目 as the node type `division`, which was added to the
+  schema. Its 3 deleted entries (第四十八条, 第七十一条–第七十五条, 第八十五条–第八十八条)
+  read 削除 / "Deleted.". Chapter 3 was built in-repo
+  (EXTRACTION_GUIDE "Route A"), with no chatbot:
+  - extraction: `extract_chapter_v2.py`
+  - translations: `pipeline/translations/ch3/*.json`, all `llm_draft`
+  - building: `build_chapter.py`
+  - citations: `ja_refs.py`
+- Tables: 105 in `feeds/fsa-basel-cap-jp/tables.json`, which replace `{{T:<id>}}` tokens.
+  The app renders colspan/rowspan.
 - 7 feeds total: `fsa-basel-cap-jp`, `jp-banking-act`, `jp-fiea`,
   `jp-fiea-enforcement-order`, `jp-mof-consolidated-fs-regulation`,
   `jp-payment-services-act`, `jp-tlac-notification`.
-- ~246 cross-references in Chapter 2; 190 resolved. Remainder: item-level refs (see rule
+- Cross-references, all chapters: 3175, of which 2369 internal + 24 external are resolved. The rest:
+  - 478 are item-level (rule 6) or 附則 citations into notices that aren't in the feed
+  - 223 are `external_unavailable` (other institutions' capital/leverage notices and
+    statutes). What to fetch is listed in `pipeline/EXTERNAL_INFO_REQUESTS.md`, which goes
+    to an agent with web access.
+  - 81 are `internal_unavailable`: 「」-quoted replacement phrases (読替え) that name provisions of the cited
+    article, not live citations, and a few citations into a 目/款 or item that isn't a node.
+  `同条`/`同項` follow the most recently cited article/paragraph in the paragraph (drafting convention); after a
+  citation of another law they are `internal_unavailable`.
+  The post-passes may need two runs to settle (one nested-parenthesis paragraph in ch5-2 converges on
+  the second pass); from then on they are idempotent.
+
+  In `ja_refs.py`, 法/令 map to 金融商品取引法/施行令 (`DEFINED_NAMES`), and 同法 carries the
+  previous law. `reresolve_refs.py` resolves bare 第N款/第N目 inside the enclosing 節/款, and
+  前款第N目 inside the previous sibling.
+- Chapter 2: 246 cross-references, 226 resolved (193 before later chapters existed). Remainder: item-level refs (see rule
   6 above), a couple of not-yet-digitized sibling FSA notifications, and one bare
   law-name mention with no specific target.
 - `refine_clauses.py` now also reclassifies bare `(1)`/`（１）`-style parenthetical
@@ -130,8 +205,43 @@ Three layers, run in this order after content is ingested:
   that would cut through a nested paren (`_outer_prefix_end`/`_depth_at`) rather than risk
   a corrupted split — exception detection in particular hasn't fired on any Chapter 2
   content yet under that conservative bound, which is expected, not broken.
-- Other chapters of the source notification are not extracted. To add one: see
-  `EXTRACTION_GUIDE.md` Step 1 — every pipeline script takes `feed_id`/`chapter_id` as
+- English clause segmentation (`refine_clauses.py`, `normalize_en_markers`): English list
+  markers mirror the Japanese levels (一→(i), イ→(a), （１）→(1)). A bare `(n)` right after
+  "paragraph(s)/item(s)" is a citation numeral and is folded back into running text; one
+  right after a `. `/`: `/`; ` boundary is a real marker and is attached to its item.
+  `app.js`'s `detectItemMarker` reads the English markers too (letters sequence-checked
+  like イロハ, which also settles `(i)` letter-vs-roman). The renderer groups each list item
+  (marker up to next marker) into one `.enum-block`, so an aside inside an item no longer
+  splits it into several boxes.
+- 16 Chapter 2 paragraphs once had `clauses_en` drifted from `text_en` (a reworded copy,
+  breaking rule 1 — and the reader displays clauses, so users saw the drifted wording).
+  `refine_clauses.py` now rebuilds such clauses from `text_en` (`resegment_en`), keeping
+  cue-typed spans that still match verbatim. `refine_clauses.py` is idempotent — a second
+  run must report 0 changes; it used to strip `in_parenthetical` on re-run.
+- Article 8 has 14 paragraphs. Paragraphs 10–14 used to be merged into paragraph 9
+  because `extract_chapter.py`'s paragraph-number regex only matched ２–９ (fixed: it
+  now accepts two-digit numbers); the feed was split accordingly and refs re-resolved.
+- Formulas: 234 in total (355 variables), 229 `transcribed` from the PDF images, 5 `text_derived`; 45 carry a
+  `note` explaining a judgement (notation the grammar can't draw, an illegible exponent, …). Chapters 4–7's
+  variable ids are prefixed per slice (`C4A_`, `C6B_`, `CH7_`, …).
+  The first 57 (ch2–3):
+  - Chapter 2 has 10. Articles 2 and 2-2 were re-checked against the PDF: the denominator
+    is CRWA + MR/8% + OR/8%.
+  - Chapter 3 has 47, authored in `pipeline/translations/ch3_formulas.py` and anchored to
+    their `{{F:}}` tokens.
+  - Two carry an open `note` and are on the external request list:
+    - 第四十七条第十四項: the equity add-on exponent is read as 1/2.
+    - 第七十六条第三項: the PDF prints N_R − (T_M − 1), where Basel has +.
+  - Grammar adds `^`, sqrt/exp/ln/abs/Phi and `sum(i[, n], body)`.
+- All 27 Chapter 2 articles have `heading_en` (except 第二条の二/第四条, which have no
+  heading in the source either).
+- `refine_clauses.py`'s `split_out_proviso` now ends a proviso at its own sentence's
+  「。」/". " at depth 0. The text after it returns to the surrounding clause's type,
+  recursively, so a second ただし is found too. It is still idempotent (verified:
+  refine → annotate → refine = 0 changes).
+- Nothing of the source notification is left out (apart from the 別表 titles' parenthesised scope notes). To add a
+  further chapter or source: see
+  `EXTRACTION_GUIDE.md` Route A — every pipeline script takes `feed_id`/`chapter_id` as
   arguments, nothing is hardcoded to Chapter 2 except the `ARTICLE_META` dict in
   `ingest.py` (only used for the two hand-processed articles; `batch_ingest.py` doesn't
   need it).

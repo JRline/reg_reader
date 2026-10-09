@@ -1,0 +1,13 @@
+{
+ "number": "第二百六十四条の三",
+ "heading_en": "Buckets, Risk Weights and Correlations for Foreign Exchange Risk",
+ "summary_ja": "外国為替リスクのデルタ・リスクについて、リスク・ファクターの分類、リスク・ウェイト及びバケット間の相関係数を定める。",
+ "summary_en": "Sets the classification of risk factors, the risk weight and the correlation coefficient between buckets for delta risk of foreign exchange risk.",
+ "paragraphs": [
+  "For delta risk of foreign exchange risk, risk factors shall be classified into each bucket by exchange rate between the foreign currency in which the product is denominated and the reporting currency.",
+  "The risk weight used for delta risk of foreign exchange risk shall be 15% for the sensitivities to all exchange rates.",
+  "Notwithstanding the preceding paragraph, for an exchange rate between any two of the currency of the United States of America (USD), the currency of the participating countries in the European economic and monetary union (EUR), the currency of Japan, the currency of the United Kingdom (GBP), the currency of Australia (AUD), the currency of Canada (CAD), the currency of Switzerland (CHF), the currency of Mexico (MXN), the currency of the People's Republic of China (CNY), the currency of New Zealand (NZD), the currency of Russia (RUB), the currency of the People's Republic of China (Hong Kong Special Administrative Region) (HKD), the currency of Singapore (SGD), the currency of Turkey (TRY), the currency of the Republic of Korea (KRW), the currency of Sweden (SEK), the currency of the Republic of South Africa (ZAR), the currency of India (INR), the currency of Norway (NOK) and the currency of Brazil (BRL), the risk weight may be the value obtained by dividing the risk weight prescribed in the preceding paragraph by the square root of 2.",
+  "The correlation coefficient (γ_{bc}) between buckets used for delta risk of foreign exchange risk shall be 60%."
+ ],
+ "terms": []
+}

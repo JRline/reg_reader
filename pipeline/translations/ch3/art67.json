@@ -1,0 +1,23 @@
+{
+ "number": "第六十七条",
+ "heading_en": "Calculation of Required Capital",
+ "summary_ja": "包括的手法における信用リスク削減手法適用後エクスポージャー額をボラティリティ調整率を用いてE＊＝E×(1＋He)－C×(1－Hc－Hfx)で算出する。",
+ "summary_en": "Comprehensive approach: exposure after mitigation E* = E × (1 + He) − C × (1 − Hc − Hfx), floored at zero.",
+ "sections_en": {
+  "第六節 第三款": "Comprehensive Approach",
+  "第六節 第三款 第一目": "General Provisions"
+ },
+ "terms": [
+  {
+   "ja": "信用リスク削減手法適用後エクスポージャー額",
+   "en": "exposure amount after credit risk mitigation"
+  },
+  {
+   "ja": "ボラティリティ調整率",
+   "en": "haircut"
+  }
+ ],
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach uses the comprehensive approach, it shall calculate the exposure amount after applying credit risk mitigation techniques (hereinafter referred to as the \"exposure amount after credit risk mitigation\") by the following formula using haircuts (meaning values for adjusting the amount of an exposure or of eligible financial collateral to take into account the risk of changes in its price; the same applies hereinafter). E* = E × (1 + He) − C × (1 − Hc − Hfx) E* is the exposure amount after credit risk mitigation (provided that it shall not be below zero). E is the amount of the exposure. He is the haircut applied, where the exposure is a credit equivalent amount provided in item (vii) of the table of Article 45, paragraph (1), according to the type of assets delivered to the counterparty. C is the amount of eligible financial collateral. Hc is the haircut applied to the eligible financial collateral. Hfx is the haircut applied where the currencies of the exposure and the eligible financial collateral differ."
+ ]
+}

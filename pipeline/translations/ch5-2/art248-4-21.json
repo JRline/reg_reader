@@ -1,0 +1,19 @@
+{
+ "number": "第二百四十八条の四の二十一",
+ "heading_en": "Sensitivities, etc. for Counterparty Credit Spreads",
+ "summary_ja": "取引相手方のクレジット・スプレッドに係るデルタ・リスクのバケットをセクター別に定め（ベガは算出不要）、バケット間相関を表で定める。",
+ "summary_en": "Counterparty credit spread delta buckets are set by sector (no vega calculation is required), with inter-bucket correlations set out in a table.",
+ "paragraphs": [
+  "The buckets for delta risk relating to counterparty credit spreads shall be as set out in the following table, according to the sector category of the counterparty; provided, however, that calculation of the CVA risk equivalent amount shall not be required for vega risk relating to counterparty credit spreads. {{T:p289t0}}",
+  "The correlation coefficient γ_{bc} between buckets of delta risk relating to counterparty credit spreads shall be as set out in the following table, according to the bucket number (meaning the number assigned to correspond to the bucket classified under the preceding paragraph; the same applies in paragraph (3) of the following Article). {{T:p289t1}}"
+ ],
+ "terms": [
+  {
+   "ja": "バケット番号",
+   "en": "bucket number"
+  }
+ ],
+ "sections_en": {
+  "第三節 第二款 第四目": "Buckets, Risk Factors, Sensitivities, Risk Weights and Correlations for Counterparty Credit Spreads"
+ }
+}

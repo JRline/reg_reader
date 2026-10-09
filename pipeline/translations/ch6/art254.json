@@ -1,0 +1,13 @@
+{
+ "number": "第二百五十四条",
+ "heading_en": "Market Risk Equivalent Amount Based on Modellable Risk Factors",
+ "summary_ja": "モデル化可能なリスク・ファクターについて、期待ショート・フォールによりマーケット・リスク相当額を算出することを定める。",
+ "summary_en": "Requires market risk equivalent amounts for modellable risk factors to be calculated using expected shortfall in accordance with the following Articles.",
+ "terms": [],
+ "paragraphs": [
+  "For modellable risk factors in trading desks using the internal model approach, an Ultimate Designated Parent Company adopting the internal model approach shall calculate the market risk equivalent amount by expected shortfall in accordance with the provisions of the following Article through Article 254-4."
+ ],
+ "sections_en": {
+  "第二節 第四款": "Market Risk Equivalent Amount under the Internal Model Approach"
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "number": "第百三十六条",
+ "heading_en": "Amount of Credit Risk-Weighted Assets for Residential Real Estate Exposures",
+ "summary_ja": "居住用不動産向けエクスポージャーの信用リスク・アセットの額を、PD・LGD・EADと所要自己資本率(K)の算式で算出することを定める。",
+ "summary_en": "The credit risk-weighted assets of residential real estate exposures are K x 12.5 x EAD, using PD, LGD and EAD from Articles 140 to 142 and the formula for the required capital ratio K.",
+ "sections_en": {
+  "第三節 第三款": "Retail Exposures"
+ },
+ "paragraphs": [
+  "The amount of credit risk-weighted assets for residential real estate exposures shall be calculated, using the PD, LGD and EAD provided in Articles 140 through 142, by the formula in item (i), and the required capital ratio (K) necessary for the formula in item (i) shall be calculated by the formula in item (ii). (i) Credit risk-weighted assets = K × 12.5 × EAD. (ii) {{F:p176i0}}"
+ ]
+}

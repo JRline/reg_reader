@@ -1,0 +1,14 @@
+{
+ "number": "第二百十二条",
+ "heading_en": "Back-Testing",
+ "summary_ja": "PD・LGD・EADの推計値と実績値の比較(バック・テスティング)の頻度と条件を定める。",
+ "summary_en": "Requires at least annual comparison of estimated and actual PD, LGD and EAD, and sets conditions for the comparison.",
+ "paragraphs": [
+  "For corporate, etc. exposures, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall periodically, at least once a year for each obligor rating, compare estimated and actual values of PD and verify that the degree of divergence between estimated and actual PD is within the range expected for that rating.",
+  "For corporate, etc. exposures to which the advanced internal ratings-based approach may be applied, an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach shall periodically, at least once a year, compare estimated and actual values of LGD and verify that the degree of divergence between these values is within the range expected for the facility rating assigned to that exposure or for that exposure.",
+  "For corporate, etc. exposures to which the advanced internal ratings-based approach may be applied, an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach shall periodically, at least once a year for each exposure, compare estimated and actual values of EAD and verify that the degree of divergence between these values is within the range expected for that exposure.",
+  "For retail exposures, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall periodically, at least once a year for each pool, compare the estimated and actual values of PD, LGD and EAD respectively, and verify that the degree of divergence between each pair of values is within the range expected for that pool.",
+  "The comparison and verification prescribed in the preceding paragraphs shall satisfy all of the following conditions: (i) historical data covering as long a period as possible is used; (ii) documents clearly describing the methods and data used for the comparison have been prepared."
+ ],
+ "terms": []
+}

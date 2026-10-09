@@ -1,0 +1,9 @@
+{
+ "number": "第百三十四条の二",
+ "heading_en": "Scope of Risk-Weighted Asset Calculation for Securities Collateral, etc.",
+ "summary_ja": "有価証券の貸付又は担保提供の場合に、当該有価証券のエクスポージャーと取引相手方の双方について信用リスク・アセットの額等を算出する義務を定める。",
+ "summary_en": "Requires credit risk-weighted assets (or market risk) to be calculated for both the securities exposure and the counterparty where securities are lent or posted as collateral.",
+ "paragraphs": [
+  "Where lending securities or providing securities as collateral, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall calculate the amount of credit risk-weighted assets or the market risk equivalent amount (limited to where the market risk equivalent amount is calculated) of the exposure relating to those securities and the amount of credit risk-weighted assets for the counterparty."
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "number": "第三十四条",
+ "heading_en": "Exposures to Qualifying SMEs, etc. and Retail Exposures",
+ "summary_ja": "中堅中小企業等・個人向けエクスポージャーのうち、一債務者一億円以下・ポートフォリオの〇・二パーセント以下の要件を満たすものを七十五パーセント、取引者・未使用のリボルビングを四十五パーセントとし、要件を満たさない個人向けは百パーセントとする。",
+ "summary_en": "Regulatory retail: SME and individual exposures meeting a ¥100 million per-obligor cap and a 0.2% granularity test take 75%; transactor credit cards and unused revolving lines take 45%; other individual exposures take 100%.",
+ "terms": [
+  {
+   "ja": "適格中堅中小企業等向けエクスポージャー又は適格個人向けエクスポージャー",
+   "en": "exposures to qualifying SMEs, etc. or qualifying retail exposures"
+  }
+ ],
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the standardized approach may set at 75% the risk weight of exposures to SMEs, etc. or retail exposures that satisfy all of the following requirements (referred to as \"exposures to qualifying SMEs, etc. or qualifying retail exposures\" in paragraph (3) and in Article 38, paragraph (2)); provided, however, that this shall not apply to bonds or to exposures whose credit equivalent amount is calculated as provided in Section 4. (i) That the sum of the amounts of exposures to a single obligor (limited to SMEs, etc. (meaning SMEs, etc. as provided in Article 32, paragraph (4); the same applies in the following paragraph) and individuals; the same applies in the following item and in that paragraph) (excluding those listed below) (including the credit equivalent amounts of off-balance sheet transactions provided in the following Section, not including credit equivalent amounts calculated as provided in Section 4, and before applying the credit risk mitigation techniques provided in Section 6; the same applies in that item), less the amount of exposures guaranteed by credit guarantee corporations, etc., is 100 million yen or less. (a) Exposures to bonds. (b) Exposures provided in the following Article through Article 36, Article 37-2 and Article 43 (for exposures provided in Article 37-2, limited to those secured by residential real estate). (ii) That the sum of the amounts of exposures to a single obligor, less the amount of exposures guaranteed by credit guarantee corporations, etc., does not exceed 0.2% of the sum of the amounts of exposures satisfying the requirement listed in the preceding item (excluding the amounts of exposures provided in Article 38).",
+  "In each item of the preceding paragraph, where an Ultimate Designated Parent Company adopting the standardized approach, in extending credit to multiple SMEs, etc. or individuals, has judged that those SMEs, etc. or individuals are closely and inseparably related, they shall be deemed together to be a single obligor.",
+  "The risk weight of exposures to qualifying SMEs, etc. or qualifying retail exposures that satisfy the requirement specified in each of the following items according to the category of exposure listed in that item may be 45%. (i) Exposures relating to the use of credit cards (limited to exposures relating to obligations arising from purchasing goods or rights from a specific seller, or receiving services for a fee from a person running a specific service business, by presenting the credit card): repayment has been made on the due dates without delay over the past twelve months. (ii) Exposures that do not fall under the preceding item, fall under revolving exposures, and are other than the commitments provided in item (iii) of the table of Article 45, paragraph (1): the outstanding balance has been zero over the past twelve months.",
+  "The risk weight of retail exposures that fail to satisfy either of the requirements listed in the items of paragraph (1) shall be 100%."
+ ]
+}

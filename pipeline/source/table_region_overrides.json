@@ -1,0 +1,5 @@
+{
+  "_comment": "Hand-checked table extents for extract_chapter_v2.py, keyed by PDF page. A table whose detected top is within 3pt of match_top gets its bottom extended to `bottom` — for tables whose last rows have no bottom rule (the finder stops early and the remaining rows leak into the prose). Verified against the page images.",
+  "93": [{"match_top": 62, "bottom": 786}],
+  "94": [{"match_top": 548, "bottom": 786}]
+}

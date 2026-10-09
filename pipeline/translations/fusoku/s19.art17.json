@@ -1,0 +1,10 @@
+{
+ "number": "s19.art17",
+ "heading_en": "Transitional Measures Concerning the Calculation of the Market Risk Equivalent Amount Based on the Profit and Loss Attribution Test",
+ "summary_ja": "当分の間、損益要因分析テストでレッド・ゾーン又はアンバー・ゾーンの場合もグリーン・ゾーンとみなして計算する。",
+ "summary_en": "For the time being, a red or amber zone result in the P&L attribution test is treated as green when calculating the market risk equivalent amount.",
+ "paragraphs": [
+  "Notwithstanding Article 253-8, paragraphs (3) through (6) of the New Public Notice, an Ultimate Designated Parent Company adopting the internal model approach (meaning an Ultimate Designated Parent Company adopting the internal model approach prescribed in Article 1, item (xii-3) of the New Public Notice) shall, for the time being, where it classifies a result in the P&L attribution test (meaning the P&L attribution test prescribed in Article 1, item (xciv) of the New Public Notice) in the red zone or the amber zone, calculate the market risk equivalent amount by deeming that classification to be classification in the green zone."
+ ],
+ "terms": []
+}

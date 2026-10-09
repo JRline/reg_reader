@@ -1,0 +1,12 @@
+{
+ "number": "第百九十九条",
+ "heading_en": "Eligible Guarantees",
+ "summary_ja": "保証人の種類に関する基準、適格保証の性質、条件を満たさない保証の取扱いを定める。",
+ "summary_en": "Requires criteria for types of guarantor, sets four characteristics of an eligible guarantee, and limits use of guarantees not meeting Article 94, item (vi).",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach uses a guarantee as a credit risk mitigation technique under paragraphs (1) and (2) of Article 197, it shall establish specified criteria for the types of guarantors used in calculating the amount of credit risk-weighted assets under that technique.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach uses a guarantee as a credit risk mitigation technique under paragraphs (1) and (2) of Article 197, the guarantee shall have all of the following characteristics: (i) a written contract has been prepared for the guarantee; (ii) it cannot be unilaterally cancelled by the guarantor; (iii) it remains in force until the guarantor's obligation has been fully performed within the scope of the amount and purpose of the guarantee; (iv) enforcement against the guarantor is possible at the location of the guarantor's assets.",
+  "The Ultimate Designated Parent Company adopting the internal ratings-based approach shall not use a guarantee as a credit risk mitigation technique where the guarantee does not satisfy the condition set out in Article 94, item (vi); provided, however, that where the guaranteed exposure falls under either of the following items and only the loss remaining after completion of the recovery of the claim is guaranteed, the guarantee may be used as a credit risk mitigation technique for the guaranteed portion under paragraphs (1) and (2) of Article 197: (i) corporate, etc. exposures to which the advanced internal ratings-based approach applying estimated LGD may be applied; (ii) retail exposures to which the internal ratings-based approach applies."
+ ],
+ "terms": []
+}

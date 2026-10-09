@@ -1,0 +1,366 @@
+{
+ "p339t0": {
+  "node_id": "fsa-basel-cap-jp.ch6.art254-2.p2",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "流動性ホライズンの区分(j)",
+    "期間(日)"
+   ],
+   [
+    "1",
+    "十"
+   ],
+   [
+    "2",
+    "二十"
+   ],
+   [
+    "3",
+    "四十"
+   ],
+   [
+    "4",
+    "六十"
+   ],
+   [
+    "5",
+    "百二十"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Liquidity horizon category (j)",
+    "Period (days)"
+   ],
+   [
+    "1",
+    "10"
+   ],
+   [
+    "2",
+    "20"
+   ],
+   [
+    "3",
+    "40"
+   ],
+   [
+    "4",
+    "60"
+   ],
+   [
+    "5",
+    "120"
+   ]
+  ]
+ },
+ "p340t0": {
+  "node_id": "fsa-basel-cap-jp.ch6.art254-2.p3",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "リスク・クラス",
+    "リスク・ファクター・カテゴリー",
+    "期間(日)"
+   ],
+   [
+    {
+     "text": "金利リスク",
+     "rowspan": 4
+    },
+    "金利(特定通貨)",
+    "十"
+   ],
+   [
+    null,
+    "特定通貨以外の通貨",
+    "二十"
+   ],
+   [
+    null,
+    "ボラティリティ",
+    "六十"
+   ],
+   [
+    null,
+    "その他の種類",
+    "六十"
+   ],
+   [
+    {
+     "text": "信用スプレッド・リスク",
+     "rowspan": 6
+    },
+    "ソブリン(投資適格(IG))",
+    "二十"
+   ],
+   [
+    null,
+    "ソブリン(投機的格付(HY))",
+    "四十"
+   ],
+   [
+    null,
+    "コーポレート(投資適格(IG))",
+    "四十"
+   ],
+   [
+    null,
+    "コーポレート(投機的格付(HY))",
+    "六十"
+   ],
+   [
+    null,
+    "ボラティリティ",
+    "百二十"
+   ],
+   [
+    null,
+    "その他の種類",
+    "百二十"
+   ],
+   [
+    {
+     "text": "株式リスク",
+     "rowspan": 6
+    },
+    "株価(大型株)",
+    "十"
+   ],
+   [
+    null,
+    "株価(小型株)",
+    "二十"
+   ],
+   [
+    null,
+    "株価(大型株)に係るボラティリティ",
+    "二十"
+   ],
+   [
+    null,
+    "株価(小型株)に係るボラティリティ",
+    "六十"
+   ],
+   [
+    null,
+    "その他の種類の株式",
+    "六十"
+   ],
+   [
+    null,
+    "為替レートに係る特定通貨ペア",
+    "十"
+   ],
+   [
+    {
+     "text": "外国為替リスク",
+     "rowspan": 3
+    },
+    "為替レートに係る通貨ペア(特定通貨ペアを除く。)",
+    "二十"
+   ],
+   [
+    null,
+    "為替に係るボラティリティ",
+    "四十"
+   ],
+   [
+    null,
+    "為替に係るその他の種類",
+    "四十"
+   ],
+   [
+    {
+     "text": "コモディティ・リスク",
+     "rowspan": 7
+    },
+    "エネルギー及び二酸化炭素排出権取引価格",
+    "二十"
+   ],
+   [
+    null,
+    "貴金属及び非鉄金属価格",
+    "二十"
+   ],
+   [
+    null,
+    "その他のコモディティ価格",
+    "六十"
+   ],
+   [
+    null,
+    "エネルギー及び二酸化炭素排出権取引価格に係るボラティリティ",
+    "六十"
+   ],
+   [
+    null,
+    "貴金属及び非鉄金属価格に係るボラティリティ",
+    "六十"
+   ],
+   [
+    null,
+    "その他のコモディティ価格に係るボラティリティ",
+    "百二十"
+   ],
+   [
+    null,
+    "コモディティに係るその他の種類",
+    "百二十"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Risk class",
+    "Risk factor category",
+    "Period (days)"
+   ],
+   [
+    {
+     "text": "Interest rate risk",
+     "rowspan": 4
+    },
+    "Interest rates (specified currencies)",
+    "10"
+   ],
+   [
+    null,
+    "Currencies other than specified currencies",
+    "20"
+   ],
+   [
+    null,
+    "Volatility",
+    "60"
+   ],
+   [
+    null,
+    "Other types",
+    "60"
+   ],
+   [
+    {
+     "text": "Credit spread risk",
+     "rowspan": 6
+    },
+    "Sovereign (investment grade (IG))",
+    "20"
+   ],
+   [
+    null,
+    "Sovereign (speculative grade (HY))",
+    "40"
+   ],
+   [
+    null,
+    "Corporate (investment grade (IG))",
+    "40"
+   ],
+   [
+    null,
+    "Corporate (speculative grade (HY))",
+    "60"
+   ],
+   [
+    null,
+    "Volatility",
+    "120"
+   ],
+   [
+    null,
+    "Other types",
+    "120"
+   ],
+   [
+    {
+     "text": "Equity risk",
+     "rowspan": 6
+    },
+    "Equity prices (large cap)",
+    "10"
+   ],
+   [
+    null,
+    "Equity prices (small cap)",
+    "20"
+   ],
+   [
+    null,
+    "Volatility of equity prices (large cap)",
+    "20"
+   ],
+   [
+    null,
+    "Volatility of equity prices (small cap)",
+    "60"
+   ],
+   [
+    null,
+    "Other types of equities",
+    "60"
+   ],
+   [
+    null,
+    "Specified currency pairs for exchange rates",
+    "10"
+   ],
+   [
+    {
+     "text": "Foreign exchange risk",
+     "rowspan": 3
+    },
+    "Currency pairs for exchange rates (excluding specified currency pairs)",
+    "20"
+   ],
+   [
+    null,
+    "Volatility of foreign exchange",
+    "40"
+   ],
+   [
+    null,
+    "Other types relating to foreign exchange",
+    "40"
+   ],
+   [
+    {
+     "text": "Commodity risk",
+     "rowspan": 7
+    },
+    "Energy and carbon emission allowance trading prices",
+    "20"
+   ],
+   [
+    null,
+    "Precious metals and non-ferrous metals prices",
+    "20"
+   ],
+   [
+    null,
+    "Other commodity prices",
+    "60"
+   ],
+   [
+    null,
+    "Volatility of energy and carbon emission allowance trading prices",
+    "60"
+   ],
+   [
+    null,
+    "Volatility of precious metals and non-ferrous metals prices",
+    "60"
+   ],
+   [
+    null,
+    "Volatility of other commodity prices",
+    "120"
+   ],
+   [
+    null,
+    "Other types relating to commodities",
+    "120"
+   ]
+  ]
+ }
+}

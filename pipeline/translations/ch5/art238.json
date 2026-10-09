@@ -1,0 +1,23 @@
+{
+ "number": "第二百三十八条",
+ "heading_en": "Operational Requirements for the Use of External Ratings, etc.",
+ "summary_ja": "適格格付機関の格付が付与されていても格付がないものとみなす場合、格付の適格性の基準、複数格付・格付の取扱い、信用リスク削減手法の効果の勘案を定める。",
+ "summary_en": "Specifies when an external rating is treated as not assigned, the eligibility standards for ratings in securitization transactions, the treatment of multiple ratings, and the use of credit risk mitigation effects.",
+ "paragraphs": [
+  "Even where a rating by an eligible credit rating agency has been assigned to a securitization exposure (including a reference securitization exposure; the same applies hereinafter in this Article), where any of the following items applies, that rating is deemed not to have been assigned to that securitization exposure. (i) Where the rating assigned by the eligible credit rating agency fails to satisfy any of the standards on the eligibility of ratings in securitization transactions. (ii) Where the rating assigned by an eligible credit rating agency to the securitization exposure reflects the effect of a guarantee or credit derivative provided for all or part of the underlying assets, and the guarantor or protection provider does not fall under the persons listed in the items of Article 98 (hereinafter in this item referred to as an \"eligible guarantor, etc.\"); provided, however, that this does not apply where the creditworthiness of an eligible guarantor, etc. closely related to that guarantor or protection provider is appropriately reflected in the rating assigned to that securitization exposure. (iii) Where a credit risk mitigation technique protects only a specific securitization exposure in a single securitization transaction, and the rating assigned by the eligible credit rating agency to that securitization exposure reflects the effect of that credit risk mitigation technique.",
+  "The \"standards on the eligibility of ratings in securitization transactions\" in item (i) of the preceding paragraph means the following. (i) The rating assigned by the eligible credit rating agency appropriately reflects the credit risk of the exposure held by the Ultimate Designated Parent Company in light of principal, interest and other factors. (ii) The rating assigned by the eligible credit rating agency is published together with the procedures, methods and assumptions for assigning the rating and the principal grounds for the rating assessment (including the content of the analysis of the securitization transaction), and is included in a rating transition matrix. (iii) The rating assigned by the eligible credit rating agency has been assigned by an eligible credit rating agency with a track record as a rating agency for securitization exposures. (iv) The rating by an eligible credit rating agency assigned to the securitization exposure held by the Ultimate Designated Parent Company has not been assigned on the basis of liquidity facilities, credit enhancement or other credit extension by that Ultimate Designated Parent Company that does not involve advance payment of funds.",
+  "The provisions of Article 19 apply mutatis mutandis where an Ultimate Designated Parent Company uses the ratings of more than one eligible credit rating agency and the risk weights corresponding to the ratings assigned by those eligible credit rating agencies to the securitization exposure differ.",
+  "The provisions of Article 16 apply mutatis mutandis where an Ultimate Designated Parent Company uses the external-ratings-based method. In this case, in that Article, the phrase \"Ultimate Designated Parent Company adopting the standardized approach\" shall be deemed to be replaced with \"Ultimate Designated Parent Company\", and in paragraph (4) of that Article, the phrase \"this Chapter\" with \"Chapter 5\".",
+  "Where a securitization exposure held by an Ultimate Designated Parent Company falls under item (iii) of paragraph (1), the amount of credit risk-weighted assets of that securitization exposure may be calculated taking into account the effect of the credit risk mitigation technique provided in that item."
+ ],
+ "terms": [
+  {
+   "ja": "適格保証人等",
+   "en": "eligible guarantor, etc."
+  },
+  {
+   "ja": "証券化取引における格付の適格性に関する基準",
+   "en": "standards on the eligibility of ratings in securitization transactions"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "number": "第二百八十条の六",
+ "heading_en": "Offsetting of Positions in Nth-to-Default Credit Derivatives",
+ "summary_ja": "ファースト・トゥ・デフォルト型クレジット・デリバティブを保有する場合の、参照資産の保有状況に応じた個別リスクの削減方法を定める。",
+ "summary_en": "Specifies how an Ultimate Designated Parent Company holding a first-to-default credit derivative may reduce specific risk depending on how many reference assets it holds.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company that holds a first-to-default credit derivative may reduce the amount of specific risk by the method prescribed in each of the following items according to the case set forth in that item: (i) Where it holds one asset among the reference assets, etc. relating to that first-to-default credit derivative: a method of offsetting specific risk between the amount of specific risk of that one asset and the amount of the portion of the specific risk of that first-to-default credit derivative that relates to that one asset (where that amount is smaller than the amount of specific risk of that first-to-default credit derivative, the amount of specific risk of that first-to-default credit derivative; the same applies in the following item), up to the smaller of those amounts; (ii) Where it holds multiple assets among the reference assets, etc. relating to that first-to-default credit derivative: a method of offsetting specific risk only for the asset for which the amount offset is the smallest, when the amount of specific risk of one asset among those multiple assets and the amount equivalent to the portion of the specific risk of that first-to-default credit derivative that relates to that one asset have been offset against each other up to the smaller of those amounts."
+ ],
+ "terms": []
+}

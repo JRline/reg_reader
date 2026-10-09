@@ -1,0 +1,9 @@
+{
+ "number": "第九十一条",
+ "heading_en": "Calculation Method",
+ "summary_ja": "簡便手法では、担保で保全された部分に取引相手ではなく担保資産のリスク・ウェイトを適用し、原則として二十パーセントを下限とする。",
+ "summary_en": "Simple approach: the collateralized portion takes the collateral's risk weight instead of the counterparty's, floored at 20% except as in Article 92.",
+ "paragraphs": [
+  "Under the simple approach, an Ultimate Designated Parent Company adopting the standardized approach shall apply, to the portion of the exposure amount to which credit risk mitigation techniques are applied, the risk weight of the assets serving as collateral in place of the risk weight of the counterparty; provided, however, that except where any item of the following Article applies, the risk weight shall not be less than 20%."
+ ]
+}

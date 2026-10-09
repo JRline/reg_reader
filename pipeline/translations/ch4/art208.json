@@ -1,0 +1,12 @@
+{
+ "number": "第二百八条",
+ "heading_en": "Special Provisions on Risk Quantification for Purchased Corporate, etc. Exposures",
+ "summary_ja": "購入債権を均質なプールに割り当てること、保証等の不考慮、準用を定める。",
+ "summary_en": "Requires allocation of purchased exposures to sufficiently homogeneous pools, disregards guarantees in estimating PD and LGD for eligible purchased corporate, etc. exposures, and applies Articles 192 and 196 mutatis mutandis.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall allocate purchased retail exposures and eligible purchased corporate, etc. exposures to which the top-down approach is applied to homogeneous pools to a degree sufficient to estimate accurately and consistently the PD, LGD (for eligible purchased corporate, etc. exposures to which the top-down approach is applied, only in the case of an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach) and EL_{dilution} for the portion equivalent to default risk of such exposures.",
+  "In quantifying the risk of eligible purchased corporate, etc. exposures, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall not, notwithstanding the provisions of Article 197 (including as applied mutatis mutandis pursuant to Article 201), take into account guarantees or indemnities from the seller or a third party in estimating PD and LGD.",
+  "Where the top-down approach is used for eligible purchased corporate, etc. exposures, the provisions of Article 192 apply mutatis mutandis to the estimation of PD for eligible purchased corporate, etc. exposures, and the provisions of Article 196 apply mutatis mutandis to the estimation of LGD for eligible purchased corporate, etc. exposures. In this case, the term \"retail exposures\" in these provisions shall be deemed to be replaced with \"eligible purchased corporate, etc. exposures\"."
+ ],
+ "terms": []
+}

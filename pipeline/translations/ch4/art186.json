@@ -1,0 +1,14 @@
+{
+ "number": "第百八十六条",
+ "heading_en": "Subjects of Estimation",
+ "summary_ja": "推計の対象(PD・LGD・EADを推計する範囲)を定める。",
+ "summary_en": "Specifies which of PD, LGD and EAD must be estimated for corporate, etc. exposures and retail exposures.",
+ "paragraphs": [
+  "Except as otherwise provided, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall estimate, for corporate, etc. exposures, the PD corresponding to each obligor rating in accordance with the provisions of Division 3, and, for retail exposures, the PD, LGD and EAD corresponding to each pool in accordance with the provisions of Division 3 through Division 6.",
+  "Except as otherwise provided, an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach shall estimate, for corporate, etc. exposures to which the advanced internal ratings-based approach may be applied, LGD in accordance with the provisions of Division 4 and Division 5 and EAD in accordance with the provisions of Division 6."
+ ],
+ "terms": [],
+ "sections_en": {
+  "第四節 第五款 第二目": "Subjects of Estimation and Common Requirements, etc."
+ }
+}

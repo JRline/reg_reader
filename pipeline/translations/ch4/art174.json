@@ -1,0 +1,16 @@
+{
+ "number": "第百七十四条",
+ "heading_en": "Rating Overrides",
+ "summary_ja": "人的判断又はモデルに基づく内部格付制度において、格付及び推計値の変更に関する規定、監視手続、責任者の特定及び変更後の実績の記録を定める。",
+ "summary_en": "Requires clear rules on changes to ratings and estimates under judgment-based systems, monitoring of overrides under model-based systems, identification of responsible persons, and recording of post-change performance.",
+ "sections_en": {
+  "第四節 第二款 第三目": "Rating Overrides"
+ },
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach operates an internal rating system based on human judgment, it shall establish clear provisions concerning the following matters and other matters relating to changes to ratings and estimates: (i) The method of change; (ii) The range within which changes may be made; (iii) The person responsible for changes.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach operates a model-based internal rating system, it shall establish procedures and guidelines for monitoring the following matters: (i) Changes by human judgment to model-based rating assignments or estimation results; (ii) Exclusion of variables used in the model; (iii) Changes to model inputs.",
+  "The guidelines referred to in the preceding paragraph shall identify the person responsible for changes to rating assignments or estimation results.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach has made changes to ratings and estimates, it shall record the post-change performance for each change."
+ ],
+ "terms": []
+}

@@ -1,0 +1,18 @@
+{
+ "number": "第十六条",
+ "heading_en": "Establishment of Standards for the Use of Ratings, etc.",
+ "summary_ja": "格付・カントリー・リスク・スコアの使用基準をあらかじめ設け、リスク・アセットを意図的に小さくしないこと、内部管理と整合させることを求め、本章の「格付」の意味を定める。",
+ "summary_en": "Requires a pre-set standard for which ratings and country risk scores are used — not designed to reduce RWA and consistent with internal management — and defines what \"rating\" means in this Chapter.",
+ "terms": [
+  {
+   "ja": "格付",
+   "en": "ratings"
+  }
+ ],
+ "paragraphs": [
+  "In determining risk weights, an Ultimate Designated Parent Company adopting the standardized approach shall establish in advance standards for the use of ratings by eligible credit rating agencies or country risk scores of the Organisation for Economic Co-operation and Development or of export credit agencies.",
+  "In establishing the standards provided in the preceding paragraph, an Ultimate Designated Parent Company adopting the standardized approach shall not aim to intentionally reduce the amount of credit risk-weighted assets.",
+  "Where an Ultimate Designated Parent Company adopting the standardized approach uses ratings by eligible credit rating agencies or country risk scores of the Organisation for Economic Co-operation and Development or of export credit agencies in its internal management, it shall make the standards provided in paragraph (1) consistent with the manner of use in that internal management.",
+  "In this Chapter, a rating, an issue-specific rating (meaning a rating assigned to a specific obligation; the same applies hereinafter), an issuer rating (meaning a rating of the general debt-servicing capacity of an obligor; the same applies hereinafter) or a short-term rating (collectively referred to as \"ratings\" in this paragraph), or a country risk score, means a rating or country risk score that the Ultimate Designated Parent Company adopting the standardized approach may use under the standards provided in paragraph (1) that it establishes; where there is no rating or country risk score that may be used under those standards, the exposure is unrated."
+ ]
+}

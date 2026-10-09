@@ -1,0 +1,11 @@
+{
+ "number": "第二百四十八条の四の二十五",
+ "heading_en": "Vega Risk Factors for Reference Credit Spreads",
+ "summary_ja": "参照先のクレジット・スプレッドのベガ・リスク・ファクターは、バケット内の全参照先・全テナーのボラティリティの相対変化とし、リスク・ウェイトは100パーセントとする。",
+ "summary_en": "The reference credit spread vega risk factor is the relative change in all volatilities of credit spreads across the bucket, with a 100% risk weight.",
+ "paragraphs": [
+  "The vega risk factor relating to reference credit spreads shall be the relative change in all volatilities of the credit spreads of all tenors relating to all reference names in the bucket.",
+  "The \"relative change in all volatilities of the credit spreads\" in the preceding paragraph means the value obtained by dividing the change in the value of CVA or of a CVA hedging instrument when the volatilities of all tenors relating to all reference names in the bucket are changed simultaneously by 1% relative to their present values by 0.01.",
+  "The risk weight RW_{k} of the risk factor provided in paragraph (1) shall be 100%."
+ ]
+}

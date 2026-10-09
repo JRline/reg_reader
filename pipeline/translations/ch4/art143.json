@@ -1,0 +1,14 @@
+{
+ "number": "第百四十三条",
+ "heading_en": "Credit Risk-Weighted Assets for Equity Exposures",
+ "summary_ja": "株式等エクスポージャーの信用リスク・アセットの額の算出について、第四十三条第一項及び第三項を読替えの上で準用する。",
+ "summary_en": "Applies Article 43, paragraphs (1) and (3), with a textual substitution, to the calculation of credit risk-weighted assets for equity exposures under the internal ratings-based approach.",
+ "sections_en": {
+  "第三節": "Calculation of Credit Risk-Weighted Assets",
+  "第三節 第四款": "Equity Exposures"
+ },
+ "paragraphs": [
+  "The provisions of Article 43, paragraphs (1) and (3) apply mutatis mutandis to the calculation by an Ultimate Designated Parent Company adopting the internal ratings-based approach of the amount of credit risk-weighted assets for equity exposures. In this case, the phrase \"exposures to shares and instruments having the same nature as equity (excluding exposures whose risk weights are determined pursuant to the provisions of Article 43-4)\" in paragraph (1) of that Article shall be deemed to be replaced with \"equity exposures (excluding exposures whose risk weights are determined pursuant to the provisions of Article 144)\"."
+ ],
+ "terms": []
+}

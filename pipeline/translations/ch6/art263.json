@@ -1,0 +1,14 @@
+{
+ "number": "第二百六十三条",
+ "heading_en": "Buckets, Risk Weights and Correlations for Delta Risk",
+ "summary_ja": "デルタ・リスクのバケット、リスク・ウェイト及び相関係数は次条以下に定め、流動性ホライズンを勘案する。",
+ "summary_en": "Provides that the buckets, risk weights and correlation coefficients for delta risk are set out in the following Articles and take the liquidity horizon of each risk class into account.",
+ "sections_en": {
+  "第三節 第二款 第四目": "Buckets, Risk Weights and Correlations for Delta Risk under the Sensitivities-Based Method"
+ },
+ "paragraphs": [
+  "In calculating the market risk equivalent amount for delta risk, the buckets, risk weights and correlation coefficients of each risk class shall be as provided in the following Article through Article 264-3.",
+  "The risk weights and correlation coefficients shall take into account the liquidity horizon of each risk class."
+ ],
+ "terms": []
+}

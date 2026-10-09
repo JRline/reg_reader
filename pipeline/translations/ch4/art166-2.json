@@ -1,0 +1,11 @@
+{
+ "number": "第百六十六条の二",
+ "heading_en": "Assessment Method for Rating Assignment and Pool Allocation",
+ "summary_ja": "格付付与及びプールへの割当てにおいて、経済状況の悪化等にもかかわらず債務履行能力及び意思を評価するための要件を定める。",
+ "summary_en": "Requires assessing obligors' ability and willingness to perform notwithstanding adverse conditions, and sets requirements on economic conditions, rating migration, leverage, and conservatism.",
+ "paragraphs": [
+  "In assigning obligor ratings to corporate, etc. exposures and allocating retail exposures to pools, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall assess the obligor's ability and willingness to perform its obligations in accordance with the contract, notwithstanding a deterioration in economic conditions or the occurrence of unexpected events.",
+  "In the assessment prescribed in the preceding paragraph, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall satisfy all of the following requirements: (i) The range of economic conditions considered in the assessment includes the following: (a) Current economic conditions; (b) Economic conditions that may arise in the business cycle of the industry or region to which the obligor belongs; (ii) Rating and pool migrations are designed to result from any of the following changes: (a) Changes specific to the exposure or obligor; (b) Changes specific to the business environment to which the exposure or obligor belongs; (c) Changes that may occur in the course of the business cycle; (iii) Where the obligor is highly leveraged or the obligor's assets are assets relating to trading business, the assessment reflects an evaluation of the performance of the underlying assets based on volatility under stressed conditions; (iv) In view of the difficulty of predicting future events and the effect of future events on the financial condition of a particular obligor, forward-looking information is assessed conservatively; (v) Where the available forward-looking information is limited, the analysis is conducted more conservatively."
+ ],
+ "terms": []
+}

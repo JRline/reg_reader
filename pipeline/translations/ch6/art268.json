@@ -1,0 +1,20 @@
+{
+ "number": "第二百六十八条",
+ "heading_en": "Net JTD Risk Positions of Securitization Products (Non-CTP)",
+ "summary_ja": "証券化商品(非CTP)のグロスJTDリスク・ポジションの相殺できない範囲とできる範囲を定め、前三条の規定を準用して、ネットJTDリスク・ポジションを算出する。",
+ "summary_en": "Specifies which gross JTD risk positions of securitization products (non-CTP) may not and may be offset, and applies the preceding provisions mutatis mutandis to calculate net JTD risk positions.",
+ "paragraphs": [
+  "Gross JTD risk positions of securitization products (non-CTP) shall not be offset between the following exposures: (i) Between securitization exposures, etc. (meaning transactions that transfer the credit risk of the underlying assets to a third party; the same applies hereinafter) referencing different underlying assets (including between securitization exposures having the same attachment point (meaning the point at which a securitization exposure first incurs losses; the same applies in paragraph (3) of Article 269) and the same detachment point (meaning the point at which credit losses allocated to a securitization exposure extend to the entire principal; the same applies in that paragraph)); (ii) Between securitization exposures, etc. arising from different tranches of securitization products referencing the same underlying assets.",
+  "With respect to the default risk of securitization products (non-CTP), offsetting may be made between the following exposures: (i) Between securitization exposures, etc. whose terms are identical other than maturity; (ii) Between the same individual reference assets obtained by decomposing the long positions and short positions of securitization exposures, etc. into the individual assets referencing their underlying assets.",
+  "The provisions of Article 267 through the preceding Article shall apply mutatis mutandis to the calculation of JTD risk positions of securitization products (non-CTP). In this case, the term \"non-securitization products\" in those provisions shall be deemed to be replaced with \"securitization products (non-CTP).\""
+ ],
+ "terms": [
+  {
+   "ja": "証券化エクスポージャー等",
+   "en": "securitization exposures, etc."
+  }
+ ],
+ "sections_en": {
+  "第三節 第三款 第三目": "Market Risk Equivalent Amount for Default Risk of Securitization Products (Non-CTP)"
+ }
+}

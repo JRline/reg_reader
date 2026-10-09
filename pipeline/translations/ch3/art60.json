@@ -1,0 +1,12 @@
+{
+ "number": "第六十条",
+ "heading_en": "Definition",
+ "summary_ja": "適格金融資産担保付取引を、取引相手等が提供する適格金融資産担保によって信用リスクが削減されている取引と定義する。",
+ "summary_en": "Defines a collateralized transaction: one whose credit risk is wholly or partly reduced by eligible financial collateral provided by or for the counterparty.",
+ "sections_en": {
+  "第六節 第二款": "Matters Common to Transactions Collateralized by Eligible Financial Collateral"
+ },
+ "paragraphs": [
+  "A transaction collateralized by eligible financial collateral means a transaction in which all or part of the credit risk of the exposure is reduced by eligible financial collateral provided by the counterparty or by a third party on behalf of the counterparty."
+ ]
+}

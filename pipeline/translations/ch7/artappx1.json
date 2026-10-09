@@ -1,0 +1,11 @@
+{
+ "number": "別表第一",
+ "heading_en": "Terms for the Components of the BIC",
+ "summary_ja": "第二百八十三条第二項の算式に用いるBICの各構成要素(ILDC・SC・FC)の項目の意義と、BICに関連しない損益項目(注)を定める。",
+ "summary_en": "Defines the line items used in the Article 283, paragraph (2) formulas for each BIC component (ILDC, SC, FC), and lists profit-and-loss items not related to the BIC (notes).",
+ "paragraphs": [
+  "{{T:p449t0}}",
+  "(Note 1) The following profit-and-loss items are all unrelated to the components of the BIC. 1. Profit or loss from insurance or reinsurance business. 2. Insurance premiums and refunds paid, and insurance claims received, under insurance contracts or reinsurance contracts entered into. 3. Administrative expenses (staff-related expenses, commissions paid for non-financial services (including logistics, IT and human resources), and other administrative expenses (including utilities, telephone charges, travel expenses, office supplies and postage)). 4. Recovery management expenses (including recoveries on behalf of customers (taxes collected from customers)). 5. Expenses relating to fixed assets (except where they arise from an operational risk loss). 6. Depreciation of tangible and intangible assets (except that relating to finance lease assets that constitute expenses relating to the ILDC). 7. Provisions and reversals of provisions (except those relating to operational risk that constitute income or expenses relating to the SC). 8. Expenses relating to shares redeemable in due time. 9. Impairment losses and reversals of impairment losses. 10. Changes in goodwill recognized in profit or loss. 11. Corporate income tax (tax based on taxable income, including income tax adjustments and deferred tax).",
+  "(Note 2) With respect to the above items, an item that includes the above items, or a simplified item where it would yield a conservative value, may be used."
+ ]
+}

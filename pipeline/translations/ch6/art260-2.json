@@ -1,0 +1,16 @@
+{
+ "number": "第二百六十条の二",
+ "heading_en": "Market Risk Equivalent Amount for Delta Risk and Vega Risk",
+ "summary_ja": "デルタ・リスク及びベガ・リスクのリスク加重後の感応度、バケット内の相当額K_b、リスク・クラス内の相当額の算式と、平方根が実数とならない場合の代替算式を定める。",
+ "summary_en": "Sets the risk-weighted sensitivities for delta and vega risk, the bucket-level amount K_b, the risk-class-level formula, and the alternative formula for S_b and S_c where the square root has no real solution.",
+ "terms": [],
+ "paragraphs": [
+  "The market risk equivalent amount for delta risk and vega risk shall be calculated as provided in the following paragraph through paragraph (7).",
+  "The sensitivity (s_{k}) of each risk factor to delta risk and vega risk shall be calculated on its own account on the basis of the provisions of Division 3, and sensitivities relating to the same risk factor shall be netted.",
+  "The risk-weighted sensitivity (meaning the sensitivity after multiplication by the risk weight; the same applies hereinafter) for each risk factor (k) shall be calculated by the following formula. WS_{k} = RW_{k}・s_{k} WS_{k} is the risk-weighted sensitivity for each risk factor; RW_{k} is the risk weight applicable to risk factor k.",
+  "The market risk equivalent amount (K_{b}) for each bucket shall be calculated by the following formula. {{F:p350i0}} K_{b} is the market risk equivalent amount for each bucket; ρ_{kl} is the correlation coefficient between risk factors k and l.",
+  "The market risk equivalent amount for each risk class shall be calculated by the following formula. {{F:p350i1}}{{F:p350i2}}{{F:p350i3}} γ_{bc} is the correlation coefficient between buckets b and c; S_{b} is the total of the risk-weighted sensitivities WS_{b} of bucket b; S_{c} is the total of the risk-weighted sensitivities WS_{c} of bucket c.",
+  "Where a real solution cannot be obtained in the calculation of the square root in the formula of the preceding paragraph, S_{b} and S_{c} shall be calculated by the following formulas, and the market risk equivalent amounts for delta risk and vega risk in each risk class shall be calculated by the formula of that paragraph using those S_{b} and S_{c}. {{F:p351i0}}{{F:p351i1}}",
+  "The market risk equivalent amount for delta risk and vega risk shall be the sum of the market risk equivalent amounts of each risk class calculated under the preceding two paragraphs."
+ ]
+}

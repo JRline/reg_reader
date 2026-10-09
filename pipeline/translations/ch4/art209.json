@@ -1,0 +1,10 @@
+{
+ "number": "第二百九条",
+ "heading_en": "Special Provisions on Risk Quantification for Purchased Retail Exposures",
+ "summary_ja": "外部データ及び内部の参照用データを一次的な情報源とできることを定める。",
+ "summary_en": "Allows external data and internal reference data to be used as the primary source for purchased retail exposures and top-down eligible purchased corporate, etc. exposures.",
+ "paragraphs": [
+  "Notwithstanding the provisions of Article 192, paragraph (1) (including as applied mutatis mutandis pursuant to Article 207, paragraph (4) and paragraph (3) of the preceding Article), in estimating the PD, LGD and EL_{dilution} of purchased retail exposures and eligible purchased corporate, etc. exposures to which the top-down approach is applied, an Ultimate Designated Parent Company adopting the internal ratings-based approach may use external data and internal reference data (meaning data on pools of exposures held by the Ultimate Designated Parent Company adopting the internal ratings-based approach that are similar to the pool to which the exposure belongs) as the primary sources of information."
+ ],
+ "terms": []
+}

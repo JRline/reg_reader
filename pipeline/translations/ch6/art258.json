@@ -1,0 +1,14 @@
+{
+ "number": "第二百五十八条",
+ "heading_en": "Standardized Approach",
+ "summary_ja": "標準的方式によるマーケット・リスク相当額が、リスク感応度方式、デフォルト・リスク、残余リスク・アドオンの各マーケット・リスク相当額の合計額であることを定める。",
+ "summary_en": "Defines the market risk equivalent amount under the standardized approach as the sum of the amounts under the sensitivities-based method, for default risk and for the residual risk add-on.",
+ "terms": [],
+ "paragraphs": [
+  "The market risk equivalent amount under the standardized approach means the sum of the following market risk equivalent amounts. (i) The market risk equivalent amount based on the sensitivities-based method; (ii) The market risk equivalent amount for default risk; (iii) The market risk equivalent amount for the residual risk add-on."
+ ],
+ "sections_en": {
+  "第三節": "Standardized Approach",
+  "第三節 第一款": "General Provisions and Structure of the Standardized Approach"
+ }
+}

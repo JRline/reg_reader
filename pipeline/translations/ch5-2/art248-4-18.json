@@ -1,0 +1,13 @@
+{
+ "number": "第二百四十八条の四の十八",
+ "heading_en": "Sensitivities, etc. in Foreign Exchange Risk Buckets",
+ "summary_ja": "外国為替のバケットは報告通貨を除く通貨ごとに定め、バケット間相関は0.6とする。",
+ "summary_en": "Foreign exchange buckets are set per currency other than the reporting currency, with a 0.6 correlation between buckets.",
+ "paragraphs": [
+  "The buckets for delta risk and vega risk relating to foreign exchange shall be determined for each individual currency excluding the reporting currency of the Ultimate Designated Parent Company.",
+  "The correlation coefficient γ_{bc} between buckets of delta risk and between buckets of vega risk relating to foreign exchange provided in the preceding paragraph shall be 0.6 for all currencies."
+ ],
+ "sections_en": {
+  "第三節 第二款 第三目": "Buckets, Risk Factors, Sensitivities, Risk Weights and Correlations for Foreign Exchange"
+ }
+}

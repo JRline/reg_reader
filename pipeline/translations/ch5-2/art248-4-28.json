@@ -1,0 +1,13 @@
+{
+ "number": "第二百四十八条の四の二十八",
+ "heading_en": "Commodity Risk Buckets",
+ "summary_ja": "コモディティのバケットをコモディティ・グループで定め、バケット間相関は、一方又は双方がバケット11なら0パーセント、それ以外は20パーセントとする。",
+ "summary_en": "Commodity buckets are defined by commodity group; inter-bucket correlation is 0% if either bucket is number 11 and otherwise 20%.",
+ "paragraphs": [
+  "The buckets for delta risk and vega risk relating to commodities shall be as set out in the following table, according to the commodity group category. {{T:p297t1}}",
+  "The correlation coefficient γ_{bc} between buckets of commodity delta risk and between buckets of vega risk shall be 0% where one or both of the buckets is bucket number 11 in the table in the preceding paragraph, and 20% in all other cases."
+ ],
+ "sections_en": {
+  "第三節 第二款 第七目": "Buckets, Risk Factors, Sensitivities, Risk Weights and Correlations for Commodities"
+ }
+}

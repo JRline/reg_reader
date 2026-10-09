@@ -1,0 +1,9 @@
+{
+ "number": "第二百四十一条",
+ "heading_en": "Required Capital Ratio of the Portion Exceeding K_{A} (K_{SSFA}(K_{A}))",
+ "summary_ja": "K_Aを超える部分の所要自己資本率の算式と、その変数a、u、l、pの定義を定める。",
+ "summary_en": "Gives the formula for the required capital ratio of the portion exceeding K_A and defines its parameters a, u, l and p (p being 1, or 1.5 for re-securitizations).",
+ "paragraphs": [
+  "The required capital ratio of the portion exceeding K_{A} ({{F:p254i1}}) under items (ii) and (iii) of paragraph (1) of the preceding Article means the value calculated by the following formula. {{F:p254i2}} a = -(1 / (p * K_{A})) u = D - K_{A} l = max(A - K_{A}, 0) e, A, D, p and K_{A} are as set out respectively below: e is the base of the natural logarithm (2.71828 shall be used); A is the attachment point (A); D is the detachment point (D); p is 1 (provided, however, that for a re-securitization exposure it is 1.5); K_{A} is the required capital ratio of the underlying assets taking the delinquency rate into account, calculated pursuant to the following Article."
+ ]
+}

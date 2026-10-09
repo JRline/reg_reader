@@ -1,0 +1,13 @@
+{
+ "number": "第百九十三条",
+ "heading_en": "Definition of Loss",
+ "summary_ja": "LGD推計における損失の定義(経済的損失)の要件を定める。",
+ "summary_en": "Requires that LGD be estimated on the basis of economic loss, including discounting, recovery costs and the firm's recovery capability.",
+ "paragraphs": [
+  "In estimating LGD, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall satisfy all of the following requirements: (i) the definition used for the estimate is economic loss; (ii) in measuring the economic loss referred to in the preceding item, the material effect of discounting according to the period until recovery (except where it is not material), material direct and indirect costs of recovery, and other relevant factors are taken into account; (iii) the recovery capability of the Ultimate Designated Parent Company adopting the internal ratings-based approach is taken into account; provided, however, that where empirical support for the effect on the recovery rate is insufficient, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall conservatively make any adjustment to LGD based on its recovery capability."
+ ],
+ "terms": [],
+ "sections_en": {
+  "第四節 第五款 第四目": "Estimation of LGD"
+ }
+}

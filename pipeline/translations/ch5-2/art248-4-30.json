@@ -1,0 +1,13 @@
+{
+ "number": "第二百四十八条の四の三十",
+ "heading_en": "Measurement of CVA for Each Counterparty",
+ "summary_ja": "SA―CVA採用最終指定親会社は、ネット感応度の計測のため、取引相手方ごとにCVAを計測する。",
+ "summary_en": "An Ultimate Designated Parent Company adopting the SA-CVA measures CVA for each counterparty in order to measure net sensitivities.",
+ "paragraphs": [
+  "In order to measure the net sensitivity listed in Article 248-4-8, paragraph (1), item (i), an Ultimate Designated Parent Company adopting the SA-CVA shall measure CVA for each counterparty as provided in the following Article through Article 248-4-35."
+ ],
+ "sections_en": {
+  "第三節 第三款": "Standards for Approval",
+  "第三節 第三款 第一目": "Methods for Measuring CVA"
+ }
+}

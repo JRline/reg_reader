@@ -1,0 +1,14 @@
+{
+ "number": "第百六十二条",
+ "heading_en": "Rating Criteria",
+ "summary_ja": "格付及びプールの定義、手続及び基準を明確かつ詳細に定め、一貫性を確保し、第三者が再現できるようにする。",
+ "summary_en": "Requires clear, detailed and consistent rating and pool definitions, procedures and criteria that a third party can replicate and that fit credit extension criteria.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish clear rating and pool definitions, procedures and criteria for assigning each rating in the rating scale to an exposure or allocating an exposure to a pool.",
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall define the criteria for the same rating and the same pool in sufficient detail so as to enable obligors and exposures with similar risk to be consistently assigned the same rating or allocated to the same pool, irrespective of business line, department or geographic location.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach applies different rating criteria, pool allocation criteria, and procedures for assigning ratings and allocating to pools depending on the type of obligor and exposure, it shall monitor for inconsistencies and shall change the rating criteria in a timely manner so as to improve consistency.",
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall define rating and pool definitions and criteria clearly and in sufficient detail that an internal audit department having independent functions or another third party can understand the assignment of ratings and can evaluate, by replicating the rating assignment procedures, the appropriateness of that assignment of ratings and allocation to pools.",
+  "The criteria for assigning ratings and allocating to pools shall be consistent with the credit extension criteria of the Ultimate Designated Parent Company adopting the internal ratings-based approach and its policies for handling problem obligors and exposures."
+ ],
+ "terms": []
+}

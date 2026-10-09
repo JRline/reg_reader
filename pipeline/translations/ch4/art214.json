@@ -1,0 +1,12 @@
+{
+ "number": "第二百十四条",
+ "heading_en": "Correction of Estimates",
+ "summary_ja": "推計値と実績値の乖離の基準、構造的要因の考慮、実績値が上回る場合の修正を定める。",
+ "summary_en": "Requires clear criteria for significant divergence between estimates and actual values, consideration of structural factors, and revision of estimates where actual values persistently exceed estimates.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish clear criteria for situations in which the estimated and actual values of PD, LGD or EAD diverge significantly and the validity of the estimates is in doubt.",
+  "In establishing the criteria under the preceding paragraph, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall take into account changes in the business environment and other structural factors affecting the actual default rate.",
+  "Where the actual value of PD, LGD or EAD continues to exceed the estimated value, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall revise its estimation method and estimates so as to reflect the actual values of PD, LGD or EAD."
+ ],
+ "terms": []
+}

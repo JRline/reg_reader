@@ -1,0 +1,12 @@
+{
+ "number": "第二百五十三条の四",
+ "heading_en": "Requirements for the Profit-and-Loss Attribution Test",
+ "summary_ja": "損益要因分析テストの目的(内部モデル方式の簡易化の重要性の評価)、簡易化が重要な場合の使用制限・停止、及び文書化を定める。",
+ "summary_en": "Sets the purpose of the profit-and-loss attribution test (assessing the materiality of simplification of the internal model approach), the restriction or suspension of use where simplification is material, and documentation.",
+ "paragraphs": [
+  "The profit-and-loss attribution test shall compare, daily and for each trading desk, risk-theoretical profits and losses with hypothetical profits and losses, in order to compare the front office model with the internal model approach and assess the materiality of simplification of the internal model approach (meaning reducing the computational burden in the valuation models of the internal model approach relative to the valuation models of the front office; the same applies hereinafter in this Article).",
+  "An Ultimate Designated Parent Company adopting the internal model approach shall restrict or suspend the use of the internal model approach where, in the profit-and-loss attribution test, simplification of the internal model approach is judged to be material.",
+  "An Ultimate Designated Parent Company adopting the internal model approach shall prepare, for the profit-and-loss attribution test for each trading desk, a document on the content of the simplification of the internal model approach, the definitions of risk-theoretical profits and losses and hypothetical profits and losses, the results of that profit-and-loss attribution test, and the response policy adopted in light of those results."
+ ],
+ "terms": []
+}

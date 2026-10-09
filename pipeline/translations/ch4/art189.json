@@ -1,0 +1,13 @@
+{
+ "number": "第百八十九条",
+ "heading_en": "Requirements on Data Sampling",
+ "summary_ja": "推計に用いるデータの母集団・経済条件・標本数と期間・テストに関する要件を定める。",
+ "summary_en": "Requires that the data used for estimation be representative of the portfolio, reflect current economic conditions, be sufficient in sample and period, and perform well out of sample.",
+ "paragraphs": [
+  "The population of exposures represented by the data used for estimation, the credit extension standards in effect when the data was sampled, and other material characteristics shall be approximately the same as, or at least similar to, those of the overall exposures of the Ultimate Designated Parent Company adopting the internal ratings-based approach.",
+  "The economic conditions or market environment underlying the data shall correspond to current and foreseeable future economic conditions or market environment.",
+  "The number of exposures in the sample and the period of the data used for quantification shall be sufficient for the Ultimate Designated Parent Company adopting the internal ratings-based approach to be confident that the estimate is accurate and robust.",
+  "The method used for estimation shall have performed well in tests using data other than the sample."
+ ],
+ "terms": []
+}

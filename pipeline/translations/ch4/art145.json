@@ -1,0 +1,23 @@
+{
+ "number": "第百四十五条",
+ "heading_en": "Definitions Relating to Purchased Receivables",
+ "summary_ja": "購入債権の款で用いるEL及びデフォルト・リスクの意義を定める。",
+ "summary_en": "Defines EL and default risk for the purposes of the Subsection on purchased receivables.",
+ "sections_en": {
+  "第三節 第六款": "Purchased Receivables"
+ },
+ "paragraphs": [
+  "In this Subsection, \"EL\" means the expected loss rate, corresponding to the default risk portion, relative to the total amount of exposures included in a pool of purchased receivables.",
+  "In this Subsection, \"default risk\" means the risk that purchased receivables will default."
+ ],
+ "terms": [
+  {
+   "ja": "EL",
+   "en": "EL"
+  },
+  {
+   "ja": "デフォルト・リスク",
+   "en": "default risk"
+  }
+ ]
+}

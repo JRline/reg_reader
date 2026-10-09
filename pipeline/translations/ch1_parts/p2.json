@@ -1,0 +1,251 @@
+{
+ "segments": {
+  "95": "(xxxvii) \"Exposures to Financial Institutions, etc.\" means the following exposures.",
+  "96": "(a) Exposures to financial institutions (excluding the persons set out in item (vii)(b); the same applies in sub-item (a) of the following item).",
+  "97": "(b) Exposures to public sector entities other than foreign central governments that are treated as exposures to financial institutions under the treatment in the country where the public sector entity was established.",
+  "98": "(c) Exposures to multilateral development banks (meaning institutions established by multiple countries that provide funds to, or give expert advice on, economic and social development projects; the same applies hereinafter) (excluding those set out in sub-item (g) of the preceding item).",
+  "99": "(d) Exposures to foreign securities firms (meaning foreign securities firms prescribed in Article 58 of the Act; the same applies hereinafter) and to foreign Ultimate Designated Parent Companies.",
+  "100": "(e) Exposures to foreign banks (meaning foreign banks prescribed in Article 10, paragraph (2), item (viii) of the Banking Act (Act No. 59 of 1981); the same applies hereinafter), bank holding companies (meaning bank holding companies prescribed in Article 2, paragraph (13) of that Act; the same applies hereinafter), and foreign companies equivalent to bank holding companies.",
+  "101": "(f) Exposures to Type I financial instruments business operators, Ultimate Designated Parent Companies and foreign companies equivalent to Ultimate Designated Parent Companies to which a risk weight is to be applied under Article 30 as provided for in Article 31, to management companies (meaning a juridical person that has its head office or other principal business office or place of business in Japan (excluding an Ultimate Designated Parent Company), where the juridical person and its subsidiaries (meaning subsidiaries prescribed in Article 8, paragraph (3) of the Ordinance on Terminology, Forms, and Preparation Methods of Financial Statements, etc. (Ministry of Finance Order No. 59 of 1963)) include a Type I financial instruments business operator and the juridical person calculates its aggregate capital and required capital on the basis of the consolidated financial statements it prepares, or a foreign person equivalent thereto; the same applies hereinafter), and to foreign securities firms.",
+  "102": "(g) Exposures to insurance companies (meaning insurance companies prescribed in Article 2, paragraph (2) of the Insurance Business Act (Act No. 105 of 1995); the same applies hereinafter) and insurance holding companies (meaning insurance holding companies prescribed in Article 2, paragraph (16) of that Act; the same applies hereinafter) to which a risk weight is to be applied under Article 30 as provided for in Article 31-2.",
+  "103": "(xxxvii-2) \"Exposures to Large Regulated Financial Institutions, etc.\" means, among exposures to corporates, etc., exposures to the following persons.",
+  "104": "(a) A \"Large Regulated Financial Institution\" (meaning the following persons; the same applies in sub-item (b)(2)).",
+  "105": "(1) A regulated financial institution (meaning a financial institution, an insurance company or a small-amount short-term insurer (meaning a small-amount short-term insurer prescribed in Article 2, paragraph (18) of the Insurance Business Act; the same applies in Article 3, paragraph (3)), or a foreign person equivalent thereto, or a bank holding company or an insurance holding company, or a foreign person equivalent thereto; the same applies hereinafter) whose assets recorded on its consolidated balance sheet are equivalent to 100 billion U.S. dollars or more.",
+  "106": "(2) A subsidiary, etc. of a person set out in (1) (meaning a subsidiary, etc. prescribed in Article 15-16-2, paragraph (2) of the Financial Instruments and Exchange Act Enforcement Order (Cabinet Order No. 321 of 1965; hereinafter referred to as the \"Order\"); the same applies hereinafter).",
+  "107": "(b) An \"Unregulated Financial Institution\" (meaning a person that mainly engages in the financial business, the insurance business or a business belonging to a similar category (including a foreign person equivalent thereto), other than the persons set out in the following (excluding persons that are not found to be highly correlated with financial institutions or other persons found to affect the financial system)).",
+  "108": "(1) A regulated financial institution.",
+  "109": "(xxxvii-3) \"Trade Exposures\" means exposures arising from derivative transactions, repo-style transactions and long settlement period transactions (meaning long settlement period transactions prescribed in Article 46, paragraph (2); the same applies in Article 14, item (i) and Article 45, paragraph (1)), and from the provision of collateral relating to these.",
+  "110": "(xxxvii-4) \"Direct Clearing Participant\" means a person that directly enters into a contract with a central counterparty under which the person is made to assume obligations relating to trade exposures by way of underwriting, novation or any other method.",
+  "111": "(xxxvii-5) \"Indirect Clearing Participant\" means a person that has trade exposures to a central counterparty through a direct clearing participant.",
+  "112": "(xxxvii-6) \"Default Fund\" means money or other property that a direct clearing participant deposits with a central counterparty to cover losses where the participant itself or another direct clearing participant causes a loss to the central counterparty through default or inability to pay.",
+  "113": "(xxxviii) \"Exposures to Residential Real Estate\" means any of the following loans that belongs to a pool consisting of exposures with similar risk characteristics and is managed on a pool basis.",
+  "114": "(a) A loan to an individual who owns real estate and resides in that real estate.",
+  "115": "(b) A loan that satisfies all of the following requirements.",
+  "116": "(1) It is made to an individual.",
+  "117": "(2) The use of the funds is limited to housing-related expenses such as the construction, acquisition, or extension or alteration of a home.",
+  "118": "(3) It falls under any of the following requirements. (i) It is not for the purpose of being let for rent. (ii) Where it is for the purpose of being let for rent, repayment does not depend solely on rent or other income from the housing for which the funds are used.",
+  "119": "(4) The amount of the exposure to a single obligor (being the amount before application of the credit risk mitigation techniques prescribed in Chapter 3, Section 6, and being limited to one for which the use of the funds is limited to housing-related expenses such as the construction, acquisition, or extension or alteration of a home (excluding, where it is for the purpose of being let for rent, one for which repayment depends solely on rent or other income from that housing)) is 100 million yen or less.",
+  "120": "(xxxix) \"Qualifying Revolving Retail Exposures\" means exposures that belong to a pool consisting of exposures with similar risk characteristics, are managed on a pool basis, and have all of the following characteristics.",
+  "121": "(a) It is an exposure whose outstanding balance may fluctuate at the obligor's discretion within a limit set by contract (hereinafter referred to as a \"Revolving Exposure\"), and is unsecured, with no contract concluded as to maintenance of the credit line, and is one that the Ultimate Designated Parent Company, etc. (meaning an Ultimate Designated Parent Company or its consolidated subsidiary juridical persons, etc.; the same applies hereinafter) may cancel unconditionally.",
+  "122": "(b) It is an exposure to an individual.",
+  "123": "(c) The upper limit of the balance for one individual is 10 million yen or less.",
+  "124": "(d) The volatility of the loss rate (meaning the loss rate calculated on the basis of economic loss; the same applies hereinafter) of low-PD exposures in the portfolio to which the exposure belongs is low.",
+  "125": "(e) Data on the loss rate of the exposure is stored in a form that makes it possible to verify the volatility of losses.",
+  "126": "(xxxix-2) \"Qualifying Revolving Retail Exposures to Transactors\" means, among qualifying revolving retail exposures, those that satisfy the requirements set out in (a) or (b) below according to the category of cases set out in (a) or (b).",
+  "127": "(a) In the case of an exposure relating to the use of a credit card (limited to an exposure relating to an obligation arising from purchasing goods or rights from a specific seller, or receiving services for consideration from a person engaged in the business of providing specific services, by presenting that credit card): repayment has been made on the prescribed date without delay over the past twelve months.",
+  "128": "(b) In a case other than that set out in (a): the outstanding balance has been zero over the past twelve months.",
+  "129": "(xl) \"Other Retail Exposures\" means those of the exposures set out in (a) or (b) below that do not fall under exposures to residential real estate or qualifying revolving retail exposures, that belong to a pool consisting of exposures with similar risk characteristics, and that are managed on a pool basis.",
+  "130": "(a) Exposures to individuals (excluding those for business purposes).",
+  "131": "(b) Exposures not falling under (a), for which the amount obtained by deducting the amount of exposures guaranteed by credit guarantee corporations, etc. from the total amount of exposures to a single obligor is less than 100 million yen (including cases where the deducted amount temporarily becomes 100 million yen or more).",
+  "132": "(xli) \"LGD\" means the ratio of the amount of loss incurred on a defaulted exposure to EAD.",
+  "133": "(xlii) \"EAD\" means the amount of an exposure at the time of default.",
+  "134": "(xliii) \"Project Finance\" means, among exposures to corporates, credit extended to a specific project such as a power plant, chemical plant, mining project, transportation infrastructure, environmental infrastructure or telecommunications infrastructure, where the source of interest payments and repayment is mainly limited to the revenue from that project and, through the terms of the credit, the creditor has a substantial degree of control over the tangible assets of the project and the revenue from those tangible assets.",
+  "135": "(xliv) \"Object Finance\" means, among exposures to corporates, credit extended for the acquisition of tangible assets such as ships, aircraft, satellites, railways or vehicles, where the source of interest payments and repayment is limited to the revenue from those tangible assets, those tangible assets are taken as collateral, and, through the terms of the credit, the creditor has a substantial degree of control over those tangible assets and the revenue from them.",
+  "136": "(xlv) \"Commodity Finance\" means, among exposures to corporates, short-term credit extended to finance reserves, inventories or receivables of commodities listed on a commodity exchange (meaning a commodity exchange prescribed in Article 2, paragraph (4) of the Commodity Derivatives Act (Act No. 239 of 1950) and its foreign equivalents; the same applies hereinafter), such as crude oil, metals and grains, where the source of interest payments and repayment is limited to the proceeds from the sale of those listed commodities and, through the terms of the credit, the creditor has a substantial degree of control over those listed commodities and the revenue from them.",
+  "137": "(xlvi) \"Commercial Real Estate Lending\" means, among exposures to corporates, credit extended for the acquisition of real estate such as rental office buildings, commercial buildings, residential real estate, hotels, factories and warehouses, where the source of interest payments and repayment is limited to the revenue from that real estate, that real estate is taken as collateral, and, through the terms of the credit, the creditor has a substantial degree of control over that real estate and the revenue from it.",
+  "138": "(xlvii) \"Specialized Lending\" is a collective term for project finance, object finance, commodity finance and commercial real estate lending.",
+  "139": "(xlviii) \"PD\" means the probability that an obligor defaults within one year.",
+  "140": "(xlix) \"High-Volatility Commercial Real Estate Lending\" means commercial real estate lending that falls under any of the following.",
+  "141": "(a) Credit extended for the acquisition of commercial real estate whose loss volatility is higher than that of other specialized lending.",
+  "142": "(b) Credit extended for the acquisition of land, or for development and construction of buildings, where, on the execution date of the credit, the source of repayment of the credit is based on uncertain sales of the real estate or substantially uncertain cash flows (including cases where the occupancy rate falls below that of similar real estate at the location of the real estate). However, this excludes cases where the obligor receives funds from a third party other than the creditor through substantial equity exposures.",
+  "143": "(c) Credit extended for commercial real estate located in a foreign country where such lending is treated as high-volatility commercial real estate lending under that country's banking supervision.",
+  "144": "(l) \"Purchased Receivables\" is a collective term for purchased retail exposures and purchased corporate, etc. exposures.",
+  "145": "(li) \"Exposures to SMEs\" means, among exposures to corporates, exposures to a corporate whose sales (meaning consolidated sales where the corporate prepares consolidated financial statements or where an Ultimate Designated Parent Company adopting the internal ratings-based approach manages it as belonging to the same group; the same applies hereinafter in this item, Article 129, paragraph (2) and Article 152) are less than 5 billion yen. However, where it is not appropriate to use the corporate's sales in judging its business scale, as where the corporate engages in wholesale business, exposures to a corporate whose total assets are less than 5 billion yen, among exposures to corporates, may be included in this.",
+  "146": "(lii) \"Dilution Risk\" means the risk that purchased receivables will decrease due to cancellation or rescission of the contract relating to the purchased receivables, set-off in which a claim of the obligor of the purchased receivables against the transferor is the active claim and the purchased receivables held by the transferee of the purchased receivables are the passive claim, or other grounds.",
+  "147": "(liii) \"Eligible Receivables Collateral\" means receivables that satisfy all of the following requirements and have been provided as collateral to an Ultimate Designated Parent Company adopting the internal ratings-based approach.",
+  "148": "(a) The original maturity is one year or less, and they are receivables payable on the basis of a commercial transaction that the obligor of the secured claim has entered into with a third party.",
+  "149": "(b) They are not receivables relating to securitization, loan participation or credit derivatives.",
+  "150": "(c) They are not receivables against a subsidiary, etc. of the obligor or any other party that is highly correlated with the obligor in terms of default.",
+  "151": "(liv) \"Eligible Real Estate Collateral\" means collateral established on commercial real estate or residential real estate that has all of the following characteristics.",
+  "152": "(a) The risk of the obligor of the secured claim depends on the obligor's repayment capacity, which is funded from sources other than that real estate or a project relating to that real estate.",
+  "153": "(b) The value of the real estate that is the subject of the collateral does not depend significantly on the obligor's performance.",
+  "154": "(c) The secured claim does not fall under commercial real estate lending.",
+  "155": "(lv) \"Eligible Other Asset Collateral\" is a collective term for eligible ship collateral, eligible aircraft collateral, eligible golf club membership collateral and eligible movables collateral that satisfy certain requirements.",
+  "156": "(lvi) \"Short Position\" means a sold (short) position.",
+  "157": "(lvii) \"Long Position\" means a bought (long) position.",
+  "158": "(lviii) \"Purchased Corporate, etc. Exposures\" means exposures to corporates, etc. that an Ultimate Designated Parent Company adopting the internal ratings-based approach has acquired from a third party.",
+  "159": "(lix) \"Eligible Purchased Corporate, etc. Exposures\" means purchased corporate, etc. exposures that belong to an eligible purchased corporate, etc. exposure pool.",
+  "160": "(lx) \"Eligible Purchased Corporate, etc. Exposure Pool\" means a highly diversified pool consisting of purchased corporate, etc. exposures that have all of the following characteristics.",
+  "161": "(a) The transferor of the purchased receivables is an independent third party, and the Ultimate Designated Parent Company adopting the internal ratings-based approach that acquired the purchased receivables has not directly or indirectly extended credit to it.",
+  "162": "(b) The transactions relating to the purchased receivables between the transferor and the obligor of the purchased receivables are transactions between independent parties.",
+  "163": "(c) The transferee of the purchased corporate, etc. exposures has a right to all or part of the principal and interest payments from the pool of purchased corporate, etc. exposures. However, where it has a right to only part, this is limited to cases where the payments are allocated pro rata with the other right holders in respect of those purchased corporate, etc. exposures according to the ratio of the amounts of their exposures."
+ },
+ "terms": [
+  {
+   "ja": "金融機関等向けエクスポージャー",
+   "en": "Exposures to Financial Institutions, etc."
+  },
+  {
+   "ja": "国際開発銀行",
+   "en": "Multilateral Development Bank"
+  },
+  {
+   "ja": "外国証券業者",
+   "en": "Foreign Securities Firm"
+  },
+  {
+   "ja": "外国銀行",
+   "en": "Foreign Bank"
+  },
+  {
+   "ja": "銀行持株会社",
+   "en": "Bank Holding Company"
+  },
+  {
+   "ja": "経営管理会社",
+   "en": "Management Company"
+  },
+  {
+   "ja": "保険会社",
+   "en": "Insurance Company"
+  },
+  {
+   "ja": "保険持株会社",
+   "en": "Insurance Holding Company"
+  },
+  {
+   "ja": "大規模規制金融機関等向けエクスポージャー",
+   "en": "Exposures to Large Regulated Financial Institutions, etc."
+  },
+  {
+   "ja": "大規模規制金融機関",
+   "en": "Large Regulated Financial Institution"
+  },
+  {
+   "ja": "規制金融機関",
+   "en": "Regulated Financial Institution"
+  },
+  {
+   "ja": "少額短期保険業者",
+   "en": "Small-Amount Short-Term Insurer"
+  },
+  {
+   "ja": "非規制金融機関",
+   "en": "Unregulated Financial Institution"
+  },
+  {
+   "ja": "トレード・エクスポージャー",
+   "en": "Trade Exposures"
+  },
+  {
+   "ja": "直接清算参加者",
+   "en": "Direct Clearing Participant"
+  },
+  {
+   "ja": "間接清算参加者",
+   "en": "Indirect Clearing Participant"
+  },
+  {
+   "ja": "清算基金",
+   "en": "Default Fund"
+  },
+  {
+   "ja": "居住用不動産向けエクスポージャー",
+   "en": "Exposures to Residential Real Estate"
+  },
+  {
+   "ja": "適格リボルビング型リテール向けエクスポージャー",
+   "en": "Qualifying Revolving Retail Exposures"
+  },
+  {
+   "ja": "リボルビング型エクスポージャー",
+   "en": "Revolving Exposure"
+  },
+  {
+   "ja": "最終指定親会社等",
+   "en": "Ultimate Designated Parent Company, etc."
+  },
+  {
+   "ja": "損失率",
+   "en": "Loss Rate"
+  },
+  {
+   "ja": "トランザクターに対する適格リボルビング型リテール向けエクスポージャー",
+   "en": "Qualifying Revolving Retail Exposures to Transactors"
+  },
+  {
+   "ja": "その他リテール向けエクスポージャー",
+   "en": "Other Retail Exposures"
+  },
+  {
+   "ja": "LGD",
+   "en": "LGD"
+  },
+  {
+   "ja": "EAD",
+   "en": "EAD"
+  },
+  {
+   "ja": "プロジェクト・ファイナンス",
+   "en": "Project Finance"
+  },
+  {
+   "ja": "オブジェクト・ファイナンス",
+   "en": "Object Finance"
+  },
+  {
+   "ja": "コモディティ・ファイナンス",
+   "en": "Commodity Finance"
+  },
+  {
+   "ja": "事業用不動産向け貸付け",
+   "en": "Commercial Real Estate Lending"
+  },
+  {
+   "ja": "特定貸付債権",
+   "en": "Specialized Lending"
+  },
+  {
+   "ja": "PD",
+   "en": "PD"
+  },
+  {
+   "ja": "ボラティリティの高い事業用不動産向け貸付け",
+   "en": "High-Volatility Commercial Real Estate Lending"
+  },
+  {
+   "ja": "購入債権",
+   "en": "Purchased Receivables"
+  },
+  {
+   "ja": "中堅中小企業向けエクスポージャー",
+   "en": "Exposures to SMEs"
+  },
+  {
+   "ja": "希薄化リスク",
+   "en": "Dilution Risk"
+  },
+  {
+   "ja": "適格債権担保",
+   "en": "Eligible Receivables Collateral"
+  },
+  {
+   "ja": "適格不動産担保",
+   "en": "Eligible Real Estate Collateral"
+  },
+  {
+   "ja": "適格その他資産担保",
+   "en": "Eligible Other Asset Collateral"
+  },
+  {
+   "ja": "ショート・ポジション",
+   "en": "Short Position"
+  },
+  {
+   "ja": "ロング・ポジション",
+   "en": "Long Position"
+  },
+  {
+   "ja": "購入事業法人等向けエクスポージャー",
+   "en": "Purchased Corporate, etc. Exposures"
+  },
+  {
+   "ja": "適格購入事業法人等向けエクスポージャー",
+   "en": "Eligible Purchased Corporate, etc. Exposures"
+  },
+  {
+   "ja": "適格購入事業法人等向けエクスポージャープール",
+   "en": "Eligible Purchased Corporate, etc. Exposure Pool"
+  }
+ ]
+}

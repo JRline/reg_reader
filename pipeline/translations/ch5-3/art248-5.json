@@ -1,0 +1,15 @@
+{
+ "number": "第二百四十八条の五",
+ "heading_en": "Credit Risk-Weighted Assets for Central Counterparty-Related Exposures",
+ "summary_ja": "第三章及び第四章にかかわらず、中央清算機関に対するトレード・エクスポージャー、清算基金等の信用リスク・アセットはこの章により計算する。",
+ "summary_en": "Notwithstanding Chapters 3 and 4, credit RWA for trade exposures to a central counterparty, default funds and certain trade exposures to clearing participants are calculated under this Chapter.",
+ "paragraphs": [
+  "Notwithstanding the provisions of Chapter 3 and Chapter 4, the calculation of the credit risk-weighted assets of the exposures listed in the following items shall be as provided in this Chapter. (i) Trade exposures to a central counterparty. (ii) The default fund relating to a central counterparty. (iii) Where the Ultimate Designated Parent Company is an indirect clearing participant, trade exposures to a direct clearing participant that satisfy the requirements listed in Article 248-2, paragraph (2), item (ii)(a) and (b) (referred to as \"trade exposures to direct clearing participants\" in the following Article)."
+ ],
+ "terms": [
+  {
+   "ja": "直接清算参加者向けトレード・エクスポージャー",
+   "en": "trade exposures to direct clearing participants"
+  }
+ ]
+}

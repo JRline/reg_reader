@@ -1,0 +1,17 @@
+{
+ "number": "第二百四十八条の四の十九",
+ "heading_en": "Sensitivities, etc. of Foreign Exchange Delta Risk Factors",
+ "summary_ja": "外国為替のデルタ・リスク・ファクターは、外貨と報告通貨との直物為替レートの相対変化とし、リスク・ウェイトは11パーセントとする。",
+ "summary_en": "The foreign exchange delta risk factor is the relative change in the spot rate between the foreign currency and the reporting currency, with an 11% risk weight.",
+ "paragraphs": [
+  "The delta risk factor relating to foreign exchange shall be the relative change in the spot exchange rate between the foreign currency and the reporting currency of the Ultimate Designated Parent Company (meaning the market price of one unit of that foreign currency expressed in the reporting currency of the Ultimate Designated Parent Company; the same applies in the following paragraph and paragraph (2) of the following Article).",
+  "The \"relative change in the spot exchange rate\" in the preceding paragraph means the value obtained by dividing the change in the value of CVA or of a CVA hedging instrument when the spot exchange rate is changed by 1% relative to its present value by 0.01. In this case, where transactions referencing exchange rates between currencies that are not the reporting currency of the Ultimate Designated Parent Company (hereinafter in this paragraph and paragraph (2) of the following Article referred to as \"non-reporting currencies\") are conducted, the sensitivity to the spot exchange rate between the reporting currency of the Ultimate Designated Parent Company and each non-reporting currency shall be measured.",
+  "The risk weight RW_{k} of the risk factor provided in paragraph (1) shall be 11%."
+ ],
+ "terms": [
+  {
+   "ja": "非報告通貨",
+   "en": "non-reporting currencies"
+  }
+ ]
+}

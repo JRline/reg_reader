@@ -1,0 +1,10 @@
+{
+ "number": "s19.art6",
+ "heading_en": "Transitional Measures Concerning the LTV Ratio of Real Estate-Related Exposures",
+ "summary_ja": "担保物件の信用供与時点の価値が算出できない場合は適用日前直近の評価額を用いることができる。",
+ "summary_en": "Where the collateral value at origination cannot be determined, the most recent valuation before the Application Date may be used for the LTV ratio.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company cannot calculate the value of the property pledged as collateral at the time the credit was extended, in calculating the LTV ratio (meaning the LTV ratio prescribed in Article 35, paragraph (4) of the New Public Notice) used for determining the risk weight of exposures prescribed in Articles 35 through 37-2 of the New Public Notice that it holds on the Application Date, it may use the most recent appraised value of that property before the Application Date."
+ ],
+ "terms": []
+}

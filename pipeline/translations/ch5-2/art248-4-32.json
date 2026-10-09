@@ -1,0 +1,32 @@
+{
+ "number": "第二百四十八条の四の三十二",
+ "heading_en": "Market-Implied PD",
+ "summary_ja": "マーケット・インプライドPDは市場のクレジット指標から推計した期間構造を持つデフォルト確率とし、流動性の低い取引相手方については代替指標から所定の要件で推計する。",
+ "summary_en": "Market-implied PD is a term-structured default probability estimated from market credit indicators; for illiquid counterparties it is estimated from substitute indicators under stated requirements.",
+ "paragraphs": [
+  "The \"market-implied PD\" listed in item (i) of paragraph (2) of the preceding Article means a probability of default having a term structure, estimated from credit spreads observed in the market and other indicators relating to credit risk (referred to as \"credit indicators\" in the following paragraph).",
+  "Notwithstanding the preceding paragraph, the market-implied PD provided in the preceding paragraph for a counterparty whose credit indicators have low liquidity (hereinafter in this paragraph referred to as an \"illiquid counterparty\") shall be estimated from a credit indicator that substitutes for the credit indicator of that illiquid counterparty. In this case, the estimation shall satisfy the requirements specified in the following items according to the category of case listed in those items. (i) Where credit indicators exist for entities that are similar to the illiquid counterparty with respect to the elements constituting creditworthiness (hereinafter in this item and item (iii) referred to as \"comparable entities\") and they are highly liquid: use the highly liquid credit indicators of those comparable entities, and use an analytical method that takes into account the following variables and other variables that affect credit indicators. (a) Creditworthiness indicators. (b) Sector. (c) Region. (ii) Where the illiquid counterparty is allocated to a reference name having a highly liquid credit indicator: ensure the appropriateness of the mapping. (iii) Where no highly liquid credit indicator exists for comparable entities of the illiquid counterparty: base the estimation on a comprehensive analysis of credit risk; provided, however, that historical PD (meaning the probability of default obtained using data showing changes in creditworthiness that actually occurred in the past) alone shall not be used in the comprehensive analysis, and the probability of default shall be related to credit indicators."
+ ],
+ "terms": [
+  {
+   "ja": "マーケット・インプライドPD",
+   "en": "market-implied PD"
+  },
+  {
+   "ja": "クレジット指標",
+   "en": "credit indicators"
+  },
+  {
+   "ja": "流動性の低い取引相手方",
+   "en": "illiquid counterparty"
+  },
+  {
+   "ja": "類似企業",
+   "en": "comparable entities"
+  },
+  {
+   "ja": "ヒストリカルPD",
+   "en": "historical PD"
+  }
+ ]
+}

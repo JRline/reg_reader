@@ -1,0 +1,13 @@
+{
+ "number": "第二百七十四条",
+ "heading_en": "Market Risk Equivalent Amount of the Foreign Exchange Risk Category",
+ "summary_ja": "外国為替リスク・カテゴリーのマーケット・リスク相当額を、金及び外国為替の全体のネット・ポジションの額に八パーセントを乗じて算出する。",
+ "summary_en": "Calculates the foreign exchange risk category amount as 8% of the overall net position in gold and foreign exchange.",
+ "paragraphs": [
+  "The market risk equivalent amount of the foreign exchange risk category set forth in Article 271, paragraph (1), item (iii) shall be the amount obtained by multiplying by 8% the amount of the overall net position, calculated by the method prescribed in the following Article, for positions in gold and foreign exchange."
+ ],
+ "terms": [],
+ "sections_en": {
+  "第四節 第四款": "Foreign Exchange Risk Category"
+ }
+}

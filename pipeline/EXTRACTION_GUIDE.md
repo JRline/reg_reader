@@ -1,9 +1,92 @@
 # Extraction guide: PDF → structured, translated, cross-referenced feed
 
 This walks through turning a chapter of the source PDF into real content in the app,
-end to end. It's written for this regulation (`fsa-basel-cap-jp`, Chapter 2), but every
-script takes the chapter/feed as arguments, so the same steps work for the next chapter
-or the next regulation entirely.
+end to end. Every script takes the chapter/feed as arguments, so the same steps work for
+the next chapter or the next regulation entirely.
+
+There are two routes:
+
+- **Route A: in-repo, no chatbot.** This route was used for Chapter 3 and is the one to
+  prefer. A pdfplumber extractor keeps tables, image formulas and sub/superscripts.
+  Translations are written as per-article JSON files. Citations are found
+  deterministically. See the next section.
+- **Route B: chatbot batch.** This route was used for Chapter 2. It is described in
+  Steps 1–5 below, and is still valid if an external model does the translation.
+
+Steps 5b–7 (post-processing, formulas, validation, build) are shared by both routes.
+
+---
+
+## Route A — in-repo build (Chapter 3)
+
+```bash
+pip install pdfplumber jsonschema
+# 1. Extract: articles → paragraphs → 号/イロハ segments, plus tables and image positions.
+python3 pipeline/extract_chapter_v2.py pipeline/source/saishu1.pdf \
+    "第三章 信用リスクの標準的手法" "第四章 信用リスクの内部格付手法" pipeline/source/ch3_v2.json
+python3 pipeline/dump_articles.py pipeline/source/ch3_v2.json 第十四条 第十五条   # read text to translate
+#    (a chapter that is too big for one sitting can be split into slices translated in parallel by
+#     several agents: see `pipeline/translations/AGENT_BRIEF.md`, `check_translations.py`,
+#     `crop_token.py`, `merge_extras.py` — that is how Chapters 4–7 were built)
+# 2. Translate: one JSON per article in pipeline/translations/ch3/ (see below).
+# 3. Build the chapter's nodes into the feed (sections/款/目, articles, paragraphs, clauses, refs).
+python3 pipeline/build_chapter.py fsa-basel-cap-jp fsa-basel-cap-jp.ch3 第三章 \
+    "信用リスクの標準的手法" "Standardized Approach for Credit Risk" \
+    pipeline/source/ch3_v2.json pipeline/translations/ch3
+# 4. Then Step 5b (post-passes), 5c (formulas/tables), 6, 7 as below.
+```
+
+What the v2 extractor (`extract_chapter_v2.py`) handles that v1 didn't:
+
+- **Tables.** Tables come out as `{{T:<id>}}` tokens in the text, with the cells in the
+  extraction's `tables`. Ruled tables are found by pdfplumber. A table split across a page
+  break is merged (`continued_on`). Tables that pdfplumber crops wrongly get a bounding
+  box in `pipeline/source/table_region_overrides.json`.
+- **Image formulas.** These become `{{F:<anchor>}}` tokens (anchor `p<page>i<n>`), inline
+  or display depending on image height. The text around them stays intact.
+- **Sub/superscripts.** Small glyphs attach to their line as `X_{i}` / `X^{2}`, instead of
+  falling onto separate lines.
+- **Structure.** 節/款/目 headings (`division` = 目) are detected, as are two-line article
+  headings and 削除 ranges (第N条から第M条まで　削除). A display formula that the PDF
+  sorts ahead of its item marker is swapped back.
+
+It reproduces v1's Chapter 2 text exactly, so it can be used for any chapter.
+
+**Two special shapes.** A chapter that is one huge article (Chapter 1's 第一条, 216 item segments)
+is translated in segment ranges (`dump_segments.py`, `ch1_parts/`, `assemble_ch1.py`; brief addendum
+`AGENT_BRIEF_CH1_FUSOKU.md`). The 附則 repeat article numbers block by block, so `extract_fusoku.py` gives every
+entry a unique `key`, and `build_chapter.py`/`dump_articles.py`/`check_translations.py` identify entries by `key`
+when the extraction has one (`"nested_ids": true` nests article ids under their block).
+
+**Check the extraction before translating.** Wrapped headings can end up glued to the previous
+article's last paragraph (the next article then has no heading), a table that continues over a
+page can swallow a second table, and the last chapter runs on into the 附則/別表. Chapters 4–7's
+repairs are in `pipeline/fix_extractions.py` and `finish_ch7.py`; do the same for a new chapter
+before building.
+
+**Translation files** (`pipeline/translations/<chapter>/<article>.json`) have this shape:
+
+```json
+{"number": "第十四条", "heading_en": "...", "summary_ja": "...", "summary_en": "...",
+ "paragraphs": ["English for 項1 (with the same {{T:}}/{{F:}} tokens)", "..."],
+ "terms": [{"term_ja": "...", "term_en": "..."}],
+ "sections_en": {"第六節 第三款 第一目": "Division 1 ..."}}
+```
+
+`build_chapter.py` refuses a paragraph whose `{{T}}`/`{{F}}` tokens differ between JA and
+EN. Citations come from `ja_refs.py`. That covers:
+
+- law and notice names, including notices cited by full title or
+  "(…告示第…号)" with a 「short name」
+- 同告示 / 同法 carry-over
+- ranges, e.g. 第一号から第四号まで → "items (i) through (iv)"
+
+Each citation's `text_en` is the English form actually present in the translation.
+`ja_refs.py`'s `NOTICES`/`LAWS`/`DEFINED_NAMES` tables are where a new instrument goes.
+
+**Tables:** add curated cells to `feeds/<feed>/tables.json` under the token id
+(`header_rows`, `rows` of `{ja, en, colspan, rowspan}`; `null` = covered by a span).
+`build_site.py` lists any `{{T:}}`/`{{F:}}` token with no entry.
 
 Prerequisites:
 ```bash
@@ -13,7 +96,7 @@ export ANTHROPIC_API_KEY=...   # only needed for step 3
 
 ---
 
-## Step 1 — Extract the chapter's articles from the PDF
+## Step 1 — Extract the chapter's articles from the PDF (Route B)
 
 This is the mechanical half: no chatbot involved, fully deterministic, and it's already
 been validated to reproduce the exact hand-verified text from Article 3 character-for-character.
@@ -123,6 +206,55 @@ for `pipeline/raw/<article_id>.summary.json` automatically.
 
 ---
 
+## Step 5b — Deterministic post-processing (no model calls)
+
+Run in this order after any content change; each is idempotent (a second run changes
+nothing):
+
+```bash
+python3 pipeline/reresolve_refs.py     fsa-basel-cap-jp fsa-basel-cap-jp.ch2   # internal citations
+python3 pipeline/link_external_refs.py fsa-basel-cap-jp fsa-basel-cap-jp.ch2   # cross-feed citations
+python3 pipeline/refine_clauses.py     fsa-basel-cap-jp fsa-basel-cap-jp.ch2   # clause splitting
+python3 pipeline/annotate_cues.py      fsa-basel-cap-jp fsa-basel-cap-jp.ch2   # in-clause cues (after refine)
+```
+
+## Step 5c — Formulas (hand-authored)
+
+The source PDF prints its formulas as images, which extraction can't see. Formulas live
+beside the feed in two files, kept apart so the notation can be swapped wholesale:
+
+- `feeds/<feed>/formulas.json` holds:
+  - each formula's structure (`lines`, written against variable ids, e.g.
+    `"CET1_ratio = CET1 / CRWA >= 4.5%"`)
+  - the paragraph it belongs to (`node_id`) and its `source`
+  - every variable's meaning (`name_*`, `desc_*`, `defined_at`)
+
+  Grammar:
+  - numbers (`4.5%`, `12.5`) and ids
+  - `+ - * / ^` and parentheses
+  - `max min sqrt exp ln abs Phi`, and `sum(index[, upper], body)`
+  - `=`/`>=`/`<=`
+
+  `/` is drawn as a stacked fraction. A formula with an `anchor` (`p101i8`) replaces the
+  `{{F:p101i8}}` token at its image's spot in the text (`display: block|inline`).
+  Otherwise it is shown under its paragraph. Chapter 3's 47 formulas are authored in
+  `pipeline/translations/ch3_formulas.py`, which merges them in.
+- `feeds/<feed>/notation.json` — display only: id → symbol, with `X_{sub}`/`X^{sup}`.
+  Replace this file to adopt a different notation standard.
+
+`source` is one of:
+
+- `transcribed`: read off the PDF image. Crop it with
+  `pdftoppm -r 300 -f N -l N -x … -y …` and compare.
+- `text_derived`: written from the article's own wording.
+- `image_reconstructed`: an image formula rebuilt from wording elsewhere, shown with a ⚠.
+  Never use it when the PDF is at hand, because the PDF is in `pipeline/source/`.
+
+A transcription that needed judgement carries `note_ja`/`note_en`, and the reader shows it. `build_site.py` rejects unknown variables,
+unbalanced parentheses and dangling `node_id`/`defined_at`.
+
+---
+
 ## Step 6 — Validate
 
 ```bash
@@ -139,12 +271,14 @@ checking the feed on its own, e.g. after hand-editing something.
 
 ---
 
-## Step 7 — Look at it
+## Step 7 — Build the site and look at it
 
 ```bash
-python3 -m http.server 8877        # from the project root
+python3 pipeline/build_site.py     # writes site/
 ```
-Open `http://localhost:8877/app/index.html`.
+Open `site/index.html` directly in a browser — no server needed. (For live work on
+`app/`, `python3 pipeline/serve_no_cache.py 8877` and `http://localhost:8877/app/index.html`
+still work and skip the rebuild.)
 
 ---
 
@@ -156,27 +290,17 @@ markers, then Steps 2–7 unchanged. For a whole new regulation, also write its
 `manifest.json` (see `feeds/fsa-basel-cap-jp/manifest.json` for the shape) and add it to
 `feeds/index.json`.
 
-**Known content gap: mathematical formulas are silently dropped.** Several articles say
-things like "次の算式により得られる比率について" (the ratio obtained by the following
-formula) and then the formula itself is just... absent from `ch2_articles.json`. This
-isn't a bug in `extract_chapter.py` — the formulas in the source PDF are embedded as
-images/vector graphics, not selectable text, so `pypdf` never sees them at all. Confirmed
-by checking the raw PDF page text directly: there's a blank line in the extraction
-exactly where Article 2's first formula should be. Since this chapter is literally
-titled "算式等" (Formulas, etc.), expect this in multiple articles, not just one.
+**Formulas and tables in v1 output.** `extract_chapter.py` (v1, pypdf) drops image
+formulas silently and flattens tables into running text. That is why Route A uses
+`extract_chapter_v2.py`, which leaves `{{F:}}`/`{{T:}}` tokens in their place. If you do use
+v1 or a chatbot, tell the model that a missing formula is expected and must not be
+invented.
 
-This means: **don't let the chatbot invent a formula to fill the gap.** Tell it explicitly
-that a missing formula is expected and should be marked as omitted, not reconstructed
-from context. The real fix is transcribing formulas from the PDF by hand (or screenshotting
-the relevant page region and embedding it as an image in that node) — there's no
-extraction shortcut for content that was never text in the first place.
+**Resolution limits worth knowing:**
 
-Two things this pipeline does **not** yet automate, worth knowing before you hit them:
-- **Article-level relative refs** (前条/前二条, "the preceding article/articles") aren't
-  resolved yet — only paragraph-level 前項/前二項 are. They'll show up as `unresolved`,
-  which is honest but not linked. Add the pattern to `resolve_internal_ref()` in
-  `ingest.py` when it starts mattering.
-- **Absolute internal refs** (第五条第一項, citing a specific article by number rather
-  than relatively) also resolve as `unresolved` right now — worth adding once most of a
-  chapter's stubs have been filled in, since only then do the target ids reliably exist
-  to resolve against.
+- Item-level relative refs (前号/次号/同号, or a bare 第N号) stay `unresolved` by design
+  (CLAUDE.md rule 6). They are most of what's left.
+- 前二項 inside a 「」 replacement phrase (「…中「前二項」とあるのは…」) is quoted text, not a
+  live citation. It shows as `internal_unavailable`.
+- A citation to an instrument with no feed is `external_unavailable`.
+  `pipeline/EXTERNAL_INFO_REQUESTS.md` lists what to fetch.

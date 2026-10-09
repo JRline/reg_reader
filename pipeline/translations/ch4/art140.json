@@ -1,0 +1,10 @@
+{
+ "number": "第百四十条",
+ "heading_en": "PD of Retail Exposures",
+ "summary_ja": "リテール向けエクスポージャーのPDを一年間のデフォルト確率の推計値とし、適格リボルビング型(トランザクター以外)は〇・一パーセント、その他は〇・〇五パーセントを下限とする。",
+ "summary_en": "PD for retail exposures is the one-year default probability estimate, with a floor of 0.1% for non-transactor qualifying revolving retail exposures and 0.05% for other retail exposures.",
+ "paragraphs": [
+  "The PD used in the formula for the amount of credit risk-weighted assets and in calculating expected loss for retail exposures shall be an estimate, expressed as a percentage, of the one-year probability of default corresponding to that retail exposure or the pool to which that retail exposure belongs.",
+  "The PD used in the formula for the amount of credit risk-weighted assets and in calculating expected loss for retail exposures in the preceding paragraph shall not be lower than the value specified in each of the following items according to the category of exposure listed in that item. (i) Qualifying revolving retail exposures other than qualifying revolving retail exposures to transactors: 0.1%. (ii) Retail exposures other than the exposures listed in the preceding item: 0.05%."
+ ]
+}

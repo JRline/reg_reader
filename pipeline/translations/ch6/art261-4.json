@@ -1,0 +1,16 @@
+{
+ "number": "第二百六十一条の四",
+ "heading_en": "Vega Risk Sensitivity",
+ "summary_ja": "ベガ・リスクの感応度の算式、オプション性商品の取扱い、インプライド・ボラティリティ及び時価評価モデルの分布を定め、独自の手法を認める。",
+ "summary_en": "Sets the formula for the vega risk sensitivity and the treatment of option-like products, implied volatility and the distribution of the valuation model, and permits an own method with prior notification.",
+ "sections_en": {
+  "第三節": "Standardized Approach",
+  "第三節 第二款": "Sensitivities-Based Method under the Standardized Approach",
+  "第三節 第二款 第三目": "Sensitivities under the Sensitivities-Based Method"
+ },
+ "paragraphs": [
+  "The vega risk sensitivity shall be calculated as provided in the following items. (i) It shall be calculated by the following formula. {{F:p360i1}} s_{k} is the vega risk sensitivity of option risk; σ_{i} is the implied volatility of instrument i, which includes optionality; σ_{i}+Δσ_{i} is the value obtained by changing the implied volatility of instrument i by a small change width (Δσ_{i}); V_{i}(σ_{i}) is a function of the implied volatility of instrument i as its variable and represents the market value of instrument i. (ii) Among products having optionality, those falling under (a) or (b) below shall use the method prescribed in (a) or (b), respectively. (a) Options with no maturity: a method of applying the prescribed longest maturity tenor. In this case, risks that cannot be captured by applying the longest maturity tenor shall be subject to the residual risk add-on prescribed in Article 270, paragraph (1). (b) Option-like products with no strike price or barrier, and option-like products with multiple strike prices or barriers: a method of recognizing strike prices and maturities in the same manner as the option mark-to-market valuation used for internal management. (iii) For implied volatility, one of the following shall be used. (a) Implied volatility based on the sticky strike method (meaning that the position or shape of the volatility surface does not change as the price of the underlying asset changes). (b) Implied volatility based on the sticky delta method (meaning that the position of the volatility surface changes in the same direction and by the same amount as the change in the price of the underlying asset) that does not change relative to the level of the delta risk sensitivity. (iv) The distribution of the mark-to-market valuation model used to calculate the vega risk sensitivity shall be the one prescribed in (a) or (b) below according to the following categories of risk class. (a) General interest rate risk and credit spread risk: lognormal distribution or normal distribution. (b) Equity risk, commodity risk and foreign exchange risk: lognormal distribution. (v) The effect of CVA risk shall not be taken into account.",
+  "Notwithstanding the preceding paragraph, where an Ultimate Designated Parent Company deems it necessary for internal risk management, it may calculate the vega risk sensitivity using its own method. In this case, an Ultimate Designated Parent Company using its own method shall notify the Commissioner of the Financial Services Agency to that effect in advance."
+ ],
+ "terms": []
+}

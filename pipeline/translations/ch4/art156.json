@@ -1,0 +1,14 @@
+{
+ "number": "第百五十六条",
+ "heading_en": "Treatment of Other Assets, etc.",
+ "summary_ja": "内部格付手法における第二十一条の準用と、その他の資産の信用リスク・アセットの額（リスク・ウェイト百パーセント）を定める。",
+ "summary_en": "Applies Article 21 under the internal ratings-based approach and sets a 100% risk weight for assets not otherwise covered.",
+ "sections_en": {
+  "第三節 第九款": "Other Assets, etc."
+ },
+ "paragraphs": [
+  "Article 21 applies mutatis mutandis to the calculation of the amount of credit risk-weighted assets under the internal ratings-based approach.",
+  "The amount of credit risk-weighted assets of assets that fall under none of Articles 129 through the preceding Article and the preceding paragraph shall be the amount obtained by multiplying the amount of each exposure (meaning EAD) by a risk weight of 100%."
+ ],
+ "terms": []
+}

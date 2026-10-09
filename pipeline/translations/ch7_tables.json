@@ -1,0 +1,256 @@
+{
+ "p449t0": {
+  "node_id": "fsa-basel-cap-jp.ch7.appx1.p1",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "BICの構成要素",
+    "損益計算書又は貸借対照表における項目",
+    "一般的な内容",
+    "一般的な小分類"
+   ],
+   [
+    {
+     "text": "ILDC",
+     "rowspan": 4
+    },
+    "資金運用収益",
+    "受取配当金を除く全ての金融資産に係る資金運用収益(リースに係る収益を含む。)",
+    "・貸出金、有価証券、預け金及びリースに係る受取利息\n・ヘッジ会計適用デリバティブに係る受取利息\n・その他の資金運用収益"
+   ],
+   [
+    null,
+    "資金調達費用",
+    "全ての金融負債に係る資金調達費用及びその他の資金調達費用(リースに係る支払費用を含む。)",
+    "・預金、借用金、証券債務及びリースに係る支払利息\n・ヘッジ会計適用デリバティブに係る支払利息\n・その他の資金調達費用"
+   ],
+   [
+    null,
+    "金利収益資産(貸借対照表項目)",
+    {
+     "text": "・各事業年度末時点で測定された貸出金、利付証券(政府債を含む。)及びリース投資資産",
+     "colspan": 2
+    },
+    null
+   ],
+   [
+    null,
+    "受取配当金",
+    {
+     "text": "・連結対象外の会社の株式及びファンドに対する投資に係る受取配当金(非連結の子会社、関連会社及びジョイントベンチャーからの受取配当金を含む。)",
+     "colspan": 2
+    },
+    null
+   ],
+   [
+    {
+     "text": "SC",
+     "rowspan": 4
+    },
+    "役務取引等収益",
+    "助言・サービス提供に係る役務取引等収益(金融サービスの受託者として受け取った利息を含む。)",
+    "・有価証券関連役務(発行、組成、受入れ、移管及び顧客のための取引執行)に係る収益\n・清算及び決済、資産運用、カストディ、信託取引、支払業務、ストラクチャードファイナンス、証券化に係るサービシング、ローンコミットメント又は保証の供与並びに外国為替取引等の役務に係る収益"
+   ],
+   [
+    null,
+    "役務取引等費用",
+    "助言・サービスの受け入れに係る役務取引等費用(金融サービスの提供を受けたことに対する委託手数料を含む。ただし、非金融サービスに支払った手数料を除く。)",
+    "・清算及び決済、カストディ、証券化に係るサービシング、ローンコミットメント又は保証の取得並びに外国為替取引等の役務に係る費用"
+   ],
+   [
+    null,
+    "その他業務収益",
+    "他のBI構成要素に含まれない最終指定親会社業務に係る収益(リースに係る収益を除く。)",
+    "・オペレーショナル・リスク損失を填補するための準備金の取崩額\n・投資不動産に係る賃貸料\n・非継続事業に該当しない売却目的に分類された非流動資産及び売却グループからの収益(国際財務報告基準(IFRS)第5号第37項)"
+   ],
+   [
+    null,
+    "その他業務費用",
+    "他のBI構成要素に含まれない最終指定親会社業務に係る費用及びオペレーショナル・リスク事象に係る損失(リースに係る費用・損失を除く。)",
+    "・オペレーショナル・リスク損失を填補するための準備金の繰入額\n・未引当又は準備金が積み立てられていないオペレーショナル・リスク事象に係る損失(罰金、ペナルティ、和解及び損害を受けた資産の再調達費用等)\n・非継続事業に該当しない売却目的に分類された非流動資産及び売却グループからの損失(国際財務報告基準(IFRS)第5号第37項)"
+   ],
+   [
+    {
+     "text": "FC",
+     "rowspan": 2
+    },
+    "トレーディング商品のネット損益",
+    {
+     "text": "・トレーディング資産及び負債(証券業務あるいはトレーディング業務のヘッジ目的として取引する有価証券、デリバティブ及びトレーディング業務として取引するデリバティブ及び金融資産)に係るネット損益",
+     "colspan": 2
+    },
+    null
+   ],
+   [
+    null,
+    "トレーディング商品以外の勘定のネット損益",
+    {
+     "text": "・公正価値で測定され、損益認識する金融資産及び負債に係るネット損益\n・公正価値で測定されない金融資産及び負債に係る実現損益(貸出金、国債等有価証券及び償却原価で測定される金融負債)\n・ヘッジ会計・為替差額に係るネット損益",
+     "colspan": 2
+    },
+    null
+   ]
+  ],
+  "rows_en": [
+   [
+    "BIC component",
+    "Item in the income statement or balance sheet",
+    "General content",
+    "General sub-categories"
+   ],
+   [
+    {
+     "text": "ILDC",
+     "rowspan": 4
+    },
+    "Interest income",
+    "Interest income on all financial assets other than dividends received (including income relating to leases)",
+    "- Interest received on loans, securities, deposits placed and leases\n- Interest received on derivatives under hedge accounting\n- Other interest income"
+   ],
+   [
+    null,
+    "Interest expenses",
+    "Interest expenses on all financial liabilities and other funding costs (including expenses relating to leases)",
+    "- Interest paid on deposits, borrowings, securities liabilities and leases\n- Interest paid on derivatives under hedge accounting\n- Other interest expenses"
+   ],
+   [
+    null,
+    "Interest-earning assets (balance sheet item)",
+    {
+     "text": "- Loans, interest-bearing securities (including government bonds) and finance lease assets, measured as of the end of each business year",
+     "colspan": 2
+    },
+    null
+   ],
+   [
+    null,
+    "Dividends received",
+    {
+     "text": "- Dividends received on investments in shares of and funds in companies outside the scope of consolidation (including dividends received from non-consolidated subsidiaries, affiliates and joint ventures)",
+     "colspan": 2
+    },
+    null
+   ],
+   [
+    {
+     "text": "SC",
+     "rowspan": 4
+    },
+    "Fee and commission income",
+    "Fee and commission income from the provision of advice and services (including interest received as a trustee of financial services)",
+    "- Income from services related to securities (issuance, structuring, acceptance, transfer and execution of transactions for customers)\n- Income from services such as clearing and settlement, asset management, custody, trust transactions, payment services, structured finance, servicing of securitizations, provision of loan commitments or guarantees, and foreign exchange transactions"
+   ],
+   [
+    null,
+    "Fee and commission expenses",
+    "Fee and commission expenses on receiving advice and services (including commissions for being provided with financial services, but excluding commissions paid for non-financial services)",
+    "- Expenses on services such as clearing and settlement, custody, servicing of securitizations, receipt of loan commitments or guarantees, and foreign exchange transactions"
+   ],
+   [
+    null,
+    "Income from other operations",
+    "Income from the business of the Ultimate Designated Parent Company not included in other BI components (excluding income relating to leases)",
+    "- Amounts released from reserves to cover operational risk losses\n- Rental income on investment property\n- Income from non-current assets and disposal groups classified as held for sale that do not qualify as discontinued operations (IFRS 5, paragraph 37)"
+   ],
+   [
+    null,
+    "Expenses on other operations",
+    "Expenses from the business of the Ultimate Designated Parent Company not included in other BI components, and losses from operational risk events (excluding expenses and losses relating to leases)",
+    "- Amounts transferred to reserves to cover operational risk losses\n- Losses from operational risk events not provisioned for or for which no reserve has been built up (fines, penalties, settlements and replacement costs of damaged assets, etc.)\n- Losses from non-current assets and disposal groups classified as held for sale that do not qualify as discontinued operations (IFRS 5, paragraph 37)"
+   ],
+   [
+    {
+     "text": "FC",
+     "rowspan": 2
+    },
+    "Net profit or loss on trading products",
+    {
+     "text": "- Net profit or loss on trading assets and liabilities (securities and derivatives traded for hedging securities business or trading business, and derivatives and financial assets traded as trading business)",
+     "colspan": 2
+    },
+    null
+   ],
+   [
+    null,
+    "Net profit or loss on accounts other than trading products",
+    {
+     "text": "- Net profit or loss on financial assets and liabilities measured at fair value with changes recognized in profit or loss\n- Realized profit or loss on financial assets and liabilities not measured at fair value (loans, securities such as government bonds, and financial liabilities measured at amortized cost)\n- Net profit or loss on hedge accounting and foreign exchange differences",
+     "colspan": 2
+    },
+    null
+   ]
+  ]
+ },
+ "p452t1": {
+  "node_id": "fsa-basel-cap-jp.ch7.appx2.p1",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "損失事象の種類",
+    "オペレーショナル・リスク損失"
+   ],
+   [
+    "内部の不正",
+    "詐欺若しくは財産の横領又は規制、法令若しくは内規の回避を意図したような行為による損失であって、最終指定親会社等の役職員が最低一人は関与するもの(差別行為を除く。)"
+   ],
+   [
+    "外部からの不正",
+    "第三者による詐欺、財産の横領又は脱法を意図したような行為による損失"
+   ],
+   [
+    "労務慣行及び職場の安全",
+    "雇用、健康若しくは安全に関する法令若しくは協定に違反した行為、個人傷害に対する支払、労働災害又は差別行為による損失"
+   ],
+   [
+    "顧客、商品及び取引慣行",
+    "特定の顧客に対する過失による職務上の義務違反(受託者責任、適合性等)又は商品の性質若しくは設計から生じる損失"
+   ],
+   [
+    "有形資産に対する損傷",
+    "自然災害その他の事象による有形資産の損傷による損失"
+   ],
+   [
+    "事業活動の中断及びシステム障害",
+    "事業活動の中断又はシステム障害による損失"
+   ],
+   [
+    "注文等の執行、送達及びプロセスの管理",
+    "取引相手や仕入先との関係から生じる損失又は取引処理若しくはプロセス管理の失敗による損失"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Type of loss event",
+    "Operational risk loss"
+   ],
+   [
+    "Internal fraud",
+    "Losses due to acts of fraud or misappropriation of property, or acts intended to circumvent regulations, laws or internal rules, involving at least one officer or employee of the Ultimate Designated Parent Company, etc. (excluding discriminatory acts)"
+   ],
+   [
+    "External fraud",
+    "Losses due to acts by a third party intended to commit fraud, misappropriate property or circumvent the law"
+   ],
+   [
+    "Employment practices and workplace safety",
+    "Losses due to acts that violate laws or agreements on employment, health or safety, payments for personal injury, industrial accidents, or discriminatory acts"
+   ],
+   [
+    "Clients, products and business practices",
+    "Losses arising from negligent failure to meet a professional obligation to specific clients (fiduciary duty, suitability, etc.) or from the nature or design of a product"
+   ],
+   [
+    "Damage to physical assets",
+    "Losses due to damage to physical assets from natural disasters or other events"
+   ],
+   [
+    "Business disruption and system failures",
+    "Losses due to disruption of business or system failures"
+   ],
+   [
+    "Execution, delivery and process management",
+    "Losses arising from relationships with counterparties or vendors, or losses due to failures in transaction processing or process management"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "number": "第十七条",
+ "heading_en": "Treatment of Exposures without an Issue-Specific Rating",
+ "summary_ja": "個別格付のないエクスポージャーについて、劣後しない他の無担保債務の個別格付又は債務者信用力格付を付与されたものとみなせる場合と、より不利な格付を必ず適用する場合を定める。",
+ "summary_en": "Lets an unrated exposure borrow the issue-specific rating of the obligor's senior unsecured debt or the issuer rating where that lowers the risk weight, and requires it to take them where they would raise it.",
+ "paragraphs": [
+  "Where no issue-specific rating has been assigned to an exposure held by an Ultimate Designated Parent Company adopting the standardized approach, in the cases listed in the following items, the exposure may be deemed to have been assigned the rating specified in each such item. (i) Where another obligation of the obligor of the exposure is unsecured and has been assigned an issue-specific rating, and the risk weight corresponding to that issue-specific rating (excluding short-term ratings; the same applies hereinafter in this Article) is lower than the risk weight that would apply if the exposure were unrated, and the exposure is not subordinated to that unsecured obligation: that issue-specific rating. (ii) Where the obligor of the exposure has an issuer rating and the exposure is not subordinated to the other obligations of that obligor: that issuer rating.",
+  "In the case provided in the preceding paragraph, where the issuer rating, or the issue-specific rating of an obligation to which the exposure held by the Ultimate Designated Parent Company adopting the standardized approach is not subordinated, corresponds to a risk weight higher than the risk weight that would apply if the exposure were unrated, the exposure shall be deemed to have been assigned that issuer rating or issue-specific rating."
+ ]
+}

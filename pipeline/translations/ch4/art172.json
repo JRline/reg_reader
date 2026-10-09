@@ -1,0 +1,16 @@
+{
+ "number": "第百七十二条",
+ "heading_en": "Maintaining the Integrity of the Rating Assignment Process for Corporate, etc. Exposures",
+ "summary_ja": "事業法人等向けエクスポージャーの格付を年一回以上見直し、重要情報の判明時は速やかに見直し、独立した立場の者が関与するようにする。",
+ "summary_en": "Requires annual (or more frequent) review of obligor and facility ratings, prompt review on material information, independence of the rating approver, and effective update procedures.",
+ "sections_en": {
+  "第四節 第二款 第二目": "Maintaining the Integrity of the Rating Assignment Process"
+ },
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall review obligor ratings and facility ratings at least once a year for corporate, etc. exposures and more frequently for high-risk obligors and problem exposures.",
+  "Where material information on an obligor or exposure of corporate, etc. exposures comes to light, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall promptly review the obligor rating or facility rating.",
+  "The assignment of final ratings and the review of ratings under the preceding two paragraphs shall be carried out by, or approved by, a person in a position that does not directly benefit from the extension of credit.",
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish effective procedures for collecting material information on obligor characteristics that affect PD and transaction characteristics that affect LGD and EAD, and for updating obligor ratings and facility ratings, for corporate, etc. exposures."
+ ],
+ "terms": []
+}

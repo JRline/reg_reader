@@ -1,0 +1,12 @@
+{
+ "number": "第二百二十二条",
+ "heading_en": "Notification of Changes",
+ "summary_ja": "承認後の変更等の届出、改善計画等の提出、承認前の代替算出方法を定める。",
+ "summary_en": "Requires notification of changes after approval, submission of an improvement plan or explanation where approval standards are not met, and fallback to Article 80 until approved.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach that has received the approval under Article 217, paragraph (1) for use of the exposure fluctuation estimation model shall, in any of the following cases, submit to the Commissioner of the Financial Services Agency without delay a notification stating that fact and its details: (i) where there is a change in the matters stated in the application for approval; (ii) where there is a material change in the matters stated in the documents attached to the application for approval; (iii) where a circumstance has arisen in which the standards for approval prescribed in Article 220 are not satisfied.",
+  "In the case prescribed in item (iii) of the preceding paragraph, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall promptly submit either a document stating a plan to remedy the circumstance, or a document stating an explanation that failure to satisfy the standards for approval is not material from the standpoint of the risk of the Ultimate Designated Parent Company adopting the internal ratings-based approach.",
+  "In the case prescribed in item (iii) of paragraph (1), until it obtains the approval of the Commissioner of the Financial Services Agency on the matters to be stated in the document referred to in the preceding paragraph, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall calculate the exposures relating to repo-style transactions and margin lending and similar overseas transactions as provided in Article 80, in place of using the exposure fluctuation estimation model."
+ ],
+ "terms": []
+}
