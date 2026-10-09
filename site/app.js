@@ -39,6 +39,11 @@ const UI_STRINGS = {
   textLarger: { ja: "文字を大きく", en: "Larger text" },
   toggleDark: { ja: "ダークモード切替", en: "Toggle dark mode" },
   selectFeed: { ja: "規則を選択", en: "Select regulation" },
+  notice: {
+    ja: "非公式・AI支援による翻訳の草稿です。法的助言ではなく、金融庁が承認したものでもありません。日本語の原文が優先します。必ず公式の資料でご確認ください。",
+    en: "Unofficial, AI-assisted draft translation — not legal advice, and not endorsed by the Financial Services Agency. The Japanese text is authoritative; please verify against the official source.",
+  },
+  noticeClose: { ja: "閉じる", en: "Dismiss" },
   notYetProcessed: {
     ja: "この条文はまだパイプラインで処理されていません（目次には表示されますが、内容は未投入です）。",
     en: "This article hasn't been through the content pipeline yet — it's in the table of contents for navigation, but has no populated text.",
@@ -363,6 +368,10 @@ function renderArticleView(articleId, scrollToId) {
       block.classList.add("flash");
       setTimeout(() => block.classList.remove("flash"), 1400);
     }
+  } else if (!renderArticleView.firstDone) {
+    // The very first render on page load stays at the top of the page, so the notice banner
+    // above the reader is actually seen; every later navigation scrolls the reader into view.
+    renderArticleView.firstDone = true;
   } else {
     els.reader.scrollIntoView({ behavior: "instant", block: "start" });
   }
@@ -1066,7 +1075,26 @@ document.getElementById("toggle-dark").addEventListener("click", () => {
 });
 els.feedPicker.addEventListener("change", (e) => loadFeed(e.target.value));
 
+// Source line (page footer): constants only, so innerHTML is safe here.
+const SOURCE_LINE = {
+  ja: '出典：金融庁「最終指定親会社及びその子法人等の保有する資産等に照らし当該最終指定親会社及びその子法人等の自己資本の充実の状況が適当であるかどうかを判断するための基準を定める件」（<a href="https://www.fsa.go.jp/" target="_blank" rel="noopener">金融庁</a>公表）。引用法令・告示は<a href="https://laws.e-gov.go.jp/" target="_blank" rel="noopener">e-Gov法令検索</a>等の公式公表物による。英訳・数式の転記・表・相互参照は本プロジェクトによる非公式の作業であり、誤りを含み得ます。',
+  en: 'Source: the Financial Services Agency\'s public notice establishing standards for determining whether the capital adequacy of an Ultimate Designated Parent Company and its subsidiaries is appropriate (<a href="https://www.fsa.go.jp/" target="_blank" rel="noopener">published by the FSA</a>); cited laws and notices from official publications such as <a href="https://laws.e-gov.go.jp/" target="_blank" rel="noopener">e-Gov Law Search</a>. The English translation, formula transcriptions, tables and cross-references are unofficial work of this project and may contain errors.',
+};
+// The notice banner: shown on first open, dismissible, and the dismissal is remembered
+// (localStorage can be unavailable — private mode, some file:// setups — so every access is guarded).
+const NOTICE_KEY = "reg-reader-notice-dismissed-v1";
+function noticeDismissed() { try { return localStorage.getItem(NOTICE_KEY) === "1"; } catch (e) { return false; } }
+document.getElementById("notice-close").addEventListener("click", () => {
+  document.getElementById("notice").hidden = true;
+  try { localStorage.setItem(NOTICE_KEY, "1"); } catch (e) { /* hidden for this visit only */ }
+});
+document.getElementById("notice").hidden = noticeDismissed();
+
 function refreshStaticUI() {
+  document.getElementById("notice-text").textContent = UI_STRINGS.notice[state.lang];
+  document.getElementById("notice-close").setAttribute("aria-label", UI_STRINGS.noticeClose[state.lang]);
+  document.getElementById("notice-close").title = UI_STRINGS.noticeClose[state.lang];
+  document.getElementById("source-line").innerHTML = SOURCE_LINE[state.lang];
   document.getElementById("cues-label").textContent = UI_STRINGS.cues[state.lang];
   document.getElementById("text-smaller").title = UI_STRINGS.textSmaller[state.lang];
   document.getElementById("text-larger").title = UI_STRINGS.textLarger[state.lang];
