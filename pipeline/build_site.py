@@ -14,6 +14,7 @@ Usage: python3 pipeline/build_site.py [out_dir]   (default: <repo>/site)
 """
 import json
 import re
+import hashlib
 import shutil
 import sys
 from pathlib import Path
@@ -132,7 +133,33 @@ def build_index_html():
     if n_css != 1 or n_js != 1:
         sys.exit(f"build_site: app/index.html no longer matches the expected cache-bust tags "
                  f"(css={n_css}, js={n_js}); update build_index_html().")
+    # Home-screen / offline support (only meaningful over http(s); a no-op from file://).
+    head_extra = (
+        '<link rel="manifest" href="manifest.webmanifest">\n'
+        '<meta name="theme-color" content="#1d4ea0">\n'
+        '<meta name="apple-mobile-web-app-capable" content="yes">\n'
+        '<meta name="apple-mobile-web-app-title" content="Reg Reader">\n'
+        '<link rel="apple-touch-icon" href="icon-180.png">\n'
+    )
+    html = html.replace("<title>", head_extra + "<title>", 1)
+    html = html.replace('<script>window.REG_STATIC_SITE = true;</script>',
+                        '<script>window.REG_STATIC_SITE = true;\n'
+                        'if ("serviceWorker" in navigator && /^https?:/.test(location.protocol)) navigator.serviceWorker.register("sw.js").catch(function () {});</script>', 1)
     return html
+
+
+def write_pwa(out):
+    """Copy the manifest and icons, and write sw.js with a precache list and a content hash."""
+    for f in (APP / "pwa").iterdir():
+        if f.name != "sw.template.js":
+            shutil.copy2(f, out / f.name)
+    files = sorted(p.relative_to(out).as_posix() for p in out.rglob("*") if p.is_file() and p.name != "sw.js")
+    h = hashlib.sha256()
+    for name in files:
+        h.update(name.encode()); h.update((out / name).read_bytes())
+    sw = (APP / "pwa" / "sw.template.js").read_text(encoding="utf-8")
+    sw = sw.replace("__VERSION__", h.hexdigest()[:12]).replace("__FILES__", json.dumps(["./"] + files))
+    (out / "sw.js").write_text(sw, encoding="utf-8")
 
 
 def main():
@@ -170,6 +197,7 @@ def main():
         })
     (out / "data" / "index.js").write_text(js_assign("index", site_index), encoding="utf-8")
 
+    write_pwa(out)
     print(f"Built {len(site_index['feeds'])} feeds into {out}")
     print(f"Open {out / 'index.html'} directly in a browser.")
 

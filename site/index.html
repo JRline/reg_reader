@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1d4ea0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Reg Reader">
+<link rel="apple-touch-icon" href="icon-180.png">
 <title>Regulation Reader</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -39,7 +44,8 @@
 
   <div id="ref-popover" class="ref-popover" hidden></div>
 
-  <script>window.REG_STATIC_SITE = true;</script>
+  <script>window.REG_STATIC_SITE = true;
+if ("serviceWorker" in navigator && /^https?:/.test(location.protocol)) navigator.serviceWorker.register("sw.js").catch(function () {});</script>
   <script src="app.js"></script>
 </body>
 </html>
