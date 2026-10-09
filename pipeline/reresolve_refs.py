@@ -33,6 +33,9 @@ TO_ARABIC = str.maketrans(FULLWIDTH_DIGITS, ARABIC_DIGITS)
 def kanji_to_int(s: str) -> int:
     if not s:
         return 0
+    if "百" in s:  # Article 128 etc. (Chapter 3 onward cites three-digit articles)
+        hundreds, _, rest = s.partition("百")
+        return (KANJI_DIGITS.get(hundreds, 1) if hundreds else 1) * 100 + kanji_to_int(rest)
     if "十" in s:
         tens_part, _, ones_part = s.partition("十")
         tens = KANJI_DIGITS.get(tens_part, 1) if tens_part else 1
@@ -50,18 +53,20 @@ def paragraph_number_to_int(number: str) -> int:
 
 
 # Ordered by specificity — checked in this order, first match wins.
-REL_PARAGRAPH_RE = re.compile(r"^前(二)?項")
+REL_PARAGRAPH_RE = re.compile(r"^前([二三四五六七八九]|各)?項")
 NEXT_PARAGRAPH_RE = re.compile(r"^次(二)?項")
 REL_ARTICLE_RE = re.compile(r"^前([二三四五六七八九十]?)条")
 NEXT_ARTICLE_RE = re.compile(r"^次([二三四五六七八九十]?)条")
 SAME_ARTICLE_RE = re.compile(r"^同条(第(?P<para>[一二三四五六七八九十百]+)項)?")
 ABS_CITATION_RE = re.compile(
-    r"^第(?P<art>[一二三四五六七八九十百]+)条(の(?P<artsub>[一二三四五六七八九十]+))?"
+    r"^第(?P<art>[一二三四五六七八九十百]+)条(?P<artsub>(?:の[一二三四五六七八九十]+)*)"
     r"(第(?P<para>[一二三四五六七八九十百]+)項)?"
 )
 ABS_PARAGRAPH_ONLY_RE = re.compile(r"^第(?P<para>[一二三四五六七八九十百]+)項")
 SAME_PARAGRAPH_RE = re.compile(r"^同項")
-CHAPTER_RE = re.compile(r"^第[一二三四五六七八九十百]+章")
+CHAPTER_RE = re.compile(r"^第[一二三四五六七八九十百]+章(?:の[一二三四五六七八九十]+)*")
+# 第六節 / 第六節第三款 / 第三款第二目 … (a section path, optionally after a chapter)
+UNIT_PATH_RE = re.compile(r"(第[一二三四五六七八九十]+[節款目])")
 
 
 def walk(node):
@@ -70,26 +75,70 @@ def walk(node):
         yield from walk(c)
 
 
-def build_context(chapter: dict):
-    article_ids_ordered = [a["id"] for a in chapter["children"]]
-    article_number_to_id = {a["number"]: a["id"] for a in chapter["children"] if a.get("number")}
-    paragraphs_by_article = {}
-    parent_article_of = {}
-    for art in chapter["children"]:
-        para_ids = [p["id"] for p in art["children"] if p.get("type") == "paragraph"]
-        paragraphs_by_article[art["id"]] = para_ids
-        for p in art["children"]:
-            if p.get("type") == "paragraph":
-                parent_article_of[p["id"]] = art["id"]
+def build_context(root: dict):
+    """Context over the WHOLE feed: article numbers are unique across a notification, so a
+    Chapter 3 citation to 第二条 resolves into Chapter 2, and articles inside 節/款/目
+    groupings are found wherever they sit."""
+    article_ids_ordered, article_number_to_id = [], {}
+    paragraphs_by_article, parent_article_of, chapter_of = {}, {}, {}
+    chapter_by_number = {}
+    parent_of = {}
+    for n in walk(root):
+        for c in n.get("children", []):
+            parent_of[c["id"]] = n
+    for chapter in root.get("children", []):
+        if chapter.get("type") == "chapter" and chapter.get("number"):
+            chapter_by_number[chapter["number"]] = chapter
+        for art in walk(chapter):
+            if art.get("type") != "article":
+                continue
+            article_ids_ordered.append(art["id"])
+            if art.get("number"):
+                article_number_to_id[art["number"]] = art["id"]
+            chapter_of[art["id"]] = chapter
+            para_ids = [p["id"] for p in art.get("children", []) if p.get("type") == "paragraph"]
+            paragraphs_by_article[art["id"]] = para_ids
+            for pid in para_ids:
+                parent_article_of[pid] = art["id"]
     return {
         "article_ids_ordered": article_ids_ordered,
         "article_number_to_id": article_number_to_id,
         "paragraphs_by_article": paragraphs_by_article,
         "parent_article_of": parent_article_of,
+        "chapter_of": chapter_of,
+        "chapter_by_number": chapter_by_number,
+        "parent_of": parent_of,
     }
 
 
-def resolve(raw_text: str, current_paragraph_id: str, ctx: dict, last_para_target: list):
+UNIT_LEVEL = {"節": "section", "款": "subsection", "目": "division"}
+UNIT_PARENT_LEVEL = {"節": "chapter", "款": "section", "目": "subsection"}
+# 前款第七目 / 次節 …: the unit path is relative to a sibling of the enclosing unit.
+UNIT_PREFIX_RE = re.compile(r"(前|次|同)([節款目])$")
+
+
+def _unit_scope(current_article_id: str, first_unit: str, prefix: str, ctx: dict):
+    """The node whose children a bare 款/目-led path (no chapter named) is numbered among:
+    the enclosing 節 for 第N款, the enclosing 款 for 第N目 — or, after 前款/前節, the
+    previous sibling of that enclosing unit (次 = next, 同 = the enclosing one itself)."""
+    level = UNIT_PARENT_LEVEL[first_unit]
+    parent_of = ctx["parent_of"]
+    node = parent_of.get(current_article_id)
+    if prefix:
+        rel, rel_unit = prefix[0], prefix[1]
+        # The prefix names the unit the path starts in (前款第七目: 款), so climb to that.
+        level = UNIT_LEVEL[rel_unit]
+    while node is not None and node.get("type") != level:
+        node = parent_of.get(node["id"])
+    if node is None or not prefix or prefix[0] == "同":
+        return node
+    siblings = [c for c in parent_of[node["id"]].get("children", []) if c.get("type") == level]
+    i = siblings.index(node) + (-1 if prefix[0] == "前" else 1)
+    return siblings[i] if 0 <= i < len(siblings) else None
+
+
+def resolve(raw_text: str, current_paragraph_id: str, ctx: dict, last_para_target: list,
+            unit_prefix: str | None = None):
     """Returns (status, target_ids). status in resolved/internal_unavailable/None(=leave as-is)."""
     current_article_id = ctx["parent_article_of"][current_paragraph_id]
     para_siblings = ctx["paragraphs_by_article"][current_article_id]
@@ -97,7 +146,7 @@ def resolve(raw_text: str, current_paragraph_id: str, ctx: dict, last_para_targe
 
     m = REL_PARAGRAPH_RE.match(raw_text)
     if m:
-        count = 2 if m.group(1) else 1
+        count = para_index if m.group(1) == "各" else (kanji_to_int(m.group(1)) if m.group(1) else 1)
         if para_index - count < 0:
             return "internal_unavailable", []  # would cross into the preceding article
         targets = para_siblings[para_index - count: para_index]
@@ -143,7 +192,7 @@ def resolve(raw_text: str, current_paragraph_id: str, ctx: dict, last_para_targe
 
     m = ABS_CITATION_RE.match(raw_text)
     if m:
-        art_number_str = f"第{m.group('art')}条" + (f"の{m.group('artsub')}" if m.group("artsub") else "")
+        art_number_str = f"第{m.group('art')}条" + (m.group("artsub") or "")
         target_article_id = ctx["article_number_to_id"].get(art_number_str)
         if not target_article_id:
             return "internal_unavailable", []
@@ -167,12 +216,48 @@ def resolve(raw_text: str, current_paragraph_id: str, ctx: dict, last_para_targe
     if SAME_PARAGRAPH_RE.match(raw_text) and last_para_target[0]:
         return "resolved", [last_para_target[0]]
 
-    if CHAPTER_RE.match(raw_text):
-        # Only one chapter is loaded in this feed right now, so any citation to "第◯章"
-        # is necessarily to a chapter we don't have — valid citation, unloaded target.
-        return "internal_unavailable", []
+    m = CHAPTER_RE.match(raw_text)
+    if m or UNIT_PATH_RE.match(raw_text):
+        # 第三章 / 第六節第三款第二目: resolve to that structural node if it's loaded —
+        # a chapter by number across the feed, a section path inside the cited chapter
+        # (or the current one when no chapter is named).
+        units = UNIT_PATH_RE.findall(raw_text[m.end():] if m else raw_text)
+        if m:
+            scope = ctx["chapter_by_number"].get(m.group(0))
+        elif units and (units[0][-1] != "節" or unit_prefix):
+            if unit_prefix == "":
+                # The same raw_text occurs both bare and after 前/次 — can't tell which
+                # occurrence this ref is; don't guess.
+                return "internal_unavailable", []
+            scope = _unit_scope(current_article_id, units[0][-1], unit_prefix, ctx)
+        else:
+            scope = ctx["chapter_of"].get(current_article_id)
+        if scope is None:
+            return "internal_unavailable", []
+        node = scope
+        for unit in units:
+            node = next((c for c in node.get("children", []) if c.get("number") == unit and c.get("type") in ("section", "subsection", "division")), None)
+            if node is None:
+                return "internal_unavailable", []
+        return "resolved", [node["id"]]
 
     return None, None  # unparseable with current patterns — leave whatever it had
+
+
+def unit_prefix_of(raw_text: str, text_ja: str):
+    """For a 節/款/目-led citation: the 前款/次節/同款-style word right before it in the text
+    (None = every occurrence is bare; "" = occurrences disagree)."""
+    if not UNIT_PATH_RE.match(raw_text):
+        return None
+    prefixes = set()
+    start = text_ja.find(raw_text)
+    while start != -1:
+        pm = UNIT_PREFIX_RE.search(text_ja[max(0, start - 2):start])
+        prefixes.add(pm.group(0) if pm else None)
+        start = text_ja.find(raw_text, start + 1)
+    if len(prefixes) > 1:
+        return ""
+    return prefixes.pop() if prefixes else None
 
 
 def main():
@@ -184,12 +269,12 @@ def main():
     feed_path = FEEDS_DIR / feed_id / "feed.json"
     feed = json.loads(feed_path.read_text(encoding="utf-8"))
     chapter = next(c for c in feed["root"]["children"] if c["id"] == chapter_id)
-    ctx = build_context(chapter)
+    ctx = build_context(feed["root"])
 
     stats = {"newly_resolved": 0, "internal_unavailable": 0, "still_unresolved": 0, "left_alone": 0}
     still_unresolved_samples = []
 
-    for art in chapter["children"]:
+    for art in [n for n in walk(chapter) if n.get("type") == "article"]:
         for node in walk(art):
             if node.get("type") != "paragraph":
                 continue
@@ -197,7 +282,8 @@ def main():
             for r in node.get("refs", []):
                 if r.get("scope") != "internal":
                     continue
-                status, target_ids = resolve(r["raw_text"], node["id"], ctx, last_para_target)
+                status, target_ids = resolve(r["raw_text"], node["id"], ctx, last_para_target,
+                                             unit_prefix_of(r["raw_text"], node.get("text_ja", "")))
                 if status is None:
                     if r.get("resolution_status") == "unresolved":
                         stats["still_unresolved"] += 1

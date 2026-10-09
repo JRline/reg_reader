@@ -241,14 +241,43 @@ def split_out_parens(clause_type: str, text: str, open_ch: str, close_ch: str):
     return [(t, s) for t, s in pieces if s]  # drop empty slivers from adjacent parens
 
 
-def split_out_proviso(clause_type: str, text: str, pattern: re.Pattern):
+def _proviso_sentence_end(text: str, start: int) -> int:
+    """Index just past the sentence end (。 or ". ") at paren depth 0 from `start`."""
+    depth = 0
+    for i in range(start, len(text)):
+        ch = text[i]
+        if ch in "(（":
+            depth += 1
+        elif ch in ")）":
+            depth = max(0, depth - 1)
+        elif depth == 0 and (ch == "。" or (ch == "." and text[i + 1:i + 2] == " ")):
+            return i + 1 + (1 if ch == "." else 0)
+    return len(text)
+
+
+def split_out_proviso(clause_type: str, text: str, pattern: re.Pattern, base_type: str = "main"):
     if clause_type == "proviso":
+        # Already a proviso (an earlier run, or the source model's segmentation) — but it
+        # may still run past its own sentence into the item's following text; hand that
+        # tail back to the surrounding clause's type.
+        end = _proviso_sentence_end(text, 0)
+        if end < len(text):
+            return [("proviso", text[:end])] + split_out_proviso(base_type, text[end:], pattern, base_type)
         return [(clause_type, text)]
     m = pattern.search(text)
     if not m:
         return [(clause_type, text)]
     split_at = m.end(1)
-    return [(clause_type, text[:split_at]), ("proviso", text[split_at:])]
+    # The proviso is its own sentence: it ends at that sentence's 。 (or ". " in English)
+    # at the clause's own paren depth. Whatever follows (in a list item, often the
+    # definitions of the formula's terms) goes back to the clause's own type instead of
+    # being highlighted as part of the proviso.
+    end = _proviso_sentence_end(text, split_at)
+    pieces = [(clause_type, text[:split_at]), ("proviso", text[split_at:end])]
+    if end < len(text):
+        # The tail can hold a further proviso (e.g. a second defined term's own ただし).
+        pieces.extend(split_out_proviso(clause_type, text[end:], pattern, base_type))
+    return [(t, s) for t, s in pieces if s]
 
 
 def _outer_prefix_end(text: str) -> int:
@@ -346,13 +375,14 @@ def refine(clauses: list, lang: str):
     exception_re = EXCEPTION_JA_RE if lang == "ja" else None
     conditional_re = CONDITIONAL_JA_RE if lang == "ja" else None
     refined = []
+    base_type = "main"
     for c in clauses:
         # Already the output of analyze_parenthetical on an earlier run (e.g. a condition
         # piece "(...場合には、" whose closing paren lives in the next clause) — re-splitting
         # it can't find a balanced span, and rebuilding the dict would drop the flag, so a
         # re-run silently un-did the previous run's nested-cue tagging. Pass it through.
         if c.get("in_parenthetical"):
-            refined.append(c)
+            refined.append({k: v for k, v in c.items() if k != "cues"})
             continue
         for ctype, text in split_out_parens(c["clause_type"], c["text"], open_ch, close_ch):
             if ctype == "parenthetical":
@@ -360,8 +390,10 @@ def refine(clauses: list, lang: str):
             else:
                 refined.extend(
                     {"clause_type": t, "text": s}
-                    for t, s in split_out_proviso(ctype, text, proviso_re)
+                    for t, s in split_out_proviso(ctype, text, proviso_re, base_type)
                 )
+        if c["clause_type"] not in ("proviso", "parenthetical") and not c.get("in_parenthetical"):
+            base_type = c["clause_type"]
     return refined
 
 

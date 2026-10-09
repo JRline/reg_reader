@@ -1,0 +1,10 @@
+{
+ "number": "第二十七条",
+ "heading_en": "Exposures to the Japan Finance Organization for Municipalities",
+ "summary_ja": "地方公共団体金融機構向けの円建て・円調達エクスポージャーは十パーセント、それ以外は日本国政府の格付等に応じ第二十五条各号の表による。",
+ "summary_en": "Yen exposures to the Japan Finance Organization for Municipalities funded in yen take 10%; others follow the Article 25 tables at Japan's rating.",
+ "paragraphs": [
+  "The risk weight of yen-denominated exposures to the Japan Finance Organization for Municipalities that are funded in yen shall be 10%.",
+  "Except in the case of the preceding paragraph, the risk weight of exposures to the Japan Finance Organization for Municipalities shall be as set out in the left column of the table of each item of Article 25, according to the credit risk category corresponding to the rating or country risk score assigned to the Government of Japan."
+ ]
+}

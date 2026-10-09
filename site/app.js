@@ -50,6 +50,10 @@ const UI_STRINGS = {
 const KANJI_DIGITS = { "〇": 0, "一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9 };
 function kanjiToInt(s) {
   if (!s) return 0;
+  if (s.includes("百")) {
+    const [h, rest] = s.split("百");
+    return (h ? (KANJI_DIGITS[h] ?? 1) : 1) * 100 + kanjiToInt(rest);
+  }
   if (s.includes("十")) {
     const [tensPart, onesPart] = s.split("十");
     const tens = tensPart ? (KANJI_DIGITS[tensPart] ?? 1) : 1;
@@ -58,14 +62,14 @@ function kanjiToInt(s) {
   }
   return KANJI_DIGITS[s] ?? 0;
 }
+const UNIT_EN = { "条": "Article", "章": "Chapter", "節": "Section", "款": "Subsection", "目": "Division" };
 function formatNumberEn(jpNumber, unit) {
   if (!jpNumber) return "";
-  const m = jpNumber.match(new RegExp(`^第([一二三四五六七八九十百]+)${unit}(の([一二三四五六七八九十]+))?`));
+  // 第四十三条の三の二 -> Article 43-3-2 (any number of の-suffixes)
+  const m = jpNumber.match(new RegExp(`^第([一二三四五六七八九十百]+)${unit}((?:の[一二三四五六七八九十]+)*)`));
   if (m) {
-    const main = kanjiToInt(m[1]);
-    const sub = m[3] ? kanjiToInt(m[3]) : null;
-    const label = unit === "条" ? "Article" : "Chapter";
-    return `${label} ${main}${sub ? "-" + sub : ""}`;
+    const subs = (m[2].match(/[一二三四五六七八九十]+/g) || []).map(kanjiToInt);
+    return `${UNIT_EN[unit]} ${[kanjiToInt(m[1]), ...subs].join("-")}`;
   }
   // Bare paragraph numbers like "２", "３" — full-width digits, or already numeric.
   const halfWidth = jpNumber.replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xFEE0));
@@ -76,6 +80,9 @@ function displayNumber(node) {
   if (state.lang !== "en") return node.number;
   if (node.type === "chapter") return formatNumberEn(node.number, "章");
   if (node.type === "article") return formatNumberEn(node.number, "条");
+  if (node.type === "section") return formatNumberEn(node.number, "節");
+  if (node.type === "subsection") return formatNumberEn(node.number, "款");
+  if (node.type === "division") return formatNumberEn(node.number, "目");
   return formatNumberEn(node.number, "");
 }
 function displayHeading(node) {
@@ -106,13 +113,13 @@ function loadFeedIndex() {
 async function loadFeedData(feedId) {
   if (STATIC_SITE) {
     const bundle = await loadScriptData(`feed:${feedId}`, `data/${feedId}.js`);
-    return [bundle.manifest, bundle.feed, bundle.formulas || null, bundle.notation || null];
+    return [bundle.manifest, bundle.feed, bundle.formulas || null, bundle.notation || null, bundle.tables || null];
   }
   const base = `../feeds/${feedId}`;
   const optional = (path) => loadJSON(path).catch(() => null); // most feeds have no formulas
   return Promise.all([
     loadJSON(`${base}/manifest.json`), loadJSON(`${base}/feed.json`),
-    optional(`${base}/formulas.json`), optional(`${base}/notation.json`),
+    optional(`${base}/formulas.json`), optional(`${base}/notation.json`), optional(`${base}/tables.json`),
   ]);
 }
 
@@ -170,8 +177,9 @@ function labelFeedOptions() {
 }
 
 async function loadFeed(feedId) {
-  const [manifest, feed, formulas, notation] = await loadFeedData(feedId);
+  const [manifest, feed, formulas, notation, tables] = await loadFeedData(feedId);
   state.formulas = formulas;
+  state.tables = tables;
   state.notation = notation;
   state.feedId = feedId;
   state.manifest = manifest;
@@ -202,6 +210,10 @@ function findFirstOfType(node, type) {
 
 // ---------- TOC ----------
 
+// Grouping levels above articles (第二章 / 第一節 / 第一款 / 第一目). Chapter 2 has none
+// below the chapter; Chapter 3 uses all three.
+const STRUCTURAL_TYPES = ["chapter", "section", "subsection", "division"];
+
 function renderTOC() {
   els.toc.innerHTML = "";
   const root = document.createElement("ul");
@@ -221,12 +233,14 @@ function renderTOCNode(node) {
   label.dataset.id = node.id;
   label.textContent = [displayNumber(node), displayHeading(node)].filter(Boolean).join(" ") || node.id;
   label.addEventListener("click", () => {
-    const target = node.type === "article" ? node.id : (findAncestorOfType(node.id, "article")?.id || node.id);
-    renderArticleView(target, node.id);
+    if (node.type === "article") return renderArticleView(node.id);
+    // A chapter/section heading opens its first article.
+    const target = findAncestorOfType(node.id, "article") || findFirstOfType(node, "article");
+    if (target) renderArticleView(target.id, target.id === node.id ? undefined : node.id);
   });
   li.appendChild(label);
 
-  const childTypesToShow = node.type === "chapter" ? ["article"] : [];
+  const childTypesToShow = STRUCTURAL_TYPES.includes(node.type) ? [...STRUCTURAL_TYPES.slice(1), "article"] : [];
   const childList = document.createElement("ul");
   let any = false;
   for (const c of node.children || []) {
@@ -309,7 +323,11 @@ function renderArticleView(articleId, scrollToId) {
 
   const crumb = document.createElement("div");
   crumb.className = "breadcrumb";
-  crumb.textContent = [state.manifest?.title_ja && state.lang === "ja" ? state.manifest.title_ja : state.manifest?.title_en, chapter ? [displayNumber(chapter), displayHeading(chapter)].filter(Boolean).join(" ") : null].filter(Boolean).join(" / ");
+  const groups = (entry.ancestors || []).map((id) => state.byId.get(id)?.node).filter((n) => n && STRUCTURAL_TYPES.includes(n.type));
+  crumb.textContent = [
+    state.lang === "ja" ? (state.manifest?.title_ja || state.manifest?.title_en) : (state.manifest?.title_en || state.manifest?.title_ja),
+    ...groups.map((g) => [displayNumber(g), displayHeading(g)].filter(Boolean).join(" ")),
+  ].filter(Boolean).join(" / ");
   els.reader.appendChild(crumb);
 
   const h = document.createElement("h2");
@@ -371,7 +389,7 @@ function renderNodeBlock(node) {
   textEl.appendChild(renderClauses(node));
   wrap.appendChild(textEl);
 
-  for (const f of (state.formulas?.formulas || []).filter((x) => x.node_id === node.id)) {
+  for (const f of (state.formulas?.formulas || []).filter((x) => x.node_id === node.id && !x.anchor)) {
     wrap.appendChild(renderFormulaBox(f));
   }
 
@@ -387,7 +405,7 @@ function renderNodeBlock(node) {
 // max(...)/min(...), and = >= <= between terms. "/" is drawn as a stacked fraction.
 
 function tokenizeFormula(src) {
-  const re = /\s*(?:(\d+(?:\.\d+)?%?)|([A-Za-z_][A-Za-z0-9_]*)|(>=|<=|[-+*\/(),=]))/y;
+  const re = /\s*(?:(\d+(?:\.\d+)?%?)|([A-Za-z_][A-Za-z0-9_]*)|(>=|<=|[-+*\/(),=^]))/y;
   const out = [];
   while (re.lastIndex < src.length) {
     const start = re.lastIndex;
@@ -426,9 +444,14 @@ function parseFormula(src) {
     if (t.v === "-") return { t: "neg", x: primary() };
     throw new Error(`unexpected "${t.v}" in ${src}`);
   };
+  const power = () => {
+    const base = primary();
+    if (take("^")) return { t: "pow", base, exp: power() }; // right-associative
+    return base;
+  };
   const product = () => {
-    let l = primary();
-    while (peek() && (peek().v === "*" || peek().v === "/")) l = { t: "bin", op: toks[i++].v, l, r: primary() };
+    let l = power();
+    while (peek() && (peek().v === "*" || peek().v === "/")) l = { t: "bin", op: toks[i++].v, l, r: power() };
     return l;
   };
   const sum = () => {
@@ -466,6 +489,7 @@ function renderSymbol(sym) {
 }
 
 const unparen = (x) => (x.t === "paren" ? x.x : x);
+const FN_DISPLAY = { Phi: "Φ" }; // standard normal CDF
 const isSum = (x) => x.t === "bin" && (x.op === "+" || x.op === "-");
 
 function renderExpr(x) {
@@ -487,9 +511,45 @@ function renderExpr(x) {
       return s;
     }
     case "neg": { const s = el("span", "f-group"); s.append("−", renderExpr(x.x)); return s; }
-    case "fn": {
+    case "pow": {
       const s = el("span", "f-group");
-      s.append(el("span", "f-fn", x.name), el("span", "f-paren", "("));
+      s.appendChild(renderExpr(x.base));
+      const sup = el("sup", "f-sup");
+      sup.appendChild(renderExpr(unparen(x.exp)));
+      s.appendChild(sup);
+      return s;
+    }
+    case "fn": {
+      if (x.name === "sqrt") {
+        const s = el("span", "f-group f-sqrt");
+        const rad = el("span", "f-radicand");
+        rad.appendChild(renderExpr(unparen(x.args[0])));
+        s.append(el("span", "f-radical", "√"), rad);
+        return s;
+      }
+      if (x.name === "abs") {
+        const s = el("span", "f-group");
+        s.append(el("span", "f-paren", "|"), renderExpr(x.args[0]), el("span", "f-paren", "|"));
+        return s;
+      }
+      if (x.name === "sum") {
+        // sum(index, body) -> Σ with the index underneath; sum(index, upper, body) also
+        // puts the upper bound above it.
+        const s = el("span", "f-group");
+        const sig = el("span", "f-sum-op");
+        const under = el("span", "f-sum-index");
+        under.appendChild(renderExpr(x.args[0]));
+        if (x.args.length === 3) {
+          const over = el("span", "f-sum-index");
+          over.appendChild(renderExpr(x.args[1]));
+          sig.appendChild(over);
+        }
+        sig.append(el("span", "f-sigma", "Σ"), under);
+        s.append(sig, renderExpr(x.args[x.args.length - 1]));
+        return s;
+      }
+      const s = el("span", "f-group");
+      s.append(el("span", "f-fn", FN_DISPLAY[x.name] || x.name), el("span", "f-paren", "("));
       x.args.forEach((a, k) => { if (k) s.append(el("span", "f-comma", ", ")); s.appendChild(renderExpr(a)); });
       s.appendChild(el("span", "f-paren", ")"));
       return s;
@@ -533,35 +593,42 @@ function renderExpr(x) {
 }
 
 const FORMULA_SOURCE = {
+  transcribed: { ja: "原文の数式（画像）から転記", en: "Transcribed from the source formula" },
   text_derived: { ja: "条文の文言から作成", en: "Written from the article text" },
   image_reconstructed: { ja: "⚠ 原文では画像の数式・未照合", en: "⚠ Image formula in source — not yet verified" },
 };
 
-function renderFormulaBox(f) {
-  const box = el("div", `formula-box source-${f.source}`);
-  const head = el("div", "formula-head");
+function appendFormulaLine(into, line, used) {
+  try {
+    const { parts, rels } = parseFormula(line);
+    parts.forEach((p, k) => {
+      if (k) into.appendChild(el("span", "f-rel", { "=": "=", ">=": "≥", "<=": "≤" }[rels[k - 1]]));
+      into.appendChild(renderExpr(p));
+    });
+    line.replace(/[A-Za-z_][A-Za-z0-9_]*/g, (id) => { if (state.formulas?.variables?.[id]) used.add(id); return id; });
+  } catch (err) {
+    into.textContent = line;
+    into.classList.add("formula-error");
+  }
+}
+
+function renderFormulaBox(f, tag = "div") {
+  // A span (display:block via CSS) when it sits inside clause text, so the surrounding
+  // inline markup stays valid.
+  const box = el(tag, `formula-box source-${f.source}`);
+  const head = el("span", "formula-head");
   head.appendChild(el("span", "formula-label", state.lang === "ja" ? f.label_ja : f.label_en));
   const src = FORMULA_SOURCE[f.source];
   if (src) head.appendChild(el("span", "formula-source", src[state.lang]));
   box.appendChild(head);
   const used = new Set();
   for (const line of f.lines) {
-    const row = el("div", "formula-line");
-    try {
-      const { parts, rels } = parseFormula(line);
-      parts.forEach((p, k) => {
-        if (k) row.appendChild(el("span", "f-rel", { "=": "=", ">=": "≥", "<=": "≤" }[rels[k - 1]]));
-        row.appendChild(renderExpr(p));
-      });
-      line.replace(/[A-Za-z_][A-Za-z0-9_]*/g, (id) => { if (state.formulas?.variables?.[id]) used.add(id); return id; });
-    } catch (err) {
-      row.textContent = line;
-      row.classList.add("formula-error");
-    }
+    const row = el("span", "formula-line");
+    appendFormulaLine(row, line, used);
     box.appendChild(row);
   }
   const note = state.lang === "ja" ? f.note_ja : f.note_en;
-  if (note) box.appendChild(el("div", "formula-note", note));
+  if (note) box.appendChild(el("span", "formula-note", note));
   // Hover/tap explains a variable in place; this list is the same information for
   // reading straight through (and for touch screens, where there is no hover).
   if (used.size) {
@@ -751,6 +818,72 @@ function renderClauses(node) {
   return frag;
 }
 
+// Text may carry three kinds of markup from extract_chapter_v2.py:
+//   {{T:<id>}}  a table that sat here in the PDF            -> tables.json
+//   {{F:<id>}}  an image formula (display or inline symbol) -> formulas.json `anchor`
+//   X_{sub} / X^{sup}  sub/superscript characters (e.g. C_{collect}, AddOn^{(IR)})
+const RICH_RE = /\{\{([TF]):([^}]+)\}\}|([_^])\{([^}]*)\}/g;
+function appendRich(into, str) {
+  const re = new RegExp(RICH_RE.source, "g");
+  let pos = 0, m;
+  while ((m = re.exec(str))) {
+    if (m.index > pos) into.appendChild(document.createTextNode(str.slice(pos, m.index)));
+    if (m[1] === "T") into.appendChild(renderTableToken(m[2]));
+    else if (m[1] === "F") into.appendChild(renderFormulaToken(m[2]));
+    else into.appendChild(el(m[3] === "_" ? "sub" : "sup", "text-script", m[4]));
+    pos = re.lastIndex;
+  }
+  if (pos < str.length) into.appendChild(document.createTextNode(str.slice(pos)));
+}
+
+function renderTableToken(id) {
+  const t = state.tables?.tables?.[id];
+  if (!t) {
+    const ph = el("span", "token-missing", state.lang === "ja" ? "［表：未整備］" : "[table not yet transcribed]");
+    ph.title = id;
+    return ph;
+  }
+  const wrap = el("span", "table-wrap");
+  const table = el("table", "reg-table");
+  const rows = (state.lang === "en" && t.rows_en) ? t.rows_en : t.rows_ja;
+  const headerRows = t.header_rows ?? 1;
+  const thead = el("thead"), tbody = el("tbody");
+  rows.forEach((row, r) => {
+    const tr = el("tr");
+    for (const cell of row) {
+      if (cell === null) continue; // covered by a neighbour's colspan/rowspan
+      const spec = typeof cell === "object" ? cell : { text: cell };
+      const td = el(r < headerRows ? "th" : "td");
+      if (spec.colspan) td.colSpan = spec.colspan;
+      if (spec.rowspan) td.rowSpan = spec.rowspan;
+      appendRich(td, spec.text ?? "");
+      tr.appendChild(td);
+    }
+    (r < headerRows ? thead : tbody).appendChild(tr);
+  });
+  if (thead.childNodes.length) table.appendChild(thead);
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+  const note = state.lang === "ja" ? t.note_ja : t.note_en;
+  if (note) wrap.appendChild(el("span", "table-note", note));
+  return wrap;
+}
+
+function renderFormulaToken(id) {
+  const f = (state.formulas?.formulas || []).find((x) => x.anchor === id);
+  if (!f) {
+    const ph = el("span", "token-missing", state.lang === "ja" ? "［数式：未転記］" : "[formula not yet transcribed]");
+    ph.title = id;
+    return ph;
+  }
+  if (f.display === "inline") {
+    const span = el("span", "formula-inline");
+    for (const line of f.lines) appendFormulaLine(span, line, new Set());
+    return span;
+  }
+  return renderFormulaBox(f, "span");
+}
+
 function shiftCues(cues, cut, len) {
   if (!cues?.length) return [];
   return cues
@@ -802,15 +935,15 @@ function renderTextWithRefs(text, refs, cues = []) {
     for (const m of matches) {
       const s = Math.max(m.start, a), e = Math.min(m.end, b);
       if (s >= e) continue;
-      if (s > pos) into.appendChild(document.createTextNode(text.slice(pos, s)));
-      const el = document.createElement("span");
-      el.className = `ref ref-${m.ref.scope}`;
-      el.textContent = text.slice(s, e);
-      el.addEventListener("click", (ev) => onRefClick(ev, m.ref));
-      into.appendChild(el);
+      if (s > pos) appendRich(into, text.slice(pos, s));
+      const link = document.createElement("span");
+      link.className = `ref ref-${m.ref.scope}`;
+      appendRich(link, text.slice(s, e));
+      link.addEventListener("click", (ev) => onRefClick(ev, m.ref));
+      into.appendChild(link);
       pos = e;
     }
-    if (pos < b) into.appendChild(document.createTextNode(text.slice(pos, b)));
+    if (pos < b) appendRich(into, text.slice(pos, b));
   };
   const renderRange = (a, b, nodes, into) => {
     let pos = a;

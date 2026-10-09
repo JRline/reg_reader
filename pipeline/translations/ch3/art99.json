@@ -1,0 +1,10 @@
+{
+ "number": "第九十九条",
+ "heading_en": "Reflection of Hedge Effects through Internal Transactions",
+ "summary_ja": "第十一条の十・第十一条の十三による内部取引のヘッジ効果を反映する場合、クレジット・デリバティブ（CDS・TRS）の信用リスク削減効果をヘッジ効果が反映される部分について勘案できる。",
+ "summary_en": "Where internal credit-derivative hedges are recognized under Articles 11-10 and 11-13, their credit risk mitigation counts for the hedged portion of banking-book exposures or derivative exposures.",
+ "paragraphs": [
+  "Where the hedge effect of internal transactions using credit derivatives (limited to credit default swaps and total return swaps providing a credit risk mitigation effect equivalent to a guarantee) is reflected in exposures held by an Ultimate Designated Parent Company adopting the standardized approach (excluding those subject to the calculation of market risk equivalent amounts) under the provisions of Article 11-10, the credit risk mitigation effect of those credit derivatives may be taken into account for the portion of those exposures in which the hedge effect is reflected.",
+  "Where internal transactions using credit derivatives (limited to credit default swaps providing a credit risk mitigation effect equivalent to a guarantee) are used as a hedging instrument for the credit equivalent amounts of derivative transactions provided in Article 46, paragraph (1) of an Ultimate Designated Parent Company adopting the standardized approach under the provisions of Article 11-13, paragraph (5), the credit risk mitigation effect of those credit derivatives may be taken into account for the portion of those credit equivalent amounts in which the hedge effect is reflected."
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "number": "第三十一条",
+ "heading_en": "Exposures to Type I Financial Instruments Business Operators",
+ "summary_ja": "金融商品取引業者・最終指定親会社・経営管理会社・外国証券業者等向けエクスポージャーは、自己資本比率規制等の適用を受ける場合（又は外国の同等者と認められる場合）に限り第三十条（金融機関向け）に従う。",
+ "summary_en": "Exposures to securities firms, ultimate designated parent companies, management companies and foreign securities firms follow Article 30 only if they are subject to capital adequacy regulation (or are foreign firms recognized as equivalent).",
+ "terms": [
+  {
+   "ja": "第一種金融商品取引業者向けエクスポージャー",
+   "en": "exposures to Type I financial instruments business operators"
+  }
+ ],
+ "paragraphs": [
+  "The risk weight of exposures to financial instruments business operators, Ultimate Designated Parent Companies and foreign companies equivalent to Ultimate Designated Parent Companies, management companies and foreign securities firms (referred to as \"exposures to Type I financial instruments business operators\" in Article 33, paragraph (1)) shall follow the provisions of Article 30, only where such financial instruments business operators, Ultimate Designated Parent Companies and foreign companies equivalent to Ultimate Designated Parent Companies, management companies and foreign securities firms are subject to the capital adequacy ratio, the consolidated capital adequacy ratio, the capital adequacy standards set by the Basel Committee on Banking Supervision or similar standards.",
+  "Notwithstanding the provisions of the preceding paragraph, the risk weight of exposures to financial instruments business operators, Ultimate Designated Parent Companies and foreign companies equivalent to Ultimate Designated Parent Companies, management companies and foreign securities firms that meet all of the following requirements may be determined under the provisions of Article 30. (i) That it was established under foreign laws and regulations and carries on the same type of business in a country or region other than Japan. (ii) That it has been recognized, as provided by the financial authority of the country or region in which it was established, as equivalent to a capital-regulated financial institution."
+ ]
+}

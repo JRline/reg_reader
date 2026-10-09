@@ -1,0 +1,9 @@
+{
+ "number": "第六十三条",
+ "heading_en": "Correlation of Collateral",
+ "summary_ja": "取引相手と担保の信用リスクに顕著な正の相関がある場合は、その担保を信用リスク削減手法として用いない。",
+ "summary_en": "Collateral whose credit risk is materially positively correlated with the counterparty's may not be recognized.",
+ "paragraphs": [
+  "Where the credit risk of the counterparty of a transaction collateralized by eligible financial collateral and the credit risk of that eligible financial collateral have a material positive correlation, an Ultimate Designated Parent Company adopting the standardized approach shall not use it as a credit risk mitigation technique."
+ ]
+}

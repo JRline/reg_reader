@@ -1,0 +1,15 @@
+{
+ "number": "第三十七条の三",
+ "heading_en": "ADC Exposures",
+ "summary_ja": "返済原資が不確実な売却等に依存する土地の取得・開発・建築（ADC）向け信用供与のリスク・ウェイトを百五十パーセントとする（未承認の林地・農地取得を除く）。",
+ "summary_en": "Land acquisition, development and construction (ADC) lending repaid from uncertain sales or cash flows takes 150% (excluding forest and agricultural land without planned approval).",
+ "terms": [
+  {
+   "ja": "ADC向けエクスポージャー",
+   "en": "ADC exposures"
+  }
+ ],
+ "paragraphs": [
+  "Notwithstanding the provisions of Article 32, Article 32-2 and Article 37, the risk weight of exposures to corporates, etc. that are credit extended for the acquisition and development of land and the construction of buildings, where, as of the date the credit is extended, the source of repayment of the credit is based on the uncertain sale of the real estate or on substantially uncertain cash flows (including where occupancy falls short of the occupancy rate of similar real estate in the location of that real estate; referred to as \"ADC exposures\" in the following Article) shall be 150%; provided, however, that this shall not apply to credit extended for the acquisition of forest land and standing timber, and of agricultural land, for which planning approval has not been obtained and is not planned to be applied for."
+ ]
+}

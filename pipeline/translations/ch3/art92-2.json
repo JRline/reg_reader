@@ -1,0 +1,9 @@
+{
+ "number": "第九十二条の二",
+ "heading_en": "Calculation Method, etc. for Collateralized Derivative Transactions",
+ "summary_ja": "包括的手法のボラティリティ調整率の下限（第七目、第八十四条を除く）と担保付派生商品取引（第八目）の規定を簡便手法に準用する。",
+ "summary_en": "The haircut-floor rules (Division 7, except Article 84) and collateralized-derivative rules (Division 8) also apply under the simple approach.",
+ "paragraphs": [
+  "The provisions of Division 7 (excluding Article 84) and Division 8 of the preceding Subsection shall apply mutatis mutandis where an Ultimate Designated Parent Company adopting the standardized approach uses the simple approach for eligible financial collateral. In this case, the term \"comprehensive approach\" in Article 81, paragraph (1), Article 83, paragraph (1) and Article 89, paragraph (1) shall be read as \"simple approach\"."
+ ]
+}

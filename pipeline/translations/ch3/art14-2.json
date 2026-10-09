@@ -1,0 +1,15 @@
+{
+ "number": "第十四条の二",
+ "heading_en": "Due Diligence under the Standardized Approach",
+ "summary_ja": "標準的手法採用最終指定親会社に、体制・情報把握・グループ影響・内部統制・提出対応・実施頻度の要件を満たすデュー・ディリジェンス分析を義務付ける。",
+ "summary_en": "Requires a due diligence analysis of obligors and exposures meeting six requirements: credit analysis capability, timely information, group effects, internal controls, availability to the FSA, and at least annual review.",
+ "terms": [
+  {
+   "ja": "デュー・ディリジェンス分析",
+   "en": "due diligence analysis"
+  }
+ ],
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the standardized approach shall conduct an assessment of obligors or exposures that satisfies all of the following requirements (referred to as \"due diligence analysis\" in the following Section). (i) That a framework necessary for assessing credit risk using internal credit analysis, analysis by a third party, or a combination of these has been established. (ii) That a framework necessary for obtaining information relating to the assessment in a timely manner has been established. (iii) That, where the obligor prepares consolidated financial statements or the obligor is managed as belonging to the same group, and influence from the group — such as financial support from companies belonging to the group, or the effect on repayment capacity if problems arise at those companies — must be taken into account in assessing the obligor, such influence has been assessed. (iv) That internal policies, assessment processes, systems and internal controls have been established so that the risk weight appropriate to each exposure can be determined. (v) That the results of the assessment of obligors or exposures are maintained so that they can be submitted at the request of the Commissioner of the Financial Services Agency. (vi) That the assessment of obligors or exposures is carried out at the time credit is extended and at least once a year."
+ ]
+}

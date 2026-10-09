@@ -32,8 +32,9 @@ def js_assign(key, value):
     return f"(window.REG_DATA=window.REG_DATA||{{}})[{json.dumps(key)}]={payload};\n"
 
 
-FORMULA_TOKEN_RE = re.compile(r"\s*(?:(\d+(?:\.\d+)?%?)|([A-Za-z_][A-Za-z0-9_]*)|(>=|<=|[-+*/(),=]))")
-FORMULA_FUNCS = {"max", "min"}
+FORMULA_TOKEN_RE = re.compile(r"\s*(?:(\d+(?:\.\d+)?%?)|([A-Za-z_][A-Za-z0-9_]*)|(>=|<=|[-+*/(),=^]))")
+FORMULA_FUNCS = {"max", "min", "sqrt", "exp", "ln", "abs", "sum", "Phi"}
+FORMULA_INDEX_RE = re.compile(r"^[a-z]$")  # summation index (sum(j, ...)) — not a variable
 
 
 def load_formulas(src, feed):
@@ -67,7 +68,7 @@ def load_formulas(src, feed):
                         errors.append(f"formula {f['id']}: can't parse {line[pos:]!r}")
                     break
                 ident, op = m.group(2), m.group(3)
-                if ident and ident not in FORMULA_FUNCS and ident not in variables:
+                if ident and ident not in FORMULA_FUNCS and ident not in variables and not FORMULA_INDEX_RE.match(ident):
                     errors.append(f"formula {f['id']}: unknown variable {ident!r}")
                 if op == "(":
                     depth += 1
@@ -82,6 +83,36 @@ def load_formulas(src, feed):
     if errors:
         sys.exit("build_site: formula errors:\n  " + "\n  ".join(errors))
     return formulas, notation
+
+
+def load_tables(src, feed):
+    """Optional tables.json: {tables: {<token id>: {node_id, header_rows, rows_ja, rows_en, …}}}.
+    Every {{T:id}} token in the feed text should have an entry (a missing one renders as a
+    visible "not yet transcribed" placeholder, so it's a warning, not an error)."""
+    tpath = src / "tables.json"
+    text = json.dumps(feed, ensure_ascii=False)
+    tokens = set(re.findall(r"\{\{T:([^}]+)\}\}", text))
+    ftokens = set(re.findall(r"\{\{F:([^}]+)\}\}", text))
+    fpath = src / "formulas.json"
+    anchors = {f.get("anchor") for f in json.loads(fpath.read_text(encoding="utf-8")).get("formulas", [])} if fpath.exists() else set()
+    if ftokens - anchors:
+        print(f"  note: {src.name}: {len(ftokens - anchors)} formula image(s) not yet transcribed: {sorted(ftokens - anchors)[:8]}…")
+    if not tpath.exists():
+        if tokens:
+            print(f"  note: {src.name}: {len(tokens)} table token(s) but no tables.json")
+        return None
+    tables = json.loads(tpath.read_text(encoding="utf-8"))
+    entries = tables.get("tables", {})
+    errors = []
+    for tid, t in entries.items():
+        for key in ("rows_ja", "rows_en"):
+            if key in t and t[key] is not None and t.get("rows_ja") and len(t[key]) != len(t["rows_ja"]):
+                errors.append(f"table {tid}: {key} has {len(t[key])} rows, rows_ja has {len(t['rows_ja'])}")
+    if tokens - set(entries):
+        print(f"  note: {src.name}: {len(tokens - set(entries))} table(s) not yet transcribed: {sorted(tokens - set(entries))}")
+    if errors:
+        sys.exit("build_site: table errors:\n  " + "\n  ".join(errors))
+    return tables
 
 
 def build_index_html():
@@ -128,6 +159,9 @@ def main():
         if formulas:
             bundle["formulas"] = formulas
             bundle["notation"] = notation
+        tables = load_tables(src, feed)
+        if tables:
+            bundle["tables"] = tables
         (out / "data" / f"{feed_id}.js").write_text(js_assign(f"feed:{feed_id}", bundle), encoding="utf-8")
         site_index["feeds"].append({
             "feed_id": feed_id,

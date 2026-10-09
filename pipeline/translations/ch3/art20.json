@@ -1,0 +1,9 @@
+{
+ "number": "第二十条",
+ "heading_en": "Treatment of Ratings Assessing a Different Object of Credit Risk",
+ "summary_ja": "格付の評価対象が保有エクスポージャーと異なり、リスク・アセットが過小評価されるおそれがある場合（元本・利息の範囲の違い、信用リスク削減措置の違い等）は当該格付を用いない。",
+ "summary_en": "A rating may not be used where what it assesses differs from the exposure held so that RWA could be understated — e.g. it covers only principal or interest, or reflects credit protection the exposure lacks.",
+ "paragraphs": [
+  "Where, as in the cases listed in the following items or otherwise, the object assessed by a rating differs from the exposure held by an Ultimate Designated Parent Company adopting the standardized approach so that using the rating could lead to the amount of risk-weighted assets being underestimated, the Ultimate Designated Parent Company adopting the standardized approach shall not use that rating. (i) Where the object assessed by the rating is principal only or interest only, and the exposure of the Ultimate Designated Parent Company adopting the standardized approach extends to both principal and interest. (ii) Where an issue-specific rating reflects collateral, a guarantee or another measure to reduce credit risk (including one that is not eligible as a credit risk mitigation technique provided in Section 6; the same applies hereinafter in this item), and the measure to reduce credit risk taken for the exposure held by the Ultimate Designated Parent Company adopting the standardized approach differs from it, or no such measure has been taken."
+ ]
+}

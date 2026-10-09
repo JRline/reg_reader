@@ -1,0 +1,9 @@
+{
+ "number": "第百十二条",
+ "heading_en": "Where Protection Is Provided",
+ "summary_ja": "ファースト・トゥ・デフォルト型クレジット・デリバティブでプロテクションを提供する場合、対象エクスポージャーのリスク・ウェイトを合計（上限千二百五十パーセント）して与信相当額に乗じる。",
+ "summary_en": "Selling first-to-default protection: risk weights of the basket names are summed (capped at 1,250%) and applied to the credit equivalent amount.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach provides protection through a first-to-default credit derivative, it shall calculate credit risk-weighted assets by summing the risk weights of the multiple exposures that may be covered by the protection, up to a maximum of 1,250%, and multiplying the credit equivalent amount of that credit derivative by that risk weight."
+ ]
+}

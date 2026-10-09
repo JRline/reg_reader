@@ -1,0 +1,9 @@
+{
+ "number": "第十八条",
+ "heading_en": "Local-Currency and Foreign-Currency Ratings",
+ "summary_ja": "前条の適用に当たり、エクスポージャーと異なる通貨建ての債務に係る格付は用いない（国際開発銀行との協調融資に係る現地通貨建てエクスポージャーを除く）。",
+ "summary_en": "For the preceding Article, a rating of an obligation in a different currency from the exposure may not be used, except for local-currency exposures co-financed with a qualifying multilateral development bank.",
+ "paragraphs": [
+  "In applying the provisions of the preceding Article, where an issue-specific rating or issuer rating does not relate to an exposure denominated in the same currency as the exposure held by the Ultimate Designated Parent Company adopting the standardized approach, the Ultimate Designated Parent Company adopting the standardized approach shall not use that issue-specific rating or issuer rating; provided, however, that this shall not apply where a local-currency exposure held by the Ultimate Designated Parent Company, etc. relates to co-financing with a multilateral development bank (limited to one permitted to apply a 0% risk weight under the provisions of Article 26, paragraph (3))."
+ ]
+}

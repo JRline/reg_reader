@@ -1,0 +1,13 @@
+{
+ "number": "第八十九条",
+ "heading_en": "Calculation Method Using SA-CCR, etc.",
+ "summary_ja": "包括的手法でSA-CCRを使用する担保付派生商品取引のエクスポージャー額をE＊＝α×(RC＋PFE)（α＝1.4）とし、期待エクスポージャー方式の承認を受けた場合は同方式によることもできる。",
+ "summary_en": "Collateralized derivatives under the comprehensive approach with SA-CCR: E* = 1.4 × (RC + PFE); IMM-approved firms may use the expected exposure method.",
+ "sections_en": {
+  "第六節 第三款 第八目": "Collateralized Derivative Transactions under the Comprehensive Approach"
+ },
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach uses the comprehensive approach, uses SA-CCR for forwards, swaps, options and other derivative transactions under the provisions of Article 46, paragraph (1), and uses eligible financial collateral, the amount of the exposure shall be calculated by the following formula. E* = α × (RC + PFE) E* is the exposure amount after credit risk mitigation (where it is below zero, it shall be zero). α is 1.4. RC is the replacement cost specified in Article 47, paragraph (1). PFE is the potential future exposure amount specified in Article 47, paragraph (1).",
+  "Notwithstanding the provisions of the preceding paragraph, where an Ultimate Designated Parent Company adopting the standardized approach has received the approval under Article 49, paragraph (1), it may calculate the exposure amount after credit risk mitigation by the expected exposure method."
+ ]
+}

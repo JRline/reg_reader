@@ -1,0 +1,9 @@
+{
+ "number": "第百十五条",
+ "heading_en": "Where Protection Is Provided through Nth-to-Default Credit Derivatives",
+ "summary_ja": "その他の特定順位参照型（n番目）でプロテクションを提供する場合に第百十二条を準用し、削減効果の小さい順にn－1番目までのエクスポージャー分を控除できるとする。",
+ "summary_en": "Selling nth-to-default protection (n ≥ 3): as Article 112, but the RWA reductions for the n − 1 lowest-impact names may be deducted.",
+ "paragraphs": [
+  "The provisions of Article 112 shall apply mutatis mutandis where an Ultimate Designated Parent Company adopting the standardized approach calculates credit risk-weighted assets in providing protection through nth-to-default credit derivatives (excluding first-to-default credit derivatives and second-to-default credit derivatives). In this case, the term \"first-to-default credit derivative\" in that Article shall be read as \"nth-to-default credit derivative (excluding first-to-default credit derivatives and second-to-default credit derivatives)\", and the term \"calculate credit risk-weighted assets\" shall be read as \"calculate credit risk-weighted assets; provided, however, that the sum of the amounts of credit risk-weighted assets reduced for the exposures, among the multiple exposures that may be covered by the protection, counting from the single exposure whose credit risk-weighted assets are reduced least when the risk weight of the protection provider is applied up to the notional principal amount of that credit derivative, up to the rank obtained by subtracting one from the rank specified in advance in that nth-to-default credit derivative, may be deducted\"."
+ ]
+}

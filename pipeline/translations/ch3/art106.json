@@ -1,0 +1,18 @@
+{
+ "number": "第百六条",
+ "heading_en": "Definition of Residual Maturity",
+ "summary_ja": "エクスポージャーと信用リスク削減手法の残存期間を保守的に測定する方法（猶予期間の算入、保証人等の解約権・自社の早期終了動機がある場合の最初の終了可能日）を定める。",
+ "summary_en": "Residual maturities are measured conservatively: the exposure's latest possible date including grace periods; the protection's earliest effective end, counting protection-provider calls and firm calls it has an incentive to exercise.",
+ "sections_en": {
+  "第六節 第七款": "Treatment Where the Residual Maturity of Credit Risk Mitigation Is Shorter Than That of the Exposure"
+ },
+ "terms": [
+  {
+   "ja": "猶予期間",
+   "en": "grace period"
+  }
+ ],
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach uses credit risk mitigation techniques, it shall, in accordance with the provisions of the following items, set both the residual maturity of the exposure and the residual maturity of the credit risk mitigation technique (in the case provided in Article 99, the external hedge transaction or external CVA hedge transaction that fully offsets the position of the internal transaction; the same applies hereinafter in this Subsection) at conservative values. (i) The residual maturity of the exposure shall, as a rule, be calculated based on the latest of the possible dates on which the obligation is to be performed, and where a grace period (meaning the period required before a payment default causes the loss of the benefit of time; the same applies hereinafter) is provided, it shall be included in the residual maturity. (ii) For the residual maturity of the credit risk mitigation technique (in the case provided in the preceding item, where the credit risk mitigation technique used by the Ultimate Designated Parent Company adopting the standardized approach is extended until the end of that grace period and that extension can be made at the final payment date of the exposure without considering the grace period, the residual maturity of the credit risk mitigation technique may be treated as including the grace period), as a rule, in addition to what is specified in (a) and (b), the shortest residual maturity shall be used, taking into account the possibility that options embedded in the credit risk mitigation technique may shorten its residual maturity. (a) Where the guarantor or protection provider has the right to terminate the credit risk mitigation effect (in the case provided in Article 99, the hedge effect of the external hedge transaction or external CVA hedge transaction that fully offsets the position of the internal transaction; the same applies in (b)), the residual maturity shall be until the first date on which that termination is possible. (b) Where the Ultimate Designated Parent Company adopting the standardized approach holds the right to terminate the credit risk mitigation effect and has a corresponding incentive to terminate the credit risk mitigation effect early if it does not terminate it (including where the cost of maintaining the credit risk mitigation effect rises for reasons other than a decline in the creditworthiness of the guaranteed party or of the obligor of the underlying claim), the residual maturity of the credit risk mitigation technique shall be until the first date on which that termination is possible."
+ ]
+}

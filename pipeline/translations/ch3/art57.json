@@ -1,0 +1,10 @@
+{
+ "number": "第五十七条",
+ "heading_en": "Use of Ratings",
+ "summary_ja": "格付に信用リスク削減の効果が既に反映されている場合は削減手法を適用せず、元本のみの償還可能性を評価した格付は用いない。",
+ "summary_en": "No credit risk mitigation where the rating already reflects it; principal-only ratings may not be used.",
+ "paragraphs": [
+  "Where the effect of using credit risk mitigation techniques is already reflected in the rating assigned to an exposure by an eligible credit rating agency, an Ultimate Designated Parent Company adopting the standardized approach shall not apply credit risk mitigation techniques in calculating the credit risk-weighted assets relating to that exposure.",
+  "In applying credit risk mitigation techniques, an Ultimate Designated Parent Company adopting the standardized approach shall not use ratings that assess only the likelihood of repayment of principal."
+ ]
+}

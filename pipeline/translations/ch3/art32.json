@@ -1,0 +1,22 @@
+{
+ "number": "第三十二条",
+ "heading_en": "Exposures to Corporates, etc.",
+ "summary_ja": "法人等向けエクスポージャーのリスク・ウェイトを格付区分に応じて定め（デュー・ディリジェンスによる引上げあり）、無格付は百パーセント（中堅中小企業等は八十五パーセント可）とし、中堅中小企業等（売上高五十億円未満）を定義する。",
+ "summary_en": "Risk weights for corporate exposures by rating (raised where due diligence shows higher risk); unrated corporates take 100%, or 85% for SMEs (sales under ¥5 billion).",
+ "terms": [
+  {
+   "ja": "法人等",
+   "en": "corporates, etc."
+  },
+  {
+   "ja": "中堅中小企業等",
+   "en": "SMEs, etc."
+  }
+ ],
+ "paragraphs": [
+  "The risk weight where exposures to corporates, etc. (meaning exposures to corporates, etc. (meaning companies, partnerships, trusts, funds, individuals who are business operators and other similar entities, including their foreign equivalents, and excluding those provided in Article 22 through the preceding Article; the same applies in paragraph (4), in paragraph (4), item (vi) of the following Article and in Article 45, paragraph (3), item (i)); the same applies hereinafter) have a rating shall be as set out in the left column of the following table, according to the credit risk category corresponding to that rating. {{T:p73t0}}",
+  "In the preceding paragraph, where, as a result of the due diligence analysis by the Ultimate Designated Parent Company adopting the standardized approach, the credit standing of the obligor is assessed as carrying higher risk than the credit standing indicated by the credit risk category corresponding to its rating, the risk weight corresponding to a credit risk category one or more grades lower than the credit risk category corresponding to that rating shall be used; provided, however, that a risk weight corresponding to a credit risk category higher than the credit risk category corresponding to that rating shall not be used.",
+  "Where exposures to corporates, etc. are unrated, their risk weight shall be 100%; provided, however, that where the obligor falls under SMEs, etc., it may be 85%.",
+  "\"SMEs, etc.\" in the preceding paragraph means corporates, etc. whose sales (where consolidated financial statements are prepared, or where the Ultimate Designated Parent Company adopting the standardized approach manages them as belonging to the same group, consolidated sales; the same applies hereinafter in this paragraph) are less than 5 billion yen; provided, however, that where the corporate, etc. carries on wholesale business or it is otherwise inappropriate to use its sales in judging its scale of business, those whose total assets are less than 5 billion yen may be included."
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "number": "第九十三条",
+ "heading_en": "Netting of Loans and Deposits",
+ "summary_ja": "相殺の法的有効性、対象の特定、預金継続リスクの管理等の条件を満たす場合、相殺契約下の貸出金と預金の相殺後の額をエクスポージャー額とでき、通貨が異なる場合は為替のボラティリティ調整を行う。",
+ "summary_en": "On-balance sheet netting: loans may be netted against deposits from the same counterparty if netting is legally enforceable in insolvency, identifiable at all times and monitored; currency mismatch takes the FX haircut with a 10-day holding period.",
+ "sections_en": {
+  "第六節 第五款": "Netting of Loans and Deposits"
+ },
+ "paragraphs": [
+  "Where all of the following conditions are satisfied, an Ultimate Designated Parent Company adopting the standardized approach may treat the amount after netting loans and deposits under a netting contract as the exposure amount after credit risk mitigation; provided, however, that where the currencies of the loans and deposits are not the same, the haircut for the case where the currencies of the collateral and the exposure differ must be applied to the amount of the deposits as provided in Article 70, paragraph (2). (i) That the Ultimate Designated Parent Company adopting the standardized approach has a sufficient basis to show that the netting of loans and deposits is legally effective in the countries relevant to the transaction, regardless of the counterparty's (meaning the depositor of the deposits subject to netting; the same applies hereinafter in this Subsection) insolvency, a decision to commence bankruptcy proceedings, a decision to commence rehabilitation proceedings, a decision to commence reorganization proceedings, an order to commence special liquidation or similar events. (ii) That the Ultimate Designated Parent Company adopting the standardized approach can identify, at any point in time, the loans and deposits under the netting contract with the same counterparty. (iii) That the risk that the deposits will not be rolled over is monitored and controlled. (iv) That, for the relevant exposures, the amount after netting loans and deposits is monitored and controlled.",
+  "For the conditions relating to the calculation of the haircut specified in the preceding paragraph, the provisions on the comprehensive approach shall apply mutatis mutandis; provided, however, that the minimum holding period shall be ten business days."
+ ]
+}

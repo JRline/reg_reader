@@ -1,0 +1,19 @@
+{
+ "number": "第七十条",
+ "heading_en": "Standard Supervisory Haircuts",
+ "summary_ja": "毎営業日の時価評価・十営業日保有期間を前提とした標準的ボラティリティ調整率を、債券は格付・残存期間・発行体別の表で、株式・投資信託・現金等は資産種別の表で定め、通貨ミスマッチは八パーセントとする。",
+ "summary_en": "Standard supervisory haircuts (daily marking, 10-day holding period): debt by rating band, residual maturity and issuer type; equities, funds, cash and non-eligible assets by type; 8% for currency mismatch.",
+ "sections_en": {
+  "第六節 第三款 第二目": "Standard Supervisory Haircuts"
+ },
+ "terms": [
+  {
+   "ja": "保有期間",
+   "en": "holding period"
+  }
+ ],
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach uses the standard supervisory haircuts, the haircut to be used where the transactions subject to calculation under the comprehensive approach are marked to market or subject to margin calls every business day and the holding period (meaning the period for which the asset is assumed to be held in calculating the haircut; the same applies hereinafter from this Division through Division 4) is ten business days shall be as specified in each of the following items according to the case listed in that item. (i) Where the eligible financial collateral is a bond: the haircut set out in the following table according to the rating and other conditions assigned to the bond by an eligible credit rating agency, the residual maturity of the bond and the issuer. {{T:p130t0}} (Note) Specific issuers means central governments, etc. (meaning central governments, central banks, the Bank for International Settlements, the International Monetary Fund, the European Central Bank, the European Union, the European Stability Mechanism, the European Financial Stability Facility and multilateral development banks to which a 0% risk weight applies; the same applies hereinafter in this Section), local governments in Japan, the Japan Finance Organization for Municipalities and Japanese government-affiliated agencies. (ii) Where the asset to which the haircut is applied falls under an asset type listed in the following table: the haircut specified in the lower column of that table according to the applicable asset type. {{T:p131t1}}",
+  "The haircut applied by an Ultimate Designated Parent Company adopting the standardized approach that uses the standard supervisory haircuts where the currencies of the exposure and the collateral differ shall be 8% where marking to market is carried out every business day and the holding period is ten business days."
+ ]
+}

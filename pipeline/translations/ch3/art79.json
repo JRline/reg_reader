@@ -1,0 +1,13 @@
+{
+ "number": "第七十九条",
+ "heading_en": "Application of Legally Effective Bilateral Netting Contracts to Repo-Style Transactions and Margin Lending and Similar Overseas Transactions",
+ "summary_ja": "レポ取引・信用取引等について相対ネッティングの効果を勘案できる要件（一括清算と担保の速やかな処分、トレーディング勘定取引を含む場合は日次時価評価と包括的手法の適格担保）を定める。",
+ "summary_en": "Netting of repo-style and margin lending transactions is recognized only with close-out netting and prompt collateral liquidation, and — if trading-book trades are included — daily marking and comprehensive-approach eligible collateral.",
+ "sections_en": {
+  "第六節 第三款 第六目": "Use of Haircuts for Repo-Style Transactions under Legally Effective Bilateral Netting Contracts"
+ },
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the standardized approach may take into account the effect of a legally effective bilateral netting contract for repo-style transactions and margin lending and similar overseas transactions only where all of the conditions specified in the following items are satisfied. (i) That, where an event occurs that allows one party to terminate the transactions, the other party can promptly terminate all repo-style transactions and margin lending and similar overseas transactions under that bilateral netting contract and turn them into a single claim or obligation. (ii) That, in the case provided in the preceding item, the prompt disposal of collateral by that other party is permitted.",
+  "In the case provided in the preceding paragraph, where one or more of the transactions subject to the legally effective bilateral netting contract are included in the calculation of market risk equivalent amounts, the Ultimate Designated Parent Company adopting the standardized approach may take into account the effect of that bilateral netting contract only where the conditions specified in the following items are satisfied. (i) That all transactions under that bilateral netting contract are marked to market every business day. (ii) That the collateral used in the transactions subject to that bilateral netting contract that are subject to the calculation of market risk equivalent amounts is eligible financial collateral under the comprehensive approach."
+ ]
+}

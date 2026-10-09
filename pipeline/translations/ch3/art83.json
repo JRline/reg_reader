@@ -1,0 +1,17 @@
+{
+ "number": "第八十三条",
+ "heading_en": "In-Scope Securities Financing Transactions for Which the Credit Risk Mitigation Effect of Eligible Financial Collateral Cannot Be Taken into Account",
+ "summary_ja": "ネッティング・セットに含まれない対象証券金融取引で、担保の超過率がボラティリティ調整率の標準的下限を下回る場合は担保を勘案しないこととし、標準的下限の表を定める。",
+ "summary_en": "For in-scope SFTs outside netting sets, collateral is disregarded if over-collateralization falls below the standard haircut floor (table: 0.5%–10% by security type).",
+ "terms": [
+  {
+   "ja": "ボラティリティ調整率の標準的下限",
+   "en": "standard haircut floor"
+  }
+ ],
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the standardized approach that uses the comprehensive approach shall not use eligible financial collateral as a credit risk mitigation technique for an in-scope securities financing transaction in which a single security not included in a netting set (including transactions on a portfolio basis) is traded, where the requirement specified in each of the following items according to the case listed in that item is satisfied. (i) For in-scope securities financing transactions listed in Article 81, paragraph (1), item (i) or item (iii): the value calculated by the formula listed in (a) is below the value listed in (b). (a) (C／E) − 1 E means the amount of the exposure. C means the amount of eligible financial collateral. (b) The standard haircut floor applied according to the type of borrowed securities, securities posted as collateral or securities purchased with a resale agreement provided in the following paragraph (where there are multiple securities, the standard haircut floor weighted by the amounts of the securities). (ii) For in-scope securities financing transactions listed in Article 81, paragraph (1), item (ii): the value calculated by the formula listed in (a) is below the value calculated by the formula listed in (b). (a) (C_{B}／C_{A}) − 1 C_{A} means the amount of securities lent or securities posted as collateral. C_{B} means the amount of securities borrowed or securities received as collateral. (b) {{F:p139i0}} f_{A} means the standard haircut floor applied to the securities lent or securities posted as collateral (provided that it is zero for bonds of central governments, etc., and that for multiple securities it is the standard haircut floor weighted by the amounts of the securities). f_{B} means the standard haircut floor applied to the securities borrowed or securities received as collateral (provided that it is zero for bonds of central governments, etc., and that for multiple securities it is the standard haircut floor weighted by the amounts of the securities).",
+  "\"Standard haircut floor\" in the preceding paragraph means the floor specified in the following table according to the type of security. {{T:p139t0}}",
+  "Where collateral has been called by a party to the transaction (meaning the Ultimate Designated Parent Company adopting the standardized approach and the counterparty; the same applies in paragraph (2) of the following Article), that collateral may be taken into account in the formulas listed in paragraph (1), item (i)(a) and item (ii)(a) and (b), regardless of the period until settlement."
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "number": "第十九条",
+ "heading_en": "Risk Weight Where There Are Multiple Ratings",
+ "summary_ja": "格付等が二以上あり対応するリスク・ウェイトが異なる場合、二番目に小さいものを用いる（最小のものが複数の格付に対応する場合はその最小のもの）。",
+ "summary_en": "Where two or more ratings or scores map to different risk weights, use the second-lowest — unless the lowest is supported by more than one rating, in which case use the lowest.",
+ "paragraphs": [
+  "Where, for an exposure it holds, an Ultimate Designated Parent Company adopting the standardized approach has two or more ratings by eligible credit rating agencies or country risk scores of the Organisation for Economic Co-operation and Development or of export credit agencies, and the corresponding risk weights differ, it shall use the second-lowest risk weight counting from the lowest; provided, however, that where the lowest risk weight corresponds to more than one rating or country risk score, it shall use that lowest risk weight."
+ ]
+}

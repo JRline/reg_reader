@@ -1,0 +1,19 @@
+{
+ "number": "第三十八条",
+ "heading_en": "Defaulted Exposures",
+ "summary_ja": "経営破綻・三月以上延滞・条件緩和等の事由が生じた延滞エクスポージャーの無担保部分のリスク・ウェイトを個別貸倒引当金等の割合に応じ百五十・百・五十パーセントとし、同一債務者への波及、解消・再発時の取扱い、九十日超基準の選択を定める。",
+ "summary_en": "Defaulted exposures (insolvency, unlikeliness to pay, 3+ months past due, distressed restructuring, loss-making sale, overdraft breach): the unprotected portion takes 150/100/50% by specific provisions coverage; default contaminates the obligor's other exposures except qualifying retail.",
+ "terms": [
+  {
+   "ja": "延滞エクスポージャー",
+   "en": "defaulted exposures"
+  }
+ ],
+ "paragraphs": [
+  "Notwithstanding the provisions of Article 22 through the preceding Article (excluding Article 35), the risk weight applied to the portion of an exposure whose obligor has experienced an event listed in the following items (referred to as a \"defaulted exposure\" in the following paragraph through paragraph (5) and in the following Article) whose credit risk is not mitigated by eligible financial collateral, the portion not guaranteed where a guarantee is used, and the portion not protected where a credit derivative is used, shall be as set out in the lower column of the following table, according to the category of the ratio of the amount of specific provisions, etc. (meaning the sum of the amount of specific allowances for loan losses, the amount of the specific allowance for loans to restructuring countries and the amount of partial direct write-offs) to the sum of the amount of the defaulted exposure and the amount of partial direct write-offs. {{T:p85t0}} (i) Business failure due to events such as a petition for the commencement of bankruptcy proceedings, corporate reorganization proceedings or civil rehabilitation proceedings. (ii) A situation in which the financial condition and operating results have deteriorated and it is highly likely that the principal of the claim cannot be recovered and interest cannot be received. (iii) The payment of principal or interest has been past due for three months or more, counting from the day following the contractual payment date. (iv) Revision of contractual terms granting certain concessions favourable to the obligor, for purposes such as rehabilitating or supporting an obligor in economic difficulty and promoting the recovery of the claim. (v) The Ultimate Designated Parent Company adopting the standardized approach sells its exposures to the obligor at a material economic loss. (vi) For an overdraft to the obligor, the agreed limit (deemed to be zero if none has been set) has been exceeded for three months or more, counting from the day following the date on which it was exceeded or the date on which a limit lower than the current overdraft was notified.",
+  "Where an event listed in any item of the preceding paragraph has occurred for one exposure, other exposures to the obligor of that exposure shall also be treated as defaulted exposures; provided, however, that this shall not apply to exposures to qualifying SMEs, etc. or qualifying retail exposures, or to retail exposures (limited to those to which a risk weight of 100% applies under Article 34, paragraph (4)).",
+  "Where the events listed in the items of paragraph (1) are recognized as having been resolved for a defaulted exposure, the Ultimate Designated Parent Company adopting the standardized approach shall not treat that exposure as a defaulted exposure.",
+  "Where an event listed in any item of paragraph (1) occurs again for an exposure under the preceding paragraph, the Ultimate Designated Parent Company adopting the standardized approach shall treat that exposure as a defaulted exposure.",
+  "In paragraph (1), an Ultimate Designated Parent Company adopting the standardized approach may determine defaulted exposures by reading \"three months or more\" in items (iii) and (vi) of that paragraph as \"more than 90 days\"."
+ ]
+}

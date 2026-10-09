@@ -1,0 +1,27 @@
+{
+ "number": "第三十六条",
+ "heading_en": "Exposures to Rental Residential Real Estate",
+ "summary_ja": "返済が賃料収入に依存する賃貸用住宅向けエクスポージャーで適格性の要件を満たすものをLTV比率に応じ三十〜百五パーセント、満たさないものを百五十パーセントとし、第二順位以下は一・二五倍とする。",
+ "summary_en": "Income-producing residential real estate (repayment from rent) takes 30–105% by LTV if eligible, 150% if not; junior liens ×1.25 unless LTV ≤ 50.",
+ "terms": [
+  {
+   "ja": "賃貸用不動産向けエクスポージャー",
+   "en": "exposures to rental residential real estate"
+  },
+  {
+   "ja": "適格性の要件",
+   "en": "eligibility requirements"
+  },
+  {
+   "ja": "LTV比率",
+   "en": "LTV ratio"
+  }
+ ],
+ "paragraphs": [
+  "Notwithstanding the provisions of Article 32 and Article 34, the risk weight of exposures relating to the acquisition, etc. of housing that satisfy all of the following requirements (hereinafter referred to as \"exposures to rental residential real estate\") and that satisfy all of the eligibility requirements shall be as set out in the left column of the following table, according to the category of LTV ratio of the exposure to rental residential real estate listed in that table. {{T:p81t0}} (i) That the housing on which the mortgage is created is for the purpose of renting out, and the use of funds is limited to the construction, acquisition, extension or renovation of that housing and other housing-related expenses. (ii) That it falls under neither of the following: (a) Exposures to business operators whose main business is housing construction or residential land development. (b) Exposures whose use of funds is the construction, acquisition, extension or renovation of company housing, etc. (iii) That repayment depends solely on rent or other income from that housing (including where the Ultimate Designated Parent Company adopting the standardized approach cannot explain that repayment does not depend solely on rent or other income from that housing).",
+  "The risk weight where an exposure to rental residential real estate does not satisfy the eligibility requirements shall be 150%.",
+  "The \"eligibility requirements\" in the preceding two paragraphs means the following requirements. (i) That construction of the property on which the mortgage is created has been completed. (ii) That the mortgage is first-ranking; provided, however, that this shall not apply where the mortgage is second-ranking or lower and the LTV ratio is 100 or less. (iii) That the obligor's repayment capacity has been assessed as adequate based on appropriate underwriting standards. (iv) That the valuation of the property pledged as collateral for the credit satisfies all of the requirements listed in paragraph (3), item (iv)(a) through (f) of the preceding Article. (v) That documents on the information necessary for continuously monitoring credit risk over the term of the credit (including information on the obligor's repayment capacity provided in item (iii) and on the property valuation provided in the preceding item) have been properly prepared.",
+  "The \"LTV ratio\" in paragraph (1) and the preceding paragraph means the value, expressed as a percentage, of the ratio obtained by dividing the amount specified in item (i) by the amount specified in item (ii). (i) The amount of the exposure as of the calculation reference date on which the risk weight specified in paragraph (1) is applied; provided, however, that where the mortgage is second-ranking or lower, it shall be that exposure amount plus the amount of exposures as of the calculation reference date secured by the property pledged to holders of prior-ranking and equal-ranking mortgages (excluding the Ultimate Designated Parent Company adopting the standardized approach itself). (ii) The amount calculated, by a method satisfying the requirements listed in item (iv) of the preceding paragraph, as the value of the property pledged as collateral at the time the credit was extended. In this case, where the case listed in (a) applies, that amount shall be revised downward, and where the case listed in (b) applies, that amount may be revised upward. (a) Where a permanent decrease in the value of the property due to an idiosyncratic event is evident. (b) Where the value of the property increases due to extension or renovation.",
+  "Of the exposures to rental residential real estate that satisfy all of the eligibility requirements provided in paragraph (3), the risk weight of those for which the mortgage of the Ultimate Designated Parent Company adopting the standardized approach is second-ranking or lower shall be the value obtained by multiplying the risk weight specified in paragraph (1) by 1.25; provided, however, that where the LTV ratio provided in the preceding paragraph is 50 or less, it is not necessary to multiply by 1.25."
+ ]
+}

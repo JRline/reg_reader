@@ -1,0 +1,9 @@
+{
+ "number": "第百一条",
+ "heading_en": "Treatment of Materiality Thresholds",
+ "summary_ja": "保証・クレジット・デリバティブに一定額未満の損失では支払わない免責額がある場合、その額に千二百五十パーセントのリスク・ウェイトを適用する。",
+ "summary_en": "A materiality threshold below which the protection provider pays nothing is treated as retained first loss and weighted at 1,250%.",
+ "paragraphs": [
+  "Where a guarantee or credit derivative used as a credit risk mitigation technique by an Ultimate Designated Parent Company adopting the standardized approach is one under which the guarantor or protection provider (in the case provided in Article 99, the eligible third-party protection provider; the same applies in the following Article, Article 103 and Article 106, item (ii)(a)) may refrain from making payment if the amount of the loss or payment default relating to the guaranteed claim or underlying claim is below a certain level even though it has occurred, that Ultimate Designated Parent Company adopting the standardized approach shall apply a risk weight of 1,250% to the amount equivalent to that level."
+ ]
+}

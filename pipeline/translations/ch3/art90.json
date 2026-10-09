@@ -1,0 +1,12 @@
+{
+ "number": "第九十条",
+ "heading_en": "Preconditions",
+ "summary_ja": "簡便手法の適用条件として、エクスポージャーの残存期間が担保の残存期間を超えないことと、担保の時価評価・六月に一回以上の再評価を求める。",
+ "summary_en": "Simple approach preconditions: the collateral must last at least as long as the exposure and be marked to market and revalued at least every six months.",
+ "sections_en": {
+  "第六節 第四款": "Simple Approach"
+ },
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach uses the simple approach for eligible financial collateral, it shall satisfy the following conditions. (i) That the residual maturity of the exposure does not exceed the residual maturity of the eligible financial collateral. (ii) That the eligible financial collateral is marked to market and revalued at least once every six months."
+ ]
+}

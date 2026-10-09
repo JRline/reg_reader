@@ -1,0 +1,16 @@
+{
+ "number": "第三十一条の二",
+ "heading_en": "Exposures to Insurance Companies",
+ "summary_ja": "保険会社・保険持株会社向けエクスポージャーは第三十条に従い、外国の同等者で金融当局が自己資本比率規制金融機関に準ずると認めたものも同条によることができる。",
+ "summary_en": "Exposures to insurance companies and insurance holding companies follow Article 30; foreign equivalents recognized by their regulator may too.",
+ "terms": [
+  {
+   "ja": "保険会社向けエクスポージャー",
+   "en": "exposures to insurance companies"
+  }
+ ],
+ "paragraphs": [
+  "The risk weight of exposures to insurance companies or insurance holding companies (referred to as \"exposures to insurance companies\" in Article 33, paragraph (1)) shall follow the provisions of Article 30.",
+  "The risk weight of exposures to foreign persons equivalent to insurance companies and foreign persons equivalent to insurance holding companies that meet all of the following requirements may be determined under the provisions of Article 30. (i) That it was established under foreign laws and regulations and carries on the same type of business in a country or region other than Japan. (ii) That it has been recognized, as provided by the financial authority of the country or region in which it was established, as equivalent to a capital-regulated financial institution."
+ ]
+}

@@ -123,10 +123,12 @@ def main():
     full_text = extract_full_text(pdf_path)
     lines = full_text.split("\n")
 
-    # Skip the first occurrence (table of contents) by requiring an exact, bare match —
-    # ToC lines carry a "（第二条―第十三条）" style suffix that a bare marker won't equal.
-    start_idx = next(i for i, l in enumerate(lines) if l.strip() == start_marker)
-    end_idx = next(i for i, l in enumerate(lines) if i > start_idx and l.strip() == end_marker)
+    # The table of contents repeats every chapter heading before the body does. Some ToC
+    # lines carry a "（第二条―第十三条）" suffix that a bare marker won't equal, but not
+    # all (Chapter 3's doesn't), so anchor on the LAST exact match of the end marker (the
+    # body heading) and the last start-marker match before it.
+    end_idx = max(i for i, l in enumerate(lines) if l.strip() == end_marker)
+    start_idx = max(i for i, l in enumerate(lines) if i < end_idx and l.strip() == start_marker)
 
     articles = split_chapter_into_articles(lines, start_idx, end_idx)
 

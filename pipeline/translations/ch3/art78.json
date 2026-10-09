@@ -1,0 +1,9 @@
+{
+ "number": "第七十八条",
+ "heading_en": "Repo-Style Transactions Abroad",
+ "summary_ja": "外国通貨建て債券によるレポ取引でボラティリティ調整率を適用不要とする範囲は、当該通貨の発行国の基準に従う。",
+ "summary_en": "For repos in foreign-currency bonds, the zero-haircut carve-out follows the rules of the currency's issuing country.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach carries out repo-style transactions using bonds denominated in a foreign currency, the scope in which haircuts need not be applied shall follow the standards of the country issuing that currency."
+ ]
+}

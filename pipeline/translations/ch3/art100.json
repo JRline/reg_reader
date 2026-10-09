@@ -1,0 +1,13 @@
+{
+ "number": "第百条",
+ "heading_en": "Calculation Method",
+ "summary_ja": "保証・クレジット・デリバティブで保全された部分に保証人等のリスク・ウェイトを代替適用できること（円建て優遇ウェイトの条件付）と、内部取引の場合の相殺を定める。",
+ "summary_en": "Substitution approach: the protected portion takes the protection provider's risk weight; the preferential yen sovereign weights apply only to yen protection on yen-funded exposures.",
+ "sections_en": {
+  "第六節 第六款 第二目": "Calculation Methods, etc."
+ },
+ "paragraphs": [
+  "Where a guarantee or credit derivative is used (excluding the case provided in the preceding Article), an Ultimate Designated Parent Company adopting the standardized approach may apply, to the guaranteed portion or protected portion of the exposure amount (where the credit risk mitigation effect may be taken into account under the provisions of Article 97, up to the amount specified in that Article), the risk weight of the guarantor or protection provider in place of the risk weight of the guaranteed claim or underlying claim; provided, however, that the risk weights specified in Article 22, paragraph (2), Article 24, paragraph (1), Article 27, paragraph (1), Article 28, paragraph (1) and Article 29, paragraph (1) may be applied only where the guarantee or credit derivative is denominated in yen and the exposure held by the Ultimate Designated Parent Company adopting the standardized approach is funded in yen.",
+  "In the case provided in the preceding Article, an Ultimate Designated Parent Company adopting the standardized approach may offset the amount of the portion in which the hedge effect is reflected against the notional principal amount of that credit derivative."
+ ]
+}

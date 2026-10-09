@@ -1,0 +1,16 @@
+{
+ "number": "第九十五条",
+ "heading_en": "Conditions Relating to Guarantees",
+ "summary_ja": "保証について、債務者への訴訟なしに保証人へ速やかに請求できること、元本以外の関連債務も対象とすること（元本のみの保証は第百二条で取扱い）を求める。",
+ "summary_en": "Guarantees must allow prompt claims on the guarantor without first suing the obligor, and cover fees and interest as well as principal (principal-only guarantees fall under Article 102).",
+ "terms": [
+  {
+   "ja": "元本以外の関連債務",
+   "en": "related obligations other than principal"
+  }
+ ],
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach uses a guarantee as a credit risk mitigation technique, the guarantee shall, in addition to what is provided in the preceding Article, satisfy all of the following conditions. (i) That, where an event occurs requiring performance of the guarantee obligation, the Ultimate Designated Parent Company adopting the standardized approach can promptly demand performance of the guarantee obligation from the guarantor (including payment in a form following the payment schedule that the obligor of the guaranteed claim was to follow) without bringing a legal claim against the obligor of the guaranteed claim. (ii) That obligations owed by the obligor of the guaranteed claim to the Ultimate Designated Parent Company adopting the standardized approach other than principal, such as fees and interest (hereinafter referred to as \"related obligations other than principal\"), are also covered by the guarantee.",
+  "Notwithstanding the provisions of item (ii) of the preceding paragraph, where the guaranteed obligation is principal only, the Ultimate Designated Parent Company adopting the standardized approach may recognize the related obligations other than principal as not guaranteed and treat them under the provisions of Article 102."
+ ]
+}

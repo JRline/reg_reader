@@ -1,0 +1,1711 @@
+{
+ "_comment": "Tables from the source PDF, keyed by the {{T:<id>}} token extract_chapter_v2.py left in the text. Cells hand-checked against the page images; rows_en is the English rendering of the same grid. A cell is a string, or {text, colspan, rowspan}; null marks a cell covered by a neighbour's span. header_rows = how many leading rows are headers.",
+ "tables": {
+  "p57t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art22.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "信用リスク区分",
+     "1―1",
+     "1―2",
+     "1―3",
+     "1―4",
+     "1―5",
+     "1―6"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "零",
+     "二十",
+     "五十",
+     "百",
+     "百",
+     "百五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Credit risk category",
+     "1-1",
+     "1-2",
+     "1-3",
+     "1-4",
+     "1-5",
+     "1-6"
+    ],
+    [
+     "Risk weight (%)",
+     "0",
+     "20",
+     "50",
+     "100",
+     "100",
+     "150"
+    ]
+   ]
+  },
+  "p57t1": {
+   "node_id": "fsa-basel-cap-jp.ch3.art22.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "信用リスク区分(カントリー・リスク・スコア)",
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "零",
+     "零",
+     "二十",
+     "五十",
+     "百",
+     "百",
+     "百",
+     "百五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Credit risk category (country risk score)",
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7"
+    ],
+    [
+     "Risk weight (%)",
+     "0",
+     "0",
+     "20",
+     "50",
+     "100",
+     "100",
+     "100",
+     "150"
+    ]
+   ]
+  },
+  "p58t1": {
+   "node_id": "fsa-basel-cap-jp.ch3.art25.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "信用リスク区分",
+     "1の2―1",
+     "1の2―2",
+     "1の2―3",
+     "1の2―4",
+     "1の2―5"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "二十",
+     "五十",
+     "百",
+     "百",
+     "百五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Credit risk category",
+     "1-2-1",
+     "1-2-2",
+     "1-2-3",
+     "1-2-4",
+     "1-2-5"
+    ],
+    [
+     "Risk weight (%)",
+     "20",
+     "50",
+     "100",
+     "100",
+     "150"
+    ]
+   ]
+  },
+  "p58t2": {
+   "node_id": "fsa-basel-cap-jp.ch3.art25.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "信用リスク区分(カントリー・リスク・スコア)",
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "二十",
+     "二十",
+     "五十",
+     "百",
+     "百",
+     "百",
+     "百",
+     "百五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Credit risk category (country risk score)",
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7"
+    ],
+    [
+     "Risk weight (%)",
+     "20",
+     "20",
+     "50",
+     "100",
+     "100",
+     "100",
+     "100",
+     "150"
+    ]
+   ]
+  },
+  "p59t1": {
+   "node_id": "fsa-basel-cap-jp.ch3.art26.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "信用リスク区分",
+     "2―1",
+     "2―2",
+     "2―3",
+     "2―4",
+     "2―5",
+     "2―6"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "二十",
+     "三十",
+     "五十",
+     "百",
+     "百",
+     "百五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Credit risk category",
+     "2-1",
+     "2-2",
+     "2-3",
+     "2-4",
+     "2-5",
+     "2-6"
+    ],
+    [
+     "Risk weight (%)",
+     "20",
+     "30",
+     "50",
+     "100",
+     "100",
+     "150"
+    ]
+   ]
+  },
+  "p60t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art30.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "信用リスク区分",
+     "3―1",
+     "3―2",
+     "3―3",
+     "3―4",
+     "3―5"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "二十",
+     "三十",
+     "五十",
+     "百",
+     "百五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Credit risk category",
+     "3-1",
+     "3-2",
+     "3-3",
+     "3-4",
+     "3-5"
+    ],
+    [
+     "Risk weight (%)",
+     "20",
+     "30",
+     "50",
+     "100",
+     "150"
+    ]
+   ]
+  },
+  "p61t1": {
+   "node_id": "fsa-basel-cap-jp.ch3.art30.p2",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "リスク・ウェイト(パーセント)",
+     "三十",
+     "五十",
+     "百"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "二十",
+     "二十",
+     "五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Risk weight (%) under paragraph (1)",
+     "30",
+     "50",
+     "100"
+    ],
+    [
+     "Risk weight (%)",
+     "20",
+     "20",
+     "50"
+    ]
+   ],
+   "note_ja": "上段が前項により適用されるリスク・ウェイト、下段がこの項により適用できるリスク・ウェイト（原文の表では両段とも「リスク・ウェイト（パーセント）」と表記）。",
+   "note_en": "Top row: the risk weight applied under paragraph (1); bottom row: the risk weight that may be applied under this paragraph (both rows are labelled simply \"risk weight (%)\" in the original)."
+  },
+  "p61t2": {
+   "node_id": "fsa-basel-cap-jp.ch3.art30.p5",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "グレード区分",
+     "A",
+     "B",
+     "C"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "四十",
+     "七十五",
+     "百五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Grade",
+     "A",
+     "B",
+     "C"
+    ],
+    [
+     "Risk weight (%)",
+     "40",
+     "75",
+     "150"
+    ]
+   ]
+  },
+  "p62t1": {
+   "node_id": "fsa-basel-cap-jp.ch3.art30.p6",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "リスク・ウェイト(パーセント)",
+     "四十",
+     "七十五"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "二十",
+     "五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Risk weight (%) under the preceding paragraph",
+     "40",
+     "75"
+    ],
+    [
+     "Risk weight (%)",
+     "20",
+     "50"
+    ]
+   ],
+   "note_ja": "上段が前項により適用されるリスク・ウェイト、下段がこの項により適用できるリスク・ウェイト。",
+   "note_en": "Top row: the risk weight applied under the preceding paragraph; bottom row: the risk weight that may be applied under this paragraph."
+  },
+  "p70t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art30-2.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "信用リスク区分",
+     "3の2―1",
+     "3の2―2",
+     "3の2―3",
+     "3の2―4",
+     "3の2―5"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "十",
+     "二十",
+     "二十",
+     "五十",
+     "百"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Credit risk category",
+     "3-2-1",
+     "3-2-2",
+     "3-2-3",
+     "3-2-4",
+     "3-2-5"
+    ],
+    [
+     "Risk weight (%)",
+     "10",
+     "20",
+     "20",
+     "50",
+     "100"
+    ]
+   ]
+  },
+  "p70t1": {
+   "node_id": "fsa-basel-cap-jp.ch3.art30-2.p2",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "カバード・ボンド発行体のリスク・ウェイト(パーセント)",
+     "二十",
+     "三十",
+     "四十",
+     "五十",
+     "七十五",
+     "百",
+     "百五十"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "十",
+     "十五",
+     "二十",
+     "二十五",
+     "三十五",
+     "五十",
+     "百"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Risk weight of the covered bond issuer (%)",
+     "20",
+     "30",
+     "40",
+     "50",
+     "75",
+     "100",
+     "150"
+    ],
+    [
+     "Risk weight (%)",
+     "10",
+     "15",
+     "20",
+     "25",
+     "35",
+     "50",
+     "100"
+    ]
+   ]
+  },
+  "p73t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art32.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "信用リスク区分",
+     "4―1",
+     "4―2",
+     "4―3",
+     "4―4",
+     "4―5"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "二十",
+     "五十",
+     "七十五",
+     "百",
+     "百五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Credit risk category",
+     "4-1",
+     "4-2",
+     "4-3",
+     "4-4",
+     "4-5"
+    ],
+    [
+     "Risk weight (%)",
+     "20",
+     "50",
+     "75",
+     "100",
+     "150"
+    ]
+   ]
+  },
+  "p77t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art33.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "信用リスク区分",
+     "5―1",
+     "5―2",
+     "5―3",
+     "5―4"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "二十",
+     "五十",
+     "百",
+     "百五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Credit risk category",
+     "5-1",
+     "5-2",
+     "5-3",
+     "5-4"
+    ],
+    [
+     "Risk weight (%)",
+     "20",
+     "50",
+     "100",
+     "150"
+    ]
+   ]
+  },
+  "p79t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art35.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "LTV比率",
+     "五十以下",
+     "五十超六十以下",
+     "六十超八十以下",
+     "八十超九十以下",
+     "九十超百以下",
+     "百超"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "二十",
+     "二十五",
+     "三十",
+     "四十",
+     "五十",
+     "七十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "LTV ratio",
+     "50 or less",
+     "Over 50, up to 60",
+     "Over 60, up to 80",
+     "Over 80, up to 90",
+     "Over 90, up to 100",
+     "Over 100"
+    ],
+    [
+     "Risk weight (%)",
+     "20",
+     "25",
+     "30",
+     "40",
+     "50",
+     "70"
+    ]
+   ]
+  },
+  "p81t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art36.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "LTV比率",
+     "五十以下",
+     "五十超六十以下",
+     "六十超八十以下",
+     "八十超九十以下",
+     "九十超百以下",
+     "百超"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "三十",
+     "三十五",
+     "四十五",
+     "六十",
+     "七十五",
+     "百五"
+    ]
+   ],
+   "rows_en": [
+    [
+     "LTV ratio",
+     "50 or less",
+     "Over 50, up to 60",
+     "Over 60, up to 80",
+     "Over 80, up to 90",
+     "Over 90, up to 100",
+     "Over 100"
+    ],
+    [
+     "Risk weight (%)",
+     "30",
+     "35",
+     "45",
+     "60",
+     "75",
+     "105"
+    ]
+   ]
+  },
+  "p82t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art37.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "LTV比率",
+     "六十以下",
+     "六十超八十以下",
+     "八十超"
+    ],
+    [
+     "リスク・ウェイト(パーセント)",
+     "七十",
+     "九十",
+     "百十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "LTV ratio",
+     "60 or less",
+     "Over 60, up to 80",
+     "Over 80"
+    ],
+    [
+     "Risk weight (%)",
+     "70",
+     "90",
+     "110"
+    ]
+   ]
+  },
+  "p85t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art38.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "当該延滞エクスポージャーの額及び部分直接償却の額の合計額に対する個別貸倒引当金等の額(個別貸倒引当金の額、特定海外債権引当勘定の額及び部分直接償却の額の合計額をいう。)の割合",
+     "リスク・ウェイト(パーセント)"
+    ],
+    [
+     "二十パーセント未満",
+     "百五十"
+    ],
+    [
+     "二十パーセント以上五十パーセント未満",
+     "百"
+    ],
+    [
+     "五十パーセント以上",
+     "五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Ratio of specific provisions, etc. (the sum of specific allowances for loan losses, the specific allowance for loans to restructuring countries and partial direct write-offs) to the sum of the defaulted exposure amount and partial direct write-offs",
+     "Risk weight (%)"
+    ],
+    [
+     "Less than 20%",
+     "150"
+    ],
+    [
+     "20% or more but less than 50%",
+     "100"
+    ],
+    [
+     "50% or more",
+     "50"
+    ]
+   ]
+  },
+  "p92t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art45.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "掛目(パーセント)",
+     "オフ・バランス取引の種類",
+     "備考"
+    ],
+    [
+     "十",
+     "一 任意の時期に無条件で取消し可能なコミットメント(第五号に該当するものを除く。以下この条において同じ。)又は相手方の信用状態が悪化した場合に自動的に取消し可能なコミットメント",
+     ""
+    ],
+    [
+     "二十",
+     "二 短期かつ流動性の高い貿易関連偶発債務",
+     "短期かつ流動性の高い貿易関連偶発債務とは、契約期限までの満期が一年未満である船荷により担保された商業信用状の発行又は確認によるものをいい、最終指定親会社等が発行及び確認したものに適用する。"
+    ],
+    [
+     "四十",
+     "三 コミットメント(第一号に規定するコミットメントを除く。)",
+     ""
+    ],
+    [
+     {
+      "text": "五十",
+      "rowspan": 2
+     },
+     "四 特定の取引に係る偶発債務(第二号に該当するものを除く。)",
+     "特定の取引に係る偶発債務とは、契約履行保証(保証には当該保証を行うために行うスタンドバイ信用状の発行を含む。)、入札保証、品質保証等をいう。"
+    ],
+    [
+     null,
+     "五 NIF(Note Issuance Facilities)又はRUF(Revolving Underwriting Facilities)",
+     "NIF又はRUFとは、一定期間一定の枠内で証券を反復的に発行することにより資金を調達する仕組みにおいて、発行された証券が予定された条件の範囲内で消化できない場合には、標準的手法採用最終指定親会社が一定の条件の範囲内で当該証券の買取り又は金銭の貸付け等を行うことを約する取引をいう。"
+    ],
+    [
+     {
+      "text": "百",
+      "rowspan": 3
+     },
+     "六 信用供与に直接的に代替する偶発債務",
+     "信用供与に直接的に代替する偶発債務とは、一般的な債務の保証、手形の引受け(手形の引受けの性格を持つ裏書を含む。)及び元本補填信託契約等をいう。"
+    ],
+    [
+     null,
+     "七 有価証券の貸付、現金若しくは有価証券による担保の提供(SA―CCRを用いて派生商品取引若しくは長期決済期間取引に係る与信相当額を算出し、又は期待エクスポージャー方式(第四十九条に定めるところにより与信相当額を算出することをいう。以下同じ。)を用いて派生商品取引、長期決済期間取引若しくはレポ形式の取引若しくは信用取引その他これに類する海外の取引に係る与信相当額を算出する場合において、これらの取引における担保の提供で与信相当額が算出されるものを除く。)又は有価証券の買戻条件付売却若しくは売戻条件付購入",
+     ""
+    ],
+    [
+     null,
+     "八 前各号のいずれにも該当しない信用供与に代替するオフ・バランス取引",
+     ""
+    ]
+   ],
+   "rows_en": [
+    [
+     "Conversion factor (%)",
+     "Type of off-balance sheet transaction",
+     "Remarks"
+    ],
+    [
+     "10",
+     "(i) Commitments that can be cancelled unconditionally at any time (excluding those falling under item (v); the same applies hereinafter in this Article), or commitments that are automatically cancellable if the counterparty's creditworthiness deteriorates",
+     ""
+    ],
+    [
+     "20",
+     "(ii) Short-term, highly liquid trade-related contingent liabilities",
+     "Short-term, highly liquid trade-related contingent liabilities means the issuance or confirmation of commercial letters of credit collateralized by the underlying shipment with a maturity of less than one year until the contractual deadline, and applies to those issued or confirmed by the Ultimate Designated Parent Company, etc."
+    ],
+    [
+     "40",
+     "(iii) Commitments (excluding the commitments provided in item (i))",
+     ""
+    ],
+    [
+     {
+      "text": "50",
+      "rowspan": 2
+     },
+     "(iv) Transaction-related contingent liabilities (excluding those falling under item (ii))",
+     "Transaction-related contingent liabilities means performance bonds (guarantees include the issuance of standby letters of credit for that purpose), bid bonds, warranties, etc."
+    ],
+    [
+     null,
+     "(v) NIFs (Note Issuance Facilities) or RUFs (Revolving Underwriting Facilities)",
+     "NIFs or RUFs means transactions in which, under an arrangement for raising funds by repeatedly issuing securities within a fixed limit over a fixed period, the Ultimate Designated Parent Company adopting the standardized approach undertakes, within certain conditions, to purchase the securities or lend money, etc. if the securities issued cannot be placed within the planned terms."
+    ],
+    [
+     {
+      "text": "100",
+      "rowspan": 3
+     },
+     "(vi) Contingent liabilities that are direct credit substitutes",
+     "Contingent liabilities that are direct credit substitutes means general guarantees of indebtedness, acceptances of bills (including endorsements having the character of acceptances), principal-guaranteed trust contracts, etc."
+    ],
+    [
+     null,
+     "(vii) Lending of securities, posting of cash or securities as collateral (excluding the posting of collateral in transactions for which a credit equivalent amount is calculated, where the credit equivalent amount of derivative transactions or long settlement period transactions is calculated using SA-CCR, or the credit equivalent amount of derivative transactions, long settlement period transactions, repo-style transactions or margin lending and similar overseas transactions is calculated using the expected exposure method (meaning calculating credit equivalent amounts as provided in Article 49; the same applies hereinafter)), or sale of securities with a repurchase agreement or purchase of securities with a resale agreement",
+     ""
+    ],
+    [
+     null,
+     "(viii) Off-balance sheet transactions that are credit substitutes not falling under any of the preceding items",
+     ""
+    ]
+   ]
+  },
+  "p94t1": {
+   "node_id": "fsa-basel-cap-jp.ch3.art45.p2",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "掛目(パーセント)",
+     "オフ・バランス取引の種類",
+     "備考"
+    ],
+    [
+     {
+      "text": "百",
+      "rowspan": 2
+     },
+     "一 買戻条件付又は求償権付の資産売却(当該資産の貸借対照表への計上が継続される場合を除く。)",
+     "買戻条件付の資産売却とは、金銭債権、証券又は固定資産等の売却のうち、一定期間後又は一定の条件が発生した場合には売却した資産を買い戻すという特約の付されたものをいう。以下同じ。　求償権付の資産売却とは、金銭債権、証券又は固定資産等の売却のうち、原債務者の債務不履行又は資産価値の低下につき、売却を行った標準的手法採用最終指定親会社が損失の全部又は一部を負担することとなるもの(証券化エクスポージャー及びレポ形式の取引に該当するものを除く。)をいう。以下同じ。"
+    ],
+    [
+     null,
+     "二 先物資産購入、先渡預金、部分払込株式の購入又は部分払込債券の購入(当該取引時点において取引対象資産が貸借対照表に計上される場合を除く。)",
+     "先物資産購入とは、将来の一定期日において一定の条件により金銭債権又は証券等の購入を行う契約(外国為替関連取引又は金利関連取引に該当するものを除く。)をいう。以下同じ。　先渡預金とは、将来の一定期日において一定の条件により預入を行う契約をいう。以下同じ。　部分払込株式の購入又は部分払込債券の購入とは、株式又は債券の発行時に発行価格又は額面金額の一部が払い込まれ、発行後の一定の時期又は発行者の指定する時期において追加的な払込みの行われる株式又は債券の購入をいう。以下同じ。"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Conversion factor (%)",
+     "Type of off-balance sheet transaction",
+     "Remarks"
+    ],
+    [
+     {
+      "text": "100",
+      "rowspan": 2
+     },
+     "(i) Sales of assets with a repurchase agreement or with recourse (excluding where the assets continue to be recorded on the balance sheet)",
+     "A sale of assets with a repurchase agreement means a sale of monetary claims, securities, fixed assets, etc. with a special agreement to repurchase the assets sold after a fixed period or upon the occurrence of certain conditions; the same applies hereinafter. A sale of assets with recourse means a sale of monetary claims, securities, fixed assets, etc. in which the Ultimate Designated Parent Company adopting the standardized approach that made the sale bears all or part of the loss from the original obligor's default or a decline in the value of the assets (excluding those falling under securitization exposures and repo-style transactions); the same applies hereinafter."
+    ],
+    [
+     null,
+     "(ii) Forward asset purchases, forward forward deposits, purchases of partly-paid shares or purchases of partly-paid bonds (excluding where the assets subject to the transaction are recorded on the balance sheet at the time of the transaction)",
+     "A forward asset purchase means a contract to purchase monetary claims, securities, etc. on certain terms at a fixed future date (excluding those falling under foreign exchange-related transactions or interest rate-related transactions); the same applies hereinafter. A forward forward deposit means a contract to make a deposit on certain terms at a fixed future date; the same applies hereinafter. A purchase of partly-paid shares or partly-paid bonds means the purchase of shares or bonds of which part of the issue price or face value is paid at issuance and additional payment is made at a fixed time after issuance or at a time designated by the issuer; the same applies hereinafter."
+    ]
+   ]
+  },
+  "p101t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "ヘッジセットの区分",
+     "掛目(パーセント)"
+    ],
+    [
+     "第八項各号に定めるヘッジセット",
+     "〇・五〇"
+    ],
+    [
+     "第九項に規定するヘッジセット",
+     "〇・二五"
+    ],
+    [
+     "第十項に規定する別に設けられたヘッジセット",
+     "二・五〇"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Hedging set",
+     "Supervisory factor (%)"
+    ],
+    [
+     "Hedging sets specified in the items of paragraph (8)",
+     "0.50"
+    ],
+    [
+     "Hedging sets provided in paragraph (9)",
+     "0.25"
+    ],
+    [
+     "Separate hedging sets provided in paragraph (10)",
+     "2.50"
+    ]
+   ]
+  },
+  "p102t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "取引の区分",
+     "算式"
+    ],
+    [
+     "コール・オプションの買い",
+     "{{F:p102i0}}"
+    ],
+    [
+     "コール・オプションの売り",
+     "{{F:p102i1}}"
+    ],
+    [
+     "プット・オプションの買い",
+     "{{F:p102i2}}"
+    ],
+    [
+     "プット・オプションの売り",
+     "{{F:p102i3}}"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Transaction",
+     "Formula"
+    ],
+    [
+     "Bought call option",
+     "{{F:p102i0}}"
+    ],
+    [
+     "Sold call option",
+     "{{F:p102i1}}"
+    ],
+    [
+     "Bought put option",
+     "{{F:p102i2}}"
+    ],
+    [
+     "Sold put option",
+     "{{F:p102i3}}"
+    ]
+   ]
+  },
+  "p103t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art47.p12",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "ヘッジセットの区分",
+     "掛目(パーセント)"
+    ],
+    [
+     "第八項各号に定めるヘッジセット",
+     "四"
+    ],
+    [
+     "第十項に規定する別に設けられたヘッジセット",
+     "二十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Hedging set",
+     "Supervisory factor (%)"
+    ],
+    [
+     "Hedging sets specified in the items of paragraph (8)",
+     "4"
+    ],
+    [
+     "Separate hedging sets provided in paragraph (10)",
+     "20"
+    ]
+   ]
+  },
+  "p104t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art47.p13",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "適格格付機関により付与された事業法人等の格付に対応する信用リスク区分",
+     "掛目(パーセント)"
+    ],
+    [
+     "1―1",
+     "〇・三八"
+    ],
+    [
+     "1―2",
+     "〇・四二"
+    ],
+    [
+     "1―3",
+     "〇・五四"
+    ],
+    [
+     "1―4",
+     "一・〇六"
+    ],
+    [
+     "1―5",
+     "一・六〇"
+    ],
+    [
+     "1―6",
+     "六・〇〇"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Credit risk category corresponding to the rating of the corporate, etc. assigned by an eligible credit rating agency",
+     "Supervisory factor (%)"
+    ],
+    [
+     "1-1",
+     "0.38"
+    ],
+    [
+     "1-2",
+     "0.42"
+    ],
+    [
+     "1-3",
+     "0.54"
+    ],
+    [
+     "1-4",
+     "1.06"
+    ],
+    [
+     "1-5",
+     "1.60"
+    ],
+    [
+     "1-6",
+     "6.00"
+    ]
+   ]
+  },
+  "p105t1": {
+   "node_id": "fsa-basel-cap-jp.ch3.art47.p13",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "適格格付機関により付与された格付に対応する信用リスク区分",
+     "掛目(パーセント)"
+    ],
+    [
+     "4―3又は5―3以上",
+     "〇・三八"
+    ],
+    [
+     "4―3又は5―3未満",
+     "一・〇六"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Credit risk category corresponding to the rating assigned by an eligible credit rating agency",
+     "Supervisory factor (%)"
+    ],
+    [
+     "4-3 or 5-3 or better",
+     "0.38"
+    ],
+    [
+     "Worse than 4-3 or 5-3",
+     "1.06"
+    ]
+   ]
+  },
+  "p106t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art47.p13",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "取引の区分",
+     "算式"
+    ],
+    [
+     "プロテクションの購入",
+     "{{F:p106i0}}"
+    ],
+    [
+     "プロテクションの提供",
+     "{{F:p106i1}}"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Transaction",
+     "Formula"
+    ],
+    [
+     "Purchase of protection",
+     "{{F:p106i0}}"
+    ],
+    [
+     "Provision of protection",
+     "{{F:p106i1}}"
+    ]
+   ]
+  },
+  "p107t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art47.p14",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "エクイティ・デリバティブの区分",
+     "掛目(パーセント)"
+    ],
+    [
+     "第八項各号に定めるヘッジセットに含まれるエクイティ・デリバティブのうち、株価を参照するエクイティ・デリバティブ",
+     "三十二"
+    ],
+    [
+     "第九項に規定するヘッジセットに含まれるエクイティ・デリバティブのうち、株価を参照するエクイティ・デリバティブ",
+     "十六"
+    ],
+    [
+     "第十項に規定する別に設けられたヘッジセットに含まれるエクイティ・デリバティブのうち、株価を参照するエクイティ・デリバティブ",
+     "百六十"
+    ],
+    [
+     "第八項各号に定めるヘッジセットに含まれるエクイティ・デリバティブのうち、株価指数を参照するエクイティ・デリバティブ",
+     "二十"
+    ],
+    [
+     "第九項に規定するヘッジセットに含まれるエクイティ・デリバティブのうち、株価指数を参照するエクイティ・デリバティブ",
+     "十"
+    ],
+    [
+     "第十項に規定する別に設けられたヘッジセットに含まれるエクイティ・デリバティブのうち、株価指数を参照するエクイティ・デリバティブ",
+     "百"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Equity derivative",
+     "Supervisory factor (%)"
+    ],
+    [
+     "Equity derivatives referencing a share price, in hedging sets specified in the items of paragraph (8)",
+     "32"
+    ],
+    [
+     "Equity derivatives referencing a share price, in hedging sets provided in paragraph (9)",
+     "16"
+    ],
+    [
+     "Equity derivatives referencing a share price, in separate hedging sets provided in paragraph (10)",
+     "160"
+    ],
+    [
+     "Equity derivatives referencing a share price index, in hedging sets specified in the items of paragraph (8)",
+     "20"
+    ],
+    [
+     "Equity derivatives referencing a share price index, in hedging sets provided in paragraph (9)",
+     "10"
+    ],
+    [
+     "Equity derivatives referencing a share price index, in separate hedging sets provided in paragraph (10)",
+     "100"
+    ]
+   ]
+  },
+  "p108t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art47.p15",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "コモディティ・デリバティブの区分",
+     "掛目(パーセント)"
+    ],
+    [
+     "第八項各号に定めるヘッジセットに含まれるコモディティ・デリバティブのうち、電力を参照するコモディティ・デリバティブ",
+     "四十"
+    ],
+    [
+     "第九項に規定するヘッジセットに含まれるコモディティ・デリバティブのうち、電力を参照するコモディティ・デリバティブ",
+     "二十"
+    ],
+    [
+     "第十項に規定する別に設けられたヘッジセットに含まれるコモディティ・デリバティブのうち、電力を参照するコモディティ・デリバティブ",
+     "二百"
+    ],
+    [
+     "第八項各号に定めるヘッジセットに含まれるコモディティ・デリバティブのうち、電力以外を参照するコモディティ・デリバティブ",
+     "十八"
+    ],
+    [
+     "第九項に規定するヘッジセットに含まれるコモディティ・デリバティブのうち、電力以外を参照するコモディティ・デリバティブ",
+     "九"
+    ],
+    [
+     "第十項に規定する別に設けられたヘッジセットに含まれるコモディティ・デリバティブのうち、電力以外を参照するコモディティ・デリバティブ",
+     "九十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Commodity derivative",
+     "Supervisory factor (%)"
+    ],
+    [
+     "Commodity derivatives referencing electricity, in hedging sets specified in the items of paragraph (8)",
+     "40"
+    ],
+    [
+     "Commodity derivatives referencing electricity, in hedging sets provided in paragraph (9)",
+     "20"
+    ],
+    [
+     "Commodity derivatives referencing electricity, in separate hedging sets provided in paragraph (10)",
+     "200"
+    ],
+    [
+     "Commodity derivatives referencing something other than electricity, in hedging sets specified in the items of paragraph (8)",
+     "18"
+    ],
+    [
+     "Commodity derivatives referencing something other than electricity, in hedging sets provided in paragraph (9)",
+     "9"
+    ],
+    [
+     "Commodity derivatives referencing something other than electricity, in separate hedging sets provided in paragraph (10)",
+     "90"
+    ]
+   ]
+  },
+  "p122t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art55.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "経過営業日数",
+     "リスク・ウェイト(パーセント)"
+    ],
+    [
+     "五日以上十五日以内",
+     "百"
+    ],
+    [
+     "十六日以上三十日以内",
+     "六百二十五"
+    ],
+    [
+     "三十一日以上四十五日以内",
+     "九百三十七・五"
+    ],
+    [
+     "四十六日以上",
+     "千二百五十"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Number of business days elapsed",
+     "Risk weight (%)"
+    ],
+    [
+     "5 to 15 days",
+     "100"
+    ],
+    [
+     "16 to 30 days",
+     "625"
+    ],
+    [
+     "31 to 45 days",
+     "937.5"
+    ],
+    [
+     "46 days or more",
+     "1,250"
+    ]
+   ]
+  },
+  "p130t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art70.p1",
+   "header_rows": 2,
+   "rows_ja": [
+    [
+     {
+      "text": "適格格付機関の格付に対応する信用リスク区分等",
+      "rowspan": 2
+     },
+     {
+      "text": "残存期間",
+      "rowspan": 2
+     },
+     {
+      "text": "ボラティリティ調整率",
+      "colspan": 3
+     },
+     null,
+     null
+    ],
+    [
+     null,
+     null,
+     "特定の発行体の場合(パーセント)",
+     "特定の発行体以外の発行体であって証券化エクスポージャー以外の場合(パーセント)",
+     "証券化エクスポージャーの場合(パーセント)"
+    ],
+    [
+     {
+      "text": "信用リスク区分(第二十五条に掲げる主体の発行する債券に付与された格付については、第三十二条第一項の表又は第三十三条第一項の表を準用するものとする。以下この号において同じ。)が1―1、2―1、3―1、3の2―1、4―1、5―1、6―1、6―2、6―3、6―4若しくは7―1の場合又は第六十五条第三号に該当する場合",
+      "rowspan": 5
+     },
+     "一年以下",
+     "〇・五",
+     "一",
+     "二"
+    ],
+    [
+     null,
+     "一年超三年以下",
+     {
+      "text": "二",
+      "rowspan": 2
+     },
+     "三",
+     {
+      "text": "八",
+      "rowspan": 2
+     }
+    ],
+    [
+     null,
+     "三年超五年以下",
+     null,
+     "四",
+     null
+    ],
+    [
+     null,
+     "五年超十年以下",
+     {
+      "text": "四",
+      "rowspan": 2
+     },
+     "六",
+     {
+      "text": "十六",
+      "rowspan": 2
+     }
+    ],
+    [
+     null,
+     "十年超",
+     null,
+     "十二",
+     null
+    ],
+    [
+     {
+      "text": "信用リスク区分が1―2、1―3、2―2、2―3、3―2、3―3、3の2―2、3の2―3、4―2、4―3、5―2、5―3、6―5、6―6、6―7、6―8、6―9、6―10、7―2若しくは7―3の場合又は第六十五条第五号の条件を満たす場合",
+      "rowspan": 5
+     },
+     "一年以下",
+     "一",
+     "二",
+     "四"
+    ],
+    [
+     null,
+     "一年超三年以下",
+     {
+      "text": "三",
+      "rowspan": 2
+     },
+     "四",
+     {
+      "text": "十二",
+      "rowspan": 2
+     }
+    ],
+    [
+     null,
+     "三年超五年以下",
+     null,
+     "六",
+     null
+    ],
+    [
+     null,
+     "五年超十年以下",
+     {
+      "text": "六",
+      "rowspan": 2
+     },
+     "十二",
+     {
+      "text": "二十四",
+      "rowspan": 2
+     }
+    ],
+    [
+     null,
+     "十年超",
+     null,
+     "二十",
+     null
+    ],
+    [
+     "信用リスク区分が1―4又は2―4の場合",
+     "全ての期間",
+     "十五",
+     "―",
+     "―"
+    ]
+   ],
+   "rows_en": [
+    [
+     {
+      "text": "Credit risk category, etc. corresponding to the rating by an eligible credit rating agency",
+      "rowspan": 2
+     },
+     {
+      "text": "Residual maturity",
+      "rowspan": 2
+     },
+     {
+      "text": "Haircut",
+      "colspan": 3
+     },
+     null,
+     null
+    ],
+    [
+     null,
+     null,
+     "Specific issuers (%)",
+     "Issuers other than specific issuers, non-securitization (%)",
+     "Securitization exposures (%)"
+    ],
+    [
+     {
+      "text": "Credit risk category (for ratings assigned to bonds issued by the entities listed in Article 25, the table of Article 32, paragraph (1) or of Article 33, paragraph (1) applies mutatis mutandis; the same applies hereinafter in this item) of 1-1, 2-1, 3-1, 3-2-1, 4-1, 5-1, 6-1, 6-2, 6-3, 6-4 or 7-1, or falling under Article 65, item (iii)",
+      "rowspan": 5
+     },
+     "1 year or less",
+     "0.5",
+     "1",
+     "2"
+    ],
+    [
+     null,
+     "Over 1 year, up to 3 years",
+     {
+      "text": "2",
+      "rowspan": 2
+     },
+     "3",
+     {
+      "text": "8",
+      "rowspan": 2
+     }
+    ],
+    [
+     null,
+     "Over 3 years, up to 5 years",
+     null,
+     "4",
+     null
+    ],
+    [
+     null,
+     "Over 5 years, up to 10 years",
+     {
+      "text": "4",
+      "rowspan": 2
+     },
+     "6",
+     {
+      "text": "16",
+      "rowspan": 2
+     }
+    ],
+    [
+     null,
+     "Over 10 years",
+     null,
+     "12",
+     null
+    ],
+    [
+     {
+      "text": "Credit risk category of 1-2, 1-3, 2-2, 2-3, 3-2, 3-3, 3-2-2, 3-2-3, 4-2, 4-3, 5-2, 5-3, 6-5, 6-6, 6-7, 6-8, 6-9, 6-10, 7-2 or 7-3, or satisfying the conditions of Article 65, item (v)",
+      "rowspan": 5
+     },
+     "1 year or less",
+     "1",
+     "2",
+     "4"
+    ],
+    [
+     null,
+     "Over 1 year, up to 3 years",
+     {
+      "text": "3",
+      "rowspan": 2
+     },
+     "4",
+     {
+      "text": "12",
+      "rowspan": 2
+     }
+    ],
+    [
+     null,
+     "Over 3 years, up to 5 years",
+     null,
+     "6",
+     null
+    ],
+    [
+     null,
+     "Over 5 years, up to 10 years",
+     {
+      "text": "6",
+      "rowspan": 2
+     },
+     "12",
+     {
+      "text": "24",
+      "rowspan": 2
+     }
+    ],
+    [
+     null,
+     "Over 10 years",
+     null,
+     "20",
+     null
+    ],
+    [
+     "Credit risk category of 1-4 or 2-4",
+     "All maturities",
+     "15",
+     "—",
+     "—"
+    ]
+   ]
+  },
+  "p131t1": {
+   "node_id": "fsa-basel-cap-jp.ch3.art70.p1",
+   "header_rows": 1,
+   "rows_ja": [
+    [
+     "資産種別",
+     "ボラティリティ調整率"
+    ],
+    [
+     "指定国の代表的な株価指数を構成する株式を発行する会社の株式等及び金",
+     "二十パーセント"
+    ],
+    [
+     "上場株式(指定国の代表的な株価指数を構成する株式を発行する会社の株式等を除く。)",
+     "三十パーセント"
+    ],
+    [
+     "投資信託等",
+     "投資信託等の投資対象に適用されるボラティリティ調整率のうち最も高いもの。この場合において、当該投資信託等の個々の資産及び取引を直接保有する者とみなすことができるときは、当該資産及び取引に適用されるボラティリティ調整率の加重平均値を用いることができる。"
+    ],
+    [
+     "現金及び預金",
+     "零パーセント"
+    ],
+    [
+     "適格金融資産担保以外の資産(当該資産について第四十五条第一項の表の第七号に定める与信相当額を算出する場合、SA―CCRを用いて派生商品取引若しくは長期決済期間取引に係る与信相当額を算出する場合においてこれらの取引に係る与信相当額が算出される担保の提供に用いるとき又は第六十六条ただし書に定めるところによりレポ形式の取引について第六十五条各号及び第六十六条各号に掲げるもの以外の資産を用いる場合に限る。以下同じ。)",
+     "三十パーセント"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Asset type",
+     "Haircut"
+    ],
+    [
+     "Shares, etc. of companies issuing shares that make up a main stock index of a designated country, and gold",
+     "20%"
+    ],
+    [
+     "Listed shares (excluding shares, etc. of companies issuing shares that make up a main stock index of a designated country)",
+     "30%"
+    ],
+    [
+     "Investment trusts, etc.",
+     "The highest haircut applicable to the investments of the investment trust, etc. In this case, where the holder can be deemed to hold the individual assets and transactions of the investment trust, etc. directly, the weighted average of the haircuts applicable to those assets and transactions may be used."
+    ],
+    [
+     "Cash and deposits",
+     "0%"
+    ],
+    [
+     "Assets other than eligible financial collateral (limited to where the credit equivalent amount specified in item (vii) of the table of Article 45, paragraph (1) is calculated for those assets, where they are used to post collateral for which the credit equivalent amount of derivative transactions or long settlement period transactions is calculated using SA-CCR, or where assets other than those listed in the items of Article 65 and Article 66 are used for repo-style transactions under the proviso to Article 66; the same applies hereinafter)",
+     "30%"
+    ]
+   ]
+  },
+  "p139t0": {
+   "node_id": "fsa-basel-cap-jp.ch3.art83.p2",
+   "header_rows": 2,
+   "rows_ja": [
+    [
+     {
+      "text": "証券の種類",
+      "rowspan": 2
+     },
+     {
+      "text": "ボラティリティ調整率の標準的下限",
+      "colspan": 2
+     },
+     null
+    ],
+    [
+     null,
+     "当該証券の発行体が中央政府等以外であって、当該証券が証券化エクスポージャー以外である場合(パーセント)",
+     "当該証券が証券化エクスポージャーである場合(パーセント)"
+    ],
+    [
+     "残存期間が一年以下の債券及び変動金利債",
+     "〇・五",
+     "一"
+    ],
+    [
+     "残存期間が一年超五年以下の債券",
+     "一・五",
+     "四"
+    ],
+    [
+     "残存期間が五年超十年以下の債券",
+     "三",
+     "六"
+    ],
+    [
+     "残存期間が十年超の債券",
+     "四",
+     "七"
+    ],
+    [
+     "指定国の代表的な株価指数を構成する株式を発行する会社の株式等",
+     {
+      "text": "六",
+      "colspan": 2
+     },
+     null
+    ],
+    [
+     "その他の資産",
+     {
+      "text": "十",
+      "colspan": 2
+     },
+     null
+    ]
+   ],
+   "rows_en": [
+    [
+     {
+      "text": "Type of security",
+      "rowspan": 2
+     },
+     {
+      "text": "Standard haircut floor",
+      "colspan": 2
+     },
+     null
+    ],
+    [
+     null,
+     "Issuer other than central governments, etc., and the security is not a securitization exposure (%)",
+     "The security is a securitization exposure (%)"
+    ],
+    [
+     "Bonds with residual maturity of 1 year or less, and floating rate notes",
+     "0.5",
+     "1"
+    ],
+    [
+     "Bonds with residual maturity over 1 year, up to 5 years",
+     "1.5",
+     "4"
+    ],
+    [
+     "Bonds with residual maturity over 5 years, up to 10 years",
+     "3",
+     "6"
+    ],
+    [
+     "Bonds with residual maturity over 10 years",
+     "4",
+     "7"
+    ],
+    [
+     "Shares, etc. of companies issuing shares that make up a main stock index of a designated country",
+     {
+      "text": "6",
+      "colspan": 2
+     },
+     null
+    ],
+    [
+     "Other assets",
+     {
+      "text": "10",
+      "colspan": 2
+     },
+     null
+    ]
+   ]
+  }
+ }
+}

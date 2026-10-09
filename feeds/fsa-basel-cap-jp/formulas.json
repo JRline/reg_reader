@@ -1,5 +1,5 @@
 {
-  "_comment": "Formula STRUCTURE and variable MEANINGS for this feed. Expressions reference variable ids only; how each id is displayed lives in notation.json, so the notation can be replaced without touching this file. source: text_derived = written from the article's own wording; image_reconstructed = the PDF prints it as an image not available to the pipeline (CLAUDE.md rule 7), rebuilt from wording elsewhere and NOT yet checked against the image.",
+  "_comment": "Formula STRUCTURE and variable MEANINGS for this feed. Expressions reference variable ids only; how each id is displayed lives in notation.json, so the notation can be replaced without touching this file. source: transcribed = copied from the PDF's image formula (terms replaced by symbols); text_derived = written from the article's own wording; image_reconstructed = an image formula rebuilt from wording elsewhere and NOT yet checked against the image (CLAUDE.md rule 7).",
   "variables": {
     "CET1_base": {
       "name_ja": "普通株式等Tier1資本に係る基礎項目の額",
@@ -46,7 +46,7 @@
     "AT1": {
       "name_ja": "その他Tier1資本の額",
       "name_en": "Amount of Additional Tier 1 Capital",
-      "desc_ja": "基礎項目の額から調整項目の額を控除した額。調整項目が基礎項目を上回る場合は零（第六条第五項）。",
+      "desc_ja": "その他Tier1資本に係る基礎項目の額−調整項目の額（第二条第二号の算式）。調整項目が基礎項目を上回る場合は零（第六条第五項）。",
       "desc_en": "Basic items minus adjustment items; zero if adjustments exceed basic items (Article 6(5)).",
       "defined_at": "fsa-basel-cap-jp.ch2.art6.p5"
     },
@@ -67,7 +67,7 @@
     "T2": {
       "name_ja": "Tier2資本の額",
       "name_en": "Amount of Tier 2 Capital",
-      "desc_ja": "基礎項目の額から調整項目の額を控除した額。調整項目が基礎項目を上回る場合は零（第七条第六項）。",
+      "desc_ja": "Tier2資本に係る基礎項目の額−調整項目の額（第二条第三号の算式）。調整項目が基礎項目を上回る場合は零（第七条第六項）。",
       "desc_en": "Basic items minus adjustment items; zero if adjustments exceed basic items (Article 7(6)).",
       "defined_at": "fsa-basel-cap-jp.ch2.art7.p6"
     },
@@ -102,8 +102,8 @@
     "RWA": {
       "name_ja": "リスク・アセットの額",
       "name_en": "Risk-weighted assets amount",
-      "desc_ja": "各比率の算式の分母。信用リスク・アセット＋マーケット・リスク相当額÷8%＋オペレーショナル・リスク相当額÷8%＋資本フロア加算額（第七条の二第一項第一号イ〜ニ）。",
-      "desc_en": "Denominator of each ratio: credit RWA + market risk ÷ 8% + operational risk ÷ 8% + capital-floor add-on (Article 7-2(1)(i)(a)–(d)).",
+      "desc_ja": "第七条の二で「リスク・アセットの額」と呼ばれる額：信用リスク・アセット＋マーケット・リスク相当額÷8%＋オペレーショナル・リスク相当額÷8%＋第十三条による加算額（同条第一項第一号イ〜ニ）。",
+      "desc_en": "What Article 7-2 calls the \"risk-weighted assets amount\": credit RWA + market risk ÷ 8% + operational risk ÷ 8% + the Article 13 add-on (Article 7-2(1)(i)(a)–(d)).",
       "defined_at": "fsa-basel-cap-jp.ch2.art7-2.p1"
     },
     "CET1_ratio": {
@@ -315,20 +315,489 @@
       "desc_ja": "繰延税金資産に配分される額。",
       "desc_en": "Share allocated to deferred tax assets.",
       "defined_at": "fsa-basel-cap-jp.ch2.art8.p10"
+    },
+    "DEN": {
+      "name_ja": "第二条各号及び第二条の二第一項の算式の分母",
+      "name_en": "Denominator of the formulas in Article 2 and Article 2-2(1)",
+      "desc_ja": "信用リスク・アセットの額の合計額＋マーケット・リスク相当額の合計額を八パーセントで除して得た額＋オペレーショナル・リスク相当額の合計額を八パーセントで除して得た額。資本フロアの適用がある場合は第十三条によりこれに加算される。",
+      "desc_en": "Total credit RWA + total market risk equivalent ÷ 8% + total operational risk equivalent ÷ 8%. Where the capital floor applies, Article 13 adds to it.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art2.p1"
+    },
+    "T1": {
+      "name_ja": "Tier1資本の額",
+      "name_en": "Amount of Tier 1 Capital",
+      "desc_ja": "普通株式等Tier1資本の額＋その他Tier1資本の額。",
+      "desc_en": "CET1 Capital + Additional Tier 1 Capital.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art2.p1"
+    },
+    "TC": {
+      "name_ja": "総自己資本の額",
+      "name_en": "Amount of total capital",
+      "desc_ja": "Tier1資本の額＋Tier2資本の額。",
+      "desc_en": "Tier 1 Capital + Tier 2 Capital.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art2.p1"
+    },
+    "RC": {
+      "name_ja": "再構築コスト",
+      "name_en": "Replacement cost",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p1"
+    },
+    "PFE": {
+      "name_ja": "将来の潜在的なエクスポージャー額",
+      "name_en": "Potential future exposure",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p1"
+    },
+    "V": {
+      "name_ja": "ネッティング・セットに含まれる取引の時価の合計額",
+      "name_en": "Sum of the market values of the transactions in the netting set",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p2"
+    },
+    "C": {
+      "name_ja": "ヘアカット調整後のネット担保額",
+      "name_en": "Net collateral amount after haircuts",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p2"
+    },
+    "SA_H": {
+      "name_ja": "ボラティリティ調整率",
+      "name_en": "Haircut",
+      "desc_ja": "第三項各号の算式で算出する。",
+      "desc_en": "Calculated by the formulas in the items of paragraph (3).",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p3"
+    },
+    "SA_HM": {
+      "name_ja": "最低保有期間の下で毎営業日の時価評価等を行う場合のボラティリティ調整率",
+      "name_en": "Haircut under the minimum holding period with daily revaluation or remargining",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art76.p2"
+    },
+    "SA_H10": {
+      "name_ja": "標準的ボラティリティ調整率",
+      "name_en": "Standard supervisory haircut",
+      "desc_ja": "第六節第三款第二目（第七十条）に規定するもの。",
+      "desc_en": "As provided in Section 6, Subsection 3, Division 2 (Article 70).",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p3"
+    },
+    "SA_NR": {
+      "name_ja": "ネッティング・セットに含まれる取引の残存期間のうち最も長い営業日数",
+      "name_en": "Longest residual maturity (in business days) of the transactions in the netting set",
+      "desc_ja": "十営業日未満のときは十営業日。",
+      "desc_en": "Ten business days if less than ten.",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p3"
+    },
+    "SA_TM": {
+      "name_ja": "最低保有期間",
+      "name_en": "Minimum holding period",
+      "desc_ja": "第七十六条第二項第一号に定めるもの。",
+      "desc_en": "As specified in Article 76(2)(i).",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p3"
+    },
+    "MPOR": {
+      "name_ja": "リスクのマージン期間",
+      "name_en": "Margin period of risk",
+      "desc_ja": "第四項・第五項で定める営業日数。",
+      "desc_en": "Business days set by paragraphs (4) and (5).",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p3"
+    },
+    "multiplier": {
+      "name_ja": "乗数",
+      "name_en": "Multiplier",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p6"
+    },
+    "AddOn_agg": {
+      "name_ja": "アドオンの合計額",
+      "name_en": "Aggregate add-on",
+      "desc_ja": "金利・為替・信用・株式・コモディティのアドオンの合計。",
+      "desc_en": "Sum of the interest rate, FX, credit, equity and commodity add-ons.",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p6"
+    },
+    "AddOn_IR": {
+      "name_ja": "金利デリバティブに係るアドオン",
+      "name_en": "Add-on for interest rate derivatives",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p6"
+    },
+    "AddOn_IR_j": {
+      "name_ja": "通貨j建ての金利デリバティブのヘッジセットに係るアドオンの額の合計額",
+      "name_en": "Add-on for the hedging sets of interest rate derivatives in currency j",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "D_j1": {
+      "name_ja": "通貨j建てでE_iが一年未満の金利デリバティブの実効想定元本額の合計額",
+      "name_en": "Effective notional of currency-j interest rate derivatives with E_i under 1 year",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "D_j2": {
+      "name_ja": "通貨j建てでE_iが一年以上五年以下の金利デリバティブの実効想定元本額の合計額",
+      "name_en": "Effective notional of currency-j interest rate derivatives with E_i of 1–5 years",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "D_j3": {
+      "name_ja": "通貨j建てでE_iが五年超の金利デリバティブの実効想定元本額の合計額",
+      "name_en": "Effective notional of currency-j interest rate derivatives with E_i over 5 years",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "SD_i": {
+      "name_ja": "デュレーション調整値",
+      "name_en": "Supervisory duration (duration adjustment value)",
+      "desc_ja": "十営業日を年換算した値が下限。",
+      "desc_en": "Floored at ten business days expressed in years.",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "S_i": {
+      "name_ja": "計算期間の最も早い日までの営業日数（年換算）",
+      "name_en": "Business days to the earliest date of the calculation period, in years",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "E_i": {
+      "name_ja": "計算期間の最も遅い日までの営業日数（年換算）",
+      "name_en": "Business days to the latest date of the calculation period, in years",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "P_i": {
+      "name_ja": "オプションiが参照する金利等の水準",
+      "name_en": "Level of the rate, etc. referenced by option i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "K_i": {
+      "name_ja": "オプションiの行使価格",
+      "name_en": "Strike price of option i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "sigma_i": {
+      "name_ja": "監督上のボラティリティ",
+      "name_en": "Supervisory volatility",
+      "desc_ja": "金利〇・五、為替〇・一五、信用一・〇／〇・八、株式一・二〇／〇・七五、コモディティ一・五／〇・七。",
+      "desc_en": "IR 0.5, FX 0.15, credit 1.0/0.8, equity 1.20/0.75, commodity 1.5/0.7.",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "T_i": {
+      "name_ja": "最も遅い権利行使日までの営業日数（年換算）",
+      "name_en": "Business days to the latest exercise date, in years",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "M_i": {
+      "name_ja": "金利デリバティブiの残存期間（営業日数）",
+      "name_en": "Residual maturity of derivative i (business days)",
+      "desc_ja": "十営業日未満のときは十営業日。",
+      "desc_en": "Ten business days if less than ten.",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "MPOR_i": {
+      "name_ja": "取引iを含むネッティング・セットのリスクのマージン期間",
+      "name_en": "Margin period of risk of the netting set containing transaction i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p11"
+    },
+    "AddOn_FX": {
+      "name_ja": "外国為替デリバティブに係るアドオン",
+      "name_en": "Add-on for FX derivatives",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p6"
+    },
+    "AddOn_FX_j": {
+      "name_ja": "ヘッジセットjに係るアドオンの額",
+      "name_en": "Add-on for hedging set j",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p12"
+    },
+    "AddOn_Credit": {
+      "name_ja": "信用デリバティブに係るアドオン",
+      "name_en": "Add-on for credit derivatives",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p6"
+    },
+    "AddOn_Ent_k": {
+      "name_ja": "Entity_kを参照する信用デリバティブに係るアドオンの額の合計額",
+      "name_en": "Add-on for credit derivatives referencing Entity_k",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p13"
+    },
+    "rho_cr_k": {
+      "name_ja": "Entity_kに係る相関係数",
+      "name_en": "Correlation parameter for Entity_k",
+      "desc_ja": "事業法人等〇・五、インデックス〇・八。",
+      "desc_en": "Single name 0.5, index 0.8.",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p13"
+    },
+    "A_i": {
+      "name_ja": "当該階層より劣後する全階層の額の合計÷原資産の額",
+      "name_en": "Attachment point: subordinate tranches ÷ underlying pool",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p13"
+    },
+    "D_i": {
+      "name_ja": "当該階層及び劣後する全階層の額の合計÷原資産の額",
+      "name_en": "Detachment point: this and subordinate tranches ÷ underlying pool",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p13"
+    },
+    "AddOn_Equity": {
+      "name_ja": "エクイティ・デリバティブに係るアドオン",
+      "name_en": "Add-on for equity derivatives",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p6"
+    },
+    "AddOn_Eq_k": {
+      "name_ja": "Equity_kを参照するエクイティ・デリバティブに係るアドオンの額の合計額",
+      "name_en": "Add-on for equity derivatives referencing Equity_k",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p14"
+    },
+    "rho_eq_k": {
+      "name_ja": "Equity_kに係る相関係数",
+      "name_en": "Correlation parameter for Equity_k",
+      "desc_ja": "個別株〇・五、株価指数〇・八。",
+      "desc_en": "Single name 0.5, index 0.8.",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p14"
+    },
+    "AddOn_Com": {
+      "name_ja": "コモディティ・デリバティブに係るアドオン",
+      "name_en": "Add-on for commodity derivatives",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p6"
+    },
+    "AddOn_Com_j": {
+      "name_ja": "ヘッジセットjに係るアドオンの額",
+      "name_en": "Add-on for commodity hedging set j",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p15"
+    },
+    "AddOn_Type_k": {
+      "name_ja": "ヘッジセットjでコモディティkを参照するコモディティ・デリバティブに係るアドオンの額の合計額",
+      "name_en": "Add-on for commodity derivatives referencing commodity k in hedging set j",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p15"
+    },
+    "rho_com_j": {
+      "name_ja": "ヘッジセットjに係る相関係数",
+      "name_en": "Correlation parameter for hedging set j",
+      "desc_ja": "〇・四。",
+      "desc_en": "0.4.",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p15"
+    },
+    "NS_MA": {
+      "name_ja": "マージン・アグリーメントMAの対象となるネッティング・セット",
+      "name_en": "Netting sets covered by margin agreement MA",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p17"
+    },
+    "V_NS": {
+      "name_ja": "NSに含まれる取引の時価の合計額",
+      "name_en": "Sum of market values of the transactions in NS",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p17"
+    },
+    "C_MA": {
+      "name_ja": "MAの下におけるヘアカット調整後のネット担保額",
+      "name_en": "Net collateral after haircuts under MA",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p17"
+    },
+    "PFE_NS_unm": {
+      "name_ja": "マージン・アグリーメントがないものとして算出したNSのPFE",
+      "name_en": "PFE of NS calculated as if unmargined",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art47.p18"
+    },
+    "EPE_eff": {
+      "name_ja": "実効EPE",
+      "name_en": "Effective EPE",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art49.p2"
+    },
+    "EE_eff_k": {
+      "name_ja": "実効EE_tk",
+      "name_en": "Effective EE at time t_k",
+      "desc_ja": "max(実効EE_tk−1, EE_tk)。",
+      "desc_en": "max(effective EE at t_{k−1}, EE at t_k).",
+      "defined_at": "fsa-basel-cap-jp.ch3.art49.p2"
+    },
+    "EE_k": {
+      "name_ja": "時点t_kにおける期待エクスポージャー",
+      "name_en": "Expected exposure at time t_k",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art49.p2"
+    },
+    "EPE": {
+      "name_ja": "EPE（αの推計に用いる値）",
+      "name_en": "EPE (used in estimating α)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art49.p4"
+    },
+    "dt_k": {
+      "name_ja": "t_k − t_k−1",
+      "name_en": "t_k − t_{k−1}",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art49.p2"
+    },
+    "n": {
+      "name_ja": "t_nが一年となるような数",
+      "name_en": "The n such that t_n is one year",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art49.p2"
+    },
+    "idx_k1": {
+      "name_ja": "和の添字（k＝1からnまで）",
+      "name_en": "Summation index (k = 1 to n)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art49.p2"
+    },
+    "CRM_H": {
+      "name_ja": "適用するボラティリティ調整率",
+      "name_en": "Haircut to be applied",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art68.p1"
+    },
+    "a_i": {
+      "name_ja": "各担保の額が担保総額に占める割合",
+      "name_en": "Share of each collateral item in the total",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art68.p1"
+    },
+    "H_i": {
+      "name_ja": "各担保に対応するボラティリティ調整率",
+      "name_en": "Haircut for each collateral item",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art68.p1"
+    },
+    "CRM_HM": {
+      "name_ja": "最低保有期間の下で毎営業日の時価評価等を行う場合のボラティリティ調整率",
+      "name_en": "Haircut under the minimum holding period with daily revaluation or remargining",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art76.p2"
+    },
+    "CRM_H10": {
+      "name_ja": "調整対象となる第七十条のボラティリティ調整率",
+      "name_en": "The Article 70 haircut being adjusted",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art76.p2"
+    },
+    "CRM_TM": {
+      "name_ja": "最低保有期間",
+      "name_en": "Minimum holding period",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art76.p2"
+    },
+    "CRM_NR": {
+      "name_ja": "担保額調整又は時価評価の間隔（営業日数）",
+      "name_en": "Remargining or revaluation interval (business days)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art76.p3"
+    },
+    "f_A": {
+      "name_ja": "貸出証券等のボラティリティ調整率の標準的下限",
+      "name_en": "Haircut floor for securities lent or posted",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art83.p1"
+    },
+    "f_B": {
+      "name_ja": "借入証券等のボラティリティ調整率の標準的下限",
+      "name_en": "Haircut floor for securities borrowed or received",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art83.p1"
+    },
+    "C_t": {
+      "name_ja": "ネットで借入れとなる証券又は現金の取引額",
+      "name_en": "Amount of a security or cash borrowed on a net basis",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art84.p1"
+    },
+    "E_s": {
+      "name_ja": "ネットで貸付けとなる証券又は現金の取引額",
+      "name_en": "Amount of a security or cash lent on a net basis",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art84.p1"
+    },
+    "f_s": {
+      "name_ja": "ネットで貸付けとなる証券等の標準的下限",
+      "name_en": "Haircut floor for a security lent on a net basis",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art84.p1"
+    },
+    "f_t": {
+      "name_ja": "ネットで借入れとなる証券等の標準的下限",
+      "name_en": "Haircut floor for a security borrowed on a net basis",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch3.art84.p1"
     }
   },
   "formulas": [
     {
       "id": "f-rwa",
       "node_id": "fsa-basel-cap-jp.ch2.art2.p1",
-      "label_ja": "リスク・アセットの額（各比率の分母）",
-      "label_en": "Risk-weighted assets (denominator of each ratio)",
+      "label_ja": "算式の分母",
+      "label_en": "Denominator of the formulas",
       "lines": [
-        "RWA = CRWA + MR / 8% + OR / 8% + FL"
+        "DEN = CRWA + MR / 8% + OR / 8%"
       ],
-      "source": "text_derived",
-      "note_ja": "第七条の二第一項第一号イ〜ニ、第十条〜第十三条の文言による。",
-      "note_en": "From Article 7-2(1)(i)(a)–(d) and Articles 10–13."
+      "source": "transcribed",
+      "note_ja": "原文PDFの画像の数式から転記（記号への置換のみ）。第十三条第一項・第二項の適用がある場合は、同条による額（FL）がこの分母に加算される。",
+      "note_en": "Transcribed from the image formula in the source PDF (only the terms replaced by symbols). Where Article 13(1)–(2) applies, its add-on (FL) is added to this denominator."
     },
     {
       "id": "f-cet1",
@@ -337,11 +806,11 @@
       "label_en": "(i) Consolidated CET1 Ratio",
       "lines": [
         "CET1 = CET1_base - CET1_adj",
-        "CET1_ratio = CET1 / RWA >= 4.5%"
+        "CET1_ratio = CET1 / DEN >= 4.5%"
       ],
-      "source": "image_reconstructed",
-      "note_ja": "原文PDFでは画像の数式。第五条〜第十三条の「第二条…の算式において」の文言から再構成したもので、原文の画像とは未照合。",
-      "note_en": "The source PDF prints this formula as an image. Rebuilt from how Articles 5–13 describe its terms (\"in the formula of Article 2…\"); not yet checked against the image."
+      "source": "transcribed",
+      "note_ja": "原文PDFの画像の数式から転記（記号への置換のみ）。",
+      "note_en": "Transcribed from the image formula in the source PDF (only the terms replaced by symbols)."
     },
     {
       "id": "f-t1",
@@ -349,12 +818,13 @@
       "label_ja": "二　連結Tier1比率",
       "label_en": "(ii) Consolidated Tier 1 Ratio",
       "lines": [
-        "AT1 = max(0, AT1_base - AT1_adj)",
-        "T1_ratio = (CET1 + AT1) / RWA >= 6%"
+        "AT1 = AT1_base - AT1_adj",
+        "T1 = CET1 + AT1",
+        "T1_ratio = T1 / DEN >= 6%"
       ],
-      "source": "image_reconstructed",
-      "note_ja": "原文PDFでは画像の数式。第五条〜第十三条の「第二条…の算式において」の文言から再構成したもので、原文の画像とは未照合。",
-      "note_en": "The source PDF prints this formula as an image. Rebuilt from how Articles 5–13 describe its terms (\"in the formula of Article 2…\"); not yet checked against the image."
+      "source": "transcribed",
+      "note_ja": "原文PDFの画像の数式から転記（記号への置換のみ）。その他Tier1資本の額は、調整項目の額が基礎項目の額を上回る場合は零（第六条第五項）。",
+      "note_en": "Transcribed from the image formula in the source PDF (only the terms replaced by symbols). AT1 is zero where adjustment items exceed basic items (Article 6(5))."
     },
     {
       "id": "f-tc",
@@ -362,12 +832,13 @@
       "label_ja": "三　連結総自己資本規制比率",
       "label_en": "(iii) Consolidated Total Capital Adequacy Ratio",
       "lines": [
-        "T2 = max(0, T2_base - T2_adj)",
-        "TC_ratio = (CET1 + AT1 + T2) / RWA >= 8%"
+        "T2 = T2_base - T2_adj",
+        "TC = T1 + T2",
+        "TC_ratio = TC / DEN >= 8%"
       ],
-      "source": "image_reconstructed",
-      "note_ja": "原文PDFでは画像の数式。第五条〜第十三条の「第二条…の算式において」の文言から再構成したもので、原文の画像とは未照合。",
-      "note_en": "The source PDF prints this formula as an image. Rebuilt from how Articles 5–13 describe its terms (\"in the formula of Article 2…\"); not yet checked against the image."
+      "source": "transcribed",
+      "note_ja": "原文PDFの画像の数式から転記（記号への置換のみ）。Tier2資本の額は、調整項目の額が基礎項目の額を上回る場合は零（第七条第六項）。",
+      "note_en": "Transcribed from the image formula in the source PDF (only the terms replaced by symbols). T2 is zero where adjustment items exceed basic items (Article 7(6))."
     },
     {
       "id": "f-buf",
@@ -375,13 +846,13 @@
       "label_ja": "連結資本バッファー比率",
       "label_en": "Consolidated Capital Buffer Ratio",
       "lines": [
-        "BUF_ratio = CET1_buf / RWA >= BUF_min",
+        "BUF_ratio = CET1_buf / DEN >= BUF_min",
         "BUF_min = CCB + CCyB",
         "CCB = 2.5%"
       ],
-      "source": "image_reconstructed",
-      "note_ja": "第一行は原文PDFでは画像の数式（第七条の二・第十条〜第十三条の文言から再構成、未照合）。第二・三行は第二項・第三項の文言による。",
-      "note_en": "Line 1 is an image formula in the source PDF (rebuilt from Articles 7-2 and 10–13, not yet checked). Lines 2–3 follow the wording of paragraphs 2–3."
+      "source": "transcribed",
+      "note_ja": "第一行は原文PDFの画像の数式から転記。第二・三行は第二項・第三項の文言による。",
+      "note_en": "Line 1 transcribed from the image formula in the source PDF; lines 2–3 follow the wording of paragraphs 2–3."
     },
     {
       "id": "f-cet1buf",
@@ -453,6 +924,664 @@
       "source": "text_derived",
       "note_ja": "第一項各号のいずれかに該当する場合に限る。第二項の経過措置期間は72.5%に代えて同項各号の率。",
       "note_en": "Only for companies under the items of paragraph 1; during paragraph 2's transition periods the rate in its items replaces 72.5%."
+    },
+    {
+      "id": "f-ch3-p98i0",
+      "anchor": "p98i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p3",
+      "display": "block",
+      "lines": [
+        "SA_H = SA_HM * sqrt((min(SA_NR, 250) + SA_TM - 1) / SA_TM)"
+      ],
+      "label_ja": "一　マージン・アグリーメントを締結していない場合",
+      "label_en": "(i) Without a margin agreement",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p98i1",
+      "anchor": "p98i1",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p3",
+      "display": "block",
+      "lines": [
+        "SA_HM = SA_H10 * sqrt(SA_TM / 10)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p98i2",
+      "anchor": "p98i2",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p3",
+      "display": "block",
+      "lines": [
+        "SA_H = SA_H10 * sqrt(MPOR / 10)"
+      ],
+      "label_ja": "二　マージン・アグリーメントを締結している場合",
+      "label_en": "(ii) With a margin agreement",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p99i0",
+      "anchor": "p99i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p6",
+      "display": "block",
+      "lines": [
+        "multiplier = min(1, 0.05 + (1 - 0.05) * exp((V - C) / (2 * (1 - 0.05) * AddOn_agg)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p101i0",
+      "anchor": "p101i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "block",
+      "lines": [
+        "AddOn_IR = sum(j, AddOn_IR_j)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p101i1",
+      "anchor": "p101i1",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "inline",
+      "lines": [
+        "AddOn_IR_j"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p101i2",
+      "anchor": "p101i2",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "inline",
+      "lines": [
+        "AddOn_IR_j"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p101i3",
+      "anchor": "p101i3",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "block",
+      "lines": [
+        "(D_j1^2 + D_j2^2 + D_j3^2 + 1.4 * D_j1 * D_j2 + 1.4 * D_j2 * D_j3 + 0.6 * D_j1 * D_j3)^(1 / 2)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p101i4",
+      "anchor": "p101i4",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "inline",
+      "lines": [
+        "D_j1"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p101i5",
+      "anchor": "p101i5",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "inline",
+      "lines": [
+        "D_j2"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p101i6",
+      "anchor": "p101i6",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "inline",
+      "lines": [
+        "D_j3"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p101i7",
+      "anchor": "p101i7",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "block",
+      "lines": [
+        "abs(D_j1) + abs(D_j2) + abs(D_j3)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p101i8",
+      "anchor": "p101i8",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "block",
+      "lines": [
+        "SD_i = (exp(-0.05 * S_i) - exp(-0.05 * E_i)) / 0.05"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p102i0",
+      "anchor": "p102i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "inline",
+      "lines": [
+        "Phi((ln(P_i / K_i) + 0.5 * sigma_i^2 * T_i) / (sigma_i * sqrt(T_i)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p102i1",
+      "anchor": "p102i1",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "inline",
+      "lines": [
+        "-Phi((ln(P_i / K_i) + 0.5 * sigma_i^2 * T_i) / (sigma_i * sqrt(T_i)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p102i2",
+      "anchor": "p102i2",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "inline",
+      "lines": [
+        "-Phi(-(ln(P_i / K_i) + 0.5 * sigma_i^2 * T_i) / (sigma_i * sqrt(T_i)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p102i3",
+      "anchor": "p102i3",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "inline",
+      "lines": [
+        "Phi(-(ln(P_i / K_i) + 0.5 * sigma_i^2 * T_i) / (sigma_i * sqrt(T_i)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p103i0",
+      "anchor": "p103i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "block",
+      "lines": [
+        "sqrt(min(M_i, 250) / 250)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p103i1",
+      "anchor": "p103i1",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p11",
+      "display": "block",
+      "lines": [
+        "3 / 2 * sqrt(MPOR_i / 250)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p103i2",
+      "anchor": "p103i2",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p12",
+      "display": "block",
+      "lines": [
+        "AddOn_FX = sum(j, AddOn_FX_j)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p103i3",
+      "anchor": "p103i3",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p12",
+      "display": "inline",
+      "lines": [
+        "AddOn_FX_j"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p103i4",
+      "anchor": "p103i4",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p12",
+      "display": "inline",
+      "lines": [
+        "AddOn_FX_j"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p104i0",
+      "anchor": "p104i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p13",
+      "display": "block",
+      "lines": [
+        "AddOn_Credit = ((sum(k, rho_cr_k * AddOn_Ent_k))^2 + sum(k, (1 - rho_cr_k^2) * AddOn_Ent_k^2))^(1 / 2)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p104i1",
+      "anchor": "p104i1",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p13",
+      "display": "inline",
+      "lines": [
+        "rho_cr_k"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p105i0",
+      "anchor": "p105i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p13",
+      "display": "inline",
+      "lines": [
+        "rho_cr_k"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p106i0",
+      "anchor": "p106i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p13",
+      "display": "inline",
+      "lines": [
+        "15 / ((1 + 14 * A_i) * (1 + 14 * D_i))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p106i1",
+      "anchor": "p106i1",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p13",
+      "display": "inline",
+      "lines": [
+        "-15 / ((1 + 14 * A_i) * (1 + 14 * D_i))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p106i2",
+      "anchor": "p106i2",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p14",
+      "display": "block",
+      "lines": [
+        "AddOn_Equity = ((sum(k, rho_eq_k * AddOn_Eq_k))^2 + sum(k, (1 - rho_eq_k^2) * AddOn_Eq_k^2))^(1 / 2)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文PDFの画像では外側の指数の分母が判読困難（「3」にも見える）。バーゼル基準（CRE52）及び第十三項の信用デリバティブの算式に合わせ1/2と転記した。要確認。",
+      "note_en": "In the PDF image the denominator of the outer exponent is hard to read (it could be taken for a 3). Transcribed as 1/2, consistent with Basel (CRE52) and the credit formula in paragraph (13). To be verified."
+    },
+    {
+      "id": "f-ch3-p107i0",
+      "anchor": "p107i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p14",
+      "display": "inline",
+      "lines": [
+        "rho_eq_k"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p107i1",
+      "anchor": "p107i1",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p14",
+      "display": "inline",
+      "lines": [
+        "rho_eq_k"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p108i0",
+      "anchor": "p108i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p15",
+      "display": "block",
+      "lines": [
+        "AddOn_Com = sum(j, AddOn_Com_j)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p108i1",
+      "anchor": "p108i1",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p15",
+      "display": "block",
+      "lines": [
+        "AddOn_Com_j = ((rho_com_j * sum(k, AddOn_Type_k))^2 + (1 - rho_com_j^2) * sum(k, AddOn_Type_k^2))^(1 / 2)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p108i2",
+      "anchor": "p108i2",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p15",
+      "display": "inline",
+      "lines": [
+        "AddOn_Com_j"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p108i3",
+      "anchor": "p108i3",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p15",
+      "display": "inline",
+      "lines": [
+        "AddOn_Type_k"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p108i4",
+      "anchor": "p108i4",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p15",
+      "display": "inline",
+      "lines": [
+        "rho_com_j"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p108i5",
+      "anchor": "p108i5",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p15",
+      "display": "inline",
+      "lines": [
+        "AddOn_Type_k"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p110i0",
+      "anchor": "p110i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p17",
+      "display": "block",
+      "lines": [
+        "RC = max(sum(NS_MA, max(V_NS, 0)) - max(C_MA, 0), 0) + max(sum(NS_MA, min(V_NS, 0)) - min(C_MA, 0), 0)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p111i0",
+      "anchor": "p111i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p18",
+      "display": "block",
+      "lines": [
+        "PFE = sum(NS_MA, PFE_NS_unm)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p111i1",
+      "anchor": "p111i1",
+      "node_id": "fsa-basel-cap-jp.ch3.art47.p18",
+      "display": "inline",
+      "lines": [
+        "PFE_NS_unm"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p111i2",
+      "anchor": "p111i2",
+      "node_id": "fsa-basel-cap-jp.ch3.art49.p2",
+      "display": "block",
+      "lines": [
+        "EPE_eff = sum(idx_k1, n, EE_eff_k * dt_k)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p113i0",
+      "anchor": "p113i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art49.p4",
+      "display": "block",
+      "lines": [
+        "EPE = sum(idx_k1, n, EE_k * dt_k)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p129i0",
+      "anchor": "p129i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art68.p1",
+      "display": "block",
+      "lines": [
+        "CRM_H = sum(i, a_i * H_i)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p133i0",
+      "anchor": "p133i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art76.p2",
+      "display": "block",
+      "lines": [
+        "CRM_HM = CRM_H10 * sqrt(CRM_TM / 10)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p133i1",
+      "anchor": "p133i1",
+      "node_id": "fsa-basel-cap-jp.ch3.art76.p3",
+      "display": "block",
+      "lines": [
+        "CRM_H = CRM_HM * sqrt((CRM_NR - (CRM_TM - 1)) / CRM_TM)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文PDFの画像のとおり「N_R − (T_M − 1)」と転記した。バーゼル基準（CRE22.59）及び第四十七条第三項第一号の算式では「N_R + (T_M − 1)」であり、誤植の可能性がある。要確認。",
+      "note_en": "Transcribed as printed in the PDF image: \"N_R − (T_M − 1)\". Basel (CRE22.59) and the formula in Article 47(3)(i) have \"N_R + (T_M − 1)\", so this may be a misprint. To be verified."
+    },
+    {
+      "id": "f-ch3-p139i0",
+      "anchor": "p139i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art83.p1",
+      "display": "block",
+      "lines": [
+        "(1 + f_B) / (1 + f_A) - 1"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p140i0",
+      "anchor": "p140i0",
+      "node_id": "fsa-basel-cap-jp.ch3.art84.p1",
+      "display": "block",
+      "lines": [
+        "(sum(t, C_t) - sum(s, E_s)) / sum(s, E_s)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch3-p140i1",
+      "anchor": "p140i1",
+      "node_id": "fsa-basel-cap-jp.ch3.art84.p1",
+      "display": "block",
+      "lines": [
+        "((sum(s, E_s / (1 + f_s)) / sum(s, E_s)) / (sum(t, C_t / (1 + f_t)) / sum(t, C_t))) - 1"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
     }
   ]
 }

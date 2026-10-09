@@ -1,0 +1,21 @@
+{
+ "number": "第五十六条",
+ "heading_en": "Application of Credit Risk Mitigation Techniques",
+ "summary_ja": "信用リスク削減手法（適格金融資産担保、貸出金と預金の相殺、保証、クレジット・デリバティブ）を定義し、その適用を任意とし、適用で信用リスク・アセットが増える場合は適用不要とする。",
+ "summary_en": "Defines credit risk mitigation (eligible financial collateral, on-balance sheet netting of loans and deposits, guarantees and credit derivatives); its use is optional, and it need not be applied if it would increase RWA.",
+ "sections_en": {
+  "第六節": "Credit Risk Mitigation Techniques",
+  "第六節 第一款": "General Provisions"
+ },
+ "terms": [
+  {
+   "ja": "信用リスク削減手法",
+   "en": "credit risk mitigation techniques"
+  }
+ ],
+ "paragraphs": [
+  "In this Section, credit risk mitigation techniques collectively means eligible financial collateral provided in Article 65 or Article 66, the netting of loans and deposits (limited to those recorded as liabilities, and including where the Ultimate Designated Parent Company, etc. has issued credit-linked notes on an exposure; provided, however, that this shall not apply where the Ultimate Designated Parent Company, etc. has issued credit-linked notes on assets subject to the calculation of the market risk equivalent amount; the same applies hereinafter) that satisfies the conditions of Article 93, guarantees satisfying the conditions of Article 94, Article 95 and Article 98, and credit derivatives satisfying the conditions of Article 94 and Article 96 through Article 98.",
+  "An Ultimate Designated Parent Company adopting the standardized approach may apply credit risk mitigation techniques in calculating credit risk-weighted assets.",
+  "Where the credit risk-weighted assets with credit risk mitigation techniques applied exceed the credit risk-weighted assets without them, an Ultimate Designated Parent Company adopting the standardized approach is not required to apply credit risk mitigation techniques."
+ ]
+}

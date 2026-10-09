@@ -1,0 +1,9 @@
+{
+ "number": "第九十八条",
+ "heading_en": "Eligibility of Guarantors and Protection Providers",
+ "summary_ja": "適格な保証人・プロテクション提供者を、債務者より低いリスク・ウェイトの中央政府等・公共部門・国際開発銀行・金融機関等と、適格格付機関の格付を有する主体（親会社等を含む）とする。",
+ "summary_en": "Eligible protection providers: sovereigns, public sector entities, MDBs and regulated financial firms with a lower risk weight than the obligor, and other entities rated by an eligible rating agency (including the obligor's parent and affiliates).",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach uses a guarantee or credit derivative as a credit risk mitigation technique, the guarantor or protection provider shall be one of the following. (i) Central governments, etc., local governments in Japan, the Japan Finance Organization for Municipalities, Japanese government-affiliated agencies, public sector entities other than foreign central governments, multilateral development banks, and the entities listed in Article 30 through Article 31-2, to which a lower risk weight applies than to the obligor of the guaranteed claim or underlying claim. (ii) Entities other than those listed in the preceding item that are rated by an eligible credit rating agency (including the parent company, subsidiaries, etc. and affiliates, etc. of the obligor of the guaranteed claim or underlying claim)."
+ ]
+}

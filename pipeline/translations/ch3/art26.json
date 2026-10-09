@@ -1,0 +1,11 @@
+{
+ "number": "第二十六条",
+ "heading_en": "Exposures to Multilateral Development Banks",
+ "summary_ja": "国際開発銀行向けエクスポージャーのリスク・ウェイトを格付区分ごとに定め（無格付は五十パーセント）、デュー・ディリジェンスで高リスクと評価すれば引上げ、主要な国際開発銀行は零パーセントとする。",
+ "summary_en": "Risk weights for multilateral development banks by rating (unrated: 50%), raised where due diligence shows higher risk; a listed set of major MDBs takes 0%.",
+ "paragraphs": [
+  "The risk weight of exposures to multilateral development banks shall be as set out in the left column of the following table, according to the credit risk category corresponding to the rating; provided, however, that where unrated, it shall be 50%. {{T:p59t1}}",
+  "In the preceding paragraph, where, as a result of the due diligence analysis by the Ultimate Designated Parent Company adopting the standardized approach, the credit standing of a multilateral development bank is assessed as carrying higher risk than the credit standing indicated by the credit risk category corresponding to its rating, the risk weight corresponding to a credit risk category one or more grades lower than the credit risk category corresponding to that rating shall be used; provided, however, that a risk weight corresponding to a credit risk category higher than the credit risk category corresponding to that rating shall not be used.",
+  "Notwithstanding the provisions of the preceding two paragraphs, the risk weight of exposures to the International Bank for Reconstruction and Development, the International Finance Corporation, the Multilateral Investment Guarantee Agency, the International Development Association, the Asian Development Bank, the African Development Bank, the European Bank for Reconstruction and Development, the Inter-American Development Bank, the European Investment Bank, the European Investment Fund, the Nordic Investment Bank, the Caribbean Development Bank, the Islamic Development Bank, the International Finance Facility for Immunisation, the Council of Europe Development Bank and the Asian Infrastructure Investment Bank shall be 0%."
+ ]
+}

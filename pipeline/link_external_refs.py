@@ -156,6 +156,9 @@ def main():
                 if try_link(r):
                     linked += 1
                 else:
+                    # The instrument is identified, its text just isn't digitized yet.
+                    if r.get("external_name") and r.get("resolution_status") == "unresolved":
+                        r["resolution_status"] = "external_unavailable"
                     still_unavailable.append((node["id"], r["raw_text"], r.get("external_name")))
 
     feed_path.write_text(json.dumps(feed, ensure_ascii=False, indent=2), encoding="utf-8")

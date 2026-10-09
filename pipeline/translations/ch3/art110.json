@@ -1,0 +1,9 @@
+{
+ "number": "第百十条",
+ "heading_en": "Guarantees or Credit Derivatives from the Same Provider with Different Currencies or Residual Maturities",
+ "summary_ja": "同一主体が通貨又は残存期間の異なる複数の保証等を提供している場合、エクスポージャーをそれぞれに分割する。",
+ "summary_en": "Protection from one provider in different currencies or maturities is applied to separate portions of the exposure.",
+ "paragraphs": [
+  "Where a single entity provides multiple guarantees or credit derivatives for a single exposure and their currencies or residual maturities differ, an Ultimate Designated Parent Company adopting the standardized approach shall divide the exposure into portions to which each guarantee or credit derivative is applied."
+ ]
+}

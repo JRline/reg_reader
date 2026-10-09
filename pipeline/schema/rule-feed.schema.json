@@ -64,7 +64,7 @@
         },
         "type": {
           "type": "string",
-          "enum": ["document", "part", "chapter", "section", "subsection", "article", "paragraph", "item", "subitem"]
+          "enum": ["document", "part", "chapter", "section", "subsection", "division", "article", "paragraph", "item", "subitem"]
         },
         "number": {
           "type": ["string", "null"],

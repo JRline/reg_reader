@@ -1,0 +1,10 @@
+{
+ "number": "第二十二条",
+ "heading_en": "Exposures to Central Governments and Central Banks",
+ "summary_ja": "中央政府・中央銀行向けエクスポージャーのリスク・ウェイトを格付又はカントリー・リスク・スコアの区分ごとに定め（無格付は百パーセント）、日本国政府・日本銀行向けの円建て・円調達分は零パーセントとする。",
+ "summary_en": "Risk weights for sovereigns and central banks by rating or country risk score (unrated: 100%); yen exposures to the Japanese government and the Bank of Japan funded in yen take 0%.",
+ "paragraphs": [
+  "The risk weight of exposures to central governments and central banks shall be as set out in the table of each of the following items, according to the credit risk category corresponding to the rating or country risk score; provided, however, that where unrated, it shall be 100%. (i) For ratings assigned by an eligible credit rating agency: {{T:p57t0}} (ii) For country risk scores: {{T:p57t1}}",
+  "Notwithstanding the provisions of the preceding paragraph, the risk weight of yen-denominated exposures to the Government of Japan and the Bank of Japan that are funded in yen shall be 0%."
+ ]
+}

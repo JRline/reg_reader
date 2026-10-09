@@ -1,0 +1,9 @@
+{
+ "number": "第百三条",
+ "heading_en": "Tranched Guarantees or Credit Derivatives",
+ "summary_ja": "信用リスクを階層化して一部を移転し、優先度の異なる残部を留保する場合、留保部分に第五章（証券化）を準用したリスク・ウェイトを適用する。",
+ "summary_en": "Where credit risk is tranched and part transferred with different seniority from the part retained, the retained part is weighted under the securitization framework (Chapter 5).",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the standardized approach divides part of the credit risk relating to an exposure into one or more tranches and transfers it to one or more guarantors or protection providers, retains the remainder of that credit risk, and the transferred risk and the retained risk differ in seniority, the Ultimate Designated Parent Company adopting the standardized approach shall apply to the retained portion the risk weight determined by applying the provisions of Chapter 5 mutatis mutandis."
+ ]
+}

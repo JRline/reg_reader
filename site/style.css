@@ -310,6 +310,7 @@ body.cues-off .cue { border-bottom: none; padding-bottom: 0; }
 
 /* formulas */
 .formula-box {
+  display: block;
   margin-top: 14px;
   padding: 12px 14px;
   border: 1px solid var(--border);
@@ -317,7 +318,7 @@ body.cues-off .cue { border-bottom: none; padding-bottom: 0; }
   background: var(--bg-panel);
   font-size: calc(1em * var(--font-scale));
 }
-.formula-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin-bottom: 8px; }
+.formula-head { display: flex; flex-wrap: wrap; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin-bottom: 8px; }
 .formula-label { font-weight: 600; font-size: 0.9em; }
 .formula-source { font-size: 0.75em; color: var(--text-muted); }
 .source-image_reconstructed .formula-source { color: var(--clause-proviso); }
@@ -357,7 +358,7 @@ body.cues-off .cue { border-bottom: none; padding-bottom: 0; }
 }
 .fvar:hover, .fvar:focus-visible { background: var(--accent-bg); outline: none; }
 .fvar sub, .fvar sup, .formula-vars dt sub, .formula-vars dt sup, .var-tip-sym sub, .var-tip-sym sup { font-style: normal; font-size: 0.68em; }
-.formula-note { margin-top: 6px; font-size: 0.8em; color: var(--text-muted); line-height: 1.6; }
+.formula-note { display: block; margin-top: 6px; font-size: 0.8em; color: var(--text-muted); line-height: 1.6; }
 .formula-vars { margin-top: 6px; font-size: 0.82em; }
 .formula-vars summary { cursor: pointer; color: var(--text-muted); }
 .formula-vars dl { display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; margin: 6px 0 0; }
@@ -420,3 +421,30 @@ body.cues-off .cue { border-bottom: none; padding-bottom: 0; }
 
 /* Keep short control labels on one line at phone width (日本語 / 視覚キュー were wrapping). */
 .lang-btn, #cues-label { white-space: nowrap; }
+
+/* Formula grammar extras: powers, roots, sums */
+.f-sup { font-size: 0.72em; margin-left: 1px; }
+.f-sqrt { align-items: stretch; }
+.f-radical { font-size: 1.15em; padding-right: 1px; }
+.f-radicand { border-top: 1px solid currentColor; padding: 0 3px; display: inline-flex; align-items: center; }
+.f-sum-op { display: inline-flex; flex-direction: column; align-items: center; line-height: 1; margin-right: 3px; }
+.f-sigma { font-size: 1.35em; }
+.f-sum-index { font-size: 0.68em; }
+.formula-inline { display: inline-flex; align-items: center; vertical-align: middle; font-family: "Cambria Math", "STIX Two Math", "Times New Roman", serif; margin: 0 2px; }
+.text-script { font-size: 0.7em; }
+
+/* Tables carried over from the PDF ({{T:id}} tokens) */
+.table-wrap { display: block; overflow-x: auto; margin: 10px 0; }
+.reg-table { border-collapse: collapse; font-size: 0.9em; line-height: 1.6; min-width: 60%; }
+.reg-table th, .reg-table td { border: 1px solid var(--border); padding: 4px 8px; vertical-align: top; text-align: left; min-width: 4.5em; }
+/* A long label column (e.g. the rating bands in Article 70) must not squeeze the value
+   columns down to one character per line. */
+.reg-table td:first-child, .reg-table th:first-child { max-width: 22em; }
+.reg-table th { background: var(--bg-panel); font-weight: 600; }
+.reg-table td { font-variant-numeric: tabular-nums; }
+.table-note { display: block; font-size: 0.8em; color: var(--text-muted); margin-top: 4px; }
+.token-missing { display: inline-block; font-size: 0.8em; color: var(--clause-proviso); border: 1px dashed currentColor; border-radius: 4px; padding: 0 4px; margin: 0 2px; }
+
+/* Section levels in the contents list */
+.toc .type-section > .node-label { font-weight: 600; }
+.toc .type-subsection > .node-label, .toc .type-division > .node-label { color: var(--text-muted); font-size: 0.95em; }
