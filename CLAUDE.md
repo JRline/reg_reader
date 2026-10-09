@@ -143,9 +143,9 @@ Three layers, run in this order after content is ingested:
   the extractor lost, etc.) live in `pipeline/fix_extractions.py`; run it before `build_chapter.py`.
   Chapter 7 = 第二百八十一条–第二百九十八条 plus 別表第一/第二, built as article-shaped entries keyed
   `appx1`/`appx2` (the app shows "Appended Table N"; `finish_ch7.py` trims the extraction and merges
-  `ch7_appendices.json`). The 附則 (the original supplementary provisions and ~17 amending notices,
+  `ch7_appendices.json`). The 附則 (the original supplementary provisions and 18 amending notices,
   which reuse article numbers) are the last node, `fsa-basel-cap-jp.fusoku` (a chapter with no number, JA label 附則):
-  one *section* per notice block (32: the original 附則, 17 amending 附則, 14 改正文 application clauses; no number, the
+  one *section* per notice block (32: the original 附則, 18 amending 附則, 13 改正文 application clauses; no number, the
   block title is the heading), and article ids nested under their block (`fusoku.s03.art3`; entries with no article
   number are `…s07.u1`, labelled 本文/"Text"). Built by `extract_fusoku.py` (entries carry a unique `key`; translation
   files are named by key), `build_chapter.py` (nested ids, `""` chapter number) and a block-aware resolver
