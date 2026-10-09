@@ -251,9 +251,7 @@ body {
 .enum-block {
   margin: 4px 0 4px calc(1.4em * (var(--enum-depth, 1) - 1));
   padding: 3px 10px 3px 10px;
-  border-left: 3px solid var(--clause-enum);
-  background: var(--clause-enum-bg);
-  border-radius: 0 4px 4px 0;
+  border-left: 4px solid var(--clause-enum);  /* a side bar only — no background fill */
 }
 .enum-block > .clause-enumeration_item { opacity: calc(1 - 0.12 * (var(--enum-depth, 1) - 1)); }
 .item-marker { font-weight: 700; color: var(--clause-enum); margin-right: 0.5em; }
