@@ -56,7 +56,8 @@ def article_key(number):
 
 
 def section_key(path):
-    return ".".join({1: "sec", 2: "sub", 3: "div"}[p["level"]] + str(ja_refs.k2i(re.findall(ja_refs.N, p["number"])[0])) for p in path)
+    # A path element may carry an explicit `key` (the 附則 blocks have no number to derive one from).
+    return ".".join(p.get("key") or {1: "sec", 2: "sub", 3: "div"}[p["level"]] + str(ja_refs.k2i(re.findall(ja_refs.N, p["number"])[0])) for p in path)
 
 
 def clauses_ja_from_segments(segments):
@@ -129,10 +130,10 @@ def main():
     sections_en = {}
     for fp in sorted(tr_dir.glob("*.json")):
         t = json.loads(fp.read_text(encoding="utf-8"))
-        translations[t["number"]] = t
+        translations[t["number"]] = t  # "number" = the extraction entry's `key` if it has one (附則), else its article number
         sections_en.update(t.get("sections_en", {}))
 
-    chapter = {"id": chapter_id, "type": "chapter", "number": ch_number, "heading": ch_heading, "heading_en": ch_heading_en,
+    chapter = {"id": chapter_id, "type": "chapter", "number": ch_number or None, "heading": ch_heading, "heading_en": ch_heading_en,
                "text_ja": None, "text_en": None, "clauses_ja": [], "clauses_en": [], "refs": [], "defined_terms": [], "children": []}
     groups = {}  # section path key -> node
     problems, built, pending = [], 0, []
@@ -146,20 +147,24 @@ def main():
                 p = sub[-1]
                 node = {"id": f"{chapter_id}.{key}", "type": {1: "section", 2: "subsection", 3: "division"}[p["level"]],
                         "number": p["number"], "heading": p["heading"],
-                        "heading_en": sections_en.get(" ".join(x["number"] for x in sub)) or sections_en.get(p["number"] + " " + p["heading"]),
+                        "heading_en": sections_en.get(p.get("key") or "") or (sections_en.get(" ".join(x["number"] for x in sub)) if p["number"] else None) or (sections_en.get(p["number"] + " " + p["heading"]) if p["number"] else None),
                         "text_ja": None, "text_en": None, "clauses_ja": [], "clauses_en": [], "refs": [], "defined_terms": [], "children": []}
                 groups[key] = node
                 parent["children"].append(node)
             parent = groups[key]
 
-        art_id = f"{chapter_id}.{article_key(a['number'])}"
-        tr = translations.get(a["number"])
-        art = {"id": art_id, "type": "article", "number": a["number"], "heading": a["heading"],
+        ident = a.get("key") or a["number"]
+        akey = ident.split(".", 1)[1] if a.get("key") else article_key(a["number"])
+        art_id = f"{parent['id']}.{akey}" if ext.get("nested_ids") else f"{chapter_id}.{akey}"
+        tr = translations.get(ident)
+        art = {"id": art_id, "type": "article", "number": a["number"] or None, "heading": a["heading"],
                "heading_en": tr.get("heading_en") if tr else None,
                "text_ja": None, "text_en": None,
                "summary_ja": tr.get("summary_ja") if tr else None, "summary_en": tr.get("summary_en") if tr else None,
                "translation_status": "llm_draft" if tr else "pending",
                "clauses_ja": [], "clauses_en": [], "refs": [], "defined_terms": [], "children": []}
+        if a.get("key") and not a["number"] and not a["heading"]:
+            art["heading"], art["heading_en"] = "本文", (tr.get("heading_en") if tr else None) or "Text"  # 附則 text with no article number or heading
         parent["children"].append(art)
 
         if a["deleted"]:
@@ -172,20 +177,20 @@ def main():
             built += 1
             continue
         if not tr:
-            pending.append(a["number"])
+            pending.append(ident)
             continue
         if len(tr["paragraphs"]) != len(a["paragraphs"]):
-            problems.append(f"{a['number']}: {len(tr['paragraphs'])} translated paragraphs vs {len(a['paragraphs'])} in the source")
+            problems.append(f"{ident}: {len(tr['paragraphs'])} translated paragraphs vs {len(a['paragraphs'])} in the source")
             continue
         terms = tr.get("terms", [])
         for k, (pj, ten) in enumerate(zip(a["paragraphs"], tr["paragraphs"]), start=1):
             tja = pj["text"]
             if sorted(TOKEN_RE.findall(tja)) != sorted(TOKEN_RE.findall(ten)):
-                problems.append(f"{a['number']} p{k}: table/formula tokens differ between ja and en")
+                problems.append(f"{ident} p{k}: table/formula tokens differ between ja and en")
             if not ten.strip():
-                problems.append(f"{a['number']} p{k}: empty text_en")
+                problems.append(f"{ident} p{k}: empty text_en")
             defined = [{"term_ja": t["ja"], "term_en": t.get("en"), "expands_to_ja": t.get("expands_to_ja"), "definition_node_id": f"{art_id}.p{k}"}
-                       for t in terms if f"「{t['ja']}」" in tja]
+                       for t in terms if tr.get("all_terms") or f"「{t['ja']}」" in tja]
             art["children"].append({
                 "id": f"{art_id}.p{k}", "type": "paragraph", "number": pj["number"], "heading": None,
                 "text_ja": tja, "text_en": ten, "translation_status": "llm_draft",
@@ -201,7 +206,7 @@ def main():
         feed["root"]["children"][existing[0]] = chapter
     else:
         feed["root"]["children"].append(chapter)
-        feed["root"]["children"].sort(key=lambda c: ja_refs.k2i(re.findall(ja_refs.N, c.get("number") or "第零章")[0]) if c.get("number") else 0)
+        feed["root"]["children"].sort(key=lambda c: ja_refs.k2i(re.findall(ja_refs.N, c.get("number") or "第零章")[0]) if c.get("number") else 99)
     feed_path.write_text(json.dumps(feed, ensure_ascii=False, indent=2), encoding="utf-8")
 
     n_refs = sum(len(p.get("refs", [])) for p in _walk(chapter) if p.get("type") == "paragraph")

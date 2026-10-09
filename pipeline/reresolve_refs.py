@@ -93,7 +93,9 @@ def build_context(root: dict):
             if art.get("type") != "article":
                 continue
             article_ids_ordered.append(art["id"])
-            if art.get("number"):
+            # 附則 blocks (a chapter with no number) repeat article numbers; they never
+            # answer a bare 第N条 citation.
+            if art.get("number") and chapter.get("number"):
                 article_number_to_id[art["number"]] = art["id"]
             chapter_of[art["id"]] = chapter
             para_ids = [p["id"] for p in art.get("children", []) if p.get("type") == "paragraph"]
@@ -244,6 +246,63 @@ def resolve(raw_text: str, current_paragraph_id: str, ctx: dict, last_para_targe
     return None, None  # unparseable with current patterns — leave whatever it had
 
 
+def _block_of(node_id: str, ctx: dict):
+    n = ctx["parent_of"].get(node_id)
+    while n is not None and n.get("type") != "section":
+        n = ctx["parent_of"].get(n["id"])
+    return n
+
+
+def occurrence_before(raw_text: str, text_ja: str, nth: int, width: int = 3) -> str:
+    """The `width` characters just before the nth occurrence of raw_text in text_ja."""
+    pos = -1
+    for _ in range(nth + 1):
+        pos = text_ja.find(raw_text, pos + 1)
+        if pos == -1:
+            return ""
+    return text_ja[max(0, pos - width):pos]
+
+
+def resolve_fusoku(raw_text, node, before, ctx, last_para_target):
+    """Citations inside a 附則 block. Article numbers repeat from block to block and the
+    amending notices' own bare citations (第五条の規定による改正後の…) point into notices that
+    are not in this feed, so only the unambiguous cases resolve:
+      附則第N条…      -> that article of the SAME block
+      新告示第N条…    -> the notification's body (新告示 = the notification as amended)
+      前条/同項 …     -> only if the target is in the same block
+      bare 第N条…     -> the body, but only in the notification's own original 附則 (block s00)
+      旧告示 / other bare citations in amending blocks -> left unresolved."""
+    block = _block_of(node["id"], ctx)
+    if before.endswith("附則"):
+        m = ABS_CITATION_RE.match(raw_text)
+        if not m or block is None:
+            return "internal_unavailable", []
+        number = f"第{m.group('art')}条" + (m.group("artsub") or "")
+        art = next((c for c in block.get("children", []) if c.get("number") == number), None)
+        if not art:
+            return "internal_unavailable", []
+        paras = [c for c in art.get("children", []) if c.get("type") == "paragraph"]
+        if m.group("para"):
+            n = kanji_to_int(m.group("para"))
+            if 1 <= n <= len(paras):
+                return "resolved", [paras[n - 1]["id"]]
+            return "internal_unavailable", [art["id"]]
+        return "resolved", [art["id"]]
+    if before.endswith("旧告示"):
+        return "unresolved", []
+    relative = raw_text[:1] in "前次同"
+    is_new = before.endswith("新告示")
+    if not (relative or is_new or (block and block["id"].endswith(".s00"))):
+        return "unresolved", []
+    status, targets = resolve(raw_text, node["id"], ctx, last_para_target)
+    if status is None:
+        return None, None
+    if relative and status == "resolved":
+        if any(_block_of(t, ctx) is not block for t in targets):
+            return "internal_unavailable", []
+    return status, targets
+
+
 def unit_prefix_of(raw_text: str, text_ja: str):
     """For a 節/款/目-led citation: the 前款/次節/同款-style word right before it in the text
     (None = every occurrence is bare; "" = occurrences disagree)."""
@@ -279,11 +338,18 @@ def main():
             if node.get("type") != "paragraph":
                 continue
             last_para_target = [None]
+            seen = {}
             for r in node.get("refs", []):
                 if r.get("scope") != "internal":
                     continue
-                status, target_ids = resolve(r["raw_text"], node["id"], ctx, last_para_target,
-                                             unit_prefix_of(r["raw_text"], node.get("text_ja", "")))
+                nth = seen.get(r["raw_text"], 0)
+                seen[r["raw_text"]] = nth + 1
+                if chapter.get("number") is None:
+                    before = occurrence_before(r["raw_text"], node.get("text_ja", ""), nth)
+                    status, target_ids = resolve_fusoku(r["raw_text"], node, before, ctx, last_para_target)
+                else:
+                    status, target_ids = resolve(r["raw_text"], node["id"], ctx, last_para_target,
+                                                 unit_prefix_of(r["raw_text"], node.get("text_ja", "")))
                 if status is None:
                     if r.get("resolution_status") == "unresolved":
                         stats["still_unresolved"] += 1

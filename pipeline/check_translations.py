@@ -12,7 +12,7 @@ sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE / "translations"))
 import ja_refs
 TOK = re.compile(r"\{\{[TF]:[^}]+\}\}")
 ext = json.load(open(sys.argv[1])); trd = Path(sys.argv[2])
-nums = [a["number"] for a in ext["articles"]]
+nums = [a.get("key") or a["number"] for a in ext["articles"]]
 i = nums.index(sys.argv[3]) if len(sys.argv) > 3 else 0
 j = nums.index(sys.argv[4]) if len(sys.argv) > 4 else (i if len(sys.argv) > 3 else len(nums) - 1)
 tables, anchors = set(), set()
@@ -30,28 +30,29 @@ for fp in trd.glob("*.json"):
 for a in ext["articles"][i:j + 1]:
     if a["deleted"]:
         continue
-    t = byn.get(a["number"])
+    ident = a.get("key") or a["number"]
+    t = byn.get(ident)
     if not t:
-        print("ERR  missing translation:", a["number"]); errs += 1; continue
+        print("ERR  missing translation:", ident); errs += 1; continue
     for k in ("heading_en", "summary_ja", "summary_en", "paragraphs"):
         if k not in t or (k != "heading_en" and not t[k]) :
-            print("ERR ", a["number"], "missing", k); errs += 1
+            print("ERR ", ident, "missing", k); errs += 1
     if a["heading"] and not t.get("heading_en"):
-        print("ERR ", a["number"], "heading_en empty"); errs += 1
+        print("ERR ", ident, "heading_en empty"); errs += 1
     if len(t["paragraphs"]) != len(a["paragraphs"]):
-        print("ERR ", a["number"], f"{len(t['paragraphs'])} EN paragraphs vs {len(a['paragraphs'])} JA"); errs += 1; continue
+        print("ERR ", ident, f"{len(t['paragraphs'])} EN paragraphs vs {len(a['paragraphs'])} JA"); errs += 1; continue
     for k, (pj, en) in enumerate(zip(a["paragraphs"], t["paragraphs"]), 1):
         ja = pj["text"]
-        if not en.strip(): print("ERR ", a["number"], k, "empty"); errs += 1
+        if not en.strip(): print("ERR ", ident, k, "empty"); errs += 1
         if sorted(TOK.findall(ja)) != sorted(TOK.findall(en)):
-            print("ERR ", a["number"], k, "tokens differ", TOK.findall(ja), TOK.findall(en)); errs += 1
+            print("ERR ", ident, k, "tokens differ", TOK.findall(ja), TOK.findall(en)); errs += 1
         for tok in TOK.findall(ja):
             kind, tid = tok[2], tok[4:-2]
-            if kind == "T" and tid not in tables: print("WARN", a["number"], k, "no table entry for", tid); warns += 1
-            if kind == "F" and tid not in anchors: print("WARN", a["number"], k, "no formula for", tid); warns += 1
-        if re.search(r"[ぁ-んァ-ヶ]", en): print("ERR ", a["number"], k, "kana left in EN text"); errs += 1
+            if kind == "T" and tid not in tables: print("WARN", ident, k, "no table entry for", tid); warns += 1
+            if kind == "F" and tid not in anchors: print("WARN", ident, k, "no formula for", tid); warns += 1
+        if re.search(r"[ぁ-んァ-ヶ]", en): print("ERR ", ident, k, "kana left in EN text"); errs += 1
         nja = sum(1 for s in pj["segments"] if s["marker"]); nen = len(re.findall(r"(?:^|[.;:] )\((?:[ivxl]+|[a-z]|\d+)(?:-\d+)?\) ", en))
         if nja and nen < nja * 0.7:
-            print("WARN", a["number"], k, f"{nja} JA list markers but only {nen} EN markers"); warns += 1
+            print("WARN", ident, k, f"{nja} JA list markers but only {nen} EN markers"); warns += 1
 print(f"checked {j - i + 1} articles: {errs} errors, {warns} warnings")
 sys.exit(1 if errs else 0)
