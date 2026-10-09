@@ -1,0 +1,14 @@
+{
+ "number": "第二百六十一条の二",
+ "heading_en": "Sensitivities",
+ "summary_ja": "感応度を報告通貨で表示すること、及び独立したリスク管理部署が用いる商品価格・時価評価モデルに基づいて算出することを定める。",
+ "summary_en": "Requires sensitivities to be expressed in the reporting currency and calculated on the basis of the product prices or valuation models used by the independent risk management unit.",
+ "terms": [],
+ "paragraphs": [
+  "An Ultimate Designated Parent Company shall express the sensitivities for each risk class in the reporting currency.",
+  "The calculation of sensitivities shall be based on the product prices or mark-to-market valuation models used by the independent risk management unit to report the market risk equivalent amount or actual P&L to directors, etc."
+ ],
+ "sections_en": {
+  "第三節 第二款 第三目": "Sensitivities under the Sensitivities-Based Method"
+ }
+}

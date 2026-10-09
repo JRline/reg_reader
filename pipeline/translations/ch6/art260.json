@@ -1,0 +1,10 @@
+{
+ "number": "第二百六十条",
+ "heading_en": "Instruments Covered by the Sensitivities-Based Method",
+ "summary_ja": "デルタ・リスク、ベガ・リスク及びカーベチャー・リスクそれぞれの対象商品を定める。",
+ "summary_en": "Specifies the instruments covered by delta risk, vega risk and curvature risk.",
+ "terms": [],
+ "paragraphs": [
+  "The instruments subject to delta risk, vega risk and curvature risk shall be those set out in the following items according to the category of risk listed in each item. (i) Delta risk: instruments held by all trading desks using the standardized approach; (ii) Vega risk: the following instruments: (a) Instruments having optionality; (b) Instruments in which an early repayment option is embedded; (iii) Curvature risk: the instruments set out in (a) and (b) of the preceding item; provided, however, that only where all of the following requirements are satisfied may, among instruments other than those in (a) and (b) of that item, instruments held by all trading desks using the standardized approach be made subject to curvature risk: (a) They are, among the instruments subject to delta risk as provided in item (i), instruments having no optionality; (b) The instruments subject to curvature risk shall be applied on a continuing basis."
+ ]
+}

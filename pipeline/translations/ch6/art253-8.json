@@ -1,0 +1,15 @@
+{
+ "number": "第二百五十三条の八",
+ "heading_en": "Implementation of the P&L Attribution Test",
+ "summary_ja": "損益要因分析テストの結果をグリーン・アンバー・レッドの各ゾーンに分類する基準と、各ゾーンの取扱い（内部モデル方式の使用可否、再開要件）を定める。",
+ "summary_en": "Sets the criteria for classifying P&L attribution test results into green, amber and red zones, and the treatment of each zone (eligibility to use the internal model approach and conditions for resumption).",
+ "terms": [],
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal model approach shall classify the results of the P&L attribution test conducted on each trading desk using the internal model approach into the zones set out in the following items according to the case listed in each item. (i) Where the Spearman rank correlation metric exceeds 0.80 and the KS test metric is less than 0.09 (0.264 in the case of the p-value): Green zone; (ii) Where the Spearman rank correlation metric is less than 0.70 or the KS test metric exceeds 0.12 (0.055 in the case of the p-value): Red zone; (iii) Cases other than those set out in the preceding two items: Amber zone.",
+  "A trading desk whose P&L attribution test result is classified in the green zone may use the internal model approach.",
+  "A trading desk whose P&L attribution test result is classified in the red zone shall use the standardized approach.",
+  "A trading desk required by the preceding paragraph to use the standardized approach may resume using the internal model approach only where it satisfies all of the following requirements. (i) It is classified in the green zone in a P&L attribution test conducted anew; (ii) Over the most recent 12 months, no exceedance as provided for in Article 253-3, paragraph (4) has occurred in the backtesting results for each trading desk.",
+  "A trading desk whose P&L attribution test result is classified in the amber zone may continue to use the internal model approach by being made subject to the capital surcharge provided for in Article 257.",
+  "A trading desk whose P&L attribution test result is classified in the amber zone shall be classified in the green zone only where it satisfies all of the following requirements. (i) It meets the requirements of the green zone in a P&L attribution test conducted anew; (ii) Over the most recent 12 months, no exceedance as provided for in Article 253-3, paragraph (4) has occurred in the backtesting results for each trading desk."
+ ]
+}

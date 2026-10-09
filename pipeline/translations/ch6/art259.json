@@ -1,0 +1,10 @@
+{
+ "number": "第二百五十九条",
+ "heading_en": "Market Risk Equivalent Amount Based on the Sensitivities-Based Method",
+ "summary_ja": "リスク感応度方式に基づくマーケット・リスク相当額が、デルタ、ベガ、カーベチャーの各リスクに対する額の合計であることを定める。",
+ "summary_en": "Defines the market risk equivalent amount under the sensitivities-based method as the sum of the amounts for delta risk, vega risk and curvature risk.",
+ "terms": [],
+ "paragraphs": [
+  "The market risk equivalent amount based on the sensitivities-based method means the sum of the market risk equivalent amounts for delta risk, vega risk and curvature risk."
+ ]
+}

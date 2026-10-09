@@ -1,0 +1,10 @@
+{
+ "number": "第二百五十四条の四",
+ "heading_en": "Market Risk Equivalent Amount Based on Modellable Risk Factors Assuming Market Stress",
+ "summary_ja": "市場混乱時を想定した期待ショート・フォールを用いたモデル化可能なリスク・ファクターに基づくマーケット・リスク相当額（IMCC）の算式を定める。",
+ "summary_en": "Sets the formula for the market risk equivalent amount based on modellable risk factors (IMCC), using expected shortfall assuming market stress.",
+ "terms": [],
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal model approach shall calculate the market risk equivalent amount based on modellable risk factors, using expected shortfall assuming market stress, by the following formula. {{F:p342i0}}{{F:p343i0}}{{F:p343i1}} IMCC is the market risk equivalent amount based on modellable risk factors; IMCC(C) is the market risk equivalent amount calculated by expected shortfall assuming market stress covering all risk classes; IMCC(C_{i}) is the market risk equivalent amount calculated by expected shortfall assuming market stress covering each of the five risk classes; ES_{R,S,i} is the market risk equivalent amount calculated by expected shortfall for the reduced set of risk factors, covering each of the five risk classes and calculated assuming the stress period; ES_{R,C,i} is the market risk equivalent amount calculated by expected shortfall based on the most recent 12 months for the reduced set of risk factors, covering each of the five risk classes; ES_{F,C,i} is the market risk equivalent amount calculated by expected shortfall based on the most recent 12 months for all risk factors, covering each of the five risk classes; ρ is 0.5; B is the total number of risk classes."
+ ]
+}

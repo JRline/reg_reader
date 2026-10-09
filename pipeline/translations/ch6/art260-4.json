@@ -1,0 +1,12 @@
+{
+ "number": "第二百六十条の四",
+ "heading_en": "Stressed Correlation Coefficients in the Sensitivities-Based Method",
+ "summary_ja": "中間・高・低の三つの相関シナリオごとの相関係数の設定方法と、シナリオごとの合算及び最大額の採用を定める。",
+ "summary_en": "Sets how correlation coefficients are specified for the medium, high and low correlation scenarios, and provides for aggregation by scenario and adoption of the largest amount.",
+ "terms": [],
+ "paragraphs": [
+  "In the formulas of Article 260-2, paragraphs (4) and (5) and paragraphs (5) and (6) of the preceding Article, correlation coefficients set by the method set out in the following items shall be used according to the scenario listed in each item. (i) Medium correlation scenario: a method of using the correlation coefficients (ρ_{kl}) and correlation coefficients (γ_{bc}) calculated under the provisions of Division 4 or Division 5 without adjustment; (ii) High correlation scenario: a method of replacing the correlation coefficients (ρ_{kl}) and correlation coefficients (γ_{bc}) calculated under the provisions of Division 4 or Division 5 with the correlation coefficients obtained by multiplying each by 1.25 (one where it exceeds one); (iii) Low correlation scenario: a method of replacing the correlation coefficients (ρ_{kl}) and correlation coefficients (γ_{bc}) calculated under the provisions of Division 4 or Division 5 with the correlation coefficients calculated by max(2×ρ_{kl} − 100%; 75%×ρ_{kl}) and max(2×γ_{bc} − 100%; 75%×γ_{bc}), respectively.",
+  "The amount obtained by aggregating the market risk equivalent amounts calculated under the preceding paragraph for each scenario set out in the items of that paragraph shall be the market risk equivalent amount based on the sensitivities-based method for that scenario.",
+  "The largest of the market risk equivalent amounts for each scenario calculated under the preceding paragraph shall be the market risk equivalent amount based on the sensitivities-based method."
+ ]
+}

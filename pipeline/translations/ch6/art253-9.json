@@ -1,0 +1,10 @@
+{
+ "number": "第二百五十三条の九",
+ "heading_en": "Notification of Results of Backtesting and the P&L Attribution Test",
+ "summary_ja": "トレーディング・デスクがバック・テスティング又は損益要因分析テストで一定の場合に該当したときの、金融庁長官への届出を定める。",
+ "summary_en": "Requires prompt notification to the Commissioner of the Financial Services Agency, with the cause and response policy, when a trading desk falls into specified cases in backtesting or the P&L attribution test.",
+ "terms": [],
+ "paragraphs": [
+  "Where a trading desk falls under any of the following cases, an Ultimate Designated Parent Company adopting the internal model approach shall without delay submit to the Commissioner of the Financial Services Agency a notification stating that fact, attaching a document stating the cause and the policy for dealing with it. (i) Where it is classified in the amber zone or red zone in the firm-wide backtesting provided for in Article 253-2; (ii) Where an exceedance as provided for in Article 253-3, paragraph (4) has occurred in the backtesting results for each trading desk; (iii) Where it is classified in the amber zone or red zone in the P&L attribution test for each trading desk provided for in the preceding Article."
+ ]
+}

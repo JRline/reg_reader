@@ -1,0 +1,20 @@
+{
+ "number": "第二百四十三条",
+ "heading_en": "Required Capital Ratio of the Underlying Assets under the Standardized Approach (K_{SA})",
+ "summary_ja": "標準的手法による裏付資産の所要自己資本率K_SAの算出方法（導管体の取扱い、みなし直接保有、デリバティブ、信用リスク削減手法、引当金の不考慮）を定める。",
+ "summary_en": "Defines K_SA as the standardized-approach required capital of the underlying assets over their exposure total, with rules on conduits, deemed direct holding, hedging derivatives, credit risk mitigation and provisions.",
+ "paragraphs": [
+  "The required capital ratio of the underlying assets under the standardized approach (K_{SA}) referred to in paragraph (1) of the preceding Article shall be the value, expressed as a decimal, obtained by dividing the total (hereinafter in this Article referred to as the \"total required capital amount of the underlying assets\") of the required capital amounts calculated under the standardized approach (meaning the amount obtained by multiplying the credit risk-weighted assets calculated under the standardized approach by 8%; the same applies in paragraph (4)) for the exposures of the underlying assets (including exposures relating to off-balance-sheet transactions; hereinafter the same in this Article) of a securitization exposure relating to an SA pool or a mixed pool, by the total amount of those exposures of the underlying assets.",
+  "In calculating K_{SA} under the preceding paragraph, where a securitization special purpose entity is used in the securitization transaction, all exposures of that securitization special purpose entity shall be treated as underlying assets; provided, however, that this does not apply to exposures that are clearly immaterial.",
+  "In calculating the total required capital amount of the underlying assets under paragraph (1), the Ultimate Designated Parent Company holding the securitization exposure referred to in that paragraph shall be deemed to hold the underlying assets directly even where it does not directly hold them.",
+  "In calculating K_{SA} under paragraph (1), where the underlying assets include derivative transactions for hedging purposes such as interest rate swaps or currency swaps (excluding credit default swaps), the required capital amount for credit risk relating to the counterparties to those transactions shall be included in the total required capital amount of the underlying assets, and the amount of exposures relating to credit risk to the counterparties to those transactions shall not be included in the total amount of exposures of the underlying assets.",
+  "In calculating K_{SA} under paragraph (1), the effects of credit risk mitigation techniques applied to the underlying assets may be taken into account.",
+  "In calculating the total required capital amount of the underlying assets and the total amount of exposures of the underlying assets under paragraph (1), individual allowances for loan losses on the exposures of the underlying assets and the amount of discounts arising on the purchase or transfer of original assets (limited to those not requiring refund) shall not be taken into account."
+ ],
+ "terms": [
+  {
+   "ja": "裏付資産の所要自己資本の額の合計額",
+   "en": "total required capital amount of the underlying assets"
+  }
+ ]
+}

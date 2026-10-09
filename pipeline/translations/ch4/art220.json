@@ -1,0 +1,51 @@
+{
+ "number": "第二百二十条",
+ "heading_en": "Standards for Approval of the Exposure Fluctuation Estimation Model",
+ "summary_ja": "承認の審査基準(定性的基準と定量的基準)を定める。",
+ "summary_en": "Provides that the Commissioner examines conformity with qualitative and quantitative standards, and sets out each standard, including holding periods and the close-out period adjustment.",
+ "paragraphs": [
+  "When approving the use of an exposure fluctuation estimation model under Article 217, paragraph (1), the Commissioner of the Financial Services Agency shall examine whether it conforms to the qualitative standards and quantitative standards.",
+  "The \"qualitative standards\" in the preceding paragraph means the following: (i) monitoring over a certain period and testing using actual transaction data have been carried out prior to approval of the exposure fluctuation estimation model; (ii) the department responsible for the design and operation of the process for managing the exposure fluctuation amount (hereinafter referred to as the \"exposure fluctuation amount management department\") is established independently of the departments involved in the transactions for which the amount of exposure after credit risk mitigation is calculated; (iii) in the system for managing the exposure fluctuation amount, the material risks held by the Ultimate Designated Parent Company adopting the internal ratings-based approach that uses the exposure fluctuation estimation model are comprehensively identified and, to the extent possible, taken into account; (iv) sufficient personnel familiar with the use of sophisticated models are secured not only in the front office but also in the risk management department, the internal audit department and, as necessary, the back office; (v) stress tests on the exposure fluctuation amount (meaning an analysis of the exposure fluctuation amount in the event of price fluctuations exceeding the assumptions regarding future price fluctuations in the exposure fluctuation estimation model) are conducted regularly; (vi) the stress tests referred to in the preceding item are equivalent to the stress test requirements for the internal model method prescribed in Article 251; (vii) repo VaR model back-testing relating to the exposure fluctuation amount (meaning verification of the accuracy of the exposure fluctuation estimation model by the back-testing prescribed in Article 249-3, paragraph (3), item (vii)) is conducted by the exposure fluctuation amount management department; (viii) where the exposure fluctuation estimation model is used, the robustness of the exposure fluctuation estimation model can be explained by comparing the hypothetical profit and loss of the exposure fluctuation estimation model with the risk-theoretical profit and loss relating to the exposure fluctuation estimation model (meaning profit and loss calculated by the risk management model used by the front office department in connection with the exposure fluctuation estimation model); (ix) the model validation department for exposure fluctuation estimation (meaning a department or function that is independent of the department that designs and operates the exposure fluctuation estimation model and to which persons of sufficient competence belong; the same applies in the following item) validates all models used in the exposure fluctuation estimation model at the time of approval and thereafter at least once a year. In this case, the validation shall include the following matters (a) validation demonstrating that all processes of the exposure fluctuation estimation model are appropriate and do not underestimate risk (including validation of the appropriateness of the distribution assumed by the model and of the mark-to-market model) has been conducted; (b) the validation of the model includes validation using hypothetical portfolios (meaning validation that identifies the possibility that the accuracy of the model may be lost owing to structural changes in the market or significant changes in portfolio composition (referred to as \"structural characteristics\" in (b))), and it has been confirmed, using such hypothetical portfolios, whether the structural characteristics that could arise can be explained by the exposure fluctuation estimation model; (c) where proxy variables are used in the validation using hypothetical portfolios referred to in (b), the following matters are ensured (1) confirming that the risk factors for which proxy variables are used produce conservative results; (2) material basis risk (meaning basis risk prescribed in Article 250-7, paragraph (2), item (iv)(b)) is sufficiently reflected; (3) concentration risk that may arise in non-diversified portfolios is reflected; (x) the model validation department for exposure fluctuation estimation regularly reports to the board of directors, etc. the results of the stress tests on the exposure fluctuation amount prescribed in item (v), the results of the repo VaR model back-testing on the exposure fluctuation amount prescribed in item (vii), the robustness of the exposure fluctuation estimation model prescribed in item (viii), the results of validation of the models prescribed in the preceding item, and the status of management of counterparty credit risk; (xi) the board of directors, etc. actively participates in the management of counterparty credit risk relating to repo-style transactions and margin lending and similar overseas transactions and allocates appropriate management resources; (xii) the manager of the exposure fluctuation amount has the authority to direct the reduction of each trader's positions; (xiii) records demonstrating the accuracy of the measurement of the exposure fluctuation amount are retained; (xiv) documents describing the internal policies, controls and procedures for the operation of the exposure fluctuation estimation model have been prepared, and measures have been taken to ensure compliance with them; (xv) internal audits of the process of measuring the exposure fluctuation amount are conducted, in principle, at least once a year.",
+  "The \"quantitative standards\" in paragraph (1) means the following: (i) the confidence level for estimating the exposure fluctuation amount is 99% one-tailed; (ii) the holding period of the traded assets (meaning the period for which the traded assets are assumed to be held when calculating the estimate of the exposure fluctuation amount; the same applies hereinafter in this Subsection) is at least the number of business days set out in (a) or (b) for the category of transaction set out in (a) or (b) (a) repo-style transactions subject to margin adjustment: five business days; (b) transactions other than those set out in (a): ten business days; (iii) the observation period of the historical data used to estimate the exposure fluctuation amount is one year or more; (iv) where the historical data used to estimate the exposure fluctuation amount is used with a weight multiplied to each value, the weighted average of the period from the date on which each value was measured to the calculation reference date (the length of that period multiplied by the weight) is six months or more; (v) the historical data used to estimate the exposure fluctuation amount is updated, and the estimate is made, at least once every three months; provided, however, that where there is a significant change in market prices, the update and estimate to reflect that change shall be made.",
+  "Where it is considered necessary in light of the liquidity of the bonds used in the transactions subject to estimation, the holding period shall be longer than the number of business days prescribed in item (ii) of the preceding paragraph.",
+  "Notwithstanding the preceding two paragraphs, for a netting set for which, during the two most recent consecutive quarters preceding the quarter that includes the calculation reference date, a close-out period exceeding the minimum holding period was required three or more times, 20 business days shall be applied as the minimum holding period during the next two consecutive quarters."
+ ],
+ "terms": [
+  {
+   "ja": "定性的基準",
+   "en": "qualitative standards"
+  },
+  {
+   "ja": "定量的基準",
+   "en": "quantitative standards"
+  },
+  {
+   "ja": "エクスポージャー変動額の管理部署",
+   "en": "exposure fluctuation amount management department"
+  },
+  {
+   "ja": "エクスポージャー変動額に係るストレス・テスト",
+   "en": "stress tests on the exposure fluctuation amount"
+  },
+  {
+   "ja": "エクスポージャー変動額に係るレポVaRモデルバック・テスティング",
+   "en": "repo VaR model back-testing relating to the exposure fluctuation amount"
+  },
+  {
+   "ja": "リスク理論損益",
+   "en": "risk-theoretical profit and loss"
+  },
+  {
+   "ja": "エクスポージャー変動額推計のモデル検証部署",
+   "en": "model validation department for exposure fluctuation estimation"
+  },
+  {
+   "ja": "構造的特性",
+   "en": "structural characteristics"
+  },
+  {
+   "ja": "取引対象資産の保有期間",
+   "en": "holding period of the traded assets"
+  }
+ ]
+}

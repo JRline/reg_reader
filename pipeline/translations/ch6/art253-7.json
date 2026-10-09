@@ -1,0 +1,13 @@
+{
+ "number": "第二百五十三条の七",
+ "heading_en": "Metrics of the P&L Attribution Test",
+ "summary_ja": "損益要因分析テストの指標（スピアマンの順位相関指標とKS検定のテスト指標）と、その算出方法を定める。",
+ "summary_en": "Specifies the metrics of the P&L attribution test (the Spearman rank correlation metric and the Kolmogorov-Smirnov test metric) and how they are calculated.",
+ "terms": [],
+ "paragraphs": [
+  "The metrics of the P&L attribution test shall be the following. (i) The Spearman rank correlation metric, which evaluates the rank correlation between the risk-theoretical P&L and the hypothetical P&L; (ii) The test metric of the Kolmogorov-Smirnov test (referred to as the \"KS test\" in paragraph (4) and paragraph (1) of the following Article), which evaluates the closeness of the distributions of the risk-theoretical P&L and the hypothetical P&L.",
+  "In calculating the metrics set out in each item of the preceding paragraph, the time-series data of the risk-theoretical P&L and the hypothetical P&L observed over the most recent 250 business days shall be used.",
+  "The Spearman rank correlation metric shall be calculated by the following formula. {{F:p337i0}} r_{S} is the Spearman rank correlation metric; cov(R_{HPL}, R_{RTPL}) is the covariance between R_{HPL} and R_{RTPL}; {{F:p337i1}} is the standard deviation of R_{HPL}; {{F:p337i2}} is the standard deviation of R_{RTPL}; R_{HPL} is the rank data obtained by converting the hypothetical P&L on the basis of magnitude; R_{RTPL} is the rank data obtained by converting the risk-theoretical P&L on the basis of magnitude.",
+  "The KS test metric shall be the largest of the absolute values of the differences observed between the following empirical cumulative distribution functions. (i) The empirical cumulative distribution function obtained by multiplying the rank corresponding to each loss amount of the risk-theoretical P&L by 0.004 (meaning the value obtained by dividing one business day by 250 business days; the same applies in the following item); (ii) The empirical cumulative distribution function obtained by multiplying the rank corresponding to each loss amount of the hypothetical P&L by 0.004."
+ ]
+}

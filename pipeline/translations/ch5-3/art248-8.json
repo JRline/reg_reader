@@ -1,0 +1,9 @@
+{
+ "number": "第二百四十八条の八",
+ "heading_en": "Credit Risk-Weighted Assets for the Default Fund of a Central Counterparty Other Than a Qualifying Central Counterparty",
+ "summary_ja": "適格中央清算機関以外の中央清算機関に係る清算基金の信用リスク・アセットは、拠出額の1250パーセントとする。",
+ "summary_en": "Credit RWA for the default fund of a central counterparty other than a qualifying central counterparty is 1,250% of the amount contributed.",
+ "paragraphs": [
+  "The amount of credit risk-weighted assets for the default fund relating to a central counterparty other than a qualifying central counterparty shall be the amount obtained by multiplying the amount of the default fund contributed to that central counterparty by 1,250%."
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "number": "第二百二十一条",
+ "heading_en": "Calculation Method",
+ "summary_ja": "エクスポージャー変動額推計モデルを用いる場合のネッティング後エクスポージャー額の算式を定める。",
+ "summary_en": "Gives the formula for the post-mitigation exposure amount E* of netted repo-style transactions when the exposure fluctuation estimation model is used.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach uses the exposure fluctuation estimation model, it shall calculate the amount of exposure after credit risk mitigation for multiple repo-style transactions and margin lending and similar overseas transactions under a legally effective bilateral netting contract by the following formula. E* = (ΣE − ΣC) + (the estimate of the exposure fluctuation amount by the exposure fluctuation estimation model on the business day preceding the calculation reference date) E* is the amount of exposure after credit risk mitigation of those multiple repo-style transactions and margin lending and similar overseas transactions (provided that it shall be a value not below zero). ΣE is the total amount of exposures of those multiple repo-style transactions and margin lending and similar overseas transactions. ΣC is the total amount of collateral of those multiple repo-style transactions and margin lending and similar overseas transactions."
+ ],
+ "terms": []
+}

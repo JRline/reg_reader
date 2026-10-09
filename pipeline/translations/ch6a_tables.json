@@ -1,0 +1,736 @@
+{
+ "p326t0": {
+  "node_id": "fsa-basel-cap-jp.ch6.art252-4.p3",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "満期",
+    "リスク・バケット"
+   ],
+   [
+    "零年以上〇・七五年未満",
+    "A1"
+   ],
+   [
+    "〇・七五年以上一・五年未満",
+    "A2"
+   ],
+   [
+    "一・五年以上四年未満",
+    "A3"
+   ],
+   [
+    "四年以上七年未満",
+    "A4"
+   ],
+   [
+    "七年以上十二年未満",
+    "A5"
+   ],
+   [
+    "十二年以上十八年未満",
+    "A6"
+   ],
+   [
+    "十八年以上二十五年未満",
+    "A7"
+   ],
+   [
+    "二十五年以上三十五年未満",
+    "A8"
+   ],
+   [
+    "三十五年以上",
+    "A9"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Maturity",
+    "Risk bucket"
+   ],
+   [
+    "0 years or more and less than 0.75 years",
+    "A1"
+   ],
+   [
+    "0.75 years or more and less than 1.5 years",
+    "A2"
+   ],
+   [
+    "1.5 years or more and less than 4 years",
+    "A3"
+   ],
+   [
+    "4 years or more and less than 7 years",
+    "A4"
+   ],
+   [
+    "7 years or more and less than 12 years",
+    "A5"
+   ],
+   [
+    "12 years or more and less than 18 years",
+    "A6"
+   ],
+   [
+    "18 years or more and less than 25 years",
+    "A7"
+   ],
+   [
+    "25 years or more and less than 35 years",
+    "A8"
+   ],
+   [
+    "35 years or more",
+    "A9"
+   ]
+  ]
+ },
+ "p326t1": {
+  "node_id": "fsa-basel-cap-jp.ch6.art252-4.p3",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "満期",
+    "リスク・バケット"
+   ],
+   [
+    "零年以上〇・七五年未満",
+    "B1"
+   ],
+   [
+    "〇・七五年以上四年未満",
+    "B2"
+   ],
+   [
+    "四年以上十年未満",
+    "B3"
+   ],
+   [
+    "十年以上十八年未満",
+    "B4"
+   ],
+   [
+    "十八年以上三十年未満",
+    "B5"
+   ],
+   [
+    "三十年以上",
+    "B6"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Maturity",
+    "Risk bucket"
+   ],
+   [
+    "0 years or more and less than 0.75 years",
+    "B1"
+   ],
+   [
+    "0.75 years or more and less than 4 years",
+    "B2"
+   ],
+   [
+    "4 years or more and less than 10 years",
+    "B3"
+   ],
+   [
+    "10 years or more and less than 18 years",
+    "B4"
+   ],
+   [
+    "18 years or more and less than 30 years",
+    "B5"
+   ],
+   [
+    "30 years or more",
+    "B6"
+   ]
+  ]
+ },
+ "p328t1": {
+  "node_id": "fsa-basel-cap-jp.ch6.art252-4.p4",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "満期",
+    "リスク・バケット"
+   ],
+   [
+    "零年以上〇・七五年未満",
+    "B1"
+   ],
+   [
+    "〇・七五年以上四年未満",
+    "B2"
+   ],
+   [
+    "四年以上十年未満",
+    "B3"
+   ],
+   [
+    "十年以上十八年未満",
+    "B4"
+   ],
+   [
+    "十八年以上三十年未満",
+    "B5"
+   ],
+   [
+    "三十年以上",
+    "B6"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Maturity",
+    "Risk bucket"
+   ],
+   [
+    "0 years or more and less than 0.75 years",
+    "B1"
+   ],
+   [
+    "0.75 years or more and less than 4 years",
+    "B2"
+   ],
+   [
+    "4 years or more and less than 10 years",
+    "B3"
+   ],
+   [
+    "10 years or more and less than 18 years",
+    "B4"
+   ],
+   [
+    "18 years or more and less than 30 years",
+    "B5"
+   ],
+   [
+    "30 years or more",
+    "B6"
+   ]
+  ]
+ },
+ "p327t1": {
+  "node_id": "fsa-basel-cap-jp.ch6.art252-4.p3",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "満期",
+    "リスク・バケット"
+   ],
+   [
+    "零年以上一・五年未満",
+    "C1"
+   ],
+   [
+    "一・五年以上三・五年未満",
+    "C2"
+   ],
+   [
+    "三・五年以上七・五年未満",
+    "C3"
+   ],
+   [
+    "七・五年以上十五年未満",
+    "C4"
+   ],
+   [
+    "十五年以上",
+    "C5"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Maturity",
+    "Risk bucket"
+   ],
+   [
+    "0 years or more and less than 1.5 years",
+    "C1"
+   ],
+   [
+    "1.5 years or more and less than 3.5 years",
+    "C2"
+   ],
+   [
+    "3.5 years or more and less than 7.5 years",
+    "C3"
+   ],
+   [
+    "7.5 years or more and less than 15 years",
+    "C4"
+   ],
+   [
+    "15 years or more",
+    "C5"
+   ]
+  ]
+ },
+ "p328t2": {
+  "node_id": "fsa-basel-cap-jp.ch6.art252-4.p4",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "権利行使期限",
+    "リスク・バケット"
+   ],
+   [
+    "零年以上一・五年未満",
+    "C1"
+   ],
+   [
+    "一・五年以上三・五年未満",
+    "C2"
+   ],
+   [
+    "三・五年以上七・五年未満",
+    "C3"
+   ],
+   [
+    "七・五年以上十五年未満",
+    "C4"
+   ],
+   [
+    "十五年以上",
+    "C5"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Option expiry",
+    "Risk bucket"
+   ],
+   [
+    "0 years or more and less than 1.5 years",
+    "C1"
+   ],
+   [
+    "1.5 years or more and less than 3.5 years",
+    "C2"
+   ],
+   [
+    "3.5 years or more and less than 7.5 years",
+    "C3"
+   ],
+   [
+    "7.5 years or more and less than 15 years",
+    "C4"
+   ],
+   [
+    "15 years or more",
+    "C5"
+   ]
+  ]
+ },
+ "p327t2": {
+  "node_id": "fsa-basel-cap-jp.ch6.art252-4.p3",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "原資産に対する感応度",
+    "リスク・バケット"
+   ],
+   [
+    "零以上〇・〇五未満",
+    "D1"
+   ],
+   [
+    "〇・〇五以上〇・三未満",
+    "D2"
+   ],
+   [
+    "〇・三以上〇・七未満",
+    "D3"
+   ],
+   [
+    "〇・七以上〇・九五未満",
+    "D4"
+   ],
+   [
+    "〇・九五以上一・〇〇未満",
+    "D5"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Sensitivity to the underlying asset",
+    "Risk bucket"
+   ],
+   [
+    "0 or more and less than 0.05",
+    "D1"
+   ],
+   [
+    "0.05 or more and less than 0.3",
+    "D2"
+   ],
+   [
+    "0.3 or more and less than 0.7",
+    "D3"
+   ],
+   [
+    "0.7 or more and less than 0.95",
+    "D4"
+   ],
+   [
+    "0.95 or more and less than 1.00",
+    "D5"
+   ]
+  ]
+ },
+ "p328t3": {
+  "node_id": "fsa-basel-cap-jp.ch6.art252-4.p4",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "原資産に対する感応度",
+    "リスク・バケット"
+   ],
+   [
+    "零以上〇・〇五未満",
+    "D1"
+   ],
+   [
+    "〇・〇五以上〇・三未満",
+    "D2"
+   ],
+   [
+    "〇・三以上〇・七未満",
+    "D3"
+   ],
+   [
+    "〇・七以上〇・九五未満",
+    "D4"
+   ],
+   [
+    "〇・九五以上一・〇〇未満",
+    "D5"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Sensitivity to the underlying asset",
+    "Risk bucket"
+   ],
+   [
+    "0 or more and less than 0.05",
+    "D1"
+   ],
+   [
+    "0.05 or more and less than 0.3",
+    "D2"
+   ],
+   [
+    "0.3 or more and less than 0.7",
+    "D3"
+   ],
+   [
+    "0.7 or more and less than 0.95",
+    "D4"
+   ],
+   [
+    "0.95 or more and less than 1.00",
+    "D5"
+   ]
+  ]
+ },
+ "p327t3": {
+  "node_id": "fsa-basel-cap-jp.ch6.art252-4.p3",
+  "header_rows": 2,
+  "rows_ja": [
+   [
+    {
+     "text": "",
+     "colspan": 2,
+     "rowspan": 2
+    },
+    null,
+    {
+     "text": "原資産に対する感応度",
+     "colspan": 5
+    },
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "零以上〇・〇五未満",
+    "〇・〇五以上〇・三未満",
+    "〇・三以上〇・七未満",
+    "〇・七以上〇・九五未満",
+    "〇・九五以上一・〇〇未満"
+   ],
+   [
+    {
+     "text": "満期",
+     "rowspan": 5
+    },
+    "零年以上一・五年未満",
+    "C1D1",
+    "C1D2",
+    "C1D3",
+    "C1D4",
+    "C1D5"
+   ],
+   [
+    null,
+    "一・五年以上三・五年未満",
+    "C2D1",
+    "C2D2",
+    "C2D3",
+    "C2D4",
+    "C2D5"
+   ],
+   [
+    null,
+    "三・五年以上七・五年未満",
+    "C3D1",
+    "C3D2",
+    "C3D3",
+    "C3D4",
+    "C3D5"
+   ],
+   [
+    null,
+    "七・五年以上十五年未満",
+    "C4D1",
+    "C4D2",
+    "C4D3",
+    "C4D4",
+    "C4D5"
+   ],
+   [
+    null,
+    "十五年以上",
+    "C5D1",
+    "C5D2",
+    "C5D3",
+    "C5D4",
+    "C5D5"
+   ]
+  ],
+  "rows_en": [
+   [
+    {
+     "text": "",
+     "colspan": 2,
+     "rowspan": 2
+    },
+    null,
+    {
+     "text": "Sensitivity to the underlying asset",
+     "colspan": 5
+    },
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "0 or more and less than 0.05",
+    "0.05 or more and less than 0.3",
+    "0.3 or more and less than 0.7",
+    "0.7 or more and less than 0.95",
+    "0.95 or more and less than 1.00"
+   ],
+   [
+    {
+     "text": "Maturity",
+     "rowspan": 5
+    },
+    "0 years or more and less than 1.5 years",
+    "C1D1",
+    "C1D2",
+    "C1D3",
+    "C1D4",
+    "C1D5"
+   ],
+   [
+    null,
+    "1.5 years or more and less than 3.5 years",
+    "C2D1",
+    "C2D2",
+    "C2D3",
+    "C2D4",
+    "C2D5"
+   ],
+   [
+    null,
+    "3.5 years or more and less than 7.5 years",
+    "C3D1",
+    "C3D2",
+    "C3D3",
+    "C3D4",
+    "C3D5"
+   ],
+   [
+    null,
+    "7.5 years or more and less than 15 years",
+    "C4D1",
+    "C4D2",
+    "C4D3",
+    "C4D4",
+    "C4D5"
+   ],
+   [
+    null,
+    "15 years or more",
+    "C5D1",
+    "C5D2",
+    "C5D3",
+    "C5D4",
+    "C5D5"
+   ]
+  ]
+ },
+ "p333t0": {
+  "node_id": "fsa-basel-cap-jp.ch6.art253-2.p4",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "超過回数",
+    "乗数",
+    "バック・テスティングゾーン"
+   ],
+   [
+    "零",
+    "一・五〇",
+    {
+     "text": "グリーン・ゾーン",
+     "rowspan": 5
+    }
+   ],
+   [
+    "一",
+    "一・五〇",
+    null
+   ],
+   [
+    "二",
+    "一・五〇",
+    null
+   ],
+   [
+    "三",
+    "一・五〇",
+    null
+   ],
+   [
+    "四",
+    "一・五〇",
+    null
+   ],
+   [
+    "五",
+    "一・七〇",
+    {
+     "text": "アンバー・ゾーン",
+     "rowspan": 5
+    }
+   ],
+   [
+    "六",
+    "一・七六",
+    null
+   ],
+   [
+    "七",
+    "一・八三",
+    null
+   ],
+   [
+    "八",
+    "一・八八",
+    null
+   ],
+   [
+    "九",
+    "一・九二",
+    null
+   ],
+   [
+    "十以上",
+    "二・〇〇",
+    "レッド・ゾーン"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Number of exceedances",
+    "Multiplier",
+    "Back-testing zone"
+   ],
+   [
+    "0",
+    "1.50",
+    {
+     "text": "Green zone",
+     "rowspan": 5
+    }
+   ],
+   [
+    "1",
+    "1.50",
+    null
+   ],
+   [
+    "2",
+    "1.50",
+    null
+   ],
+   [
+    "3",
+    "1.50",
+    null
+   ],
+   [
+    "4",
+    "1.50",
+    null
+   ],
+   [
+    "5",
+    "1.70",
+    {
+     "text": "Amber zone",
+     "rowspan": 5
+    }
+   ],
+   [
+    "6",
+    "1.76",
+    null
+   ],
+   [
+    "7",
+    "1.83",
+    null
+   ],
+   [
+    "8",
+    "1.88",
+    null
+   ],
+   [
+    "9",
+    "1.92",
+    null
+   ],
+   [
+    "10 or more",
+    "2.00",
+    "Red zone"
+   ]
+  ]
+ }
+}

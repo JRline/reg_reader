@@ -1,0 +1,21 @@
+{
+ "number": "第二百四十条",
+ "heading_en": "Risk Weights",
+ "summary_ja": "標準的手法準拠方式によるリスク・ウェイトを、デタッチメント・ポイント及びアタッチメント・ポイントとK_Aの関係に応じて定め、無格付の場合のフロア、延滞状況不明が五パーセント超の場合の不適用、再証券化エクスポージャーのK_Aを規定する。",
+ "summary_en": "Sets risk weights under the standardized approach-compliant method according to where the attachment and detachment points lie relative to K_A, with a floor for unrated exposures, a 1,250% fallback where delinquency status is unknown for over 5%, and the K_A treatment for re-securitizations.",
+ "paragraphs": [
+  "The risk weight of a securitization exposure calculated using the standardized approach-compliant method shall be the ratio prescribed in each of the following items for the case classified therein: (i) where the detachment point (D) is equal to or less than K_{A} (meaning the required capital ratio of the underlying assets taking the delinquency rate into account, calculated pursuant to Article 242; the same applies hereinafter): 1,250%; (ii) where the attachment point (A) is equal to or greater than K_{A}: the ratio obtained by multiplying the required capital ratio of the portion exceeding K_{A} calculated pursuant to the following Article ({{F:p253i0}}) by 12.5 (where that ratio is less than 100% for a re-securitization exposure, 100%, and where it is less than 15% for any other securitization exposure, 15%); (iii) where the attachment point (A) is less than K_{A} and the detachment point (D) exceeds K_{A}: the ratio calculated by the following formula (where that ratio is less than 100% for a re-securitization exposure, 100%, and where it is less than 15% for any other securitization exposure, 15%). {{F:p253i1}} {{F:p253i2}} is the required capital ratio of the portion exceeding K_{A} calculated pursuant to the following Article.",
+  "Where a securitization exposure held by an Ultimate Designated Parent Company is unrated (excluding cases deemed to have an inferred rating pursuant to Article 237), and the risk weight calculated for the held securitization exposure using the standardized approach-compliant method is lower than the risk weight calculated using the external ratings-based approach-compliant method for the most junior of the securitization exposures that rank senior to the held securitization exposure and to which a rating by an eligible credit rating agency has been assigned (hereinafter in this paragraph referred to as the \"floor reference securitization exposure\"), the risk weight of the held securitization exposure shall be the risk weight of the floor reference securitization exposure.",
+  "Notwithstanding the preceding two paragraphs, where the ratio of the total amount of exposures of original assets whose delinquency status is not tracked to the total amount of exposures of the underlying assets of a securitization exposure exceeds 5%, the risk weight of that securitization exposure cannot be calculated using the standardized approach-compliant method. In this case, a risk weight of 1,250% shall be applied to that securitization exposure.",
+  "In calculating the risk weight to be applied to a re-securitization exposure pursuant to paragraph (1), K_{A} prescribed in that paragraph and the following Article shall be the value obtained by dividing the underlying assets of that re-securitization exposure into the portion that constitutes securitization exposures and the portion that does not, calculating K_{A} for each portion, and taking the weighted average by the exposure amount of each portion. In this case, in calculating K_{A} for the portion of the underlying assets of that re-securitization exposure that constitutes securitization exposures, notwithstanding that Article and Articles 242 and 244, the delinquency rate (W) of the original asset pool relating to that portion shall be zero."
+ ],
+ "terms": [
+  {
+   "ja": "フロア参照証券化エクスポージャー",
+   "en": "floor reference securitization exposure"
+  }
+ ],
+ "sections_en": {
+  "第二節 第二款 第五目": "Standardized Approach-Compliant Method"
+ }
+}

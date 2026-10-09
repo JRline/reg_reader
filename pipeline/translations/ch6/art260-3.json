@@ -1,0 +1,16 @@
+{
+ "number": "第二百六十条の三",
+ "heading_en": "Market Risk Equivalent Amount for Curvature Risk",
+ "summary_ja": "カーベチャー・リスクのCVR、バケット内のK_b、リスク・クラス内の相当額の算式、感応度の算出手法及び Ψ 関数の定義を定める。",
+ "summary_en": "Sets the CVR for curvature risk, the bucket-level K_b, the risk-class-level formula, the method for calculating sensitivities, and the definition of the Ψ function.",
+ "terms": [],
+ "paragraphs": [
+  "The market risk equivalent amount for curvature risk shall be calculated as provided in the following paragraph through paragraph (7).",
+  "For a risk factor having curvature risk, the sensitivities where the risk weight is shifted upward and downward (excluding the weighted average sensitivity of delta risk) shall be calculated by the following formulas. {{F:p351i2}}{{F:p351i3}} {{F:p351i4}} is the risk-weighted sensitivity of curvature risk (excluding the risk-weighted sensitivity of delta risk) where risk factor k moves upward; {{F:p351i5}} is the risk-weighted sensitivity of curvature risk (excluding the risk-weighted sensitivity of delta risk) where risk factor k moves downward; i is an instrument having curvature risk relating to risk factor k; x_{k} is the current level of risk factor k; V_{i}(x_{k}) is the market value of instrument i at x_{k} of risk factor k; {{F:p351i6}} is the market value of instrument i where risk factor k moves upward; {{F:p351i7}} is the market value of instrument i where risk factor k moves downward; {{F:p351i8}} is the risk weight applicable to risk factor k of instrument i; s_{ik} is the delta risk sensitivity of risk factor k of instrument i.",
+  "In calculating the sensitivities in the preceding paragraph, the method set out in the following items shall be used according to the case listed in each item. (i) In the case of general interest rate risk: calculated by shifting all risk-free yield curves within a currency upward and downward for all tenors; (ii) Where the price of an instrument is determined by multiple risk factors: calculated separately for each risk factor.",
+  "The delta risk sensitivity (s_{ik}) of risk factor k in paragraph (2) shall be as set out in the following items according to the category of risk listed in each item. (i) Foreign exchange risk and equity risk: the delta risk sensitivity of instrument i; (ii) General interest rate risk, credit spread risk and commodity risk: with respect to risk factor k, the sum of the delta risk sensitivities of instrument i to all tenors of the relevant yield curve.",
+  "The market risk equivalent amount (K_{b}) in each bucket shall be calculated by the following formula. {{F:p352i0}}{{F:p352i1}} ρ_{kl} is the correlation coefficient between risk factors, being the value obtained by squaring the delta risk correlation function; Ψ(CVR_{k}, CVR_{l}) is zero where CVR_{k} and CVR_{l} are both negative, and one otherwise.",
+  "The market risk equivalent amount for curvature risk of each risk class shall be calculated by the following formula. {{F:p352i2}} γ_{bc} is the value obtained by squaring the delta risk correlation function; {{F:p352i3}} Ψ(S_{b}, S_{c}) is zero where S_{b} and S_{c} are both negative, and one otherwise.",
+  "The market risk equivalent amount for curvature risk shall be the sum of the market risk equivalent amounts for curvature risk of each risk class calculated under the preceding paragraph."
+ ]
+}
