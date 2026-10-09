@@ -48,6 +48,8 @@ TOKEN_RE = re.compile(r"\{\{[TF]:[^}]+\}\}")
 def article_key(number):
     """第四十三条の三の二 -> art43-3-2; 第七十一条から第七十五条まで -> art71-75-deleted."""
     nums = [ja_refs.k2i(x) for x in re.findall(ja_refs.N, number)]
+    if number.startswith("別表"):  # 別表第一 -> appx1 (an appended table, article-shaped)
+        return "appx" + "-".join(str(n) for n in nums)
     if "から" in number:
         return f"art{nums[0]}to{nums[-1]}"
     return "art" + "-".join(str(n) for n in nums)

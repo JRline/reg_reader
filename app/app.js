@@ -65,6 +65,9 @@ function kanjiToInt(s) {
 const UNIT_EN = { "条": "Article", "章": "Chapter", "節": "Section", "款": "Subsection", "目": "Division" };
 function formatNumberEn(jpNumber, unit) {
   if (!jpNumber) return "";
+  // 別表第一 -> Appended Table 1
+  const appx = jpNumber.match(/^別表第([一二三四五六七八九十]+)/);
+  if (appx) return `Appended Table ${kanjiToInt(appx[1])}`;
   // 第四十三条の三の二 -> Article 43-3-2 (any number of の-suffixes)
   const m = jpNumber.match(new RegExp(`^第([一二三四五六七八九十百]+)${unit}((?:の[一二三四五六七八九十]+)*)`));
   if (m) {

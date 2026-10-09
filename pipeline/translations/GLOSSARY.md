@@ -1,0 +1,301 @@
+# Glossary (generated from the Chapter 2–3 feed — reuse these renderings; add new terms consistently)
+
+## Defined terms
+
+- ADC向けエクスポージャー → ADC exposures
+- LTV比率 → LTV ratio
+- SA―CCR → SA-CCR
+- Tier1資本に係る第三者持分割合 → third-party interest ratio relating to Tier 1 Capital
+- Tier2資本調達手段 → Tier 2 Capital instruments
+- α → α
+- その他Tier1資本調達手段 → Additional Tier 1 Capital instruments
+- その他不動産関連エクスポージャー → other real estate exposures
+- その他金融機関等 → other financial institutions, etc.
+- その他金融機関等に係る対象資本等調達手段 → target capital, etc. instruments of other financial institutions, etc.
+- のれん相当差額 → goodwill equivalent differences
+- みなし普通株式 → deemed common shares
+- カウンター・シクリカル・バッファー比率 → Countercyclical Buffer Ratio
+- カバード・ボンド → covered bond
+- カバード・ボンド発行体 → covered bond issuer
+- コモディティ・ファイナンス向けエクスポージャー → commodity finance exposures
+- ステップ・アップ金利等 → step-up rates, etc.
+- デュー・ディリジェンス分析 → due diligence analysis
+- トレーディング商品 → trading instruments
+- トレーディング目的 → trading purposes
+- プロジェクト・ファイナンス向けエクスポージャー → project finance exposures
+- ボラティリティ調整率の標準的下限 → standard haircut floor
+- マーケット・メイク目的保有TLAC → market-making TLAC
+- マーケット・リスク管理部署 → Market Risk Management Department
+- モデル検証 → model validation
+- リスク・アセットの額 → risk-weighted assets amount
+- ルックスルー → look-through
+- レバレッジ比率 → leverage ratio
+- 中堅中小企業等 → SMEs, etc.
+- 中央清算機関関連エクスポージャー → central counterparty-related exposures
+- 中核的市場参加者 → core market participants
+- 事業体 → entities
+- 事業用不動産関連エクスポージャー → commercial real estate exposures
+- 他の金融機関等 → other financial institutions, etc.
+- 保有エクスポージャー → held exposures
+- 保険会社向けエクスポージャー → exposures to insurance companies
+- 保険会社等 → Insurance Company, etc.
+- 保険子会社等 → Insurance Subsidiary, etc.
+- 信用リスク削減手法適用後エクスポージャー額 → exposure amount after credit risk mitigation
+- 倒産手続 → insolvency proceedings
+- 債務超過 → insolvency (excess of liabilities over assets)
+- 償還等 → redemption, etc.
+- 元本の削減等 → write-down or conversion of principal, etc.
+- 元本以外の関連債務 → related obligations other than principal
+- 共同支配会社 → jointly controlled companies
+- 内部CVAヘッジ取引 → internal CVA hedge transactions
+- 内部取引 → internal transactions
+- 内部取引担当デスク → internal transactions desk
+- 内部評価方式 → internal assessment approach
+- 勘定間の振替 → transfers between accounts
+- 単体自己資本規制比率告示 → Stand-alone Capital Adequacy Notice
+- 基準超過その他外部TLAC関連調達手段の額 → above-threshold other external TLAC-related instruments amount
+- 外部CVAヘッジ取引 → external CVA hedge transactions
+- 外部ヘッジ取引 → external hedge transactions
+- 対象出資 → covered investments
+- 対象証券金融取引 → in-scope securities financing transactions
+- 対象資本等調達手段 → target capital, etc. instruments
+- 対象資本調達手段 → target capital instruments
+- 少数出資に係るTier2資本保有割合 → Tier 2 Capital holding ratio relating to minority investments
+- 少数出資に係るその他Tier1資本保有割合 → Additional Tier 1 Capital holding ratio relating to minority investments
+- 少数出資に係るその他外部TLAC保有割合 → other external TLAC holding ratio relating to minority investments
+- 少数出資に係る五パーセント基準額 → 5% threshold amount relating to minority investments
+- 少数出資に係る十パーセント基準額 → 10% threshold amount relating to minority investments
+- 少数出資に係る対象資本等調達手段合計額 → total amount of target capital, etc. instruments relating to minority investments
+- 少数出資に係る普通株式保有割合 → common share holding ratio relating to minority investments
+- 少数出資調整対象額 → minority investment adjustment amount
+- 少数出資金融機関等 → minority-invested financial institutions, etc.
+- 延滞エクスポージャー → defaulted exposures
+- 意図的に保有している他の金融機関等の対象資本等調達手段 → target capital, etc. instruments of other financial institutions, etc. held intentionally
+- 投機的な非上場株式に対する投資 → speculative unlisted equity investments
+- 投資信託等 → investment trusts, etc.
+- 担保としての機能を持つ資産 → assets functioning as collateral
+- 普通株式 → common shares
+- 普通株式等Tier1比率 → Common Equity Tier 1 ratio
+- 普通株式等Tier1資本に係る第三者持分割合 → third-party interest ratio relating to Common Equity Tier 1 Capital
+- 最低保有期間 → minimum holding period
+- 最低所要連結自己資本規制比率 → Minimum Required Consolidated Capital Adequacy Ratios
+- 最低連結資本バッファー比率 → Minimum Consolidated Capital Buffer Ratio
+- 有価証券等 → securities, etc.
+- 期待エクスポージャー → expected exposure
+- 期待エクスポージャー管理部署 → expected exposure management unit
+- 期待エクスポージャー計測モデル → expected exposure model
+- 期待損失額 → expected loss amount
+- 株式と同等の性質を有するもの → instruments having the same nature as equity
+- 格付 → ratings
+- 比例連結の方法 → proportional consolidation method
+- 法人等 → juridical persons, etc.
+- 特別目的会社等 → special purpose companies, etc.
+- 特別金融商品取引業者に対する連結自己資本規制比率告示 → Public Notice on the Consolidated Capital Adequacy Ratio for Specially-Licensed Securities Business Operators
+- 特定の取引相手 → specified counterparties
+- 特定貸付債権向けエクスポージャー → exposures to specialized lending
+- 特定連結子法人等 → specified consolidated subsidiary
+- 特定項目 → specified items
+- 特定項目に係る十パーセント基準対象額 → 10% threshold subject amount relating to specified items
+- 特定項目に係る十パーセント基準額 → 10% threshold amount relating to specified items
+- 特定項目に係る十五パーセント基準額 → 15% threshold amount relating to specified items
+- 特定項目に係る調整対象額 → adjustment subject amount relating to specified items
+- 発行者 → issuer
+- 社外流出予定額 → planned external outflows
+- 第一種金融商品取引業者向けエクスポージャー → exposures to Type I financial instruments business operators
+- 経過営業日数 → number of business days elapsed
+- 総自己資本に係る第三者持分割合 → third-party interest ratio relating to total capital
+- 自己保有資本調達手段 → self-held capital instruments
+- 自己居住用不動産等向けエクスポージャー → exposures to owner-occupied residential real estate, etc.
+- 裏付けとなる資産等 → underlying assets, etc.
+- 親会社等 → parent company, etc.
+- 貸出債権等 → loans, etc.
+- 賃貸用不動産向けエクスポージャー → exposures to rental residential real estate
+- 資本保全バッファー比率 → Capital Conservation Buffer Ratio
+- 資産運用基準 → investment mandate
+- 資金清算機関等 → funds clearing organizations, etc.
+- 連結範囲外の法人等 → non-consolidated juridical persons, etc.
+- 連結自己資本規制比率 → Consolidated Capital Adequacy Ratio
+- 連結財務諸表規則 → Consolidated Financial Statement Regulation
+- 連結資本バッファー比率 → Consolidated Capital Buffer Ratio
+- 運用段階 → operational phase
+- 適格CVAヘッジ取引 → eligible CVA hedge transactions
+- 適格中堅中小企業等向けエクスポージャー又は適格個人向けエクスポージャー → exposures to qualifying SMEs, etc. or qualifying retail exposures
+- 適格性の要件 → eligibility requirements
+- 適格資産要件 → eligible asset requirements
+- 金融子会社 → Financial Subsidiary
+- 金融業務を営む会社 → companies engaged in financial business
+- 金融業務を営む関連会社等 → affiliated companies, etc. engaged in financial business
+- 金融機関向けエクスポージャー → exposures to financial institutions
+- 開示要件 → disclosure requirements
+- 非支配株主持分相当普通株式等Tier1資本に係る基礎項目の額 → amount of basic items relating to CET1 equivalent to minority interests
+- 非支配株主持分等相当Tier1資本に係る基礎項目の額 → amount of basic items relating to Tier 1 Capital equivalent to non-controlling interests, etc.
+- 非支配株主持分等相当総自己資本に係る基礎項目の額 → amount of basic items relating to total capital equivalent to non-controlling interests, etc.
+
+## Structural headings
+
+- 第二章 算式等 → Formulas, etc.
+- 第三章 信用リスクの標準的手法 → Standardized Approach for Credit Risk
+- 第一節 総則 → General Provisions
+- 第二節 リスク・ウェイト → Risk Weights
+- 第三節 オフ・バランス取引 → Off-Balance Sheet Transactions
+- 第四節 派生商品取引及び長期決済期間取引 → Derivative Transactions and Long Settlement Period Transactions
+- 第五節 未決済取引 → Unsettled Transactions
+- 第六節 信用リスク削減手法 → Credit Risk Mitigation Techniques
+- 第一款 総則 → General Provisions
+- 第二款 適格金融資産担保付取引に共通する事項 → Matters Common to Transactions Collateralized by Eligible Financial Collateral
+- 第三款 包括的手法 → Comprehensive Approach
+- 第一目 総則 → General Provisions
+- 第二目 標準的ボラティリティ調整率 → Standard Supervisory Haircuts
+- 第三目 削除 → (Deleted)
+- 第四目 ボラティリティ調整率の調整 → Adjustment of Haircuts
+- 第五目 ボラティリティ調整率の適用除外 → Exemption from Applying Haircuts
+- 第六目 法的に有効な相対ネッティング契約下にあるレポ形式の取引に対するボラティリティ調整率の使用 → Use of Haircuts for Repo-Style Transactions under Legally Effective Bilateral Netting Contracts
+- 第七目 レポ形式の取引及び信用取引その他これに類する海外の取引におけるボラティリティ調整率の下限 → Haircut Floors for Repo-Style Transactions and Margin Lending and Similar Overseas Transactions
+- 第八目 包括的手法における担保付派生商品取引 → Collateralized Derivative Transactions under the Comprehensive Approach
+- 第四款 簡便手法 → Simple Approach
+- 第五款 貸出金と預金の相殺 → Netting of Loans and Deposits
+- 第六款 保証及びクレジット・デリバティブ → Guarantees and Credit Derivatives
+- 第一目 適格要件 → Eligibility Requirements
+- 第二目 計算方法等 → Calculation Methods, etc.
+- 第七款 信用リスク削減手法の残存期間がエクスポージャーの残存期間を下回る場合の取扱い → Treatment Where the Residual Maturity of Credit Risk Mitigation Is Shorter Than That of the Exposure
+- 第八款 信用リスク削減手法に関するその他の事項 → Other Matters Relating to Credit Risk Mitigation Techniques
+- 第一目 複数の信用リスク削減手法の取扱い → Treatment of Multiple Credit Risk Mitigation Techniques
+- 第二目 ファースト・トゥ・デフォルト型クレジット・デリバティブ → First-to-Default Credit Derivatives
+- 第三目 セカンド・トゥ・デフォルト型クレジット・デリバティブ等 → Second-to-Default Credit Derivatives, etc.
+
+## Article headings
+
+- 第二条 連結自己資本規制比率の計算方法 → Method of Calculating the Consolidated Capital Adequacy Ratio
+- 第三条 連結の範囲 → Scope of Consolidation
+- 第五条 普通株式等Tier1資本の額 → Amount of Common Equity Tier 1 Capital
+- 第六条 その他Tier1資本の額 → Amount of Additional Tier 1 Capital
+- 第七条 Tier2資本の額 → Amount of Tier 2 Capital
+- 第七条の二 資本バッファーに係る普通株式等Tier1資本の額 → Amount of Common Equity Tier 1 Capital Relating to Capital Buffers
+- 第八条 調整後非支配株主持分等の額及び調整項目の額の算出方法 → Method of Calculating Adjusted Minority Interests, etc. and Adjustment Items
+- 第九条 比例連結 → Proportional Consolidation
+- 第十条 信用リスク・アセットの額の合計額 → Total Amount of Credit Risk-Weighted Assets
+- 第十一条 マーケット・リスク相当額の合計額 → Total Amount of Market Risk Equivalent Amounts
+- 第十一条の二 トレーディング勘定及びバンキング勘定の設置 → Establishment of the Trading Account and the Banking Account
+- 第十一条の三 トレーディング勘定への分類基準等 → Criteria for Classification into the Trading Account, etc.
+- 第十一条の四 バンキング勘定への分類基準 → Criteria for Classification into the Banking Account
+- 第十一条の五 商品分類に係る方針等 → Policies, etc. on Product Classification
+- 第十一条の六 勘定間の振替の制限 → Restrictions on Transfers Between Accounts
+- 第十一条の七 勘定間の振替に係る所要自己資本の額の計上 → Recording of Required Capital for Transfers Between Accounts
+- 第十一条の八 勘定間の振替に係る方針等 → Policies, etc. on Transfers Between Accounts
+- 第十一条の九 内部取引の取扱い → Treatment of Internal Transactions
+- 第十一条の十 信用リスク及び株式リスクの内部取引 → Internal Transactions for Credit Risk and Equity Risk
+- 第十一条の十一 一般金利リスクの内部取引 → Internal Transactions for General Interest Rate Risk
+- 第十一条の十二 マーケット・リスク相当額の計測対象となる内部取引 → Internal Transactions Subject to Market Risk Equivalent Measurement
+- 第十一条の十三 CVAリスクにおける内部取引等 → Internal Transactions, etc. for CVA Risk
+- 第十一条の十四 バンキング勘定とトレーディング勘定の境界に係る届出 → Notification Concerning the Boundary Between the Banking Account and the Trading Account
+- 第十二条 オペレーショナル・リスク相当額の合計額 → Total Amount of Operational Risk Equivalent Amounts
+- 第十三条 資本フロアの算出方法 → Method of Calculating the Capital Floor
+- 第十四条 標準的手法採用最終指定親会社における信用リスク・アセットの額の合計額 → Total Amount of Credit Risk-Weighted Assets for Ultimate Designated Parent Companies Adopting the Standardized Approach
+- 第十四条の二 標準的手法のデュー・ディリジェンス → Due Diligence under the Standardized Approach
+- 第十五条 非依頼格付の使用禁止 → Prohibition on the Use of Unsolicited Ratings
+- 第十六条 格付等の使用基準の設定 → Establishment of Standards for the Use of Ratings, etc.
+- 第十七条 個別格付が付与されていないエクスポージャーの取扱い → Treatment of Exposures without an Issue-Specific Rating
+- 第十八条 現地通貨建て格付及び非現地通貨建て格付 → Local-Currency and Foreign-Currency Ratings
+- 第十九条 複数の格付がある場合のリスク・ウェイト → Risk Weight Where There Are Multiple Ratings
+- 第二十条 信用リスクの評価の対象が異なる格付の取扱い → Treatment of Ratings Assessing a Different Object of Credit Risk
+- 第二十一条 現金 → Cash
+- 第二十二条 中央政府及び中央銀行向けエクスポージャー → Exposures to Central Governments and Central Banks
+- 第二十三条 国際決済銀行等向けエクスポージャー → Exposures to the Bank for International Settlements, etc.
+- 第二十四条 我が国の地方公共団体向けエクスポージャー → Exposures to Japanese Local Governments
+- 第二十五条 外国の中央政府等以外の公共部門向けエクスポージャー → Exposures to Public Sector Entities Other Than Foreign Central Governments, etc.
+- 第二十六条 国際開発銀行向けエクスポージャー → Exposures to Multilateral Development Banks
+- 第二十七条 地方公共団体金融機構向けエクスポージャー → Exposures to the Japan Finance Organization for Municipalities
+- 第二十八条 我が国の政府関係機関向けエクスポージャー → Exposures to Japanese Government-Affiliated Agencies
+- 第二十九条 地方三公社向けエクスポージャー → Exposures to the Three Types of Local Public Corporations
+- 第三十条 金融機関向けエクスポージャー → Exposures to Financial Institutions
+- 第三十条の二 カバード・ボンド向けエクスポージャー → Exposures to Covered Bonds
+- 第三十一条 第一種金融商品取引業者向けエクスポージャー → Exposures to Type I Financial Instruments Business Operators
+- 第三十一条の二 保険会社向けエクスポージャー → Exposures to Insurance Companies
+- 第三十二条 法人等向けエクスポージャー → Exposures to Corporates, etc.
+- 第三十二条の二 特定貸付債権向けエクスポージャー → Exposures to Specialized Lending
+- 第三十三条 短期格付による例外 → Exception Based on Short-Term Ratings
+- 第三十四条 適格中堅中小企業等向けエクスポージャー及び個人向けエクスポージャー → Exposures to Qualifying SMEs, etc. and Retail Exposures
+- 第三十五条 自己居住用不動産等向けエクスポージャー → Exposures to Owner-Occupied Residential Real Estate, etc.
+- 第三十六条 賃貸用不動産向けエクスポージャー → Exposures to Rental Residential Real Estate
+- 第三十七条 事業用不動産関連エクスポージャー → Commercial Real Estate Exposures
+- 第三十七条の二 その他不動産関連エクスポージャー → Other Real Estate Exposures
+- 第三十七条の三 ADC向けエクスポージャー → ADC Exposures
+- 第三十七条の四 ADC向けエクスポージャーの例外 → Exception for ADC Exposures
+- 第三十七条の五 劣後債権その他資本性証券のエクスポージャー → Exposures to Subordinated Debt and Other Capital Instruments
+- 第三十八条 延滞エクスポージャー → Defaulted Exposures
+- 第三十九条 自己居住用不動産等向けエクスポージャーに係る延滞エクスポージャー → Defaulted Exposures to Owner-Occupied Residential Real Estate, etc.
+- 第四十条 取立未済手形 → Uncollected Bills
+- 第四十一条 信用保証協会等により保証されたエクスポージャー → Exposures Guaranteed by Credit Guarantee Corporations, etc.
+- 第四十二条 株式会社地域経済活性化支援機構及び株式会社東日本大震災事業者再生支援機構により保証されたエクスポージャー → Exposures Guaranteed by the Regional Economy Vitalization Corporation of Japan and the Great East Japan Earthquake Business Rehabilitation Support Corporation
+- 第四十三条 株式及び株式と同等の性質を有するものに対するエクスポージャー → Exposures to Equity and Equity-Like Instruments
+- 第四十三条の二 重要な出資のエクスポージャー → Exposures to Significant Investments
+- 第四十三条の三 特定項目のうち調整項目に算入されない部分に係るエクスポージャー → Exposures Relating to the Portion of Specified Items Not Included in Adjustment Items
+- 第四十三条の三の二 その他外部TLAC関連調達手段に係るエクスポージャー → Exposures Relating to Other External TLAC-Related Instruments
+- 第四十三条の四 リスク・ウェイトのみなし計算 → Look-Through Calculation of Risk Weights
+- 第四十四条 第二十一条から前条までの規定に該当しないエクスポージャー → Exposures Not Falling under Article 21 through the Preceding Article
+- 第四十四条の二 通貨ミスマッチのあるエクスポージャー → Exposures with a Currency Mismatch
+- 第四十五条 オフ・バランス取引の与信相当額 → Credit Equivalent Amounts of Off-Balance Sheet Transactions
+- 第四十六条 与信相当額の算出 → Calculation of Credit Equivalent Amounts
+- 第四十七条 SA―CCR → SA-CCR
+- 第四十九条 期待エクスポージャー方式 → Expected Exposure Method
+- 第五十条 承認申請書の提出 → Submission of an Application for Approval
+- 第五十一条 承認の基準 → Standards for Approval
+- 第五十二条 変更に係る届出 → Notification of Changes
+- 第五十三条 承認の取消し → Revocation of Approval
+- 第五十四条 段階的適用等 → Phased Application, etc.
+- 第五十五条 未決済取引 → Unsettled Transactions
+- 第五十六条 信用リスク削減手法の適用 → Application of Credit Risk Mitigation Techniques
+- 第五十七条 格付の使用 → Use of Ratings
+- 第五十八条 開示 → Disclosure
+- 第五十九条 法的有効性の確保 → Ensuring Legal Effectiveness
+- 第五十九条の二 信用リスク削減手法から生ずるリスクへの措置 → Measures against Risks Arising from Credit Risk Mitigation Techniques
+- 第六十条 定義 → Definition
+- 第六十一条 手法の選択 → Choice of Approach
+- 第六十一条の二 有価証券担保等のリスク・アセットの算出範囲 → Scope of Risk-Weighted Asset Calculation for Securities Collateral, etc.
+- 第六十二条 担保の管理 → Management of Collateral
+- 第六十三条 担保の相関 → Correlation of Collateral
+- 第六十四条 オフ・バランス取引の担保 → Collateral for Off-Balance Sheet Transactions
+- 第六十五条 簡便手法を用いる場合の適格金融資産担保 → Eligible Financial Collateral under the Simple Approach
+- 第六十六条 包括的手法を用いる場合の適格金融資産担保 → Eligible Financial Collateral under the Comprehensive Approach
+- 第六十六条の二 適格金融資産担保の計算方法の例外 → Exception to the Calculation Method for Eligible Financial Collateral
+- 第六十七条 所要自己資本の額の計算 → Calculation of Required Capital
+- 第六十八条 複数の適格金融資産担保に対するボラティリティ調整率 → Haircut for Multiple Items of Eligible Financial Collateral
+- 第六十九条 ボラティリティ調整率の種類 → Type of Haircut
+- 第七十条 標準的ボラティリティ調整率 → Standard Supervisory Haircuts
+- 第七十六条 ボラティリティ調整率の調整 → Adjustment of Haircuts
+- 第七十七条 ボラティリティ調整率の適用除外 → Exemption from Applying Haircuts
+- 第七十八条 外国におけるレポ形式の取引 → Repo-Style Transactions Abroad
+- 第七十九条 レポ形式の取引及び信用取引その他これに類する海外の取引に対する法的に有効な相対ネッティング契約の適用 → Application of Legally Effective Bilateral Netting Contracts to Repo-Style Transactions and Margin Lending and Similar Overseas Transactions
+- 第八十条 計算方法 → Calculation Method
+- 第八十一条 ボラティリティ調整率の下限の対象範囲 → Scope of the Haircut Floors
+- 第八十二条 ボラティリティ調整率の下限の適用除外 → Exemptions from the Haircut Floors
+- 第八十三条 適格金融資産担保による信用リスク削減効果を勘案できない対象証券金融取引 → In-Scope Securities Financing Transactions for Which the Credit Risk Mitigation Effect of Eligible Financial Collateral Cannot Be Taken into Account
+- 第八十四条 適格金融資産担保による信用リスク削減効果を勘案できない法的に有効な相対ネッティング契約下にある対象証券金融取引 → In-Scope Securities Financing Transactions under a Legally Effective Bilateral Netting Contract for Which the Credit Risk Mitigation Effect of Eligible Financial Collateral Cannot Be Taken into Account
+- 第八十九条 SA―CCR等による計算方法 → Calculation Method Using SA-CCR, etc.
+- 第九十条 前提条件 → Preconditions
+- 第九十一条 計算方法 → Calculation Method
+- 第九十二条 二十パーセント・フロアの適用除外 → Exemptions from the 20% Floor
+- 第九十二条の二 担保付派生商品取引の計算方法等 → Calculation Method, etc. for Collateralized Derivative Transactions
+- 第九十三条 貸出金と預金の相殺 → Netting of Loans and Deposits
+- 第九十四条 保証及びクレジット・デリバティブに共通の条件 → Conditions Common to Guarantees and Credit Derivatives
+- 第九十五条 保証に関する条件 → Conditions Relating to Guarantees
+- 第九十六条 クレジット・デリバティブに関する条件 → Conditions Relating to Credit Derivatives
+- 第九十七条 条件の一部を満たさない場合 → Where Part of the Conditions Is Not Satisfied
+- 第九十八条 保証人及びプロテクション提供者の適格性 → Eligibility of Guarantors and Protection Providers
+- 第九十九条 内部取引によるヘッジ効果の反映 → Reflection of Hedge Effects through Internal Transactions
+- 第百条 計算方法 → Calculation Method
+- 第百一条 免責額の扱い → Treatment of Materiality Thresholds
+- 第百二条 比例的な保証又はクレジット・デリバティブ → Proportional Guarantees or Credit Derivatives
+- 第百三条 階層化された保証又はクレジット・デリバティブ → Tranched Guarantees or Credit Derivatives
+- 第百四条 エクスポージャーの通貨と保証又はクレジット・デリバティブの通貨の不一致 → Currency Mismatch between the Exposure and the Guarantee or Credit Derivative
+- 第百五条 中央政府等又は我が国の地方公共団体による再保証等 → Counter-Guarantees, etc. by Central Governments, etc. or Japanese Local Governments
+- 第百六条 残存期間の定義 → Definition of Residual Maturity
+- 第百七条 信用リスク削減手法の残存期間の下限 → Floor on the Residual Maturity of Credit Risk Mitigation Techniques
+- 第百八条 計算方法 → Calculation Method
+- 第百九条 複数の信用リスク削減手法 → Multiple Credit Risk Mitigation Techniques
+- 第百十条 同一提供者による通貨又は残存期間の異なる保証又はクレジット・デリバティブ → Guarantees or Credit Derivatives from the Same Provider with Different Currencies or Residual Maturities
+- 第百十一条 プロテクションを取得した場合 → Where Protection Is Obtained
+- 第百十二条 プロテクションを提供した場合 → Where Protection Is Provided
+- 第百十三条 プロテクションを取得した場合 → Where Protection Is Obtained
+- 第百十四条 プロテクションを提供した場合 → Where Protection Is Provided
+- 第百十五条 特定順位参照型クレジット・デリバティブのプロテクションを提供した場合 → Where Protection Is Provided through Nth-to-Default Credit Derivatives
