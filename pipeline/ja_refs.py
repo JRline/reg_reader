@@ -33,6 +33,10 @@ LAWS = [
     ("連結財務諸表規則", "the Consolidated Financial Statement Regulation"),
     ("商品先物取引法", "the Commodity Derivatives Act"),
     ("貸金業法施行令", "the Order for Enforcement of the Money Lending Business Act"),
+    ("財務諸表等の用語、様式及び作成方法に関する規則", "the Regulation on Terminology, Forms and Preparation Methods of Financial Statements, etc."),
+    ("水産業協同組合法", "the Fishery Cooperatives Act"),
+    ("農業協同組合法", "the Agricultural Cooperatives Act"),
+    ("預金保険法", "the Deposit Insurance Act"),
     ("信用金庫法", "the Shinkin Bank Act"),
     ("労働金庫法", "the Labour Bank Act"),
     ("保険業法", "the Insurance Business Act"),
@@ -267,6 +271,11 @@ def _notice_before(text, start):
                 return alias.group(1)
             # otherwise the instrument's name is what precedes its number paren
             name = re.split(r"[、。()「」]", before[:k])[-1] if k > 0 else ""
+            # "…ニ農業協同組合法(昭和二十二年法律第百三十二号)": the instrument is the known law the
+            # text ends with, not the whole item text before it.
+            for ln in LAW_NAMES:
+                if len(ln) > 2 and name.endswith(ln) and not ln.startswith("同"):
+                    return ln
             return name[-60:] or "（未特定の告示）"
     if head.endswith("基準"):
         return "（未特定の告示）"  # some other notification — external, unidentified
@@ -298,7 +307,7 @@ def extract(text_ja):
         if not law:
             notice = _notice_before(text_ja, start)
             if notice:
-                law, law_en = notice, NOTICE_EN.get(notice)
+                law, law_en = notice, NOTICE_EN.get(notice) or LAW_EN.get(notice)
                 last_notice = notice
             elif prev_law and text_ja[prev_end:start] in ("及び", "並びに", "又は", "若しくは", "、", "及び同告示"):
                 # "基準第二条及び第十四条": the second article belongs to the same instrument

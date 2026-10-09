@@ -1,0 +1,16 @@
+{
+ "number": "s00.art2",
+ "heading_en": "Preliminary Calculation and Approval Prior to the Application Date of the Internal Ratings-Based Approach",
+ "summary_ja": "適用日前でも、内部格付手法の予備計算の届出・報告と使用承認の申請をすることができ、その承認の手続を定める。",
+ "summary_en": "Allows a parent company of a financial instruments business operator to file for and carry out preliminary calculations, and to apply for approval to use the internal ratings-based approach, before the Application Date, and sets how the Commissioner treats such applications.",
+ "paragraphs": [
+  "A parent company of a financial instruments business operator that intends to become an Ultimate Designated Parent Company adopting the foundation internal ratings-based approach may, even before the start date of application of this Public Notice (hereinafter referred to as the \"Application Date\"), file a notification of preliminary calculation of the Consolidated Capital Adequacy Ratio, preliminarily calculate the Consolidated Capital Adequacy Ratio, prepare and submit to the Commissioner of the Financial Services Agency an interim preliminary calculation report (meaning the interim preliminary calculation report prescribed in paragraph (1) of that Article) and a preliminary calculation report (meaning the preliminary calculation report prescribed in the same paragraph), all in accordance with the provisions of Article 118, and apply for approval to use that internal ratings-based approach in accordance with the provisions of Article 117.",
+  "Where an application for approval under the preceding paragraph is made and that application satisfies the standards listed in the items of Article 119 (including where applied with the necessary replacement of terms under Article 5, paragraphs (2) through (4) of the Supplementary Provisions), the Commissioner of the Financial Services Agency may, on or after the day on which the Commissioner designates that parent company pursuant to Article 57-12, paragraph (1) of the Act and gives notice under paragraph (3) of that Article that it is an Ultimate Designated Parent Company, deem the application for approval under the preceding paragraph to be an application for approval under Article 117 and grant the approval under Article 116."
+ ],
+ "terms": [
+  {
+   "ja": "適用日",
+   "en": "Application Date"
+  }
+ ]
+}

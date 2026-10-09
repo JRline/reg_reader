@@ -171,6 +171,7 @@ def resolve(raw_text: str, current_paragraph_id: str, ctx: dict, last_para_targe
         art_index = ctx["article_ids_ordered"].index(current_article_id)
         if art_index - count < 0:
             return "internal_unavailable", []
+        last_para_target[1] = ctx["article_ids_ordered"][art_index - 1]
         return "resolved", ctx["article_ids_ordered"][art_index - count: art_index]
 
     m = NEXT_ARTICLE_RE.match(raw_text)
@@ -184,20 +185,29 @@ def resolve(raw_text: str, current_paragraph_id: str, ctx: dict, last_para_targe
 
     m = SAME_ARTICLE_RE.match(raw_text)
     if m:
+        # 同条 = the article cited most recently in this paragraph (drafting convention), else
+        # the article the text is in. If that earlier citation was to another law, or to an
+        # article we don't have, we can't say what 同条 is.
+        same_id = last_para_target[1] or current_article_id
+        if same_id in ("EXTERNAL", "UNAVAILABLE"):
+            return "internal_unavailable", []
+        same_paras = ctx["paragraphs_by_article"].get(same_id, [])
         if m.group("para"):
             n = kanji_to_int(m.group("para"))
-            if 1 <= n <= len(para_siblings):
-                last_para_target[0] = para_siblings[n - 1]
-                return "resolved", [para_siblings[n - 1]]
+            if 1 <= n <= len(same_paras):
+                last_para_target[0] = same_paras[n - 1]
+                return "resolved", [same_paras[n - 1]]
             return "internal_unavailable", []
-        return "resolved", [current_article_id]  # bare 同条, or 同条+item with no paragraph — best available granularity
+        return "resolved", [same_id]  # bare 同条, or 同条+item with no paragraph — best available granularity
 
     m = ABS_CITATION_RE.match(raw_text)
     if m:
         art_number_str = f"第{m.group('art')}条" + (m.group("artsub") or "")
         target_article_id = ctx["article_number_to_id"].get(art_number_str)
         if not target_article_id:
+            last_para_target[1] = "UNAVAILABLE"
             return "internal_unavailable", []
+        last_para_target[1] = target_article_id
         if m.group("para"):
             n = kanji_to_int(m.group("para"))
             target_paras = ctx["paragraphs_by_article"].get(target_article_id, [])
@@ -280,7 +290,9 @@ def resolve_fusoku(raw_text, node, before, ctx, last_para_target):
         number = f"第{m.group('art')}条" + (m.group("artsub") or "")
         art = next((c for c in block.get("children", []) if c.get("number") == number), None)
         if not art:
+            last_para_target[1] = "UNAVAILABLE"
             return "internal_unavailable", []
+        last_para_target[1] = art["id"]
         paras = [c for c in art.get("children", []) if c.get("type") == "paragraph"]
         if m.group("para"):
             n = kanji_to_int(m.group("para"))
@@ -337,10 +349,12 @@ def main():
         for node in walk(art):
             if node.get("type") != "paragraph":
                 continue
-            last_para_target = [None]
+            last_para_target = [None, None]  # [last paragraph cited, last article cited]
             seen = {}
             for r in node.get("refs", []):
                 if r.get("scope") != "internal":
+                    last_para_target[1] = "EXTERNAL"  # a following 同条/同項 would mean that law's article
+                    last_para_target[0] = None
                     continue
                 nth = seen.get(r["raw_text"], 0)
                 seen[r["raw_text"]] = nth + 1

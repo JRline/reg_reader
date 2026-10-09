@@ -1,0 +1,11 @@
+{
+ "number": "s00.art10",
+ "heading_en": "Transitional Measures for Ultimate Designated Parent Companies Preparing U.S.-Style Consolidated Financial Statements",
+ "summary_ja": "米国式連結財務諸表を作成する最終指定親会社が、当分の間それに基づき比率を算出できること、及びその例外を定める。",
+ "summary_en": "Allows an Ultimate Designated Parent Company that prepares U.S.-style consolidated financial statements to calculate its ratio on that basis for the time being, with exceptions for financial subsidiaries and insurance subsidiaries.",
+ "paragraphs": [
+  "Notwithstanding the provisions of Article 3, paragraph (1), where an Ultimate Designated Parent Company prepares U.S.-style consolidated financial statements (meaning consolidated financial statements prepared using the terminology, forms and preparation methods required in connection with the issuance of American depositary receipts, etc.), it may, for the time being, calculate the Consolidated Capital Adequacy Ratio based on those U.S.-style consolidated financial statements; provided, however, that all Financial Subsidiaries shall be included in the scope of consolidation.",
+  "Notwithstanding the provisions of the preceding paragraph, Insurance Subsidiaries, etc. shall not be included in the scope of consolidation."
+ ],
+ "terms": []
+}

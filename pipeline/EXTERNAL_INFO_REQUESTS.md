@@ -104,6 +104,22 @@ feed. `jp-banking-act` holds only 第五十二条の二十三.
 | 取引先リスク相当額及び基礎的リスク相当額の算出の基準等を定める件 (平成十九年金融庁告示第五十九号, "単体自己資本規制比率告示") | 第一条第四十号 | ch3.art65 |
 | 特別金融商品取引業者及びその子法人等の…基準を定める件 (平成二十二年金融庁告示第百二十八号) | the provision cited at ch2.art4 | ch2.art4 |
 
+**Added with Chapter 1 and the 附則** (cited in 第一条's definitions and in the amending 附則):
+
+| Law | Provisions | Cited at |
+|---|---|---|
+| 金融商品取引法 | 第二条第九項, 第十七項, 第二十一項第五号, 第二十二項第六号, 第二十三項, 第二十九項; 第二十八条第一項; 第五十七条の十二第一項, 第三項; 第五十七条の十七第一項 (also the version before the 附則's amendments); 第五十八条; 第六十七条第二項 | ch1.art1, fusoku.s00, s03 |
+| 預金保険法 | 第二条第一項, 第五項 | ch1.art1 |
+| 農業協同組合法 (昭和二十二年法律第百三十二号) | 第十条第一項第三号 | ch1.art1 |
+| 水産業協同組合法 (昭和二十三年法律第二百四十二号) | 第十一条第一項第四号, 第八十七条第一項第四号, 第九十三条第一項第二号, 第九十七条第一項第二号 | ch1.art1 |
+| 商品先物取引法 | 第二条第四項, 第十七項, 第十八項 | ch1.art1 |
+| 銀行法 | 第二条第十三項, 第十条第二項第八号 | ch1.art1 |
+| 保険業法 | 第二条第二項, 第十六項, 第十八項 | ch1.art1 |
+| 財務諸表等の用語、様式及び作成方法に関する規則 (昭和三十八年大蔵省令第五十九号) | 第八条第三項 | ch1.art1 |
+| 銀行TLAC告示 / 銀行持株会社TLAC告示 (both 平成三十一年金融庁告示) | 第一条第八号; 第四条第三項, 第四項 | ch1.art1 |
+| the amended notices' own provisions named in the 附則 (銀行告示 第七十九条の二第三項第一号ロ; 銀行持株会社告示 第五十七条の二第三項第一号ロ; 信用金庫告示 第七十四条第三項第一号ロ; 信用協同組合告示 第五十一条第三項第一号ロ) | as listed | fusoku.s12 |
+| (the 附則 s13 amends an unnamed notice: 第一条, 第二条の二, 第三条第一項, 第二十三条, 第三十一条, 第四十七条第一項第二号ロ — identify which notice 平成二七年一一月二六日金融庁告示第七八号 amends) | | fusoku.s13 |
+
 ## Priority 4: two formula readings to confirm
 
 Both are transcribed from images in `saishu1.pdf`, and both carry a ⚠ note in the reader.
@@ -150,9 +166,6 @@ All `text_en` in Chapters 2–3 is `llm_draft`. Useful references:
 
 ## Not on this list, because the repo already has it
 
-These are cited from Chapters 2–3 and live in `saishu1.pdf`. They become resolvable by
-extracting more chapters (`EXTRACTION_GUIDE.md`), not by lookup:
-
-- Chapter 1 第一条 definitions: 第七号ロ, 第三十六号リ
-- Chapters 4–7: 第百二十六条–第百五十六条の三 (IRB), 第二百三十九条, 第二百四十八条の二–の六,
-  第二百七十一条, 第二百八十二条, and 第五章, 第五章の二, 第五章の三, 第六章, 第七章
+This notification is now complete in the reader (Chapters 1–7, 別表, 附則). What stays unresolved
+within it is by design: item-level citations (前号/次号/第N号), 「」-quoted replacement phrases, and 附則
+citations that point into amending notices not in the feed.

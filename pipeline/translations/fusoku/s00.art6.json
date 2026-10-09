@@ -1,0 +1,18 @@
+{
+ "number": "s00.art6",
+ "heading_en": "Transitional Measures for Equity Exposures",
+ "summary_ja": "基準日に保有する一定の株式等エクスポージャーについて、平成26年6月30日まで100%のリスク・ウェイトを適用できる経過措置を定める。",
+ "summary_en": "Allows an Ultimate Designated Parent Company adopting the internal ratings-based approach to apply a 100% risk weight to certain equity exposures held on a reference date, until June 30, 2014, and sets related rules on continued holding.",
+ "paragraphs": [
+  "Notwithstanding the provisions of Articles 143 and 144, an Ultimate Designated Parent Company adopting the internal ratings-based approach may, with respect to equity exposures held on a date it selects from June 28 to September 30, 2004 (hereinafter referred to as the \"Reference Date\") (including equity exposures acquired on the Reference Date) that fall under any of the following items on the Reference Date, and only where it continues to hold those equity exposures, until June 30, 2014, treat the amount obtained by multiplying the amount of those equity exposures by a risk weight of 100% as the amount of credit risk-weighted assets: (i) Equity exposures that satisfy the characteristics set out in Article 1, item (ix)(a)(1) through (3) (excluding cases falling under Article 8, paragraph (1)). (ii) Beneficial interests in a trust, or equity interests in a juridical person established for investment or anything similar to it, where all the property belonging to that trust or all the assets held by that juridical person or similar entity satisfy the characteristics referred to in the preceding item, and the Ultimate Designated Parent Company is able to identify the issues and amounts of those of such assets that are continuously held (where the assets held are managed in line with a major stock price index predetermined in the articles of incorporation or in a contract (meaning an index of the prices of listed shares generally used in the market), they may be treated as capable of being identified).",
+  "The equity exposures referred to in the preceding paragraph are deemed to be continuously held where the number of shares held increases due to a merger or other organizational change, or a stock split, by the issuer of those equity exposures, and that increase in the number of shares held is not due to an increase in the amount invested by that Ultimate Designated Parent Company adopting the internal ratings-based approach.",
+  "In determining whether the equity exposures referred to in paragraph (1) continue to be held, where, after acquiring on or after the day following the Reference Date equity exposures of the same issue as those equity exposures, the Ultimate Designated Parent Company sells those equity exposures, it may treat the equity exposures acquired on or after the day following the Reference Date as having been sold first.",
+  "Where the holding entity changes, between an Ultimate Designated Parent Company adopting the internal ratings-based approach and its Subsidiary Legal Entities, etc., or among its Subsidiary Legal Entities, etc., with respect to equity exposures that fall under any of the items of paragraph (1) and to which a risk weight of 100% was applied under that paragraph or under the standardized approach, that Ultimate Designated Parent Company adopting the internal ratings-based approach may, only where the change is not intended to manipulate the Consolidated Capital Adequacy Ratio, treat the amount obtained by multiplying the amount of those equity exposures by a risk weight of 100% as the amount of credit risk-weighted assets."
+ ],
+ "terms": [
+  {
+   "ja": "基準日",
+   "en": "Reference Date"
+  }
+ ]
+}

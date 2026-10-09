@@ -52,6 +52,12 @@ What the v2 extractor (`extract_chapter_v2.py`) handles that v1 didn't:
 
 It reproduces v1's Chapter 2 text exactly, so it can be used for any chapter.
 
+**Two special shapes.** A chapter that is one huge article (Chapter 1's 第一条, 216 item segments)
+is translated in segment ranges (`dump_segments.py`, `ch1_parts/`, `assemble_ch1.py`; brief addendum
+`AGENT_BRIEF_CH1_FUSOKU.md`). The 附則 repeat article numbers block by block, so `extract_fusoku.py` gives every
+entry a unique `key`, and `build_chapter.py`/`dump_articles.py`/`check_translations.py` identify entries by `key`
+when the extraction has one (`"nested_ids": true` nests article ids under their block).
+
 **Check the extraction before translating.** Wrapped headings can end up glued to the previous
 article's last paragraph (the next article then has no heading), a table that continues over a
 page can swallow a second table, and the last chapter runs on into the 附則/別表. Chapters 4–7's

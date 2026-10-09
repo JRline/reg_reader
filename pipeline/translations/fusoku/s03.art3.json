@@ -1,0 +1,37 @@
+{
+ "number": "s03.art3",
+ "heading_en": "Transitional Measures for Capital Instruments",
+ "summary_ja": "旧Tier1・旧Tier2資本調達手段のうち新告示の要件を満たさないものについて、適用日から9年間、段階的に縮小する率を乗じた額まで基礎項目に算入できるとする経過措置を定める。",
+ "summary_en": "Sets a nine-year phase-out under which former Tier 1 and Tier 2 instruments that do not meet the New Public Notice's requirements may be counted in basic items up to a declining percentage, and bars counting once a step-up is applied.",
+ "paragraphs": [
+  "With respect to the amount of preferred equity securities or non-cumulative perpetual preferred shares under Article 5, paragraph (3) of the criteria based on Article 57-17, paragraph (1) of the Financial Instruments and Exchange Act, before amendment by this Public Notice, for determining whether the capital adequacy status of an Ultimate Designated Parent Company and its Subsidiary Legal Entities, etc. is appropriate in light of the assets, etc. held by the Ultimate Designated Parent Company and its Subsidiary Legal Entities, etc. (hereinafter referred to as the \"Former Public Notice\") that do not fall under the Additional Tier 1 Capital instruments prescribed in Article 6, paragraph (4) of the criteria based on Article 57-17, paragraph (1) of the Financial Instruments and Exchange Act, after amendment by this Public Notice, for determining whether the capital adequacy status of an Ultimate Designated Parent Company and its Subsidiary Legal Entities, etc. is appropriate in light of the assets, etc. held by the Ultimate Designated Parent Company and its Subsidiary Legal Entities, etc. (referred to as the \"New Public Notice\" in the following paragraph) (limited to those issued before September 12, 2010, and excluding those with a special clause providing for an additional step-up rate, etc. (meaning the step-up rates, etc. prescribed in Article 5, paragraph (2) of the Former Public Notice; the same applies hereinafter in this Article) where the step-up rate, etc. was added under that clause on or before the date of application of this Public Notice (hereinafter referred to as the \"Application Date\"); hereinafter in this paragraph and paragraph (3) referred to as \"Qualifying Former Tier 1 Capital Instruments\"), until the date nine years have elapsed from the Application Date, the portion not exceeding the amount obtained by multiplying the base amount for Qualifying Former Tier 1 Capital Instruments (meaning the amount of Qualifying Former Tier 1 Capital Instruments on the Application Date) by the rate set out in the right-hand column of the following table, according to the period category set out in the left-hand column of that table, may be included in the amount of basic items relating to Additional Tier 1 Capital in the formula of Article 2, item (ii) of the criteria based on Article 57-17, paragraph (1) of the Financial Instruments and Exchange Act for determining whether the capital adequacy status of an Ultimate Designated Parent Company and its Subsidiary Legal Entities, etc. is appropriate in light of the assets, etc. held by the Ultimate Designated Parent Company and its Subsidiary Legal Entities, etc. (hereinafter referred to as the \"Public Notice\"). {{T:p432t0}}",
+  "With respect to the amount of capital instruments that fall under Article 6, paragraph (1), items (iv) through (vi) of the Former Public Notice and do not fall under the Tier 2 Capital instruments prescribed in Article 7, paragraph (5) of the New Public Notice (limited to those issued before September 12, 2010, and excluding those with a special clause providing for an additional step-up rate, etc. where the step-up rate, etc. was added under that clause on or before the Application Date), or capital instruments that satisfy all of the requirements listed in the items of that paragraph (excluding item (x)) and do not fall under the Tier 2 Capital instruments prescribed in that paragraph (limited to those issued from September 12, 2010 through the day before the Application Date) (collectively referred to hereinafter in this Article as \"Qualifying Former Tier 2 Capital Instruments\") (for Qualifying Former Tier 2 Capital Instruments that have a redemption date and for which the period remaining until that redemption date has become five years or less, the amount obtained by multiplying the amount recorded on the consolidated balance sheet by the ratio obtained by dividing the number of days in the period from the calculation reference date (meaning the calculation reference date prescribed in Article 73, paragraph (3), item (vii) of the Public Notice; the same applies in paragraph (2) of the following Article) to that redemption date by the number of days in the period from the day on which the period remaining until that redemption date became five years to that redemption date; the same applies hereinafter in this Article), until the date nine years have elapsed from the Application Date, the portion not exceeding the amount obtained by multiplying the base amount for Qualifying Former Tier 2 Capital Instruments (meaning the amount of Qualifying Former Tier 2 Capital Instruments on the Application Date) by the rate set out in the right-hand column of the table in the preceding paragraph, according to the period category set out in the left-hand column of that table, may be included in the amount of basic items relating to Tier 2 Capital in the formula of Article 2, item (iii) of the Public Notice.",
+  "Notwithstanding the preceding two paragraphs, where a special clause providing for an additional step-up rate, etc. is attached to Qualifying Former Tier 1 Capital Instruments or Qualifying Former Tier 2 Capital Instruments and the step-up rate, etc. is added under that clause, from the day on which it is added, the amount of those Qualifying Former Tier 1 Capital Instruments and the amount of those Qualifying Former Tier 2 Capital Instruments shall not be included in the amount of basic items relating to Additional Tier 1 Capital in the formula of Article 2, item (ii) of the Public Notice or the amount of basic items relating to Tier 2 Capital in the formula of item (iii) of that Article."
+ ],
+ "terms": [
+  {
+   "ja": "旧告示",
+   "en": "Former Public Notice"
+  },
+  {
+   "ja": "新告示",
+   "en": "New Public Notice"
+  },
+  {
+   "ja": "適格旧Tier1資本調達手段",
+   "en": "Qualifying Former Tier 1 Capital Instruments"
+  },
+  {
+   "ja": "告示",
+   "en": "Public Notice"
+  },
+  {
+   "ja": "適用日",
+   "en": "Application Date"
+  },
+  {
+   "ja": "適格旧Tier2資本調達手段",
+   "en": "Qualifying Former Tier 2 Capital Instruments"
+  }
+ ]
+}

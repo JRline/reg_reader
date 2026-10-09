@@ -47,17 +47,17 @@ same code, but it reads `feeds/*.json` directly so there's no rebuild step.
 
 ## What's actually in it right now
 
-Chapters 2–7 of the FSA's capital-adequacy notification for Ultimate Designated Parent
-Companies (`fsa-basel-cap-jp`): formulas for the ratios, the standardized and
-internal-ratings-based approaches to credit risk, securitization, CVA risk, central
-counterparties, market risk and operational risk (not yet: Chapter 1's definitions and
-the supplementary provisions). That is 470 articles plus two appended tables, in 節/款/目
-groupings, with the following:
+The whole of the FSA's capital-adequacy notification for Ultimate Designated Parent
+Companies (`fsa-basel-cap-jp`): the definitions (Chapter 1), formulas for the ratios, the
+standardized and internal-ratings-based approaches to credit risk, securitization, CVA risk,
+central counterparties, market risk and operational risk (Chapters 2–7) with its two appended
+tables, and all the supplementary provisions (附則) of the original notification and its
+amendments. That is 548 articles/entries, in 節/款/目 groupings, with the following:
 
 - Japanese text and an English draft translation for every article
 - 234 formulas, transcribed from the PDF's formula images, with variable hover-explanations
   and replaceable notation
-- 101 tables
+- 105 tables
 
 There are also seven supporting feeds of real, sourced excerpts from the laws it cites:
 
@@ -67,7 +67,7 @@ There are also seven supporting feeds of real, sourced excerpts from the laws it
 - the Payment Services Act
 - the TLAC notification
 
-Of the 2,850 cross-references, 2,211 resolve to an actual target. The rest are flagged honestly as one of three cases:
+Of the 3,175 cross-references, 2,393 resolve to an actual target. The rest are flagged honestly as one of three cases:
 
 - not yet digitized: the external instruments listed in
   `pipeline/EXTERNAL_INFO_REQUESTS.md`, and later chapters

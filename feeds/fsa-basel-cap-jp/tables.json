@@ -11922,6 +11922,280 @@
      "Losses arising from relationships with counterparties or vendors, or losses due to failures in transaction processing or process management"
     ]
    ]
+  },
+  "p432t0": {
+   "node_id": "fsa-basel-cap-jp.fusoku.s03.art3.p1",
+   "header_rows": 0,
+   "rows_ja": [
+    [
+     "適用日から起算して一年を経過する日までの期間",
+     "九十パーセント"
+    ],
+    [
+     "平成二十六年三月三十一日から起算して一年を経過する日までの期間",
+     "八十パーセント"
+    ],
+    [
+     "平成二十七年三月三十一日から起算して一年を経過する日までの期間",
+     "七十パーセント"
+    ],
+    [
+     "平成二十八年三月三十一日から起算して一年を経過する日までの期間",
+     "六十パーセント"
+    ],
+    [
+     "平成二十九年三月三十一日から起算して一年を経過する日までの期間",
+     "五十パーセント"
+    ],
+    [
+     "平成三十年三月三十一日から起算して一年を経過する日までの期間",
+     "四十パーセント"
+    ],
+    [
+     "平成三十一年三月三十一日から起算して一年を経過する日までの期間",
+     "三十パーセント"
+    ],
+    [
+     "平成三十二年三月三十一日から起算して一年を経過する日までの期間",
+     "二十パーセント"
+    ],
+    [
+     "平成三十三年三月三十一日から起算して一年を経過する日までの期間",
+     "十パーセント"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Period until the date one year has elapsed from the Application Date",
+     "90%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2014",
+     "80%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2015",
+     "70%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2016",
+     "60%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2017",
+     "50%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2018",
+     "40%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2019",
+     "30%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2020",
+     "20%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2021",
+     "10%"
+    ]
+   ]
+  },
+  "p434t0": {
+   "node_id": "fsa-basel-cap-jp.fusoku.s03.art5.p1",
+   "header_rows": 0,
+   "rows_ja": [
+    [
+     "適用日から起算して一年を経過する日までの期間",
+     "零パーセント"
+    ],
+    [
+     "平成二十六年三月三十一日から起算して一年を経過する日までの期間",
+     "二十パーセント"
+    ],
+    [
+     "平成二十七年三月三十一日から起算して一年を経過する日までの期間",
+     "四十パーセント"
+    ],
+    [
+     "平成二十八年三月三十一日から起算して一年を経過する日までの期間",
+     "六十パーセント"
+    ],
+    [
+     "平成二十九年三月三十一日から起算して一年を経過する日までの期間",
+     "八十パーセント"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Period until the date one year has elapsed from the Application Date",
+     "0%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2014",
+     "20%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2015",
+     "40%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2016",
+     "60%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2017",
+     "80%"
+    ]
+   ]
+  },
+  "p435t0": {
+   "node_id": "fsa-basel-cap-jp.fusoku.s03.art6.p1",
+   "header_rows": 0,
+   "rows_ja": [
+    [
+     "適用日から起算して一年を経過する日までの期間",
+     "百パーセント"
+    ],
+    [
+     "平成二十六年三月三十一日から起算して一年を経過する日までの期間",
+     "八十パーセント"
+    ],
+    [
+     "平成二十七年三月三十一日から起算して一年を経過する日までの期間",
+     "六十パーセント"
+    ],
+    [
+     "平成二十八年三月三十一日から起算して一年を経過する日までの期間",
+     "四十パーセント"
+    ],
+    [
+     "平成二十九年三月三十一日から起算して一年を経過する日までの期間",
+     "二十パーセント"
+    ]
+   ],
+   "rows_en": [
+    [
+     "Period until the date one year has elapsed from the Application Date",
+     "100%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2014",
+     "80%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2015",
+     "60%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2016",
+     "40%"
+    ],
+    [
+     "Period until the date one year has elapsed from March 31, 2017",
+     "20%"
+    ]
+   ]
+  },
+  "p438t0": {
+   "node_id": "fsa-basel-cap-jp.fusoku.s13.art5.p1",
+   "header_rows": 0,
+   "rows_ja": [
+    [
+     {
+      "text": "適用日から起算して一年を経過する日までの期間",
+      "rowspan": 2
+     },
+     "第二条の二第三項",
+     "二・五パーセント",
+     "〇・六二五パーセント"
+    ],
+    [
+     null,
+     "第二条の二第四項",
+     "掲げる比率を合計して得た比率",
+     "掲げる比率を合計して得た比率に百分の二十五を乗じて得た比率"
+    ],
+    [
+     {
+      "text": "平成二十九年三月三十一日から起算して一年を経過する日までの期間",
+      "rowspan": 2
+     },
+     "第二条の二第三項",
+     "二・五パーセント",
+     "一・二五パーセント"
+    ],
+    [
+     null,
+     "第二条の二第四項",
+     "掲げる比率を合計して得た比率",
+     "掲げる比率を合計して得た比率に百分の五十を乗じて得た比率"
+    ],
+    [
+     {
+      "text": "平成三十年三月三十一日から起算して一年を経過する日までの期間",
+      "rowspan": 2
+     },
+     "第二条の二第三項",
+     "二・五パーセント",
+     "一・八七五パーセント"
+    ],
+    [
+     null,
+     "第二条の二第四項",
+     "掲げる比率を合計して得た比率",
+     "掲げる比率を合計して得た比率に百分の七十五を乗じて得た比率"
+    ]
+   ],
+   "rows_en": [
+    [
+     {
+      "text": "Period until the date one year has elapsed from the Application Date",
+      "rowspan": 2
+     },
+     "Article 2-2, paragraph (3)",
+     "2.5%",
+     "0.625%"
+    ],
+    [
+     null,
+     "Article 2-2, paragraph (4)",
+     "the ratio obtained by totaling the ratios listed",
+     "the ratio obtained by totaling the ratios listed, multiplied by 25/100"
+    ],
+    [
+     {
+      "text": "Period until the date one year has elapsed from March 31, 2017",
+      "rowspan": 2
+     },
+     "Article 2-2, paragraph (3)",
+     "2.5%",
+     "1.25%"
+    ],
+    [
+     null,
+     "Article 2-2, paragraph (4)",
+     "the ratio obtained by totaling the ratios listed",
+     "the ratio obtained by totaling the ratios listed, multiplied by 50/100"
+    ],
+    [
+     {
+      "text": "Period until the date one year has elapsed from March 31, 2018",
+      "rowspan": 2
+     },
+     "Article 2-2, paragraph (3)",
+     "2.5%",
+     "1.875%"
+    ],
+    [
+     null,
+     "Article 2-2, paragraph (4)",
+     "the ratio obtained by totaling the ratios listed",
+     "the ratio obtained by totaling the ratios listed, multiplied by 75/100"
+    ]
+   ]
   }
  }
 }

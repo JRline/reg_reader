@@ -8,6 +8,7 @@ layout artifacts the v2 extractor could not tell from body text. Idempotent.
  2. ch4 第四節 第九款's heading was cut at a line wrap, and its tail ended up in 第二百十六条.
  3. ch5 第二百三十一条/第二百四十一条 headings carry an image formula token that is not in the
     images list; replaced by the plain-text form (K_{SSFA}(K_{IRB}) / K_{SSFA}(K_{A})).
+ 5. 附則 block s13 (fusoku_v2.json): a glued heading and a table-row fragment.
  4. ch4 第百二十六条 paragraph 3 ends in a second slotting table (p158t0) that the extractor
     merged into paragraph 2's table; its token is restored on paragraph 3 (JA + EN).
 Run before build_chapter.py."""
@@ -92,4 +93,16 @@ for n, old, new in (("第二百三十一条", "K_{IRB}超過部分の所要自�
     if a["heading"] == old:
         a["heading"] = new
 save("ch5", d)
+# 5. 附則 block s13: the next article's marginal heading is glued to s13.art1's last item, and
+#    the clipped first row of a table ("適用日から起算して一年を経過する") trails s13.art5.
+fz = SRC / "fusoku_v2.json"
+d = json.loads(fz.read_text(encoding="utf-8"))
+A = {a["key"]: a for a in d["articles"]}
+a1, a5 = A["s13.art1"], A["s13.art5"]
+lp = last_paren(a1["paragraphs"][-1]["text"])
+if lp and not a5["heading"]:
+    a5["heading"] = lp[1]
+    strip_tail(a1, "(" + lp[1] + ")")
+strip_tail(a5, "適用日から起算して一年を経過する")
+fz.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
 print("ok")

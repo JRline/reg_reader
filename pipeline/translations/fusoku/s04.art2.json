@@ -1,0 +1,15 @@
+{
+ "number": "s04.art2",
+ "heading_en": "Transitional Measures Where the Simplified Method Is Used in Calculating Credit Risk-Weighted Assets for Trade Exposures to Direct Clearing Participants",
+ "summary_ja": "適用日から平成25年6月29日まで、ネットのアドオンの算出に簡便式（0.15×グロス＋0.85×0.30×グロス）を用いることができる。",
+ "summary_en": "From the Application Date until June 29, 2013, allows net add-on to be computed with a simplified formula: 0.15 x gross add-on + 0.85 x 0.30 x gross add-on.",
+ "paragraphs": [
+  "From the date of application of this Public Notice until June 29, 2013, notwithstanding Article 248-8, paragraph (2), item (iv) of the Public Notice Establishing Standards for Determining Whether the Capital Adequacy Status of an Ultimate Designated Parent Company and Its Subsidiary Legal Entities, etc. Is Appropriate in Light of the Assets, etc. Held by Such Ultimate Designated Parent Company and Its Subsidiary Legal Entities, etc. (referred to as the \"New Consolidated Capital Adequacy Ratio Notice\" in the following Article), the following formula may be used in calculating the net add-on. Net add-on = 0.15 × gross add-on + 0.85 × 0.30 × gross add-on"
+ ],
+ "terms": [
+  {
+   "ja": "新連結自己資本規制比率告示",
+   "en": "New Consolidated Capital Adequacy Ratio Notice"
+  }
+ ]
+}
