@@ -1,0 +1,16 @@
+{
+ "number": "第二百四十八条の二の二",
+ "heading_en": "Methods and Scope of Calculating the CVA Risk Equivalent Amount",
+ "summary_ja": "CVAリスク相当額はBA―CVA又はSA―CVAを用いて、CVAカバー取引及び適格ヘッジ取引（CVAポートフォリオ）を対象に算出する。",
+ "summary_en": "The CVA risk equivalent amount is calculated using the BA-CVA or the SA-CVA, covering the CVA cover transactions and eligible hedge transactions (the \"CVA portfolio\").",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company shall calculate the CVA risk equivalent amount using the BA-CVA or the SA-CVA.",
+  "An Ultimate Designated Parent Company shall calculate the CVA risk equivalent amount for the CVA cover transactions provided in paragraph (2) of the preceding Article and the eligible BA-CVA hedge transactions provided in Article 248-3-2 or the eligible SA-CVA hedge transactions provided in Article 248-4-13, paragraph (1) (hereinafter in this Chapter referred to as the \"CVA portfolio\")."
+ ],
+ "terms": [
+  {
+   "ja": "CVAポートフォリオ",
+   "en": "CVA portfolio"
+  }
+ ]
+}

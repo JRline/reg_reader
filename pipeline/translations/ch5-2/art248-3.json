@@ -1,0 +1,22 @@
+{
+ "number": "第二百四十八条の三",
+ "heading_en": "Full BA-CVA and Reduced BA-CVA",
+ "summary_ja": "適格BA―CVAヘッジ取引のヘッジ効果を反映する場合は完全なBA―CVA、反映しない場合は限定的なBA―CVAによる。",
+ "summary_en": "A firm reflecting the hedging effect of eligible BA-CVA hedge transactions uses the full BA-CVA; one that does not uses the reduced BA-CVA.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company that intends to calculate the CVA risk equivalent amount using the BA-CVA reflects the hedging effect of the eligible BA-CVA hedge transactions provided in the following Article, it shall use the method provided in Article 248-3-3 (referred to as the \"full BA-CVA\" in the following Article and Article 248-3-3, paragraph (1)); provided, however, that where the Ultimate Designated Parent Company does not reflect the hedging effect of CVA hedge transactions, it shall use the method provided in Article 248-3-4 (referred to as the \"reduced BA-CVA\" in that Article)."
+ ],
+ "terms": [
+  {
+   "ja": "完全なBA―CVA",
+   "en": "full BA-CVA"
+  },
+  {
+   "ja": "限定的なBA―CVA",
+   "en": "reduced BA-CVA"
+  }
+ ],
+ "sections_en": {
+  "第二節": "BA-CVA"
+ }
+}

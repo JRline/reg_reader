@@ -1,0 +1,15 @@
+{
+ "number": "第二百四十八条の三の二",
+ "heading_en": "Eligibility Requirements for Hedges under the BA-CVA",
+ "summary_ja": "完全なBA―CVAでヘッジ効果を反映できるのは、文書化や内部ヘッジの相殺、対象商品の限定などの要件を全て満たす適格BA―CVAヘッジ取引に限る。",
+ "summary_en": "Under the full BA-CVA, hedging effects may be reflected only for CVA hedge transactions that satisfy all the listed requirements (documentation, offsetting of internal hedges, and eligible instruments).",
+ "paragraphs": [
+  "In calculating the CVA risk equivalent amount under the full BA-CVA, an Ultimate Designated Parent Company may reflect the hedging effect on CVA risk only for those hedge transactions relating to CVA risk that satisfy all of the following requirements (referred to as \"eligible BA-CVA hedge transactions\" in paragraph (1) of the following Article). (i) Where an internal CVA hedge transaction is subject to the measurement of the market risk equivalent amount for curvature risk, default risk and the residual risk add-on under Chapter 6, Section 3, that the trading desk that is the counterparty of the CVA desk has executed with a third party a transaction that completely offsets the position against the CVA desk. (ii) That the transaction is used and managed for the purpose of reducing changes in the counterparty's credit spread in CVA risk, and that documents relating to the hedged item and the hedging instrument have been prepared. (iii) That the transaction is any of the following. (a) A credit default swap referencing a single obligor, or a contingent credit default swap referencing a single obligor, that references any of the following: (1) the counterparty; (2) an entity legally related to the counterparty; (3) an entity belonging to the same sector and region as the counterparty. (b) An index credit default swap."
+ ],
+ "terms": [
+  {
+   "ja": "適格BA―CVAヘッジ取引",
+   "en": "eligible BA-CVA hedge transactions"
+  }
+ ]
+}

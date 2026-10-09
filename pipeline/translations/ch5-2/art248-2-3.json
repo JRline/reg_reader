@@ -1,0 +1,9 @@
+{
+ "number": "第二百四十八条の二の三",
+ "heading_en": "Hedge Transactions Relating to CVA Risk",
+ "summary_ja": "外部CVAヘッジ取引がCVAカバー取引に該当する場合は、その取引相手方に対するCVAリスク相当額も算出する。",
+ "summary_en": "Where an external CVA hedge transaction is itself a CVA cover transaction with respect to its counterparty, the CVA risk equivalent amount for that counterparty must also be calculated.",
+ "paragraphs": [
+  "Where an external CVA hedge transaction falls under the CVA cover transactions provided in Article 248-2, paragraph (2) as a transaction with its counterparty, the CVA risk equivalent amount shall be calculated for the counterparty of that external CVA hedge transaction."
+ ]
+}
