@@ -2,7 +2,7 @@
 // every shipped file) and the file list; a new deploy therefore has a new cache name, and the old
 // cache is dropped on activate. Stale-while-revalidate: answer from the cache whenever possible
 // (so the reader works offline) and refresh it in the background.
-const CACHE = "regreader-a0d6ea3d9a72";
+const CACHE = "regreader-959e6ad90435";
 const FILES = ["./", "app.js", "data/fsa-basel-cap-jp.js", "data/index.js", "data/jp-banking-act.js", "data/jp-fiea-enforcement-order.js", "data/jp-fiea.js", "data/jp-mof-consolidated-fs-regulation.js", "data/jp-payment-services-act.js", "data/jp-tlac-notification.js", "icon-180.png", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "index.html", "manifest.webmanifest", "style.css"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));

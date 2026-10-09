@@ -163,6 +163,10 @@ Three layers, run in this order after content is ingested:
   - translations: `pipeline/translations/ch3/*.json`, all `llm_draft`
   - building: `build_chapter.py`
   - citations: `ja_refs.py`
+- `app/` shows a dismissible, non-sticky notice banner ("unofficial AI-assisted draft…", dismissal kept in
+  `localStorage` under `reg-reader-notice-dismissed-v1`; bump the `-v1` to re-show it after changing the text)
+  and a bilingual source line in the footer (`UI_STRINGS.notice`, `SOURCE_LINE` in `app.js`). The first article
+  render on page load deliberately does not scroll the reader into view, so the banner is seen.
 - Tables: 105 in `feeds/fsa-basel-cap-jp/tables.json`, which replace `{{T:<id>}}` tokens.
   The app renders colspan/rowspan.
 - 7 feeds total: `fsa-basel-cap-jp`, `jp-banking-act`, `jp-fiea`,

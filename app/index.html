@@ -38,10 +38,18 @@
     </div>
   </div>
 
+  <!-- Not sticky: scrolls away with the page. Dismissal is remembered (see app.js). -->
+  <div id="notice" class="notice" role="note" hidden>
+    <p id="notice-text"></p>
+    <button id="notice-close" type="button" class="notice-close">×</button>
+  </div>
+
   <div class="layout">
     <nav id="toc" class="toc" aria-label="Table of contents"></nav>
     <main id="reader" class="reader" aria-live="polite"></main>
   </div>
+
+  <footer id="source-line" class="source-line"></footer>
 
   <div id="ref-popover" class="ref-popover" hidden></div>
 

@@ -34,6 +34,9 @@ just translate it.
 - **Real external law content, not just links** — citations to the Banking Act, the
   Financial Instruments and Exchange Act and a few other instruments are backed by actual
   excerpts, not placeholder summaries.
+- **Unofficial-translation notice and source line** — a dismissible banner (shown on first
+  open, then remembered; it scrolls away with the page, it isn't sticky) and a source line
+  at the bottom of every page.
 - **Honest about what it doesn't know** — an unresolved or out-of-scope citation says so
   explicitly, rather than silently failing or pretending to link somewhere.
 - **Works on a phone, and offline** — see [Use it on your phone](#use-it-on-your-phone).
