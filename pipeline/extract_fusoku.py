@@ -79,9 +79,10 @@ def main():
             pending_heading = (s + body[i + 1]).strip("()（）")
             i += 2
             continue
-        am = X.ARTICLE_NUM_RE.match(s)
+        am = X.ARTICLE_NUM_RE.match(s) or re.fullmatch(r"第[一二三四五六七八九十百]+条(?:の[一二三四五六七八九十]+)*()", s)  # a bare "第二条" line (excerpted 附則 skip its first paragraph)
         if am:
-            blk["entries"].append({"number": s[: am.end() - 1], "heading": pending_heading, "lines": [s[am.end():]],
+            num = s[: am.end() - 1] if am.end() < len(s) or s[am.end() - 1:am.end()] in " 　" else s
+            blk["entries"].append({"number": num, "heading": pending_heading, "lines": [s[am.end():]],
                                    "deleted": s[am.end():].strip() == "削除"})
             pending_heading = None
         elif not blk["entries"] or blk["entries"][-1]["number"] is None and False:

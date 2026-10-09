@@ -1,0 +1,16 @@
+{
+ "number": "s24.art3",
+ "heading_en": "",
+ "summary_ja": "令和五年改正告示により従前の例による者について、一部用語を読み替えて新告示を適用し、STC証券化の算出も一年間従前の例による。",
+ "summary_en": "Provides term substitutions for institutions still on the old rules and extends old-rule treatment of qualifying STC exposures by one year.",
+ "paragraphs": [
+  "With respect to an Ultimate Designated Parent Company that calculates the consolidated capital adequacy ratio under the provisions then in force pursuant to Article 2, paragraph (1) of the Supplementary Provisions of the Public Notice Partially Amending the Public Notice Establishing Standards for Determining Whether the Capital Adequacy of an Ultimate Designated Parent Company and Its Subsidiaries, etc. Is Appropriate in Light of Assets, etc. Held by the Ultimate Designated Parent Company and Its Subsidiaries, etc (FSA Public Notice No. 25 of 2023; referred to as the \"2023 Amending Public Notice\" in the following paragraph), notwithstanding that paragraph, Chapter 5, Section 2, Subsection 2, Divisions 7 and 8 and Article 248, paragraph (5), item (iii) of the New Public Notice shall be applied by reading the words \"commercial real estate exposures\" in Article 245-2, paragraph (3), item (xx) and Article 245-3, paragraph (3), item (xvi) of the New Public Notice as \"exposures to real estate acquisition, etc. businesses\", the words \"exposures to owner-occupied residential real estate, etc. or exposures to rental residential real estate\" as \"residential mortgage loans secured by mortgages or residential mortgage loans with sufficient guarantees\", and the words \"exposures to SMEs, etc.\" as \"exposures to small and medium-sized enterprises, etc.\".",
+  "With respect to the calculation of the risk weight of qualifying STC securitization exposures prescribed in Article 245-2, paragraph (3) of the Public Notice Establishing Standards for Determining Whether the Capital Adequacy of an Ultimate Designated Parent Company and Its Subsidiaries, etc. Is Appropriate in Light of Assets, etc. Held by the Ultimate Designated Parent Company and Its Subsidiaries, etc, before its amendment by the 2023 Amending Public Notice, in the case where the provisions then in force are to be followed pursuant to Article 2, paragraph (1) of the Supplementary Provisions of the 2023 Amending Public Notice, for the period until the day on which one year has elapsed from the Application Date, the provisions then in force may continue to be followed, notwithstanding Chapter 5, Section 2, Subsection 2, Division 7 of the New Public Notice applied pursuant to the preceding paragraph."
+ ],
+ "terms": [
+  {
+   "ja": "令和五年改正告示",
+   "en": "2023 Amending Public Notice"
+  }
+ ]
+}
