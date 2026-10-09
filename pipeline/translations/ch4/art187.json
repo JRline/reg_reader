@@ -1,0 +1,10 @@
+{
+ "number": "第百八十七条",
+ "heading_en": "Reference to the Definition of Default",
+ "summary_ja": "デフォルト事由に基づく記録と推計、及び異なる定義のデータを用いる場合の要件を定める。",
+ "summary_en": "Requires default events to be recorded and used for estimation, and allows data based on other definitions only if two conditions are met.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall, on the basis of default events, record the occurrence of default events for each asset class subject to the internal ratings-based approach and estimate PD and (where relevant) LGD and EAD; provided, however, that it may use internal data and external data based on a definition different from the default events if the following requirements are satisfied: (i) it complies with the provisions of Article 191 or Article 192; (ii) it makes appropriate adjustments to the internal data and external data so that the results are approximately equivalent to those obtained using default events."
+ ],
+ "terms": []
+}

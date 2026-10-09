@@ -1,0 +1,17 @@
+{
+ "number": "第二百二条",
+ "heading_en": "Method of Estimating EAD",
+ "summary_ja": "オン・バランス項目のEAD下限、オフ・バランス項目の手続要件、EADの性質、基準、見直しを定める。",
+ "summary_en": "Sets a floor for on-balance-sheet EAD, requirements for off-balance-sheet EAD procedures, characteristics of EAD estimates, standards, and annual review.",
+ "paragraphs": [
+  "In estimating EAD for on-balance-sheet items, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall not use a value lower than the amount of credit currently drawn; provided, however, that this does not apply where the effect of credit risk mitigation techniques is taken into account under Article 134, paragraph (2) and Article 142, paragraphs (6) and (7).",
+  "In estimating EAD for off-balance-sheet items, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish, for each type of exposure, procedures that satisfy all of the following requirements: (i) take into account the possibility that the obligor will make additional drawings both before and after the occurrence of a default event; provided, however, that the possibility of additional drawings by the obligor after the occurrence of a default event need not be taken into account where, in estimating the LGD of retail exposures involving uncertain future drawings such as credit cards, actual or expected additional drawings after the occurrence of a default event are taken into account; (ii) where the method of estimating EAD for off-balance-sheet items differs by type of exposure, the classification of types of exposures is made clear.",
+  "In estimating EAD, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall estimate it for each exposure so that the EAD satisfies all of the following characteristics: (i) it is a long-run default-weighted average for similar exposures and obligors; (ii) it incorporates conservative adjustments that take into account the possibility of estimation error; (iii) where a positive correlation between the frequency of default and the size of EAD can reasonably be expected, it incorporates more conservative adjustments; (iv) for exposures whose EAD estimates fluctuate significantly over the business cycle, where an EAD estimate appropriate for an economic downturn is more conservative than the long-run average, it is appropriate for an economic downturn.",
+  "In estimating EAD, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish standards for estimating EAD that satisfy all of the following characteristics: (i) they are credible and easy to understand; (ii) they take into account the factors that the Ultimate Designated Parent Company adopting the internal ratings-based approach considers, on the basis of reliable internal analysis, to have a significant effect on EAD; (iii) the Ultimate Designated Parent Company adopting the internal ratings-based approach is able to analyze the effect of the factors referred to in the preceding item on the EAD estimate.",
+  "For all types of exposures subject to EAD estimation, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall review its EAD estimates when new material information becomes available and at least once a year."
+ ],
+ "terms": [],
+ "sections_en": {
+  "第四節 第五款 第六目": "Estimation of EAD"
+ }
+}

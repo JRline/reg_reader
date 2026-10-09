@@ -1,0 +1,10 @@
+{
+ "number": "第二百九十六条",
+ "heading_en": "Application for Approval of the Special Exclusion from Calculation of the ILM",
+ "summary_ja": "ILMの算出に係る除外特例の承認申請書の記載事項及び添付書類を定める。",
+ "summary_en": "Sets out the contents of the application for approval of the special exclusion from the ILM calculation and the documents to be attached.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company seeking the approval under the preceding Article shall submit to the Commissioner of the Financial Services Agency a written application for approval stating the following matters. (i) The matters set out in Article 287, paragraph (1), items (i) and (ii). (ii) The date on which the special exclusion from the calculation of the ILM under the provisions of the preceding Article is to begin to apply. (iii) The values of the ILM in the case where the special exclusion under the preceding item is applied and in the case where it is not applied. (iv) The trial calculation values of the operational risk equivalent amount and the consolidated capital adequacy ratio in the case where the special exclusion under item (ii) is applied and in the case where it is not applied.",
+  "The following documents shall be attached to the written application for approval in the preceding paragraph. (i) A written statement of reasons. (ii) A document showing that the special loss is not related to the business currently conducted. (iii) A document showing that it does not currently conduct business similar to the business that gave rise to the special loss and that there is no risk of recurrence. (iv) A document showing that the amount of the special loss exceeds 5% of the annual average of all operational risk losses arising in the relevant measurement period. (v) A document showing that the special loss has been recorded in the internal loss database for at least three years. (vi) A document stating any other matters that would serve as a reference."
+ ]
+}

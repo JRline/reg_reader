@@ -1,0 +1,19 @@
+{
+ "number": "第百八十条",
+ "heading_en": "Credit Risk Management Department",
+ "summary_ja": "信用リスク管理部署の設置、独立性、責任事項、モデルへの関与を定める。",
+ "summary_en": "Requires an independent credit risk management department, sets out its independence, responsibilities and role in rating-related models.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish a department that is responsible for the design or selection, implementation and performance of the internal rating system and that manages credit risk independently (hereinafter referred to as the \"credit risk management department\").",
+  "The credit risk management department shall be functionally independent of the credit origination divisions and the persons engaged in credit operations.",
+  "The credit risk management department shall be responsible for the following matters: (i) validation of the internal rating system and monitoring of its operation; (ii) preparation and analysis of reports on the outline of the internal rating system of the Ultimate Designated Parent Company adopting the internal ratings-based approach (including data on defaults by rating and by pool for the time of default and the year before default, analysis of rating migration, and monitoring of trends in the principal criteria of ratings and pools); (iii) procedures to confirm that the definitions of ratings and pools are applied consistently across divisions and regions (which do not prevent the application of different rating criteria and procedures for each obligor or exposure); (iv) review of changes to the rating assignment procedures and preparation of documents relating to such changes (including the reasons for the changes); (v) review of the criteria for ratings and pools, conducted to assess whether those criteria accurately forecast risk; (vi) preparation and retention of documents relating to changes to the rating assignment procedures, the criteria for ratings and pools, or the variables associated with each rating or pool.",
+  "The credit risk management department shall actively participate in the development, selection, implementation and validation of the models used in the rating assignment procedures.",
+  "The credit risk management department shall be responsible for the management and oversight of the models set out in the preceding paragraph and for their ongoing review and modification."
+ ],
+ "terms": [
+  {
+   "ja": "信用リスク管理部署",
+   "en": "credit risk management department"
+  }
+ ]
+}

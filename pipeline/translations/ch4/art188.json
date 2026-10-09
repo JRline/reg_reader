@@ -1,0 +1,14 @@
+{
+ "number": "第百八十八条",
+ "heading_en": "Common Requirements for Estimation",
+ "summary_ja": "PD・LGD・EADの推計に共通する要件を定める。",
+ "summary_en": "Sets common requirements for estimating PD, LGD and EAD: use of all relevant data, reflecting changes, new information, empirical basis, and annual review.",
+ "paragraphs": [
+  "In estimating PD, LGD and EAD, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall use all material and available data, information and methods relevant to the estimation; provided, however, that internal data and external data (including pooled data) may be used only where estimates based on that data represent long-run experience.",
+  "Where there has been a change in credit extension practices or recovery procedures during the period covered by the assignment of ratings and the evaluation of pools, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall take that change into account.",
+  "The Ultimate Designated Parent Company adopting the internal ratings-based approach shall take technological advances and new data and other information into account in its estimates as soon as they become available.",
+  "The Ultimate Designated Parent Company adopting the internal ratings-based approach shall estimate PD, LGD and EAD on the basis of actual values and empirical evidence.",
+  "The Ultimate Designated Parent Company adopting the internal ratings-based approach shall review its estimates of PD, LGD and EAD at least once a year."
+ ],
+ "terms": []
+}

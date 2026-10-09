@@ -1,0 +1,10 @@
+{
+ "number": "第二百二十六条の三",
+ "heading_en": "Treatment of Overlapping Exposures",
+ "summary_ja": "一の証券化エクスポージャーの義務履行で他の全損失が回避されることが明らかな場合に、重複として信用リスク・アセットの額を一つのみ用いられる旨を定める。",
+ "summary_en": "Where performing the obligations of one securitization exposure clearly avoids all losses on another exposure held in the same transaction, they may be treated as overlapping and only one credit RWA amount used.",
+ "paragraphs": [
+  "Where it is clear that, by performing the obligations relating to one securitization exposure held in a securitization transaction, all losses relating to other securitization exposures held by the Ultimate Designated Parent Company in that securitization transaction are avoided under any circumstances, the Ultimate Designated Parent Company may treat those securitization exposures as being in a state of overlap. In this case, the Ultimate Designated Parent Company may use, in the calculation of the capital adequacy ratio, only the amount of credit risk-weighted assets of that one securitization exposure, in place of the total of the amounts of credit risk-weighted assets calculated for each of those securitization exposures."
+ ],
+ "terms": []
+}

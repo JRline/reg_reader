@@ -1,0 +1,15 @@
+{
+ "number": "第二百四十九条",
+ "heading_en": "Calculation of the Market Risk Equivalent Amount",
+ "summary_ja": "マーケット・リスク相当額の計測対象リスクと、構造為替ポジションをマーケット・リスク相当額に算入しない場合の要件・届出を定める。",
+ "summary_en": "Specifies the risks measured by the market risk equivalent amount and the conditions and notification under which a structural foreign exchange position may be excluded from it.",
+ "sections_en": {
+  "第一節": "Calculation Methods and Measurement Scope of the Market Risk Equivalent Amount"
+ },
+ "paragraphs": [
+  "The risks subject to measurement for the market risk equivalent amount shall be the following. (i) Default risk, interest rate risk, credit spread risk, equity risk, foreign exchange risk and commodity risk relating to instruments in the trading book. (ii) Foreign exchange risk and commodity risk relating to instruments in the banking book. (iii) Risks similar to the risks listed in the preceding two items.",
+  "An Ultimate Designated Parent Company may exclude a structural foreign exchange position it holds from the market risk equivalent amount only where the position satisfies all of the following requirements and the company has notified the Commissioner of the Financial Services Agency in advance. (i) The position is held for the purpose of fully or partially hedging a decline in the Consolidated Capital Adequacy Ratio caused by fluctuations in exchange rates. (ii) The position is not held on the premise of engaging in transactions. (iii) The position is taken within the extent that offsets a decline in the Consolidated Capital Adequacy Ratio caused by fluctuations in exchange rates. (iv) It is done on the premise of being excluded from the market risk equivalent amount for a period of six months or more. (v) The company has established a policy for the establishment and modification of the structural foreign exchange position. (vi) The exclusion of the structural foreign exchange position from the market risk equivalent amount is carried out by a consistent method. (vii) The company has prepared a document describing the outline and amount of the structural foreign exchange position, and has made arrangements to be able to submit that document upon request of the Commissioner of the Financial Services Agency.",
+  "Documents stating the following matters shall be attached to the notification under the preceding paragraph. (i) An explanation that the requirements listed in the items of the preceding paragraph are satisfied. (ii) Other matters for reference."
+ ],
+ "terms": []
+}

@@ -1,0 +1,11 @@
+{
+ "number": "第二百五十条の八",
+ "heading_en": "External Review of the Internal Model Approach",
+ "summary_ja": "内部モデル方式について外部監査による検証の実施を検討することと、その検証が満たすべき要件を定める。",
+ "summary_en": "Requires consideration of validation of the internal model approach by external audit and sets the requirements that validation must satisfy.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal model approach shall consider having the internal model approach it uses validated by an external audit.",
+  "The validation by external audit under the preceding paragraph shall satisfy all of the following requirements. (i) It confirms whether the validation of the internal model approach by the Ultimate Designated Parent Company satisfies the standards prescribed in paragraph (2) of the preceding Article. (ii) It confirms that the appropriateness of the formulas used in calculating the market risk equivalent amount and in valuing options and other complex instruments has been validated by a department independent of the front office. (iii) It confirms whether the internal model approach is appropriate from the viewpoints of business and geography. (iv) It confirms the results of back-testing and the profit-and-loss attribution test relating to the internal model approach, from the viewpoint of ensuring that the internal model approach can produce highly reliable figures for potential losses. (v) It confirms the transparency and availability of the data flows relating to the risk measurement systems (including the models that calculate the market risk equivalent amount)."
+ ],
+ "terms": []
+}

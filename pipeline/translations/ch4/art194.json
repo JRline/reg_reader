@@ -1,0 +1,20 @@
+{
+ "number": "第百九十四条",
+ "heading_en": "Estimation of LGD",
+ "summary_ja": "LGDを景気後退期を勘案して推計する要件、相関・通貨・担保・デフォルト債権の扱いを定める。",
+ "summary_en": "Requires LGD to reflect downturn conditions, with conservative treatment of correlation, currency mismatch and collateral, and an expected-loss estimate for defaulted exposures.",
+ "paragraphs": [
+  "In estimating LGD, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall estimate it for each exposure so that the LGD takes into account an economic downturn that satisfies all of the following characteristics: (i) it is not lower than the long-run average loss given default calculated on the basis of the average economic loss associated with all defaulted claims occurring within the data source for that type of exposure (referred to as the \"long-run average loss given default\" in the following item); (ii) it takes into account the possibility that, during periods in which loss rates associated with credit risk exceed the long-run average loss rate, the loss given default of the exposure will exceed the long-run average loss given default.",
+  "In estimating LGD, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall take into account the correlation between the risk of the obligor and the risk of the collateral or the collateral provider, and shall treat the correlation conservatively where there is a significant positive correlation.",
+  "Where the denomination currency of the underlying obligation differs from that of the collateral, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall take this into account conservatively in estimating LGD.",
+  "In estimating LGD, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall base the estimate not only on the estimated market value of the collateral but also on actual recovery experience.",
+  "Where the Ultimate Designated Parent Company adopting the internal ratings-based approach takes into account the credit risk mitigation effect of collateral in estimating LGD, it shall establish internal standards for collateral management, operating procedures, legal certainty and risk management procedures that are broadly consistent with the standards required under the standardized approach.",
+  "For defaulted exposures, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall estimate the expected loss (EL_{default}) that may arise on the exposure in light of economic conditions and the state of the exposure; provided, however, that it shall not fall below the floors on LGD estimates prescribed in Article 133 and Article 141."
+ ],
+ "terms": [
+  {
+   "ja": "長期平均デフォルト時損失率",
+   "en": "long-run average loss given default"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "number": "第二百五条",
+ "heading_en": "Minimum Required Observation Period, etc. for EAD Estimation of Retail Exposures",
+ "summary_ja": "リテール向けEAD推計の五年以上の観測期間を定める。",
+ "summary_en": "Requires data covering at least five years for estimating EAD of retail exposures.",
+ "paragraphs": [
+  "In estimating the EAD of retail exposures, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall use one or more of external data, internal data, or data pooled among multiple financial institutions, covering an observation period of five years or more."
+ ],
+ "terms": []
+}

@@ -1,0 +1,16 @@
+{
+ "number": "第百九十七条",
+ "heading_en": "Taking Into Account the Credit Risk Mitigation Effect of Guarantees",
+ "summary_ja": "保証を信用リスク削減手法として用いる場合のPD又はLGDの調整とその制限を定める。",
+ "summary_en": "Allows adjustment of either PD or LGD to reflect guarantees, subject to a floor at the guarantor's risk weight, and consistent choice of method.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach uses a guarantee as a credit risk mitigation technique for corporate, etc. exposures to which the advanced internal ratings-based approach may be applied, it may adjust either the PD or the LGD of those corporate, etc. exposures; provided, however, that the adjusted risk weight shall not be lower than the risk weight applicable to a direct exposure to the guarantor.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach uses a guarantee as a credit risk mitigation technique for retail exposures, it may adjust either the PD or the LGD of those retail exposures; provided, however, that the adjusted risk weight shall not be lower than the risk weight applicable to a direct exposure to the guarantor.",
+  "The Ultimate Designated Parent Company adopting the internal ratings-based approach shall select one adjustment method for each of the preceding two paragraphs and use it continuously.",
+  "In calculating the regulatory minimum required capital, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall not take into account the credit risk mitigation effect on the assumption that the correlation between the default events of the obligor and the default events of the guarantor is imperfect."
+ ],
+ "terms": [],
+ "sections_en": {
+  "第四節 第五款 第五目": "Minimum Requirements for Guarantees and Credit Derivatives"
+ }
+}

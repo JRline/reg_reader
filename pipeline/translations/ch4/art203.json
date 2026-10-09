@@ -1,0 +1,10 @@
+{
+ "number": "第二百三条",
+ "heading_en": "Monitoring",
+ "summary_ja": "EADの対象エクスポージャーの残高監視及び支払方針への注意と具備すべき事項を定める。",
+ "summary_en": "Requires due attention to balance monitoring and payment policies for exposures subject to EAD estimation, including ability to stop drawings and daily monitoring systems.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall pay due attention to the following matters and other policies on balance monitoring and payment for exposures subject to EAD estimation: (i) having the ability and willingness to stop additional drawings where an event of default short of non-payment occurs, such as a covenant breach or a technical default event; (ii) having appropriate systems and procedures to monitor daily changes in exposure amounts, current drawn balances against commitments, and balances by obligor and by rating."
+ ],
+ "terms": []
+}

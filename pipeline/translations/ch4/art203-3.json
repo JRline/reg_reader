@@ -1,0 +1,10 @@
+{
+ "number": "第二百三条の三",
+ "heading_en": "Estimation of EAD for Exposures",
+ "summary_ja": "EADの推計が当該エクスポージャーの特性を反映したEADデータベースに基づくことを定める。",
+ "summary_en": "Requires EAD estimates to rest on an EAD database that reflects the exposure's characteristics and excludes the influence of dissimilar exposures.",
+ "paragraphs": [
+  "In estimating EAD for an exposure, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall base the estimate on an EAD database that adequately reflects the characteristics of the obligor, the transaction and the internal management of that exposure and that adequately excludes the influence of exposures having characteristics different from that exposure."
+ ],
+ "terms": []
+}

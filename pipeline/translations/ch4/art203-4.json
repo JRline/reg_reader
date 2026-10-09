@@ -1,0 +1,10 @@
+{
+ "number": "第二百三条の四",
+ "heading_en": "Ensuring Stability of EAD Estimates",
+ "summary_ja": "未引出額に乗じる掛目を用いる場合の僅少な未引出額による不適切な推計の考慮を定める。",
+ "summary_en": "Requires consideration of inappropriate estimates arising from very small undrawn amounts when conversion factors are used.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach uses an estimate of a conversion factor to be multiplied by the undrawn amount of a credit facility in estimating EAD, it shall take into account the possibility that an inappropriate EAD estimate may be calculated owing to very small undrawn amounts of credit facilities included in the EAD database used to estimate that conversion factor."
+ ],
+ "terms": []
+}

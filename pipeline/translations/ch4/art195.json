@@ -1,0 +1,11 @@
+{
+ "number": "第百九十五条",
+ "heading_en": "Minimum Required Observation Period for LGD Estimation of Corporate, etc. Exposures",
+ "summary_ja": "先進的内部格付手法採用最終指定親会社の事業法人等向けLGD推計の七年以上の観測期間を定める。",
+ "summary_en": "Requires an AIRB UDPC to use data covering at least seven years to estimate LGD for corporate, etc. exposures, preferring the longest period.",
+ "paragraphs": [
+  "In estimating the LGD of corporate, etc. exposures to which the advanced internal ratings-based approach may be applied, an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach shall use one or more of external data, internal data, or data pooled among multiple financial institutions, covering an observation period of seven years or more.",
+  "Where there are multiple sets of data covering the observation period prescribed in the preceding paragraph, the Ultimate Designated Parent Company adopting the advanced internal ratings-based approach shall use the data covering the longest observation period; provided, however, that this does not apply to data of low relevance in estimating LGD."
+ ],
+ "terms": []
+}

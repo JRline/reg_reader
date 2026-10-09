@@ -1,0 +1,24 @@
+{
+ "number": "第二百八十四条",
+ "heading_en": "Method of Calculating the ILM",
+ "summary_ja": "ILMの値を、BIの額が千億円を超えるか否か及び内部損失データの基準(第二百八十八条第一号)を満たすか否かに応じて、損失実績を用いた算式、一、又は保守的な見積値により算出する方法を定める。",
+ "summary_en": "Sets out how the ILM is determined: by a formula using actual losses, by the value 1, or by a conservative estimate, depending on whether the BI exceeds 100 billion yen and whether the internal loss data standards of Article 288, item (i) are met; also lists excluded cost items.",
+ "terms": [
+  {
+   "ja": "損失実績",
+   "en": "actual losses"
+  },
+  {
+   "ja": "特殊損失",
+   "en": "special loss"
+  },
+  {
+   "ja": "保守的な見積値",
+   "en": "conservative estimate"
+  }
+ ],
+ "paragraphs": [
+  "The value of the ILM shall be calculated by the following methods according to the category of case set out in each of the following items. (i) Where the amount of the BI exceeds 100 billion yen and the standards provided in Article 288, item (i) are met: a method of calculating by the following formula, using the amount obtained by multiplying by 15 the annual average of operational risk losses over the most recent ten years, calculated using all net losses exceeding 2 million yen (meaning the net losses prescribed in sub-item (g) of that item) in the internal loss data of the most recent ten years, excluding special losses (meaning losses that may be excluded pursuant to Article 295; the same applies hereinafter in this Chapter) (hereinafter referred to in this item as the \"actual losses\"): ILM = Ln(exp(1) − 1 + (LC / BIC)^{0.8}); ILM is the internal loss multiplier; Ln(x) is the natural logarithm of x; exp(x) is the value of the base of the natural logarithm raised to the power of x; LC is the actual losses; and BIC is the business indicator component. (ii) Where the amount of the BI is 100 billion yen or less and the standards provided in Article 288, item (i) are met: the method set out in (a) or (b). (a) The method provided in the preceding item. (b) A method of using 1 as the value of the ILM. (iii) Where the amount of the BI is 100 billion yen or less and the standards provided in Article 288, item (i) are not met: a method of using 1 as the value of the ILM. (iv) Where the amount of the BI exceeds 100 billion yen and the standards provided in Article 288, item (i) are not met: a method of using a conservative estimate for the value of the ILM (meaning a value conservatively estimated for the ILM with 1 as the lower limit; the same applies hereinafter).",
+  "In calculating the ILM provided for in the preceding paragraph, the following items shall not be included. (i) Expenses relating to general maintenance contracts for tangible fixed assets. (ii) Expenses required for business improvement after the occurrence of an event causing an operational risk loss (including expenses required for enhancement of functions and for the performance and strengthening of risk assessment). (iii) Insurance premiums."
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "number": "第百八十三条",
+ "heading_en": "Definition of Default",
+ "summary_ja": "この章におけるデフォルトの定義(デフォルト事由)、再格付、再度のデフォルト、延滞日数の特例を定める。",
+ "summary_en": "Defines default for this Chapter by listing default events, and provides for treatment on cure, repeated default, and the use of day counts in place of months.",
+ "paragraphs": [
+  "In this Chapter, default means the occurrence in respect of an obligor of any of the following events (hereinafter referred to as \"default events\"): (i) business failure due to grounds such as a petition for the commencement of bankruptcy proceedings, rehabilitation proceedings or civil rehabilitation proceedings; (ii) a situation in which the financial condition and operating results have deteriorated and there is a high likelihood that the principal of the claim cannot be recovered and interest cannot be received; (iii) payment of principal or interest is three months or more past due, counting from the day following the contractual payment date; (iv) revision of the contractual terms, etc. that grants certain concessions favorable to the obligor, for the purpose of rehabilitating or supporting an obligor in economic difficulty and promoting recovery of the claim; (v) the Ultimate Designated Parent Company adopting the internal ratings-based approach sells an exposure to the obligor at a loss involving a material economic loss; (vi) for overdrafts to the obligor, the contractual limit (deemed to be zero where none is set) has been exceeded for three months or more counting from the day on which the limit was exceeded or the day following the day on which a limit lower than the current overdraft amount was notified.",
+  "Where a default event has occurred in respect of one exposure, a default event shall be deemed to have occurred in respect of the other exposures to the obligor of that exposure; provided, however, that this does not apply to retail exposures.",
+  "Where it is recognized that the default event has been cured in respect of an exposure for which a default event had occurred, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall assign to that exposure an obligor rating as a non-defaulted claim, and an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach shall estimate LGD and EAD.",
+  "Where a default event occurs again in respect of the exposure referred to in the preceding paragraph, the Ultimate Designated Parent Company adopting the internal ratings-based approach shall treat it as a newly occurring default event.",
+  "Notwithstanding paragraph (1), in determining the past-due status prescribed in item (iii) of that paragraph or the excess of the limit prescribed in item (vi) of that paragraph, an Ultimate Designated Parent Company adopting the internal ratings-based approach may use the number of days prescribed in each of the following items for the corresponding length of months in that item: (i) three months: 90 days; (ii) six months: 180 days."
+ ],
+ "terms": [
+  {
+   "ja": "デフォルト事由",
+   "en": "default events"
+  }
+ ],
+ "sections_en": {
+  "第四節 第五款": "Risk Quantification",
+  "第四節 第五款 第一目": "Default"
+ }
+}

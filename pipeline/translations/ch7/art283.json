@@ -1,0 +1,46 @@
+{
+ "number": "第二百八十三条",
+ "heading_en": "Method of Calculating the BIC",
+ "summary_ja": "BICの額を、金利要素・役務要素・金融商品要素の合計であるBIにBIの額に応じた掛目を乗じて算出する方法と、各要素の算式及びBIの区分ごとの掛目を定める。",
+ "summary_en": "Sets out how the BIC is calculated: the business indicator (the sum of the interest, services and financial instruments components) multiplied by a marginal coefficient depending on its size, with the formulas for each component.",
+ "terms": [
+  {
+   "ja": "事業規模指標",
+   "en": "business indicator"
+  },
+  {
+   "ja": "BI",
+   "en": "BI"
+  },
+  {
+   "ja": "金利要素",
+   "en": "interest component"
+  },
+  {
+   "ja": "ILDC",
+   "en": "ILDC"
+  },
+  {
+   "ja": "役務要素",
+   "en": "services component"
+  },
+  {
+   "ja": "SC",
+   "en": "SC"
+  },
+  {
+   "ja": "金融商品要素",
+   "en": "financial instruments component"
+  },
+  {
+   "ja": "FC",
+   "en": "FC"
+  }
+ ],
+ "paragraphs": [
+  "The amount of the BIC shall be calculated by multiplying the business indicator (hereinafter referred to as the \"BI\"), expressed as the total of the interest component (meaning the part of the components of the BIC that reflects the scale of deposit-taking business, etc.; hereinafter referred to as the \"ILDC\"), the services component (meaning the part of the components of the BIC that reflects the scale of fee and commission transactions, etc.; hereinafter referred to as the \"SC\") and the financial instruments component (meaning the part of the components of the BIC that reflects the scale of financial instruments transactions; hereinafter referred to as the \"FC\"), by the coefficient prescribed according to the amount of the BI.",
+  "The amounts of the ILDC, the SC and the FC shall be as follows. In this case, the meanings of the terms used in the formulas in each of the following items shall be as set out in Appended Table 1, and for the overlined parts of those formulas the amount obtained by totaling the respective averages over the most recent three years shall be used. (i) The ILDC: the amount calculated by adding the value of dividends received to the smaller of the absolute value of the value obtained by subtracting interest expenses from interest income, or the value obtained by multiplying interest-earning assets by 2.25%, using the following formula: {{F:p420i0}}; (ii) The SC: the amount calculated by adding the larger of the income from other operations or the expenses on other operations to the larger of fee and commission income or fee and commission expenses, using the following formula: {{F:p420i1}}; (iii) The FC: the amount calculated by adding the absolute value of the net profit or loss on accounts other than trading products to the absolute value of the net profit or loss on trading products, using the following formula: {{F:p420i2}}",
+  "The \"coefficient prescribed according to the amount of the BI\" in paragraph (1) means the following, according to the category of the amount of the BI set out in each of the following items. (i) An amount of 100 billion yen or less: 12%. (ii) An amount exceeding 100 billion yen and not exceeding 3 trillion yen: 15%. (iii) An amount exceeding 3 trillion yen: 18%.",
+  "In calculating the BI, notwithstanding the provisions of paragraph (1), a more conservative method may be used."
+ ]
+}

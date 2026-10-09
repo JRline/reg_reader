@@ -1,0 +1,12 @@
+{
+ "number": "第二百一条",
+ "heading_en": "Treatment of Credit Derivatives",
+ "summary_ja": "保証の規定をシングルネームのクレジット・デリバティブに準用し、基準を定める。",
+ "summary_en": "Applies the guarantee provisions to single-name credit derivatives with substituted terms, applies Articles 94 to 97 and 99, and sets standards for credit derivatives.",
+ "paragraphs": [
+  "The provisions of Article 197 through the preceding Article apply mutatis mutandis where the credit risk mitigation effect of a single-name credit derivative is taken into account. In this case, the term \"guarantee\" in these provisions shall be deemed to be replaced with \"credit derivative\", the term \"guarantor\" in these provisions with \"protection provider\", and the term \"guaranteed claim\" with \"underlying claim\".",
+  "The provisions of Article 94 through Article 97 and Article 99 apply mutatis mutandis where an Ultimate Designated Parent Company adopting the internal ratings-based approach takes into account the credit risk mitigation effect of a credit derivative. In this case, the term \"Ultimate Designated Parent Company adopting the standardized approach\" in these provisions shall be deemed to be replaced with \"Ultimate Designated Parent Company adopting the internal ratings-based approach\".",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach takes into account the credit risk mitigation effect of a single-name credit derivative, it shall establish standards that satisfy all of the following characteristics: (i) they limit the cases in which the credit risk mitigation effect of the credit derivative is taken into account to those where the reference obligation of the protection is the same as the underlying claim; provided, however, that this does not apply where the Ultimate Designated Parent Company, etc. can receive payment under the credit derivative upon non-performance of a payment obligation relating to the underlying claim (which does not prevent the setting of a deductible) and a legally effective cross-default clause, etc. prescribed in Article 96, item (v) is provided; (ii) the method of taking into account the credit risk mitigation effect of the credit derivative conservatively takes into account risks arising from settlement and other arrangements (including provisions on the extent of payment and the time required for such payment)."
+ ],
+ "terms": []
+}

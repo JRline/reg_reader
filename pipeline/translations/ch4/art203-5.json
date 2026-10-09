@@ -1,0 +1,10 @@
+{
+ "number": "第二百三条の五",
+ "heading_en": "Upper Limit of Reference Data for EAD",
+ "summary_ja": "EADの参照データに上限を設けず、未収利息等を含めることを定める。",
+ "summary_en": "Prohibits capping EAD reference data at notional amount or contractual limit and requires inclusion of accrued interest, other payments and excess over limit.",
+ "paragraphs": [
+  "Reference data for EAD shall not be capped at the notional principal amount or the contractual limit of the claim, and shall include accrued interest, other payment amounts and amounts in excess of limits."
+ ],
+ "terms": []
+}

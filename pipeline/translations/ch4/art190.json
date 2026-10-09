@@ -1,0 +1,10 @@
+{
+ "number": "第百九十条",
+ "heading_en": "Conservative Adjustment for Estimation Error",
+ "summary_ja": "推計誤差を考慮した保守的な修正を定める。",
+ "summary_en": "Requires estimates of PD, LGD and EAD to be adjusted conservatively to allow for expected estimation error.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall conservatively adjust its estimates of PD, LGD and EAD, taking into account that errors are expected to arise in the estimates."
+ ],
+ "terms": []
+}

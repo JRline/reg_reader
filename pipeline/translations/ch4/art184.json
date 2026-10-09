@@ -1,0 +1,17 @@
+{
+ "number": "第百八十四条",
+ "heading_en": "Review of Days Past Due, etc.",
+ "summary_ja": "延滞日数の見直し等に関する書面方針の整備、継続的利用、デフォルト扱いを定める。",
+ "summary_en": "Requires a clear written policy on reviewing days past due, its consistent use, and treating such exposures as defaulted where treated so internally.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall have a clear written policy on the review of days past due of exposures and other matters concerning the calculation of days past due, such as approval of deferment, rollover, amendment of contract terms and refinancing of existing obligations (hereinafter in this Article referred to as the \"review of days past due, etc.\"), including the following matters: (i) the persons having authority to approve the review of days past due, etc., and reporting requirements; (ii) the minimum period of credit extension required for the review of days past due, etc.; (iii) the degree of past-due status for which revision of the repayment date, etc. is permitted; (iv) the upper limit on the number of times the repayment date may be revised for each exposure; (v) reassessment of the obligor's repayment capacity.",
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall use the policy referred to in the preceding paragraph consistently over the long term.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach treats an exposure for which a review of days past due, etc. has been made in the same way as a defaulted exposure in the internal risk management of the Ultimate Designated Parent Company, etc., it shall treat that exposure as a defaulted exposure for the purposes of applying the internal ratings-based approach."
+ ],
+ "terms": [
+  {
+   "ja": "延滞日数の見直し等",
+   "en": "review of days past due, etc."
+  }
+ ]
+}

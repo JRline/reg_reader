@@ -1,0 +1,31 @@
+{
+ "number": "第二百八十二条",
+ "heading_en": "Standardized Measurement Approach",
+ "summary_ja": "標準的計測手法を、BICにILMを乗じた額をオペレーショナル・リスク相当額とする手法と定義する。",
+ "summary_en": "Defines the standardized measurement approach as the method under which the BIC multiplied by the ILM is the operational risk equivalent amount.",
+ "terms": [
+  {
+   "ja": "標準的計測手法",
+   "en": "standardized measurement approach"
+  },
+  {
+   "ja": "事業規模要素",
+   "en": "business indicator component"
+  },
+  {
+   "ja": "BIC",
+   "en": "BIC"
+  },
+  {
+   "ja": "内部損失乗数",
+   "en": "internal loss multiplier"
+  },
+  {
+   "ja": "ILM",
+   "en": "ILM"
+  }
+ ],
+ "paragraphs": [
+  "The \"standardized measurement approach\" in the preceding Article means the method under which the amount obtained by multiplying the amount of the business indicator component (hereinafter referred to as the \"BIC\") by the internal loss multiplier (hereinafter referred to as the \"ILM\") is the operational risk equivalent amount."
+ ]
+}

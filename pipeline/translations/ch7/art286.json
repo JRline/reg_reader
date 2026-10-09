@@ -1,0 +1,12 @@
+{
+ "number": "第二百八十六条",
+ "heading_en": "Approval for Use of the ILM",
+ "summary_ja": "ILMを算出してオペレーショナル・リスク相当額の算出に用いるには、金融庁長官の承認が必要であり、承認の態様ごとの使用義務と承認がない場合の指定値の扱いを定める。",
+ "summary_en": "Use of the calculated ILM requires approval of the Commissioner of the Financial Services Agency; sets out the continuing obligation to use it and the use of a value designated by the Commissioner where the second approval has not been obtained.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company may, where it has obtained the approval of the Commissioner of the Financial Services Agency, use for the calculation of the operational risk equivalent amount the ILM calculated by the method provided in Article 284, paragraph (1), item (i) (including where it applies that method pursuant to item (ii) of paragraph (1) of the preceding Article).",
+  "An Ultimate Designated Parent Company may, where it has obtained the approval of the Commissioner of the Financial Services Agency, use for the calculation of the operational risk equivalent amount the ILM calculated by the method provided in Article 284, paragraph (1), item (iv) (including where it applies that method pursuant to item (i) of paragraph (1) of the preceding Article; the same applies hereinafter).",
+  "An Ultimate Designated Parent Company that has obtained the approval under paragraph (1) shall, except where the approval has been revoked under Article 290, paragraph (1), continue to use for the calculation of the operational risk equivalent amount the ILM calculated by the method provided in Article 284, paragraph (1), item (i).",
+  "In a case falling under Article 284, paragraph (1), item (iv) or Article 285, paragraph (1), item (i) (limited to where the approval under paragraph (1) has been obtained), an Ultimate Designated Parent Company that has not obtained the approval under paragraph (2) shall use the value designated by the Commissioner of the Financial Services Agency as the ILM for the calculation of the operational risk equivalent amount."
+ ]
+}

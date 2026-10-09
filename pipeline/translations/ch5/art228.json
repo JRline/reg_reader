@@ -1,0 +1,14 @@
+{
+ "number": "第二百二十八条",
+ "heading_en": "Determination of the Risk Weight Calculation Method",
+ "summary_ja": "IRBプール、SAプール、混合プール、再証券化エクスポージャーの別に、リスク・ウェイトの算出方式(内部格付手法準拠方式・外部格付準拠方式・標準的手法準拠方式・内部評価方式)を定める。",
+ "summary_en": "Determines which method (IRB-based, external-ratings-based, standardized-approach-based or internal assessment) applies to IRB pools, SA pools, mixed pools and re-securitization exposures.",
+ "paragraphs": [
+  "In calculating the risk weight to be applied to securitization exposures relating to an IRB pool, the IRB-based method shall be used.",
+  "In calculating the risk weight to be applied to securitization exposures relating to an SA pool, the method prescribed in the relevant item below shall be used according to the case listed in that item. (i) Where a rating by an eligible credit rating agency has been assigned, or where there exists an inferred rating provided in Article 237: the external-ratings-based method. (ii) Cases other than that listed in the preceding item: the standardized-approach-based method.",
+  "In the case of item (ii) of the preceding paragraph, in calculating the risk weight to be applied to liquidity facilities, credit enhancement and other securitization exposures to an ABCP program (limited to ABCP whose maturity is one year or less), an Ultimate Designated Parent Company adopting the internal ratings-based approach may, only where it has obtained the approval of the Commissioner of the Financial Services Agency, use the internal assessment approach prescribed in Subsection 4 in place of the standardized-approach-based method.",
+  "In calculating the risk weight to be applied to securitization exposures relating to a mixed pool, the method prescribed in the relevant item below shall be used according to the case listed in that item. (i) Where, among the exposures constituting the pool of underlying assets of the securitization exposure, the proportion accounted for by exposures satisfying all of the requirements in Article 1, item (lxxiii)(a) and (b) is 95% or more: the IRB-based method. (ii) Cases other than that listed in the preceding item: the method of calculating risk weights determined under the provisions of the preceding two paragraphs, deeming that mixed pool to be an SA pool.",
+  "Notwithstanding the preceding paragraphs, in calculating the risk weight to be applied to re-securitization exposures, the standardized-approach-based method shall be used."
+ ],
+ "terms": []
+}

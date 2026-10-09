@@ -1,0 +1,10 @@
+{
+ "number": "第百八十一条",
+ "heading_en": "Audit",
+ "summary_ja": "内部監査部署による内部格付制度の年一回以上の見直しと監査報告書の作成を定める。",
+ "summary_en": "Requires an independent internal audit department to review the internal rating system at least annually and prepare an audit report.",
+ "paragraphs": [
+  "An internal audit department with an independent function shall, at least once a year, review the management status of the credit risk management department, the estimated values of PD, LGD and EAD, the status of compliance with all applicable minimum requirements, and other aspects of the internal rating system and its operation, and shall prepare an audit report on the results."
+ ],
+ "terms": []
+}

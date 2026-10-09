@@ -1,0 +1,19 @@
+{
+ "number": "第百七十九条",
+ "heading_en": "Board of Directors, etc.",
+ "summary_ja": "内部格付手法採用最終指定親会社の内部統制について、取締役会等及び執行役員の承認・理解・報告等の七つの基準を定める。",
+ "summary_en": "Sets seven internal-control standards for an IRB-adopting UDPC, covering approval, understanding and reporting by the board of directors, etc. and managing officers.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall satisfy the following standards with respect to internal controls: (i) all material matters relating to the rating assignment procedures (meaning the series of procedures relating to the assignment of ratings to corporate, etc. exposures, the allocation of retail exposures to pools, and the estimation of PD, LGD and EAD for each exposure; the same applies hereinafter in this Subsection) have been approved by the board of directors, etc. and the managing officers; (ii) the directors, executive officers and managing officers understand the outline of the internal rating system of the Ultimate Designated Parent Company adopting the internal ratings-based approach and understand the relevant reports in detail; (iii) the managing officers report to the board of directors, etc. on material changes to, and exceptions from, existing policies that would have a significant effect on the operation of the internal rating system; (iv) the managing officers thoroughly understand the design and operation of the internal rating system and approve material differences between existing processes and practices; (v) the managing officers continuously ensure the proper operation of the internal rating system; (vi) the managing officers meet regularly with the persons in charge of the credit risk management department prescribed in paragraph (1) of the following Article to review the performance of the rating assignment procedures, areas for improvement, and the status of improvement of problems already identified; (vii) ratings play an essential role in reports to the board of directors, etc. and the managing officers, and material matters relating to ratings, such as the characteristics of each rating, rating migration, estimated values of the variables associated with each rating, and comparisons of estimated and actual values of PD (and, in the case of an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach, LGD and EAD), are reported to the board of directors, etc. and the managing officers."
+ ],
+ "terms": [
+  {
+   "ja": "格付付与手続",
+   "en": "rating assignment procedures"
+  }
+ ],
+ "sections_en": {
+  "第四節": "Minimum Requirements",
+  "第四節 第三款": "Internal Controls"
+ }
+}
