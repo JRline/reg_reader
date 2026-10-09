@@ -1,0 +1,305 @@
+{
+ "segments": {
+  "0": "In this Public Notice, the meanings of the terms set out in the following items are as prescribed in those items.",
+  "1": "(i) \"Subsidiary, etc.\" means a subsidiary, etc. prescribed in Article 57-2, paragraph (9) of the Financial Instruments and Exchange Act (hereinafter referred to as the \"Act\").",
+  "2": "(ii) \"Securitization transaction\" means a transaction having the nature of tiering the credit risk relating to underlying assets into two or more exposures in a senior-subordinated relationship and transferring part or all of that risk to a third party; provided, however, that this excludes transactions that fall under specialized lending receivables, exposures to specialized lending prescribed in Article 32-2, paragraph (1), commercial real estate exposures prescribed in Article 37, paragraph (1), and ADC exposures prescribed in Article 37-3.",
+  "3": "(ii-2) \"Re-securitization transaction\" means a securitization transaction in which part or all of the underlying assets are securitization exposures; provided, however, that this excludes any of the following:",
+  "4": "(a) A securitization transaction in which all of the underlying assets are securitization exposures, where the cash flows of the exposures relating to that securitization transaction can, under all circumstances, be replicated as the cash flows of the exposures relating to a single securitization transaction based on a single underlying asset pool that contains no securitization exposures.",
+  "5": "(b) A securitization transaction conducted by the Japanese government, a Japanese local government, or a Japanese government-affiliated agency prescribed in Article 28, paragraph (1) (referred to as \"national or local public bodies, etc.\" in (1) through (3)) with the principal purpose of facilitating financing for small and medium-sized enterprises, which satisfies all of the following requirements:",
+  "6": "(1) The national or local public body, etc. holds, as originator, the most subordinated portion of that securitization transaction.",
+  "7": "(2) The national or local public body, etc. is required by laws and regulations to keep the accounts of that securitization transaction separately.",
+  "8": "(3) The national or local public body, etc. periodically publishes default information on the underlying assets of that securitization transaction.",
+  "9": "(c) A transaction that falls under a qualifying short-term STC securitization exposure prescribed in Article 245-3, paragraph (2).",
+  "10": "(iii) \"Ultimate Designated Parent Company Adopting the Internal Ratings-Based Approach\" is a collective term for an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach and an Ultimate Designated Parent Company adopting the foundation internal ratings-based approach.",
+  "11": "(iv) \"Exposures to Corporates, etc.\" is a collective term for corporate exposures, sovereign exposures, and exposures to financial institutions, etc.",
+  "12": "(v) \"Retail Exposures\" is a collective term for residential real estate exposures, qualifying revolving retail exposures, and other retail exposures.",
+  "13": "(vi) \"Eligible Provisions\" means the following, recorded against exposures to which the internal ratings-based approach is applied (excluding those relating to securitization exposures) and for which the expected loss amount is calculated under Article 126, paragraphs (1) through (6) and paragraph (8):",
+  "14": "(a) Specific loan loss provisions.",
+  "15": "(b) Partial direct write-offs.",
+  "16": "(c) Specific overseas receivables provision accounts or their equivalent.",
+  "17": "(d) General loan loss provisions segregated as corresponding to the amount of credit risk-weighted assets calculated under the internal ratings-based approach pursuant to Article 127.",
+  "18": "(vii) \"Financial Institution\" means any of the following:",
+  "19": "(a) A financial institution prescribed in Article 2, paragraph (1) of the Deposit Insurance Act (Act No. 34 of 1971).",
+  "20": "(b) A bank holding company, etc. prescribed in Article 2, paragraph (5) of the Deposit Insurance Act.",
+  "21": "(c) The Norinchukin Bank.",
+  "22": "(d) An agricultural cooperative and a federation of agricultural cooperatives that conduct the business set out in Article 10, paragraph (1), item (iii) of the Agricultural Cooperatives Act (Act No. 132 of 1947).",
+  "23": "(e) A fishery cooperative that conducts the business set out in Article 11, paragraph (1), item (iv) of the Fishery Cooperatives Act (Act No. 242 of 1948) and a federation of fishery cooperatives that conducts the business set out in Article 87, paragraph (1), item (iv) of that Act, and a fishery processing cooperative that conducts the business set out in Article 93, paragraph (1), item (ii) of that Act and a federation of fishery processing cooperatives that conducts the business set out in Article 97, paragraph (1), item (ii) of that Act.",
+  "24": "(f) A Type I Financial Instruments Business Operator (meaning a financial instruments business operator (meaning a financial instruments business operator prescribed in Article 2, paragraph (9) of the Act; the same applies hereinafter) that conducts Type I financial instruments business prescribed in Article 28, paragraph (1) of the Act; the same applies hereinafter).",
+  "25": "(g) An Ultimate Designated Parent Company (meaning an ultimate designated parent company prescribed in Article 57-12, paragraph (3) of the Act; the same applies hereinafter).",
+  "26": "(vii-2) \"Central Counterparty\" means a person that engages in the financial instruments obligation assumption business prescribed in Article 2, paragraph (28) of the Act and a person that engages in the commodity transaction obligation assumption business prescribed in Article 2, paragraph (17) of the Commodity Derivatives Act (Act No. 239 of 1950), as well as a juridical person established under the laws and regulations of a foreign state that conducts, in a foreign state, business of the same kind as the financial instruments obligation assumption business or the commodity transaction obligation assumption business.",
+  "27": "(vii-3) \"Qualifying Central Counterparty\" means a person that provides an Ultimate Designated Parent Company with the information necessary for the Ultimate Designated Parent Company to calculate the amount of credit risk-weighted assets as provided in Article 248-8, paragraph (1), and that is any of the following:",
+  "28": "(a) A financial instruments clearing organization prescribed in Article 2, paragraph (29) of the Act.",
+  "29": "(b) A commodity clearing organization prescribed in Article 2, paragraph (18) of the Commodity Derivatives Act.",
+  "30": "(c) A foreign central counterparty that is established in a country where an appropriate regulatory and supervisory framework has been put in place, and that is subject to that regulation and supervision.",
+  "31": "(viii) \"Standardized Approach\" means the approach of calculating the amount of credit risk-weighted assets as provided in Chapter 3.",
+  "32": "(ix) \"Equity Exposures\" means the following:",
+  "33": "(a) Shares, or instruments having all of the following characteristics:",
+  "34": "(1) They are not redeemable.",
+  "35": "(2) They do not constitute an obligation of the issuer.",
+  "36": "(3) They confer on the holder a claim on the residual assets or a claim to dividends of surplus of the issuer.",
+  "37": "(b) Financial instruments with a structure similar to capital raising instruments (meaning a collective term for shares and other financial instruments that are included in capital; the same applies hereinafter) that are included in the amount of Tier 1 Capital of a financial institution (meaning the amount of Tier 1 Capital in the formula in item (ii) of the following Article).",
+  "38": "(c) Financial instruments that constitute an obligation of the issuer and that have any of the following characteristics:",
+  "39": "(1) The issuer can defer payment of the obligation indefinitely.",
+  "40": "(2) It is a condition that the obligation be paid through the issuance by the issuer of a fixed number of the financial instruments listed in (a) or (b), or the issuer may apply a fixed number of the financial instruments listed in (a) and (b) issued by it toward payment of the obligation.",
+  "41": "(3) It is a condition that the obligation be paid through the issuance by the issuer of an indeterminate number of the financial instruments listed in (a) or (b) and, all other conditions being equal, changes in the amount of the obligation are linked to the amount of a fixed number of the financial instruments listed in (a) and (b), or the issuer may choose the method of payment at its discretion.",
+  "42": "(4) The holder of the financial instrument has the option to demand settlement through the financial instruments listed in (a) or (b); provided, however, that this excludes cases where the financial instrument is traded as having the same nature as an obligation, or cases where it is recognized as appropriate to treat it as an obligation.",
+  "43": "(d) Obligations whose repayment amount is linked to returns from shares, obligations structured with the intention of producing the same economic effect as holding shares, securities, derivative transactions and other financial instruments.",
+  "44": "(x) \"Ultimate Designated Parent Company Adopting the Standardized Approach\" means an Ultimate Designated Parent Company and its consolidated subsidiaries, etc. (meaning subsidiaries, etc. of the Ultimate Designated Parent Company that are included in the scope of consolidation in calculating the Consolidated Capital Adequacy Ratio (meaning the consolidated capital adequacy ratio prescribed in the following Article; the same applies in items (xciii), (xcv) and (xcviii)); the same applies hereinafter) that do not use the internal ratings-based approach in calculating the amount of credit risk-weighted assets.",
+  "45": "(xi) \"Repo-Style Transactions\" means securities lending and borrowing transactions conducted against collateral and sales and purchases of securities with repurchase or resale conditions.",
+  "46": "(xii) \"Internal Ratings-Based Approach\" means the approach of calculating the amount of credit risk-weighted assets as provided in Chapter 4.",
+  "47": "(xii-2) \"Internal Model Approach\" means the approach of calculating the market risk equivalent amount by using a financial institution's own models, as provided in Chapter 6, Section 2.",
+  "48": "(xii-3) \"Ultimate Designated Parent Company Adopting the Internal Model Approach\" means an Ultimate Designated Parent Company that, in calculating the market risk equivalent amount, uses the internal model approach with the approval under Article 250.",
+  "49": "(xii-4) \"Standardized Method\" means the method of calculating the market risk equivalent amount as provided in Chapter 6, Section 3.",
+  "50": "(xii-5) \"Ultimate Designated Parent Company Adopting the Standardized Method\" means an Ultimate Designated Parent Company that, in calculating the market risk equivalent amount, does not use the internal model approach and uses the standardized method.",
+  "51": "(xii-6) \"Simplified Method\" means the method of calculating the market risk equivalent amount as provided in Chapter 6, Section 4.",
+  "52": "(xiii) \"Ultimate Designated Parent Company Adopting the Simplified Method\" means an Ultimate Designated Parent Company that, in calculating the market risk equivalent amount, uses only the simplified method.",
+  "53": "(xiv) \"Eligible Credit Rating Agency\" means a person separately specified by the Commissioner of the Financial Services Agency.",
+  "54": "(xv) \"Credit Risk Category\" means a category separately specified by the Commissioner of the Financial Services Agency as corresponding to the ratings of eligible credit rating agencies, or a category specified in Chapter 4 as corresponding to the country risk scores of the Organisation for Economic Co-operation and Development or of export credit agencies (meaning the country risk scores assigned under the Arrangement on Officially Supported Export Credits of the Organisation for Economic Co-operation and Development; where the country risk assessment category assigned by an export credit agency under that Arrangement differs from these, that export credit agency's category shall be used after being mapped to the country risk score; the same applies hereinafter).",
+  "55": "(xvi) \"Securitization Exposure\" means an exposure relating to a securitization transaction.",
+  "56": "(xvi-2) \"Re-securitization Exposure\" means an exposure relating to a re-securitization transaction.",
+  "57": "(xvii) \"Credit Derivative\" means the following:",
+  "58": "(a) Of the transactions set out in Article 2, paragraph (21), item (v) of the Act, a transaction relating to the event set out in item (v)(a) of that paragraph.",
+  "59": "(b) Of the transactions set out in Article 2, paragraph (22), item (vi) of the Act, a transaction relating to the event set out in item (vi)(a) of that paragraph.",
+  "60": "(c) Of the foreign market derivative transactions prescribed in Article 2, paragraph (23) of the Act, a transaction similar to the transactions set out in (a).",
+  "61": "(xviii) \"Protection Provider\" means a person that provides a credit risk mitigation effect (meaning the effect of the credit risk mitigation techniques prescribed in Chapter 3, Section 6 of reducing the credit risk of an exposure; the same applies hereinafter) by means of a credit derivative.",
+  "62": "(xviii-2) \"Eligible Protection Provider\" means, of protection providers, the person prescribed in (a) or (b) below according to the category of Ultimate Designated Parent Company listed there:",
+  "63": "(a) Ultimate Designated Parent Company adopting the standardized approach: those listed in the items of Article 98.",
+  "64": "(b) Ultimate Designated Parent Company adopting the internal ratings-based approach: a person to which an obligor rating satisfying the minimum requirements prescribed in Chapter 4, Section 4 has been assigned.",
+  "65": "(xix) \"First-to-Default Credit Derivative\" means a credit derivative under which multiple juridical persons or assets are designated in advance, a credit risk mitigation effect is provided when a predetermined credit event first occurs with respect to any of them, and the contract then terminates.",
+  "66": "(xx) \"Second-to-Default Credit Derivative\" means a credit derivative under which multiple juridical persons or assets are designated in advance, a credit risk mitigation effect is provided when a predetermined credit event occurs for the second time with respect to any of them, and the contract then terminates.",
+  "67": "(xxi) \"Eligible Financial Collateral\" means, where the simple approach (meaning the calculation method set out in Chapter 3, Section 6, Subsection 4; the same applies hereinafter) is used, the items listed in the items of Article 65, and, where the comprehensive approach (meaning the calculation method set out in Subsection 3 of that Section; the same applies hereinafter) is used, the items set out in Article 66.",
+  "68": "(xxii) \"Underlying Assets\" means assets falling under any of the following:",
+  "69": "(a) In an asset-transfer securitization transaction, the assets that the originator or another person transfers to a securitization special purpose entity.",
+  "70": "(b) In a synthetic securitization transaction, the underlying receivables, guaranteed receivables, secured receivables, etc. of the credit derivative.",
+  "71": "(xxii-2) \"Underlying Asset Pool\" means the aggregate of all underlying assets that are the subject of the transfer of credit risk in a securitization transaction.",
+  "72": "(xxiii) \"Listed Shares\" means shares traded on an exchange financial instruments market (meaning an exchange financial instruments market prescribed in Article 2, paragraph (17) of the Act; the same applies hereinafter), an over-the-counter securities market (meaning an over-the-counter securities market prescribed in Article 67, paragraph (2) of the Act; the same applies hereinafter), or a foreign financial instruments market (meaning a foreign financial instruments market prescribed in Article 2, paragraph (8), item (iii)(b) of the Act; the same applies hereinafter).",
+  "73": "(xxiv) \"Portfolio\" means an aggregate of one or more transactions and assets.",
+  "74": "(xxv) \"Historical Data\" means figures representing price movements that have actually occurred in the past.",
+  "75": "(xxvi) \"Net Position\" means the position remaining as a result of offsetting positions that are offsetting (meaning that one position and another position are in a state in which each reduces the loss that may arise from the other; the same applies hereinafter).",
+  "76": "(xxvii) \"Position\" means the holdings of a transaction or an asset.",
+  "77": "(xxviii) \"Value at Risk\" means, on the assumption that a particular position is held for a certain period, the maximum amount of loss expected within a certain probability range due to future price movements.",
+  "78": "(xxix) \"Underlying Claim\" means an exposure that is the subject of the credit risk mitigation effect of a credit derivative.",
+  "79": "(xxx) \"Reference Obligation for Settlement\" is a collective term for the obligations used to calculate the payment amount upon the occurrence of an event prescribed in Article 96, item (i), and the obligations that are permitted to be delivered for settlement where settlement is made by an obligation of the obligor of the underlying claim.",
+  "80": "(xxxi) \"Reference Obligation for Determining a Credit Event\" means an obligation that can be used to determine whether an event prescribed in Article 96, item (i) has occurred with respect to a credit derivative.",
+  "81": "(xxxii) \"Nth-to-Default Credit Derivative\" means a credit derivative under which multiple juridical persons or assets are designated, a credit risk mitigation effect is provided based solely on credit events occurring in a specified order determined in advance with respect to them, and the contract then terminates.",
+  "82": "(xxxiii) \"Ultimate Designated Parent Company Adopting the Foundation Internal Ratings-Based Approach\" means an Ultimate Designated Parent Company and its consolidated subsidiaries, etc. that have received the approval of the Commissioner of the Financial Services Agency to use the internal ratings-based approach on the condition that estimates of LGD and EAD are not used for exposures to corporates, etc.",
+  "83": "(xxxiv) \"Ultimate Designated Parent Company Adopting the Advanced Internal Ratings-Based Approach\" means an Ultimate Designated Parent Company and its consolidated subsidiaries, etc. that have received the approval of the Commissioner of the Financial Services Agency to use the internal ratings-based approach using estimates of LGD and EAD for exposures to corporates, etc.",
+  "84": "(xxxv) \"Corporate Exposures\" means exposures to juridical persons, trusts, individuals who are business operators, and other persons equivalent to these (hereinafter referred to as \"corporates\") (excluding those that fall under sovereign exposures or exposures to financial institutions, etc.).",
+  "85": "(xxxvi) \"Sovereign Exposures\" means the following exposures:",
+  "86": "(a) Exposures to central governments and central banks.",
+  "87": "(b) Exposures to local governments (excluding those to be repaid solely from the revenue of a specific project).",
+  "88": "(c) Exposures to the Japan Finance Organization for Municipalities.",
+  "89": "(d) Exposures to the Japanese government-affiliated agencies prescribed in Article 28.",
+  "90": "(e) Exposures to land development public corporations, local housing supply corporations, and local road public corporations.",
+  "91": "(f) Exposures to public sector entities other than foreign central governments (public sector entities other than central governments are as defined by the respective countries for their public sectors; the same applies hereinafter) that are treated as sovereign exposures in the capital adequacy ratio regulation of the country in which that public sector entity is established.",
+  "92": "(g) Exposures to the International Bank for Reconstruction and Development, the International Finance Corporation, the Multilateral Investment Guarantee Agency, the International Development Association, the Asian Development Bank, the African Development Bank, the European Bank for Reconstruction and Development, the Inter-American Development Bank, the European Investment Bank, the European Investment Fund, the Nordic Investment Bank, the Caribbean Development Bank, the Islamic Development Bank, the International Finance Facility for Immunisation, the Council of Europe Development Bank, and the Asian Infrastructure Investment Bank.",
+  "93": "(h) Exposures to the Bank for International Settlements, the International Monetary Fund, the European Central Bank, the European Union, the European Stability Mechanism, and the European Financial Stability Facility.",
+  "94": "(i) Exposures to credit guarantee corporations, etc. (meaning credit guarantee corporations, agricultural credit fund associations, and fishery credit fund associations; the same applies hereinafter)."
+ },
+ "terms": [
+  {
+   "ja": "子法人等",
+   "en": "Subsidiary, etc."
+  },
+  {
+   "ja": "証券化取引",
+   "en": "Securitization transaction"
+  },
+  {
+   "ja": "再証券化取引",
+   "en": "Re-securitization transaction"
+  },
+  {
+   "ja": "内部格付手法採用最終指定親会社",
+   "en": "Ultimate Designated Parent Company Adopting the Internal Ratings-Based Approach"
+  },
+  {
+   "ja": "事業法人等向けエクスポージャー",
+   "en": "Exposures to Corporates, etc."
+  },
+  {
+   "ja": "リテール向けエクスポージャー",
+   "en": "Retail Exposures"
+  },
+  {
+   "ja": "適格引当金",
+   "en": "Eligible Provisions"
+  },
+  {
+   "ja": "金融機関",
+   "en": "Financial Institution"
+  },
+  {
+   "ja": "中央清算機関",
+   "en": "Central Counterparty"
+  },
+  {
+   "ja": "適格中央清算機関",
+   "en": "Qualifying Central Counterparty"
+  },
+  {
+   "ja": "標準的手法",
+   "en": "Standardized Approach"
+  },
+  {
+   "ja": "株式等エクスポージャー",
+   "en": "Equity Exposures"
+  },
+  {
+   "ja": "標準的手法採用最終指定親会社",
+   "en": "Ultimate Designated Parent Company Adopting the Standardized Approach"
+  },
+  {
+   "ja": "レポ形式の取引",
+   "en": "Repo-Style Transactions"
+  },
+  {
+   "ja": "内部格付手法",
+   "en": "Internal Ratings-Based Approach"
+  },
+  {
+   "ja": "内部モデル方式",
+   "en": "Internal Model Approach"
+  },
+  {
+   "ja": "内部モデル方式採用最終指定親会社",
+   "en": "Ultimate Designated Parent Company Adopting the Internal Model Approach"
+  },
+  {
+   "ja": "標準的方式",
+   "en": "Standardized Method"
+  },
+  {
+   "ja": "標準的方式採用最終指定親会社",
+   "en": "Ultimate Designated Parent Company Adopting the Standardized Method"
+  },
+  {
+   "ja": "簡易的方式",
+   "en": "Simplified Method"
+  },
+  {
+   "ja": "簡易的方式採用最終指定親会社",
+   "en": "Ultimate Designated Parent Company Adopting the Simplified Method"
+  },
+  {
+   "ja": "適格格付機関",
+   "en": "Eligible Credit Rating Agency"
+  },
+  {
+   "ja": "信用リスク区分",
+   "en": "Credit Risk Category"
+  },
+  {
+   "ja": "証券化エクスポージャー",
+   "en": "Securitization Exposure"
+  },
+  {
+   "ja": "再証券化エクスポージャー",
+   "en": "Re-securitization Exposure"
+  },
+  {
+   "ja": "クレジット・デリバティブ",
+   "en": "Credit Derivative"
+  },
+  {
+   "ja": "プロテクション提供者",
+   "en": "Protection Provider"
+  },
+  {
+   "ja": "適格プロテクション提供者",
+   "en": "Eligible Protection Provider"
+  },
+  {
+   "ja": "ファースト・トゥ・デフォルト型クレジット・デリバティブ",
+   "en": "First-to-Default Credit Derivative"
+  },
+  {
+   "ja": "セカンド・トゥ・デフォルト型クレジット・デリバティブ",
+   "en": "Second-to-Default Credit Derivative"
+  },
+  {
+   "ja": "適格金融資産担保",
+   "en": "Eligible Financial Collateral"
+  },
+  {
+   "ja": "原資産",
+   "en": "Underlying Assets"
+  },
+  {
+   "ja": "原資産プール",
+   "en": "Underlying Asset Pool"
+  },
+  {
+   "ja": "上場株式",
+   "en": "Listed Shares"
+  },
+  {
+   "ja": "ポートフォリオ",
+   "en": "Portfolio"
+  },
+  {
+   "ja": "ヒストリカル・データ",
+   "en": "Historical Data"
+  },
+  {
+   "ja": "ネット・ポジション",
+   "en": "Net Position"
+  },
+  {
+   "ja": "ポジション",
+   "en": "Position"
+  },
+  {
+   "ja": "バリュー・アット・リスク",
+   "en": "Value at Risk"
+  },
+  {
+   "ja": "原債権",
+   "en": "Underlying Claim"
+  },
+  {
+   "ja": "決済のための参照債務",
+   "en": "Reference Obligation for Settlement"
+  },
+  {
+   "ja": "信用事由判断のための参照債務",
+   "en": "Reference Obligation for Determining a Credit Event"
+  },
+  {
+   "ja": "特定順位参照型クレジット・デリバティブ",
+   "en": "Nth-to-Default Credit Derivative"
+  },
+  {
+   "ja": "基礎的内部格付手法採用最終指定親会社",
+   "en": "Ultimate Designated Parent Company Adopting the Foundation Internal Ratings-Based Approach"
+  },
+  {
+   "ja": "先進的内部格付手法採用最終指定親会社",
+   "en": "Ultimate Designated Parent Company Adopting the Advanced Internal Ratings-Based Approach"
+  },
+  {
+   "ja": "事業法人向けエクスポージャー",
+   "en": "Corporate Exposures"
+  },
+  {
+   "ja": "ソブリン向けエクスポージャー",
+   "en": "Sovereign Exposures"
+  },
+  {
+   "ja": "法",
+   "en": "Act"
+  },
+  {
+   "ja": "信用保証協会等",
+   "en": "credit guarantee corporations, etc."
+  },
+  {
+   "ja": "事業法人",
+   "en": "corporates"
+  },
+  {
+   "ja": "国等",
+   "en": "national or local public bodies, etc."
+  }
+ ]
+}
