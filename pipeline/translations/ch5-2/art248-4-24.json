@@ -1,0 +1,11 @@
+{
+ "number": "第二百四十八条の四の二十四",
+ "heading_en": "Sensitivities, etc. of Delta Risk Factors for Reference Credit Spreads",
+ "summary_ja": "参照先のクレジット・スプレッドのデルタ・リスク・ファクターは、バケット内の全参照先・全テナーのスプレッドの絶対変化とし、リスク・ウェイトを表で定める。",
+ "summary_en": "The reference credit spread delta risk factor is the absolute change in credit spreads across all reference names and tenors in a bucket, with risk weights from a table.",
+ "paragraphs": [
+  "The delta risk factor relating to reference credit spreads shall be the absolute change in the credit spreads of all tenors relating to all reference names in the bucket.",
+  "The \"absolute change in the credit spread\" in the preceding paragraph means the value obtained by dividing the change in the value of CVA or of a CVA hedging instrument when the credit spreads of all tenors relating to all reference names in the bucket are changed by one basis point by 0.0001.",
+  "The risk weight RW_{k} of the risk factor provided in paragraph (1) shall be as set out in the following table, according to the bucket number. {{T:p293t1}}"
+ ]
+}

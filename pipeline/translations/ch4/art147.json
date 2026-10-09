@@ -1,0 +1,31 @@
+{
+ "number": "第百四十七条",
+ "heading_en": "Amount of Credit Risk-Weighted Assets for the Default Risk Portion of Eligible Purchased Corporate, etc. Exposures",
+ "summary_ja": "購入事業法人等向けエクスポージャーのデフォルト・リスク相当部分の信用リスク・アセットの額の算出方法（PD・LGD・EAD・実効マチュリティの特例を含む）を定める。",
+ "summary_en": "Prescribes how to calculate credit risk-weighted assets for the default risk portion of purchased corporate, etc. exposures, including special treatments of PD, LGD, EAD and effective maturity.",
+ "paragraphs": [
+  "Articles 129, 132 and 133 apply mutatis mutandis to the calculation of the amount of credit risk-weighted assets for the default risk portion of purchased corporate, etc. exposures. In this case, the phrase \"amount of credit risk-weighted assets\" in these provisions shall be deemed to be replaced with \"amount of credit risk-weighted assets for the default risk portion\".",
+  "Where it is difficult to estimate the PD of an eligible purchased corporate, etc. exposure and the pool of eligible purchased corporate, etc. exposures to which that exposure belongs includes no subordinated claims, an Ultimate Designated Parent Company adopting the foundation internal ratings-based approach may, in calculating the amount of credit risk-weighted assets for the default risk portion of that eligible purchased corporate, etc. exposure, use as the PD, in place of the PD provided in Article 132, either the estimate, expressed as a percentage, of the one-year probability of default corresponding to the pool of eligible purchased corporate, etc. exposures (which shall not be lower than 0.05%) or the value obtained by dividing EL by 40%, and may set the LGD at 40%.",
+  "Where it is difficult to estimate the PD of an eligible purchased corporate, etc. exposure and the pool of exposures to which that exposure belongs may include subordinated claims, an Ultimate Designated Parent Company adopting the foundation internal ratings-based approach may, notwithstanding Article 132, in calculating the amount of credit risk-weighted assets for the default risk portion of that eligible purchased corporate, etc. exposure, use EL as the PD in place of the PD estimate, and may set the LGD at 100%.",
+  "Notwithstanding Article 133, an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach may, in calculating the amount of credit risk-weighted assets for the default risk portion of an eligible purchased corporate, etc. exposure, use, in place of the LGD estimate, the value obtained by dividing the long-term loss rate corresponding to the pool of eligible purchased corporate, etc. exposures (hereinafter referred to as the \"long-term loss rate\") by the PD; provided, however, that the value obtained by dividing the long-term loss rate by the PD shall not be lower than the long-run average loss given default provided in Article 194, paragraph (1), item (i).",
+  "Notwithstanding Article 132, an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach may, in calculating the amount of credit risk-weighted assets for the default risk portion of an eligible purchased corporate, etc. exposure, use as the PD, in place of the PD estimate, the value obtained by dividing the long-term loss rate by the LGD.",
+  "The EAD for the default risk of purchased corporate, etc. exposures shall be the amount provided in Article 134 (hereinafter referred to in this Section as \"EAD_{dilution} for purchased corporate, etc. exposures\") less the sum of the amount obtained by multiplying the amount of credit risk-weighted assets for the dilution risk portion by 8% and the amount obtained by multiplying EAD_{dilution} for purchased corporate, etc. exposures by EL_{dilution} (hereinafter referred to in this Article as the \"required capital amount for dilution risk\").",
+  "The EAD for the undrawn amount of a credit facility for revolving purchased receivables shall be the amount obtained by multiplying the undrawn amount of the credit facility by 40%, less the required capital amount for dilution risk; provided, however, that where this is below zero, it shall be zero.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach calculates the amount of credit risk-weighted assets of eligible purchased corporate, etc. exposures using the top-down approach, the effective maturity (M*) of those eligible purchased corporate, etc. exposures shall be the period obtained by calculating the effective maturity (M) under Article 135 for each individual eligible purchased corporate, etc. exposure within the pool of eligible purchased corporate, etc. exposures to which those exposures belong, and taking the average weighted by the outstanding balance of the eligible purchased corporate, etc. exposures.",
+  "Notwithstanding the preceding paragraph and Article 135, the effective maturity for the undrawn amount of a credit facility for revolving purchased receivables shall be the period obtained by adding to the remaining term of the commitment the maturity of the receivable having the longest possible maturity among the receivables that may be drawn in the future and acquired under the sales contract for the revolving purchased receivables, and the maturity of the credit facility relating to the purchased receivables; provided, however, that where covenants, early amortization provisions, or other measures are in place to prevent a material deterioration, throughout the term of the credit facility, in the quality of purchased receivables that the Ultimate Designated Parent Company adopting the internal ratings-based approach will acquire in the future under the sales contract for the revolving purchased receivables, the effective maturity (M*) calculated pursuant to the preceding paragraph may be used as the maturity for the undrawn amount of that credit facility."
+ ],
+ "terms": [
+  {
+   "ja": "長期的な損失率",
+   "en": "long-term loss rate"
+  },
+  {
+   "ja": "購入事業法人等向けエクスポージャーに係るEAD_{dilution}",
+   "en": "EAD_{dilution} for purchased corporate, etc. exposures"
+  },
+  {
+   "ja": "希薄化リスクに係る所要自己資本の額",
+   "en": "required capital amount for dilution risk"
+  }
+ ]
+}

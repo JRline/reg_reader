@@ -1,0 +1,48 @@
+{
+ "number": "第百五十一条",
+ "heading_en": "Definitions Relating to Lease Transactions",
+ "summary_ja": "この章におけるリース取引、残価リスク及び見積残存価額の意義を定める。",
+ "summary_en": "Defines lease transaction, residual value risk and estimated residual value for the purposes of this Chapter.",
+ "sections_en": {
+  "第三節 第七款": "Lease Transactions"
+ },
+ "paragraphs": [
+  "In this Chapter, a \"lease transaction\" means a transaction in which a lessor who owns a specified asset (hereinafter referred to in this Subsection as the \"leased asset\") (hereinafter referred to in this Subsection as the \"lessor\") grants the borrower of the leased asset (hereinafter referred to in this Subsection as the \"lessee\") the right to use and benefit from it over an agreed period (hereinafter referred to in this Subsection as the \"lease term\"), and the lessee pays the lessor an agreed fee (hereinafter referred to in this Subsection as \"lease payments\").",
+  "In this Chapter, \"residual value risk\" means the risk that the lessor suffers a loss equal to the difference because the fair market value of the leased asset on the end date of the lease term falls below the estimated residual value.",
+  "In this Chapter, \"estimated residual value\" means the value of the leased asset at the end of the lease term as estimated by the lessor at the start date of the lease term."
+ ],
+ "terms": [
+  {
+   "ja": "リース取引",
+   "en": "lease transaction"
+  },
+  {
+   "ja": "リース物件",
+   "en": "leased asset"
+  },
+  {
+   "ja": "レッサー",
+   "en": "lessor"
+  },
+  {
+   "ja": "レッシー",
+   "en": "lessee"
+  },
+  {
+   "ja": "リース期間",
+   "en": "lease term"
+  },
+  {
+   "ja": "リース料",
+   "en": "lease payments"
+  },
+  {
+   "ja": "残価リスク",
+   "en": "residual value risk"
+  },
+  {
+   "ja": "見積残存価額",
+   "en": "estimated residual value"
+  }
+ ]
+}

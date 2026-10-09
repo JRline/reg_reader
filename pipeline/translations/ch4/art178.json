@@ -1,0 +1,11 @@
+{
+ "number": "第百七十八条",
+ "heading_en": "Stress Tests for Credit Risk",
+ "summary_ja": "信用リスクについて、緩やかな景気後退シナリオを少なくとも考慮したストレス・テストを定期的に実施し、格付遷移等を考慮する。",
+ "summary_en": "Requires regular credit risk stress tests reflecting at least a mild recession scenario, with requirements on rating migration, credit deterioration and external rating history.",
+ "paragraphs": [
+  "In order to assess the effect of specific conditions on the required capital amount for credit risk, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall regularly conduct meaningful and appropriately conservative credit risk stress tests that take into account at least the effect of a mild recession scenario, for the portfolios that account for the majority of the exposures of that Ultimate Designated Parent Company, etc.",
+  "In conducting the stress tests prescribed in the preceding paragraph, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall satisfy the following requirements: (i) Forecast rating migrations for at least some exposures using internal data; (ii) Obtain information on the effects that may arise if credit conditions worsen further, by considering the effect of a slight deterioration in credit conditions on the ratings of that Ultimate Designated Parent Company; (iii) Take into account the historical rating migrations of external ratings, by roughly mapping the ratings of that Ultimate Designated Parent Company to external rating categories or by other methods."
+ ],
+ "terms": []
+}

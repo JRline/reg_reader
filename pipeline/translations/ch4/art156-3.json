@@ -1,0 +1,10 @@
+{
+ "number": "第百五十六条の三",
+ "heading_en": "Exposures Relating to the Portion of Specified Items Not Included in Adjustment Items",
+ "summary_ja": "特定項目のうち調整項目に算入されなかった部分のエクスポージャーに二百五十パーセントのリスク・ウェイトを適用する。",
+ "summary_en": "Applies a 250% risk weight to exposures relating to the portion of specified items not included in the Common Equity Tier 1 adjustment items.",
+ "paragraphs": [
+  "Notwithstanding Articles 129 through the preceding Article, for an Ultimate Designated Parent Company adopting the internal ratings-based approach, the amount of credit risk-weighted assets for the exposure relating to the portion of specified items that was not included in the amount of adjustment items relating to Common Equity Tier 1 Capital in the formula in Article 2, item (i) shall be the amount obtained by multiplying the amount of that exposure (meaning EAD) by a risk weight of 250%."
+ ],
+ "terms": []
+}

@@ -1,0 +1,11 @@
+{
+ "number": "第百七十一条",
+ "heading_en": "Allocation of Retail Exposures to Pools",
+ "summary_ja": "リテール向けエクスポージャーを信用供与の審査手続でプールに割り当て、保証等を勘案した場合は保証等がないと仮定した割当て及び推計も行う。",
+ "summary_en": "Requires retail exposures to be allocated to pools in the credit review procedure, and, where guarantees are taken into account, also allocated and estimated as if there were none.",
+ "paragraphs": [
+  "For retail exposures, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall allocate each exposure to a pool in the credit extension review procedure.",
+  "Where the credit risk mitigation effect of a guarantee or credit derivative is taken into account in the allocation to pools under the preceding paragraph, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall, in addition to the allocation under that paragraph, carry out allocation to pools on the assumption that there is no guarantee or credit derivative, and the estimation of PD, LGD and EAD based on that allocation."
+ ],
+ "terms": []
+}

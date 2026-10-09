@@ -1,0 +1,14 @@
+{
+ "number": "第百四十九条",
+ "heading_en": "Amount of Credit Risk-Weighted Assets for the Dilution Risk Portion of Purchased Receivables",
+ "summary_ja": "購入債権の希薄化リスク相当部分の信用リスク・アセットの額は、PDをEL_{dilution}、LGDを100%、マチュリティを一年として算出する。",
+ "summary_en": "Credit risk-weighted assets for the dilution risk portion are calculated with PD equal to EL_{dilution}, LGD of 100%, the relevant EAD_{dilution}, and a maturity of one year.",
+ "paragraphs": [
+  "Article 129, paragraph (1) applies mutatis mutandis to the calculation of the amount of credit risk-weighted assets for the dilution risk portion of purchased receivables. In this case, the phrase \"amount of credit risk-weighted assets\" in that paragraph shall be deemed to be replaced with \"amount of credit risk-weighted assets for the dilution risk portion\".",
+  "The PD used in the calculation under the preceding paragraph shall be EL_{dilution}.",
+  "The LGD used in the calculation under paragraph (1) shall be 100%.",
+  "The EAD used in the calculation under paragraph (1) shall be EAD_{dilution} for purchased corporate, etc. exposures or EAD_{dilution} for purchased retail exposures.",
+  "The maturity used in the calculation under paragraph (1) shall be one year."
+ ],
+ "terms": []
+}

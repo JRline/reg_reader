@@ -1,0 +1,10 @@
+{
+ "number": "第百五十二条",
+ "heading_en": "Amount of Credit Risk-Weighted Assets for Lease Payments",
+ "summary_ja": "リース料に係る信用リスク・アセットの額は、利息相当額控除後のリース料をEAD、リース期間をマチュリティとして算出する。",
+ "summary_en": "Credit risk-weighted assets for lease payments are calculated using lease payments net of the interest-equivalent amount as EAD and the lease term as maturity.",
+ "paragraphs": [
+  "Notwithstanding Subsections 2 and 3, the amount of credit risk-weighted assets for lease payments shall be calculated using, as EAD, the amount obtained by deducting from the lease payments the amount reasonably estimated by the lessor at the start date of the lease term as the amount equivalent to interest, using the lease term as the maturity (M), and using the PD, LGD and sales (total assets in the case set forth in the proviso to Article 1, item (li)) (S) corresponding to the lessee; provided, however, that this does not preclude calculating the maturity (M), in place of the lease term, on the amount obtained by deducting the interest-equivalent amount from the lease payments based on Article 135, paragraph (1)."
+ ],
+ "terms": []
+}

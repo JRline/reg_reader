@@ -1,0 +1,20 @@
+{
+ "number": "第百六十八条",
+ "heading_en": "Preparation of Documentation on the Internal Rating System and Its Operation",
+ "summary_ja": "信用リスク管理指針に内部格付制度の設計及び運用を詳細に記載し、最低要件の遵守を証明するものとし、記載事項を定める。",
+ "summary_en": "Requires a credit risk management policy documenting the design and operation of the internal rating system and demonstrating compliance with the minimum requirements, and lists its minimum contents.",
+ "sections_en": {
+  "第四節 第一款 第六目": "Documentation of the Internal Rating System"
+ },
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall describe in detail the design and operation of the internal rating system in its credit risk management policy.",
+  "The credit risk management policy referred to in the preceding paragraph shall demonstrate that the Ultimate Designated Parent Company adopting the internal ratings-based approach complies with the minimum requirements set out in this Section (excluding Subsections 7 through 9).",
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall describe in its credit risk management policy the following matters and other matters: (i) Portfolio classification; (ii) The rating and pool criteria and the rationale for selecting those criteria (providing an analysis showing that those criteria, and the procedures for assigning ratings and allocating to pools based on them, are highly likely to result in ratings and pool allocations appropriate to risk); (iii) The department that assigns ratings and allocates to pools, the definition of exceptions to rating assignment and pool allocation, the department with authority to approve exceptions, and other organization relating to rating assignment and pool allocation (including a description of the procedures for rating assignment and pool allocation and of the internal control arrangements); (iv) The frequency and procedures of review of rating assignment and pool allocation, and oversight of the rating assignment and pool allocation procedures by the board of directors or a conference body that is a subordinate organ of the board of directors (hereinafter referred to as the \"board of directors, etc.\") and by managing officers (meaning those delegated executive authority for credit risk management; the same applies in Article 179); (v) The history of major changes to the rating assignment and pool allocation procedures; (vi) The specific definitions of default and loss used by the Ultimate Designated Parent Company adopting the internal ratings-based approach, and the consistency of those definitions with the definitions provided in Articles 183, 184 and 193."
+ ],
+ "terms": [
+  {
+   "ja": "取締役会等",
+   "en": "board of directors, etc."
+  }
+ ]
+}

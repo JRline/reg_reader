@@ -1,0 +1,10 @@
+{
+ "number": "第百六十九条",
+ "heading_en": "Description of Additional Matters Concerning Models",
+ "summary_ja": "格付付与等の手続でモデルを使用する場合に、信用リスク管理指針へ記載する追加事項を定める。",
+ "summary_en": "Lists the additional matters to be described in the credit risk management policy where models are used in rating assignment and pool allocation.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach uses models in the procedures for assigning ratings and allocating to pools, it shall describe the following matters in its credit risk management policy: (i) An outline of the model (a detailed outline of the theory, assumptions, or mathematical and empirical basis for assigning estimates to ratings, obligors, exposures or pools, and of the data sources used to build the model); (ii) The assessment horizon and sample used to build the model, and rigorous statistical procedures for validating the model, such as out-of-sample testing; (iii) Circumstances in which the model is assumed not to function effectively."
+ ],
+ "terms": []
+}

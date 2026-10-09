@@ -1,0 +1,16 @@
+{
+ "number": "第百七十条",
+ "heading_en": "Assignment of Ratings to Corporate, etc. Exposures",
+ "summary_ja": "事業法人等向けエクスポージャーの債務者・保証人等への債務者格付の付与、案件格付との関連付け、個別付与の原則及び個別誤方向リスクの特定方法を定める。",
+ "summary_en": "Requires obligor ratings for obligors and guarantors and facility ratings by transaction, individual rating of entities with a group exception, and a method for identifying specific wrong-way risk.",
+ "sections_en": {
+  "第四節 第二款": "Operation of the Internal Rating System",
+  "第四節 第二款 第一目": "Exposures Subject to Rating"
+ },
+ "paragraphs": [
+  "For corporate, etc. exposures, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall assign obligor ratings to the obligor of the exposure and to the guarantor or protection provider (limited to cases where the credit risk mitigation effect of the guarantee or credit derivative by that guarantor or protection provider is taken into account), and shall, in the review procedure, associate the exposure with a facility rating according to the characteristics of the transaction.",
+  "In assigning an obligor rating to an obligor of a corporate, etc. exposure, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall assign it individually on an entity, etc. basis; provided, however, that this does not apply where that Ultimate Designated Parent Company has established a policy of assigning the same obligor rating to some or all of the parent company, etc., subsidiaries, etc. and affiliated companies, etc. of that entity, etc., and collectively assigns the same obligor rating in accordance with that policy.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach has received the approval under Article 49, paragraph (1), it shall establish a method of identifying specific wrong-way risk."
+ ],
+ "terms": []
+}

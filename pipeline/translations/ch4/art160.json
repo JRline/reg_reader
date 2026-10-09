@@ -1,0 +1,15 @@
+{
+ "number": "第百六十条",
+ "heading_en": "Rating Structure for Corporate, etc. Exposures",
+ "summary_ja": "事業法人等向けエクスポージャーの格付の分布、格付数の下限及び格付の定義の基準を定める。",
+ "summary_en": "Sets requirements on the distribution of corporate, etc. exposures across ratings, minimum numbers of ratings, and rating definitions.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall distribute corporate, etc. exposures appropriately so as not to concentrate them excessively in any obligor rating or facility rating; provided, however, that this does not apply where the range of PD corresponding to that obligor rating, and the fact that the default risk of obligors assigned that obligor rating falls within that range, are supported by sufficient empirically verified data.",
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish, for corporate, etc. exposures, at least seven obligor ratings for non-defaulted exposures and at least one obligor rating for defaulted exposures.",
+  "In defining each obligor rating, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish criteria used to judge the level of risk typical of obligors assigned that obligor rating and the degree of credit risk corresponding to that rating.",
+  "An Ultimate Designated Parent Company adopting the advanced internal ratings-based approach shall establish a sufficient number of facility ratings so as not to assign the same facility rating to exposures whose LGDs differ substantially.",
+  "The criteria that an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach uses to define facility ratings shall be based on empirically verified data.",
+  "Notwithstanding the preceding paragraphs, an Ultimate Designated Parent Company adopting the internal ratings-based approach that uses slotting criteria for specialized lending exposures shall establish at least four ratings for non-defaulted claims and at least one rating for defaulted claims."
+ ],
+ "terms": []
+}

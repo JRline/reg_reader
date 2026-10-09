@@ -1,0 +1,23 @@
+{
+ "number": "第百五十七条",
+ "heading_en": "Internal Rating System",
+ "summary_ja": "内部格付制度を設ける義務と、業種又は市場ごとに複数の制度を設ける場合の割当基準の整備及び恣意的割当ての禁止を定める。",
+ "summary_en": "Requires an internal rating system, and, where several systems are used, documented assignment criteria and a ban on arbitrary assignment to improve the capital ratio.",
+ "sections_en": {
+  "第四節": "Minimum Requirements",
+  "第四節 第一款": "Design of the Internal Rating System",
+  "第四節 第一款 第一目": "Internal Rating System"
+ },
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish methods, procedures, controls, data collection and information systems (hereinafter collectively referred to as the \"internal rating system\") for assessing credit risk, assigning internal ratings to exposures, and estimating PD, LGD and EAD (limited, with respect to the estimation of LGD and EAD for corporate, etc. exposures to which the advanced internal ratings-based approach can be applied, to an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach).",
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach may establish different internal rating systems for specific industries or markets within each asset class.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach establishes more than one internal rating system pursuant to the preceding paragraph, it shall prepare criteria for assigning each obligor to the internal rating system most suitable for determining the risk of that obligor, and shall maintain documents setting out those criteria.",
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach establishes more than one internal rating system pursuant to paragraph (2), it shall not arbitrarily assign obligors to internal rating systems in order to improve the Consolidated Capital Adequacy Ratio."
+ ],
+ "terms": [
+  {
+   "ja": "内部格付制度",
+   "en": "internal rating system"
+  }
+ ]
+}

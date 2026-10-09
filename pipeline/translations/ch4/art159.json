@@ -1,0 +1,13 @@
+{
+ "number": "第百五十九条",
+ "heading_en": "Internal Rating System for Retail Exposures",
+ "summary_ja": "リテール向けエクスポージャーについて、リスクに基づくプールへの割当てを行う内部格付制度を設け、プールごとにPD、LGD及びEADを推計する。",
+ "summary_en": "Requires, for retail exposures, a risk-based pool allocation system, with allocation requirements and risk factors, and PD, LGD and EAD estimated per pool.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish, for retail exposures, an internal rating system that is based on the risk of the obligor and of the transaction relating to the exposure and takes the characteristics of each into account.",
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall allocate retail exposures to pools so as to satisfy the following requirements: (i) Risk is appropriately differentiated by that allocation; (ii) Each pool consists of sufficiently similar exposures; (iii) That allocation makes it possible to estimate, accurately and on an ongoing basis, the loss characteristics of each pool.",
+  "In allocating exposures to the pools referred to in the items of the preceding paragraph, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall take into account the following factors and other risk characteristics: (i) The risk characteristics of the obligor; (ii) The risk characteristics of the transaction (where there is a cross-collateralization clause, this shall in all cases be taken into account); (iii) The delinquency status of the exposure.",
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall estimate PD, LGD and EAD for each pool of retail exposures; provided, however, that this does not preclude the PD, LGD or EAD estimates of more than one pool being identical."
+ ],
+ "terms": []
+}

@@ -1,0 +1,13 @@
+{
+ "number": "第百五十八条",
+ "heading_en": "Internal Rating System for Corporate, etc. Exposures",
+ "summary_ja": "事業法人等向けエクスポージャーについて、債務者格付と案件格付からなる内部格付制度を設け、債務者格付の性質を定める。",
+ "summary_en": "Requires, for corporate, etc. exposures, an internal rating system of obligor ratings and facility ratings, and sets out the properties obligor ratings must have.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish, for corporate, etc. exposures, an internal rating system consisting of obligor ratings and facility ratings; provided, however, that where an Ultimate Designated Parent Company adopting the internal ratings-based approach applies slotting criteria to specialized lending exposures, it may use, for those specialized lending exposures, an internal rating system based on expected loss rates.",
+  "An obligor rating shall have all of the following characteristics: (i) It corresponds to the obligor's PD; (ii) Where the Ultimate Designated Parent Company has more than one corporate, etc. exposure to the same obligor, the same obligor rating is assigned to them; provided, however, that this does not apply in the following cases: (a) where, taking transfer risk into account, different obligor ratings are assigned depending on whether the exposure is denominated in the currency of the obligor's country of domicile or in another currency; or (b) where a guarantee relating to the exposure is taken into account in the obligor rating.",
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall set out in its credit risk management policy provisions concerning obligor ratings of corporate, etc. exposures that satisfy all of the following characteristics: (i) In light of the level of risk signified by each obligor rating, the relationships among the obligor ratings are clearly defined; (ii) The obligor ratings are defined such that the level of risk rises with each decline in obligor rating; (iii) The level of risk of each obligor rating is defined by the typical probability of default of obligors corresponding to that obligor rating and by the criteria established for judging that level of credit risk.",
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall establish facility ratings corresponding to LGD for corporate, etc. exposures; provided, however, that in establishing facility ratings for corporate, etc. exposures, an Ultimate Designated Parent Company adopting the foundation internal ratings-based approach may take into account factors specific to the obligor and the transaction."
+ ],
+ "terms": []
+}

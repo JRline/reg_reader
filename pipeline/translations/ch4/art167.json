@@ -1,0 +1,18 @@
+{
+ "number": "第百六十七条",
+ "heading_en": "Use of Models",
+ "summary_ja": "債務者格付等にモデルを用いる場合に満たすべき要件（予測能力、データ、人的判断との組合せ、見直し、検証）を定める。",
+ "summary_en": "Sets requirements where models are used for ratings and estimates: predictive power, data quality and representativeness, combination with human judgment, human review, and periodic validation.",
+ "sections_en": {
+  "第四節 第一款 第五目": "Use of Models"
+ },
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach uses statistical models or other mechanical methods (hereinafter referred to as \"models\") for assigning obligor ratings or facility ratings or for estimating PD, LGD and EAD, it shall satisfy all of the following requirements: (i) The model and inputs have all of the following characteristics: (a) The model has high predictive ability, and the use of the model does not unduly reduce the required capital amount; (b) The variables that serve as inputs to the model are reasonable predictors of the outcome; (c) No material bias is found in the model's outputs in terms of the obligors and amounts of exposures to which they are applied; (ii) Review procedures, including assessment of accuracy, completeness and appropriateness, are carried out on the data input to models that estimate statistical default or loss; (iii) The data used to build the model are representative of the population of actual obligors or exposures of that Ultimate Designated Parent Company adopting the internal ratings-based approach; (iv) Where the model is used in combination with human judgment, all of the following requirements are satisfied: (a) Human judgment covers all relevant material information not taken into account by the model; (b) Written guidelines are prepared on how human judgment and the model's predictions are to be combined; (v) A human review procedure is in place for model-based rating assignment, which focuses on detecting and preventing errors arising from known weaknesses of the model and promotes continuous improvement in the model's functioning; (vi) Validation of the model, including assessment of the operating performance and stability of the model, review of the relevance of the model to the conditions underlying it, and comparison of actual results with the model's predictions, is conducted periodically."
+ ],
+ "terms": [
+  {
+   "ja": "モデル",
+   "en": "models"
+  }
+ ]
+}

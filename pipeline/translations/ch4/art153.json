@@ -1,0 +1,10 @@
+{
+ "number": "第百五十三条",
+ "heading_en": "Treatment Where There Is No Residual Value Risk",
+ "summary_ja": "残価リスクが無いリース取引で、リース物件を担保付として扱える要件を定める。",
+ "summary_en": "Sets the requirements under which a lease with no residual value risk may be treated as an exposure to the lessee secured by the leased asset.",
+ "paragraphs": [
+  "Where there is no residual value risk in a lease transaction, an Ultimate Designated Parent Company adopting the internal ratings-based approach may treat an exposure to the lessee as being secured by the leased asset only where the following requirements are satisfied: (i) The lessor conducts robust risk management with respect to the location, use and age of the leased asset and countermeasures against its obsolescence; (ii) There is a robust legal framework under which the lessor is the owner of the leased asset and is able to exercise its rights as owner in a timely manner; (iii) The difference between the rate of decline in the value of the leased asset through depreciation and the rate of decline in the principal portion of the lease payments through the payment of lease payments is not so large as to overstate the effect of the leased asset as a credit risk mitigation technique; (iv) The operational requirements for eligible other asset collateral are satisfied."
+ ],
+ "terms": []
+}

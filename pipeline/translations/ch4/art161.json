@@ -1,0 +1,10 @@
+{
+ "number": "第百六十一条",
+ "heading_en": "Rating Structure for Retail Exposures",
+ "summary_ja": "リテール向けエクスポージャーをプールに割り当てる際に満たすべき要件を定める。",
+ "summary_en": "Sets the requirements to be met in allocating retail exposures to pools.",
+ "paragraphs": [
+  "In allocating retail exposures to pools, an Ultimate Designated Parent Company adopting the internal ratings-based approach shall satisfy all of the following requirements: (i) The PD, LGD and EAD of each pool are quantified; (ii) The number of exposures in each pool is sufficient to enable quantification and validation of PD, LGD and EAD at the pool level; (iii) When multiple pools are compared, the obligors and exposures allocated to each pool are appropriate; (iv) Exposures are not unduly concentrated in a single pool."
+ ],
+ "terms": []
+}

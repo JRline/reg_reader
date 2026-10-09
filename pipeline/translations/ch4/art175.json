@@ -1,0 +1,14 @@
+{
+ "number": "第百七十五条",
+ "heading_en": "Data Maintenance for Corporate, etc. Exposures",
+ "summary_ja": "事業法人等向けエクスポージャーについて、債務者格付の履歴、デフォルト情報、PD実績等並びに先進的内部格付手法のLGD及びEAD関連データを保存する。",
+ "summary_en": "Requires retention of obligor rating history, default information and PD data for corporate, etc. exposures, and, for the advanced approach, LGD and EAD data and recovery data.",
+ "sections_en": {
+  "第四節 第二款 第四目": "Data Maintenance"
+ },
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach shall retain the following information for corporate, etc. exposures: (i) Information on the history of obligor ratings of obligors and guarantors since the date on which an obligor rating was first assigned to them, such as the date on which each obligor rating was assigned, the method and principal data used in assigning that obligor rating, the person responsible for the rating assignment, and the model used in estimation; (ii) Information identifying defaulted obligors and exposures and the timing and circumstances of the default; (iii) Data on the PD corresponding to each rating, the realized PD, and rating migrations.",
+  "An Ultimate Designated Parent Company adopting the advanced internal ratings-based approach shall retain the following information for corporate, etc. exposures to which the advanced internal ratings-based approach can be applied: (i) The complete history of data on the LGD and EAD estimates for each exposure, the principal data used for those estimates, and information on the person responsible for the rating assignment and the model used in estimation; (ii) The LGD and EAD estimates and realized values for defaulted exposures; (iii) Data on the LGD of the exposure before and after taking into account the effect of a guarantee or credit derivative (limited to where the credit risk mitigation effect of the guarantee or credit derivative is taken into account in estimating LGD); (iv) Data on the loss or recovery on each defaulted exposure, such as the amount recovered, collateral, distribution of residual assets or recovery methods such as guarantees, the time taken for recovery, and recovery costs."
+ ],
+ "terms": []
+}

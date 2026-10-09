@@ -1,0 +1,11 @@
+{
+ "number": "第百五十六条の二",
+ "heading_en": "Exposures Relating to Significant Investments",
+ "summary_ja": "重要な出資のうち十五パーセント基準額等を上回る部分のエクスポージャーに千二百五十パーセントのリスク・ウェイトを適用する。",
+ "summary_en": "Applies a 1,250% risk weight to exposures to significant investments above the 15% and 60% threshold amounts.",
+ "paragraphs": [
+  "Notwithstanding Articles 129 through the preceding Article, for an Ultimate Designated Parent Company adopting the internal ratings-based approach, the amount of credit risk-weighted assets for the exposure relating to the portion of significant investments, among covered investments, that exceeds the 15% threshold amount relating to significant investments shall be the amount obtained by multiplying the amount of that exposure (meaning EAD) by a risk weight of 1,250%.",
+  "In the case of the preceding paragraph, where the total amount of the portion of covered investments other than the portion corresponding to the amount to which a risk weight of 1,250% applies under that paragraph exceeds the 60% threshold amount relating to significant investments, the amount of credit risk-weighted assets for the exposure relating to the excess portion shall be the amount obtained by multiplying the amount of that exposure (meaning EAD) by a risk weight of 1,250%."
+ ],
+ "terms": []
+}

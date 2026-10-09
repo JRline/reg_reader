@@ -1,0 +1,11 @@
+{
+ "number": "第二百四十八条の四の二十",
+ "heading_en": "Sensitivities, etc. of Foreign Exchange Vega Risk Factors",
+ "summary_ja": "外国為替のベガ・リスク・ファクターは、為替レートに対する全ボラティリティの相対変化とし、リスク・ウェイトは100パーセントとする。",
+ "summary_en": "The foreign exchange vega risk factor is the relative change in all exchange-rate volatilities between the foreign and reporting currencies, with a 100% risk weight.",
+ "paragraphs": [
+  "The vega risk factor relating to foreign exchange shall be the relative change in all volatilities relating to the exchange rate between the foreign currency and the reporting currency of the Ultimate Designated Parent Company.",
+  "The \"relative change in all volatilities relating to the exchange rate\" in the preceding paragraph means the value obtained by dividing the change in the value arising in CVA or in a CVA hedging instrument when all volatilities relating to the exchange rate between the foreign currency and the reporting currency are changed simultaneously by 1% relative to their present values by 0.01. In this case, where transactions referencing exchange rates between non-reporting currencies are conducted, the volatility of the spot exchange rate between the reporting currency of the Ultimate Designated Parent Company and each non-reporting currency shall be measured.",
+  "The risk weight RW_{k} of the risk factor provided in paragraph (1) shall be 100%."
+ ]
+}
