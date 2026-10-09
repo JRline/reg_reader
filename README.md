@@ -47,15 +47,17 @@ same code, but it reads `feeds/*.json` directly so there's no rebuild step.
 
 ## What's actually in it right now
 
-Chapters 2 (算式等, formulas for the ratios) and 3 (信用リスクの標準的手法, the standardized
-approach for credit risk) of the FSA's capital-adequacy notification for Ultimate
-Designated Parent Companies (`fsa-basel-cap-jp`). That is 139 articles, in 節/款/目
+Chapters 2–7 of the FSA's capital-adequacy notification for Ultimate Designated Parent
+Companies (`fsa-basel-cap-jp`): formulas for the ratios, the standardized and
+internal-ratings-based approaches to credit risk, securitization, CVA risk, central
+counterparties, market risk and operational risk (not yet: Chapter 1's definitions and
+the supplementary provisions). That is 470 articles plus two appended tables, in 節/款/目
 groupings, with the following:
 
 - Japanese text and an English draft translation for every article
-- 57 formulas, transcribed from the PDF's formula images, with variable hover-explanations
+- 234 formulas, transcribed from the PDF's formula images, with variable hover-explanations
   and replaceable notation
-- 31 tables
+- 101 tables
 
 There are also seven supporting feeds of real, sourced excerpts from the laws it cites:
 
@@ -65,8 +67,7 @@ There are also seven supporting feeds of real, sourced excerpts from the laws it
 - the Payment Services Act
 - the TLAC notification
 
-Of the cross-references, 201 of 246 in Chapter 2 and 574 of 927 in Chapter 3 resolve to
-an actual target. The rest are flagged honestly as one of three cases:
+Of the 2,850 cross-references, 2,211 resolve to an actual target. The rest are flagged honestly as one of three cases:
 
 - not yet digitized: the external instruments listed in
   `pipeline/EXTERNAL_INFO_REQUESTS.md`, and later chapters

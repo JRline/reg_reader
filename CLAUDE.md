@@ -6,7 +6,7 @@ exist because skipping them caused real, silent bugs earlier in this project's h
 ## What this is
 
 A generic, schema-driven reader for Japanese financial regulation, currently populated
-with Chapters 2–3 of the FSA's capital-adequacy notification for **Ultimate Designated Parent
+with Chapters 2–7 of the FSA's capital-adequacy notification for **Ultimate Designated Parent
 Companies (最終指定親会社)** — not the bank version; don't title it as such — plus seven feeds of the
 external laws it cites. The app (`app/`) has zero regulation-specific logic — it renders
 whatever's in a feed's `feed.json`, so a new regulation is a content problem, not a code
@@ -134,7 +134,18 @@ Three layers, run in this order after content is ingested:
 
 ## Current state (update this section as it changes)
 
-- `fsa-basel-cap-jp` Chapters 2 and 3: all 27 + 112 articles have real content. Chapter 3
+- `fsa-basel-cap-jp` Chapters 2–7 (not Chapter 1, 定義, and not the 附則): 470 articles, all with
+  real content: ch2 27, ch3 112, ch4 118, ch5 36, ch5-2 (第五章の二, CVA) 45, ch5-3 (第五章の三,
+  central counterparties) 4, ch6 108, ch7 20. Chapters 4–7 were built exactly like Chapter 3 (Route A), with
+  the translation split into 11 slices written in parallel from `pipeline/translations/AGENT_BRIEF.md`
+  and merged by `merge_extras.py` (tables → `tables.json`, `*_formulas.py` → `formulas.json`).
+  Extraction repairs for layout artifacts (headings glued to the previous article, a table token
+  the extractor lost, etc.) live in `pipeline/fix_extractions.py`; run it before `build_chapter.py`.
+  Chapter 7 = 第二百八十一条–第二百九十八条 plus 別表第一/第二, built as article-shaped entries keyed
+  `appx1`/`appx2` (the app shows "Appended Table N"; `finish_ch7.py` trims the extraction and merges
+  `ch7_appendices.json`). The 附則 (the original supplementary provisions and ~17 amending notices,
+  which reuse article numbers) are deliberately NOT included.
+  Chapter 3
   has 6 節, 8 款 and 13 目, with 目 as the node type `division`, which was added to the
   schema. Its 3 deleted entries (第四十八条, 第七十一条–第七十五条, 第八十五条–第八十八条)
   read 削除 / "Deleted.". Chapter 3 was built in-repo
@@ -143,23 +154,25 @@ Three layers, run in this order after content is ingested:
   - translations: `pipeline/translations/ch3/*.json`, all `llm_draft`
   - building: `build_chapter.py`
   - citations: `ja_refs.py`
-- Tables: 31 in `feeds/fsa-basel-cap-jp/tables.json`, which replace `{{T:<id>}}` tokens.
+- Tables: 101 in `feeds/fsa-basel-cap-jp/tables.json`, which replace `{{T:<id>}}` tokens.
   The app renders colspan/rowspan.
 - 7 feeds total: `fsa-basel-cap-jp`, `jp-banking-act`, `jp-fiea`,
   `jp-fiea-enforcement-order`, `jp-mof-consolidated-fs-regulation`,
   `jp-payment-services-act`, `jp-tlac-notification`.
-- Chapter 3: 927 cross-references, of which 574 are resolved. The rest:
-  - 161 are item-level (rule 6)
-  - 159 are `external_unavailable` (other institutions' capital/leverage notices and
+- Cross-references, all chapters: 2850, of which 2190 internal + 21 external are resolved. The rest:
+  - 381 are item-level (rule 6)
+  - 167 are `external_unavailable` (other institutions' capital/leverage notices and
     statutes). What to fetch is listed in `pipeline/EXTERNAL_INFO_REQUESTS.md`, which goes
     to an agent with web access.
-  - 33 are `internal_unavailable` (Chapters 1 and 4–7, plus a couple of 「」-quoted
-    phrases)
+  - 91 are `internal_unavailable`: mostly Chapter 1 (第一条 definitions) plus 「」-quoted
+    replacement phrases (読替え) that name provisions of the cited article, not live citations.
+  The post-passes may need two runs to settle (one nested-parenthesis paragraph in ch5-2 converges on
+  the second pass); from then on they are idempotent.
 
   In `ja_refs.py`, 法/令 map to 金融商品取引法/施行令 (`DEFINED_NAMES`), and 同法 carries the
   previous law. `reresolve_refs.py` resolves bare 第N款/第N目 inside the enclosing 節/款, and
   前款第N目 inside the previous sibling.
-- ~246 cross-references in Chapter 2; 201 resolved (193 before Chapter 3 existed). Remainder: item-level refs (see rule
+- Chapter 2: 246 cross-references, 226 resolved (193 before later chapters existed). Remainder: item-level refs (see rule
   6 above), a couple of not-yet-digitized sibling FSA notifications, and one bare
   law-name mention with no specific target.
 - `refine_clauses.py` now also reclassifies bare `(1)`/`（１）`-style parenthetical
@@ -197,7 +210,10 @@ Three layers, run in this order after content is ingested:
 - Article 8 has 14 paragraphs. Paragraphs 10–14 used to be merged into paragraph 9
   because `extract_chapter.py`'s paragraph-number regex only matched ２–９ (fixed: it
   now accepts two-digit numbers); the feed was split accordingly and refs re-resolved.
-- Formulas: 57 in total, with 52 `transcribed` from the PDF images and 5 `text_derived`.
+- Formulas: 234 in total (355 variables), 229 `transcribed` from the PDF images, 5 `text_derived`; 45 carry a
+  `note` explaining a judgement (notation the grammar can't draw, an illegible exponent, …). Chapters 4–7's
+  variable ids are prefixed per slice (`C4A_`, `C6B_`, `CH7_`, …).
+  The first 57 (ch2–3):
   - Chapter 2 has 10. Articles 2 and 2-2 were re-checked against the PDF: the denominator
     is CRWA + MR/8% + OR/8%.
   - Chapter 3 has 47, authored in `pipeline/translations/ch3_formulas.py` and anchored to
@@ -212,7 +228,7 @@ Three layers, run in this order after content is ingested:
   「。」/". " at depth 0. The text after it returns to the surrounding clause's type,
   recursively, so a second ただし is found too. It is still idempotent (verified:
   refine → annotate → refine = 0 changes).
-- Other chapters (1, 4–7) of the source notification are not extracted. To add one: see
+- Chapter 1 and the 附則 of the source notification are not extracted. To add one: see
   `EXTRACTION_GUIDE.md` Route A — every pipeline script takes `feed_id`/`chapter_id` as
   arguments, nothing is hardcoded to Chapter 2 except the `ARTICLE_META` dict in
   `ingest.py` (only used for the two hand-processed articles; `batch_ingest.py` doesn't

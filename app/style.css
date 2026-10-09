@@ -441,7 +441,7 @@ body.cues-off .cue { border-bottom: none; padding-bottom: 0; }
    columns down to one character per line. */
 .reg-table td:first-child, .reg-table th:first-child { max-width: 22em; }
 .reg-table th { background: var(--bg-panel); font-weight: 600; }
-.reg-table td { font-variant-numeric: tabular-nums; }
+.reg-table td { font-variant-numeric: tabular-nums; white-space: pre-line; } /* "\n" inside a cell = a line break (bullet lists) */
 .table-note { display: block; font-size: 0.8em; color: var(--text-muted); margin-top: 4px; }
 .token-missing { display: inline-block; font-size: 0.8em; color: var(--clause-proviso); border: 1px dashed currentColor; border-radius: 4px; padding: 0 4px; margin: 0 2px; }
 

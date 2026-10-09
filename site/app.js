@@ -65,6 +65,9 @@ function kanjiToInt(s) {
 const UNIT_EN = { "条": "Article", "章": "Chapter", "節": "Section", "款": "Subsection", "目": "Division" };
 function formatNumberEn(jpNumber, unit) {
   if (!jpNumber) return "";
+  // 別表第一 -> Appended Table 1
+  const appx = jpNumber.match(/^別表第([一二三四五六七八九十]+)/);
+  if (appx) return `Appended Table ${kanjiToInt(appx[1])}`;
   // 第四十三条の三の二 -> Article 43-3-2 (any number of の-suffixes)
   const m = jpNumber.match(new RegExp(`^第([一二三四五六七八九十百]+)${unit}((?:の[一二三四五六七八九十]+)*)`));
   if (m) {
@@ -231,7 +234,7 @@ function renderTOCNode(node) {
   const label = document.createElement("span");
   label.className = "node-label";
   label.dataset.id = node.id;
-  label.textContent = [displayNumber(node), displayHeading(node)].filter(Boolean).join(" ") || node.id;
+  appendRich(label, [displayNumber(node), displayHeading(node)].filter(Boolean).join(" ") || node.id);
   label.addEventListener("click", () => {
     if (node.type === "article") return renderArticleView(node.id);
     // A chapter/section heading opens its first article.
@@ -324,22 +327,22 @@ function renderArticleView(articleId, scrollToId) {
   const crumb = document.createElement("div");
   crumb.className = "breadcrumb";
   const groups = (entry.ancestors || []).map((id) => state.byId.get(id)?.node).filter((n) => n && STRUCTURAL_TYPES.includes(n.type));
-  crumb.textContent = [
+  appendRich(crumb, [
     state.lang === "ja" ? (state.manifest?.title_ja || state.manifest?.title_en) : (state.manifest?.title_en || state.manifest?.title_ja),
     ...groups.map((g) => [displayNumber(g), displayHeading(g)].filter(Boolean).join(" ")),
-  ].filter(Boolean).join(" / ");
+  ].filter(Boolean).join(" / "));
   els.reader.appendChild(crumb);
 
   const h = document.createElement("h2");
   h.className = "node-heading";
-  h.textContent = [displayNumber(article), displayHeading(article)].filter(Boolean).join(" ");
+  appendRich(h, [displayNumber(article), displayHeading(article)].filter(Boolean).join(" "));
   els.reader.appendChild(h);
 
   const summary = state.lang === "ja" ? article.summary_ja : article.summary_en;
   if (summary) {
     const s = document.createElement("div");
     s.className = "summary-line";
-    s.textContent = summary;
+    appendRich(s, summary);
     els.reader.appendChild(s);
   }
 

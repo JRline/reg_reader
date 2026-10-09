@@ -86,6 +86,10 @@ wording is needed for search. They are published on the FSA site (告示 pages u
 | 中小企業信用保険法 (昭和二十五年法律第二百六十四号) | 第二条第五項; 第十二条 | ch3.art41 |
 | 公的年金制度の健全性及び信頼性の確保のための厚生年金保険法等の一部を改正する法律 (平成二十五年法律第六十三号) | 附則第三条第十一号 (definition of 存続厚生年金基金) | ch3.art77 |
 | 株式会社地域経済活性化支援機構法 (平成二十一年法律第六十三号) | definition of 株式会社地域経済活性化支援機構 (the law's Art. 1/2 is enough) | ch3.art42 |
+| 弁護士法/外国弁護士による法律事務の取扱い等に関する法律 ("外国弁護士法") | 第二条第三号 (the definition cited in 第二百二十五条 of Chapter 5) | ch5.art225 |
+| 特定債務等の調整の促進のための特定調停に関する法律 (平成十一年法律第百五十八号) | 第二条第三項 | ch5.art245-2 |
+| 金融商品取引業等に関する内閣府令 (平成十九年内閣府令第五十二号) | 第百二十三条第一項第二十一号の十, 第二十一号の十一 | ch6.art252-2 |
+| 金融商品取引法 | 第二条第十六項 (the same Act as above) | ch6.art252-2 |
 | 連結財務諸表の用語、様式及び作成方法に関する規則 | the article cited as 「同条第八号」 at ch2.art5 (context: the article cited just before it in that paragraph) | ch2.art5 |
 
 `jp-fiea` already holds FIEA 第二条第八項. 第二十七項/第三十項 can be added to the same
@@ -113,6 +117,22 @@ A higher-resolution or HTML copy of the notice (FSA site, or the 官報 text) se
    `H = H_M × √((N_R − (T_M − 1)) / T_M)`. Basel CRE22.59 and this notification's own
    第四十七条第三項第一号 have **`N_R + (T_M − 1)`**. Is the minus in the official text,
    i.e. a misprint in the notice itself?
+
+**Added with Chapters 4–7 (all transcribed from the PDF image; each has a ⚠ note in the reader):**
+
+3. **第二百三十一条 / 第二百三十五条 etc. (K_SSFA formula, `f-ch5a-p237i5`, `f-ch5b-p254i2`).** The denominator and
+   the exponent print a glyph that looks like the digit 1 in "a(u−1)" / "e^(a·1)". Both were read as the
+   lowercase letter l, the variable the article defines as `l = max(A − K, 0)`. Confirm it isn't the digit.
+4. **第二百四十五条 (`f-ch5b-p255i0`, sub-pool K_A).** The second term EAD_Subpool2/EAD_Total prints with no
+   ×0.5, whereas Basel has ×0.5 and paragraph (1) of the same article uses W·0.5. Possible misprint.
+5. **第二百四十八条の四の二十四 (`p293t1` table, rows 10 and 15).** The text layer reads "一二・〇" stacked over two
+   lines; transcribed as 12.0, as in `p290t1`. Confirm.
+6. **第二百四十八条の四の八 (`f-ch52-p283i0`).** Is the left-hand subscript k or b (WS_k vs WS_b)?
+7. **Chapter 7 第二百八十三条第二項 formulas** carry overlines (three-year averages) that the formula grammar can't draw;
+   the reader's note says so. A look at the image confirms what the overline covers.
+8. **第百二十九条 and 第百三十五条 (Chapter 4).** The text of 第百二十九条第一項第二号's ただし書 sits after the
+   definition of N rather than M, and 第百三十五条第七項 cites 前条第五項 where 第百三十四条第七項 seems intended
+   — check against the official text whether these are misprints.
 
 ## Priority 5: English terminology (optional, improves translation quality)
 

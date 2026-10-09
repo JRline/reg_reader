@@ -4,7 +4,7 @@ formulas_lib.TAG = "ch7"
 C = "fsa-basel-cap-jp.ch7."
 A1 = C + "art283.p1"
 A2 = C + "art283.p2"
-T1 = C + "artappx1.p1"
+T1 = C + "appx1.p1"
 v("CH7_ILDC", "ILDC", "金利要素", "Interest component (ILDC)", A2, "BICの構成要素のうち、預金業務等の規模部分", "The part of the BIC components reflecting the scale of deposit-taking business, etc.")
 v("CH7_SC", "SC", "役務要素", "Services component (SC)", A2, "BICの構成要素のうち、役務取引等の規模部分", "The part of the BIC components reflecting the scale of fee and commission transactions, etc.")
 v("CH7_FC", "FC", "金融商品要素", "Financial instruments component (FC)", A2, "BICの構成要素のうち、金融商品取引の規模部分", "The part of the BIC components reflecting the scale of financial instruments transactions")

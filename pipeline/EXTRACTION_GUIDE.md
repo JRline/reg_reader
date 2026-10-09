@@ -25,6 +25,9 @@ pip install pdfplumber jsonschema
 python3 pipeline/extract_chapter_v2.py pipeline/source/saishu1.pdf \
     "第三章 信用リスクの標準的手法" "第四章 信用リスクの内部格付手法" pipeline/source/ch3_v2.json
 python3 pipeline/dump_articles.py pipeline/source/ch3_v2.json 第十四条 第十五条   # read text to translate
+#    (a chapter that is too big for one sitting can be split into slices translated in parallel by
+#     several agents: see `pipeline/translations/AGENT_BRIEF.md`, `check_translations.py`,
+#     `crop_token.py`, `merge_extras.py` — that is how Chapters 4–7 were built)
 # 2. Translate: one JSON per article in pipeline/translations/ch3/ (see below).
 # 3. Build the chapter's nodes into the feed (sections/款/目, articles, paragraphs, clauses, refs).
 python3 pipeline/build_chapter.py fsa-basel-cap-jp fsa-basel-cap-jp.ch3 第三章 \
@@ -48,6 +51,12 @@ What the v2 extractor (`extract_chapter_v2.py`) handles that v1 didn't:
   sorts ahead of its item marker is swapped back.
 
 It reproduces v1's Chapter 2 text exactly, so it can be used for any chapter.
+
+**Check the extraction before translating.** Wrapped headings can end up glued to the previous
+article's last paragraph (the next article then has no heading), a table that continues over a
+page can swallow a second table, and the last chapter runs on into the 附則/別表. Chapters 4–7's
+repairs are in `pipeline/fix_extractions.py` and `finish_ch7.py`; do the same for a new chapter
+before building.
 
 **Translation files** (`pipeline/translations/<chapter>/<article>.json`) have this shape:
 

@@ -784,6 +784,1707 @@
       "desc_ja": "",
       "desc_en": "",
       "defined_at": "fsa-basel-cap-jp.ch3.art84.p1"
+    },
+    "C4A_K": {
+      "name_ja": "所要自己資本率",
+      "name_en": "Required capital ratio",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art129.p1"
+    },
+    "C4A_R": {
+      "name_ja": "相関係数",
+      "name_en": "Correlation coefficient",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art129.p1"
+    },
+    "C4A_b": {
+      "name_ja": "マチュリティ調整",
+      "name_en": "Maturity adjustment",
+      "desc_ja": "第一項第四号の算式で算出する。",
+      "desc_en": "Calculated by the formula in paragraph (1), item (iv).",
+      "defined_at": "fsa-basel-cap-jp.ch4.art129.p1"
+    },
+    "C4A_LGD": {
+      "name_ja": "デフォルト時損失率",
+      "name_en": "Loss given default",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p1"
+    },
+    "C4A_PD": {
+      "name_ja": "デフォルト確率",
+      "name_en": "Probability of default",
+      "desc_ja": "第百三十二条に定める一年間のPD。",
+      "desc_en": "The one-year PD provided in Article 132.",
+      "defined_at": "fsa-basel-cap-jp.ch4.art132.p1"
+    },
+    "C4A_EL": {
+      "name_ja": "期待損失率",
+      "name_en": "Expected loss rate",
+      "desc_ja": "PDにLGDを乗じた率。PDが百パーセントの場合は第百九十四条第六項に定めるEL_{default}。",
+      "desc_en": "The rate obtained by multiplying PD by LGD; where PD is 100%, EL_{default} provided in Article 194, paragraph (6).",
+      "defined_at": "fsa-basel-cap-jp.ch4.art129.p1"
+    },
+    "C4A_M": {
+      "name_ja": "マチュリティ(実効マチュリティ)",
+      "name_en": "Maturity (effective maturity)",
+      "desc_ja": "第百三十五条に定める。PDが百パーセントの場合は一。",
+      "desc_en": "Provided in Article 135; 1 where PD is 100%.",
+      "defined_at": "fsa-basel-cap-jp.ch4.art135.p1"
+    },
+    "C4A_G_PD": {
+      "name_ja": "N{x}の逆関数G(x)のPDにおける値",
+      "name_en": "Value at PD of G(x), the inverse function of N{x}",
+      "desc_ja": "N{x}は標準正規分布の累積分布関数。",
+      "desc_en": "N{x} is the cumulative distribution function of the standard normal distribution.",
+      "defined_at": "fsa-basel-cap-jp.ch4.art129.p1"
+    },
+    "C4A_G_999": {
+      "name_ja": "N{x}の逆関数G(x)の0.999における値",
+      "name_en": "Value at 0.999 of G(x), the inverse function of N{x}",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art129.p1"
+    },
+    "C4A_S": {
+      "name_ja": "事業法人の売上高(単位：億円)",
+      "name_en": "Sales of the corporate (in units of 100 million yen)",
+      "desc_ja": "第一条第五十一号ただし書の場合は総資産。五億円に満たない場合は五億円。",
+      "desc_en": "Total assets in the case of the proviso to Article 1, item (li); calculated as 500 million yen where less than that.",
+      "defined_at": "fsa-basel-cap-jp.ch4.art129.p2"
+    },
+    "C4A_LGD_star": {
+      "name_ja": "信用リスク削減手法の効果を勘案したLGD",
+      "name_en": "LGD taking into account the effect of credit risk mitigation techniques",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p3"
+    },
+    "C4A_LGD_U": {
+      "name_ja": "エクスポージャーの区分に応じて設定される値",
+      "name_en": "Value set according to the category of exposure",
+      "desc_ja": "第二項各号に掲げるエクスポージャーの区分に応じて設定される値。",
+      "desc_en": "The value set according to the category of exposure listed in the items of paragraph (2).",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p3"
+    },
+    "C4A_LGD_S": {
+      "name_ja": "担保資産の区分に応じた表のLGD",
+      "name_en": "LGD set in the table according to the category of collateral asset",
+      "desc_ja": "次項の表に掲げる担保資産の区分に応じ、同表において設定される値。",
+      "desc_en": "The value set in the table of paragraph (4) according to the category of collateral asset.",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p3"
+    },
+    "C4A_E": {
+      "name_ja": "エクスポージャーの額",
+      "name_en": "Exposure amount",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p3"
+    },
+    "C4A_E_S": {
+      "name_ja": "担保の評価額",
+      "name_en": "Value of the collateral after haircuts",
+      "desc_ja": "C・(1－H_{C}－H_{fx})により計算される値。上限はE・(1＋H_{E})。",
+      "desc_en": "The value calculated as C·(1 − H_{C} − H_{fx}), capped at E·(1 + H_{E}).",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p3"
+    },
+    "C4A_H_E": {
+      "name_ja": "取引の相手方に引き渡した資産に適用するボラティリティ調整率",
+      "name_en": "Haircut applied to the asset delivered to the counterparty",
+      "desc_ja": "エクスポージャーが第四十五条第一項の表の第七号に該当する場合に、前章第六節第三款の規定により適用する。",
+      "desc_en": "Applied under Section 6, Subsection 3 of the preceding Chapter where the exposure falls under item (vii) of the table in Article 45, paragraph (1).",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p3"
+    },
+    "C4A_LGD_ss": {
+      "name_ja": "複数の担保の信用リスク削減手法の効果を勘案したLGD",
+      "name_en": "LGD taking into account the effect of credit risk mitigation techniques of multiple items of collateral",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p6"
+    },
+    "C4A_LGD_Si": {
+      "name_ja": "担保資産の区分iに応じて第四項により設定されるLGD_{S}",
+      "name_en": "LGD_{S} set under paragraph (4) according to collateral asset category i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p6"
+    },
+    "C4A_E_Si": {
+      "name_ja": "担保資産の区分iに応じて計算されるC・(1－H_{C}－H_{fx})",
+      "name_en": "C·(1 − H_{C} − H_{fx}) calculated according to collateral asset category i",
+      "desc_ja": "ΣE_{S_i}がE・(1＋H_{E})を上回る場合は、E_{S_i}の合計がE・(1＋H_{E})と等しくなるよう調整する。",
+      "desc_en": "Adjusted so that the sum of E_{S_i} equals E·(1 + H_{E}) if the sum would exceed it.",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p6"
+    },
+    "C4A_LGD_floor": {
+      "name_ja": "信用リスク削減手法の効果を勘案したLGDの推計値の下限",
+      "name_en": "Floor of the LGD estimate taking into account the effect of credit risk mitigation techniques",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p8"
+    },
+    "C4A_LGD_Ufloor": {
+      "name_ja": "LGD_{U}に係る下限(二十五パーセント)",
+      "name_en": "Floor for LGD_{U} (25%)",
+      "desc_ja": "二十五パーセント。",
+      "desc_en": "25%.",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p8"
+    },
+    "C4A_LGD_Sfloor": {
+      "name_ja": "担保資産の区分に応じた表のLGDの下限",
+      "name_en": "LGD floor set in the table according to the category of collateral asset",
+      "desc_ja": "次項の表に掲げる担保資産の区分に応じ、同表において設定される値。",
+      "desc_en": "The value set in the table of paragraph (9) according to the category of collateral asset.",
+      "defined_at": "fsa-basel-cap-jp.ch4.art133.p8"
+    },
+    "C4A_LGD_Rfloor": {
+      "name_ja": "信用リスク削減手法の効果を勘案したその他リテール向けエクスポージャーのLGDの推計値の下限",
+      "name_en": "Floor of the LGD estimate for other retail exposures taking into account the effect of credit risk mitigation techniques",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art141.p3"
+    },
+    "C4A_LGD_RUfloor": {
+      "name_ja": "LGD_{RUfloor}(三十パーセント)",
+      "name_en": "LGD_{RUfloor} (30%)",
+      "desc_ja": "三十パーセント。",
+      "desc_en": "30%.",
+      "defined_at": "fsa-basel-cap-jp.ch4.art141.p3"
+    },
+    "C4A_LGD_RSfloor": {
+      "name_ja": "担保資産の区分に応じた表のLGDの下限",
+      "name_en": "LGD floor set in the table according to the category of collateral asset",
+      "desc_ja": "次項の表に掲げる担保資産の区分に応じ、同表において設定される値。",
+      "desc_en": "The value set in the table of paragraph (4) according to the category of collateral asset.",
+      "defined_at": "fsa-basel-cap-jp.ch4.art141.p3"
+    },
+    "C4A_t": {
+      "name_ja": "期間",
+      "name_en": "Period",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art135.p1"
+    },
+    "C4A_CF": {
+      "name_ja": "期間tにおいて債務者が債権者に契約上支払いうるキャッシュ・フロー",
+      "name_en": "Cash flow the obligor may contractually pay to the creditor in period t",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art135.p1"
+    },
+    "C4A_EE_eff": {
+      "name_ja": "実効EE_{tk}",
+      "name_en": "Effective EE_{tk}",
+      "desc_ja": "実効EE_{tk}＝max(実効EE_{tk－1}、EE_{tk})。実効EE_{t0}はカレント・エクスポージャー。",
+      "desc_en": "Effective EE_{tk} = max(effective EE_{tk−1}, EE_{tk}); effective EE_{t0} is the current exposure.",
+      "defined_at": "fsa-basel-cap-jp.ch4.art135.p7"
+    },
+    "C4A_EE": {
+      "name_ja": "将来の時点t_{k}における期待エクスポージャー",
+      "name_en": "Expected exposure at future time t_{k}",
+      "desc_ja": "EE_{t0}はカレント・エクスポージャー。",
+      "desc_en": "EE_{t0} is the current exposure.",
+      "defined_at": "fsa-basel-cap-jp.ch4.art135.p7"
+    },
+    "C4A_dt": {
+      "name_ja": "t_{k}－t_{k－1}",
+      "name_en": "t_{k} − t_{k−1}",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art135.p7"
+    },
+    "C4A_df": {
+      "name_ja": "将来の期間t_{k}にわたるリスクフリー・レートによる割引率",
+      "name_en": "Discount factor at the risk-free rate over the future period t_{k}",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art135.p7"
+    },
+    "C4A_m": {
+      "name_ja": "一年を超えない最後の時点t_{m}の添字",
+      "name_en": "Index of the last time t_{m} that does not exceed one year",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art135.p7"
+    },
+    "C4A_n": {
+      "name_ja": "満期の時点を超えない最後の時点t_{n}の添字",
+      "name_en": "Index of the last time t_{n} that does not exceed the time of maturity",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art135.p7"
+    },
+    "C4A_idx_k1": {
+      "name_ja": "和の添字(k＝1からmまで)",
+      "name_en": "Summation index (k = 1 to m)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art135.p7"
+    },
+    "C4A_idx_km": {
+      "name_ja": "和の添字(k＝m＋1からnまで)",
+      "name_en": "Summation index (k = m + 1 to n)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch4.art135.p7"
+    },
+    "CH52_K_CMi": {
+      "name_ja": "所要自己資本額",
+      "name_en": "Required capital amount",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-3.art248-7.p1"
+    },
+    "CH52_K_CCP": {
+      "name_ja": "適格中央清算機関に係る所要自己資本額（EAD_{i}の合計に0.2及び0.08を乗じた額）",
+      "name_en": "Required capital amount of the qualifying central counterparty (sum of EAD_{i} times 0.2 times 0.08)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-3.art248-7.p1"
+    },
+    "CH52_DFpref_i": {
+      "name_ja": "適格中央清算機関に直接清算参加者iが拠出した清算基金の額",
+      "name_en": "Amount of the default fund contributed to the qualifying central counterparty by direct clearing participant i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-3.art248-7.p1"
+    },
+    "CH52_DF_CCP": {
+      "name_ja": "適格中央清算機関が有する資本その他これに類するものであって、直接清算参加者の債務不履行により生ずる損失を清算基金と同時に又は先立ち負担するものの額",
+      "name_en": "Amount of the capital and similar resources of the qualifying central counterparty that bear default losses simultaneously with, or ahead of, the default fund",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-3.art248-7.p1"
+    },
+    "CH52_DFpref_CM": {
+      "name_ja": "適格中央清算機関に直接清算参加者が拠出した清算基金の額の合計",
+      "name_en": "Total amount of the default fund contributed to the qualifying central counterparty by direct clearing participants",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-3.art248-7.p1"
+    },
+    "CH52_EAD_i": {
+      "name_ja": "適格中央清算機関が有する直接清算参加者iに対するトレード・エクスポージャーの額",
+      "name_en": "Amount of the trade exposure the qualifying central counterparty has to direct clearing participant i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-3.art248-7.p1"
+    },
+    "idx_c": {
+      "name_ja": "和の添字（取引相手方c）",
+      "name_en": "Summation index (counterparty c)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p1"
+    },
+    "idx_NS": {
+      "name_ja": "和の添字（ネッティング・セットNS）",
+      "name_en": "Summation index (netting set NS)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p2"
+    },
+    "idx_hc": {
+      "name_ja": "和の添字（取引相手方cの単一の債務者を参照するヘッジ取引h）",
+      "name_en": "Summation index (single-name hedge h of counterparty c)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p4"
+    },
+    "CH52_K_full": {
+      "name_ja": "完全なBA―CVAによる所要自己資本額",
+      "name_en": "Required capital amount under the full BA-CVA",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p1"
+    },
+    "CH52_K_reduced": {
+      "name_ja": "ヘッジ効果を反映しない場合の所要自己資本額",
+      "name_en": "Required capital amount without reflecting hedging effects",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p1"
+    },
+    "CH52_K_hedged": {
+      "name_ja": "ヘッジ効果を反映した場合の所要自己資本額",
+      "name_en": "Required capital amount reflecting hedging effects",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p1"
+    },
+    "CH52_beta": {
+      "name_ja": "β（〇・二五）",
+      "name_en": "β (0.25)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p1"
+    },
+    "CH52_rho": {
+      "name_ja": "ρ（〇・五）",
+      "name_en": "ρ (0.5)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p1"
+    },
+    "CH52_SCVA_c": {
+      "name_ja": "取引相手方cとの全てのネッティング・セットに対するCVA資本賦課",
+      "name_en": "CVA capital charge for all netting sets with counterparty c",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p1"
+    },
+    "CH52_SNH_c": {
+      "name_ja": "取引相手方cのCVAリスクに対する全てのシングル・ネーム・ヘッジを用いたヘッジ効果の値",
+      "name_en": "Value of the hedging effect of all single-name hedges on the CVA risk of counterparty c",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p1"
+    },
+    "CH52_IH": {
+      "name_ja": "インデックスを用いたヘッジ取引から生ずる全ての取引相手方のCVAリスクに対するヘッジ効果の値",
+      "name_en": "Value of the hedging effect on the CVA risk of all counterparties arising from index hedge transactions",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p1"
+    },
+    "CH52_HMA_c": {
+      "name_ja": "取引相手方cのCVAリスクに対する全てのヘッジ取引の値",
+      "name_en": "Value of all hedge transactions on the CVA risk of counterparty c",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p1"
+    },
+    "CH52_alpha": {
+      "name_ja": "α（一・四）",
+      "name_en": "α (1.4)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p2"
+    },
+    "CH52_RW_c": {
+      "name_ja": "取引相手方cのリスク・ウェイト",
+      "name_en": "Risk weight of counterparty c",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p2"
+    },
+    "CH52_M_NS": {
+      "name_ja": "ネッティング・セットNSの実効マチュリティ",
+      "name_en": "Effective maturity of netting set NS",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p2"
+    },
+    "CH52_EAD_NS": {
+      "name_ja": "ネッティング・セットNSの与信相当額",
+      "name_en": "Credit equivalent amount of netting set NS",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p2"
+    },
+    "CH52_DF_NS": {
+      "name_ja": "ネッティング・セットNSのディスカウント・ファクター",
+      "name_en": "Discount factor of netting set NS",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p2"
+    },
+    "CH52_r_hc": {
+      "name_ja": "ヘッジ取引hの取引相手方cとの関係に応じた値",
+      "name_en": "Value according to the relationship of hedge h to counterparty c",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p4"
+    },
+    "CH52_RW_h": {
+      "name_ja": "単一の債務者を参照するヘッジ取引hのリスク・ウェイト",
+      "name_en": "Risk weight of hedge transaction h referencing a single obligor",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p4"
+    },
+    "CH52_M_h_SN": {
+      "name_ja": "単一の債務者を参照するヘッジ取引hの実効マチュリティ",
+      "name_en": "Effective maturity of hedge transaction h referencing a single obligor",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p4"
+    },
+    "CH52_B_h_SN": {
+      "name_ja": "単一の債務者を参照するヘッジ取引hの想定元本額",
+      "name_en": "Notional amount of hedge transaction h referencing a single obligor",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p4"
+    },
+    "CH52_DF_h_SN": {
+      "name_ja": "単一の債務者を参照するヘッジ取引hのディスカウント・ファクター",
+      "name_en": "Discount factor of hedge transaction h referencing a single obligor",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p4"
+    },
+    "CH52_RW_i": {
+      "name_ja": "インデックス・ヘッジに適用されるリスク・ウェイト",
+      "name_en": "Risk weight applied to index hedge i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p6"
+    },
+    "CH52_M_i_ind": {
+      "name_ja": "インデックス・ヘッジiの残存マチュリティ",
+      "name_en": "Remaining maturity of index hedge i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p5"
+    },
+    "CH52_B_i_ind": {
+      "name_ja": "インデックス・ヘッジiの想定元本額",
+      "name_en": "Notional amount of index hedge i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p5"
+    },
+    "CH52_DF_i_ind": {
+      "name_ja": "インデックス・ヘッジiのディスカウント・ファクター",
+      "name_en": "Discount factor of index hedge i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-3-3.p5"
+    },
+    "idx_kb": {
+      "name_ja": "和の添字（バケットbに含まれるリスク・ファクターk）",
+      "name_en": "Summation index (risk factor k in bucket b)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p5"
+    },
+    "idx_lb": {
+      "name_ja": "和の添字（バケットbに含まれるk以外のリスク・ファクターl）",
+      "name_en": "Summation index (risk factor l in bucket b other than k)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p5"
+    },
+    "idx_kc": {
+      "name_ja": "和の添字（バケットcに含まれるリスク・ファクターk）",
+      "name_en": "Summation index (risk factor k in bucket c)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p6"
+    },
+    "idx_b": {
+      "name_ja": "和の添字（バケットb）",
+      "name_en": "Summation index (bucket b)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p6"
+    },
+    "idx_cb": {
+      "name_ja": "和の添字（b以外のバケットc）",
+      "name_en": "Summation index (bucket c other than b)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p6"
+    },
+    "CH52_s_k_CVA": {
+      "name_ja": "CVAカバー取引を対象に計測されるCVAの合計値に対するリスク・ファクターkの感応度（ネット感応度）",
+      "name_en": "Net sensitivity of risk factor k of the total CVA measured for the CVA cover transactions",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p2"
+    },
+    "CH52_s_k_Hdg": {
+      "name_ja": "全ての適格SA―CVAヘッジ取引の市場価格の合計値に対するリスク・ファクターkの感応度（ネット感応度）",
+      "name_en": "Net sensitivity of risk factor k of the total market value of all eligible SA-CVA hedge transactions",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p2"
+    },
+    "CH52_RW_k": {
+      "name_ja": "リスク・ファクターkのリスク・ウェイト",
+      "name_en": "Risk weight of risk factor k",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p3"
+    },
+    "CH52_WS_k_CVA": {
+      "name_ja": "ネット感応度s_{k}^{CVA}に係る加重感応度",
+      "name_en": "Weighted sensitivity of net sensitivity s_{k}^{CVA}",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p3"
+    },
+    "CH52_WS_k_Hdg": {
+      "name_ja": "ネット感応度s_{k}^{Hdg}に係る加重感応度",
+      "name_en": "Weighted sensitivity of net sensitivity s_{k}^{Hdg}",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p3"
+    },
+    "CH52_WS_k": {
+      "name_ja": "リスク・ファクターkのネット加重感応度",
+      "name_en": "Net weighted sensitivity of risk factor k",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p4"
+    },
+    "CH52_WS_l": {
+      "name_ja": "リスク・ファクターlのネット加重感応度",
+      "name_en": "Net weighted sensitivity of risk factor l",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p5"
+    },
+    "CH52_K_b": {
+      "name_ja": "バケットbのCVAリスク相当額",
+      "name_en": "CVA risk equivalent amount of bucket b",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p5"
+    },
+    "CH52_K_c": {
+      "name_ja": "バケットcのCVAリスク相当額",
+      "name_en": "CVA risk equivalent amount of bucket c",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p6"
+    },
+    "CH52_rho_kl": {
+      "name_ja": "リスク・ファクターの感応度の相関係数",
+      "name_en": "Correlation coefficient between the sensitivities of the risk factors",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p5"
+    },
+    "CH52_R": {
+      "name_ja": "ヘッジング・ディスアローアンス（〇・〇一）",
+      "name_en": "Hedging disallowance (0.01)",
+      "desc_ja": "CVAリスクが完全にヘッジされない可能性を考慮したCVAリスク相当額の追加分をいう。",
+      "desc_en": "The additional amount of the CVA risk equivalent amount that takes into account the possibility that CVA risk is not fully hedged.",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p5"
+    },
+    "CH52_K_class": {
+      "name_ja": "リスク・クラスごとのCVAリスク相当額",
+      "name_en": "CVA risk equivalent amount for the risk class",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p6"
+    },
+    "CH52_m_CVA": {
+      "name_ja": "乗数",
+      "name_en": "Multiplier",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-10.p1"
+    },
+    "CH52_gamma_bc": {
+      "name_ja": "各リスク・クラスに適用される相関係数",
+      "name_en": "Correlation coefficient applied to each risk class",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p6"
+    },
+    "CH52_S_b": {
+      "name_ja": "バケットbに含まれる全てのリスク・ファクターの加重感応度の合計（－K_{b}を下限、K_{b}を上限とする）",
+      "name_en": "Sum of the weighted sensitivities of all risk factors in bucket b (floored at −K_{b} and capped at K_{b})",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p6"
+    },
+    "CH52_S_c": {
+      "name_ja": "バケットcに係るS_{b}と同様の方法で計測した値",
+      "name_en": "Value measured for bucket c in the same manner as S_{b}",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5-2.art248-4-8.p6"
+    },
+    "C5A_RW": {
+      "name_ja": "リスク・ウェイト",
+      "name_en": "Risk weight",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art230.p1"
+    },
+    "C5A_KIRB": {
+      "name_ja": "内部格付手法による裏付資産の所要自己資本率",
+      "name_en": "Required capital ratio of the underlying assets under the internal ratings-based approach",
+      "desc_ja": "裏付資産の所要自己資本の額の合計額を裏付資産のエクスポージャーの総額で除した値",
+      "desc_en": "Total required capital amount of the underlying assets divided by the total amount of the exposures of the underlying assets",
+      "defined_at": "fsa-basel-cap-jp.ch5.art232.p1"
+    },
+    "C5A_A": {
+      "name_ja": "アタッチメント・ポイント",
+      "name_en": "Attachment point",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art234.p1"
+    },
+    "C5A_D": {
+      "name_ja": "デタッチメント・ポイント",
+      "name_en": "Detachment point",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art234.p2"
+    },
+    "C5A_KSSFA": {
+      "name_ja": "K_{IRB}超過部分の所要自己資本率",
+      "name_en": "Required capital ratio for the portion in excess of K_{IRB}",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art231.p1"
+    },
+    "C5A_a": {
+      "name_ja": "指数 a(＝−1/(p×K_{IRB}))",
+      "name_en": "Exponent a (= −1/(p × K_{IRB}))",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art231.p1"
+    },
+    "C5A_u": {
+      "name_ja": "u(＝D−K_{IRB})",
+      "name_en": "u (= D − K_{IRB})",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art231.p1"
+    },
+    "C5A_l": {
+      "name_ja": "l(＝max(A−K_{IRB}, 0))",
+      "name_en": "l (= max(A − K_{IRB}, 0))",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art231.p1"
+    },
+    "C5A_N": {
+      "name_ja": "エクスポージャーの実効的な個数",
+      "name_en": "Effective number of exposures",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art235.p4"
+    },
+    "C5A_EAD_i": {
+      "name_ja": "裏付資産に含まれる第i番目のエクスポージャーのEAD",
+      "name_en": "EAD of the i-th exposure included in the underlying assets",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art235.p4"
+    },
+    "C5A_LGD": {
+      "name_ja": "裏付資産の加重平均LGD",
+      "name_en": "Weighted average LGD of the underlying assets",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art235.p5"
+    },
+    "C5A_LGD_i": {
+      "name_ja": "第i番目のエクスポージャーの加重平均LGD",
+      "name_en": "Weighted average LGD of the i-th exposure",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art235.p5"
+    },
+    "C5A_C1": {
+      "name_ja": "裏付資産のうち最もEADの大きいエクスポージャーが裏付資産総額に占める割合",
+      "name_en": "Proportion of the exposure with the largest EAD to the total amount of the underlying assets",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art235.p7"
+    },
+    "C5A_Cm": {
+      "name_ja": "最もEADの大きいものから順にm個のエクスポージャーのEAD合計額が裏付資産のEAD総額に占める割合",
+      "name_en": "Proportion that the total EAD of the m exposures with the largest EADs represents of the total EAD of the underlying assets",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art235.p7"
+    },
+    "C5A_m": {
+      "name_ja": "エクスポージャーの個数(m)",
+      "name_en": "Number of exposures (m)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art235.p7"
+    },
+    "C5A_MT": {
+      "name_ja": "証券化エクスポージャーの残存期間",
+      "name_en": "Residual maturity of the securitization exposure",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art235.p8"
+    },
+    "C5A_CF_t": {
+      "name_ja": "期間tに証券化エクスポージャーの保有者に対し契約上支払われるキャッシュ・フロー",
+      "name_en": "Cash flow contractually paid to the holder of the securitization exposure in period t",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art235.p8"
+    },
+    "CH5B_RW": {
+      "name_ja": "リスク・ウェイト",
+      "name_en": "Risk weight",
+      "desc_ja": "第二百四十条第一項第三号の算式により算出される比率。",
+      "desc_en": "The ratio calculated by the formula in Article 240, paragraph (1), item (iii).",
+      "defined_at": "fsa-basel-cap-jp.ch5.art240.p1"
+    },
+    "CH5B_KA": {
+      "name_ja": "延滞率を勘案した裏付資産の所要自己資本率",
+      "name_en": "Required capital ratio of the underlying assets taking the delinquency rate into account",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art242.p1"
+    },
+    "CH5B_A": {
+      "name_ja": "アタッチメント・ポイント",
+      "name_en": "Attachment point",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art241.p1"
+    },
+    "CH5B_D": {
+      "name_ja": "デタッチメント・ポイント",
+      "name_en": "Detachment point",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art241.p1"
+    },
+    "CH5B_KSSFA": {
+      "name_ja": "K_A超過部分の所要自己資本率",
+      "name_en": "Required capital ratio of the portion exceeding K_A",
+      "desc_ja": "次に掲げる算式により算出される値。",
+      "desc_en": "The value calculated by the formula given in Article 241.",
+      "defined_at": "fsa-basel-cap-jp.ch5.art241.p1"
+    },
+    "CH5B_a": {
+      "name_ja": "パラメーターa",
+      "name_en": "Parameter a",
+      "desc_ja": "a＝－(1／(p＊K_{A}))。pは1(再証券化エクスポージャーは1.5)。",
+      "desc_en": "a = -(1/(p * K_A)), where p is 1 (1.5 for re-securitization exposures).",
+      "defined_at": "fsa-basel-cap-jp.ch5.art241.p1"
+    },
+    "CH5B_u": {
+      "name_ja": "パラメーターu",
+      "name_en": "Parameter u",
+      "desc_ja": "u＝D－K_{A}。",
+      "desc_en": "u = D - K_A.",
+      "defined_at": "fsa-basel-cap-jp.ch5.art241.p1"
+    },
+    "CH5B_l": {
+      "name_ja": "パラメーターl",
+      "name_en": "Parameter l",
+      "desc_ja": "l＝max(A－K_{A}，0)。",
+      "desc_en": "l = max(A - K_A, 0).",
+      "defined_at": "fsa-basel-cap-jp.ch5.art241.p1"
+    },
+    "CH5B_EAD1": {
+      "name_ja": "延滞状況を把握していない原資産に係る部分以外のエクスポージャーの総額",
+      "name_en": "Total exposures of the underlying assets other than the portion relating to original assets with untracked delinquency status",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art242.p2"
+    },
+    "CH5B_EAD2": {
+      "name_ja": "延滞状況を把握していない原資産に係る部分のエクスポージャーの総額",
+      "name_en": "Total exposures of the underlying assets relating to original assets with untracked delinquency status",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art242.p2"
+    },
+    "CH5B_EADT": {
+      "name_ja": "裏付資産のエクスポージャーの総額",
+      "name_en": "Total exposures of the underlying assets",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art242.p2"
+    },
+    "CH5B_KA_SP1": {
+      "name_ja": "延滞状況を把握していない原資産に係る部分以外の部分について算出したK_A",
+      "name_en": "K_A calculated for the portion other than that relating to original assets with untracked delinquency status",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch5.art242.p2"
+    },
+    "C6B_RS": {
+      "name_ja": "スピアマンの順位相関指標",
+      "name_en": "Spearman rank correlation metric",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art253-7.p3"
+    },
+    "C6B_COV": {
+      "name_ja": "R_{HPL}とR_{RTPL}との間の共分散",
+      "name_en": "Covariance between R_{HPL} and R_{RTPL}",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art253-7.p3"
+    },
+    "C6B_SIG_H": {
+      "name_ja": "R_{HPL}の標準偏差",
+      "name_en": "Standard deviation of R_{HPL}",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art253-7.p3"
+    },
+    "C6B_SIG_R": {
+      "name_ja": "R_{RTPL}の標準偏差",
+      "name_en": "Standard deviation of R_{RTPL}",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art253-7.p3"
+    },
+    "C6B_R_HPL": {
+      "name_ja": "仮想損益を大きさに基づいて変換した順位データ",
+      "name_en": "Rank data obtained by converting the hypothetical P&L on the basis of magnitude",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art253-7.p3"
+    },
+    "C6B_R_RTPL": {
+      "name_ja": "リスク理論損益を大きさに基づいて変換した順位データ",
+      "name_en": "Rank data obtained by converting the risk-theoretical P&L on the basis of magnitude",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art253-7.p3"
+    },
+    "C6B_ES": {
+      "name_ja": "期待ショート・フォールにより算出したマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount calculated by expected shortfall",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-2.p1"
+    },
+    "C6B_ES_T": {
+      "name_ja": "ベース・ホライズンを前提としたポジションP＝(p_{i})に対する全てのリスク・ファクターのショックに係る期待ショート・フォールにより算出したマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount by expected shortfall for shocks to all risk factors of position P = (p_{i}) on the assumption of the base horizon",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-2.p1"
+    },
+    "C6B_ES_Tj": {
+      "name_ja": "ポジションP＝(p_{i})のリスク・ファクターの集合Q(p_{i}, j)の各ポジションp_{i}へのショックを勘案した期待ショート・フォールにより算出したマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount by expected shortfall taking into account shocks to each position p_{i} in the set Q(p_{i}, j) of risk factors of position P = (p_{i})",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-2.p1"
+    },
+    "C6B_LH_j": {
+      "name_ja": "第二項に規定する期間",
+      "name_en": "Period provided for in paragraph (2)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-2.p1"
+    },
+    "C6B_LH_j1": {
+      "name_ja": "流動性ホライズンの区分(j−1)の期間",
+      "name_en": "Period of liquidity horizon category (j−1)",
+      "desc_ja": "LH_{j}の添字を一つ減らしたもの。",
+      "desc_en": "LH with the index reduced by one.",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-2.p2"
+    },
+    "C6B_T": {
+      "name_ja": "ベース・ホライズンの長さ",
+      "name_en": "Length of the base horizon",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-2.p1"
+    },
+    "C6B_ES_S": {
+      "name_ja": "市場混乱時を想定した期待ショート・フォールにより算出したマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount by expected shortfall assuming market stress",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-3.p1"
+    },
+    "C6B_ES_RS": {
+      "name_ja": "低減したリスク・ファクターについて、市場混乱時を想定した期待ショート・フォールにより算出したマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount by expected shortfall assuming market stress for the reduced set of risk factors",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-3.p1"
+    },
+    "C6B_ES_RC": {
+      "name_ja": "低減したリスク・ファクターに基づく直近十二月の期待ショート・フォールにより算出したマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount by expected shortfall based on the most recent 12 months for the reduced set of risk factors",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-3.p1"
+    },
+    "C6B_ES_FC": {
+      "name_ja": "全てのリスク・ファクターに基づく直近十二月の期待ショート・フォールにより算出したマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount by expected shortfall based on the most recent 12 months for all risk factors",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-3.p1"
+    },
+    "C6B_IMCC": {
+      "name_ja": "モデル化可能なリスク・ファクターに基づくマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount based on modellable risk factors",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-4.p1"
+    },
+    "C6B_IMCC_C": {
+      "name_ja": "全リスク・クラスを対象とした市場混乱時を想定した期待ショート・フォールにより算出したマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount by expected shortfall assuming market stress covering all risk classes",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-4.p1"
+    },
+    "C6B_IMCC_Ci": {
+      "name_ja": "五つの各リスク・クラスを対象とした市場混乱時を想定した期待ショート・フォールにより算出したマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount by expected shortfall assuming market stress covering each of the five risk classes",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-4.p1"
+    },
+    "C6B_ES_RSi": {
+      "name_ja": "低減したリスク・ファクターについて、五つの各リスク・クラスを対象とし、ストレス期間を想定して算出した期待ショート・フォールにより算出したマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount by expected shortfall for the reduced set of risk factors, for each of the five risk classes, calculated assuming the stress period",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-4.p1"
+    },
+    "C6B_ES_RCi": {
+      "name_ja": "五つの各リスク・クラスを対象とし、低減したリスク・ファクターに基づく直近十二月の期待ショート・フォールにより算出したマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount by expected shortfall based on the most recent 12 months for the reduced set of risk factors, for each of the five risk classes",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-4.p1"
+    },
+    "C6B_ES_FCi": {
+      "name_ja": "五つの各リスク・クラスを対象の全てのリスク・ファクターに基づく直近十二月の期待ショート・フォールにより算出したマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount by expected shortfall based on the most recent 12 months for all risk factors, for each of the five risk classes",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-4.p1"
+    },
+    "C6B_RHO_I": {
+      "name_ja": "相関係数（IMCC）",
+      "name_en": "Correlation coefficient (IMCC)",
+      "desc_ja": "〇・五",
+      "desc_en": "0.5",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-4.p1"
+    },
+    "C6B_B": {
+      "name_ja": "リスク・クラスの総数",
+      "name_en": "Total number of risk classes",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-4.p1"
+    },
+    "C6B_SES": {
+      "name_ja": "モデル化不可能なリスク・ファクターに基づくマーケット・リスク相当額を合計したもの",
+      "name_en": "Sum of the market risk equivalent amounts based on non-modellable risk factors",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-5.p2"
+    },
+    "C6B_ISES_i": {
+      "name_ja": "信用スプレッドのリスク・ファクターiに対するマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount for credit spread risk factor i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-5.p2"
+    },
+    "C6B_ISES_j": {
+      "name_ja": "株式の個別リスクのリスク・ファクターjに対するマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount for idiosyncratic equity risk factor j",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-5.p2"
+    },
+    "C6B_SES_k": {
+      "name_ja": "モデル化不可能なリスク・ファクターkに対するマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount for non-modellable risk factor k",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-5.p2"
+    },
+    "C6B_RHO_S": {
+      "name_ja": "相関係数（SES）",
+      "name_en": "Correlation coefficient (SES)",
+      "desc_ja": "〇・六",
+      "desc_en": "0.6",
+      "defined_at": "fsa-basel-cap-jp.ch6.art254-5.p2"
+    },
+    "C6B_K": {
+      "name_ja": "資本サーチャージの算式における係数",
+      "name_en": "Coefficient in the capital surcharge formula",
+      "desc_ja": "条文には説明がなく、算式のみで定められる。",
+      "desc_en": "Not described in the article text; set only by the formula.",
+      "defined_at": "fsa-basel-cap-jp.ch6.art257.p1"
+    },
+    "C6B_SUM_A": {
+      "name_ja": "アンバー・ゾーンに分類されたトレーディング・デスクiについてのSA_{i}の合計",
+      "name_en": "Sum of SA_{i} over trading desks i classified in the amber zone (A)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art257.p1"
+    },
+    "C6B_SUM_GA": {
+      "name_ja": "グリーン・ゾーン又はアンバー・ゾーンに分類されたトレーディング・デスクiについてのSA_{i}の合計",
+      "name_en": "Sum of SA_{i} over trading desks i classified in the green zone (G) or amber zone (A)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art257.p1"
+    },
+    "C6B_K_b": {
+      "name_ja": "各バケットに対するマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount for each bucket",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-2.p4"
+    },
+    "C6B_WS_k": {
+      "name_ja": "リスク・ファクターkに対するリスク加重後の感応度",
+      "name_en": "Risk-weighted sensitivity for risk factor k",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-2.p3"
+    },
+    "C6B_WS_l": {
+      "name_ja": "リスク・ファクターlに対するリスク加重後の感応度",
+      "name_en": "Risk-weighted sensitivity for risk factor l",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-2.p3"
+    },
+    "C6B_RHO_kl": {
+      "name_ja": "リスク・ファクターkとlとの間の相関係数",
+      "name_en": "Correlation coefficient between risk factors k and l",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-2.p4"
+    },
+    "C6B_GAMMA": {
+      "name_ja": "バケットbとcとの間の相関係数",
+      "name_en": "Correlation coefficient between buckets b and c",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-2.p5"
+    },
+    "C6B_S_b": {
+      "name_ja": "リスク加重後の感応度WS_{b}のバケットbの合計額",
+      "name_en": "Total of the risk-weighted sensitivities WS_{b} of bucket b",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-2.p5"
+    },
+    "C6B_S_c": {
+      "name_ja": "リスク加重後の感応度WS_{c}のバケットcの合計額",
+      "name_en": "Total of the risk-weighted sensitivities WS_{c} of bucket c",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-2.p5"
+    },
+    "C6B_MR_RC": {
+      "name_ja": "各リスク・クラスにおけるデルタ・リスク及びベガ・リスクに対するマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount for delta risk and vega risk in each risk class",
+      "desc_ja": "画像では左辺は文章で印刷されている。",
+      "desc_en": "Printed in words on the left-hand side in the image.",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-2.p5"
+    },
+    "C6B_K_c": {
+      "name_ja": "バケットcに対するマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount for bucket c",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-2.p4"
+    },
+    "C6B_CVR_P": {
+      "name_ja": "リスク・ファクターkが上方に移動した場合におけるカーベチャー・リスクのリスク加重後の感応度（デルタ・リスクのリスク加重後の感応度を除く。）",
+      "name_en": "Risk-weighted sensitivity of curvature risk (excluding that of delta risk) where risk factor k moves upward",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p2"
+    },
+    "C6B_CVR_M": {
+      "name_ja": "リスク・ファクターkが下方に移動した場合におけるカーベチャー・リスクのリスク加重後の感応度（デルタ・リスクのリスク加重後の感応度を除く。）",
+      "name_en": "Risk-weighted sensitivity of curvature risk (excluding that of delta risk) where risk factor k moves downward",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p2"
+    },
+    "C6B_V_X": {
+      "name_ja": "リスク・ファクターkのx_{k}における商品iの時価",
+      "name_en": "Market value of instrument i at x_{k} of risk factor k",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p2"
+    },
+    "C6B_V_UP": {
+      "name_ja": "リスク・ファクターkが上方に移動した場合の商品iの時価",
+      "name_en": "Market value of instrument i where risk factor k moves upward",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p2"
+    },
+    "C6B_V_DN": {
+      "name_ja": "リスク・ファクターkが下方に移動した場合の商品iの時価",
+      "name_en": "Market value of instrument i where risk factor k moves downward",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p2"
+    },
+    "C6B_RW_C": {
+      "name_ja": "商品iのリスク・ファクターkに適用されるリスク・ウェイト",
+      "name_en": "Risk weight applicable to risk factor k of instrument i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p2"
+    },
+    "C6B_S_ik": {
+      "name_ja": "商品iのリスク・ファクターkのデルタ・リスクの感応度",
+      "name_en": "Delta risk sensitivity of risk factor k of instrument i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p2"
+    },
+    "C6B_K_bP": {
+      "name_ja": "バケットbについて、リスク・ファクターが上方に移動した場合のマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount of bucket b where risk factors move upward",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p5"
+    },
+    "C6B_K_bM": {
+      "name_ja": "バケットbについて、リスク・ファクターが下方に移動した場合のマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount of bucket b where risk factors move downward",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p5"
+    },
+    "C6B_CVR_Pl": {
+      "name_ja": "リスク・ファクターlが上方に移動した場合におけるカーベチャー・リスクのリスク加重後の感応度",
+      "name_en": "Risk-weighted sensitivity of curvature risk where risk factor l moves upward",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p2"
+    },
+    "C6B_CVR_Ml": {
+      "name_ja": "リスク・ファクターlが下方に移動した場合におけるカーベチャー・リスクのリスク加重後の感応度",
+      "name_en": "Risk-weighted sensitivity of curvature risk where risk factor l moves downward",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p2"
+    },
+    "C6B_RHO_CV": {
+      "name_ja": "リスク・ファクター間の相関係数であり、デルタ・リスクの相関関数を二乗した値",
+      "name_en": "Correlation coefficient between risk factors, being the value obtained by squaring the delta risk correlation function",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p5"
+    },
+    "C6B_PSI_P": {
+      "name_ja": "CVR_{k}及びCVR_{l}がいずれも負の場合には零、それ以外の場合には一",
+      "name_en": "Zero where CVR_{k} and CVR_{l} are both negative, and one otherwise",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p5"
+    },
+    "C6B_PSI_M": {
+      "name_ja": "CVR_{k}及びCVR_{l}がいずれも負の場合には零、それ以外の場合には一",
+      "name_en": "Zero where CVR_{k} and CVR_{l} are both negative, and one otherwise",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p5"
+    },
+    "C6B_MR_CV": {
+      "name_ja": "各リスク・クラスにおけるカーベチャー・リスクに対するマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount for curvature risk in each risk class",
+      "desc_ja": "画像では左辺は文章で印刷されている。",
+      "desc_en": "Printed in words on the left-hand side in the image.",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p6"
+    },
+    "C6B_GAMMA_CV": {
+      "name_ja": "デルタ・リスクの相関関数を二乗した値",
+      "name_en": "Value obtained by squaring the delta risk correlation function",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p6"
+    },
+    "C6B_S_bCV": {
+      "name_ja": "バケットbについてのCVRの合計（上方又は下方に移動した場合）",
+      "name_en": "Total of CVR for bucket b (upward or downward shift)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p6"
+    },
+    "C6B_S_cCV": {
+      "name_ja": "バケットcについてのCVRの合計（上方又は下方に移動した場合）",
+      "name_en": "Total of CVR for bucket c (upward or downward shift)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p6"
+    },
+    "C6B_PSI_S": {
+      "name_ja": "S_{b}及びS_{c}のいずれも負の場合には零、それ以外の場合には一",
+      "name_en": "Zero where S_{b} and S_{c} are both negative, and one otherwise",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art260-3.p6"
+    },
+    "C6B_S_kr": {
+      "name_ja": "一般金利リスクのデルタ・リスクの感応度",
+      "name_en": "Delta risk sensitivity of general interest rate risk",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_S_kcs": {
+      "name_ja": "非証券化商品、証券化商品(非CTP)及び証券化商品(CTP)に係る信用スプレッド・リスクのデルタ・リスクの感応度",
+      "name_en": "Delta risk sensitivity of credit spread risk relating to non-securitization products, securitization products (non-CTP) and securitization products (CTP)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_V_rUP": {
+      "name_ja": "リスクフリー・レートに0.0001を加えた場合の商品iの市場価値",
+      "name_en": "Market value of instrument i with 0.0001 added to the risk-free rate",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_V_csUP": {
+      "name_ja": "信用スプレッドに0.0001を加えた場合の商品iの市場価値",
+      "name_en": "Market value of instrument i with 0.0001 added to the credit spread",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_V_rcs": {
+      "name_ja": "リスクフリー・レート及び信用スプレッドを変数とする関数であり、商品iの市場価値を表すもの",
+      "name_en": "Function of the risk-free rate and the credit spread as variables, representing the market value of instrument i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_S_EQ": {
+      "name_ja": "株式等のデルタ・リスクの感応度",
+      "name_en": "Delta risk sensitivity of equities, etc.",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_V_EQUP": {
+      "name_ja": "株式等kの現物価格を一パーセント上昇させた場合の商品iの市場価値",
+      "name_en": "Market value of instrument i with the spot price of equity, etc. k increased by 1 percent",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_V_EQ": {
+      "name_ja": "株式等kの現物価格を変数とする関数であり、商品iの市場価値を表すもの",
+      "name_en": "Function of the spot price of equity, etc. k as a variable, representing the market value of instrument i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_S_RTS": {
+      "name_ja": "株式等レポ・レートのデルタ・リスクの感応度",
+      "name_en": "Delta risk sensitivity of equity repo rates, etc.",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_V_RTSUP": {
+      "name_ja": "株式等kのレポ・レートに0.0001を加えた場合の商品iの市場価値",
+      "name_en": "Market value of instrument i with 0.0001 added to the repo rate of equity, etc. k",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_V_RTS": {
+      "name_ja": "株式等kのレポ・レートを変数とする関数であり、商品iの市場価値を表すもの",
+      "name_en": "Function of the repo rate of equity, etc. k as a variable, representing the market value of instrument i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_S_CTY": {
+      "name_ja": "コモディティのデルタ・リスクの感応度",
+      "name_en": "Delta risk sensitivity of the commodity",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_V_CTYUP": {
+      "name_ja": "コモディティkの現物価格を一パーセント上昇させた場合の商品iの市場価値",
+      "name_en": "Market value of instrument i with the spot price of commodity k increased by 1 percent",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_V_CTY": {
+      "name_ja": "コモディティkの現物価格を変数とする関数であり、商品iの市場価値を表すもの",
+      "name_en": "Function of the spot price of commodity k as a variable, representing the market value of instrument i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_S_FX": {
+      "name_ja": "外国為替リスクのデルタ・リスクの感応度",
+      "name_en": "Delta risk sensitivity of foreign exchange risk",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_V_FXUP": {
+      "name_ja": "為替レートを一パーセント上昇させた場合の商品iの市場価値",
+      "name_en": "Market value of instrument i with the exchange rate of currency k increased by 1 percent",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6B_V_FX": {
+      "name_ja": "通貨kの直物為替レートを変数とする関数であり、商品iの市場価値を表すもの",
+      "name_en": "Function of the spot exchange rate of currency k as a variable, representing the market value of instrument i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-3.p1"
+    },
+    "C6C_SK": {
+      "name_ja": "オプション・リスクのベガ・リスクの感応度",
+      "name_en": "Vega risk sensitivity of option risk",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-4.p1"
+    },
+    "C6C_SIG": {
+      "name_ja": "オプション性を含む商品iのインプライド・ボラティリティ",
+      "name_en": "Implied volatility of instrument i, which includes optionality",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-4.p1"
+    },
+    "C6C_DSIG": {
+      "name_ja": "インプライド・ボラティリティの微小な変化幅",
+      "name_en": "Small change width applied to the implied volatility",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-4.p1"
+    },
+    "C6C_V1": {
+      "name_ja": "商品iのインプライド・ボラティリティをΔσ_{i}変化させた値を変数とする商品iの市場価値",
+      "name_en": "Market value of instrument i with its implied volatility changed by Δσ_{i}",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-4.p1"
+    },
+    "C6C_V0": {
+      "name_ja": "商品iのインプライド・ボラティリティを変数とする関数であり、商品iの市場価値を表すもの",
+      "name_en": "Market value of instrument i as a function of its implied volatility",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art261-4.p1"
+    },
+    "C6C_RHO": {
+      "name_ja": "リスク・ファクター間の相関係数",
+      "name_en": "Correlation coefficient between risk factors k and l",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art263-3.p3"
+    },
+    "C6C_RHO_NAME": {
+      "name_ja": "感応度kと感応度lの銘柄に係る相関係数",
+      "name_en": "Correlation coefficient relating to the names of sensitivities k and l",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art263-3.p4"
+    },
+    "C6C_RHO_TENOR": {
+      "name_ja": "感応度kと感応度lのテナーに係る相関係数",
+      "name_en": "Correlation coefficient relating to the tenors of sensitivities k and l",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art263-3.p4"
+    },
+    "C6C_RHO_BASIS": {
+      "name_ja": "感応度kと感応度lのカーブに係る相関係数",
+      "name_en": "Correlation coefficient relating to the curves (basis) of sensitivities k and l",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art263-3.p4"
+    },
+    "C6C_KB": {
+      "name_ja": "バケットbのリスク加重後の感応度の合算値(当該バケットが「その他」のバケットである場合)",
+      "name_en": "Aggregate of the risk-weighted sensitivities of bucket b (where the bucket is the \"other\" bucket)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art263-3.p6"
+    },
+    "C6C_WS_k": {
+      "name_ja": "リスク・ファクターkのリスク加重後の感応度",
+      "name_en": "Risk-weighted sensitivity of risk factor k",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art263-3.p6"
+    },
+    "C6C_GAMMA": {
+      "name_ja": "バケット間の相関係数",
+      "name_en": "Correlation coefficient between buckets b and c",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art263-3.p7"
+    },
+    "C6C_GAMMA_RATING": {
+      "name_ja": "信用度に係るバケット間の相関係数",
+      "name_en": "Correlation coefficient between buckets relating to credit quality (rating)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art263-3.p8"
+    },
+    "C6C_GAMMA_SECTOR": {
+      "name_ja": "セクターに係るバケット間の相関係数",
+      "name_en": "Correlation coefficient between buckets relating to sector",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art263-3.p8"
+    },
+    "C6C_RHO_TRANCHE": {
+      "name_ja": "感応度kと感応度lの銘柄(トランシェ)に係る相関係数",
+      "name_en": "Correlation coefficient relating to the names (tranches) of sensitivities k and l",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art263-5.p4"
+    },
+    "C6C_RHO_CTY": {
+      "name_ja": "感応度kと感応度lのコモディティに係る相関係数",
+      "name_en": "Correlation coefficient relating to the commodities of sensitivities k and l",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art264-2.p4"
+    },
+    "C6C_RHO_OPT": {
+      "name_ja": "オプションの権利行使日までの年数に係る相関係数",
+      "name_en": "Correlation coefficient relating to the time to option exercise",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art265.p4"
+    },
+    "C6C_RHO_UND": {
+      "name_ja": "原資産となる金利派生商品の契約期間に係る相関係数",
+      "name_en": "Correlation coefficient relating to the contract period of the underlying interest rate derivative",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art265.p4"
+    },
+    "C6C_RHO_DELTA": {
+      "name_ja": "ベガ・リスク・ファクターに対応するデルタ・リスク・ファクター間の相関係数",
+      "name_en": "Correlation coefficient between the delta risk factors corresponding to the vega risk factors",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art265.p4"
+    },
+    "C6C_ALPHA": {
+      "name_ja": "一パーセント",
+      "name_en": "Parameter α, equal to 1%",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art265.p4"
+    },
+    "C6C_T_k": {
+      "name_ja": "オプション商品kのオプション権利行使日までの年数",
+      "name_en": "Number of years until the option exercise date of option product k",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art265.p4"
+    },
+    "C6C_T_l": {
+      "name_ja": "オプション商品lのオプション権利行使日までの年数",
+      "name_en": "Number of years until the option exercise date of option product l",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art265.p4"
+    },
+    "C6C_TU_k": {
+      "name_ja": "オプション商品kの原資産となる金利派生商品の契約期間の年数",
+      "name_en": "Number of years of the contract period of the interest rate derivative underlying option product k",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art265.p4"
+    },
+    "C6C_TU_l": {
+      "name_ja": "オプション商品lの原資産となる金利派生商品の契約期間の年数",
+      "name_en": "Number of years of the contract period of the interest rate derivative underlying option product l",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art265.p4"
+    },
+    "C6C_CVRP_k": {
+      "name_ja": "リスク・ファクターkの上方シフト時のカーベチャー・リスクのリスク加重後の感応度",
+      "name_en": "Curvature risk-weighted sensitivity of risk factor k under the upward shift",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art265-2.p4"
+    },
+    "C6C_CVRM_k": {
+      "name_ja": "リスク・ファクターkの下方シフト時のカーベチャー・リスクのリスク加重後の感応度",
+      "name_en": "Curvature risk-weighted sensitivity of risk factor k under the downward shift",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art265-2.p4"
+    },
+    "CH6D_HBR_b": {
+      "name_ja": "バケットbにおけるヘッジ効果の係数",
+      "name_en": "Hedge benefit ratio in bucket b",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art267-3.p3"
+    },
+    "CH6D_netJTD": {
+      "name_ja": "商品iのネットのJTDリスク・ポジション",
+      "name_en": "Net JTD risk position of product i",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art267-3.p3"
+    },
+    "CH6D_RW": {
+      "name_ja": "リスク・ウェイト",
+      "name_en": "Risk weight of product i",
+      "desc_ja": "第二項に定めるリスク・ウェイト(第二百六十九条の二第三項では商品iに適用するリスク・ウェイト)。",
+      "desc_en": "The risk weight under paragraph (2) (in Article 269-2, paragraph (3), the risk weight applied to product i).",
+      "defined_at": "fsa-basel-cap-jp.ch6.art267-3.p4"
+    },
+    "CH6D_DRC_b": {
+      "name_ja": "バケットbにおけるデフォルト・リスクに対するマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount for default risk in bucket b",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art267-3.p4"
+    },
+    "CH6D_ILONG": {
+      "name_ja": "バケットbにおけるロング・ポジションとなっている商品iについての和の添字",
+      "name_en": "Summation index over products i that are long positions in bucket b",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art267-3.p3"
+    },
+    "CH6D_ISHORT": {
+      "name_ja": "バケットbにおけるショート・ポジションとなっている商品iについての和の添字",
+      "name_en": "Summation index over products i that are short positions in bucket b",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art267-3.p3"
+    },
+    "CH6D_ILONG_C": {
+      "name_ja": "バケットbにおけるロング・ポジションとなっている商品iについての和の添字",
+      "name_en": "Summation index over products i that are long positions in bucket b",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art269-2.p3"
+    },
+    "CH6D_ISHORT_C": {
+      "name_ja": "バケットbにおけるショート・ポジションとなっている商品iについての和の添字",
+      "name_en": "Summation index over products i that are short positions in bucket b",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art269-2.p3"
+    },
+    "CH6D_DRC_CTP": {
+      "name_ja": "証券化商品(CTP)のデフォルト・リスクに対するマーケット・リスク相当額",
+      "name_en": "Market risk equivalent amount for default risk of securitization products (CTP)",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art269-2.p3"
+    },
+    "CH6D_HBR_CTP": {
+      "name_ja": "コリレーション・トレーディング・ポートフォリオに含まれる全てのポジションを用いて算出した証券化商品(CTP)のヘッジ効果の係数",
+      "name_en": "Hedge benefit ratio of securitization products (CTP) calculated using all positions in the correlation trading portfolio",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch6.art269-2.p3"
+    },
+    "CH7_ILDC": {
+      "name_ja": "金利要素",
+      "name_en": "Interest component (ILDC)",
+      "desc_ja": "BICの構成要素のうち、預金業務等の規模部分",
+      "desc_en": "The part of the BIC components reflecting the scale of deposit-taking business, etc.",
+      "defined_at": "fsa-basel-cap-jp.ch7.art283.p2"
+    },
+    "CH7_SC": {
+      "name_ja": "役務要素",
+      "name_en": "Services component (SC)",
+      "desc_ja": "BICの構成要素のうち、役務取引等の規模部分",
+      "desc_en": "The part of the BIC components reflecting the scale of fee and commission transactions, etc.",
+      "defined_at": "fsa-basel-cap-jp.ch7.art283.p2"
+    },
+    "CH7_FC": {
+      "name_ja": "金融商品要素",
+      "name_en": "Financial instruments component (FC)",
+      "desc_ja": "BICの構成要素のうち、金融商品取引の規模部分",
+      "desc_en": "The part of the BIC components reflecting the scale of financial instruments transactions",
+      "defined_at": "fsa-basel-cap-jp.ch7.art283.p2"
+    },
+    "CH7_IINC": {
+      "name_ja": "資金運用収益",
+      "name_en": "Interest income",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch7.appx1.p1"
+    },
+    "CH7_IEXP": {
+      "name_ja": "資金調達費用",
+      "name_en": "Interest expenses",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch7.appx1.p1"
+    },
+    "CH7_IEA": {
+      "name_ja": "金利収益資産",
+      "name_en": "Interest-earning assets",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch7.appx1.p1"
+    },
+    "CH7_DIV": {
+      "name_ja": "受取配当金",
+      "name_en": "Dividends received",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch7.appx1.p1"
+    },
+    "CH7_FINC": {
+      "name_ja": "役務取引等収益",
+      "name_en": "Fee and commission income",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch7.appx1.p1"
+    },
+    "CH7_FEXP": {
+      "name_ja": "役務取引等費用",
+      "name_en": "Fee and commission expenses",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch7.appx1.p1"
+    },
+    "CH7_OINC": {
+      "name_ja": "その他業務収益",
+      "name_en": "Income from other operations",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch7.appx1.p1"
+    },
+    "CH7_OEXP": {
+      "name_ja": "その他業務費用",
+      "name_en": "Expenses on other operations",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch7.appx1.p1"
+    },
+    "CH7_TRD": {
+      "name_ja": "トレーディング商品のネット損益",
+      "name_en": "Net profit or loss on trading products",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch7.appx1.p1"
+    },
+    "CH7_NTRD": {
+      "name_ja": "トレーディング商品以外の勘定のネット損益",
+      "name_en": "Net profit or loss on accounts other than trading products",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch7.appx1.p1"
     }
   },
   "formulas": [
@@ -1582,6 +3283,2488 @@
       "source": "transcribed",
       "note_ja": "",
       "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p160i0",
+      "anchor": "p160i0",
+      "node_id": "fsa-basel-cap-jp.ch4.art129.p1",
+      "display": "block",
+      "lines": [
+        "C4A_K = (C4A_LGD * Phi((1 - C4A_R)^(-0.5) * C4A_G_PD + (C4A_R / (1 - C4A_R))^0.5 * C4A_G_999) - C4A_EL) * (1 - 1.5 * C4A_b)^(-1) * (1 + (C4A_M - 2.5) * C4A_b)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文のN{x}は標準正規分布の累積分布関数であり、Phiで表示する。G(PD)・G(0.999)は逆関数G(x)の値として一つの記号で表す。原文の角括弧・波括弧は丸括弧で表す。",
+      "note_en": "The printed N{x} (cumulative distribution function of the standard normal distribution) is rendered as Phi. G(PD) and G(0.999) (values of the inverse function G(x)) are each kept as a single symbol. Square and curly brackets are shown as round parentheses."
+    },
+    {
+      "id": "f-ch4a-p161i0",
+      "anchor": "p161i0",
+      "node_id": "fsa-basel-cap-jp.ch4.art129.p1",
+      "display": "block",
+      "lines": [
+        "C4A_R = 0.12 * ((1 - exp(-50 * C4A_PD)) / (1 - exp(-50))) + 0.24 * (1 - ((1 - exp(-50 * C4A_PD)) / (1 - exp(-50))))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p161i1",
+      "anchor": "p161i1",
+      "node_id": "fsa-basel-cap-jp.ch4.art129.p2",
+      "display": "block",
+      "lines": [
+        "C4A_R = 0.12 * ((1 - exp(-50 * C4A_PD)) / (1 - exp(-50))) + 0.24 * (1 - ((1 - exp(-50 * C4A_PD)) / (1 - exp(-50)))) - 0.04 * (1 - (C4A_S - 5) / 45)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p162i0",
+      "anchor": "p162i0",
+      "node_id": "fsa-basel-cap-jp.ch4.art129.p5",
+      "display": "block",
+      "lines": [
+        "C4A_R = 0.12 * ((1 - exp(-50 * C4A_PD)) / (1 - exp(-50))) + 0.3 * (1 - ((1 - exp(-50 * C4A_PD)) / (1 - exp(-50))))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p176i0",
+      "anchor": "p176i0",
+      "node_id": "fsa-basel-cap-jp.ch4.art136.p1",
+      "display": "block",
+      "lines": [
+        "C4A_K = (C4A_LGD * Phi((1 - C4A_R)^(-0.5) * C4A_G_PD + (C4A_R / (1 - C4A_R))^0.5 * C4A_G_999) - C4A_EL)",
+        "C4A_R = 0.15"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文のN{x}は標準正規分布の累積分布関数であり、Phiで表示する。G(PD)・G(0.999)は逆関数G(x)の値として一つの記号で表す。原文の角括弧・波括弧は丸括弧で表す。第二行の相関係数の値は、算式の下に括弧書きで印刷されている(相関係数(R)＝0.15)ものを算式の一部として示した。",
+      "note_en": "The printed N{x} (cumulative distribution function of the standard normal distribution) is rendered as Phi. G(PD) and G(0.999) (values of the inverse function G(x)) are each kept as a single symbol. Square and curly brackets are shown as round parentheses. The second line gives the value of R, which the PDF prints in parentheses beneath the formula (correlation coefficient (R) = 0.15) and which the text extraction dropped."
+    },
+    {
+      "id": "f-ch4a-p176i1",
+      "anchor": "p176i1",
+      "node_id": "fsa-basel-cap-jp.ch4.art137.p1",
+      "display": "block",
+      "lines": [
+        "C4A_K = (C4A_LGD * Phi((1 - C4A_R)^(-0.5) * C4A_G_PD + (C4A_R / (1 - C4A_R))^0.5 * C4A_G_999) - C4A_EL)",
+        "C4A_R = 0.04"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文のN{x}は標準正規分布の累積分布関数であり、Phiで表示する。G(PD)・G(0.999)は逆関数G(x)の値として一つの記号で表す。原文の角括弧・波括弧は丸括弧で表す。第二行の相関係数の値は、算式の下に括弧書きで印刷されている(相関係数(R)＝0.04)ものを算式の一部として示した。",
+      "note_en": "The printed N{x} (cumulative distribution function of the standard normal distribution) is rendered as Phi. G(PD) and G(0.999) (values of the inverse function G(x)) are each kept as a single symbol. Square and curly brackets are shown as round parentheses. The second line gives the value of R, which the PDF prints in parentheses beneath the formula (correlation coefficient (R) = 0.04) and which the text extraction dropped."
+    },
+    {
+      "id": "f-ch4a-p176i2",
+      "anchor": "p176i2",
+      "node_id": "fsa-basel-cap-jp.ch4.art138.p1",
+      "display": "block",
+      "lines": [
+        "C4A_K = (C4A_LGD * Phi((1 - C4A_R)^(-0.5) * C4A_G_PD + (C4A_R / (1 - C4A_R))^0.5 * C4A_G_999) - C4A_EL)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文のN{x}は標準正規分布の累積分布関数であり、Phiで表示する。G(PD)・G(0.999)は逆関数G(x)の値として一つの記号で表す。原文の角括弧・波括弧は丸括弧で表す。",
+      "note_en": "The printed N{x} (cumulative distribution function of the standard normal distribution) is rendered as Phi. G(PD) and G(0.999) (values of the inverse function G(x)) are each kept as a single symbol. Square and curly brackets are shown as round parentheses."
+    },
+    {
+      "id": "f-ch4a-p177i0",
+      "anchor": "p177i0",
+      "node_id": "fsa-basel-cap-jp.ch4.art138.p1",
+      "display": "block",
+      "lines": [
+        "C4A_R = 0.03 * ((1 - exp(-35 * C4A_PD)) / (1 - exp(-35))) + 0.16 * (1 - ((1 - exp(-35 * C4A_PD)) / (1 - exp(-35))))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p166i0",
+      "anchor": "p166i0",
+      "node_id": "fsa-basel-cap-jp.ch4.art133.p3",
+      "display": "block",
+      "lines": [
+        "C4A_LGD_star = C4A_LGD_U * ((C4A_E * (1 + C4A_H_E) - C4A_E_S) / (C4A_E * (1 + C4A_H_E))) + C4A_LGD_S * (C4A_E_S / (C4A_E * (1 + C4A_H_E)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p169i0",
+      "anchor": "p169i0",
+      "node_id": "fsa-basel-cap-jp.ch4.art133.p6",
+      "display": "block",
+      "lines": [
+        "C4A_LGD_ss = C4A_LGD_U * ((C4A_E * (1 + C4A_H_E) - sum(i, C4A_E_Si)) / (C4A_E * (1 + C4A_H_E))) + sum(i, C4A_LGD_Si * (C4A_E_Si / (C4A_E * (1 + C4A_H_E))))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p170i0",
+      "anchor": "p170i0",
+      "node_id": "fsa-basel-cap-jp.ch4.art133.p6",
+      "display": "inline",
+      "lines": [
+        "C4A_LGD_Si"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p170i1",
+      "anchor": "p170i1",
+      "node_id": "fsa-basel-cap-jp.ch4.art133.p6",
+      "display": "inline",
+      "lines": [
+        "C4A_E_Si"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p170i2",
+      "anchor": "p170i2",
+      "node_id": "fsa-basel-cap-jp.ch4.art133.p6",
+      "display": "inline",
+      "lines": [
+        "sum(i, C4A_E_Si)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p170i3",
+      "anchor": "p170i3",
+      "node_id": "fsa-basel-cap-jp.ch4.art133.p6",
+      "display": "inline",
+      "lines": [
+        "sum(i, C4A_E_Si)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p170i4",
+      "anchor": "p170i4",
+      "node_id": "fsa-basel-cap-jp.ch4.art133.p8",
+      "display": "block",
+      "lines": [
+        "C4A_LGD_floor = C4A_LGD_Ufloor * ((C4A_E * (1 + C4A_H_E) - C4A_E_S) / (C4A_E * (1 + C4A_H_E))) + C4A_LGD_Sfloor * (C4A_E_S / (C4A_E * (1 + C4A_H_E)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p178i0",
+      "anchor": "p178i0",
+      "node_id": "fsa-basel-cap-jp.ch4.art141.p3",
+      "display": "block",
+      "lines": [
+        "C4A_LGD_Rfloor = C4A_LGD_RUfloor * ((C4A_E * (1 + C4A_H_E) - C4A_E_S) / (C4A_E * (1 + C4A_H_E))) + C4A_LGD_RSfloor * (C4A_E_S / (C4A_E * (1 + C4A_H_E)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p174i0",
+      "anchor": "p174i0",
+      "node_id": "fsa-basel-cap-jp.ch4.art135.p1",
+      "display": "block",
+      "lines": [
+        "C4A_M = sum(t, C4A_t * C4A_CF) / sum(t, C4A_CF)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch4a-p175i0",
+      "anchor": "p175i0",
+      "node_id": "fsa-basel-cap-jp.ch4.art135.p7",
+      "display": "block",
+      "lines": [
+        "C4A_M = (sum(C4A_idx_k1, C4A_m, C4A_EE_eff * C4A_dt * C4A_df) + sum(C4A_idx_km, C4A_n, C4A_EE * C4A_dt * C4A_df)) / sum(C4A_idx_k1, C4A_m, C4A_EE_eff * C4A_dt * C4A_df)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p307i0",
+      "anchor": "p307i0",
+      "node_id": "fsa-basel-cap-jp.ch5-3.art248-7.p1",
+      "display": "block",
+      "lines": [
+        "CH52_K_CMi = max(CH52_K_CCP * (CH52_DFpref_i / (CH52_DF_CCP + CH52_DFpref_CM)), 0.08 * 0.02 * CH52_DFpref_i)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p307i1",
+      "anchor": "p307i1",
+      "node_id": "fsa-basel-cap-jp.ch5-3.art248-7.p1",
+      "display": "block",
+      "lines": [
+        "CH52_K_CCP = sum(i, CH52_EAD_i) * 0.2 * 0.08"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "Σ の範囲は EAD_{i} のみとして表示している（0.2及び0.08を乗じる位置は結果に影響しない）。",
+      "note_en": "The summation is shown over EAD_{i} only; whether 0.2 and 0.08 sit inside or outside the sum does not change the result."
+    },
+    {
+      "id": "f-ch52-p307i2",
+      "anchor": "p307i2",
+      "node_id": "fsa-basel-cap-jp.ch5-3.art248-7.p1",
+      "display": "inline",
+      "lines": [
+        "CH52_DFpref_i"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p307i3",
+      "anchor": "p307i3",
+      "node_id": "fsa-basel-cap-jp.ch5-3.art248-7.p1",
+      "display": "inline",
+      "lines": [
+        "CH52_DFpref_CM"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p277i0",
+      "anchor": "p277i0",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p1",
+      "display": "block",
+      "lines": [
+        "CH52_K_reduced = sqrt((CH52_rho * sum(idx_c, CH52_SCVA_c))^2 + (1 - CH52_rho^2) * sum(idx_c, CH52_SCVA_c^2))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p277i1",
+      "anchor": "p277i1",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p1",
+      "display": "block",
+      "lines": [
+        "CH52_K_hedged = sqrt((CH52_rho * sum(idx_c, (CH52_SCVA_c - CH52_SNH_c)) - CH52_IH)^2 + (1 - CH52_rho^2) * sum(idx_c, (CH52_SCVA_c - CH52_SNH_c)^2) + sum(idx_c, CH52_HMA_c))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p277i2",
+      "anchor": "p277i2",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p2",
+      "display": "block",
+      "lines": [
+        "CH52_SCVA_c = (1 / CH52_alpha) * CH52_RW_c * sum(idx_NS, CH52_M_NS * CH52_EAD_NS * CH52_DF_NS)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p277i3",
+      "anchor": "p277i3",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p2",
+      "display": "block",
+      "lines": [
+        "CH52_DF_NS = (1 - exp(-0.05 * CH52_M_NS)) / (0.05 * CH52_M_NS)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p278i0",
+      "anchor": "p278i0",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p4",
+      "display": "block",
+      "lines": [
+        "CH52_SNH_c = sum(idx_hc, CH52_r_hc * CH52_RW_h * CH52_M_h_SN * CH52_B_h_SN * CH52_DF_h_SN)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p279i0",
+      "anchor": "p279i0",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p4",
+      "display": "inline",
+      "lines": [
+        "CH52_M_h_SN"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p279i1",
+      "anchor": "p279i1",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p4",
+      "display": "inline",
+      "lines": [
+        "CH52_B_h_SN"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p279i2",
+      "anchor": "p279i2",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p4",
+      "display": "inline",
+      "lines": [
+        "CH52_DF_h_SN"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p279i3",
+      "anchor": "p279i3",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p4",
+      "display": "block",
+      "lines": [
+        "CH52_DF_h_SN = (1 - exp(-0.05 * CH52_M_h_SN)) / (0.05 * CH52_M_h_SN)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p279i4",
+      "anchor": "p279i4",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p5",
+      "display": "block",
+      "lines": [
+        "CH52_IH = sum(i, CH52_RW_i * CH52_M_i_ind * CH52_B_i_ind * CH52_DF_i_ind)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p279i5",
+      "anchor": "p279i5",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p5",
+      "display": "inline",
+      "lines": [
+        "CH52_M_i_ind"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p279i6",
+      "anchor": "p279i6",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p5",
+      "display": "inline",
+      "lines": [
+        "CH52_B_i_ind"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p279i7",
+      "anchor": "p279i7",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p5",
+      "display": "inline",
+      "lines": [
+        "CH52_DF_i_ind"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p279i8",
+      "anchor": "p279i8",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p5",
+      "display": "block",
+      "lines": [
+        "CH52_DF_i_ind = (1 - exp(-0.05 * CH52_M_i_ind)) / (0.05 * CH52_M_i_ind)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p279i9",
+      "anchor": "p279i9",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-3-3.p7",
+      "display": "block",
+      "lines": [
+        "CH52_HMA_c = sum(idx_hc, (1 - CH52_r_hc^2) * (CH52_RW_h * CH52_M_h_SN * CH52_B_h_SN * CH52_DF_h_SN)^2)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p282i2",
+      "anchor": "p282i2",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p3",
+      "display": "block",
+      "lines": [
+        "CH52_WS_k_CVA = CH52_RW_k * CH52_s_k_CVA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p282i3",
+      "anchor": "p282i3",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p3",
+      "display": "block",
+      "lines": [
+        "CH52_WS_k_Hdg = CH52_RW_k * CH52_s_k_Hdg"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p282i0",
+      "anchor": "p282i0",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p2",
+      "display": "inline",
+      "lines": [
+        "CH52_s_k_CVA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p282i1",
+      "anchor": "p282i1",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p2",
+      "display": "inline",
+      "lines": [
+        "CH52_s_k_Hdg"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p282i4",
+      "anchor": "p282i4",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p3",
+      "display": "inline",
+      "lines": [
+        "CH52_WS_k_CVA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p282i5",
+      "anchor": "p282i5",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p3",
+      "display": "inline",
+      "lines": [
+        "CH52_s_k_CVA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p282i6",
+      "anchor": "p282i6",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p3",
+      "display": "inline",
+      "lines": [
+        "CH52_WS_k_Hdg"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p282i7",
+      "anchor": "p282i7",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p3",
+      "display": "inline",
+      "lines": [
+        "CH52_s_k_Hdg"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p283i0",
+      "anchor": "p283i0",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p4",
+      "display": "block",
+      "lines": [
+        "CH52_WS_k = CH52_WS_k_CVA - CH52_WS_k_Hdg"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "左辺の添字はPDF画像上でkともbとも読めるが、右辺及び次の算式に合わせてkと読んだ。",
+      "note_en": "The subscript on the left-hand side is hard to tell between k and b in the PDF image; it is read as k, consistent with the right-hand side and the following formulas."
+    },
+    {
+      "id": "f-ch52-p283i1",
+      "anchor": "p283i1",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p5",
+      "display": "block",
+      "lines": [
+        "CH52_K_b = sqrt(max(0, sum(idx_kb, CH52_WS_k^2) + sum(idx_kb, sum(idx_lb, CH52_rho_kl * CH52_WS_k * CH52_WS_l))) + CH52_R * sum(idx_kb, CH52_WS_k_Hdg^2))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p283i2",
+      "anchor": "p283i2",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p6",
+      "display": "block",
+      "lines": [
+        "CH52_K_class = CH52_m_CVA * sqrt(sum(idx_b, CH52_K_b^2) + sum(idx_b, sum(idx_cb, CH52_gamma_bc * CH52_S_b * CH52_S_c)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch52-p283i3",
+      "anchor": "p283i3",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p6",
+      "display": "block",
+      "lines": [
+        "CH52_S_b = max(-CH52_K_b, min(sum(idx_kb, CH52_WS_k), CH52_K_b))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文は max と min の引数をセミコロンで区切って表記している。",
+      "note_en": "The original separates the arguments of max and min with semicolons; shown here with commas."
+    },
+    {
+      "id": "f-ch52-p283i4",
+      "anchor": "p283i4",
+      "node_id": "fsa-basel-cap-jp.ch5-2.art248-4-8.p6",
+      "display": "block",
+      "lines": [
+        "CH52_S_c = max(-CH52_K_c, min(sum(idx_kc, CH52_WS_k), CH52_K_c))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文は max と min の引数をセミコロンで区切って表記している。",
+      "note_en": "The original separates the arguments of max and min with semicolons; shown here with commas."
+    },
+    {
+      "id": "f-ch5a-p237i1",
+      "anchor": "p237i1",
+      "node_id": "fsa-basel-cap-jp.ch5.art230.p1",
+      "display": "block",
+      "lines": [
+        "C5A_RW = ((C5A_KIRB - C5A_A) / (C5A_D - C5A_A)) * 12.5 + ((C5A_D - C5A_KIRB) / (C5A_D - C5A_A)) * 12.5 * C5A_KSSFA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5a-p237i0",
+      "anchor": "p237i0",
+      "node_id": "fsa-basel-cap-jp.ch5.art230.p1",
+      "display": "inline",
+      "lines": [
+        "C5A_KSSFA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5a-p237i2",
+      "anchor": "p237i2",
+      "node_id": "fsa-basel-cap-jp.ch5.art230.p1",
+      "display": "inline",
+      "lines": [
+        "C5A_KSSFA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5a-p237i4",
+      "anchor": "p237i4",
+      "node_id": "fsa-basel-cap-jp.ch5.art231.p1",
+      "display": "inline",
+      "lines": [
+        "C5A_KSSFA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5a-p237i5",
+      "anchor": "p237i5",
+      "node_id": "fsa-basel-cap-jp.ch5.art231.p1",
+      "display": "block",
+      "lines": [
+        "C5A_KSSFA = (exp(C5A_a * C5A_u) - exp(C5A_a * C5A_l)) / (C5A_a * (C5A_u - C5A_l))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "分母および指数中の「l」は、画像上は数字の「1」に似た字形で印刷されているが、本文の「l＝max(A－K_{IRB}，0)」に対応するlと読んだ。",
+      "note_en": "In the image the letter l in the denominator and in the exponent of the second term is printed in a glyph resembling the digit 1; it is read as l, the variable defined in the text as l = max(A − K_{IRB}, 0)."
+    },
+    {
+      "id": "f-ch5a-p244i0",
+      "anchor": "p244i0",
+      "node_id": "fsa-basel-cap-jp.ch5.art235.p4",
+      "display": "block",
+      "lines": [
+        "C5A_N = (sum(i, C5A_EAD_i))^2 / sum(i, C5A_EAD_i^2)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5a-p244i1",
+      "anchor": "p244i1",
+      "node_id": "fsa-basel-cap-jp.ch5.art235.p5",
+      "display": "block",
+      "lines": [
+        "C5A_LGD = sum(i, C5A_LGD_i * C5A_EAD_i) / sum(i, C5A_EAD_i)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5a-p245i0",
+      "anchor": "p245i0",
+      "node_id": "fsa-basel-cap-jp.ch5.art235.p7",
+      "display": "block",
+      "lines": [
+        "C5A_N = (C5A_C1 * C5A_Cm + ((C5A_Cm - C5A_C1) / (C5A_m - 1)) * max(1 - C5A_m * C5A_C1, 0))^(-1)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5a-p245i1",
+      "anchor": "p245i1",
+      "node_id": "fsa-basel-cap-jp.ch5.art235.p8",
+      "display": "block",
+      "lines": [
+        "C5A_MT = sum(t, t * C5A_CF_t) / sum(t, C5A_CF_t)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5b-p253i0",
+      "anchor": "p253i0",
+      "node_id": "fsa-basel-cap-jp.ch5.art240.p1",
+      "display": "inline",
+      "lines": [
+        "CH5B_KSSFA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5b-p253i1",
+      "anchor": "p253i1",
+      "node_id": "fsa-basel-cap-jp.ch5.art240.p1",
+      "display": "block",
+      "lines": [
+        "CH5B_RW = ((CH5B_KA - CH5B_A) / (CH5B_D - CH5B_A)) * 12.5 + ((CH5B_D - CH5B_KA) / (CH5B_D - CH5B_A)) * 12.5 * CH5B_KSSFA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5b-p253i2",
+      "anchor": "p253i2",
+      "node_id": "fsa-basel-cap-jp.ch5.art240.p1",
+      "display": "inline",
+      "lines": [
+        "CH5B_KSSFA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5b-p254i1",
+      "anchor": "p254i1",
+      "node_id": "fsa-basel-cap-jp.ch5.art241.p1",
+      "display": "inline",
+      "lines": [
+        "CH5B_KSSFA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5b-p254i2",
+      "anchor": "p254i2",
+      "node_id": "fsa-basel-cap-jp.ch5.art241.p1",
+      "display": "block",
+      "lines": [
+        "CH5B_KSSFA = (exp(CH5B_a * CH5B_u) - exp(CH5B_a * CH5B_l)) / (CH5B_a * (CH5B_u - CH5B_l))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "分母は印字上「a(u−1)」と読めるが、第二百四十一条本文が定義するlと同じ字形の「1」が分子の指数(a・l)にも現れるため、l(エル)と判読した。",
+      "note_en": "The denominator prints as \"a(u-1)\", but the same glyph appears in the numerator exponent (a·l), and the article defines l; it is read as the letter l (u - l), not the digit 1."
+    },
+    {
+      "id": "f-ch5b-p255i0",
+      "anchor": "p255i0",
+      "node_id": "fsa-basel-cap-jp.ch5.art242.p2",
+      "display": "block",
+      "lines": [
+        "CH5B_KA = (CH5B_EAD1 / CH5B_EADT) * CH5B_KA_SP1 + CH5B_EAD2 / CH5B_EADT"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "印字のとおり転記した。第二項のEAD_{Subpool2}の項には係数(0.5)が印字されていない(第一項の算式のW・0.5とは異なる)。",
+      "note_en": "Transcribed as printed: the EAD_Subpool2 term carries no 0.5 factor (cf. W · 0.5 in paragraph (1)); not altered."
+    },
+    {
+      "id": "f-ch5b-p255i1",
+      "anchor": "p255i1",
+      "node_id": "fsa-basel-cap-jp.ch5.art242.p2",
+      "display": "inline",
+      "lines": [
+        "CH5B_KA_SP1"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch5b-p255i2",
+      "anchor": "p255i2",
+      "node_id": "fsa-basel-cap-jp.ch5.art242.p2",
+      "display": "inline",
+      "lines": [
+        "CH5B_KA_SP1"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p337i0",
+      "anchor": "p337i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art253-7.p3",
+      "display": "block",
+      "lines": [
+        "C6B_RS = C6B_COV / (C6B_SIG_H * C6B_SIG_R)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "分母の標準偏差は、画像上は σ_{R_{HPL}}・σ_{R_{RTPL}}（下付き文字の入れ子）と印刷されている。",
+      "note_en": "The standard deviations in the denominator are printed as σ with the nested subscripts R_{HPL} and R_{RTPL}."
+    },
+    {
+      "id": "f-ch6b-p337i1",
+      "anchor": "p337i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art253-7.p3",
+      "display": "inline",
+      "lines": [
+        "C6B_SIG_H"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p337i2",
+      "anchor": "p337i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art253-7.p3",
+      "display": "inline",
+      "lines": [
+        "C6B_SIG_R"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p339i0",
+      "anchor": "p339i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art254-2.p1",
+      "display": "block",
+      "lines": [
+        "C6B_ES = sqrt(C6B_ES_T^2 + sum(j, (C6B_ES_Tj * sqrt((C6B_LH_j - C6B_LH_j1) / C6B_T))^2))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "総和の添字はj≧2（画像では Σ の下に j≧2 と印刷）。数式の文法に下限の指定がないため注記する。",
+      "note_en": "The summation runs over j ≥ 2 (printed under the Σ); the formula grammar has no lower-bound slot, so it is noted here."
+    },
+    {
+      "id": "f-ch6b-p341i0",
+      "anchor": "p341i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art254-3.p1",
+      "display": "block",
+      "lines": [
+        "C6B_ES_S = C6B_ES_RS * max(C6B_ES_FC / C6B_ES_RC, 1)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p342i0",
+      "anchor": "p342i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art254-4.p1",
+      "display": "block",
+      "lines": [
+        "C6B_IMCC = C6B_RHO_I * C6B_IMCC_C + (1 - C6B_RHO_I) * sum(i, C6B_B, C6B_IMCC_Ci)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "画像では総和（i＝1からBまで）の全体が括弧で括られている。",
+      "note_en": "In the image the whole summation (i = 1 to B) is enclosed in parentheses; here the factor (1 − ρ) multiplies it directly."
+    },
+    {
+      "id": "f-ch6b-p343i0",
+      "anchor": "p343i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art254-4.p1",
+      "display": "block",
+      "lines": [
+        "C6B_IMCC_C = C6B_ES_RS * (C6B_ES_FC / C6B_ES_RC)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "第二百五十四条の三第一項の算式と異なり、max(…, 1)は付されていない（印刷どおり）。",
+      "note_en": "Unlike the formula in Article 254-3, paragraph (1), no max(…, 1) appears here (as printed)."
+    },
+    {
+      "id": "f-ch6b-p343i1",
+      "anchor": "p343i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art254-4.p1",
+      "display": "block",
+      "lines": [
+        "C6B_IMCC_Ci = C6B_ES_RSi * (C6B_ES_FCi / C6B_ES_RCi)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "第二百五十四条の三第一項の算式と異なり、max(…, 1)は付されていない（印刷どおり）。",
+      "note_en": "Unlike the formula in Article 254-3, paragraph (1), no max(…, 1) appears here (as printed)."
+    },
+    {
+      "id": "f-ch6b-p343i2",
+      "anchor": "p343i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art254-5.p2",
+      "display": "block",
+      "lines": [
+        "C6B_SES = sqrt(sum(i, C6B_ISES_i^2)) + sqrt(sum(j, C6B_ISES_j^2)) + sqrt((C6B_RHO_S * sum(k, C6B_SES_k))^2 + (1 - C6B_RHO_S^2) * sum(k, C6B_SES_k^2))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "画像の総和にはI、J、Kを上限とする記号が付されているが、条文はこれらを定義していないため省略した。",
+      "note_en": "The summations carry upper limits I, J and K in the image, which the article does not define; they are omitted here."
+    },
+    {
+      "id": "f-ch6b-p347i0",
+      "anchor": "p347i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art257.p1",
+      "display": "block",
+      "lines": [
+        "C6B_K = 0.5 * (C6B_SUM_A / C6B_SUM_GA)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "総和の添字集合（i∈A、i∈G,A）は変数の記号に含めて表した。",
+      "note_en": "The index sets (i∈A, i∈G,A) of the summations are carried in the symbols of the two sums."
+    },
+    {
+      "id": "f-ch6b-p350i0",
+      "anchor": "p350i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-2.p4",
+      "display": "block",
+      "lines": [
+        "C6B_K_b = sqrt(max(0, sum(k, C6B_WS_k^2) + sum(k, sum(l, C6B_RHO_kl * C6B_WS_k * C6B_WS_l))))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "二重総和の内側はl≠k（画像のΣの下に印刷）。",
+      "note_en": "The inner summation excludes l = k (printed under the Σ in the image)."
+    },
+    {
+      "id": "f-ch6b-p350i1",
+      "anchor": "p350i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-2.p5",
+      "display": "block",
+      "lines": [
+        "C6B_MR_RC = sqrt(sum(b, C6B_K_b^2) + sum(b, sum(c, C6B_GAMMA * C6B_S_b * C6B_S_c)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "左辺は画像では文章（各リスク・クラスにおけるデルタ・リスク及びベガ・リスクに対する各マーケット・リスク相当額）。二重総和の内側はc≠b。",
+      "note_en": "The left-hand side is printed in words in the image. The inner summation excludes c = b."
+    },
+    {
+      "id": "f-ch6b-p350i2",
+      "anchor": "p350i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-2.p5",
+      "display": "block",
+      "lines": [
+        "C6B_S_b = sum(k, C6B_WS_k)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p350i3",
+      "anchor": "p350i3",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-2.p5",
+      "display": "block",
+      "lines": [
+        "C6B_S_c = sum(k, C6B_WS_k)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "cのバケットに属するリスク・ファクターkについての総和。",
+      "note_en": "Summation over the risk factors k belonging to bucket c."
+    },
+    {
+      "id": "f-ch6b-p351i0",
+      "anchor": "p351i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-2.p6",
+      "display": "block",
+      "lines": [
+        "C6B_S_b = max(min(sum(k, C6B_WS_k), C6B_K_b), -C6B_K_b)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p351i1",
+      "anchor": "p351i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-2.p6",
+      "display": "block",
+      "lines": [
+        "C6B_S_c = max(min(sum(k, C6B_WS_k), C6B_K_c), -C6B_K_c)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p351i2",
+      "anchor": "p351i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-3.p2",
+      "display": "block",
+      "lines": [
+        "C6B_CVR_P = -sum(i, C6B_V_UP - C6B_V_X - C6B_RW_C * C6B_S_ik)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "算式中の上方移動後の水準の上付き文字は(Curvature)+と印刷され（定義側ではRW (Curvature)+）、同一の量と読んだ。",
+      "note_en": "The upward-shifted level is printed with superscript (Curvature)+ in the formula but RW (Curvature)+ in its definition; read as the same quantity."
+    },
+    {
+      "id": "f-ch6b-p351i3",
+      "anchor": "p351i3",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-3.p2",
+      "display": "block",
+      "lines": [
+        "C6B_CVR_M = -sum(i, C6B_V_DN - C6B_V_X + C6B_RW_C * C6B_S_ik)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "算式中の下方移動後の水準の上付き文字は(Curvature)−と印刷され（定義側ではRW (Curvature)−）、同一の量と読んだ。",
+      "note_en": "The downward-shifted level is printed with superscript (Curvature)− in the formula but RW (Curvature)− in its definition; read as the same quantity."
+    },
+    {
+      "id": "f-ch6b-p351i4",
+      "anchor": "p351i4",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-3.p2",
+      "display": "inline",
+      "lines": [
+        "C6B_CVR_P"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p351i5",
+      "anchor": "p351i5",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-3.p2",
+      "display": "inline",
+      "lines": [
+        "C6B_CVR_M"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p351i6",
+      "anchor": "p351i6",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-3.p2",
+      "display": "inline",
+      "lines": [
+        "C6B_V_UP"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p351i7",
+      "anchor": "p351i7",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-3.p2",
+      "display": "inline",
+      "lines": [
+        "C6B_V_DN"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p351i8",
+      "anchor": "p351i8",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-3.p2",
+      "display": "inline",
+      "lines": [
+        "C6B_RW_C"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p352i0",
+      "anchor": "p352i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-3.p5",
+      "display": "block",
+      "lines": [
+        "C6B_K_b = max(C6B_K_bP, C6B_K_bM)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p352i1",
+      "anchor": "p352i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-3.p5",
+      "display": "block",
+      "lines": [
+        "C6B_K_bP = sqrt(max(0, sum(k, max(C6B_CVR_P, 0)^2) + sum(k, sum(l, C6B_RHO_CV * C6B_CVR_P * C6B_CVR_Pl * C6B_PSI_P))))",
+        "C6B_K_bM = sqrt(max(0, sum(k, max(C6B_CVR_M, 0)^2) + sum(k, sum(l, C6B_RHO_CV * C6B_CVR_M * C6B_CVR_Ml * C6B_PSI_M))))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "二重総和の内側はl≠k。Ψ(…)は関数の呼び出しではなく、条文の定義する変数として扱った。",
+      "note_en": "The inner summation excludes l = k. Ψ(…) is treated as a variable (as defined in the article) rather than as a function call."
+    },
+    {
+      "id": "f-ch6b-p352i2",
+      "anchor": "p352i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-3.p6",
+      "display": "block",
+      "lines": [
+        "C6B_MR_CV = sqrt(max(0, sum(b, C6B_K_b^2) + sum(b, sum(c, C6B_GAMMA_CV * C6B_S_bCV * C6B_S_cCV * C6B_PSI_S))))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "左辺は画像では文章（各リスク・クラスにおけるカーベチャー・リスクに対するマーケット・リスク相当額）。二重総和の内側はc≠b。",
+      "note_en": "The left-hand side is printed in words in the image. The inner summation excludes c = b."
+    },
+    {
+      "id": "f-ch6b-p352i3",
+      "anchor": "p352i3",
+      "node_id": "fsa-basel-cap-jp.ch6.art260-3.p6",
+      "display": "block",
+      "lines": [
+        "C6B_S_bCV = sum(k, C6B_CVR_P)",
+        "C6B_S_bCV = sum(k, C6B_CVR_M)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "印刷では二段の場合分け。上段は上方に移動した場合、下段は下方に移動した場合。",
+      "note_en": "Printed as a two-case definition: the first line applies where the risk factors move upward, the second where they move downward."
+    },
+    {
+      "id": "f-ch6b-p359i0",
+      "anchor": "p359i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art261-3.p1",
+      "display": "block",
+      "lines": [
+        "C6B_S_kr = (C6B_V_rUP - C6B_V_rcs) / 0.0001"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p359i1",
+      "anchor": "p359i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art261-3.p1",
+      "display": "inline",
+      "lines": [
+        "C6B_S_kr"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p359i2",
+      "anchor": "p359i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art261-3.p1",
+      "display": "block",
+      "lines": [
+        "C6B_S_kcs = (C6B_V_csUP - C6B_V_rcs) / 0.0001"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p359i3",
+      "anchor": "p359i3",
+      "node_id": "fsa-basel-cap-jp.ch6.art261-3.p1",
+      "display": "inline",
+      "lines": [
+        "C6B_S_kcs"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p359i4",
+      "anchor": "p359i4",
+      "node_id": "fsa-basel-cap-jp.ch6.art261-3.p1",
+      "display": "block",
+      "lines": [
+        "C6B_S_EQ = (C6B_V_EQUP - C6B_V_EQ) / 0.01"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p359i5",
+      "anchor": "p359i5",
+      "node_id": "fsa-basel-cap-jp.ch6.art261-3.p1",
+      "display": "block",
+      "lines": [
+        "C6B_S_RTS = (C6B_V_RTSUP - C6B_V_RTS) / 0.0001"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p359i6",
+      "anchor": "p359i6",
+      "node_id": "fsa-basel-cap-jp.ch6.art261-3.p1",
+      "display": "block",
+      "lines": [
+        "C6B_S_CTY = (C6B_V_CTYUP - C6B_V_CTY) / 0.01"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6b-p360i0",
+      "anchor": "p360i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art261-3.p1",
+      "display": "block",
+      "lines": [
+        "C6B_S_FX = (C6B_V_FXUP - C6B_V_FX) / 0.01"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p360i1",
+      "anchor": "p360i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art261-4.p1",
+      "display": "block",
+      "lines": [
+        "C6C_SK = (C6C_V1 - C6C_V0) / C6C_DSIG * C6C_SIG"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文の算式の右側には「(=vega×σ_{i})」という注記が括弧書きで付されているが、ここでは表示していない。V_{i}(σ_{i}+Δσ_{i})、V_{i}(σ_{i})は関数記法のため別の変数として表記している。",
+      "note_en": "The printed formula is followed by the parenthetical remark \"(= vega × σ_{i})\", which is not drawn here. V_{i}(σ_{i}+Δσ_{i}) and V_{i}(σ_{i}) are function values and are represented as two variables."
+    },
+    {
+      "id": "f-ch6c-p368i0",
+      "anchor": "p368i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p3",
+      "display": "block",
+      "lines": [
+        "C6C_RHO = C6C_RHO_NAME * C6C_RHO_TENOR * C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p368i1",
+      "anchor": "p368i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_NAME"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p368i2",
+      "anchor": "p368i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TENOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p368i3",
+      "anchor": "p368i3",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p368i4",
+      "anchor": "p368i4",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_NAME"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p368i5",
+      "anchor": "p368i5",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TENOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i0",
+      "anchor": "p369i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i1",
+      "anchor": "p369i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p5",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_NAME"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i2",
+      "anchor": "p369i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p5",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TENOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i3",
+      "anchor": "p369i3",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p5",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i4",
+      "anchor": "p369i4",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p5",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_NAME"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i5",
+      "anchor": "p369i5",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p5",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TENOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i6",
+      "anchor": "p369i6",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p5",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i7",
+      "anchor": "p369i7",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p6",
+      "display": "block",
+      "lines": [
+        "C6C_KB = sum(k, abs(C6C_WS_k))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i8",
+      "anchor": "p369i8",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p7",
+      "display": "block",
+      "lines": [
+        "C6C_GAMMA = C6C_GAMMA_RATING * C6C_GAMMA_SECTOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i9",
+      "anchor": "p369i9",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p8",
+      "display": "inline",
+      "lines": [
+        "C6C_GAMMA_RATING"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i10",
+      "anchor": "p369i10",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p8",
+      "display": "inline",
+      "lines": [
+        "C6C_GAMMA_SECTOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i11",
+      "anchor": "p369i11",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p8",
+      "display": "inline",
+      "lines": [
+        "C6C_GAMMA_RATING"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p369i12",
+      "anchor": "p369i12",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-3.p8",
+      "display": "inline",
+      "lines": [
+        "C6C_GAMMA_SECTOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p372i0",
+      "anchor": "p372i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-4.p3",
+      "display": "block",
+      "lines": [
+        "C6C_RHO = C6C_RHO_NAME * C6C_RHO_TENOR * C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p372i1",
+      "anchor": "p372i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-4.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_NAME"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p372i2",
+      "anchor": "p372i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-4.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TENOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p372i3",
+      "anchor": "p372i3",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-4.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p372i4",
+      "anchor": "p372i4",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-4.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_NAME"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p372i5",
+      "anchor": "p372i5",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-4.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TENOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p372i6",
+      "anchor": "p372i6",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-4.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p372i7",
+      "anchor": "p372i7",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-4.p5",
+      "display": "block",
+      "lines": [
+        "C6C_GAMMA = C6C_GAMMA_RATING * C6C_GAMMA_SECTOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p372i8",
+      "anchor": "p372i8",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-4.p6",
+      "display": "inline",
+      "lines": [
+        "C6C_GAMMA_RATING"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p372i9",
+      "anchor": "p372i9",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-4.p6",
+      "display": "inline",
+      "lines": [
+        "C6C_GAMMA_SECTOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p372i10",
+      "anchor": "p372i10",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-4.p6",
+      "display": "inline",
+      "lines": [
+        "C6C_GAMMA_RATING"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p373i0",
+      "anchor": "p373i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-4.p6",
+      "display": "inline",
+      "lines": [
+        "C6C_GAMMA_SECTOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p375i0",
+      "anchor": "p375i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-5.p3",
+      "display": "block",
+      "lines": [
+        "C6C_RHO = C6C_RHO_TRANCHE * C6C_RHO_TENOR * C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p375i1",
+      "anchor": "p375i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-5.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TRANCHE"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p375i2",
+      "anchor": "p375i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-5.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TENOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p375i3",
+      "anchor": "p375i3",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-5.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p375i4",
+      "anchor": "p375i4",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-5.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TRANCHE"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p375i5",
+      "anchor": "p375i5",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-5.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TENOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p375i6",
+      "anchor": "p375i6",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-5.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p375i7",
+      "anchor": "p375i7",
+      "node_id": "fsa-basel-cap-jp.ch6.art263-5.p5",
+      "display": "block",
+      "lines": [
+        "C6C_KB = sum(k, abs(C6C_WS_k))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p378i0",
+      "anchor": "p378i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art264.p4",
+      "display": "block",
+      "lines": [
+        "C6C_KB = sum(k, abs(C6C_WS_k))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p380i0",
+      "anchor": "p380i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art264-2.p3",
+      "display": "block",
+      "lines": [
+        "C6C_RHO = C6C_RHO_CTY * C6C_RHO_TENOR * C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p380i1",
+      "anchor": "p380i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art264-2.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_CTY"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p380i2",
+      "anchor": "p380i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art264-2.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TENOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p380i3",
+      "anchor": "p380i3",
+      "node_id": "fsa-basel-cap-jp.ch6.art264-2.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p380i4",
+      "anchor": "p380i4",
+      "node_id": "fsa-basel-cap-jp.ch6.art264-2.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_CTY"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p381i0",
+      "anchor": "p381i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art264-2.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TENOR"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p381i1",
+      "anchor": "p381i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art264-2.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_BASIS"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p383i0",
+      "anchor": "p383i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p3",
+      "display": "block",
+      "lines": [
+        "C6C_RHO = min(C6C_RHO_OPT * C6C_RHO_UND, 1)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文では min[…；1] と角括弧及びセミコロンで表記されている。",
+      "note_en": "Printed as min[ … ; 1] with square brackets and a semicolon; written here as min(a, 1)."
+    },
+    {
+      "id": "f-ch6c-p383i1",
+      "anchor": "p383i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p3",
+      "display": "block",
+      "lines": [
+        "C6C_RHO = min(C6C_RHO_DELTA * C6C_RHO_OPT, 1)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文では min[…；1] と角括弧及びセミコロンで表記されている。",
+      "note_en": "Printed as min[ … ; 1] with square brackets and a semicolon; written here as min(a, 1)."
+    },
+    {
+      "id": "f-ch6c-p384i0",
+      "anchor": "p384i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_OPT"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p384i1",
+      "anchor": "p384i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_UND"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p384i2",
+      "anchor": "p384i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_DELTA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p384i3",
+      "anchor": "p384i3",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_OPT"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p384i4",
+      "anchor": "p384i4",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p4",
+      "display": "block",
+      "lines": [
+        "C6C_RHO_OPT = exp(-C6C_ALPHA * (abs(C6C_T_k - C6C_T_l) / min(C6C_T_k, C6C_T_l)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文では分母が min{T_{k}；T_{l}} と波括弧及びセミコロンで表記されている。",
+      "note_en": "The denominator is printed as min{T_{k} ; T_{l}} with braces and a semicolon; written here as min(T_{k}, T_{l})."
+    },
+    {
+      "id": "f-ch6c-p384i5",
+      "anchor": "p384i5",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_UND"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p384i6",
+      "anchor": "p384i6",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p4",
+      "display": "block",
+      "lines": [
+        "C6C_RHO_UND = exp(-C6C_ALPHA * (abs(C6C_TU_k - C6C_TU_l) / min(C6C_TU_k, C6C_TU_l)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文では分母が min{T_{k}^{U}；T_{l}^{U}} と波括弧及びセミコロンで表記されている。",
+      "note_en": "The denominator is printed as min{T_{k}^{U} ; T_{l}^{U}} with braces and a semicolon; written here as min(T_{k}^{U}, T_{l}^{U})."
+    },
+    {
+      "id": "f-ch6c-p384i7",
+      "anchor": "p384i7",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_TU_k"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p384i8",
+      "anchor": "p384i8",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_TU_l"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p384i9",
+      "anchor": "p384i9",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p4",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_DELTA"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p384i10",
+      "anchor": "p384i10",
+      "node_id": "fsa-basel-cap-jp.ch6.art265.p5",
+      "display": "block",
+      "lines": [
+        "C6C_KB = sum(k, abs(C6C_WS_k))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p387i0",
+      "anchor": "p387i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art265-2.p3",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_NAME"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p387i1",
+      "anchor": "p387i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art265-2.p3",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_NAME"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p387i2",
+      "anchor": "p387i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art265-2.p3",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_NAME"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p387i3",
+      "anchor": "p387i3",
+      "node_id": "fsa-basel-cap-jp.ch6.art265-2.p3",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_TRANCHE"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p387i4",
+      "anchor": "p387i4",
+      "node_id": "fsa-basel-cap-jp.ch6.art265-2.p3",
+      "display": "inline",
+      "lines": [
+        "C6C_RHO_CTY"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6c-p387i5",
+      "anchor": "p387i5",
+      "node_id": "fsa-basel-cap-jp.ch6.art265-2.p4",
+      "display": "block",
+      "lines": [
+        "C6C_KB = max(sum(k, max(C6C_CVRP_k, 0)), sum(k, max(C6C_CVRM_k, 0)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6d-p393i0",
+      "anchor": "p393i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art267-3.p3",
+      "display": "block",
+      "lines": [
+        "CH6D_HBR_b = sum(CH6D_ILONG, CH6D_netJTD) / (sum(CH6D_ILONG, CH6D_netJTD) + sum(CH6D_ISHORT, abs(CH6D_netJTD)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6d-p393i1",
+      "anchor": "p393i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art267-3.p4",
+      "display": "block",
+      "lines": [
+        "CH6D_DRC_b = max((sum(CH6D_ILONG, CH6D_RW * CH6D_netJTD)) - CH6D_HBR_b * (sum(CH6D_ISHORT, CH6D_RW * abs(CH6D_netJTD))), 0)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "画像では第一の和の RW の添字 i と netJTD_i が重なって印字されている。第二の和および第二百六十九条の二第三項の同型の算式に合わせ RW_i・netJTD_i と読んだ。",
+      "note_en": "In the image the subscript i of RW and netJTD_i overlap in the first sum, and no multiplication dot is printed. Read as RW_i · netJTD_i, matching the second sum and the same-form formula in Article 269-2, paragraph (3)."
+    },
+    {
+      "id": "f-ch6d-p398i0",
+      "anchor": "p398i0",
+      "node_id": "fsa-basel-cap-jp.ch6.art269-2.p3",
+      "display": "block",
+      "lines": [
+        "CH6D_DRC_CTP = max(sum(b, max(CH6D_DRC_b, 0) + 0.5 * min(CH6D_DRC_b, 0)), 0)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6d-p398i1",
+      "anchor": "p398i1",
+      "node_id": "fsa-basel-cap-jp.ch6.art269-2.p3",
+      "display": "block",
+      "lines": [
+        "CH6D_DRC_b = (sum(CH6D_ILONG_C, CH6D_RW * CH6D_netJTD)) - CH6D_HBR_CTP * (sum(CH6D_ISHORT_C, CH6D_RW * abs(CH6D_netJTD)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch6d-p398i2",
+      "anchor": "p398i2",
+      "node_id": "fsa-basel-cap-jp.ch6.art269-2.p3",
+      "display": "block",
+      "lines": [
+        "CH6D_HBR_CTP = sum(CH6D_ILONG_C, CH6D_netJTD) / (sum(CH6D_ILONG_C, CH6D_netJTD) + sum(CH6D_ISHORT_C, abs(CH6D_netJTD)))"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-ch7-p420i0",
+      "anchor": "p420i0",
+      "node_id": "fsa-basel-cap-jp.ch7.art283.p2",
+      "display": "block",
+      "lines": [
+        "CH7_ILDC = min(abs(CH7_IINC - CH7_IEXP), 2.25% * CH7_IEA) + CH7_DIV"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文の算式では各項(第一式では Abs(…)、金利収益資産、受取配当金)に上線が付されている。第二項により、上線部分は直近三年間の平均値を合計した額を用いる。ここでは上線を表示していない。",
+      "note_en": "The printed formula has an overline over each operand (for the first formula, over Abs(…), over the interest-earning assets and over the dividends received); paragraph (2) says each overlined part uses the total of the averages over the most recent three years. The overlines are not drawn here."
+    },
+    {
+      "id": "f-ch7-p420i1",
+      "anchor": "p420i1",
+      "node_id": "fsa-basel-cap-jp.ch7.art283.p2",
+      "display": "block",
+      "lines": [
+        "CH7_SC = max(CH7_FINC, CH7_FEXP) + max(CH7_OINC, CH7_OEXP)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文の算式では各項(各項)に上線が付されている。第二項により、上線部分は直近三年間の平均値を合計した額を用いる。ここでは上線を表示していない。",
+      "note_en": "The printed formula has an overline over each of the four operands; paragraph (2) says each overlined part uses the total of the averages over the most recent three years. The overlines are not drawn here."
+    },
+    {
+      "id": "f-ch7-p420i2",
+      "anchor": "p420i2",
+      "node_id": "fsa-basel-cap-jp.ch7.art283.p2",
+      "display": "block",
+      "lines": [
+        "CH7_FC = abs(CH7_TRD) + abs(CH7_NTRD)"
+      ],
+      "label_ja": "",
+      "label_en": "",
+      "source": "transcribed",
+      "note_ja": "原文の算式では各項(各Abs(…))に上線が付されている。第二項により、上線部分は直近三年間の平均値を合計した額を用いる。ここでは上線を表示していない。",
+      "note_en": "The printed formula has an overline over each Abs(…) term; paragraph (2) says each overlined part uses the total of the averages over the most recent three years. The overlines are not drawn here."
     }
   ]
 }
