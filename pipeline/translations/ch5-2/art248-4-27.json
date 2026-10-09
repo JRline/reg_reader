@@ -1,0 +1,14 @@
+{
+ "number": "第二百四十八条の四の二十七",
+ "heading_en": "Sensitivities, etc. of Equity Delta and Vega Risk Factors",
+ "summary_ja": "株式のデルタ・リスク・ファクターは参照銘柄のスポット価格の相対変化、ベガ・リスク・ファクターはボラティリティの相対変化とし、リスク・ウェイトを定める。",
+ "summary_en": "Equity delta risk factors are relative changes in spot prices and vega risk factors are relative changes in volatilities of the reference names in a bucket; risk weights are set by bucket.",
+ "paragraphs": [
+  "The delta risk factor relating to equities shall be the relative change in the spot prices of all reference names in the bucket.",
+  "The \"relative change in the spot prices of reference names\" in the preceding paragraph means the value obtained by dividing the change in the value of CVA or of a CVA hedging instrument when the spot prices of all reference names in the bucket are changed simultaneously by 1% relative to their present values by 0.01.",
+  "The risk weight RW_{k} of the risk factor provided in paragraph (1) shall be as set out in the following table, according to the bucket number of the reference name. {{T:p296t1}}",
+  "The vega risk factor relating to equities shall be the relative change in the volatilities of all reference names in the bucket.",
+  "The \"relative change in the volatilities of reference names\" in the preceding paragraph means the value obtained by dividing the change in the value of CVA or of a CVA hedging instrument when all volatilities relating to all reference names in the bucket are changed simultaneously by 1% in relative terms relative to their present values by 0.01.",
+  "The risk weight RW_{k} of the risk factor provided in paragraph (4) shall be 78% for bucket numbers 1 through 8 and 12 in the table in paragraph (1) of the preceding Article, and 100% for bucket numbers 9 through 11 and 13."
+ ]
+}

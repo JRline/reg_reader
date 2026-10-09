@@ -1,0 +1,16 @@
+{
+ "number": "第二百四十八条の四の三十三",
+ "heading_en": "Market-Consensus ELGD",
+ "summary_ja": "マーケット・コンセンサスELGDは、クレジット・スプレッドからリスク中立的なデフォルト確率を算出する際に用いたLGDと同一とし、優先順位が高い場合は調整を加えることができる。",
+ "summary_en": "Market-consensus ELGD equals the LGD used to derive risk-neutral default probabilities from credit spreads, and may be adjusted where the exposure ranks senior to unsecured senior debt.",
+ "paragraphs": [
+  "The \"market-consensus ELGD\" listed in item (ii) of paragraph (2) of Article 248-4-31 shall be the same as the LGD used to calculate the risk-neutral probability of default from the credit spread.",
+  "Notwithstanding the preceding paragraph, where the exposure ranks senior to unsecured senior debt, the value of the market-consensus ELGD provided in that paragraph, with the necessary adjustment made, may be used; provided, however, that the priority ranking of the exposure shall not be changed by collateral posted by the counterparty."
+ ],
+ "terms": [
+  {
+   "ja": "マーケット・コンセンサスELGD",
+   "en": "market-consensus ELGD"
+  }
+ ]
+}

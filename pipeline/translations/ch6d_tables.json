@@ -1,0 +1,1618 @@
+{
+ "p392t0": {
+  "node_id": "fsa-basel-cap-jp.ch6.art267-3.p2",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "信用リスク区分",
+    "デフォルトのリスク・ウェイト(パーセント)"
+   ],
+   [
+    "8―1",
+    "〇・五"
+   ],
+   [
+    "8―2",
+    "二・〇"
+   ],
+   [
+    "8―3",
+    "三・〇"
+   ],
+   [
+    "8―4",
+    "六・〇"
+   ],
+   [
+    "8―5",
+    "十五・〇"
+   ],
+   [
+    "8―6",
+    "三十・〇"
+   ],
+   [
+    "8―7",
+    "五十・〇"
+   ],
+   [
+    "無格付",
+    "十五・〇"
+   ],
+   [
+    "デフォルト",
+    "百"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Credit risk category",
+    "Default risk weight (%)"
+   ],
+   [
+    "8-1",
+    "0.5"
+   ],
+   [
+    "8-2",
+    "2.0"
+   ],
+   [
+    "8-3",
+    "3.0"
+   ],
+   [
+    "8-4",
+    "6.0"
+   ],
+   [
+    "8-5",
+    "15.0"
+   ],
+   [
+    "8-6",
+    "30.0"
+   ],
+   [
+    "8-7",
+    "50.0"
+   ],
+   [
+    "Unrated",
+    "15.0"
+   ],
+   [
+    "Default",
+    "100"
+   ]
+  ]
+ },
+ "p394t0": {
+  "node_id": "fsa-basel-cap-jp.ch6.art268-2.p1",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "バケット番号",
+    "セクター",
+    "地域"
+   ],
+   [
+    "1",
+    "事業法人向け債権等を担保とする証券(資産担保コマーシャルペーパー、中小企業向け債権等を担保とする証券及びCDOスクエアドを除く。)",
+    "全地域"
+   ],
+   [
+    "2",
+    {
+     "text": "資産担保コマーシャルペーパー(ABCP)",
+     "rowspan": 4
+    },
+    "アジア"
+   ],
+   [
+    "3",
+    null,
+    "欧州"
+   ],
+   [
+    "4",
+    null,
+    "北米"
+   ],
+   [
+    "5",
+    null,
+    "その他地域"
+   ],
+   [
+    "6",
+    {
+     "text": "自動車ローン及びリースを担保とする証券",
+     "rowspan": 4
+    },
+    "アジア"
+   ],
+   [
+    "7",
+    null,
+    "欧州"
+   ],
+   [
+    "8",
+    null,
+    "北米"
+   ],
+   [
+    "9",
+    null,
+    "その他地域"
+   ],
+   [
+    "10",
+    {
+     "text": "住宅ローン担保証券(RMBS)",
+     "rowspan": 4
+    },
+    "アジア"
+   ],
+   [
+    "11",
+    null,
+    "欧州"
+   ],
+   [
+    "12",
+    null,
+    "北米"
+   ],
+   [
+    "13",
+    null,
+    "その他地域"
+   ],
+   [
+    "14",
+    {
+     "text": "クレジットカード債権を担保とする証券",
+     "rowspan": 4
+    },
+    "アジア"
+   ],
+   [
+    "15",
+    null,
+    "欧州"
+   ],
+   [
+    "16",
+    null,
+    "北米"
+   ],
+   [
+    "17",
+    null,
+    "その他地域"
+   ],
+   [
+    "18",
+    {
+     "text": "商業用不動産担保証券(CMBS)",
+     "rowspan": 4
+    },
+    "アジア"
+   ],
+   [
+    "19",
+    null,
+    "欧州"
+   ],
+   [
+    "20",
+    null,
+    "北米"
+   ],
+   [
+    "21",
+    null,
+    "その他地域"
+   ],
+   [
+    "22",
+    {
+     "text": "ローン担保証券(CLO)",
+     "rowspan": 4
+    },
+    "アジア"
+   ],
+   [
+    "23",
+    null,
+    "欧州"
+   ],
+   [
+    "24",
+    null,
+    "北米"
+   ],
+   [
+    "25",
+    null,
+    "その他地域"
+   ],
+   [
+    "26",
+    {
+     "text": "CDOスクエアド(CDOを担保とする証券)",
+     "rowspan": 4
+    },
+    "アジア"
+   ],
+   [
+    "27",
+    null,
+    "欧州"
+   ],
+   [
+    "28",
+    null,
+    "北米"
+   ],
+   [
+    "29",
+    null,
+    "その他地域"
+   ],
+   [
+    "30",
+    {
+     "text": "中小企業向け債権等を担保とする証券(資産担保コマーシャルペーパー及びローン担保証券を除く。)",
+     "rowspan": 4
+    },
+    "アジア"
+   ],
+   [
+    "31",
+    null,
+    "欧州"
+   ],
+   [
+    "32",
+    null,
+    "北米"
+   ],
+   [
+    "33",
+    null,
+    "その他地域"
+   ],
+   [
+    "34",
+    {
+     "text": "学生ローンを担保とする証券",
+     "rowspan": 4
+    },
+    "アジア"
+   ],
+   [
+    "35",
+    null,
+    "欧州"
+   ],
+   [
+    "36",
+    null,
+    "北米"
+   ],
+   [
+    "37",
+    null,
+    "その他地域"
+   ],
+   [
+    "38",
+    {
+     "text": "その他リテール向け債権等を担保とする証券(自動車ローン及びリースを担保とする証券、住宅ローン担保証券並びにクレジットカード債権を担保とする証券を除く。)",
+     "rowspan": 4
+    },
+    "アジア"
+   ],
+   [
+    "39",
+    null,
+    "欧州"
+   ],
+   [
+    "40",
+    null,
+    "北米"
+   ],
+   [
+    "41",
+    null,
+    "その他地域"
+   ],
+   [
+    "42",
+    {
+     "text": "その他ホールセール向け債権等を担保とする証券(事業法人向け債権等を担保とする証券、資産担保コマーシャルペーパー、ローン担保証券及びCDOスクエアドを除く。)",
+     "rowspan": 4
+    },
+    "アジア"
+   ],
+   [
+    "43",
+    null,
+    "欧州"
+   ],
+   [
+    "44",
+    null,
+    "北米"
+   ],
+   [
+    "45",
+    null,
+    "その他地域"
+   ],
+   [
+    "46",
+    "その他バケット(バケット番号1から45までのいずれにも属さない証券化商品)",
+    "全地域"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Bucket number",
+    "Sector",
+    "Region"
+   ],
+   [
+    "1",
+    "Securities backed by corporate, etc. receivables (excluding asset-backed commercial paper, securities backed by SME receivables, etc., and CDO-squared)",
+    "All regions"
+   ],
+   [
+    "2",
+    {
+     "text": "Asset-backed commercial paper (ABCP)",
+     "rowspan": 4
+    },
+    "Asia"
+   ],
+   [
+    "3",
+    null,
+    "Europe"
+   ],
+   [
+    "4",
+    null,
+    "North America"
+   ],
+   [
+    "5",
+    null,
+    "Other regions"
+   ],
+   [
+    "6",
+    {
+     "text": "Securities backed by auto loans and leases",
+     "rowspan": 4
+    },
+    "Asia"
+   ],
+   [
+    "7",
+    null,
+    "Europe"
+   ],
+   [
+    "8",
+    null,
+    "North America"
+   ],
+   [
+    "9",
+    null,
+    "Other regions"
+   ],
+   [
+    "10",
+    {
+     "text": "Residential mortgage-backed securities (RMBS)",
+     "rowspan": 4
+    },
+    "Asia"
+   ],
+   [
+    "11",
+    null,
+    "Europe"
+   ],
+   [
+    "12",
+    null,
+    "North America"
+   ],
+   [
+    "13",
+    null,
+    "Other regions"
+   ],
+   [
+    "14",
+    {
+     "text": "Securities backed by credit card receivables",
+     "rowspan": 4
+    },
+    "Asia"
+   ],
+   [
+    "15",
+    null,
+    "Europe"
+   ],
+   [
+    "16",
+    null,
+    "North America"
+   ],
+   [
+    "17",
+    null,
+    "Other regions"
+   ],
+   [
+    "18",
+    {
+     "text": "Commercial mortgage-backed securities (CMBS)",
+     "rowspan": 4
+    },
+    "Asia"
+   ],
+   [
+    "19",
+    null,
+    "Europe"
+   ],
+   [
+    "20",
+    null,
+    "North America"
+   ],
+   [
+    "21",
+    null,
+    "Other regions"
+   ],
+   [
+    "22",
+    {
+     "text": "Collateralized loan obligations (CLO)",
+     "rowspan": 4
+    },
+    "Asia"
+   ],
+   [
+    "23",
+    null,
+    "Europe"
+   ],
+   [
+    "24",
+    null,
+    "North America"
+   ],
+   [
+    "25",
+    null,
+    "Other regions"
+   ],
+   [
+    "26",
+    {
+     "text": "CDO-squared (securities backed by CDOs)",
+     "rowspan": 4
+    },
+    "Asia"
+   ],
+   [
+    "27",
+    null,
+    "Europe"
+   ],
+   [
+    "28",
+    null,
+    "North America"
+   ],
+   [
+    "29",
+    null,
+    "Other regions"
+   ],
+   [
+    "30",
+    {
+     "text": "Securities backed by SME receivables, etc. (excluding asset-backed commercial paper and collateralized loan obligations)",
+     "rowspan": 4
+    },
+    "Asia"
+   ],
+   [
+    "31",
+    null,
+    "Europe"
+   ],
+   [
+    "32",
+    null,
+    "North America"
+   ],
+   [
+    "33",
+    null,
+    "Other regions"
+   ],
+   [
+    "34",
+    {
+     "text": "Securities backed by student loans",
+     "rowspan": 4
+    },
+    "Asia"
+   ],
+   [
+    "35",
+    null,
+    "Europe"
+   ],
+   [
+    "36",
+    null,
+    "North America"
+   ],
+   [
+    "37",
+    null,
+    "Other regions"
+   ],
+   [
+    "38",
+    {
+     "text": "Securities backed by other retail receivables, etc. (excluding securities backed by auto loans and leases, residential mortgage-backed securities, and securities backed by credit card receivables)",
+     "rowspan": 4
+    },
+    "Asia"
+   ],
+   [
+    "39",
+    null,
+    "Europe"
+   ],
+   [
+    "40",
+    null,
+    "North America"
+   ],
+   [
+    "41",
+    null,
+    "Other regions"
+   ],
+   [
+    "42",
+    {
+     "text": "Securities backed by other wholesale receivables, etc. (excluding securities backed by corporate, etc. receivables, asset-backed commercial paper, collateralized loan obligations and CDO-squared)",
+     "rowspan": 4
+    },
+    "Asia"
+   ],
+   [
+    "43",
+    null,
+    "Europe"
+   ],
+   [
+    "44",
+    null,
+    "North America"
+   ],
+   [
+    "45",
+    null,
+    "Other regions"
+   ],
+   [
+    "46",
+    "Other bucket (securitization products not belonging to any of bucket numbers 1 through 45)",
+    "All regions"
+   ]
+  ]
+ },
+ "p404t0": {
+  "node_id": "fsa-basel-cap-jp.ch6.art272-4.p1",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "債券等の種類",
+    "リスク・ウェイト(パーセント)"
+   ],
+   [
+    "政府債(適格格付機関により付与された格付に対応する信用リスク区分が1―1であるもの)",
+    "零"
+   ],
+   [
+    "同(適格格付機関により付与された格付に対応する信用リスク区分が1―2又は1―3であるもののうち、残存期間等が六月以内のもの)",
+    "〇・二五"
+   ],
+   [
+    "同(適格格付機関により付与された格付に対応する信用リスク区分が1―2又は1―3であるもののうち、残存期間等が六月超二十四月以内のもの)",
+    "一・〇〇"
+   ],
+   [
+    "同(適格格付機関により付与された格付に対応する信用リスク区分が1―2又は1―3であるもののうち、残存期間等が二十四月超のもの)",
+    "一・六〇"
+   ],
+   [
+    "同(適格格付機関により付与された格付に対応する信用リスク区分が1―4又は1―5であるもの)",
+    "八・〇〇"
+   ],
+   [
+    "同(適格格付機関により付与された格付に対応する信用リスク区分が1―6であるもの)",
+    "十二・〇〇"
+   ],
+   [
+    "同(無格付であるもの)",
+    "八・〇〇"
+   ],
+   [
+    "優良債(残存期間等が六月以内のもの)",
+    "〇・二五"
+   ],
+   [
+    "同(残存期間等が六月超二十四月以内のもの)",
+    "一・〇〇"
+   ],
+   [
+    "同(残存期間等が二十四月超のもの)",
+    "一・六〇"
+   ],
+   [
+    "その他(適格格付機関により付与された格付に対応する信用リスク区分が4―4であるもの)",
+    "八・〇〇"
+   ],
+   [
+    "同(適格格付機関により付与された格付に対応する信用リスク区分が4―5又は5―4であるもの)",
+    "十二・〇〇"
+   ],
+   [
+    "同(無格付であるもの)",
+    "八・〇〇"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Type of debt instruments, etc.",
+    "Risk weight (%)"
+   ],
+   [
+    "Government bonds (those for which the credit risk category corresponding to the rating assigned by a qualifying rating agency is 1-1)",
+    "0"
+   ],
+   [
+    "Same (those for which the credit risk category corresponding to the rating assigned by a qualifying rating agency is 1-2 or 1-3 and the residual maturity, etc. is 6 months or less)",
+    "0.25"
+   ],
+   [
+    "Same (those for which the credit risk category corresponding to the rating assigned by a qualifying rating agency is 1-2 or 1-3 and the residual maturity, etc. is more than 6 months and 24 months or less)",
+    "1.00"
+   ],
+   [
+    "Same (those for which the credit risk category corresponding to the rating assigned by a qualifying rating agency is 1-2 or 1-3 and the residual maturity, etc. is more than 24 months)",
+    "1.60"
+   ],
+   [
+    "Same (those for which the credit risk category corresponding to the rating assigned by a qualifying rating agency is 1-4 or 1-5)",
+    "8.00"
+   ],
+   [
+    "Same (those for which the credit risk category corresponding to the rating assigned by a qualifying rating agency is 1-6)",
+    "12.00"
+   ],
+   [
+    "Same (unrated)",
+    "8.00"
+   ],
+   [
+    "High-grade bonds (residual maturity, etc. of 6 months or less)",
+    "0.25"
+   ],
+   [
+    "Same (residual maturity, etc. of more than 6 months and 24 months or less)",
+    "1.00"
+   ],
+   [
+    "Same (residual maturity, etc. of more than 24 months)",
+    "1.60"
+   ],
+   [
+    "Others (those for which the credit risk category corresponding to the rating assigned by a qualifying rating agency is 4-4)",
+    "8.00"
+   ],
+   [
+    "Same (those for which the credit risk category corresponding to the rating assigned by a qualifying rating agency is 4-5 or 5-4)",
+    "12.00"
+   ],
+   [
+    "Same (unrated)",
+    "8.00"
+   ]
+  ]
+ },
+ "p405t1": {
+  "node_id": "fsa-basel-cap-jp.ch6.art272-5.p1",
+  "header_rows": 2,
+  "rows_ja": [
+   [
+    {
+     "text": "期間帯(残存期間等)",
+     "colspan": 2
+    },
+    null,
+    {
+     "text": "リスク・ウェイト(パーセント)",
+     "rowspan": 2
+    },
+    {
+     "text": "想定金利変動幅(パーセント・ポイント)",
+     "rowspan": 2
+    }
+   ],
+   [
+    "表面利率三パーセント以上",
+    "表面利率三パーセント未満",
+    null,
+    null
+   ],
+   [
+    "一月以下",
+    "一月以下",
+    "零",
+    "一・〇〇"
+   ],
+   [
+    "一月超 三月以下",
+    "一月超 三月以下",
+    "〇・二〇",
+    "一・〇〇"
+   ],
+   [
+    "三月超 六月以下",
+    "三月超 六月以下",
+    "〇・四〇",
+    "一・〇〇"
+   ],
+   [
+    "六月超 十二月以下",
+    "六月超 十二月以下",
+    "〇・七〇",
+    "一・〇〇"
+   ],
+   [
+    "一年超 二年以下",
+    "一年超 一・九年以下",
+    "一・二五",
+    "〇・九〇"
+   ],
+   [
+    "二年超 三年以下",
+    "一・九年超 二・八年以下",
+    "一・七五",
+    "〇・八〇"
+   ],
+   [
+    "三年超 四年以下",
+    "二・八年超 三・六年以下",
+    "二・二五",
+    "〇・七五"
+   ],
+   [
+    "四年超 五年以下",
+    "三・六年超 四・三年以下",
+    "二・七五",
+    "〇・七五"
+   ],
+   [
+    "五年超 七年以下",
+    "四・三年超 五・七年以下",
+    "三・二五",
+    "〇・七〇"
+   ],
+   [
+    "七年超 十年以下",
+    "五・七年超 七・三年以下",
+    "三・七五",
+    "〇・六五"
+   ],
+   [
+    "十年超 十五年以下",
+    "七・三年超 九・三年以下",
+    "四・五〇",
+    "〇・六〇"
+   ],
+   [
+    "十五年超 二十年以下",
+    "九・三年超 十・六年以下",
+    "五・二五",
+    "〇・六〇"
+   ],
+   [
+    {
+     "text": "二十年超",
+     "rowspan": 3
+    },
+    "十・六年超 十二年以下",
+    "六・〇〇",
+    "〇・六〇"
+   ],
+   [
+    null,
+    "十二年超 二十年以下",
+    "八・〇〇",
+    "〇・六〇"
+   ],
+   [
+    null,
+    "二十年超",
+    "十二・五〇",
+    "〇・六〇"
+   ]
+  ],
+  "rows_en": [
+   [
+    {
+     "text": "Time band (residual maturity, etc.)",
+     "colspan": 2
+    },
+    null,
+    {
+     "text": "Risk weight (%)",
+     "rowspan": 2
+    },
+    {
+     "text": "Assumed interest rate change (percentage points)",
+     "rowspan": 2
+    }
+   ],
+   [
+    "Coupon of 3% or more",
+    "Coupon of less than 3%",
+    null,
+    null
+   ],
+   [
+    "1 month or less",
+    "1 month or less",
+    "0",
+    "1.00"
+   ],
+   [
+    "More than 1 month up to 3 months",
+    "More than 1 month up to 3 months",
+    "0.20",
+    "1.00"
+   ],
+   [
+    "More than 3 months up to 6 months",
+    "More than 3 months up to 6 months",
+    "0.40",
+    "1.00"
+   ],
+   [
+    "More than 6 months up to 12 months",
+    "More than 6 months up to 12 months",
+    "0.70",
+    "1.00"
+   ],
+   [
+    "More than 1 year up to 2 years",
+    "More than 1 year up to 1.9 years",
+    "1.25",
+    "0.90"
+   ],
+   [
+    "More than 2 years up to 3 years",
+    "More than 1.9 years up to 2.8 years",
+    "1.75",
+    "0.80"
+   ],
+   [
+    "More than 3 years up to 4 years",
+    "More than 2.8 years up to 3.6 years",
+    "2.25",
+    "0.75"
+   ],
+   [
+    "More than 4 years up to 5 years",
+    "More than 3.6 years up to 4.3 years",
+    "2.75",
+    "0.75"
+   ],
+   [
+    "More than 5 years up to 7 years",
+    "More than 4.3 years up to 5.7 years",
+    "3.25",
+    "0.70"
+   ],
+   [
+    "More than 7 years up to 10 years",
+    "More than 5.7 years up to 7.3 years",
+    "3.75",
+    "0.65"
+   ],
+   [
+    "More than 10 years up to 15 years",
+    "More than 7.3 years up to 9.3 years",
+    "4.50",
+    "0.60"
+   ],
+   [
+    "More than 15 years up to 20 years",
+    "More than 9.3 years up to 10.6 years",
+    "5.25",
+    "0.60"
+   ],
+   [
+    {
+     "text": "More than 20 years",
+     "rowspan": 3
+    },
+    "More than 10.6 years up to 12 years",
+    "6.00",
+    "0.60"
+   ],
+   [
+    null,
+    "More than 12 years up to 20 years",
+    "8.00",
+    "0.60"
+   ],
+   [
+    null,
+    "More than 20 years",
+    "12.50",
+    "0.60"
+   ]
+  ]
+ },
+ "p406t1": {
+  "node_id": "fsa-basel-cap-jp.ch6.art272-5.p1",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "期間帯(残存期間等)",
+    "想定金利変動幅(パーセント・ポイント)"
+   ],
+   [
+    "一月以下",
+    "一・〇〇"
+   ],
+   [
+    "一月超 三月以下",
+    "一・〇〇"
+   ],
+   [
+    "三月超 六月以下",
+    "一・〇〇"
+   ],
+   [
+    "六月超 十二月以下",
+    "一・〇〇"
+   ],
+   [
+    "一年超 一・九年以下",
+    "〇・九〇"
+   ],
+   [
+    "一・九年超 二・八年以下",
+    "〇・八〇"
+   ],
+   [
+    "二・八年超 三・六年以下",
+    "〇・七五"
+   ],
+   [
+    "三・六年超 四・三年以下",
+    "〇・七五"
+   ],
+   [
+    "四・三年超 五・七年以下",
+    "〇・七〇"
+   ],
+   [
+    "五・七年超 七・三年以下",
+    "〇・六五"
+   ],
+   [
+    "七・三年超 九・三年以下",
+    "〇・六〇"
+   ],
+   [
+    "九・三年超 十・六年以下",
+    "〇・六〇"
+   ],
+   [
+    "十・六年超 十二年以下",
+    "〇・六〇"
+   ],
+   [
+    "十二年超 二十年以下",
+    "〇・六〇"
+   ],
+   [
+    "二十年超",
+    "〇・六〇"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Time band (residual maturity, etc.)",
+    "Assumed interest rate change (percentage points)"
+   ],
+   [
+    "1 month or less",
+    "1.00"
+   ],
+   [
+    "More than 1 month up to 3 months",
+    "1.00"
+   ],
+   [
+    "More than 3 months up to 6 months",
+    "1.00"
+   ],
+   [
+    "More than 6 months up to 12 months",
+    "1.00"
+   ],
+   [
+    "More than 1 year up to 1.9 years",
+    "0.90"
+   ],
+   [
+    "More than 1.9 years up to 2.8 years",
+    "0.80"
+   ],
+   [
+    "More than 2.8 years up to 3.6 years",
+    "0.75"
+   ],
+   [
+    "More than 3.6 years up to 4.3 years",
+    "0.75"
+   ],
+   [
+    "More than 4.3 years up to 5.7 years",
+    "0.70"
+   ],
+   [
+    "More than 5.7 years up to 7.3 years",
+    "0.65"
+   ],
+   [
+    "More than 7.3 years up to 9.3 years",
+    "0.60"
+   ],
+   [
+    "More than 9.3 years up to 10.6 years",
+    "0.60"
+   ],
+   [
+    "More than 10.6 years up to 12 years",
+    "0.60"
+   ],
+   [
+    "More than 12 years up to 20 years",
+    "0.60"
+   ],
+   [
+    "More than 20 years",
+    "0.60"
+   ]
+  ]
+ },
+ "p406t2": {
+  "node_id": "fsa-basel-cap-jp.ch6.art272-5.p1",
+  "header_rows": 2,
+  "rows_ja": [
+   [
+    {
+     "text": "ゾーン",
+     "rowspan": 2
+    },
+    {
+     "text": "期間帯(残存期間等)",
+     "colspan": 2
+    },
+    null,
+    {
+     "text": "同一ゾーン内(パーセント)",
+     "rowspan": 2
+    },
+    {
+     "text": "隣接ゾーン間(パーセント)",
+     "rowspan": 2
+    },
+    {
+     "text": "ゾーン一・三間(パーセント)",
+     "rowspan": 2
+    }
+   ],
+   [
+    null,
+    "表面利率三パーセント以上",
+    "表面利率三パーセント未満",
+    null,
+    null,
+    null
+   ],
+   [
+    {
+     "text": "ゾーン一",
+     "rowspan": 4
+    },
+    "一月以下",
+    "一月以下",
+    {
+     "text": "四十",
+     "rowspan": 4
+    },
+    {
+     "text": "四十",
+     "rowspan": 15
+    },
+    {
+     "text": "百",
+     "rowspan": 15
+    }
+   ],
+   [
+    null,
+    "一月超 三月以下",
+    "一月超 三月以下",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "三月超 六月以下",
+    "三月超 六月以下",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "六月超 十二月以下",
+    "六月超 十二月以下",
+    null,
+    null,
+    null
+   ],
+   [
+    {
+     "text": "ゾーン二",
+     "rowspan": 3
+    },
+    "一年超 二年以下",
+    "一年超 一・九年以下",
+    {
+     "text": "三十",
+     "rowspan": 3
+    },
+    null,
+    null
+   ],
+   [
+    null,
+    "二年超 三年以下",
+    "一・九年超 二・八年以下",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "三年超 四年以下",
+    "二・八年超 三・六年以下",
+    null,
+    null,
+    null
+   ],
+   [
+    {
+     "text": "ゾーン三",
+     "rowspan": 8
+    },
+    "四年超 五年以下",
+    "三・六年超 四・三年以下",
+    {
+     "text": "三十",
+     "rowspan": 8
+    },
+    null,
+    null
+   ],
+   [
+    null,
+    "五年超 七年以下",
+    "四・三年超 五・七年以下",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "七年超 十年以下",
+    "五・七年超 七・三年以下",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "十年超 十五年以下",
+    "七・三年超 九・三年以下",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "十五年超 二十年以下",
+    "九・三年超 十・六年以下",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    {
+     "text": "二十年超",
+     "rowspan": 3
+    },
+    "十・六年超 十二年以下",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "十二年超 二十年以下",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "二十年超",
+    null,
+    null,
+    null
+   ]
+  ],
+  "rows_en": [
+   [
+    {
+     "text": "Zone",
+     "rowspan": 2
+    },
+    {
+     "text": "Time band (residual maturity, etc.)",
+     "colspan": 2
+    },
+    null,
+    {
+     "text": "Within the same zone (%)",
+     "rowspan": 2
+    },
+    {
+     "text": "Between adjacent zones (%)",
+     "rowspan": 2
+    },
+    {
+     "text": "Between zones 1 and 3 (%)",
+     "rowspan": 2
+    }
+   ],
+   [
+    null,
+    "Coupon of 3% or more",
+    "Coupon of less than 3%",
+    null,
+    null,
+    null
+   ],
+   [
+    {
+     "text": "Zone 1",
+     "rowspan": 4
+    },
+    "1 month or less",
+    "1 month or less",
+    {
+     "text": "40",
+     "rowspan": 4
+    },
+    {
+     "text": "40",
+     "rowspan": 15
+    },
+    {
+     "text": "100",
+     "rowspan": 15
+    }
+   ],
+   [
+    null,
+    "More than 1 month up to 3 months",
+    "More than 1 month up to 3 months",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "More than 3 months up to 6 months",
+    "More than 3 months up to 6 months",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "More than 6 months up to 12 months",
+    "More than 6 months up to 12 months",
+    null,
+    null,
+    null
+   ],
+   [
+    {
+     "text": "Zone 2",
+     "rowspan": 3
+    },
+    "More than 1 year up to 2 years",
+    "More than 1 year up to 1.9 years",
+    {
+     "text": "30",
+     "rowspan": 3
+    },
+    null,
+    null
+   ],
+   [
+    null,
+    "More than 2 years up to 3 years",
+    "More than 1.9 years up to 2.8 years",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "More than 3 years up to 4 years",
+    "More than 2.8 years up to 3.6 years",
+    null,
+    null,
+    null
+   ],
+   [
+    {
+     "text": "Zone 3",
+     "rowspan": 8
+    },
+    "More than 4 years up to 5 years",
+    "More than 3.6 years up to 4.3 years",
+    {
+     "text": "30",
+     "rowspan": 8
+    },
+    null,
+    null
+   ],
+   [
+    null,
+    "More than 5 years up to 7 years",
+    "More than 4.3 years up to 5.7 years",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "More than 7 years up to 10 years",
+    "More than 5.7 years up to 7.3 years",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "More than 10 years up to 15 years",
+    "More than 7.3 years up to 9.3 years",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "More than 15 years up to 20 years",
+    "More than 9.3 years up to 10.6 years",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    {
+     "text": "More than 20 years",
+     "rowspan": 3
+    },
+    "More than 10.6 years up to 12 years",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "More than 12 years up to 20 years",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "More than 20 years",
+    null,
+    null,
+    null
+   ]
+  ]
+ },
+ "p411t0": {
+  "node_id": "fsa-basel-cap-jp.ch6.art275-2.p1",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "期間帯(残存期間等)",
+    "スプレッド・レート(パーセント)"
+   ],
+   [
+    "一月以下",
+    "一・五"
+   ],
+   [
+    "一月超三月以下",
+    "一・五"
+   ],
+   [
+    "三月超六月以下",
+    "一・五"
+   ],
+   [
+    "六月超十二月以下",
+    "一・五"
+   ],
+   [
+    "一年超二年以下",
+    "一・五"
+   ],
+   [
+    "二年超三年以下",
+    "一・五"
+   ],
+   [
+    "三年超",
+    "一・五"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Time band (residual maturity, etc.)",
+    "Spread rate (%)"
+   ],
+   [
+    "1 month or less",
+    "1.5"
+   ],
+   [
+    "More than 1 month up to 3 months",
+    "1.5"
+   ],
+   [
+    "More than 3 months up to 6 months",
+    "1.5"
+   ],
+   [
+    "More than 6 months up to 12 months",
+    "1.5"
+   ],
+   [
+    "More than 1 year up to 2 years",
+    "1.5"
+   ],
+   [
+    "More than 2 years up to 3 years",
+    "1.5"
+   ],
+   [
+    "More than 3 years",
+    "1.5"
+   ]
+  ]
+ },
+ "p413t0": {
+  "node_id": "fsa-basel-cap-jp.ch6.art278.p1",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "原資産の区分",
+    "VUの算出方法"
+   ],
+   [
+    "債券等",
+    "原資産の市場価値×第二百七十二条の五第二号イの表に定めるリスク・ウェイト"
+   ],
+   [
+    "金利",
+    "第二百七十二条の五第二号イの表の想定金利変動幅に相当する金利変動による原資産の市場価値の変化額"
+   ],
+   [
+    "株式等",
+    "原資産の時価額×八パーセント"
+   ],
+   [
+    "外国為替及び金",
+    "原資産の時価額×八パーセント"
+   ],
+   [
+    "コモディティ等",
+    "原資産の時価額×十五パーセント"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Category of underlying asset",
+    "Method of calculating VU"
+   ],
+   [
+    "Debt instruments, etc.",
+    "Market value of the underlying asset × the risk weight prescribed in the table in Article 272-5, item (ii)(a)"
+   ],
+   [
+    "Interest rates",
+    "Amount of change in the market value of the underlying asset resulting from an interest rate change equivalent to the assumed interest rate change in the table in Article 272-5, item (ii)(a)"
+   ],
+   [
+    "Equities, etc.",
+    "Current market value of the underlying asset × 8%"
+   ],
+   [
+    "Foreign exchange and gold",
+    "Current market value of the underlying asset × 8%"
+   ],
+   [
+    "Commodities, etc.",
+    "Current market value of the underlying asset × 15%"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "number": "第二百四十八条の四の三十一",
+ "heading_en": "Components of the CVA Measurement",
+ "summary_ja": "CVAは取引相手方のデフォルト損失の期待値（正の値）として、マーケット・インプライドPD、マーケット・コンセンサスELGD、将来エクスポージャーに基づき計測する。",
+ "summary_en": "CVA is measured as the expected loss from counterparty default (a positive value), based on market-implied PD, market-consensus ELGD and future exposure.",
+ "paragraphs": [
+  "CVA shall be measured as the expected value of the loss arising from the default of the counterparty (taken as a positive value). In this case, the default risk of the Ultimate Designated Parent Company adopting the SA-CVA shall not be taken into account.",
+  "CVA shall be measured based on the following elements. (i) Market-implied PD. (ii) Market-consensus ELGD. (iii) Future exposure."
+ ]
+}
