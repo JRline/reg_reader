@@ -1,0 +1,10 @@
+{
+ "number": "第二百七十五条の三",
+ "heading_en": "Simple Method",
+ "summary_ja": "簡便的な方式によるコモディティ・リスク・カテゴリーのマーケット・リスク相当額の算出式を定める。",
+ "summary_en": "Gives the calculation for the commodity risk category under the simple method: 15% of net positions plus 3% of gross positions.",
+ "paragraphs": [
+  "The market risk equivalent amount of the commodity risk category under the simple method shall be the total of the amount obtained by multiplying the amount of the net position of each commodity, etc. by 15% and the amount obtained by multiplying the total of the amount of the long position and the amount of the short position of that commodity, etc. by 3%."
+ ],
+ "terms": []
+}

@@ -1,0 +1,19 @@
+{
+ "number": "第二百七十五条",
+ "heading_en": "Market Risk Equivalent Amount of the Commodity Risk Category",
+ "summary_ja": "コモディティ・リスク・カテゴリーのマーケット・リスク相当額の対象と算出方式(マチュリティ・ラダー方式または簡便的な方式)、ポジション相殺の条件を定める。",
+ "summary_en": "Defines the scope and calculation methods (maturity ladder or simple method) for the commodity risk category and the correlation condition for offsetting positions.",
+ "paragraphs": [
+  "The market risk equivalent amount of the commodity risk category set forth in Article 271, paragraph (1), item (iv) shall cover commodities (excluding gold), derivative transactions thereof and off-balance-sheet positions thereof (hereinafter referred to as \"commodities, etc.\"), and shall be calculated using the maturity ladder method prescribed in the following Article or the simple method prescribed in Article 275-3.",
+  "In calculating the market risk equivalent amount referred to in the preceding paragraph, the net position in each commodity, etc. expressed in a standard unit of measurement (barrels, kilograms, grams, etc.) shall be converted into yen. In this case, in order to offset positions, the correlation coefficient of price movements over the most recent one year or longer period between the same commodities, etc., or between commodities, etc. that are deliverable for mutual settlement, must be 0.9 or more, and a system for verifying the appropriateness thereof must be established."
+ ],
+ "terms": [
+  {
+   "ja": "コモディティ等",
+   "en": "commodities, etc."
+  }
+ ],
+ "sections_en": {
+  "第四節 第五款": "Commodity Risk Category"
+ }
+}

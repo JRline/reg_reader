@@ -1,0 +1,9 @@
+{
+ "number": "第二百四十八条の四の十一",
+ "heading_en": "Measurement of Net Sensitivity Where an Index Is Used as a Hedging Instrument",
+ "summary_ja": "インデックスでCVAリスクをヘッジする場合のネット感応度は、リスク・ファクターの変化に対する当該インデックスの市場価格の変化率とする。",
+ "summary_en": "Where an index hedges CVA risk, its net sensitivity is the rate of change of the index's market price, measured through the effect on all its constituents, for small changes in all risk factors affecting its price.",
+ "paragraphs": [
+  "Notwithstanding Article 248-4-9, paragraph (1), where CVA risk is hedged using an index, the net sensitivity of that index shall be the rate of change of the market price of that index, measured through the effect on all constituents affected by the risk factors, with respect to a small change in the present value of all risk factors affecting the price of that index."
+ ]
+}

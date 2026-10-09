@@ -1,0 +1,10 @@
+{
+ "number": "第二百四十八条の四の十",
+ "heading_en": "Multiplier",
+ "summary_ja": "m_{CVA}は一とするが、モデル・リスクに対処するため長官が引き上げることがある。",
+ "summary_en": "The multiplier m_{CVA} is one, but the Commissioner may raise it to address model risk in the firm's CVA calculation.",
+ "paragraphs": [
+  "In the formula in Article 248-4-8, paragraph (6), the multiplier m_{CVA} shall be one.",
+  "Where the Commissioner of the Financial Services Agency determines it necessary to address model risk relating to the calculation of CVA by an Ultimate Designated Parent Company, the Commissioner shall raise the multiplier in the preceding paragraph."
+ ]
+}

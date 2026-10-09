@@ -1,0 +1,10 @@
+{
+ "number": "第二百七十三条の三",
+ "heading_en": "General Market Risk of the Equity Risk Category",
+ "summary_ja": "株式リスク・カテゴリーの一般市場リスクの額を、取引所ごとのロングとショートの差の絶対値に八パーセントを乗じた合計額とする。",
+ "summary_en": "Defines general market risk of the equity risk category as the sum, over exchanges, of 8% of the absolute difference between total long and short positions.",
+ "paragraphs": [
+  "The amount of general market risk of the equity risk category set forth in Article 271, paragraph (1), item (ii) shall be the total of the amounts obtained, for each exchange, by multiplying by 8% the absolute value of the difference between the amount of all long positions and the amount of all short positions held by the Ultimate Designated Parent Company, etc."
+ ],
+ "terms": []
+}

@@ -1,0 +1,10 @@
+{
+ "number": "第二百三十一条",
+ "heading_en": "Required Capital Ratio for the Portion in Excess of K_{IRB} (K_{SSFA}(K_{IRB}))",
+ "summary_ja": "K_{IRB}超過部分の所要自己資本率(K_{SSFA}(K_{IRB}))の算式と、a、u、l及びパラメーターpの定義を定める。",
+ "summary_en": "Gives the formula for the required capital ratio K_{SSFA}(K_{IRB}) for the portion above K_{IRB} and defines a, u, l, e, A, D and p.",
+ "paragraphs": [
+  "The required capital ratio for the portion in excess of K_{IRB} ({{F:p237i4}}) provided in items (ii) and (iii) of the preceding Article means the value calculated by the following formula. {{F:p237i5}} a = −(1/(p*K_{IRB})) u = D − K_{IRB} l = max(A − K_{IRB}, 0) e, A, D and p are each as follows. e is the base of the natural logarithm (2.71828 shall be used). A is the attachment point (A). D is the detachment point (D). p is the parameter (p) calculated under the provisions of Article 235."
+ ],
+ "terms": []
+}

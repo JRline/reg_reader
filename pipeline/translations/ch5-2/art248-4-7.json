@@ -1,0 +1,25 @@
+{
+ "number": "第二百四十八条の四の七",
+ "heading_en": "CVA Risk Equivalent Amount under the SA-CVA",
+ "summary_ja": "SA―CVAによるCVAリスク相当額は、デルタ・リスク分とベガ・リスク分の合計とし、それぞれリスク・クラスごとに算出した額を合計する。",
+ "summary_en": "The SA-CVA amount is the sum of the delta risk and vega risk amounts, each summed across risk classes (vega excludes counterparty credit spread risk).",
+ "paragraphs": [
+  "The CVA risk equivalent amount calculated using the SA-CVA shall be the amount obtained by adding together the CVA risk equivalent amount relating to delta risk and the CVA risk equivalent amount relating to vega risk.",
+  "The \"CVA risk equivalent amount relating to delta risk\" in the preceding paragraph means the sum of the CVA risk equivalent amounts relating to delta risk calculated for each of the following risk classes. (i) Interest rate risk. (ii) Foreign exchange risk. (iii) Counterparty credit spread risk. (iv) Reference credit spread risk. (v) Equity risk. (vi) Commodity risk.",
+  "The \"CVA risk equivalent amount relating to vega risk\" in paragraph (1) means the sum of the CVA risk equivalent amounts relating to vega risk calculated for each of the risk classes listed in the items of the preceding paragraph (excluding item (iii))."
+ ],
+ "terms": [
+  {
+   "ja": "デルタ・リスクに係るCVAリスク相当額",
+   "en": "CVA risk equivalent amount relating to delta risk"
+  },
+  {
+   "ja": "ベガ・リスクに係るCVAリスク相当額",
+   "en": "CVA risk equivalent amount relating to vega risk"
+  }
+ ],
+ "sections_en": {
+  "第三節 第二款": "Method of Calculating the CVA Risk Equivalent Amount under the SA-CVA",
+  "第三節 第二款 第一目": "General Provisions"
+ }
+}

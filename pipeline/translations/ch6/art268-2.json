@@ -1,0 +1,15 @@
+{
+ "number": "第二百六十八条の二",
+ "heading_en": "Calculation of the Market Risk Equivalent Amount for Default Risk of Securitization Products (Non-CTP)",
+ "summary_ja": "証券化商品(非CTP)のデフォルト・リスクを四十六のバケットに分類し、リスク・ウェイトの算出、現物ポジションの上限、バケット内の合算方法を定める。",
+ "summary_en": "Classifies the default risk of securitization products (non-CTP) into forty-six buckets and sets the risk weights, the cap on cash positions and the aggregation within buckets.",
+ "paragraphs": [
+  "The default risk of securitization products (non-CTP) shall be classified into forty-six buckets according to the sector category set forth in the middle column of the following table and the region category set forth in the lower column of the table. {{T:p394t0}}",
+  "The classification under the preceding paragraph shall be based on classifications generally used in the market and shall be made as provided below: (i) Each exposure shall be classified into exactly one bucket; (ii) Securitization product exposures with the same type of underlying assets and the same region shall be classified into the same bucket number; (iii) Where an exposure cannot be classified into an individual sector, it shall be classified into bucket number 46.",
+  "The risk weight by which the net JTD risk position of securitization products (non-CTP) is multiplied shall be the value obtained by dividing the risk weight calculated on the basis of the method of calculating risk weights of securitization exposures prescribed in Chapter 5, Section 2, Subsection 2 by 12.5. In this case, the period to maturity of a securitization product that gives rise to a JTD risk position shall be assumed to be one year.",
+  "The market risk equivalent amount under the standardized approach for the cash position of an individual securitization exposure, etc. within securitization products (non-CTP) shall be capped at the fair value of the transaction.",
+  "The market risk equivalent amounts belonging to the same bucket number relating to securitization products (non-CTP) shall be aggregated by the formulas prescribed in Article 267-3, paragraphs (3) and (4).",
+  "The market risk equivalent amount for default risk relating to securitization products (non-CTP) shall be the amount obtained by simply summing the market risk equivalent amounts of the respective buckets calculated in the preceding paragraph."
+ ],
+ "terms": []
+}

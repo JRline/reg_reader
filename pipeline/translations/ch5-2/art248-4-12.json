@@ -1,0 +1,15 @@
+{
+ "number": "第二百四十八条の四の十二",
+ "heading_en": "Designation of Eligible Indices",
+ "summary_ja": "適格インデックスを所定のバケットに割り当てて単一のネット感応度とできるが、同一セクターの銘柄が75パーセントを超える場合はそのセクターのバケットを割り当てる。",
+ "summary_en": "An eligible index may be assigned to the designated index bucket so that its bucket-level sensitivities become a single net sensitivity, unless over 75% of its constituents are in one sector, in which case that sector's bucket applies.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the SA-CVA may, by assigning an index satisfying certain requirements (meaning a credit index or equity index that satisfies the requirements listed in the items of Article 262, paragraph (4) in the measurement of net sensitivity relating to delta risk, and all indices in the measurement of net sensitivity relating to vega risk; hereinafter in this Section referred to as an \"eligible index\") to the eligible index bucket in the table in Article 248-4-21, paragraph (1), Article 248-4-23, paragraph (1) or Article 248-4-26, paragraph (1), treat the multiple net sensitivities measured for each bucket as a single net sensitivity for that eligible index; provided, however, that where the proportion of the constituents of that eligible index that are classified in the same sector (provided that this is a proportion calculated taking into account the weighting of the constituents specified for that eligible index) exceeds 75%, the bucket to which that sector belongs shall be assigned in place of the eligible index bucket."
+ ],
+ "terms": [
+  {
+   "ja": "適格インデックス",
+   "en": "eligible index"
+  }
+ ]
+}

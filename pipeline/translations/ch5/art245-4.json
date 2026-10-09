@@ -1,0 +1,21 @@
+{
+ "number": "第二百四十五条の四",
+ "heading_en": "",
+ "summary_ja": "延滞率が九十パーセント以上等の不良債権証券化エクスポージャーのリスク・ウェイトの下限（百パーセント）と、その例外及び内部格付手法準拠方式の不適用を定める。",
+ "summary_en": "Sets a 100% floor on risk weights of non-performing loan securitization exposures calculated under the IRB- or standardized-compliant methods, with a conditions-based 100% allowance and a restriction on using the IRB-compliant method.",
+ "paragraphs": [
+  "The risk weight of a securitization exposure that falls under all of the following requirements (hereinafter in the following paragraph and paragraph (4) referred to as a \"non-performing loan securitization exposure\") shall, where that risk weight is calculated using the internal ratings-based approach-compliant method or the standardized approach-compliant method, not be less than 100%, notwithstanding Divisions 2, 5 and 6: (i) as of the cut-off date of the original assets, the delinquency rate (W) of the original asset pool relating to that securitization exposure, calculated pursuant to Article 244, is 90% or more; (ii) notwithstanding the replacement of constituent assets due to reorganization of the original assets or for other reasons, the situation relating to the requirement in the preceding item is expected to continue after the cut-off date of the original assets; (iii) that securitization exposure is not a re-securitization exposure.",
+  "Where a non-performing loan securitization exposure falls under all of the following requirements, its risk weight may, notwithstanding Divisions 2, 5 and 6, be 100%: (i) it is an exposure relating to an asset-transfer securitization transaction and is a senior securitization exposure; (ii) the ratio of the amount of the discount (limited to those not requiring refund; the same applies in the following paragraph) given when the originator or another person transferred the original assets to the securitization special purpose entity relating to that non-performing loan securitization exposure, to the total balance of all the assets constituting the original assets of the securitization transaction, is 50% or more; (iii) the method for calculating the risk weight of that non-performing loan securitization exposure is the internal ratings-based approach-compliant method or the standardized approach-compliant method.",
+  "Where the originator or another person has taken on some of the tranches, the amount of the discount in item (ii) of the preceding paragraph may include the amount of the discount given at the time the originator or other person first transfers that tranche to a third party other than the securitization special purpose entity, but only at the time of that transfer.",
+  "Where the exposures that are the underlying assets of a non-performing loan securitization exposure are exposures to business corporations, etc., an Ultimate Designated Parent Company adopting the internal ratings-based approach shall not use the internal ratings-based approach-compliant method as the method for calculating the risk weight of that exposure if it does not use estimates for the LGD and EAD of that exposure."
+ ],
+ "terms": [
+  {
+   "ja": "不良債権証券化エクスポージャー",
+   "en": "non-performing loan securitization exposure"
+  }
+ ],
+ "sections_en": {
+  "第二節 第二款 第八目": "Non-Performing Loan Securitization Exposures"
+ }
+}

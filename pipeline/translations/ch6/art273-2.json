@@ -1,0 +1,13 @@
+{
+ "number": "第二百七十三条の二",
+ "heading_en": "Specific Risk of the Equity Risk Category",
+ "summary_ja": "株式リスク・カテゴリーの個別リスクの額を、ロングとショートの合計額に八パーセントを乗じて算出し、指数取引、裁定取引などの特例を定める。",
+ "summary_en": "Calculates specific risk of the equity risk category as 8% of the total long and short positions, with exceptions for index transactions, arbitrage and index futures against baskets.",
+ "paragraphs": [
+  "The amount of specific risk of the equity risk category set forth in Article 271, paragraph (1), item (ii) shall be the amount obtained by multiplying the total of the amount of all long positions and the amount of all short positions in equities, etc. by 8%. In this case, positions in the same issue or the same stock price index may be offset against each other.",
+  "Notwithstanding the preceding paragraph, where index transactions composed of a highly diversified portfolio of equities, etc. are conducted, the amount shall be the amount obtained by multiplying the amount of the net position by 2%.",
+  "Where arbitrage is conducted in futures transactions of the same stock price index on different dates or on different exchanges, or in futures transactions of similar but not identical stock price indices on the same date, the amount of specific risk may be calculated for only one of the transactions and need not be calculated for the other transaction.",
+  "Where a futures transaction based on an index composed of a broad range of equities is opposite to a basket of equities, the calculation of the market risk equivalent amount for specific risk is not required."
+ ],
+ "terms": []
+}

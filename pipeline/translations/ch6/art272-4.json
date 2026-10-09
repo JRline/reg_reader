@@ -1,0 +1,10 @@
+{
+ "number": "第二百七十二条の四",
+ "heading_en": "Specific Risk of the Interest Rate Risk Category",
+ "summary_ja": "金利リスク・カテゴリーの個別リスクの額を、銘柄ごとのネット・ポジションにリスク・ウェイトを乗じた合計額とし、リスク・ウェイト表と政府債・優良債の定義を示す。",
+ "summary_en": "Defines the specific risk amount of the interest rate risk category as the sum of net positions by issue multiplied by risk weights, and gives the risk weight table and the definitions of government and high-grade bonds.",
+ "paragraphs": [
+  "The amount of specific risk of the interest rate risk category set forth in Article 271, paragraph (1), item (i) shall be the total of the amounts obtained by multiplying the amount of the net position of each issue of debt instruments, etc. by the risk weight prescribed in the lower column of the following table according to the category set forth in the upper column of the table; provided, however, that for yen-denominated debt instruments, etc. issued by the Government of Japan or Japanese local governments that were raised in yen, the risk weight may be set at 0%. {{T:p404t0}} (Note 1) \"Government bonds\" means bonds issued by central governments or Japanese local governments and bonds guaranteed by them. (Note 2) \"High-grade bonds\" means debt instruments, etc. issued by the public sector or multilateral development banks; debt instruments, etc. issued by financial institutions (excluding those set forth in Article 1, item (vii)(b) and (f)), foreign banks, bank holding companies, foreign companies equivalent to bank holding companies, Type I financial instruments business operators, foreign companies equivalent to Ultimate Designated Parent Companies, management companies, foreign securities firms, insurance companies and insurance holding companies that are permitted to have a risk weight of 20% in light of the standards of Article 30, Article 31 or Article 31-2; and debt instruments, etc. whose credit risk category corresponding to a rating assigned by a qualifying rating agency is 4-3 or 5-3 or higher."
+ ],
+ "terms": []
+}

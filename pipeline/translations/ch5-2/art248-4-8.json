@@ -1,0 +1,36 @@
+{
+ "number": "第二百四十八条の四の八",
+ "heading_en": "CVA Risk Equivalent Amount by Risk Class",
+ "summary_ja": "リスク・クラスごとのCVAリスク相当額は、ネット感応度、加重感応度、ネット加重感応度、バケットごとのCVAリスク相当額を順に計測して算出する。",
+ "summary_en": "The risk-class CVA amounts are derived by measuring net sensitivity, weighted sensitivity, net weighted sensitivity and the bucket-level CVA amount in turn, then aggregating across buckets.",
+ "paragraphs": [
+  "The CVA risk equivalent amount relating to delta risk calculated for each risk class in paragraph (2) of the preceding Article and the CVA risk equivalent amount relating to vega risk calculated for each risk class in paragraph (3) of that Article shall be calculated by measuring the following items under the provisions of this Subsection. (i) Net sensitivity. (ii) Weighted sensitivity. (iii) Net weighted sensitivity. (iv) CVA risk equivalent amount for each bucket.",
+  "\"Net sensitivity\" listed in item (i) of the preceding paragraph means the following sensitivities. (i) The sensitivity, for each risk factor, of the total value of CVA measured for the CVA cover transactions provided in Article 248-2, paragraph (2) (referred to as \"net sensitivity {{F:p282i0}}\" in the following paragraph). (ii) The sensitivity, for each risk factor, of the total market value of all eligible SA-CVA hedge transactions provided in Article 248-4-13, paragraph (1) (referred to as \"net sensitivity {{F:p282i1}}\" in the following paragraph).",
+  "\"Weighted sensitivity\" listed in paragraph (1), item (ii) means the value measured for each risk factor by the following formula. {{F:p282i2}} {{F:p282i3}} Weighted sensitivity {{F:p282i4}} is the value for each risk factor obtained by multiplying net sensitivity {{F:p282i5}} by the risk weight provided in Article 248-4-15, paragraph (5), Article 248-4-16, paragraph (4), Article 248-4-17, paragraph (4), Article 248-4-19, paragraph (3), Article 248-4-20, paragraph (3), Article 248-4-22, paragraph (3), Article 248-4-24, paragraph (3), Article 248-4-25, paragraph (3), Article 248-4-27, paragraphs (3) and (6), and Article 248-4-29, paragraph (3). Weighted sensitivity {{F:p282i6}} is the value for each risk factor obtained by multiplying net sensitivity {{F:p282i7}} by the risk weight provided in Article 248-4-15, paragraph (5), Article 248-4-16, paragraph (4), Article 248-4-17, paragraph (4), Article 248-4-19, paragraph (3), Article 248-4-20, paragraph (3), Article 248-4-22, paragraph (3), Article 248-4-24, paragraph (3), Article 248-4-25, paragraph (3), Article 248-4-27, paragraphs (3) and (6), and Article 248-4-29, paragraph (3).",
+  "\"Net weighted sensitivity\" listed in paragraph (1), item (iii) means the value measured for each risk factor by the following formula. {{F:p283i0}}",
+  "\"CVA risk equivalent amount for each bucket\" listed in paragraph (1), item (iv) means the value obtained by measuring, for each bucket by the following formula, the net weighted sensitivity calculated by the measurement in the preceding paragraph. {{F:p283i1}} ρ_{kl} is the correlation coefficient between the sensitivities of the risk factors. R is the hedging disallowance (meaning the additional amount of the CVA risk equivalent amount that takes into account the possibility that CVA risk is not fully hedged), and shall be 0.01.",
+  "The CVA risk equivalent amount relating to delta risk calculated for each risk class and the CVA risk equivalent amount relating to vega risk calculated for each risk class shall be calculated by the following formula, using the CVA risk equivalent amount for each bucket measured in the preceding paragraph. {{F:p283i2}} γ_{bc} is the correlation coefficient applied to each risk class. S_{b} shall be measured, by the following formula, by summing the weighted sensitivities WS_{k} relating to all risk factors k included in bucket b, with −K_{b} as the lower limit and K_{b} as the upper limit. In this case, S_{c} shall be measured in the same manner as S_{b}. {{F:p283i3}} {{F:p283i4}}"
+ ],
+ "terms": [
+  {
+   "ja": "ネット感応度",
+   "en": "net sensitivity"
+  },
+  {
+   "ja": "加重感応度",
+   "en": "weighted sensitivity"
+  },
+  {
+   "ja": "ネット加重感応度",
+   "en": "net weighted sensitivity"
+  },
+  {
+   "ja": "バケットごとのCVAリスク相当額",
+   "en": "CVA risk equivalent amount for each bucket"
+  },
+  {
+   "ja": "ヘッジング・ディスアローアンス",
+   "en": "hedging disallowance"
+  }
+ ]
+}

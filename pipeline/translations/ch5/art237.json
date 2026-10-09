@@ -1,0 +1,19 @@
+{
+ "number": "第二百三十七条",
+ "heading_en": "Operational Requirements for the Use of Inferred Ratings",
+ "summary_ja": "無格付の証券化エクスポージャーが、同順位または劣後する最優先の参照証券化エクスポージャーの格付と同じ推定格付を有するとみなされる四つの要件を定める。",
+ "summary_en": "Lists four requirements under which an unrated securitization exposure is deemed to carry an inferred rating equal to that of a reference securitization exposure that is pari passu or the most senior of those subordinate to it.",
+ "paragraphs": [
+  "An unrated securitization exposure that satisfies all of the following requirements shall be deemed to have the same rating as the rating assigned by an eligible credit rating agency to the securitization exposure ranking pari passu with it or, among the securitization exposures subordinate to it, the most senior one (hereinafter in this Article and paragraph (1) of the next Article referred to as the \"reference securitization exposure\") (referred to as the \"inferred rating\" in item (iv)). (i) The reference securitization exposure, taking into account the underlying assets, the application of credit risk mitigation techniques and other factors relating to the seniority structure, ranks pari passu with or is subordinate to that unrated securitization exposure. (ii) The residual maturity of the reference securitization exposure is not shorter than the residual maturity of that unrated securitization exposure. (iii) The rating assigned to the reference securitization exposure satisfies the standards on the eligibility of ratings in securitization transactions provided in paragraph (2) of the next Article. (iv) The Ultimate Designated Parent Company has in place a system for continuously updating the inferred rating so as to reflect any event in which the ranking of that unrated securitization exposure becomes subordinate, or any change in the rating of the reference securitization exposure by an eligible credit rating agency."
+ ],
+ "terms": [
+  {
+   "ja": "参照証券化エクスポージャー",
+   "en": "reference securitization exposure"
+  },
+  {
+   "ja": "推定格付",
+   "en": "inferred rating"
+  }
+ ]
+}

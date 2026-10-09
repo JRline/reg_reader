@@ -1,0 +1,13 @@
+{
+ "number": "第二百四十八条の四の十七",
+ "heading_en": "Sensitivities, etc. of Interest Rate Vega Risk Factors",
+ "summary_ja": "金利リスクのベガ・リスク・ファクターはインフレ率及び金利に対する全ボラティリティの相対変化とし、リスク・ウェイトは100パーセント、相関は40パーセントとする。",
+ "summary_en": "The interest rate vega risk factors are the relative change in all inflation volatilities and in all interest rate volatilities, with a 100% risk weight and 40% correlation.",
+ "paragraphs": [
+  "The vega risk factors of interest rate risk shall be the relative change in all volatilities relating to the inflation rate of the currency and the relative change in all volatilities relating to interest rates.",
+  "The \"relative change in all volatilities relating to the inflation rate of the currency\" in the preceding paragraph means the value obtained by dividing the change in the value of CVA or of a CVA hedging instrument when all volatilities relating to the inflation rate are changed simultaneously by 1% relative to their present values by 0.01.",
+  "The \"relative change in all volatilities relating to interest rates\" in paragraph (1) means the value obtained by dividing the change in the value of CVA or of a CVA hedging instrument when all volatilities relating to interest rates are changed simultaneously by 1% relative to their present values by 0.01.",
+  "The risk weight RW_{k} of the risk factors provided in paragraph (1) shall be 100%.",
+  "The correlation coefficient ρ_{kl} between the volatility relating to the inflation rate of the currency and the volatility relating to interest rates provided in paragraph (1) shall be 40%."
+ ]
+}

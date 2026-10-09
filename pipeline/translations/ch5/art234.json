@@ -1,0 +1,13 @@
+{
+ "number": "第二百三十四条",
+ "heading_en": "Attachment Point (A) and Detachment Point (D)",
+ "summary_ja": "リスク・ウェイトの算式に用いるアタッチメント・ポイント(A)及びデタッチメント・ポイント(D)の算出方法と、準備金勘定・超過担保の取扱いを定める。",
+ "summary_en": "Defines how the attachment point (A) and detachment point (D) are calculated, and the treatment of reserve accounts and overcollateralization as separate tranches.",
+ "paragraphs": [
+  "The attachment point (A) used in the formula for the risk weight of a securitization exposure shall be the value obtained by dividing the amount calculated by deducting from the total balance of the underlying assets of the securitization exposure the total balance of the tranches senior to the held securitization exposure for which the risk weight is to be calculated and the total balance of the tranches pari passu with that held securitization exposure (including the amount of the securitization exposures held by the Ultimate Designated Parent Company itself) by the total balance of those underlying assets (or zero where that value is less than zero).",
+  "The detachment point (D) used in the formula for the risk weight of a securitization exposure shall be the value obtained by dividing the amount calculated by deducting from the total balance of the underlying assets of the securitization exposure the total balance of the tranches senior to the held securitization exposure for which the risk weight is to be calculated by the total balance of those underlying assets (or zero where that value is less than zero).",
+  "In calculating the total balance of the underlying assets of the securitization exposure in the preceding two paragraphs, for the portion of the underlying assets other than the original assets of the securitization transaction, the assets constituting a reserve account that accumulates cash flows from the underlying assets (limited to one that provides credit enhancement; the same applies in the next paragraph) may be included in the underlying assets.",
+  "In paragraphs (1) and (2), the amount equivalent to overcollateralization and the amount equivalent to the reserve account provided in the preceding paragraph shall each be treated as a distinct tranche."
+ ],
+ "terms": []
+}

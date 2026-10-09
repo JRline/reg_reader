@@ -1,0 +1,28 @@
+{
+ "number": "第二百四十八条の四の十五",
+ "heading_en": "Sensitivities, etc. in Interest Rate Risk Buckets",
+ "summary_ja": "金利リスクのバケットは通貨ごととし、デルタ・リスク・ファクター（インフレ率及びテナー別イールドカーブ）、リスク・ウェイト、ファクター間相関及びバケット間相関（0.5）を定める。",
+ "summary_en": "Interest rate buckets are set per currency; the article defines delta risk factors (inflation and tenor-specific yield curves), risk weights, risk-factor correlations and the 0.5 inter-bucket correlation.",
+ "paragraphs": [
+  "The buckets for delta risk and vega risk relating to interest rate risk shall be determined for each individual currency.",
+  "The delta risk factors of interest rate risk for the reporting currency of the Ultimate Designated Parent Company (meaning the currency used in the financial reporting of the Ultimate Designated Parent Company; the same applies hereinafter), the currency of the United States (USD), the currency of the participating countries of the European economic and monetary union (EUR), the currency of the United Kingdom (GBP), the currency of Australia (AUD), the currency of Canada (CAD), the currency of Sweden (SEK) and the currency of Japan shall be the absolute change in the inflation rate and the absolute change in the risk-free yield curve for each of the following types of tenor (meaning the number of years to maturity; the same applies hereinafter). (i) One year. (ii) Two years. (iii) Five years. (iv) Ten years. (v) Thirty years.",
+  "The \"absolute change in the inflation rate\" in the preceding paragraph means the value obtained by dividing the change in the value of CVA or of a CVA hedging instrument when the inflation rate is changed by one basis point by 0.0001.",
+  "The \"absolute change in the risk-free yield curve\" in paragraph (2) means the value obtained by dividing the change in the value of CVA or of a CVA hedging instrument when the risk-free yield curve of a particular currency is changed by a width of one basis point by 0.0001.",
+  "The risk weight RW_{k} of the risk factors provided in paragraph (2) shall be as set out in the left column of the following table, according to the category of that risk factor in the following table. {{T:p286t0}}",
+  "The correlation coefficient ρ_{kl} between the risk factors provided in paragraph (2) shall be as set out in the following table, according to the category of those risk factors. {{T:p286t1}}",
+  "The correlation coefficient γ_{kl} between buckets of delta risk and between buckets of vega risk relating to interest rates provided in paragraph (1) shall be 0.5 for all currencies."
+ ],
+ "terms": [
+  {
+   "ja": "報告通貨",
+   "en": "reporting currency"
+  },
+  {
+   "ja": "テナー",
+   "en": "tenor"
+  }
+ ],
+ "sections_en": {
+  "第三節 第二款 第二目": "Buckets, Risk Factors, Sensitivities, Risk Weights and Correlations for Interest Rate Risk"
+ }
+}

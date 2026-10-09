@@ -1,0 +1,10 @@
+{
+ "number": "第二百四十七条",
+ "heading_en": "Treatment of Proportional Credit Risk Mitigation Techniques",
+ "summary_ja": "比例的な信用リスク削減手法を提供する場合は提供部分を直接保有とみなし、提供を受ける場合は提供を受ける部分に限り効果を勘案する。",
+ "summary_en": "Where proportional credit risk mitigation is provided, the provider is treated as directly holding the covered portion; where it is received, its effect is recognized only for the covered portion.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company provides the credit risk mitigation effect of a proportional credit risk mitigation technique (meaning a credit risk mitigation technique under which, where the portion for which the credit risk mitigation effect is provided is smaller than the whole amount of the exposure to which that effect is provided, the provider and the recipient of the effect bear losses on the exposure in proportion to the ratio of the amount of exposure of the portion for which the effect is provided to the amount of exposure of the remaining portion; the same applies in the following paragraph) for a securitization exposure, it shall calculate the credit risk-weighted assets by deeming itself to directly hold the portion of that securitization exposure for which it provides that credit risk mitigation effect.",
+  "Where an Ultimate Designated Parent Company receives the credit risk mitigation effect of a proportional credit risk mitigation technique for a securitization exposure it holds, it may take the credit risk mitigation effect into account only for the portion of that securitization exposure for which the effect is provided."
+ ]
+}

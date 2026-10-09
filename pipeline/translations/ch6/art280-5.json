@@ -1,0 +1,16 @@
+{
+ "number": "第二百八十条の五",
+ "heading_en": "Specific Risk of Nth-to-Default Credit Derivatives",
+ "summary_ja": "ファースト・トゥ・デフォルト型と特定順位参照型クレジット・デリバティブの個別リスクの額を、参照資産等の個別リスクの額の合計と最大損失額等のうち小さい額により定める。",
+ "summary_en": "Determines specific risk of first-to-default and other nth-to-default credit derivatives as the lesser of the sum of reference-asset specific risks (net of the lowest ones, for nth-to-default) and the maximum possible loss.",
+ "paragraphs": [
+  "Notwithstanding the provisions of the preceding Sections, the amount of specific risk relating to a first-to-default credit derivative shall be the smaller of the following amounts in the amount of the net position after offsetting for each issue on the basis of the procedures prescribed in Article 272-2 or Article 272-3: (i) the total of the amounts of specific risk of the reference assets, etc. relating to that first-to-default credit derivative; (ii) the maximum loss that may arise under the contract relating to that first-to-default credit derivative.",
+  "The amount of specific risk relating to an nth-to-default credit derivative (excluding those relating to first-to-default credit derivatives; the same applies hereinafter in this paragraph) shall be the smaller of the following amounts in the amount of the net position after offsetting for each issue on the basis of the procedures prescribed in Article 272-2 or Article 272-3: (i) the amount obtained by deducting the amount set forth in (b) from the amount set forth in (a) below: (a) the total of the amounts of specific risk of the reference assets, etc. relating to that nth-to-default credit derivative; (b) the amount obtained by totaling, in ascending order, the amounts of specific risk of a number of reference assets, etc. equal to the number obtained by subtracting one from the number corresponding to the rank specified in advance, among the reference assets, etc. relating to that nth-to-default credit derivative; (ii) the maximum loss that may arise under the contract relating to that nth-to-default credit derivative.",
+  "The provisions of Article 272, paragraph (2) shall apply mutatis mutandis to the calculation of the amount of specific risk of nth-to-default credit derivatives.",
+  "Notwithstanding the provisions of the preceding three paragraphs, where an nth-to-default credit derivative relating to the provision of protection has a rating, the provisions of Article 280-2 through the preceding Article shall apply mutatis mutandis to the calculation of the amount of its specific risk. In this case, the term \"securitization exposure\" shall be deemed to be replaced with \"nth-to-default credit derivative.\""
+ ],
+ "terms": [],
+ "sections_en": {
+  "第六節": "Special Provisions for Nth-to-Default Credit Derivatives"
+ }
+}

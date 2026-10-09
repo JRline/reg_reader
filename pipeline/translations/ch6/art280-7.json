@@ -1,0 +1,13 @@
+{
+ "number": "第二百八十条の七",
+ "heading_en": "Calculation of Specific Risk for Correlation Trading",
+ "summary_ja": "コリレーション・トレーディングの個別リスクの算出には、修正標準方式による個別リスクの額を用いる。",
+ "summary_en": "Requires use of the modified standardized approach when calculating specific risk for correlation trading.",
+ "paragraphs": [
+  "In calculating specific risk for correlation trading, an Ultimate Designated Parent Company shall use the amount of specific risk calculated by the modified standardized approach prescribed in the following Article."
+ ],
+ "terms": [],
+ "sections_en": {
+  "第七節": "Special Provisions for Correlation Trading"
+ }
+}

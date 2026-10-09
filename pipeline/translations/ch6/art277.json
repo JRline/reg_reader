@@ -1,0 +1,10 @@
+{
+ "number": "第二百七十七条",
+ "heading_en": "Shortcut Method",
+ "summary_ja": "簡便法を用いる場合のオプション取引等のマーケット・リスク相当額を、組合せの区分に応じて算出する。",
+ "summary_en": "Calculates the market risk equivalent amount of option transactions, etc. under the shortcut method, depending on the combination of cash and option positions.",
+ "paragraphs": [
+  "The market risk equivalent amount for option transactions, etc. where the shortcut method is used shall be the total of the market risk equivalent amounts calculated as prescribed in each of the following items according to the case set forth in that item: (i) Where a long cash position is combined with a long position in a put option, or a short cash position is combined with a long position in a call option: the market risk equivalent amount shall be the amount obtained by multiplying the market value of the underlying asset (for caps, floors, swaptions and other products for which the market value of the underlying asset may become zero, notional value shall be used) by the sum of the risk weight for specific risk and the risk weight for general market risk relating to the underlying asset. In this case, the market value of an in-the-money option (for option transactions with a residual maturity, etc. of more than six months, the strike price shall be compared with the forward price; where this cannot be done, the in-the-money market value shall be zero; in addition, in valuing transactions or property involving foreign exchange risk or commodity risk that are not included in the trading account, the book value may be used) may be deducted to the extent that it does not exceed the amount so obtained; (ii) Where there is only a long position in a call option or only a long position in a put option: the market risk equivalent amount shall be the smaller of the amount obtained by multiplying the market value of the underlying asset by the sum of the risk weight for specific risk and the risk weight for general market risk relating to the underlying asset, and the market value of the option."
+ ],
+ "terms": []
+}

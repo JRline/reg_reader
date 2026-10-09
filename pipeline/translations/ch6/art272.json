@@ -1,0 +1,19 @@
+{
+ "number": "第二百七十二条",
+ "heading_en": "Interest Rate Risk Category",
+ "summary_ja": "金利リスク・カテゴリーのマーケット・リスク相当額を、債券等の個別リスクと一般市場リスクの合計とし、ショート・ポジションの個別リスクの特例を定める。",
+ "summary_en": "Defines the interest rate risk category market risk equivalent amount as the sum of specific risk and general market risk on debt instruments, etc., with an option for short positions.",
+ "paragraphs": [
+  "The market risk equivalent amount of the interest rate risk category set forth in Article 271, paragraph (1), item (i) shall be the total of the amount of specific risk and the amount of general market risk relating to bonds, negotiable certificates of deposit, non-convertible preferred shares and other financial instruments, derivative transactions relating thereto and off-balance-sheet positions thereof (hereinafter referred to as \"debt instruments, etc.\"). In this case, positions shall not be offset between different currencies. In addition, for derivative transactions, the amount of specific risk and the amount of general market risk shall be calculated after converting them into the positions in the related underlying assets, with due regard to the procedures prescribed in the following Article and Article 272-3.",
+  "Notwithstanding the preceding paragraph, an Ultimate Designated Parent Company may, in place of the amount of specific risk of a short position in debt instruments, etc., use the maximum loss that may arise on that short position as the amount of specific risk of that short position."
+ ],
+ "terms": [
+  {
+   "ja": "債券等",
+   "en": "debt instruments, etc."
+  }
+ ],
+ "sections_en": {
+  "第四節 第二款": "Interest Rate Risk Category"
+ }
+}

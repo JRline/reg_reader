@@ -1,0 +1,17 @@
+{
+ "number": "第二百四十八条の四の十三",
+ "heading_en": "Eligibility Requirements for Hedges under the SA-CVA",
+ "summary_ja": "SA―CVAでヘッジ効果を反映できるのは要件を満たす適格SA―CVAヘッジ取引に限り、ヘッジ期間中は一の取引として扱い、クレジット・スプレッドのヘッジは全体を一つのリスク・クラスに割り当てる。",
+ "summary_en": "Hedging effects under the SA-CVA may be reflected only for eligible SA-CVA hedge transactions, which are treated as a single transaction over the hedge period, and credit spread hedges are allocated wholly to one risk class.",
+ "paragraphs": [
+  "In calculating the CVA risk equivalent amount using the SA-CVA, an Ultimate Designated Parent Company may reflect the hedging effect on CVA risk only for hedge transactions that satisfy all of the following requirements (hereinafter in this Section referred to as \"eligible SA-CVA hedge transactions\"); provided, however, that hedge transactions using the products listed in the items of Article 249-2, paragraph (5) shall not be treated as eligible SA-CVA hedge transactions. (i) That the transaction is used and managed for the purpose of mitigating CVA risk, and that documents relating to the hedged item and the hedging instrument have been prepared. (ii) Where an internal CVA hedge transaction is subject to the measurement of the market risk equivalent amount for curvature risk, default risk and the residual risk add-on under Chapter 6, Section 3, that the trading desk that is the counterparty of the CVA desk has executed with a third party a transaction that completely offsets the position against the CVA desk.",
+  "An eligible SA-CVA hedge transaction shall be treated as a single transaction over the hedge period and shall not be divided into multiple parts.",
+  "Where there is an eligible SA-CVA hedge transaction against the delta risk of credit spread risk, the whole of that eligible SA-CVA hedge transaction shall be assigned to either the counterparty credit spread risk class or the reference credit spread risk class."
+ ],
+ "terms": [
+  {
+   "ja": "適格SA―CVAヘッジ取引",
+   "en": "eligible SA-CVA hedge transactions"
+  }
+ ]
+}

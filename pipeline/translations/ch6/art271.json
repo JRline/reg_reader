@@ -1,0 +1,15 @@
+{
+ "number": "第二百七十一条",
+ "heading_en": "Market Risk Equivalent Amount under the Simplified Approach",
+ "summary_ja": "簡易的方式で対象とする四つのリスク・カテゴリーと、その合算の算式および乗数(SF)を定める。",
+ "summary_en": "Lists the four risk categories covered by the simplified approach and gives the aggregation formula with its scaling factors (SF).",
+ "paragraphs": [
+  "Under the simplified approach, the market risk equivalent amount shall be calculated for the following risk categories (including option transactions classified into those risk categories): (i) the interest rate risk category; (ii) the equity risk category; (iii) the foreign exchange risk category; (iv) the commodity risk category.",
+  "The total market risk equivalent amount under the simplified approach shall be the amount obtained by aggregating the market risk equivalent amounts calculated for each of the risk categories set forth in the items of the preceding paragraph (including option transactions classified into those risk categories) using the following formula. CR_{IRR} * SF_{IRR} + CR_{EQ} * SF_{EQ} + CR_{FX} * SF_{FX} + CR_{COMM} * SF_{COMM} CR_{IRR} is the market risk equivalent amount classified into the interest rate risk category and option transactions of that category; CR_{EQ} is the market risk equivalent amount classified into the equity risk category and option transactions of that category; CR_{FX} is the market risk equivalent amount classified into the foreign exchange risk category and option transactions of that category; CR_{COMM} is the market risk equivalent amount classified into the commodity risk category and option transactions of that category; SF_{IRR} is 1.30; SF_{EQ} is 3.50; SF_{FX} is 1.20; SF_{COMM} is 1.90."
+ ],
+ "terms": [],
+ "sections_en": {
+  "第四節": "Simplified Approach",
+  "第四節 第一款": "Market Risk Equivalent Amount under the Simplified Approach"
+ }
+}

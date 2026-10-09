@@ -1,0 +1,18 @@
+{
+ "number": "第二百六十七条の二",
+ "heading_en": "Net JTD Amounts for Non-Securitization Products",
+ "summary_ja": "非証券化商品のネットJTD額を、同一エクスポージャーのグロスJTD額のロングとショートを相殺して算出する方法と、その符号によるポジションの区分を定める。",
+ "summary_en": "Sets out how the net JTD amount of non-securitization products is calculated by offsetting long and short gross JTD amounts for the same exposure, and how the sign determines a long or short net position.",
+ "paragraphs": [
+  "The net JTD amount of non-securitization products shall be calculated by offsetting the long position amount against the short position amount of the gross JTD amount for the same exposure, as provided below: (i) A short position may be offset where, in the event of default, its ranking for repayment is the same as or junior to that of the long position; (ii) Multiple exposures with a residual maturity to maturity of less than one year shall be offset after their position amounts have been scaled.",
+  "In offsetting the long positions and short positions referred to in the preceding paragraph, where the residual maturity to maturity of both positions is less than one year, they shall be offset after scaling.",
+  "In calculating the net JTD amount of non-securitization products, where a guaranteed bond satisfies the conditions concerning credit risk mitigation techniques provided in Articles 94 and 95, the exposure to the obligor shall be deemed to be an exposure to the guarantor, in proportion to the guaranteed portion of that bond, and the provisions of the preceding two paragraphs shall apply.",
+  "Where the net JTD amount for each obligor calculated pursuant to the provisions of the preceding three paragraphs is a positive value, it shall be a net JTD risk position that is a long position, and where it is a negative value, it shall be a net JTD risk position that is a short position."
+ ],
+ "terms": [],
+ "sections_en": {
+  "第三節": "Standardized Approach",
+  "第三節 第三款": "Market Risk Equivalent Amount for Default Risk under the Standardized Approach",
+  "第三節 第三款 第二目": "Market Risk Equivalent Amount for Default Risk of Non-Securitization Products"
+ }
+}

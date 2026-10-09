@@ -1,0 +1,13 @@
+{
+ "number": "第二百三十九条",
+ "heading_en": "Approval of the Internal Assessment Approach",
+ "summary_ja": "内部格付手法採用最終指定親会社が金融庁長官の承認を得て、ABCPプログラムに対する無格付の証券化エクスポージャーのリスク・ウェイトを内部評価方式で算出できる旨を定める。",
+ "summary_en": "An Ultimate Designated Parent Company adopting the internal ratings-based approach may, with the Commissioner's approval, use the internal assessment approach for unrated securitization exposures to ABCP programs.",
+ "sections_en": {
+  "第二節 第二款 第四目": "Internal Assessment Approach"
+ },
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the internal ratings-based approach may, where it has obtained the approval of the Commissioner of the Financial Services Agency, calculate the risk weight of securitization exposures (limited to unrated securitization exposures such as liquidity facilities and credit enhancement for ABCP programs) using the internal assessment approach."
+ ],
+ "terms": []
+}
