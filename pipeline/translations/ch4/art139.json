@@ -1,0 +1,10 @@
+{
+ "number": "第百三十九条",
+ "heading_en": "Treatment Where a Guarantee or Credit Derivative Is Attached to a Retail Exposure",
+ "summary_ja": "リテール向けエクスポージャーに保証又はクレジット・デリバティブが付され、信用リスクが完全に代替される場合の勘案方法と準用規定を定める。",
+ "summary_en": "Sets how the effect of a guarantee or credit derivative on a retail exposure is recognized where the obligor's credit risk is fully substituted, and the provisions applied mutatis mutandis.",
+ "paragraphs": [
+  "Notwithstanding the preceding three Articles, where a guarantee or credit derivative is attached to a retail exposure and the credit risk of the obligor is completely substituted by the guarantor or protection provider, an Ultimate Designated Parent Company adopting the internal ratings-based approach may take into account the effect of the guarantee or credit derivative by the method specified in each of the following items, according to the category of approach applied in calculating the amount of credit risk-weighted assets of the direct exposure to the guarantor or protection provider listed in that item. (i) Internal ratings-based approach: a method of applying, to the guaranteed portion of the guaranteed claim or the portion of the underlying claim for which protection is provided, either PD or LGD that takes the guarantee or credit derivative into account. (ii) Standardized approach: a method of deeming the guaranteed portion of the guaranteed claim or the portion of the underlying claim for which protection is provided to be a direct exposure to that guarantor or protection provider.",
+  "The provisions of Article 59, Articles 94 through 98 and Articles 101 through 108 shall apply mutatis mutandis where an Ultimate Designated Parent Company adopting the internal ratings-based approach applies the preceding paragraph (limited to the part relating to item (ii)). In this case, the term \"Ultimate Designated Parent Company adopting the standardized approach\" in those provisions shall be read as \"Ultimate Designated Parent Company adopting the internal ratings-based approach\"."
+ ]
+}

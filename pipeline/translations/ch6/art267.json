@@ -1,0 +1,18 @@
+{
+ "number": "第二百六十七条",
+ "heading_en": "Gross JTD Risk Positions of Non-Securitization Products",
+ "summary_ja": "非証券化商品のグロスのJTDリスク・ポジションの算式、符号、LGD、想定元本及びP&L、分解並びにスケール調整を定める。",
+ "summary_en": "Sets the formulas for gross JTD risk positions of non-securitization products, including signs, LGD values, notional and P&L by product, decomposition of unclassified positions and the scaling adjustment for short maturities.",
+ "sections_en": {
+  "第三節 第三款 第二目": "Market Risk Equivalent Amount for Default Risk of Non-Securitization Products"
+ },
+ "paragraphs": [
+  "The gross JTD risk position of non-securitization products shall be calculated as provided below. (i) For each exposure, the long position and the short position of the gross JTD risk position shall be calculated by the following formulas. JTD (long) = max[LGD × notional + P&L, 0]. JTD (short) = min[LGD × notional + P&L, 0]. LGD is the loss given default (provided, however, that where the price of the product is not linked to the recovery rate upon default of the reference obligor, LGD shall not be used). P&L is the mark-to-market profit or loss (the amount obtained by subtracting the notional from the amount equivalent to the market value of the bond). (ii) The signs of the notional and P&L in the formulas in the preceding item shall be as prescribed in (a) or (b) below according to the following categories of variable. (a) Notional: a positive value in the case of a long position, and a negative value in the case of a short position. (b) P&L: a positive value in the case of a valuation gain, and a negative value in the case of a valuation loss. (iii) LGD in the formulas in item (i) shall be the value prescribed in (a) through (c) below according to the following categories of product. (a) Equity-related products and debt products (excluding the products listed in (b) and (c)): 100%. (b) Senior debt products (excluding the products listed in (c)): 75%. (c) Covered bonds: 25%. (iv) The notional and the amount of P&L in the formulas in item (i) shall be the notional prescribed in the second column and the P&L prescribed in the fourth column of the following table, respectively, according to the category of product listed in the first column of the same table. {{T:p390t0}}. (v) A JTD risk position that cannot be classified into a category of product listed in the first column of the table in the preceding item shall be decomposed as far as possible into the categories of product listed in that column, and the market risk equivalent amount shall be calculated. (vi) The JTD risk positions for all exposures with a residual maturity of less than one year shall be multiplied by the value obtained by annualizing the residual maturity (limited to a value not less than 0.25) so as to fall within the range of residual maturity prescribed in (a) or (b) below according to the following cases (hereinafter in this item and the following Article referred to as the \"scaling adjustment\"). However, where the residual maturity is one year or more, the scaling adjustment shall not be performed. (a) Cash positions in equities, etc.: a residual maturity of one year or more, or a residual maturity of three months. (b) Where establishing the criteria for offsetting exposures of derivative transactions: the contractual residual maturity of that derivative transaction (limited to a period of not less than three months)."
+ ],
+ "terms": [
+  {
+   "ja": "スケール調整",
+   "en": "scaling adjustment"
+  }
+ ]
+}

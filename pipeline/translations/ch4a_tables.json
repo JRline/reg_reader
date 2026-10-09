@@ -1,0 +1,316 @@
+{
+ "p157t0": {
+  "node_id": "fsa-basel-cap-jp.ch4.art126.p2",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "区分",
+    "優",
+    "良",
+    "可",
+    "弱い",
+    "デフォルト"
+   ],
+   [
+    "リスク・ウェイト(パーセント)",
+    "五",
+    "十",
+    "三十五",
+    "百",
+    "六百二十五"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Category",
+    "Strong",
+    "Good",
+    "Satisfactory",
+    "Weak",
+    "Default"
+   ],
+   [
+    "Risk weight (%)",
+    "5",
+    "10",
+    "35",
+    "100",
+    "625"
+   ]
+  ]
+ },
+ "p158t0": {
+  "node_id": "fsa-basel-cap-jp.ch4.art126.p3",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "区分",
+    "優",
+    "良",
+    "可",
+    "弱い",
+    "デフォルト"
+   ],
+   [
+    "リスク・ウェイト(パーセント)",
+    "五",
+    "五",
+    "三十五",
+    "百",
+    "六百二十五"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Category",
+    "Strong",
+    "Good",
+    "Satisfactory",
+    "Weak",
+    "Default"
+   ],
+   [
+    "Risk weight (%)",
+    "5",
+    "5",
+    "35",
+    "100",
+    "625"
+   ]
+  ]
+ },
+ "p162t0": {
+  "node_id": "fsa-basel-cap-jp.ch4.art129.p4",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "区分",
+    "優",
+    "良",
+    "可",
+    "弱い",
+    "デフォルト"
+   ],
+   [
+    "リスク・ウェイト(パーセント)",
+    "七十",
+    "九十",
+    "百十五",
+    "二百五十",
+    "零"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Category",
+    "Strong",
+    "Good",
+    "Satisfactory",
+    "Weak",
+    "Default"
+   ],
+   [
+    "Risk weight (%)",
+    "70",
+    "90",
+    "115",
+    "250",
+    "0"
+   ]
+  ]
+ },
+ "p162t1": {
+  "node_id": "fsa-basel-cap-jp.ch4.art129.p6",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "区分",
+    "優",
+    "良",
+    "可",
+    "弱い",
+    "デフォルト"
+   ],
+   [
+    "リスク・ウェイト(パーセント)",
+    "九十五",
+    "百二十",
+    "百四十",
+    "二百五十",
+    "零"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Category",
+    "Strong",
+    "Good",
+    "Satisfactory",
+    "Weak",
+    "Default"
+   ],
+   [
+    "Risk weight (%)",
+    "95",
+    "120",
+    "140",
+    "250",
+    "0"
+   ]
+  ]
+ },
+ "p167t0": {
+  "node_id": "fsa-basel-cap-jp.ch4.art133.p4",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "担保資産の区分",
+    "LGD_{S} (パーセント)",
+    "ボラティリティ調整率 (パーセント)"
+   ],
+   [
+    "適格金融資産担保",
+    "零",
+    "担保の種類に応じて第七十条第一項に定めるボラティリティ調整率を第七十六条の規定により調整した値"
+   ],
+   [
+    "適格債権担保",
+    "二十",
+    "四十"
+   ],
+   [
+    "適格不動産担保",
+    "二十",
+    "四十"
+   ],
+   [
+    "適格その他資産担保",
+    "二十五",
+    "四十"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Category of collateral asset",
+    "LGD_{S} (%)",
+    "Haircut (%)"
+   ],
+   [
+    "Eligible financial collateral",
+    "0",
+    "The haircut provided in Article 70, paragraph (1) according to the type of collateral, adjusted under Article 76"
+   ],
+   [
+    "Eligible receivables collateral",
+    "20",
+    "40"
+   ],
+   [
+    "Eligible real estate collateral",
+    "20",
+    "40"
+   ],
+   [
+    "Eligible other asset collateral",
+    "25",
+    "40"
+   ]
+  ]
+ },
+ "p170t0": {
+  "node_id": "fsa-basel-cap-jp.ch4.art133.p9",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "担保資産の区分",
+    "LGD_{Sfloor} (パーセント)"
+   ],
+   [
+    "金融資産担保",
+    "零"
+   ],
+   [
+    "債権担保",
+    "十"
+   ],
+   [
+    "不動産担保",
+    "十"
+   ],
+   [
+    "その他資産担保",
+    "十五"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Category of collateral asset",
+    "LGD_{Sfloor} (%)"
+   ],
+   [
+    "Financial collateral",
+    "0"
+   ],
+   [
+    "Receivables collateral",
+    "10"
+   ],
+   [
+    "Real estate collateral",
+    "10"
+   ],
+   [
+    "Other asset collateral",
+    "15"
+   ]
+  ]
+ },
+ "p178t0": {
+  "node_id": "fsa-basel-cap-jp.ch4.art141.p4",
+  "header_rows": 1,
+  "rows_ja": [
+   [
+    "担保資産の区分",
+    "LGD_{RSfloor} (パーセント)"
+   ],
+   [
+    "金融資産担保",
+    "零"
+   ],
+   [
+    "債権担保",
+    "十"
+   ],
+   [
+    "不動産担保",
+    "十"
+   ],
+   [
+    "その他資産担保",
+    "十五"
+   ]
+  ],
+  "rows_en": [
+   [
+    "Category of collateral asset",
+    "LGD_{RSfloor} (%)"
+   ],
+   [
+    "Financial collateral",
+    "0"
+   ],
+   [
+    "Receivables collateral",
+    "10"
+   ],
+   [
+    "Real estate collateral",
+    "10"
+   ],
+   [
+    "Other asset collateral",
+    "15"
+   ]
+  ]
+ }
+}

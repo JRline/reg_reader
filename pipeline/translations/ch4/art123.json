@@ -1,0 +1,16 @@
+{
+ "number": "第百二十三条",
+ "heading_en": "Transition to the Advanced Internal Ratings-Based Approach",
+ "summary_ja": "先進的内部格付手法採用最終指定親会社が事業法人等向けエクスポージャーのLGD・EADを推計する原則と、推計値を用いない例外(連結売上高五百億円超の事業法人、金融機関等)を定める。",
+ "summary_en": "Requires LGD and EAD to be estimated for corporate, etc. exposures under the plan, and excludes from estimation corporates with consolidated sales above 50 billion yen and regulated or unregulated financial institutions.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company adopting the advanced internal ratings-based approach shall estimate LGD and EAD for corporate, etc. exposures in accordance with the internal ratings-based approach implementation plan or the advanced internal ratings-based approach transition plan.",
+  "Notwithstanding the preceding paragraph, an Ultimate Designated Parent Company adopting the advanced internal ratings-based approach shall not use estimates of LGD and EAD for the following exposures among corporate, etc. exposures (excluding those that fall under sovereign exposures and specialized lending). (i) Exposures to corporates whose consolidated sales (where the corporate prepares consolidated financial statements, or where the Ultimate Designated Parent Company adopting the internal ratings-based approach manages it as belonging to the same group, consolidated sales, being the average of the most recent three years or the most recent value updated every three years) exceed 50 billion yen. (ii) Exposures to those listed in (a) or (b) below (excluding those falling under the preceding item). (a) Regulated financial institutions. (b) Persons whose principal business is the financial business, insurance business or similar types of business (including foreign persons equivalent thereto) and that do not fall under (a) (referred to as \"unregulated financial institutions, etc.\" in Article 133, paragraph (2), items (ii) and (iii))."
+ ],
+ "terms": [
+  {
+   "ja": "非規制金融機関等",
+   "en": "unregulated financial institutions, etc."
+  }
+ ]
+}

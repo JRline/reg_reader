@@ -1,0 +1,10 @@
+{
+ "number": "第百二十七条",
+ "heading_en": "Allocation of General Loan Loss Provisions",
+ "summary_ja": "標準的手法と内部格付手法を併用する場合の一般貸倒引当金の配分方法と、信用リスク管理指針に別段の定めがある場合の例外を定める。",
+ "summary_en": "Sets how general loan loss provisions are split between the standardized and internal ratings-based portions, in proportion to credit risk-weighted assets, unless the credit risk management policy provides otherwise.",
+ "paragraphs": [
+  "Where an Ultimate Designated Parent Company adopting the internal ratings-based approach uses both the standardized approach and the internal ratings-based approach in calculating the amount of credit risk-weighted assets, it shall divide the total amount of general loan loss provisions (excluding those relating to securitization exposures) into the portion corresponding to credit risk calculated under the standardized approach and the portion corresponding to credit risk calculated under the internal ratings-based approach, in proportion to the amount of credit risk-weighted assets (excluding those relating to securitization exposures); provided, however, that general loan loss provisions recorded by an Ultimate Designated Parent Company adopting the standardized approach that uses only the standardized approach, or by its consolidated subsidiaries, shall be deemed to correspond to credit risk calculated under the standardized approach, and general loan loss provisions (excluding those relating to securitization exposures) recorded by an Ultimate Designated Parent Company adopting the internal ratings-based approach that uses only the internal ratings-based approach, or by its consolidated subsidiaries, shall be deemed to correspond to credit risk calculated under the internal ratings-based approach.",
+  "Notwithstanding the preceding paragraph, where the credit risk management policy provides otherwise, an Ultimate Designated Parent Company adopting the internal ratings-based approach may divide general loan loss provisions (excluding those relating to securitization exposures) in accordance with that credit risk management policy."
+ ]
+}

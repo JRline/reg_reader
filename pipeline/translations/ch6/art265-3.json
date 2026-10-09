@@ -1,0 +1,11 @@
+{
+ "number": "第二百六十五条の三",
+ "heading_en": "Adjustment of Curvature Risk Sensitivities for Foreign Exchange Risk",
+ "summary_ja": "外国為替リスクに係るカーベチャー・リスクの感応度を一・五で除すことができる場合(届出を要する場合を含む。)を定める。",
+ "summary_en": "Allows curvature risk sensitivities for foreign exchange risk to be divided by 1.5 for certain currency combinations, one of them subject to prior notification.",
+ "paragraphs": [
+  "An Ultimate Designated Parent Company that measures curvature risk relating to foreign exchange risk may, for products whose underlying assets are combinations of currencies other than the reporting currency, divide the sensitivity value calculated under Article 260-3, paragraph (2) by 1.5.",
+  "An Ultimate Designated Parent Company that measures curvature risk relating to foreign exchange risk may, only where it has notified the Commissioner of the Financial Services Agency, divide the sensitivity value calculated under Article 260-3, paragraph (2) by 1.5 for products whose underlying assets are combinations of all currencies including the reporting currency."
+ ],
+ "terms": []
+}

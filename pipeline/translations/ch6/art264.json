@@ -1,0 +1,27 @@
+{
+ "number": "第二百六十四条",
+ "heading_en": "Buckets, Risk Weights and Correlations for Delta Risk of Equity Risk",
+ "summary_ja": "株式リスクのデルタ・リスクについて、バケット分類、リスク・ウェイト、リスク・ファクター間及びバケット間の相関係数を定める。",
+ "summary_en": "Sets the bucket classification, risk weights and the correlation coefficients between risk factors and between buckets for delta risk of equity risk.",
+ "paragraphs": [
+  "For delta risk of equity risk, risk factors shall be classified as provided below. (i) They shall be classified into thirteen buckets according to the categories of market capitalization listed in the second column, economy listed in the third column and sector listed in the fourth column of the following table. {{T:p376t0}}. (ii) The classifications \"Large\" and \"Small\" in the \"Market capitalization\" column of the table in the preceding item shall be as provided below. (a) Where the market capitalization is 2 billion US dollars or more, it shall be classified as \"Large\", and otherwise as \"Small\". (b) The total market capitalization based on the market value of the total number of issued shares of the same listed company or corporate group on securities markets around the world shall be used. (c) The total number of issued shares of a corporate group shall be the total number of issued shares of the listed parent company within the group. (d) The total number of issued shares of a corporate group shall not include the market capitalization of multiple related listed companies. (iii) \"Advanced markets\" in the table in item (i) means the United States, Canada, Mexico, the euro area, the United Kingdom, Norway, Sweden, Denmark, Switzerland, Japan, Australia, New Zealand, Singapore and the Hong Kong Special Administrative Region. (iv) The classification under item (i) shall be based on classifications generally used in the market and shall also be as provided below. (a) It shall be classified into any one of the buckets (where several regions and sectors apply, into the one bucket corresponding to the economy and sector). (b) Where it cannot be classified into an individual sector, it shall be classified into bucket number 11.",
+  "The risk weights used for delta risk of equity risk shall be as prescribed in the middle column or lower column of the following table according to the category of bucket number listed in the upper column of the same table (meaning the bucket number classified under the preceding paragraph; the same applies below in this Article). {{T:p377t0}}",
+  "The correlation coefficient (ρ_{kl}) between risk factors used for delta risk of equity risk shall, where the bucket falls under any of bucket numbers 1 through 13 (excluding bucket number 11), be as prescribed in each of the following items according to the following cases. (i) Where all of the following requirements are satisfied: 99.9%. (a) One of the sensitivities is to the spot price of equities, etc., and the other is to the equity, etc. repo rate. (b) Both sensitivities relate to the same equities, etc. (ii) Where both sensitivities are to the spot price of equities, etc. or both are to the equity, etc. repo rate: as prescribed in (a) through (e) below according to the bucket numbers listed in (a) through (e). (a) Bucket numbers 1 through 4 (large market capitalization and emerging markets): 15%. (b) Bucket numbers 5 through 8 (large market capitalization and advanced markets): 25%. (c) Bucket number 9 (small market capitalization and emerging markets): 7.5%. (d) Bucket number 10 (small market capitalization and advanced markets): 12.5%. (e) Bucket number 12 or 13: 80%. (iii) Where all of the following requirements are satisfied: the value obtained by multiplying the values prescribed in (a) through (e) of the preceding item by 99.9%. (a) One of the sensitivities is to the spot price of equities, etc., and the other is to the equity, etc. repo rate. (b) The two sensitivities relate to different equities, etc.",
+  "The correlation coefficient (ρ_{kl}) between risk factors used for delta risk of equity risk shall, where the bucket falls under bucket number 11, be calculated by the following formula. {{F:p378i0}}",
+  "The correlation coefficient (γ_{bc}) between buckets used for delta risk of equity risk shall be as prescribed in each of the following items according to the following cases. (i) Where both buckets to be aggregated fall under any of bucket numbers 1 through 10: 15%. (ii) Where one of the buckets to be aggregated falls under bucket number 11: 0%. (iii) Where bucket number 12 and bucket number 13 are aggregated: 75%. (iv) In cases other than those in the preceding three items: 45%."
+ ],
+ "terms": [
+  {
+   "ja": "大",
+   "en": "Large"
+  },
+  {
+   "ja": "小",
+   "en": "Small"
+  },
+  {
+   "ja": "先進市場",
+   "en": "advanced markets"
+  }
+ ]
+}

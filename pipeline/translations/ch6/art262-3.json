@@ -1,0 +1,10 @@
+{
+ "number": "第二百六十二条の三",
+ "heading_en": "Treatment of Vega Risk of Products with Multiple Underlying Assets",
+ "summary_ja": "複数の原資産を有するオプション及びインデックス商品のベガ・リスクの感応度の算出方法とバケットへの分類を定める。",
+ "summary_en": "Sets how vega risk sensitivities of options with multiple underlying assets and of index products are calculated and classified into buckets.",
+ "paragraphs": [
+  "The sensitivity relating to vega risk of products with multiple underlying assets shall be calculated by the method prescribed in each of the following items according to the following categories of sensitivity. (i) Sensitivity of options with multiple underlying assets: a method of calculating it, without look-through, based on the implied volatility of the option with multiple underlying assets. (ii) Sensitivity of index products: a method of classifying it into the bucket prescribed in (a) or (b) below according to the following cases. (a) Where, among the constituents of the index product, the value of those classified into a particular sector bucket exceeds 75%: that particular sector bucket. (b) In cases other than (a): the bucket for index products."
+ ],
+ "terms": []
+}

@@ -1,0 +1,11 @@
+{
+ "number": "第百三十二条",
+ "heading_en": "PD of Corporate, etc. Exposures",
+ "summary_ja": "事業法人等向けエクスポージャーのPDを一年間のPD推計値とし、事業法人・金融機関等向けは〇・〇五パーセントを下限、デフォルト格付は百パーセントとする。",
+ "summary_en": "PD for corporate, etc. exposures is the one-year estimate for the obligor rating, with a 0.05% floor for corporates and financial institutions and 100% for defaulted exposures.",
+ "paragraphs": [
+  "The PD used in the formula for the amount of credit risk-weighted assets and in calculating expected loss for corporate, etc. exposures shall be the one-year PD estimate relating to the obligor rating assigned to that corporate, etc. exposure.",
+  "Notwithstanding the preceding paragraph, the PD used in the formula for the amount of credit risk-weighted assets and in calculating expected loss for corporate exposures and exposures to financial institutions, etc. shall not be lower than 0.05%.",
+  "The PD of a corporate, etc. exposure assigned a rating equivalent to default shall be 100%."
+ ]
+}
