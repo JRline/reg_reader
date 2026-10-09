@@ -21,6 +21,7 @@
   --clause-parenthetical: #55606b;
   --clause-parenthetical-bg: #eceff2;
   --clause-definition: #6d28d9;
+  --clause-limitation: #0e7490;
 
   --font-scale: 1;
 }
@@ -42,6 +43,7 @@
     --clause-enum-bg: #103328;
     --clause-parenthetical: #a9b2bc;
     --clause-parenthetical-bg: #262b32;
+    --clause-limitation: #4cc3dd;
   }
 }
 :root[data-theme="dark"] {
@@ -60,6 +62,7 @@
   --clause-enum-bg: #103328;
   --clause-parenthetical: #a9b2bc;
   --clause-parenthetical-bg: #262b32;
+  --clause-limitation: #4cc3dd;
 }
 
 * { box-sizing: border-box; }
@@ -289,6 +292,97 @@ body {
 body.cues-off .enum-block { background: none; border-left-color: var(--border); }
 body.cues-off .clause { color: inherit !important; background: none !important; font-weight: inherit !important; text-decoration: none !important; border-left: none !important; margin-left: 0 !important; }
 
+/* In-clause cues (pipeline/annotate_cues.py): finer structure found INSIDE a list item or
+   aside, which can't be split into its own clause without breaking the item's box or a
+   paren's balance. Drawn as underlines only — no fills — so they sit quietly inside the
+   item/aside styling; a cue that contains other cues draws its line lower (--cue-h), so
+   nested cues read as stacked lines. */
+.cue {
+  border-bottom: 2px solid var(--cue-color, currentColor);
+  padding-bottom: calc(var(--cue-h, 0) * 4px);
+}
+.cue-conditional { --cue-color: var(--clause-conditional); }
+.cue-proviso { --cue-color: var(--clause-proviso); }
+.cue-exception { --cue-color: var(--clause-exception); }
+.cue-limitation { --cue-color: var(--clause-limitation); }
+.cue-definition { --cue-color: var(--clause-definition); border-bottom-style: dotted; }
+body.cues-off .cue { border-bottom: none; padding-bottom: 0; }
+
+/* formulas */
+.formula-box {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-panel);
+  font-size: calc(1em * var(--font-scale));
+}
+.formula-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin-bottom: 8px; }
+.formula-label { font-weight: 600; font-size: 0.9em; }
+.formula-source { font-size: 0.75em; color: var(--text-muted); }
+.source-image_reconstructed .formula-source { color: var(--clause-proviso); }
+.formula-line {
+  font-family: "Cambria Math", "STIX Two Math", "Latin Modern Math", "Times New Roman", serif;
+  font-size: 1.08em;
+  line-height: 2.1;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 2px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* Only the outermost sum of a line wraps (between its terms); anything nested — inside
+   parens, a fraction or max() — stays on one row. */
+.formula-line > .f-sum { flex-wrap: wrap; row-gap: 2px; }
+.f-term { display: inline-flex; align-items: center; }
+.formula-line + .formula-line { border-top: 1px dashed var(--border); }
+.formula-error { font-family: monospace; color: var(--clause-exception); }
+.f-group, .f-frac { display: inline-flex; align-items: center; vertical-align: middle; }
+.f-frac { flex-direction: column; margin: 0 4px; line-height: 1.5; }
+.f-frac > .f-num-part { padding: 0 4px 2px; border-bottom: 1px solid currentColor; }
+.f-frac > .f-den-part { padding: 2px 4px 0; }
+.f-op, .f-rel { margin: 0 0.45em; }
+.f-rel { font-weight: 600; }
+.f-fn { font-style: normal; margin-right: 1px; }
+.f-paren { color: var(--text-muted); }
+.f-comma { margin-right: 0.35em; }
+.f-num { font-variant-numeric: tabular-nums; }
+.fvar {
+  font-style: italic;
+  color: var(--accent);
+  border-bottom: 1px dotted var(--accent);
+  cursor: help;
+  border-radius: 2px;
+}
+.fvar:hover, .fvar:focus-visible { background: var(--accent-bg); outline: none; }
+.fvar sub, .fvar sup, .formula-vars dt sub, .formula-vars dt sup, .var-tip-sym sub, .var-tip-sym sup { font-style: normal; font-size: 0.68em; }
+.formula-note { margin-top: 6px; font-size: 0.8em; color: var(--text-muted); line-height: 1.6; }
+.formula-vars { margin-top: 6px; font-size: 0.82em; }
+.formula-vars summary { cursor: pointer; color: var(--text-muted); }
+.formula-vars dl { display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; margin: 6px 0 0; }
+.formula-vars dt { font-family: "Cambria Math", "Times New Roman", serif; font-style: italic; color: var(--accent); }
+.formula-vars dd { margin: 0; min-width: 0; }
+.var-tip {
+  position: fixed;
+  z-index: 50;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.55;
+}
+.var-tip-sym { font-family: "Cambria Math", "Times New Roman", serif; font-style: italic; color: var(--accent); font-size: 1.1em; }
+.var-tip-name { font-weight: 600; margin: 2px 0 4px; }
+.var-tip-desc { color: var(--text-muted); }
+.var-tip-link {
+  margin-top: 6px; padding: 0; border: 0; background: none; cursor: pointer;
+  color: var(--accent); font: inherit; font-size: 12px;
+}
+.var-tip-link:hover { text-decoration: underline; }
+
 /* refs */
 .ref {
   cursor: pointer;
@@ -323,3 +417,6 @@ body.cues-off .clause { color: inherit !important; background: none !important; 
   .toc { width: 100%; max-height: 240px; position: static; border-right: none; border-bottom: 1px solid var(--border); }
   .reader { padding: 16px; max-width: 100%; }
 }
+
+/* Keep short control labels on one line at phone width (日本語 / 視覚キュー were wrapping). */
+.lang-btn, #cues-label { white-space: nowrap; }

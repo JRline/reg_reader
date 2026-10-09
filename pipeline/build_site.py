@@ -32,6 +32,58 @@ def js_assign(key, value):
     return f"(window.REG_DATA=window.REG_DATA||{{}})[{json.dumps(key)}]={payload};\n"
 
 
+FORMULA_TOKEN_RE = re.compile(r"\s*(?:(\d+(?:\.\d+)?%?)|([A-Za-z_][A-Za-z0-9_]*)|(>=|<=|[-+*/(),=]))")
+FORMULA_FUNCS = {"max", "min"}
+
+
+def load_formulas(src, feed):
+    """Optional formulas.json + notation.json beside a feed. Validated here so a typo in a
+    hand-written formula fails the build instead of rendering a broken expression."""
+    fpath, npath = src / "formulas.json", src / "notation.json"
+    if not fpath.exists():
+        return None, None
+    formulas = json.loads(fpath.read_text(encoding="utf-8"))
+    notation = json.loads(npath.read_text(encoding="utf-8")) if npath.exists() else {"symbols": {}}
+    node_ids = set()
+    stack = [feed["root"]]
+    while stack:
+        n = stack.pop()
+        node_ids.add(n["id"])
+        stack.extend(n.get("children", []))
+    variables = formulas.get("variables", {})
+    errors = []
+    for vid, v in variables.items():
+        if v.get("defined_at") and v["defined_at"] not in node_ids:
+            errors.append(f"variable {vid}: defined_at {v['defined_at']} is not a node in the feed")
+    for f in formulas.get("formulas", []):
+        if f["node_id"] not in node_ids:
+            errors.append(f"formula {f['id']}: node_id {f['node_id']} is not a node in the feed")
+        for line in f["lines"]:
+            pos, depth = 0, 0
+            while pos < len(line):
+                m = FORMULA_TOKEN_RE.match(line, pos)
+                if not m or m.end() == pos:
+                    if line[pos:].strip():
+                        errors.append(f"formula {f['id']}: can't parse {line[pos:]!r}")
+                    break
+                ident, op = m.group(2), m.group(3)
+                if ident and ident not in FORMULA_FUNCS and ident not in variables:
+                    errors.append(f"formula {f['id']}: unknown variable {ident!r}")
+                if op == "(":
+                    depth += 1
+                elif op == ")":
+                    depth -= 1
+                pos = m.end()
+            if depth != 0:
+                errors.append(f"formula {f['id']}: unbalanced parentheses in {line!r}")
+    missing = sorted(set(variables) - set(notation.get("symbols", {})))
+    if missing:
+        print(f"  note: {src.name}: no notation symbol for {missing} (the id is shown instead)")
+    if errors:
+        sys.exit("build_site: formula errors:\n  " + "\n  ".join(errors))
+    return formulas, notation
+
+
 def build_index_html():
     html = (APP / "index.html").read_text(encoding="utf-8")
     # The dev index.html cache-busts via document.write + Date.now() (CLAUDE.md rule 8).
@@ -71,8 +123,12 @@ def main():
         feed = json.loads((src / "feed.json").read_text(encoding="utf-8"))
         if feed.get("feed_id") not in (None, feed_id):
             sys.exit(f"build_site: {src}/feed.json says feed_id={feed.get('feed_id')!r}, index says {feed_id!r}")
-        (out / "data" / f"{feed_id}.js").write_text(
-            js_assign(f"feed:{feed_id}", {"manifest": manifest, "feed": feed}), encoding="utf-8")
+        formulas, notation = load_formulas(src, feed)
+        bundle = {"manifest": manifest, "feed": feed}
+        if formulas:
+            bundle["formulas"] = formulas
+            bundle["notation"] = notation
+        (out / "data" / f"{feed_id}.js").write_text(js_assign(f"feed:{feed_id}", bundle), encoding="utf-8")
         site_index["feeds"].append({
             "feed_id": feed_id,
             "title_ja": manifest.get("title_ja"),

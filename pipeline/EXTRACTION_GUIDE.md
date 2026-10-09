@@ -123,6 +123,38 @@ for `pipeline/raw/<article_id>.summary.json` automatically.
 
 ---
 
+## Step 5b — Deterministic post-processing (no model calls)
+
+Run in this order after any content change; each is idempotent (a second run changes
+nothing):
+
+```bash
+python3 pipeline/reresolve_refs.py     fsa-basel-cap-jp fsa-basel-cap-jp.ch2   # internal citations
+python3 pipeline/link_external_refs.py fsa-basel-cap-jp fsa-basel-cap-jp.ch2   # cross-feed citations
+python3 pipeline/refine_clauses.py     fsa-basel-cap-jp fsa-basel-cap-jp.ch2   # clause splitting
+python3 pipeline/annotate_cues.py      fsa-basel-cap-jp fsa-basel-cap-jp.ch2   # in-clause cues (after refine)
+```
+
+## Step 5c — Formulas (hand-authored)
+
+The source PDF prints its formulas as images, which extraction can't see. Formulas live
+beside the feed in two files, kept apart so the notation can be swapped wholesale:
+
+- `feeds/<feed>/formulas.json` — each formula's structure (`lines`, written against
+  variable ids, e.g. `"CET1_ratio = CET1 / RWA >= 4.5%"`), the paragraph it belongs to
+  (`node_id`), its `source`, and every variable's meaning (`name_*`, `desc_*`,
+  `defined_at`). Grammar: numbers (`4.5%`, `12.5`), ids, `+ - * /`, parentheses,
+  `max()`/`min()`, and `=`/`>=`/`<=`. `/` is drawn as a stacked fraction.
+- `feeds/<feed>/notation.json` — display only: id → symbol, with `X_{sub}`/`X^{sup}`.
+  Replace this file to adopt a different notation standard.
+
+`source` is `text_derived` (written from the article's own wording) or
+`image_reconstructed` (an image formula rebuilt from wording elsewhere — shown with a ⚠
+until checked against the PDF image). `build_site.py` rejects unknown variables,
+unbalanced parentheses and dangling `node_id`/`defined_at`.
+
+---
+
 ## Step 6 — Validate
 
 ```bash

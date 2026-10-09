@@ -407,7 +407,10 @@ def main():
                 if lang == "ja":
                     new = split_inline_iroha(new)
                     new = reclassify_whole_definitions(new)
-                if new == old:
+                # `cues` (annotate_cues.py's in-clause ranges) aren't this script's
+                # output; ignore them when deciding whether anything changed. A real
+                # change drops them — re-run annotate_cues.py afterwards.
+                if new == [{k: v for k, v in c.items() if k != "cues"} for c in old]:
                     continue
                 # Safety check before committing: must still reconstruct exactly.
                 if "".join(c["text"] for c in new) != node.get(text_key, ""):

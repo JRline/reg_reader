@@ -28,7 +28,7 @@ ARTICLE_NUM_RE = re.compile(r"^第[一二三四五六七八九十百]+条(の[�
 HEADING_RE = re.compile(r"^\(.+\)$")
 PAGE_MARKER_RE = re.compile(r"^=+PAGE \d+=+$")
 PAGE_NUM_RE = re.compile(r"^\d+\s*/\s*\d+$")
-PARAGRAPH_NUM_RE = re.compile(r"^([２-９](?:[０-９])?)[ 　]")  # e.g. "２　前項の..." -> paragraph 2 starts here
+PARAGRAPH_NUM_RE = re.compile(r"^([２-９]|[１-９][０-９])[ 　]")  # "２　前項の..." -> paragraph 2; also "１０　" and up (a bare [２-９] start missed 10-19)
 
 FULLWIDTH_DIGITS = "０１２３４５６７８９"
 ARABIC_DIGITS = "0123456789"

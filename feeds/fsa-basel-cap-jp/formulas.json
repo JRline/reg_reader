@@ -1,0 +1,458 @@
+{
+  "_comment": "Formula STRUCTURE and variable MEANINGS for this feed. Expressions reference variable ids only; how each id is displayed lives in notation.json, so the notation can be replaced without touching this file. source: text_derived = written from the article's own wording; image_reconstructed = the PDF prints it as an image not available to the pipeline (CLAUDE.md rule 7), rebuilt from wording elsewhere and NOT yet checked against the image.",
+  "variables": {
+    "CET1_base": {
+      "name_ja": "普通株式等Tier1資本に係る基礎項目の額",
+      "name_en": "Amount of basic items relating to Common Equity Tier 1 Capital",
+      "desc_ja": "第五条第一項各号に掲げる額の合計額（普通株式に係る株主資本、その他の包括利益累計額等）。",
+      "desc_en": "Sum of the amounts in each item of Article 5(1) (shareholders' equity relating to common shares, accumulated other comprehensive income, etc.).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art5.p1"
+    },
+    "CET1_adj": {
+      "name_ja": "普通株式等Tier1資本に係る調整項目の額",
+      "name_en": "Amount of adjustment items relating to Common Equity Tier 1 Capital",
+      "desc_ja": "第五条第二項各号に掲げる額の合計額（無形固定資産、繰延税金資産、他の金融機関等の普通株式等の控除項目）。",
+      "desc_en": "Sum of the amounts in each item of Article 5(2) (deductions such as intangible fixed assets, deferred tax assets and holdings in other financial institutions).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art5.p2"
+    },
+    "CET1_adj_1_4": {
+      "name_ja": "第五条第二項第一号から第四号までに掲げる額の合計額",
+      "name_en": "Sum of Article 5(2) items (i)–(iv)",
+      "desc_ja": "普通株式等Tier1資本に係る調整項目のうち、特定項目（第五号・第六号）より前の項目の合計額。",
+      "desc_en": "The CET1 adjustment items listed before the specified-item threshold deductions (items (v) and (vi)).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art5.p2"
+    },
+    "CET1": {
+      "name_ja": "普通株式等Tier1資本の額",
+      "name_en": "Amount of Common Equity Tier 1 Capital",
+      "desc_ja": "第二条第一号の算式の分子。基礎項目の額から調整項目の額を控除した額。",
+      "desc_en": "Numerator of the formula in Article 2(i): basic items minus adjustment items.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art2.p1"
+    },
+    "AT1_base": {
+      "name_ja": "その他Tier1資本に係る基礎項目の額",
+      "name_en": "Amount of basic items relating to Additional Tier 1 Capital",
+      "desc_ja": "第六条第一項各号に掲げる額の合計額。",
+      "desc_en": "Sum of the amounts in each item of Article 6(1).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art6.p1"
+    },
+    "AT1_adj": {
+      "name_ja": "その他Tier1資本に係る調整項目の額",
+      "name_en": "Amount of adjustment items relating to Additional Tier 1 Capital",
+      "desc_ja": "第六条第二項各号に掲げる額の合計額。",
+      "desc_en": "Sum of the amounts in each item of Article 6(2).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art6.p2"
+    },
+    "AT1": {
+      "name_ja": "その他Tier1資本の額",
+      "name_en": "Amount of Additional Tier 1 Capital",
+      "desc_ja": "基礎項目の額から調整項目の額を控除した額。調整項目が基礎項目を上回る場合は零（第六条第五項）。",
+      "desc_en": "Basic items minus adjustment items; zero if adjustments exceed basic items (Article 6(5)).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art6.p5"
+    },
+    "T2_base": {
+      "name_ja": "Tier2資本に係る基礎項目の額",
+      "name_en": "Amount of basic items relating to Tier 2 Capital",
+      "desc_ja": "第七条第一項各号に掲げる額の合計額。",
+      "desc_en": "Sum of the amounts in each item of Article 7(1).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art7.p1"
+    },
+    "T2_adj": {
+      "name_ja": "Tier2資本に係る調整項目の額",
+      "name_en": "Amount of adjustment items relating to Tier 2 Capital",
+      "desc_ja": "第七条第二項各号（TLAC規制対象最終指定親会社は第三項）に掲げる額の合計額。",
+      "desc_en": "Sum of the amounts in each item of Article 7(2) (Article 7(3) for TLAC-regulated companies).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art7.p2"
+    },
+    "T2": {
+      "name_ja": "Tier2資本の額",
+      "name_en": "Amount of Tier 2 Capital",
+      "desc_ja": "基礎項目の額から調整項目の額を控除した額。調整項目が基礎項目を上回る場合は零（第七条第六項）。",
+      "desc_en": "Basic items minus adjustment items; zero if adjustments exceed basic items (Article 7(6)).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art7.p6"
+    },
+    "CRWA": {
+      "name_ja": "信用リスク・アセットの額の合計額",
+      "name_en": "Total amount of credit risk-weighted assets",
+      "desc_ja": "標準的手法採用は第十四条、内部格付手法採用は第百二十八条に定めるもの。",
+      "desc_en": "As set out in Article 14 (standardized approach) or Article 128 (internal ratings-based approach).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art10.p1"
+    },
+    "MR": {
+      "name_ja": "マーケット・リスク相当額の合計額",
+      "name_en": "Total amount of market risk equivalent amounts",
+      "desc_ja": "第六章に定めるところにより算出するものの合計額。",
+      "desc_en": "Calculated pursuant to Chapter 6.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art11.p1"
+    },
+    "OR": {
+      "name_ja": "オペレーショナル・リスク相当額の合計額",
+      "name_en": "Total amount of operational risk equivalent amounts",
+      "desc_ja": "第七章に定めるところにより算出するものの合計額。",
+      "desc_en": "Calculated pursuant to Chapter 7.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art12.p1"
+    },
+    "FL": {
+      "name_ja": "資本フロアにより分母に加算される額",
+      "name_en": "Amount added to the denominator by the capital floor",
+      "desc_ja": "第十三条第一項及び第二項の規定により加算される額（適用がある場合に限る）。",
+      "desc_en": "Amount added under Article 13(1) and (2) (only where those provisions apply).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art13.p1"
+    },
+    "RWA": {
+      "name_ja": "リスク・アセットの額",
+      "name_en": "Risk-weighted assets amount",
+      "desc_ja": "各比率の算式の分母。信用リスク・アセット＋マーケット・リスク相当額÷8%＋オペレーショナル・リスク相当額÷8%＋資本フロア加算額（第七条の二第一項第一号イ〜ニ）。",
+      "desc_en": "Denominator of each ratio: credit RWA + market risk ÷ 8% + operational risk ÷ 8% + capital-floor add-on (Article 7-2(1)(i)(a)–(d)).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art7-2.p1"
+    },
+    "CET1_ratio": {
+      "name_ja": "連結普通株式等Tier1比率",
+      "name_en": "Consolidated Common Equity Tier 1 Ratio",
+      "desc_ja": "最低基準は四・五パーセント以上。",
+      "desc_en": "Minimum 4.5%.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art2.p1"
+    },
+    "T1_ratio": {
+      "name_ja": "連結Tier1比率",
+      "name_en": "Consolidated Tier 1 Ratio",
+      "desc_ja": "最低基準は六パーセント以上。",
+      "desc_en": "Minimum 6%.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art2.p1"
+    },
+    "TC_ratio": {
+      "name_ja": "連結総自己資本規制比率",
+      "name_en": "Consolidated Total Capital Adequacy Ratio",
+      "desc_ja": "最低基準は八パーセント以上。",
+      "desc_en": "Minimum 8%.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art2.p1"
+    },
+    "BUF_ratio": {
+      "name_ja": "連結資本バッファー比率",
+      "name_en": "Consolidated Capital Buffer Ratio",
+      "desc_ja": "最低連結資本バッファー比率以上であることが求められる。",
+      "desc_en": "Must be at least the Minimum Consolidated Capital Buffer Ratio.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art2-2.p1"
+    },
+    "BUF_min": {
+      "name_ja": "最低連結資本バッファー比率",
+      "name_en": "Minimum Consolidated Capital Buffer Ratio",
+      "desc_ja": "資本保全バッファー比率とカウンター・シクリカル・バッファー比率の合計。",
+      "desc_en": "Sum of the Capital Conservation Buffer Ratio and the Countercyclical Buffer Ratio.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art2-2.p2"
+    },
+    "CCB": {
+      "name_ja": "資本保全バッファー比率",
+      "name_en": "Capital Conservation Buffer Ratio",
+      "desc_ja": "二・五パーセント。",
+      "desc_en": "2.5%.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art2-2.p3"
+    },
+    "CCyB": {
+      "name_ja": "カウンター・シクリカル・バッファー比率",
+      "name_en": "Countercyclical Buffer Ratio",
+      "desc_ja": "第二条の二第四項各号に掲げる比率の合計（小数点以下二位未満切捨て）。",
+      "desc_en": "Sum of the ratios in each item of Article 2-2(4), rounded down below the second decimal place.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art2-2.p4"
+    },
+    "CET1_buf": {
+      "name_ja": "資本バッファーに係る普通株式等Tier1資本の額",
+      "name_en": "Amount of CET1 Capital relating to the capital buffer",
+      "desc_ja": "第二条の二第一項の算式の分子（第七条の二）。",
+      "desc_en": "Numerator of the formula in Article 2-2(1) (Article 7-2).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art7-2.p1"
+    },
+    "TH10": {
+      "name_ja": "特定項目に係る十パーセント基準額",
+      "name_en": "10% threshold amount relating to specified items",
+      "desc_ja": "（第五条第一項各号の合計額 − 同条第二項第一号〜第四号の合計額）× 10%。",
+      "desc_en": "(Sum of Article 5(1) items − sum of Article 5(2)(i)–(iv)) × 10%.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p9"
+    },
+    "TH10_excess": {
+      "name_ja": "特定項目に係る十パーセント基準超過額",
+      "name_en": "10% threshold excess amount relating to specified items",
+      "desc_ja": "第五条第二項第五号の控除額。",
+      "desc_en": "The deduction in Article 5(2)(v).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p9"
+    },
+    "OFI_CS": {
+      "name_ja": "その他金融機関等に係る対象資本等調達手段のうち普通株式に相当するものの額",
+      "name_en": "Target capital instruments of other financial institutions equivalent to common shares",
+      "desc_ja": "特定項目の一つ。",
+      "desc_en": "One of the specified items.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p9"
+    },
+    "MSR": {
+      "name_ja": "モーゲージ・サービシング・ライツに係る無形固定資産の額",
+      "name_en": "Intangible fixed assets relating to mortgage servicing rights",
+      "desc_ja": "特定項目の一つ。",
+      "desc_en": "One of the specified items.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p9"
+    },
+    "DTA": {
+      "name_ja": "繰延税金資産（一時差異に係るものに限る）の額",
+      "name_en": "Deferred tax assets (temporary differences only)",
+      "desc_ja": "特定項目の一つ。",
+      "desc_en": "One of the specified items.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p9"
+    },
+    "SI": {
+      "name_ja": "特定項目の額",
+      "name_en": "Amount of specified items",
+      "desc_ja": "OFI_CS・MSR・DTA の合計。",
+      "desc_en": "Sum of the three specified items.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p10"
+    },
+    "SI_10": {
+      "name_ja": "特定項目に係る十パーセント基準対象額",
+      "name_en": "10% threshold subject amount relating to specified items",
+      "desc_ja": "特定項目の額から第五条第二項第五号の額（十パーセント基準超過額）を控除した額。",
+      "desc_en": "Specified items minus the 10% threshold excess amount (Article 5(2)(v)).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p10"
+    },
+    "TH15": {
+      "name_ja": "特定項目に係る十五パーセント基準額",
+      "name_en": "15% threshold amount relating to specified items",
+      "desc_ja": "（第五条第一項各号の合計 − 同条第二項第一号〜第四号の合計 − 特定項目の額）× 15% ÷ 85%。",
+      "desc_en": "(Article 5(1) items − Article 5(2)(i)–(iv) − specified items) × 15% ÷ 85%.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p10"
+    },
+    "SI_adj": {
+      "name_ja": "特定項目に係る調整対象額",
+      "name_en": "Adjustment subject amount relating to specified items",
+      "desc_ja": "十パーセント基準対象額から十五パーセント基準額を控除した額（零を下回る場合は零）。",
+      "desc_en": "10% threshold subject amount minus the 15% threshold amount (floored at zero).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p10"
+    },
+    "TH15_excess": {
+      "name_ja": "特定項目に係る十五パーセント基準超過額",
+      "name_en": "15% threshold excess amount relating to specified items",
+      "desc_ja": "第五条第二項第六号の控除額。",
+      "desc_en": "The deduction in Article 5(2)(vi).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p10"
+    },
+    "K_SA": {
+      "name_ja": "標準的な手法により算出した所要自己資本の額",
+      "name_en": "Required capital calculated using the standardized methods",
+      "desc_ja": "第十三条第三項に定める額。",
+      "desc_en": "As defined in Article 13(3).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art13.p3"
+    },
+    "K_AP": {
+      "name_ja": "承認を受けた計算方法により算出した所要自己資本の額",
+      "name_en": "Required capital calculated using the approved calculation method",
+      "desc_ja": "第十三条第四項に定める額。",
+      "desc_en": "As defined in Article 13(4).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art13.p4"
+    },
+    "T2_bs": {
+      "name_ja": "連結貸借対照表計上額",
+      "name_en": "Amount recorded on the consolidated balance sheet",
+      "desc_ja": "償還期限まで五年以内となったTier2資本調達手段の計上額。",
+      "desc_en": "For a Tier 2 instrument within five years of maturity.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art7.p1"
+    },
+    "D_rem": {
+      "name_ja": "算出基準日から償還期限までの日数",
+      "name_en": "Days from the calculation reference date to maturity",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch2.art7.p1"
+    },
+    "D_5y": {
+      "name_ja": "償還期限まで五年になった日から償還期限までの日数",
+      "name_en": "Days from the date five years remained until maturity, to maturity",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch2.art7.p1"
+    },
+    "T2_amort": {
+      "name_ja": "償還期限まで五年以内のTier2資本調達手段の算入額",
+      "name_en": "Includable amount of a Tier 2 instrument within five years of maturity",
+      "desc_ja": "",
+      "desc_en": "",
+      "defined_at": "fsa-basel-cap-jp.ch2.art7.p1"
+    },
+    "BUF_1": {
+      "name_ja": "第七条の二第一項第一号に掲げる額",
+      "name_en": "Amount in Article 7-2(1)(i)",
+      "desc_ja": "普通株式等Tier1資本の額 − リスク・アセットの額×4.5%（零未満は零）。",
+      "desc_en": "CET1 Capital − 4.5% of RWA (floored at zero).",
+      "defined_at": "fsa-basel-cap-jp.ch2.art7-2.p1"
+    },
+    "BUF_2": {
+      "name_ja": "第七条の二第一項第二号に掲げる額",
+      "name_en": "Amount in Article 7-2(1)(ii)",
+      "desc_ja": "リスク・アセットの額×1.5% − その他Tier1資本の額（零未満は零）。AT1の不足分。",
+      "desc_en": "1.5% of RWA − AT1 Capital (floored at zero): the AT1 shortfall.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art7-2.p1"
+    },
+    "BUF_3": {
+      "name_ja": "第七条の二第一項第三号に掲げる額",
+      "name_en": "Amount in Article 7-2(1)(iii)",
+      "desc_ja": "リスク・アセットの額×2% −（Tier2資本の額＋AT1の1.5%超過分）（零未満は零）。Tier2の不足分。",
+      "desc_en": "2% of RWA − (T2 Capital + AT1 in excess of 1.5% of RWA) (floored at zero): the Tier 2 shortfall.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art7-2.p1"
+    },
+    "X15_1": {
+      "name_ja": "第八条第十項第一号に掲げる額",
+      "name_en": "Amount in Article 8(10)(i)",
+      "desc_ja": "その他金融機関等の普通株式相当分に配分される額。",
+      "desc_en": "Share allocated to other financial institutions' common-equity holdings.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p10"
+    },
+    "X15_2": {
+      "name_ja": "第八条第十項第二号に掲げる額",
+      "name_en": "Amount in Article 8(10)(ii)",
+      "desc_ja": "モーゲージ・サービシング・ライツに配分される額。",
+      "desc_en": "Share allocated to mortgage servicing rights.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p10"
+    },
+    "X15_3": {
+      "name_ja": "第八条第十項第三号に掲げる額",
+      "name_en": "Amount in Article 8(10)(iii)",
+      "desc_ja": "繰延税金資産に配分される額。",
+      "desc_en": "Share allocated to deferred tax assets.",
+      "defined_at": "fsa-basel-cap-jp.ch2.art8.p10"
+    }
+  },
+  "formulas": [
+    {
+      "id": "f-rwa",
+      "node_id": "fsa-basel-cap-jp.ch2.art2.p1",
+      "label_ja": "リスク・アセットの額（各比率の分母）",
+      "label_en": "Risk-weighted assets (denominator of each ratio)",
+      "lines": [
+        "RWA = CRWA + MR / 8% + OR / 8% + FL"
+      ],
+      "source": "text_derived",
+      "note_ja": "第七条の二第一項第一号イ〜ニ、第十条〜第十三条の文言による。",
+      "note_en": "From Article 7-2(1)(i)(a)–(d) and Articles 10–13."
+    },
+    {
+      "id": "f-cet1",
+      "node_id": "fsa-basel-cap-jp.ch2.art2.p1",
+      "label_ja": "一　連結普通株式等Tier1比率",
+      "label_en": "(i) Consolidated CET1 Ratio",
+      "lines": [
+        "CET1 = CET1_base - CET1_adj",
+        "CET1_ratio = CET1 / RWA >= 4.5%"
+      ],
+      "source": "image_reconstructed",
+      "note_ja": "原文PDFでは画像の数式。第五条〜第十三条の「第二条…の算式において」の文言から再構成したもので、原文の画像とは未照合。",
+      "note_en": "The source PDF prints this formula as an image. Rebuilt from how Articles 5–13 describe its terms (\"in the formula of Article 2…\"); not yet checked against the image."
+    },
+    {
+      "id": "f-t1",
+      "node_id": "fsa-basel-cap-jp.ch2.art2.p1",
+      "label_ja": "二　連結Tier1比率",
+      "label_en": "(ii) Consolidated Tier 1 Ratio",
+      "lines": [
+        "AT1 = max(0, AT1_base - AT1_adj)",
+        "T1_ratio = (CET1 + AT1) / RWA >= 6%"
+      ],
+      "source": "image_reconstructed",
+      "note_ja": "原文PDFでは画像の数式。第五条〜第十三条の「第二条…の算式において」の文言から再構成したもので、原文の画像とは未照合。",
+      "note_en": "The source PDF prints this formula as an image. Rebuilt from how Articles 5–13 describe its terms (\"in the formula of Article 2…\"); not yet checked against the image."
+    },
+    {
+      "id": "f-tc",
+      "node_id": "fsa-basel-cap-jp.ch2.art2.p1",
+      "label_ja": "三　連結総自己資本規制比率",
+      "label_en": "(iii) Consolidated Total Capital Adequacy Ratio",
+      "lines": [
+        "T2 = max(0, T2_base - T2_adj)",
+        "TC_ratio = (CET1 + AT1 + T2) / RWA >= 8%"
+      ],
+      "source": "image_reconstructed",
+      "note_ja": "原文PDFでは画像の数式。第五条〜第十三条の「第二条…の算式において」の文言から再構成したもので、原文の画像とは未照合。",
+      "note_en": "The source PDF prints this formula as an image. Rebuilt from how Articles 5–13 describe its terms (\"in the formula of Article 2…\"); not yet checked against the image."
+    },
+    {
+      "id": "f-buf",
+      "node_id": "fsa-basel-cap-jp.ch2.art2-2.p1",
+      "label_ja": "連結資本バッファー比率",
+      "label_en": "Consolidated Capital Buffer Ratio",
+      "lines": [
+        "BUF_ratio = CET1_buf / RWA >= BUF_min",
+        "BUF_min = CCB + CCyB",
+        "CCB = 2.5%"
+      ],
+      "source": "image_reconstructed",
+      "note_ja": "第一行は原文PDFでは画像の数式（第七条の二・第十条〜第十三条の文言から再構成、未照合）。第二・三行は第二項・第三項の文言による。",
+      "note_en": "Line 1 is an image formula in the source PDF (rebuilt from Articles 7-2 and 10–13, not yet checked). Lines 2–3 follow the wording of paragraphs 2–3."
+    },
+    {
+      "id": "f-cet1buf",
+      "node_id": "fsa-basel-cap-jp.ch2.art7-2.p1",
+      "label_ja": "資本バッファーに係る普通株式等Tier1資本の額",
+      "label_en": "CET1 Capital relating to the capital buffer",
+      "lines": [
+        "BUF_1 = max(0, CET1 - 4.5% * RWA)",
+        "BUF_2 = max(0, 1.5% * RWA - AT1)",
+        "BUF_3 = max(0, 2% * RWA - (T2 + max(0, AT1 - 1.5% * RWA)))",
+        "CET1_buf = BUF_1 - BUF_2 - BUF_3"
+      ],
+      "source": "text_derived",
+      "note_ja": "第一号から第二号・第三号を控除。各号とも零を下回る場合は零。",
+      "note_en": "Item (i) minus items (ii) and (iii); each item floored at zero."
+    },
+    {
+      "id": "f-t2amort",
+      "node_id": "fsa-basel-cap-jp.ch2.art7.p1",
+      "label_ja": "ただし書：償還期限まで五年以内のTier2資本調達手段",
+      "label_en": "Proviso: Tier 2 instruments within five years of maturity",
+      "lines": [
+        "T2_amort = T2_bs * D_rem / D_5y"
+      ],
+      "source": "text_derived",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-th10",
+      "node_id": "fsa-basel-cap-jp.ch2.art8.p9",
+      "label_ja": "特定項目に係る十パーセント基準超過額",
+      "label_en": "10% threshold excess amount",
+      "lines": [
+        "TH10 = 10% * (CET1_base - CET1_adj_1_4)",
+        "TH10_excess = max(0, OFI_CS - TH10) + max(0, MSR - TH10) + max(0, DTA - TH10)"
+      ],
+      "source": "text_derived",
+      "note_ja": "",
+      "note_en": ""
+    },
+    {
+      "id": "f-th15",
+      "node_id": "fsa-basel-cap-jp.ch2.art8.p10",
+      "label_ja": "特定項目に係る十五パーセント基準超過額",
+      "label_en": "15% threshold excess amount",
+      "lines": [
+        "SI = OFI_CS + MSR + DTA",
+        "SI_10 = SI - TH10_excess",
+        "TH15 = (CET1_base - CET1_adj_1_4 - SI) * 15% / 85%",
+        "SI_adj = max(0, SI_10 - TH15)",
+        "X15_1 = SI_adj * (OFI_CS - max(0, OFI_CS - TH10)) / SI_10",
+        "X15_2 = SI_adj * (MSR - max(0, MSR - TH10)) / SI_10",
+        "X15_3 = SI_adj * (DTA - max(0, DTA - TH10)) / SI_10",
+        "TH15_excess = X15_1 + X15_2 + X15_3"
+      ],
+      "source": "text_derived",
+      "note_ja": "第一号〜第三号の「前項第一号〜第三号に掲げる額」を、前項（第九項）の各号の式で展開している。",
+      "note_en": "Each \"amount in item (i)–(iii) of the preceding paragraph\" is expanded using paragraph 9's items."
+    },
+    {
+      "id": "f-floor",
+      "node_id": "fsa-basel-cap-jp.ch2.art13.p1",
+      "label_ja": "資本フロアによる分母への加算額",
+      "label_en": "Capital floor add-on to the denominator",
+      "lines": [
+        "FL = 12.5 * max(0, 72.5% * K_SA - K_AP)"
+      ],
+      "source": "text_derived",
+      "note_ja": "第一項各号のいずれかに該当する場合に限る。第二項の経過措置期間は72.5%に代えて同項各号の率。",
+      "note_en": "Only for companies under the items of paragraph 1; during paragraph 2's transition periods the rate in its items replaces 72.5%."
+    }
+  ]
+}

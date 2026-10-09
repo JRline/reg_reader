@@ -6,7 +6,8 @@ exist because skipping them caused real, silent bugs earlier in this project's h
 ## What this is
 
 A generic, schema-driven reader for Japanese financial regulation, currently populated
-with Chapter 2 of an FSA Basel capital-adequacy notification plus seven feeds of the
+with Chapter 2 of the FSA's capital-adequacy notification for **Ultimate Designated Parent
+Companies (最終指定親会社)** — not the bank version; don't title it as such — plus seven feeds of the
 external laws it cites. The app (`app/`) has zero regulation-specific logic — it renders
 whatever's in a feed's `feed.json`, so a new regulation is a content problem, not a code
 problem. See `README.md` for the user-facing overview.
@@ -87,14 +88,31 @@ Full pipeline walkthrough: **`pipeline/EXTRACTION_GUIDE.md`**.
 
 7. **Formulas are missing from extracted text, not lost by a bug.** The source PDF
    embeds mathematical formulas as images; `extract_chapter.py` (and any model
-   processing its output) never sees them. Don't try to reconstruct a formula from
-   context — flag the gap.
+   processing its output) never sees them. Formulas are hand-authored in
+   `feeds/<feed>/formulas.json` (see "Formulas" below). One whose source is a PDF image
+   must carry `source: "image_reconstructed"` (rendered with a ⚠) until someone checks it
+   against the image — never present a reconstruction as transcribed.
 
 8. **Browsers cache `feed.json`/`style.css`/`app.js` aggressively even across hard
    reloads**, since a bare `python -m http.server` sends no cache-control headers. Use
    `pipeline/serve_no_cache.py` when actively iterating, and note `app/index.html`
    already cache-busts its own `<link>`/`<script>` tags with a timestamp — don't remove
    that.
+
+## In-clause cues and formulas
+
+- **Cues** (`annotate_cues.py` → `clause.cues: [{type, start, end}]`): finer structure
+  INSIDE a clause — conditions/provisos inside list items, and exclusion (を除く) /
+  limitation (に限る) / definition (をいう) asides at any paren depth — recorded as ranges
+  rather than splits, because splitting there would break an item's box or a paren's
+  balance. Ranges are only drawn between points at the same paren depth, so they always
+  nest; the renderer (`buildCueTree` in app.js) draws them as stacked underlines. Run it
+  after `refine_clauses.py` (which drops cues when it changes a clause list).
+- **Formulas**: `formulas.json` (structure against variable ids + variable meanings) and
+  `notation.json` (id → display symbol only — swap it to change notation standards). The
+  app parses `lines` with a small grammar (numbers, ids, `+ - * /`, parens, max/min,
+  `= >= <=`) and draws `/` as a fraction; variables are hover/tap targets showing
+  meaning and a link to `defined_at`. `build_site.py` validates both files.
 
 ## Reference resolution model
 
@@ -118,7 +136,7 @@ Three layers, run in this order after content is ingested:
 - 7 feeds total: `fsa-basel-cap-jp`, `jp-banking-act`, `jp-fiea`,
   `jp-fiea-enforcement-order`, `jp-mof-consolidated-fs-regulation`,
   `jp-payment-services-act`, `jp-tlac-notification`.
-- ~246 cross-references in Chapter 2; 190 resolved. Remainder: item-level refs (see rule
+- ~246 cross-references in Chapter 2; 193 resolved. Remainder: item-level refs (see rule
   6 above), a couple of not-yet-digitized sibling FSA notifications, and one bare
   law-name mention with no specific target.
 - `refine_clauses.py` now also reclassifies bare `(1)`/`（１）`-style parenthetical
@@ -153,6 +171,13 @@ Three layers, run in this order after content is ingested:
   `refine_clauses.py` now rebuilds such clauses from `text_en` (`resegment_en`), keeping
   cue-typed spans that still match verbatim. `refine_clauses.py` is idempotent — a second
   run must report 0 changes; it used to strip `in_parenthetical` on re-run.
+- Article 8 has 14 paragraphs. Paragraphs 10–14 used to be merged into paragraph 9
+  because `extract_chapter.py`'s paragraph-number regex only matched ２–９ (fixed: it
+  now accepts two-digit numbers); the feed was split accordingly and refs re-resolved.
+- Formulas: 10 in Chapter 2 (Articles 2, 2-2, 7, 7-2, 8, 13). Article 2 and 2-2(1) are
+  `image_reconstructed` — the source PDF wasn't reachable when they were written
+  (`www.fsa.go.jp` is blocked by the cloud environment's network policy); verify them
+  against the PDF images when it's available.
 - All 27 Chapter 2 articles have `heading_en` (except 第二条の二/第四条, which have no
   heading in the source either).
 - Other chapters of the source notification are not extracted. To add one: see

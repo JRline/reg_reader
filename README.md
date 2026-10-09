@@ -1,7 +1,8 @@
 # Regulation Reader
 
 A bilingual (Japanese/English) reader for Japanese financial regulation, built around
-Japan's FSA capital-adequacy notification (the domestic implementation of the Basel
+Japan's FSA capital-adequacy notification for Ultimate Designated Parent Companies
+(最終指定親会社 — the domestic implementation of the Basel
 framework). It's designed to make genuinely difficult regulatory text easier to actually
 read and cross-check — not just translate it.
 
@@ -12,6 +13,12 @@ read and cross-check — not just translate it.
 - **Visual cues for long Japanese sentences** — conditions, provisos, exceptions,
   enumerated lists, and parenthetical asides are color-coded and given real list
   structure, instead of running together as one dense paragraph.
+- **Cues inside lists and asides, too** — a condition inside a list item, or an
+  exclusion (…を除く) / limitation (…に限る) / definition (…をいう) inside a
+  parenthetical, gets its own colored underline without breaking the item or the paren.
+- **Formulas** — calculation paragraphs show their formula, with fractions drawn as
+  fractions. Hover (or tap) any variable for what it means and where it's defined. The
+  notation is a separate file, so it can be swapped for a house standard.
 - **Clickable cross-references** — citations like "前項" (the preceding paragraph) or
   "第五条第二項" (Article 5, paragraph 2) jump straight to the target, including
   references that point at a *different law entirely*.
@@ -40,11 +47,12 @@ same code, but it reads `feeds/*.json` directly so there's no rebuild step.
 
 ## What's actually in it right now
 
-Chapter 2 of the FSA's Basel capital-adequacy notification (`fsa-basel-cap-jp`) — all 27
+Chapter 2 of the FSA's capital-adequacy notification for Ultimate Designated Parent
+Companies (`fsa-basel-cap-jp`) — all 27
 articles — plus seven supporting feeds of real, sourced excerpts from the laws it cites:
 the Banking Act, the Financial Instruments and Exchange Act (and its enforcement order),
 the Consolidated Financial Statement Regulation, the Payment Services Act, and the TLAC
-notification. Of the ~246 cross-references in Chapter 2, 190 resolve to an actual target;
+notification. Of the ~246 cross-references in Chapter 2, 193 resolve to an actual target;
 the rest are honestly flagged as either not-yet-digitized or a citation style (item-level
 前号/次号) the current data model can't address precisely — see `CLAUDE.md` for why.
 

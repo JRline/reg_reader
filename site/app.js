@@ -30,6 +30,7 @@ const CLAUSE_LEGEND = [
   ["enumeration_item", "list item", "列挙項目"],
   ["parenthetical", "parenthetical", "かっこ書き"],
   ["definition", "defines a term", "用語の定義"],
+  ["limitation", "limited to (に限る)", "限定（に限る）"],
 ];
 
 const UI_STRINGS = {
@@ -105,10 +106,14 @@ function loadFeedIndex() {
 async function loadFeedData(feedId) {
   if (STATIC_SITE) {
     const bundle = await loadScriptData(`feed:${feedId}`, `data/${feedId}.js`);
-    return [bundle.manifest, bundle.feed];
+    return [bundle.manifest, bundle.feed, bundle.formulas || null, bundle.notation || null];
   }
   const base = `../feeds/${feedId}`;
-  return Promise.all([loadJSON(`${base}/manifest.json`), loadJSON(`${base}/feed.json`)]);
+  const optional = (path) => loadJSON(path).catch(() => null); // most feeds have no formulas
+  return Promise.all([
+    loadJSON(`${base}/manifest.json`), loadJSON(`${base}/feed.json`),
+    optional(`${base}/formulas.json`), optional(`${base}/notation.json`),
+  ]);
 }
 
 async function loadJSON(path) {
@@ -165,7 +170,9 @@ function labelFeedOptions() {
 }
 
 async function loadFeed(feedId) {
-  const [manifest, feed] = await loadFeedData(feedId);
+  const [manifest, feed, formulas, notation] = await loadFeedData(feedId);
+  state.formulas = formulas;
+  state.notation = notation;
   state.feedId = feedId;
   state.manifest = manifest;
   state.feed = feed;
@@ -364,8 +371,289 @@ function renderNodeBlock(node) {
   textEl.appendChild(renderClauses(node));
   wrap.appendChild(textEl);
 
+  for (const f of (state.formulas?.formulas || []).filter((x) => x.node_id === node.id)) {
+    wrap.appendChild(renderFormulaBox(f));
+  }
+
   return wrap;
 }
+
+// ---------- Formulas ----------
+//
+// feeds/<feed>/formulas.json holds each formula's STRUCTURE, written against variable ids
+// (e.g. "CET1_ratio = CET1 / RWA >= 4.5%"), plus what each variable MEANS. How a variable
+// is DISPLAYED comes only from notation.json, so a different notation standard is a
+// swap of that one file. Grammar: numbers (4.5%, 12.5), variable ids, + - * /, ( ),
+// max(...)/min(...), and = >= <= between terms. "/" is drawn as a stacked fraction.
+
+function tokenizeFormula(src) {
+  const re = /\s*(?:(\d+(?:\.\d+)?%?)|([A-Za-z_][A-Za-z0-9_]*)|(>=|<=|[-+*\/(),=]))/y;
+  const out = [];
+  while (re.lastIndex < src.length) {
+    const start = re.lastIndex;
+    const m = re.exec(src);
+    if (!m || re.lastIndex === start) {
+      if (src.slice(start).trim()) throw new Error(`can't parse "${src.slice(start)}"`);
+      break;
+    }
+    if (m[1]) out.push({ k: "num", v: m[1] });
+    else if (m[2]) out.push({ k: "id", v: m[2] });
+    else out.push({ k: "op", v: m[3] });
+  }
+  return out;
+}
+
+function parseFormula(src) {
+  const toks = tokenizeFormula(src);
+  let i = 0;
+  const peek = () => toks[i];
+  const take = (v) => (toks[i] && toks[i].v === v ? toks[i++] : null);
+  const expect = (v) => { if (!take(v)) throw new Error(`expected "${v}" in ${src}`); };
+  const primary = () => {
+    const t = toks[i++];
+    if (!t) throw new Error(`unexpected end of ${src}`);
+    if (t.k === "num") return { t: "num", v: t.v };
+    if (t.k === "id") {
+      if (take("(")) {
+        const args = [sum()];
+        while (take(",")) args.push(sum());
+        expect(")");
+        return { t: "fn", name: t.v, args };
+      }
+      return { t: "var", id: t.v };
+    }
+    if (t.v === "(") { const x = sum(); expect(")"); return { t: "paren", x }; }
+    if (t.v === "-") return { t: "neg", x: primary() };
+    throw new Error(`unexpected "${t.v}" in ${src}`);
+  };
+  const product = () => {
+    let l = primary();
+    while (peek() && (peek().v === "*" || peek().v === "/")) l = { t: "bin", op: toks[i++].v, l, r: primary() };
+    return l;
+  };
+  const sum = () => {
+    let l = product();
+    while (peek() && (peek().v === "+" || peek().v === "-")) l = { t: "bin", op: toks[i++].v, l, r: product() };
+    return l;
+  };
+  const parts = [sum()];
+  const rels = [];
+  while (peek() && ["=", ">=", "<="].includes(peek().v)) { rels.push(toks[i++].v); parts.push(sum()); }
+  if (i < toks.length) throw new Error(`trailing "${toks[i].v}" in ${src}`);
+  return { parts, rels };
+}
+
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+
+// "X_{sub}^{sup}" -> X with sub/superscript. Kept deliberately tiny: notation.json is the
+// only input, and a notation standard needs little more than base + indices.
+function renderSymbol(sym) {
+  const frag = document.createDocumentFragment();
+  const re = /([_^])\{([^}]*)\}/g;
+  let pos = 0, m;
+  while ((m = re.exec(sym))) {
+    if (m.index > pos) frag.appendChild(document.createTextNode(sym.slice(pos, m.index)));
+    frag.appendChild(el(m[1] === "_" ? "sub" : "sup", null, m[2]));
+    pos = re.lastIndex;
+  }
+  if (pos < sym.length) frag.appendChild(document.createTextNode(sym.slice(pos)));
+  return frag;
+}
+
+const unparen = (x) => (x.t === "paren" ? x.x : x);
+const isSum = (x) => x.t === "bin" && (x.op === "+" || x.op === "-");
+
+function renderExpr(x) {
+  switch (x.t) {
+    case "num": return el("span", "f-num", x.v);
+    case "var": {
+      const v = el("span", "fvar");
+      v.tabIndex = 0;
+      v.dataset.var = x.id;
+      v.setAttribute("role", "button");
+      v.appendChild(renderSymbol(state.notation?.symbols?.[x.id] || x.id));
+      const meta = state.formulas?.variables?.[x.id];
+      if (meta) v.setAttribute("aria-label", state.lang === "ja" ? meta.name_ja : meta.name_en);
+      return v;
+    }
+    case "paren": {
+      const s = el("span", "f-group");
+      s.append(el("span", "f-paren", "("), renderExpr(x.x), el("span", "f-paren", ")"));
+      return s;
+    }
+    case "neg": { const s = el("span", "f-group"); s.append("−", renderExpr(x.x)); return s; }
+    case "fn": {
+      const s = el("span", "f-group");
+      s.append(el("span", "f-fn", x.name), el("span", "f-paren", "("));
+      x.args.forEach((a, k) => { if (k) s.append(el("span", "f-comma", ", ")); s.appendChild(renderExpr(a)); });
+      s.appendChild(el("span", "f-paren", ")"));
+      return s;
+    }
+    case "bin": {
+      if (x.op === "/") {
+        const fr = el("span", "f-frac");
+        const num = el("span", "f-num-part"); num.appendChild(renderExpr(unparen(x.l)));
+        const den = el("span", "f-den-part"); den.appendChild(renderExpr(unparen(x.r)));
+        fr.append(num, den);
+        return fr;
+      }
+      if (x.op === "+" || x.op === "-") {
+        // Flatten a left-nested chain (a + b − c ...) into one group of terms, so a long
+        // sum can wrap between terms on a narrow screen (.f-sum is a wrapping flex row).
+        const terms = [];
+        let cur = x;
+        while (cur.t === "bin" && (cur.op === "+" || cur.op === "-")) {
+          terms.unshift([cur.op, cur.op === "-" && isSum(cur.r) ? { t: "paren", x: cur.r } : cur.r]);
+          cur = cur.l;
+        }
+        const s = el("span", "f-group f-sum");
+        s.appendChild(renderExpr(cur));
+        for (const [op, term] of terms) {
+          const piece = el("span", "f-term");
+          piece.append(el("span", "f-op", op === "-" ? "−" : "+"), renderExpr(term));
+          s.appendChild(piece);
+        }
+        return s;
+      }
+      const s = el("span", "f-group");
+      const wrapSum = (y) => (x.op === "*" && isSum(y) ? { t: "paren", x: y } : y);
+      s.appendChild(renderExpr(wrapSum(x.l)));
+      s.appendChild(el("span", "f-op", x.op === "*" ? "×" : x.op === "-" ? "−" : "+"));
+      const r = x.op === "-" && isSum(x.r) ? { t: "paren", x: x.r } : wrapSum(x.r);
+      s.appendChild(renderExpr(r));
+      return s;
+    }
+  }
+  return document.createTextNode("?");
+}
+
+const FORMULA_SOURCE = {
+  text_derived: { ja: "条文の文言から作成", en: "Written from the article text" },
+  image_reconstructed: { ja: "⚠ 原文では画像の数式・未照合", en: "⚠ Image formula in source — not yet verified" },
+};
+
+function renderFormulaBox(f) {
+  const box = el("div", `formula-box source-${f.source}`);
+  const head = el("div", "formula-head");
+  head.appendChild(el("span", "formula-label", state.lang === "ja" ? f.label_ja : f.label_en));
+  const src = FORMULA_SOURCE[f.source];
+  if (src) head.appendChild(el("span", "formula-source", src[state.lang]));
+  box.appendChild(head);
+  const used = new Set();
+  for (const line of f.lines) {
+    const row = el("div", "formula-line");
+    try {
+      const { parts, rels } = parseFormula(line);
+      parts.forEach((p, k) => {
+        if (k) row.appendChild(el("span", "f-rel", { "=": "=", ">=": "≥", "<=": "≤" }[rels[k - 1]]));
+        row.appendChild(renderExpr(p));
+      });
+      line.replace(/[A-Za-z_][A-Za-z0-9_]*/g, (id) => { if (state.formulas?.variables?.[id]) used.add(id); return id; });
+    } catch (err) {
+      row.textContent = line;
+      row.classList.add("formula-error");
+    }
+    box.appendChild(row);
+  }
+  const note = state.lang === "ja" ? f.note_ja : f.note_en;
+  if (note) box.appendChild(el("div", "formula-note", note));
+  // Hover/tap explains a variable in place; this list is the same information for
+  // reading straight through (and for touch screens, where there is no hover).
+  if (used.size) {
+    const det = el("details", "formula-vars");
+    det.appendChild(el("summary", null, state.lang === "ja" ? `記号の説明（${used.size}）` : `Variables (${used.size})`));
+    const dl = el("dl");
+    for (const id of used) {
+      const dt = el("dt");
+      dt.appendChild(renderSymbol(state.notation?.symbols?.[id] || id));
+      const meta = state.formulas.variables[id];
+      dl.append(dt, el("dd", null, state.lang === "ja" ? meta.name_ja : meta.name_en));
+    }
+    det.appendChild(dl);
+    box.appendChild(det);
+  }
+  return box;
+}
+
+// Variable explanation popover: hover (mouse) or tap/focus (touch, keyboard).
+const varTip = el("div", "var-tip");
+varTip.hidden = true;
+varTip.setAttribute("role", "tooltip");
+document.body.appendChild(varTip);
+let varTipFor = null;
+let varTipHideTimer = null;
+let varTipShownAt = 0;
+
+function showVarTip(target) {
+  const id = target.dataset.var;
+  const meta = state.formulas?.variables?.[id];
+  if (!meta) return;
+  clearTimeout(varTipHideTimer);
+  if (varTipFor !== target || varTip.hidden) varTipShownAt = Date.now();
+  varTipFor = target;
+  varTip.innerHTML = "";
+  const sym = el("div", "var-tip-sym");
+  sym.appendChild(renderSymbol(state.notation?.symbols?.[id] || id));
+  varTip.appendChild(sym);
+  varTip.appendChild(el("div", "var-tip-name", state.lang === "ja" ? meta.name_ja : meta.name_en));
+  const desc = state.lang === "ja" ? meta.desc_ja : meta.desc_en;
+  if (desc) varTip.appendChild(el("div", "var-tip-desc", desc));
+  if (meta.defined_at && state.byId.has(meta.defined_at)) {
+    const where = state.byId.get(meta.defined_at).node;
+    const art = findAncestorOfType(meta.defined_at, "article");
+    const label = [art ? displayNumber(art) : "", where.type === "paragraph" && where.number ? (state.lang === "ja" ? `第${where.number}項` : `para. ${displayNumber(where)}`) : ""].filter(Boolean).join(state.lang === "ja" ? "" : ", ");
+    const link = el("button", "var-tip-link", (state.lang === "ja" ? "定義: " : "Defined in: ") + label + " →");
+    link.addEventListener("click", () => {
+      hideVarTip(true);
+      if (art && art.id !== state.activeArticleId) {
+        state.backStack.push({ feedId: state.feedId, articleId: state.activeArticleId, scrollY: getCurrentScrollY() });
+      }
+      if (art) renderArticleView(art.id, meta.defined_at);
+    });
+    varTip.appendChild(link);
+  }
+  varTip.hidden = false;
+  const r = target.getBoundingClientRect();
+  const w = Math.min(320, window.innerWidth - 24);
+  varTip.style.width = `${w}px`;
+  varTip.style.left = `${Math.max(12, Math.min(r.left, window.innerWidth - w - 12))}px`;
+  const below = r.bottom + 8;
+  const h = varTip.offsetHeight;
+  varTip.style.top = `${below + h > window.innerHeight - 8 ? Math.max(8, r.top - h - 8) : below}px`;
+}
+
+function hideVarTip(now) {
+  clearTimeout(varTipHideTimer);
+  const go = () => { varTip.hidden = true; varTipFor = null; };
+  if (now) go(); else varTipHideTimer = setTimeout(go, 250);
+}
+
+document.addEventListener("mouseover", (e) => {
+  const v = e.target.closest?.(".fvar");
+  if (v) showVarTip(v);
+  else if (e.target.closest?.(".var-tip")) clearTimeout(varTipHideTimer);
+});
+document.addEventListener("mouseout", (e) => {
+  if (e.target.closest?.(".fvar") || e.target.closest?.(".var-tip")) hideVarTip(false);
+});
+document.addEventListener("focusin", (e) => { const v = e.target.closest?.(".fvar"); if (v) showVarTip(v); });
+document.addEventListener("click", (e) => {
+  const v = e.target.closest?.(".fvar");
+  // A tap fires mouseover (which opens the tip) right before click, so a click within a
+  // moment of opening is that same tap — don't let it toggle the tip shut again.
+  if (v) {
+    if (varTipFor === v && !varTip.hidden && Date.now() - varTipShownAt > 400) hideVarTip(true);
+    else showVarTip(v);
+    return;
+  }
+  if (!e.target.closest?.(".var-tip")) hideVarTip(true);
+});
+window.addEventListener("scroll", () => { if (!varTip.hidden) hideVarTip(true); }, { passive: true });
 
 // Source docs nest enumerations up to three levels deep, each with its own marker style:
 // 一/二/三... (level 1) -> イ/ロ/ハ... (level 2) -> (１)/(２)... (level 3). Items aren't
@@ -454,24 +742,49 @@ function renderClauses(node) {
         openItemBlock(currentDepth);
       }
     }
-    span.appendChild(renderTextWithRefs(bodyText, node.refs || []));
+    // Cue offsets index clause.text; the marker (and its trailing space) was cut off the
+    // front of bodyText, so shift them by however much was removed.
+    const cut = clause.text.length - bodyText.length;
+    span.appendChild(renderTextWithRefs(bodyText, node.refs || [], shiftCues(clause.cues, cut, bodyText.length)));
     (itemBlock || frag).appendChild(span);
   }
   return frag;
 }
 
-function renderTextWithRefs(text, refs) {
-  const frag = document.createDocumentFragment();
+function shiftCues(cues, cut, len) {
+  if (!cues?.length) return [];
+  return cues
+    .map((c) => ({ type: c.type, start: Math.max(0, c.start - cut), end: Math.min(len, c.end - cut) }))
+    .filter((c) => c.end > c.start);
+}
+
+// In-clause cues (pipeline/annotate_cues.py) are ranges that always nest — they're drawn
+// only between points at the same paren depth — so they form a tree: each becomes a span
+// wrapping its children, drawn as an underline whose offset grows with how many cues it
+// contains, so nested cues stack as separate lines instead of overprinting one another.
+function buildCueTree(cues) {
+  const sorted = [...cues].sort((a, b) => a.start - b.start || b.end - a.end);
+  const roots = [];
+  const stack = [];
+  for (const c of sorted) {
+    const node = { ...c, children: [] };
+    while (stack.length && stack[stack.length - 1].end <= c.start) stack.pop();
+    const parent = stack[stack.length - 1];
+    if (parent && c.end <= parent.end) parent.children.push(node);
+    else if (!parent) roots.push(node);
+    else continue; // crossing range — never produced by the pipeline; skip rather than mis-nest
+    stack.push(node);
+  }
+  const height = (n) => (n.h = n.children.length ? 1 + Math.max(...n.children.map(height)) : 0);
+  roots.forEach(height);
+  return roots;
+}
+
+function renderTextWithRefs(text, refs, cues = []) {
   const refKey = state.lang === "ja" ? "raw_text" : "text_en";
   const applicable = refs
     .filter((r) => r[refKey] && text.includes(r[refKey]))
     .sort((a, b) => b[refKey].length - a[refKey].length);
-
-  if (applicable.length === 0) {
-    frag.appendChild(document.createTextNode(text));
-    return frag;
-  }
-
   const matches = [];
   for (const ref of applicable) {
     const needle = ref[refKey];
@@ -482,18 +795,45 @@ function renderTextWithRefs(text, refs) {
   }
   matches.sort((a, b) => a.start - b.start);
 
-  let pos = 0;
-  for (const m of matches) {
-    if (m.start > pos) frag.appendChild(document.createTextNode(text.slice(pos, m.start)));
-    const a = document.createElement("span");
-    a.className = `ref ref-${m.ref.scope}`;
-    a.textContent = text.slice(m.start, m.end);
-    a.addEventListener("click", (e) => onRefClick(e, m.ref));
-    frag.appendChild(a);
-    pos = m.end;
-  }
-  if (pos < text.length) frag.appendChild(document.createTextNode(text.slice(pos)));
+  // Plain text + ref links for [a, b). A ref that crosses a cue edge is drawn as two
+  // linked pieces, one on each side.
+  const renderPlain = (a, b, into) => {
+    let pos = a;
+    for (const m of matches) {
+      const s = Math.max(m.start, a), e = Math.min(m.end, b);
+      if (s >= e) continue;
+      if (s > pos) into.appendChild(document.createTextNode(text.slice(pos, s)));
+      const el = document.createElement("span");
+      el.className = `ref ref-${m.ref.scope}`;
+      el.textContent = text.slice(s, e);
+      el.addEventListener("click", (ev) => onRefClick(ev, m.ref));
+      into.appendChild(el);
+      pos = e;
+    }
+    if (pos < b) into.appendChild(document.createTextNode(text.slice(pos, b)));
+  };
+  const renderRange = (a, b, nodes, into) => {
+    let pos = a;
+    for (const n of nodes) {
+      if (n.start > pos) renderPlain(pos, n.start, into);
+      const el = document.createElement("span");
+      el.className = `cue cue-${n.type}`;
+      el.style.setProperty("--cue-h", Math.min(n.h, 3));
+      el.title = cueLabel(n.type);
+      renderRange(n.start, n.end, n.children, el);
+      into.appendChild(el);
+      pos = n.end;
+    }
+    if (pos < b) renderPlain(pos, b, into);
+  };
+  const frag = document.createDocumentFragment();
+  renderRange(0, text.length, buildCueTree(cues), frag);
   return frag;
+}
+
+function cueLabel(type) {
+  const row = CLAUSE_LEGEND.find(([t]) => t === type);
+  return row ? (state.lang === "ja" ? row[2] : row[1]) : type;
 }
 
 async function onRefClick(e, ref) {
