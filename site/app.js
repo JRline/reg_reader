@@ -9,6 +9,10 @@ const state = {
   lang: "ja",       // "ja" | "en" — mutually exclusive, no side-by-side
   activeArticleId: null,
   backStack: [],    // [{feedId, articleId}] — populated when a ref click jumps to a different feed
+                    // ({search: query} entries come from opening a search result)
+  view: "article",  // "article" | "search" — what the reader pane is showing
+  tocExpanded: new Set(),  // ids of TOC groups the user has opened (kept across re-renders)
+  pendingHighlight: null,  // search terms to mark in the next article render
 };
 
 const els = {
@@ -21,6 +25,7 @@ const els = {
   legend: document.getElementById("legend"),
   backBtn: document.getElementById("back-btn"),
   stickyTop: document.querySelector(".sticky-top"),
+  searchInput: document.getElementById("search-input"),
 };
 
 const CLAUSE_LEGEND = [
@@ -44,6 +49,17 @@ const UI_STRINGS = {
     en: "Unofficial, AI-assisted draft translation — not legal advice, and not endorsed by the Financial Services Agency. The Japanese text is authoritative; please verify against the official source.",
   },
   noticeClose: { ja: "閉じる", en: "Dismiss" },
+  searchPlaceholder: { ja: "この規則内を検索（ / ）", en: "Search this regulation ( / )" },
+  searchTitle: { ja: "検索結果", en: "Search results" },
+  searchNone: { ja: "一致する箇所はありません。", en: "No matches." },
+  searchHint: { ja: "複数の語をスペースで区切ると、すべてを含む項を探します。日本語・英語の両方を検索します。", en: "Separate words with spaces to find paragraphs containing all of them. Both the Japanese and the English text are searched." },
+  searchCount: { ja: (n, a) => `${n}件（${a}条）`, en: (n, a) => `${n} match${n === 1 ? "" : "es"} in ${a} article${a === 1 ? "" : "s"}` },
+  searchMoreInArticle: { ja: (k) => `この条にさらに${k}件`, en: (k) => `${k} more in this article` },
+  searchTruncated: { ja: (k) => `最初の${k}条のみ表示しています。語を追加して絞り込んでください。`, en: (k) => `Showing the first ${k} articles only — add words to narrow the search.` },
+  searchHeading: { ja: "見出し", en: "Heading" },
+  backToResults: { ja: "← 検索結果に戻る", en: "← Back to search results" },
+  expandAll: { ja: "すべて開く", en: "Expand all" },
+  collapseAll: { ja: "すべて閉じる", en: "Collapse all" },
   notYetProcessed: {
     ja: "この条文はまだパイプラインで処理されていません（目次には表示されますが、内容は未投入です）。",
     en: "This article hasn't been through the content pipeline yet — it's in the table of contents for navigation, but has no populated text.",
@@ -194,6 +210,8 @@ async function loadFeed(feedId) {
   state.feed = feed;
   state.byId.clear();
   indexTree(feed.root, null, []);
+  searchState.index = null;  // rebuilt lazily for the new feed
+  state.tocExpanded.clear();
   els.feedPicker.value = feedId;
   updateDocumentTitle();
   renderTOC();
@@ -222,43 +240,91 @@ function findFirstOfType(node, type) {
 // below the chapter; Chapter 3 uses all three.
 const STRUCTURAL_TYPES = ["chapter", "section", "subsection", "division"];
 
+// A collapsible tree: chapters/節/款/目 open and close (closed by default, except the path
+// to the article being read, which opens itself); articles navigate. What the user opened
+// is kept in state.tocExpanded so a re-render (e.g. a language switch) doesn't reset it.
 function renderTOC() {
   els.toc.innerHTML = "";
+  const tools = el("div", "toc-tools");
+  const expand = el("button", "toc-tool", UI_STRINGS.expandAll[state.lang]);
+  const collapse = el("button", "toc-tool", UI_STRINGS.collapseAll[state.lang]);
+  expand.type = collapse.type = "button";
+  expand.addEventListener("click", () => els.toc.querySelectorAll("li.toc-group").forEach((li) => setTocExpanded(li, true)));
+  collapse.addEventListener("click", () => {
+    els.toc.querySelectorAll("li.toc-group").forEach((li) => setTocExpanded(li, false));
+    if (state.view === "article" && state.activeArticleId) setActiveTOC(state.activeArticleId);  // keep the current article visible
+  });
+  tools.append(expand, collapse);
+  els.toc.appendChild(tools);
+
   const root = document.createElement("ul");
+  root.className = "toc-tree";
   for (const chapter of state.feed.root.children || []) {
     root.appendChild(renderTOCNode(chapter));
   }
   els.toc.appendChild(root);
 }
 
+function countArticles(node) {
+  if (node.type === "article") return 1;
+  return (node.children || []).reduce((n, c) => n + countArticles(c), 0);
+}
+
+function tocLabel(node) {
+  const label = el("span", "node-label");
+  label.dataset.id = node.id;
+  const num = displayNumber(node);
+  const head = displayHeading(node);
+  if (num) appendRich(label.appendChild(el("span", "toc-num")), num);
+  if (head) appendRich(label.appendChild(el("span", "toc-head")), head);
+  if (!num && !head) label.textContent = node.id;
+  return label;
+}
+
 function renderTOCNode(node) {
   const li = document.createElement("li");
   li.className = `type-${node.type}`;
   li.dataset.tocId = node.id;
+  const isGroup = STRUCTURAL_TYPES.includes(node.type);
+  const row = el("div", "toc-row");
+  const label = tocLabel(node);
 
-  const label = document.createElement("span");
-  label.className = "node-label";
-  label.dataset.id = node.id;
-  appendRich(label, [displayNumber(node), displayHeading(node)].filter(Boolean).join(" ") || node.id);
-  label.addEventListener("click", () => {
-    if (node.type === "article") return renderArticleView(node.id);
-    // A chapter/section heading opens its first article.
-    const target = findAncestorOfType(node.id, "article") || findFirstOfType(node, "article");
-    if (target) renderArticleView(target.id, target.id === node.id ? undefined : node.id);
-  });
-  li.appendChild(label);
-
-  const childTypesToShow = STRUCTURAL_TYPES.includes(node.type) ? [...STRUCTURAL_TYPES.slice(1), "article"] : [];
-  const childList = document.createElement("ul");
-  let any = false;
-  for (const c of node.children || []) {
-    if (childTypesToShow.includes(c.type)) {
-      childList.appendChild(renderTOCNode(c));
-      any = true;
-    }
+  if (!isGroup) {
+    label.tabIndex = 0;
+    label.setAttribute("role", "link");
+    label.addEventListener("click", () => renderArticleView(node.id));
+    label.addEventListener("keydown", (e) => { if (e.key === "Enter") renderArticleView(node.id); });
+    row.appendChild(label);
+    li.appendChild(row);
+    return li;
   }
-  if (any) li.appendChild(childList);
+
+  li.classList.add("toc-group");
+  const toggle = el("button", "toc-toggle");
+  toggle.type = "button";
+  toggle.setAttribute("aria-label", displayHeading(node) || displayNumber(node) || node.id);
+  const count = el("span", "toc-count", String(countArticles(node)));
+  row.append(toggle, label, count);
+  const flip = () => setTocExpanded(li, li.classList.contains("collapsed"));
+  toggle.addEventListener("click", flip);
+  label.addEventListener("click", flip);
+  li.appendChild(row);
+
+  const childTypes = [...STRUCTURAL_TYPES.slice(1), "article"];
+  const childList = document.createElement("ul");
+  for (const c of node.children || []) {
+    if (childTypes.includes(c.type)) childList.appendChild(renderTOCNode(c));
+  }
+  if (childList.children.length) li.appendChild(childList);
+  setTocExpanded(li, state.tocExpanded.has(node.id));
   return li;
+}
+
+function setTocExpanded(li, open) {
+  li.classList.toggle("collapsed", !open);
+  li.querySelector(":scope > .toc-row > .toc-toggle")?.setAttribute("aria-expanded", String(open));
+  if (open) state.tocExpanded.add(li.dataset.tocId);
+  else state.tocExpanded.delete(li.dataset.tocId);
 }
 
 function renderLegend() {
@@ -275,7 +341,7 @@ function updateBackButton() {
   } else {
     const prev = state.backStack[state.backStack.length - 1];
     const sameFeed = prev.feedId === state.feedId;
-    btn.textContent = sameFeed
+    btn.textContent = prev.search != null ? UI_STRINGS.backToResults[state.lang] : sameFeed
       ? (state.lang === "ja" ? "← 前の場所に戻る" : "← Back to where you were")
       : (state.lang === "ja" ? `← ${feedLabel(prev.feedId)} に戻る` : `← Back to ${feedLabel(prev.feedId)}`);
     btn.hidden = false;
@@ -301,9 +367,21 @@ function getCurrentScrollY() {
 }
 
 function setActiveTOC(nodeId) {
-  els.toc.querySelectorAll(".node-label.active").forEach((el) => el.classList.remove("active"));
-  const el = els.toc.querySelector(`.node-label[data-id="${cssEscape(nodeId)}"]`);
-  if (el) el.classList.add("active");
+  els.toc.querySelectorAll(".node-label.active").forEach((e) => e.classList.remove("active"));
+  if (!nodeId) return;
+  const label = els.toc.querySelector(`.node-label[data-id="${cssEscape(nodeId)}"]`);
+  if (!label) return;
+  label.classList.add("active");
+  // Open the groups above it, then bring it into view inside the TOC pane only (never
+  // scroll the page itself from here).
+  for (let li = label.closest("li")?.parentElement?.closest("li"); li; li = li.parentElement?.closest("li")) {
+    if (li.classList.contains("toc-group")) setTocExpanded(li, true);
+  }
+  const pane = els.toc;
+  if (pane.scrollHeight > pane.clientHeight) {
+    const top = label.getBoundingClientRect().top - pane.getBoundingClientRect().top + pane.scrollTop;
+    if (top < pane.scrollTop + 40 || top > pane.scrollTop + pane.clientHeight - 60) pane.scrollTop = Math.max(0, top - pane.clientHeight / 3);
+  }
 }
 
 function cssEscape(s) {
@@ -324,6 +402,7 @@ function renderArticleView(articleId, scrollToId) {
   const article = entry.node;
   const chapter = findAncestorOfType(articleId, "chapter");
   state.activeArticleId = articleId;
+  state.view = "article";
 
   setActiveTOC(articleId);
   els.reader.innerHTML = "";
@@ -359,6 +438,10 @@ function renderArticleView(articleId, scrollToId) {
     els.reader.appendChild(note);
   } else {
     blocks.forEach((n) => els.reader.appendChild(n));
+  }
+  if (state.pendingHighlight) {
+    highlightTerms(els.reader, state.pendingHighlight);
+    state.pendingHighlight = null;
   }
 
   if (scrollToId && scrollToId !== articleId) {
@@ -1010,6 +1093,13 @@ async function onRefClick(e, ref) {
 async function goBack() {
   const prev = state.backStack.pop();
   if (!prev) return;
+  if (prev.search != null) {
+    if (prev.feedId !== state.feedId) await loadFeed(prev.feedId);
+    els.searchInput.value = prev.search;
+    renderSearchResults(prev.search, { keepScroll: true, restoring: true });
+    if (typeof prev.scrollY === "number") window.scrollTo(0, prev.scrollY);
+    return;
+  }
   if (prev.feedId !== state.feedId) {
     await loadFeed(prev.feedId);
   }
@@ -1091,6 +1181,8 @@ document.getElementById("notice-close").addEventListener("click", () => {
 document.getElementById("notice").hidden = noticeDismissed();
 
 function refreshStaticUI() {
+  els.searchInput.placeholder = UI_STRINGS.searchPlaceholder[state.lang];
+  els.searchInput.setAttribute("aria-label", UI_STRINGS.searchPlaceholder[state.lang]);
   document.getElementById("notice-text").textContent = UI_STRINGS.notice[state.lang];
   document.getElementById("notice-close").setAttribute("aria-label", UI_STRINGS.noticeClose[state.lang]);
   document.getElementById("notice-close").title = UI_STRINGS.noticeClose[state.lang];
@@ -1115,8 +1207,238 @@ els.langButtons.forEach((btn) => {
     document.documentElement.lang = state.lang;
     refreshStaticUI();
     renderTOC();
-    if (state.activeArticleId) renderArticleView(state.activeArticleId);
+    if (state.view === "search") renderSearchResults(searchState.query, { keepScroll: true });
+    else if (state.activeArticleId) renderArticleView(state.activeArticleId);
   });
+});
+
+// ---------- Search ----------
+// Client-side, over the loaded feed: every paragraph's Japanese and English text, the
+// tables' cells, and article headings. Matching is on NFKC-normalised, lower-cased text
+// (so full-width and half-width forms, and upper/lower case, match each other). Several
+// words separated by spaces must all occur in the same paragraph, in the same language.
+
+const searchState = { index: null, query: "", terms: [], timer: null };
+
+function searchClean(s) {
+  return (s || "").replace(/\{\{T:[^}]+\}\}/g, " ").replace(/\{\{F:[^}]+\}\}/g, " ").replace(/[_^]\{([^}]*)\}/g, "$1");
+}
+function searchNorm(s) { return s.normalize("NFKC").toLowerCase(); }
+// Normalised copy plus, for every normalised character, the offset of the original
+// character it came from — used to put highlights back on the original text.
+function normWithMap(s) {
+  let n = "", i = 0;
+  const map = [];
+  for (const ch of s) {
+    for (const c of searchNorm(ch)) { n += c; map.push(i); }
+    i += ch.length;
+  }
+  map.push(i);
+  return { n, map };
+}
+function splitTerms(q) {
+  return q.split(/[\s\u3000]+/).map(searchNorm).filter(Boolean);
+}
+
+function buildSearchIndex() {
+  const tableText = {};
+  const cellText = (rows) => (rows || []).flat().map((c) => (c == null ? "" : typeof c === "string" ? c : c.text || "")).join(" ");
+  for (const t of Object.values(state.tables?.tables || {})) {
+    const e = (tableText[t.node_id] ||= { ja: "", en: "" });
+    e.ja += " " + cellText(t.rows_ja);
+    e.en += " " + cellText(t.rows_en);
+  }
+  const items = [];
+  const walk = (node, articleId) => {
+    if (node.type === "article") {
+      articleId = node.id;
+      const ja = [node.number, node.heading].filter(Boolean).join(" ");
+      const en = [formatNumberEn(node.number, "条"), node.heading_en].filter(Boolean).join(" ");
+      items.push({ kind: "heading", articleId, nodeId: node.id, ja, en, nja: searchNorm(ja), nen: searchNorm(en) });
+    }
+    if (articleId && node.type !== "article" && (node.text_ja || node.text_en)) {
+      const t = tableText[node.id] || { ja: "", en: "" };
+      const ja = searchClean(node.text_ja) + t.ja;
+      const en = searchClean(node.text_en) + t.en;
+      items.push({ kind: "text", articleId, nodeId: node.id, ja, en, nja: searchNorm(ja), nen: searchNorm(en) });
+    }
+    for (const c of node.children || []) walk(c, articleId);
+  };
+  walk(state.feed.root, null);
+  return items;
+}
+
+function findMatches(terms) {
+  if (!searchState.index) searchState.index = buildSearchIndex();
+  const langs = state.lang === "ja" ? ["ja", "en"] : ["en", "ja"];
+  const groups = new Map();  // articleId -> {articleId, heading: bool, hits: []}
+  for (const item of searchState.index) {
+    const lang = langs.find((l) => terms.every((t) => item["n" + l].includes(t)));
+    if (!lang) continue;
+    let g = groups.get(item.articleId);
+    if (!g) groups.set(item.articleId, (g = { articleId: item.articleId, heading: false, hits: [] }));
+    if (item.kind === "heading") g.heading = true;
+    g.hits.push({ item, lang });
+  }
+  // Articles whose heading matches first; otherwise document order.
+  return [...groups.values()].sort((a, b) => (b.heading ? 1 : 0) - (a.heading ? 1 : 0));
+}
+
+// A short excerpt around the first match, with every term marked.
+function snippetNode(text, terms, radius = 36) {
+  const { n, map } = normWithMap(text);
+  let first = -1, firstLen = 0;
+  for (const t of terms) {
+    const p = n.indexOf(t);
+    if (p !== -1 && (first === -1 || p < first)) { first = p; firstLen = t.length; }
+  }
+  const ws = Math.max(0, first - radius), we = Math.min(n.length, first + firstLen + radius * 2);
+  const ranges = [];
+  for (const t of terms) {
+    for (let p = n.indexOf(t, ws); p !== -1 && p + t.length <= we; p = n.indexOf(t, p + 1)) ranges.push([p, p + t.length]);
+  }
+  ranges.sort((a, b) => a[0] - b[0]);
+  const out = el("span", "search-snippet");
+  if (ws > 0) out.append("…");
+  let cur = ws;
+  for (const [a, b] of ranges) {
+    if (a < cur) continue;
+    out.append(text.slice(map[cur], map[a]));
+    out.appendChild(el("mark", "search-mark", text.slice(map[a], map[b])));
+    cur = b;
+  }
+  out.append(text.slice(map[cur], map[we]));
+  if (we < n.length) out.append("…");
+  return out;
+}
+
+const SEARCH_MAX_ARTICLES = 150;
+const SEARCH_HITS_PER_ARTICLE = 3;
+
+function renderSearchResults(query, opts = {}) {
+  const terms = splitTerms(query);
+  if (!terms.length) return;
+  // Where Esc / clearing the box goes back to: the article open before the search began
+  // (not one opened from the results).
+  if (state.view !== "search" && !opts.restoring) searchState.returnTo = state.activeArticleId;
+  searchState.query = query;
+  searchState.terms = terms;
+  state.view = "search";
+  setActiveTOC(null);
+  updateBackButton();
+
+  const groups = findMatches(terms);
+  // A heading-only match still counts once.
+  const nHits = groups.reduce((n, g) => n + Math.max(1, g.hits.filter((x) => x.item.kind === "text").length), 0);
+  els.reader.innerHTML = "";
+  const h = el("h2", "node-heading", UI_STRINGS.searchTitle[state.lang]);
+  els.reader.appendChild(h);
+  const summary = el("div", "search-summary");
+  summary.appendChild(el("span", "search-query", query));
+  summary.append(" — " + (groups.length ? UI_STRINGS.searchCount[state.lang](nHits, groups.length) : UI_STRINGS.searchNone[state.lang]));
+  els.reader.appendChild(summary);
+  if (!groups.length) els.reader.appendChild(el("p", "search-hint", UI_STRINGS.searchHint[state.lang]));
+
+  for (const g of groups.slice(0, SEARCH_MAX_ARTICLES)) {
+    const entry = state.byId.get(g.articleId);
+    if (!entry) continue;
+    const art = entry.node;
+    const card = el("div", "search-group");
+    const groupsAbove = (entry.ancestors || []).map((id) => state.byId.get(id)?.node).filter((n) => n && STRUCTURAL_TYPES.includes(n.type));
+    const path = el("div", "search-path");
+    appendRich(path, groupsAbove.map((n) => [displayNumber(n), displayHeading(n)].filter(Boolean).join(" ")).join(" / "));
+    const title = el("a", "search-title");
+    title.href = "#";
+    const titleText = [displayNumber(art), displayHeading(art)].filter(Boolean).join(" ");
+    const headHit = g.hits.find((x) => x.item.kind === "heading");
+    if (headHit) title.appendChild(snippetNode(titleText, terms, 200));
+    else appendRich(title, titleText);
+    title.addEventListener("click", (e) => { e.preventDefault(); openSearchResult(g.articleId, g.articleId); });
+    card.append(path, title);
+
+    const textHits = g.hits.filter((x) => x.item.kind === "text");
+    for (const hit of textHits.slice(0, SEARCH_HITS_PER_ARTICLE)) {
+      const row = el("a", "search-hit");
+      row.href = "#";
+      const p = state.byId.get(hit.item.nodeId)?.node;
+      if (p?.type === "paragraph" && p.number) row.appendChild(el("span", "search-para", state.lang === "ja" ? `第${p.number}項` : `para. ${displayNumber(p)}`));
+      row.appendChild(snippetNode(hit.item[hit.lang], terms));
+      if (hit.lang !== state.lang) row.appendChild(el("span", "search-lang", hit.lang === "ja" ? "日本語" : "English"));
+      row.addEventListener("click", (e) => { e.preventDefault(); openSearchResult(g.articleId, hit.item.nodeId); });
+      card.appendChild(row);
+    }
+    if (textHits.length > SEARCH_HITS_PER_ARTICLE) {
+      card.appendChild(el("div", "search-more", UI_STRINGS.searchMoreInArticle[state.lang](textHits.length - SEARCH_HITS_PER_ARTICLE)));
+    }
+    els.reader.appendChild(card);
+  }
+  if (groups.length > SEARCH_MAX_ARTICLES) els.reader.appendChild(el("p", "search-hint", UI_STRINGS.searchTruncated[state.lang](SEARCH_MAX_ARTICLES)));
+  if (!opts.keepScroll && els.reader.getBoundingClientRect().top < 0) els.reader.scrollIntoView({ behavior: "instant", block: "start" });
+}
+
+function openSearchResult(articleId, nodeId) {
+  state.backStack.push({ search: searchState.query, feedId: state.feedId, scrollY: getCurrentScrollY() });
+  state.pendingHighlight = searchState.terms;
+  renderArticleView(articleId, nodeId === articleId ? undefined : nodeId);
+}
+
+// Mark every occurrence of the terms in the rendered article (text inside one DOM text
+// node; a match split across differently-styled spans isn't marked).
+function highlightTerms(root, terms) {
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  for (const node of nodes) {
+    const text = node.nodeValue;
+    if (!text.trim()) continue;
+    const { n, map } = normWithMap(text);
+    const ranges = [];
+    for (const t of terms) for (let p = n.indexOf(t); p !== -1; p = n.indexOf(t, p + 1)) ranges.push([p, p + t.length]);
+    if (!ranges.length) continue;
+    ranges.sort((a, b) => a[0] - b[0]);
+    const frag = document.createDocumentFragment();
+    let cur = 0;
+    for (const [a, b] of ranges) {
+      if (a < cur) continue;
+      frag.append(text.slice(map[cur], map[a]));
+      frag.appendChild(el("mark", "search-mark", text.slice(map[a], map[b])));
+      cur = b;
+    }
+    frag.append(text.slice(map[cur]));
+    node.parentNode.replaceChild(frag, node);
+  }
+}
+
+function exitSearch() {
+  if (state.view !== "search") return;
+  const back = searchState.returnTo || state.activeArticleId;
+  if (back) renderArticleView(back);
+}
+
+function onSearchInput(immediate) {
+  clearTimeout(searchState.timer);
+  const run = () => {
+    const q = els.searchInput.value.trim();
+    if (!q) return exitSearch();
+    // A single ASCII letter matches nearly everything; one kanji is a meaningful query.
+    if (/^[\x00-\x7f]+$/.test(q) && q.replace(/\s/g, "").length < 2) return;
+    renderSearchResults(q);
+  };
+  if (immediate) run();
+  else searchState.timer = setTimeout(run, 250);
+}
+els.searchInput.addEventListener("input", () => onSearchInput(false));
+els.searchInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") { e.preventDefault(); onSearchInput(true); }
+  else if (e.key === "Escape") { els.searchInput.value = ""; exitSearch(); els.searchInput.blur(); }
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey) return;
+  const t = e.target;
+  if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.tagName === "SELECT" || t.isContentEditable)) return;
+  e.preventDefault();
+  els.searchInput.focus();
+  els.searchInput.select();
 });
 
 // ---------- Boot ----------

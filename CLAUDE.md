@@ -167,6 +167,13 @@ Three layers, run in this order after content is ingested:
   `localStorage` under `reg-reader-notice-dismissed-v1`; bump the `-v1` to re-show it after changing the text)
   and a bilingual source line in the footer (`UI_STRINGS.notice`, `SOURCE_LINE` in `app.js`). The first article
   render on page load deliberately does not scroll the reader into view, so the banner is seen.
+- `app.js` search (section "Search"): client-side over the loaded feed — paragraph `text_ja`/`text_en`, table
+  cells (`tables.json`, by `node_id`) and article headings; NFKC + lower-case matching, all space-separated terms
+  in one paragraph and one language; index built lazily per feed (`searchState.index`, reset in `loadFeed`).
+  Opening a result pushes `{search: query}` on `state.backStack` ("back to results") and marks the terms
+  (`highlightTerms`). The TOC is a collapsible tree (`renderTOCNode`/`setTocExpanded`, open groups kept in
+  `state.tocExpanded`; `setActiveTOC` opens the active path and scrolls only the TOC pane). The reader column is
+  centred and up to 1120px wide (1280px ≥2200px), with slightly larger base text from 1600px up.
 - Tables: 105 in `feeds/fsa-basel-cap-jp/tables.json`, which replace `{{T:<id>}}` tokens.
   The app renders colspan/rowspan.
 - 7 feeds total: `fsa-basel-cap-jp`, `jp-banking-act`, `jp-fiea`,

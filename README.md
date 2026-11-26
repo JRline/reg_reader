@@ -12,6 +12,13 @@ just translate it.
 
 ## What it does
 
+- **Search** — the box at the top (or press `/`) searches the whole regulation in Japanese
+  and English at once, tables included; full-width/half-width and upper/lower case are
+  treated alike, and several words separated by spaces must all appear in the same
+  paragraph. Results are grouped by article with highlighted excerpts; opening one
+  highlights the words in the article, and a back button returns to the results.
+- **A collapsible contents tree** — chapters, 節, 款 and 目 open and close (with article
+  counts); the path to the article you're reading opens by itself.
 - **Bilingual, paragraph-paired translation** — switch between Japanese and English per
   article, not a side-by-side wall of text.
 - **Visual cues for long Japanese sentences** — conditions, provisos, exceptions, defined
